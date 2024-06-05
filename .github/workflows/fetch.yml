@@ -17,46 +17,57 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Set Timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - uses: actions/setup-python@v5
-      with:
-        python-version: '3.x'
-        cache: 'pip'
-    - name: Insall requirements
-      run: pip install -r requirements.txt
-    - name: Fetch
-      run: python ./fetch.py
-    - name: Commit changes
-      run: |                 
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git pull origin master
-        git add list*
-        git add snippets/
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: master
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Calculate the file to clear the cache
-      id: purge_urls
-      run: |
-        sleep 5
-        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
-        urls=""
-        for f in `find snippets -name "*.yml" -type f`; do
-          urls+="${baseUrl}/${f},"
-        done
-        for f in `find . -name "list*" -type f -maxdepth 1`; do
-          urls+="${baseUrl}/${f},"
-        done
-        echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
-    - name: Clear the JsDelivr CDN cache
-      uses: egad13/purge-jsdelivr-cache@v1
-      with:
-        url: ${{ steps.purge_urls.outputs.urls }}
-      continue-on-error: true
+      - name: Set Timezone
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Insall requirements
+        run: pip install -r requirements.txt
+        
+      - name: Fetch
+        run: python ./fetch.py
+
+      - name: Gernate commit date message
+        id: commit-date-msg
+        run: |
+          echo "msg=$(date '+%Y-%m-%d %H:%M:%S') update" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        id: auto-commit-action
+        with:
+          file_pattern: 'snippets/* list*'
+          commit_message: ${{ steps.commit-date-msg.outputs.msg }}
+          skip_fetch: true
+
+      - name: Checkout ftw repo
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: msclock/ftw
+          ref: master
+          token: ${{ secrets.PAT }}
+          path: msclock/ftw
+
+      - name: Copy list files to ftw repo
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: cp list.yml list.meta.yml msclock/ftw/
+
+      - name: Commit changes to ftw repo
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: msclock/ftw
+          branch: master
+          commit_message: ${{ steps.commit-date-msg.outputs.msg }}
+          push_options: --force
+          skip_fetch: true
