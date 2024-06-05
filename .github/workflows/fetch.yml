@@ -1,0 +1,62 @@
+name: Fetch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0/3 * * *' # https://crontab.guru/#0_0/3_*_*_*
+  push:
+    paths:
+      - 'sources.list'
+      - 'config.yml'
+      - 'abpwhite.txt'
+      - '.github/workflows/**'
+      - '**.py'
+      - 'snippets/_*'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Set Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - name: Insall requirements
+      run: pip install -r requirements.txt
+    - name: Fetch
+      run: python ./fetch.py
+    - name: Commit changes
+      run: |                 
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin master
+        git add list*
+        git add snippets/
+        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 抓取节点"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
+
+    - name: Calculate the file to clear the cache
+      id: purge_urls
+      run: |
+        sleep 5
+        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
+        urls=""
+        for f in `find snippets -name "*.yml" -type f`; do
+          urls+="${baseUrl}/${f},"
+        done
+        for f in `find . -name "list*" -type f -maxdepth 1`; do
+          urls+="${baseUrl}/${f},"
+        done
+        echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
+    - name: Clear the JsDelivr CDN cache
+      uses: egad13/purge-jsdelivr-cache@v1
+      with:
+        url: ${{ steps.purge_urls.outputs.urls }}
+      continue-on-error: true
