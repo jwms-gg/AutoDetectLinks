@@ -47,6 +47,7 @@ jobs:
         with:
           file_pattern: 'snippets/* list*'
           commit_message: ${{ steps.commit-date-msg.outputs.msg }}
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           skip_fetch: true
 
       - name: Checkout ftw repo
@@ -69,5 +70,6 @@ jobs:
           repository: msclock/ftw
           branch: master
           commit_message: ${{ steps.commit-date-msg.outputs.msg }}
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           push_options: --force
           skip_fetch: true
