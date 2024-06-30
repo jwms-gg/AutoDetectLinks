@@ -20,6 +20,8 @@ import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Tuple, Union, Callable, Any, Optional, no_type_check
 
+from loguru import logger
+
 try: PROXY = open("local_proxy.conf").read().strip()
 except FileNotFoundError: LOCAL = False; PROXY = None
 else:
@@ -65,7 +67,7 @@ CLASH_CIPHER_SS = "aes-128-gcm aes-192-gcm aes-256-gcm aes-128-cfb aes-192-cfb \
 CLASH_SSR_OBFS = "plain http_simple http_post random_head tls1.2_ticket_auth tls1.2_ticket_fastauth".split()
 CLASH_SSR_PROTOCOL = "origin auth_sha1_v4 auth_aes128_md5 auth_aes128_sha1 auth_chain_a auth_chain_b".split()
 
-ABFURLS = (
+ADBFURLS = (
     "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
     "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
@@ -174,7 +176,7 @@ class Node:
             hashstr = f"{self.type}:{data['server']}:{data['port']}:{path}"
             return hash(hashstr)
         except Exception:
-            print("节点 Hash 计算失败！", file=sys.stderr)
+            logger.info("节点 Hash 计算失败！", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
             return hash('__ERROR__')
     
@@ -333,7 +335,7 @@ class Node:
             # if self.type == 'vmess' and len(self.data['uuid']) != len(DEFAULT_UUID):
             #     return True
         except Exception:
-            print("无法验证的节点！", file=sys.stderr)
+            logger.info("无法验证的节点！", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
         return False
 
@@ -444,7 +446,7 @@ class Node:
             if 'plugin-opts' in self.data and 'mode' in self.data['plugin-opts'] \
                     and not self.data['plugin-opts']['mode']: return False
         except Exception:
-            print("无法验证的 Clash 节点！", file=sys.stderr)
+            logger.info("无法验证的 Clash 节点！", file=sys.stderr)
             traceback.print_exc(file=sys.stderr)
             return False
         return True
@@ -663,7 +665,9 @@ used: Dict[int, Dict[int, str]] = {}
 def merge(source_obj: Source, sourceId=-1) -> None:
     global merged, unknown
     sub = source_obj.sub
-    if not sub: print("空订阅，跳过！", end='', flush=True); return
+    if not sub: 
+        logger.info("空订阅，跳过！")
+        return
     for p in sub:
         if isinstance(p, str):
             if not p.isascii() or '://' not in p: continue
@@ -676,11 +680,14 @@ def merge(source_obj: Source, sourceId=-1) -> None:
         except KeyboardInterrupt: raise
         except UnsupportedType as e:
             if len(e.args) == 1:
-                print(f"不支持的类型：{e}")
+                logger.info(f"不支持的类型：{e}")
             unknown.add(p) # type: ignore
         except: traceback.print_exc()
         else:
             n.format_name()
+            if "alpn" in n.data and isinstance(n.data['alpn'], str):
+                n.data['alpn'] = n.data['alpn'].strip('[]')
+                n.data['alpn'] = [item for item in n.data['alpn'].split(',')]
             Node.names.add(n.data['name'])
             hashn = hash(n)
             if hashn not in merged:
@@ -709,22 +716,22 @@ def raw2fastly(url: str) -> str:
     return url
 
 def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
-    print("正在解析 Adblock 列表... ", end='', flush=True)
+    logger.info("正在解析 Adblock 列表... ", end='', flush=True)
     blocked: Set[str] = set()
     unblock: Set[str] = set()
-    for url in ABFURLS:
+    for url in ADBFURLS:
         url = raw2fastly(url)
         try:
             res = session.get(url)
         except requests.exceptions.RequestException as e:
             try:
-                print(f"{url} 下载失败：{e.args[0].reason}")
+                logger.info(f"{url} 下载失败：{e.args[0].reason}")
             except Exception:
-                print(f"{url} 下载失败：无法解析的错误！")
+                logger.info(f"{url} 下载失败：无法解析的错误！")
                 traceback.print_exc()
             continue
         if res.status_code != 200:
-            print(url, res.status_code)
+            logger.info(url, res.status_code)
             continue
         for line in res.text.strip().splitlines():
             line = line.strip()
@@ -741,13 +748,13 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
             res = session.get(url)
         except requests.exceptions.RequestException as e:
             try:
-                print(f"{url} 下载失败：{e.args[0].reason}")
+                logger.info(f"{url} 下载失败：{e.args[0].reason}")
             except Exception:
-                print(f"{url} 下载失败：无法解析的错误！")
+                logger.info(f"{url} 下载失败：无法解析的错误！")
                 traceback.print_exc()
             continue
         if res.status_code != 200:
-            print(url, res.status_code)
+            logger.info(url, res.status_code)
             continue
         for line in res.text.strip().splitlines():
             line = line.strip()
@@ -783,34 +790,34 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
             if key in domain: break
         else: rules[f'DOMAIN-SUFFIX,{domain}'] = adblock_name
 
-    print(f"共有 {len(rules)} 条规则")
+    logger.info(f"共有 {len(rules)} 条规则")
 
 def main():
-    global exc_queue, merged, FETCH_TIMEOUT, ABFURLS, AUTOURLS, AUTOFETCH
+    global exc_queue, merged, FETCH_TIMEOUT, ADBFURLS, AUTOURLS, AUTOFETCH
     sources = open("sources.list", encoding="utf-8").read().strip().splitlines()
     if DEBUG_NO_NODES:
         # !!! JUST FOR DEBUGING !!!
-        print("!!! 警告：您已启用无节点调试，程序产生的配置不能被直接使用 !!!")
+        logger.info("!!! 警告：您已启用无节点调试，程序产生的配置不能被直接使用 !!!")
         AUTOURLS = AUTOFETCH = sources = []
     elif DEBUG_NO_DYNAMIC:
         # !!! JUST FOR DEBUGING !!!
-        print("!!! 警告：您已选择不抓取动态节点 !!!")
+        logger.info("!!! 警告：您已选择不抓取动态节点 !!!")
         AUTOURLS = AUTOFETCH = []
-    print("正在生成动态链接...")
+    logger.info("正在生成动态链接...")
     for auto_fun in AUTOURLS:
-        print("正在生成 '"+auto_fun.__name__+"'... ", end='', flush=True)
+        logger.info("正在生成 '"+auto_fun.__name__+"'... ", end='', flush=True)
         try: url = auto_fun()
-        except requests.exceptions.RequestException: print("失败！")
-        except: print("错误：");traceback.print_exc()
+        except requests.exceptions.RequestException: logger.info("失败！")
+        except: logger.info("错误：");traceback.print_exc()
         else:
             if url:
                 if isinstance(url, str):
                     sources.append(url)
                 elif isinstance(url, (list, tuple, set)):
                     sources.extend(url)
-                print("成功！")
-            else: print("跳过！")
-    print("正在整理链接...")
+                logger.info("成功！")
+            else: logger.info("跳过！")
+    logger.info("正在整理链接...")
     sources_final: Union[Set[str], List[str]] = set()
     airports: Set[str] = set()
     for source in sources:
@@ -835,67 +842,66 @@ def main():
         else: sources_final.add(sub)
 
     if airports:
-        print("正在抓取机场列表...")
+        logger.info("正在抓取机场列表...")
         for sub in airports:
-            print("合并 '"+sub+"'... ", end='', flush=True)
+            logger.info("合并 '"+sub+"'... ", end='', flush=True)
             try:
                 res = extract(sub)
             except KeyboardInterrupt:
-                print("正在退出...")
+                logger.info("正在退出...")
                 break
             except requests.exceptions.RequestException:
-                print("合并失败！")
+                logger.info("合并失败！")
             except: traceback.print_exc()
             else:
                 if isinstance(res, int):
-                    print(res)
+                    logger.info(res)
                 else:
                     for url in res:
                         sources_final.add(url)
-                    print("完成！")
+                    logger.info("完成！")
 
-    print("正在整理链接...")
+    logger.info("正在整理链接...")
     sources_final = list(sources_final)
     sources_final.sort()
     sources_obj = [Source(url) for url in (sources_final + AUTOFETCH)]
 
-    print("开始抓取！")
-    threads = [threading.Thread(target=_.get, daemon=True) for _ in sources_obj]
-    for thread in threads: thread.start()
-    for i in range(len(sources_obj)):
-        try:
-            for t in range(1, FETCH_TIMEOUT[0]+1):
-                print("抓取 '"+sources_obj[i].url+"'... ", end='', flush=True)
-                try: threads[i].join(timeout=FETCH_TIMEOUT[1])
-                except KeyboardInterrupt:
-                    print("正在退出...")
-                    FETCH_TIMEOUT = (1, 0)
-                    break
-                if not threads[i].is_alive(): break
-                print(f"{5*t}s")
-            if threads[i].is_alive():
-                print("超时！")
-                continue
-            res = sources_obj[i].content
-            if isinstance(res, int):
-                if res < 0: print("抓取失败！")
-                else: print(res)
+    # from concurrent.futures import ThreadPoolExecutor
+    # with ThreadPoolExecutor(max_workers=1) as executor:
+    #     def source_fetch(source: Source):
+    #         source.get()
+    #     results= executor.map(source_fetch, sources_obj)
+    #     [r for r in results]
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+    logger.info("开始抓取！")
+    with ThreadPoolExecutor(max_workers=1) as executor:  # 设置合适的线程数
+        future_to_source = {executor.submit(source.get): source for source in sources_obj}
+        
+        for future in as_completed(future_to_source):
+            source = future_to_source[future]
+            try:
+                res = future.result()
+            except Exception as e:
+                logger.info(f"抓取 '{source.url}' 时发生错误: {e}")
             else:
-                print("正在合并... ", end='', flush=True)
-                try:
-                    merge(sources_obj[i], sourceId=i)
-                except KeyboardInterrupt:
-                    print("正在退出...")
-                    break
-                except:
-                    print("失败！")
-                    traceback.print_exc()
-                else: print("完成！")
-        except KeyboardInterrupt:
-            print("正在退出...")
-            break
-        while exc_queue:
-            print(exc_queue.pop(0), file=sys.stderr, flush=True)
+                if isinstance(res, int):
+                    if res < 0:
+                        logger.info(f"抓取 '{source.url}' 失败！")
+                    else:
+                        logger.info(f"抓取 '{source.url}' 成功，状态码: {res}")
+                else:
+                    logger.info(f"抓取 '{source.url}' 成功，正在合并... ", end='', flush=True)
+                    try:
+                        merge(source, sourceId=sources_obj.index(source))
+                    except Exception as e:
+                        logger.info(f"合并 '{source.url}' 失败！")
+                        traceback.print_exc()
+                    else:
+                        logger.info(f"合并 '{source.url}' 完成！")
+
 
     if STOP:
         merged = {
@@ -903,7 +909,7 @@ def main():
             2: Node("vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIjIg5pWP5oSf5pe25pyf77yM5pu05paw5pqC5YGc77yM5aaC5pyJ6ZyA6KaB77yM6Ieq6KGM5pCt5bu6IiwNCiAgImFkZCI6ICJjZDAwMS53d3cuZHViYS5uZXQiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNDQ0NDQ0NDQtNDQ0NC00NDQ0LTQ0NDQtNDQ0NDQ0NDQ0NDQ0NCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJjZDAwMS53d3cuZHViYS5uZXQiLA0KICAiYWxwbiI6ICJodHRwLzEuMSIsDQogICJmcCI6ICIzNjAiDQp9")
         }
 
-    print("\n正在写出 V2Ray 订阅...")
+    logger.info("\n正在写出 V2Ray 订阅...")
     txt = ""
     unsupports = 0
     for hashp, p in merged.items():
@@ -915,19 +921,19 @@ def main():
                 try:
                     txt += p.url + '\n'
                 except UnsupportedType as e:
-                    print(f"不支持的类型：{e}")
+                    logger.info(f"不支持的类型：{e}")
             else: unsupports += 1
         except: traceback.print_exc()
     for p in unknown:
         txt += p+'\n'
-    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
+    logger.info(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
 
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
         f.write(b64encodes(txt))
-    print("写出完成！")
+    logger.info("写出完成！")
 
     with open("config.yml", encoding="utf-8") as f:
         conf: Dict[str, Any] = yaml.full_load(f)
@@ -935,7 +941,7 @@ def main():
     rules: Dict[str, str] = {}
     if DEBUG_NO_ADBLOCK:
         # !!! JUST FOR DEBUGING !!!
-        print("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
+        logger.info("!!! 警告：您已关闭对 Adblock 规则的抓取 !!!")
     else:
         merge_adblock(conf['proxy-groups'][-2]['name'], rules)
 
@@ -947,10 +953,10 @@ def main():
         with open("snippets/_config.yml", encoding="utf-8") as f:
             snip_conf = yaml.full_load(f)
     except (OSError, yaml.error.YAMLError):
-        print("片段配置读取失败：")
+        logger.info("片段配置读取失败：")
         traceback.print_exc()
     else:
-        print("正在按地区分类节点...")
+        logger.info("正在按地区分类节点...")
         categories = snip_conf['categories']
         for ctg in categories:
             ctg_nodes[ctg] = []
@@ -976,7 +982,7 @@ def main():
             with open("snippets/nodes_"+ctg+".meta.yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'proxies': proxies}, f, allow_unicode=True)
 
-    print("正在写出 Clash & Meta 订阅...")
+    logger.info("正在写出 Clash & Meta 订阅...")
     keywords: List[str] = []
     suffixes: List[str] = []
     match_rule = None
@@ -995,15 +1001,15 @@ def main():
         elif len(tmp) == 4:
             rtype, rargument, rpolicy, rresolve = tmp
             rpolicy += ','+rresolve
-        else: print("规则 '"+rule+"' 无法被解析！"); continue
+        else: logger.info("规则 '"+rule+"' 无法被解析！"); continue
         for kwd in keywords:
             if kwd in rargument and kwd != rargument:
-                print(rargument, "已被 KEYWORD", kwd, "命中")
+                logger.info(rargument, "已被 KEYWORD", kwd, "命中")
                 break
         else:
             for sfx in suffixes:
                 if ('.'+rargument).endswith('.'+sfx) and sfx != rargument:
-                    print(rargument, "已被 SUFFIX", sfx, "命中")
+                    logger.info(rargument, "已被 SUFFIX", sfx, "命中")
                     break
             else:
                 k = rtype+','+rargument
@@ -1080,7 +1086,7 @@ def main():
         f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))
 
     if snip_conf:
-        print("正在写出配置片段...")
+        logger.info("正在写出配置片段...")
         name_map: Dict[str, str] = snip_conf['name-map']
         snippets: Dict[str, List[str]] = {}
         for rpolicy in name_map.values(): snippets[rpolicy] = []
@@ -1092,7 +1098,7 @@ def main():
             with open("snippets/"+name+".yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'payload': payload}, f, allow_unicode=True)
 
-    print("正在写出统计信息...")
+    logger.info("正在写出统计信息...")
     out = "序号,链接,节点数\n"
     for i, source in enumerate(sources_obj):
         out += f"{i},{source.url},"
@@ -1102,7 +1108,7 @@ def main():
     out += f"\n总计,,{len(merged)}\n"
     open("list_result.csv",'w').write(out)
 
-    print("写出完成！")
+    logger.info("写出完成！")
 
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH # type: ignore
@@ -1113,7 +1119,7 @@ if __name__ == '__main__':
 
 
 '''python
-print("正在抓取 Google IP 列表... ", end='', flush=True)
+logger.info("正在抓取 Google IP 列表... ", end='', flush=True)
 proxy_name: str = conf['proxy-groups'][0]['name']
 try:
     prefixes: List[Dict[str,str]] = session.get("https://www.gstatic.com/ipranges/goog.json").json()['prefixes']
@@ -1124,9 +1130,9 @@ try:
             elif tp.startswith('ipv6'):
                 rules['IP-CIDR6,'+ip] = proxy_name
 except requests.exceptions.RequestException:
-    print("抓取失败！")
+    logger.info("抓取失败！")
 except Exception:
-    print("解析失败！")
+    logger.info("解析失败！")
     traceback.print_exc()
-else: print("解析成功！")
+else: logger.info("解析成功！")
 '''
