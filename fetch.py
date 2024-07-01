@@ -114,10 +114,6 @@ session.mount('file://', FileAdapter())
     
 exc_queue: List[str] = []
 
-d = datetime.datetime.now()
-if (d.month, d.day) in ((6, 4), (7, 1), (10, 1)):
-    DEBUG_NO_NODES = DEBUG_NO_DYNAMIC = STOP = True
-
 class Node:
     names: Set[str] = set()
     DATA_TYPE = Dict[str, Any]
@@ -866,18 +862,11 @@ def main():
     sources_final.sort()
     sources_obj = [Source(url) for url in (sources_final + AUTOFETCH)]
 
-    # from concurrent.futures import ThreadPoolExecutor
-    # with ThreadPoolExecutor(max_workers=1) as executor:
-    #     def source_fetch(source: Source):
-    #         source.get()
-    #     results= executor.map(source_fetch, sources_obj)
-    #     [r for r in results]
-
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
     logger.info("开始抓取！")
-    with ThreadPoolExecutor(max_workers=1) as executor:  # 设置合适的线程数
+    with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_source = {executor.submit(source.get): source for source in sources_obj}
         
         for future in as_completed(future_to_source):
