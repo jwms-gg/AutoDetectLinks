@@ -58,9 +58,12 @@ dns:
     - 223.5.5.5
     - 114.114.114.114
   fallback:
-    - 8.8.8.8
-    - 4.2.2.2
+    - tls://8.8.4.4
+    - tls://1.1.1.1
     - https://dns.rubyfish.cn/dns-query
+  fallback-filter:
+    ipcidr:
+      - 61.160.148.90/32
 
 global-client-fingerprint: chrome
 tcp-concurrent: true
@@ -72,17 +75,10 @@ proxy-groups:
   - name: 🚀 选择代理
     type: select
     proxies:
-      - 🎯 负载均衡
       - ♻ 自动选择
       - 🔰 延迟最低
       - ✅ 手动选择
       - 🗺️ 选择地区
-
-  - name: 🎯 负载均衡
-    type: load-balance
-    url: https://www.google.com/
-    interval: 300
-    proxies: []
 
   - name: ♻ 自动选择
     type: fallback
@@ -107,10 +103,23 @@ proxy-groups:
       - DIRECT
       - 🚀 选择代理
 
+  - name: ❓ 疑似国内
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+      - REJECT
+
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 选择代理
+      - DIRECT
+
+  - name: 🚨 病毒网站
+    type: select
+    proxies:
+      - REJECT
       - DIRECT
 
   - name: ⛔ 广告拦截
@@ -125,12 +134,22 @@ proxy-groups:
     proxies: []
 
 rules:
+  # 应急响应：BootCDN/Staticfile 被投毒！
+  - DOMAIN,cdn.bootcss.com,🚨 病毒网站
+  - DOMAIN,cdn.bootcdn.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,polyfill.io,🚨 病毒网站
+  - DOMAIN,search.kiwibrowser.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,kiwibrowser.org,⛔ 广告拦截
+  - DOMAIN-KEYWORD,kiwisearchservices,🚨 病毒网站 # See https://github.com/Tobi823/ffupdater/issues/35
   # Adblock 补刀 (主程序解析白名单时会把要屏蔽的一起加白了)
   - DOMAIN,img-c.heytapimage.com,⛔ 广告拦截
   - DOMAIN,adsbdfs.heytapimage.com,⛔ 广告拦截
   - DOMAIN,adsfs.heytapimage.com,⛔ 广告拦截
   # 自定义规则
   ## 您可以在此处插入您补充的自定义规则（请注意保持缩进）
+  # - DOMAIN-SUFFIX,gitcode.com,⛔ 广告拦截
   - DOMAIN-SUFFIX,signalr.net,DIRECT
   - DOMAIN-KEYWORD,onedrive,🚀 选择代理
   - DOMAIN-SUFFIX,live.com,DIRECT
@@ -150,31 +169,47 @@ rules:
   - DOMAIN-KEYWORD,clash,🚀 选择代理
   - DOMAIN-KEYWORD,v2ray,🚀 选择代理
   - DOMAIN-KEYWORD,v2fly,🚀 选择代理
+  - DOMAIN-KEYWORD,vmess,🚀 选择代理
+  - DOMAIN-KEYWORD,vless,🚀 选择代理
   - DOMAIN-KEYWORD,shadowsocks,🚀 选择代理
+  # - DOMAIN-KEYWORD,trojan,🚀 选择代理
+  - DOMAIN-KEYWORD,hysteria,🚀 选择代理
+  - DOMAIN-KEYWORD,gfw,🚀 选择代理
   - DOMAIN-SUFFIX,trafficmanager.net,DIRECT
   # - DOMAIN-SUFFIX,star-history.com,🚀 选择代理
   - DOMAIN-SUFFIX,ivonblog.com,🚀 选择代理 # 视情况而定
-  - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理 # 代理会自动切到国外，详情请见 README
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器
-  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，尚未完成部署
+  
+  - DOMAIN-SUFFIX,googleapis.cn,DIRECT # 见 README
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，多数可直连，连不上 Google Play 会自动更换
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
+  - DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
+  - DOMAIN,redirector.gvt1.com,DIRECT # 会解析到你使用的运营商
+  # gvt1.com 不加任何规则，根据 GEOIP 判断是否走代理
+  
   - DOMAIN-SUFFIX,gitlab.io,🚀 选择代理
   - DOMAIN-KEYWORD,js96110,⛔ 广告拦截 # 以权谋私，一边反诈一边推广，恶意封禁正常网站
+  - IP-CIDR,61.160.148.90/32,❓ 疑似国内 # 被上面污染了
   - DOMAIN-KEYWORD,wiki.arch,DIRECT
   - DOMAIN-KEYWORD,archlinuxcn,DIRECT
   - DOMAIN-SUFFIX,996.icu,DIRECT
   - DOMAIN-SUFFIX,chinadigitaltimes.net,🚀 选择代理
   - DOMAIN-SUFFIX,savefrom.net,🚀 选择代理
   - DOMAIN-SUFFIX,yout.com,🚀 选择代理
-  - DOMAIN-SUFFIX,bulianglin.com,🚀 选择代理
-  - DOMAIN-SUFFIX,buliang0.cf,🚀 选择代理
+  # - DOMAIN-SUFFIX,bulianglin.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,buliang0.cf,🚀 选择代理
   - DOMAIN-SUFFIX,hydro.ac,DIRECT
   - DOMAIN-SUFFIX,tuna.moe,DIRECT
   - DOMAIN-KEYWORD,qbittorrent,🐟 漏网之鱼
   - DOMAIN-SUFFIX,greatfire.org,🚀 选择代理
-  - DOMAIN,wiki.metacubex.one,🚀 选择代理
+  # - DOMAIN,wiki.metacubex.one,🚀 选择代理
   - DOMAIN-KEYWORD,dongtaiwang,REJECT
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
   - DOMAIN,dl.google.com,🐟 漏网之鱼
+  - DOMAIN-SUFFIX,taptap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tapapis.com,🌐 突破锁区
+  - DOMAIN-KEYWORD,tapsdk,🌐 突破锁区
+  - DOMAIN-KEYWORD,taptap,🌐 突破锁区
 
 
   # 国内网站（优先，避免 google.cn 走代理）
@@ -534,7 +569,7 @@ rules:
   - DOMAIN-SUFFIX,blogger.com,🚀 选择代理
   - DOMAIN-SUFFIX,getoutline.org,🚀 选择代理
   - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt1.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt1.com,🚀 选择代理
   - DOMAIN-SUFFIX,gvt3.com,🚀 选择代理
   # - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 选择代理
   - DOMAIN-KEYWORD,google,🚀 选择代理
@@ -1408,5 +1443,6 @@ rules:
   - IP-CIDR,149.154.172.0/22,🚀 选择代理,no-resolve
 
   # 最终规则
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,❓ 疑似国内
+  - DOMAIN-SUFFIX,gvt1.com,🐟 漏网之鱼
   - MATCH,🐟 漏网之鱼
