@@ -4,6 +4,12 @@
 # pyright: reportRedeclaration = none
 # pyright: reportMissingParameterType = none
 # pyright: reportUnnecessaryIsInstance = none
+# pyright: reportUnknownVariableType = none
+# pyright: reportUnknownMemberType = none
+# pyright: reportUnknownArgumentType = none
+# pyright: reportArgumentType = none
+# pyright: reportAttributeAccessIssue = none
+# pyright: reportGeneralTypeIssues = none
 import yaml
 import json
 import base64
@@ -179,6 +185,10 @@ class Node:
                     path += '/'+opts.get('path', '')
                 elif net == 'grpc':
                     path += data.get('grpc-opts', {}).get('grpc-service-name','')
+            elif self.type == 'hysteria2':
+                path = data.get('sni', '')+':'
+                path += data.get('obfs-password', '')+':'
+            path += '@'+data.get('alpn', '')+'@'+data.get('password', '')+data.get('uuid', '')
             hashstr = f"{self.type}:{data['server']}:{data['port']}:{path}"
             return hash(hashstr)
         except Exception:
@@ -199,6 +209,7 @@ class Node:
         if not self.type.isascii():
             self.type = ''.join([_ for _ in self.type if _.isascii()])
             url = self.type+'://'+url.split("://")[1]
+        if self.type == 'hy2': self.type = 'hysteria2'
         # === Fix end ===
         if self.type == 'vmess':
             v = VMESS_EXAMPLE.copy()
@@ -286,14 +297,11 @@ class Node:
             if parsed.query:
                 for kv in parsed.query.split('&'):
                     k,v = kv.split('=')
-                    if k == 'allowInsecure':
+                    if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
                     elif k == 'sni': self.data['sni'] = v
                     elif k == 'alpn':
-                        if '%2C' in v:
-                            self.data['alpn'] = ["h2", "http/1.1"]
-                        else:
-                            self.data['alpn'] = [v]
+                        self.data['alpn'] = unquote(v).split(',')
                     elif k == 'type':
                         self.data['network'] = v
                     elif k == 'serviceName':
@@ -319,14 +327,11 @@ class Node:
             if parsed.query:
                 for kv in parsed.query.split('&'):
                     k,v = kv.split('=')
-                    if k == 'allowInsecure':
+                    if k in ('allowInsecure', 'insecure'):
                         self.data['skip-cert-verify'] = (v != '0')
                     elif k == 'sni': self.data['servername'] = v
                     elif k == 'alpn':
-                        if '%2C' in v:
-                            self.data['alpn'] = ["h2", "http/1.1"]
-                        else:
-                            self.data['alpn'] = [v]
+                        self.data['alpn'] = unquote(v).split(',')
                     elif k == 'type':
                         self.data['network'] = v
                     elif k == 'serviceName':
@@ -359,6 +364,32 @@ class Node:
                             self.data['reality-opts'] = {}
                         self.data['reality-opts']['short-id'] = v
                     # TODO: Unused key encryption
+
+        elif self.type == 'hysteria2':
+            parsed = urlparse(url)
+            self.data = {'name': unquote(parsed.fragment), 'server': parsed.hostname, 
+                    'type': 'hysteria2', 'password': unquote(parsed.username)} # type: ignore
+            if ':' in parsed.netloc:
+                ports = parsed.netloc.split(':')[1]
+                if ',' in ports:
+                    self.data['port'], self.data['ports'] = ports.split(',',1)
+                else:
+                    self.data['port'] = ports
+                try: self.data['port'] = int(self.data['port'])
+                except ValueError: self.data['port'] = 443
+            else:
+                self.data['port'] = 443
+            self.data['tls'] = False
+            if parsed.query:
+                for kv in parsed.query.split('&'):
+                    k,v = kv.split('=')
+                    if k == 'insecure':
+                        self.data['skip-cert-verify'] = (v != '0')
+                    elif k == 'alpn':
+                        self.data['alpn'] = unquote(v).split(',')
+                    elif k in ('sni', 'obfs', 'obfs-password'):
+                        self.data[k] = v
+                    elif k == 'fp': self.data['fingerprint'] = v
         
         else: raise UnsupportedType(self.type)
 
@@ -445,10 +476,7 @@ class Node:
             if 'sni' in data:
                 ret += f"sni={data['sni']}&"
             if 'alpn' in data:
-                if len(data['alpn']) >= 2:
-                    ret += "alpn=h2%2Chttp%2F1.1&"
-                else:
-                    ret += f"alpn={quote(data['alpn'][0])}&"
+                ret += f"alpn={quote(','.join(data['alpn']))}&"
             if 'network' in data:
                 if data['network'] == 'grpc':
                     ret += f"type=grpc&serviceName={data['grpc-opts']['grpc-service-name']}"
@@ -472,10 +500,7 @@ class Node:
             if 'servername' in data:
                 ret += f"sni={data['servername']}&"
             if 'alpn' in data:
-                if len(data['alpn']) >= 2:
-                    ret += "alpn=h2%2Chttp%2F1.1&"
-                else:
-                    ret += f"alpn={quote(data['alpn'][0])}&"
+                ret += f"alpn={quote(','.join(data['alpn']))}&"
             if 'network' in data:
                 if data['network'] == 'grpc':
                     ret += f"type=grpc&serviceName={data['grpc-opts']['grpc-service-name']}"
@@ -499,6 +524,25 @@ class Node:
             elif 'reality-opts' in data:
                 opts: Dict[str, str] = data['reality-opts']
                 ret += f"security=reality&pbk={opts.get('public-key','')}&sid={opts.get('short-id','')}&"
+            ret = ret.rstrip('&')+'#'+name
+            return ret
+
+        if self.type == 'hysteria2':
+            passwd = quote(data['password'])
+            name = quote(data['name'])
+            ret = f"hysteria2://{passwd}@{data['server']}:{data['port']}"
+            if 'ports' in data:
+                ret += ','+data['ports']
+            ret += '?'
+            if 'skip-cert-verify' in data:
+                ret += f"insecure={int(data['skip-cert-verify'])}&"
+            if 'alpn' in data:
+                ret += f"alpn={quote(','.join(data['alpn']))}&"
+            if 'fingerprint' in data:
+                ret += f"fp={data['fingerprint']}&"
+            for k in ('sni', 'obfs', 'obfs-password'):
+                if k in data:
+                    ret += f"{k}={data[k]}&"
             ret = ret.rstrip('&')+'#'+name
             return ret
 
@@ -772,7 +816,7 @@ def merge(source_obj: Source, sourceId=-1) -> None:
         return
     for p in sub:
         if isinstance(p, str):
-            if not p.isascii() or '://' not in p: continue
+            if '://' not in p: continue
             ok = True
             for ch in '!|`()[]{} ':
                 if ch in p:
@@ -787,9 +831,6 @@ def merge(source_obj: Source, sourceId=-1) -> None:
         except: traceback.print_exc()
         else:
             n.format_name()
-            if "alpn" in n.data and isinstance(n.data['alpn'], str):
-                n.data['alpn'] = n.data['alpn'].strip('[]')
-                n.data['alpn'] = [item for item in n.data['alpn'].split(',')]
             Node.names.add(n.data['name'])
             hashn = hash(n)
             if hashn not in merged:
@@ -809,12 +850,12 @@ def raw2fastly(url: str) -> str:
     if not LOCAL: return url
     url: Union[str, List[str]]
     if url.startswith("https://raw.githubusercontent.com/"):
-        url = url[34:].split('/')
-        url[1] += '@'+url[2]
-        del url[2]
-        url = "https://fastly.jsdelivr.net/gh/"+('/'.join(url))
-        return url
-    #     return "https://ghproxy.com/"+url
+        # url = url[34:].split('/')
+        # url[1] += '@'+url[2]
+        # del url[2]
+        # url = "https://fastly.jsdelivr.net/gh/"+('/'.join(url))
+        # return url
+        return "https://mirror.ghproxy.com/"+url
     return url
 
 def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
