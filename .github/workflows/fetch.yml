@@ -59,9 +59,9 @@ jobs:
           token: ${{ secrets.PAT }}
           path: msclock/ftw
 
-      - name: Copy list files to ftw repo
+      - name: Copy yml file to ftw repo
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
-        run: cp list.yml list.meta.yml msclock/ftw/
+        run: cp list.meta.yml msclock/ftw/list.yml
 
       - name: Commit changes to ftw repo
         if: steps.auto-commit-action.outputs.changes_detected == 'true'
