@@ -1,32 +1,13 @@
 #!/usr/bin/env python3
 import re
 import datetime
-import requests
-import threading
 from fetch import raw2fastly, session, LOCAL
-
-
-# def kkzui():
-#     # 密码在视频中口述, no use any more.
-#     if LOCAL: return
-#     res = session.get("https://kkzui.com/jd?orderby=modified")
-#     article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)" title="20(.*?)节点(.*?)</a>',res.text).groups()[0]
-#     res = session.get(article_url)
-#     passwd = re.search(r'<strong>本期密码：(.*?)</strong>',res.text).groups()[0]
-#     # print("Unlock kkzui.com with password:", passwd)
-#     res = session.post(article_url, data={'secret-key': passwd})
-#     sub = res.text.split('<pre')[1].split('</pre>')[0]
-#     if '</' in sub:
-#         sub = sub.split('</')[-2]
-#     if '>' in sub:
-#         sub = sub.split('>')[-1]
-#     return sub
 
 def sharkdoor():
     res_json = session.get(datetime.datetime.now().strftime(
         'https://api.github.com/repos/sharkDoor/vpn-free-nodes/contents/node-list/%Y-%m?ref=master')).json()
     res = session.get(raw2fastly(res_json[-1]['download_url']))
-    nodes: Set[str] = set()
+    nodes: set[str] = set()
     for line in res.text.split('\n'):
         if '://' in line:
             nodes.add(line.split('|')[-2])
@@ -63,7 +44,7 @@ def changfengoss():
 def w1770946466():
     if LOCAL: return
     res = session.get(raw2fastly("https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/README.md")).text
-    subs: Set[str] = set()
+    subs: set[str] = set()
     for line in res.strip().split('\n'):
         if line.startswith("`http"):
             sub = line.strip().strip('`')

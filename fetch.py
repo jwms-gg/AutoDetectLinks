@@ -188,7 +188,7 @@ class Node:
             elif self.type == 'hysteria2':
                 path = data.get('sni', '')+':'
                 path += data.get('obfs-password', '')+':'
-            path += '@'+data.get('alpn', '')+'@'+data.get('password', '')+data.get('uuid', '')
+                path += '@'+ str(data.get('alpn', '')) +'@'+data.get('password', '')+data.get('uuid', '')
             hashstr = f"{self.type}:{data['server']}:{data['port']}:{path}"
             return hash(hashstr)
         except Exception:
