@@ -3,15 +3,14 @@ name: Fetch
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0/3 * * *' # https://crontab.guru/#0_0/3_*_*_*
+    - cron: 0 0/3 * * *
   push:
     paths:
-      - 'sources.list'
-      - 'config.yml'
-      - 'abpwhite.txt'
-      - '.github/workflows/**'
+      - settings.yaml
+      - template/**
+      - .github/workflows/**
       - '**.py'
-      - 'snippets/_*'
+      - snippets/_*
 
 jobs:
   fetch:
@@ -27,14 +26,14 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-          cache: 'pip'
+          python-version: 3.x
+          cache: pip
 
-      - name: Insall requirements
+      - name: Install requirements
         run: pip install -r requirements.txt
-        
+
       - name: Fetch
-        run: python ./fetch.py
+        run: python cli.py
 
       - name: Gernate commit date message
         id: commit-date-msg
@@ -45,7 +44,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         id: auto-commit-action
         with:
-          file_pattern: 'snippets/* list*'
+          file_pattern: snippets/* list*
           commit_message: ${{ steps.commit-date-msg.outputs.msg }}
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           skip_fetch: true

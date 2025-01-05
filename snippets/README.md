@@ -65,7 +65,7 @@ rule-providers:
     format: yaml
 
 rules:
-    - DOMAIN-SUFFIX,googleapis.cn,DIRECT
+  - DOMAIN-SUFFIX,googleapis.cn,DIRECT
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，多数可直连，连不上 Google Play 会自动更换
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
   - IP-CIDR,61.160.148.90/32,❓ 疑似国内 # 可能被江苏反诈污染
@@ -84,14 +84,3 @@ rules:
   - RULE-SET,proxy,🚀 选择代理
   - MATCH,🐟 漏网之鱼
 ```
-
-# 加速链接（以节点列表为例）
-- 原始链接: `https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.yml`
-- JsDelivr 反代（zzko.cn）: `https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/snippets/nodes.yml`
-- JsDelivr Fastly CDN: `https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.yml`
-- JsDelivr Cloudflare CDN: `https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.yml`
-- JsDelivr GCore CDN: `https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/snippets/nodes.yml`
-- GhProxy.com: `https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.yml`
-
-以下加速链接可能无效：
-- KKGithub: `https://raw.kkgithub.com/peasoft/NoMoreWalls/master/snippets/nodes.yml`

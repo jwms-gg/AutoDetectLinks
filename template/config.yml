@@ -25,7 +25,7 @@ mode: rule
 # 5 个级别：silent / error / warning / info / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
 log-level: warning
 # Clash 的 RESTful API
-external-controller: '0.0.0.0:9090'
+external-controller: 0.0.0.0:9090
 
 # geodata-mode: true
 # geox-url:
@@ -45,9 +45,9 @@ sniffer:
     # QUIC:
     #   ports: [443, 8443]
   skip-domain:
-    - 'Mijia Cloud'
-    - 'dlg.io.mi.com'
-    - '+.apple.com'
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.apple.com
 
 dns:
   enable: true
@@ -184,14 +184,14 @@ rules:
   - DOMAIN-KEYWORD,discord,🚀 选择代理
   - DOMAIN-SUFFIX,v1.mk,🚀 选择代理
   - DOMAIN-SUFFIX,outlook.com,DIRECT
-  
+
   - DOMAIN-SUFFIX,googleapis.cn,DIRECT # 见 README
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，多数可直连，连不上 Google Play 会自动更换
   - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
   - DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
   - DOMAIN,redirector.gvt1.com,DIRECT # 会解析到你使用的运营商
   # gvt1.com 不加任何规则，根据 GEOIP 判断是否走代理
-  
+
   - DOMAIN-SUFFIX,gitlab.io,🚀 选择代理
   - DOMAIN-KEYWORD,js96110,⛔ 广告拦截 # 以权谋私，一边反诈一边推广，恶意封禁正常网站
   - IP-CIDR,61.160.148.90/32,❓ 疑似国内 # 被上面污染了

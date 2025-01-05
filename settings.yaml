@@ -1,0 +1,281 @@
+default:
+  source_fetch_threads: 10
+  sources:
+    - url: list.meta.yml
+      type: clash
+    - url: https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
+      type: v2ray
+      method: base64
+    - url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
+      type: clash
+    - url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
+      type: clash
+    - url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
+      type: clash
+      ignore:
+        - vmess
+        - ss
+        - ssr
+    - url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
+      type: clash
+    - url: https://raw.githubusercontent.com/mksshare/mksshare.github.io/main/README.md
+      type: v2ray
+      redirect: https
+      method: base64
+      ignore:
+        - vmess
+    - url: https://raw.githubusercontent.com/mkshare3/mkshare3.github.io/main/README.md
+      type: v2ray
+      redirect: https
+      method: base64
+      ignore:
+        - vmess
+    - url: https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md
+      type: v2ray
+      method: base64
+      redirect: https
+      ignore:
+        - vmess
+    - url: https://raw.githubusercontent.com/toshare5/toshare5.github.io/main/README.md
+      type: v2ray
+      method: base64
+      redirect: https
+      ignore:
+        - vmess
+    - url: https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/15/config.yaml
+      type: clash
+      max: 100
+    # TG Channels
+    - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hysteria2
+      type: v2ray
+    - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/ss
+      type: v2ray
+    - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/trojan
+      type: v2ray
+    # # Update and hidden
+    # - url: https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_META_IRAN-Direct.yml
+    #   type: clash
+    # - url: https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg
+    #   type: v2ray
+    #   method: base64
+    # - url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+    #   type: v2ray
+    #   method: base64
+    # - url: https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
+    #   type: clash
+    # All nodes from https://github.com/mheidari98/.proxy/
+    # - url: https://raw.githubusercontent.com/mheidari98/.proxy/main/all
+    #   type: v2ray
+    #   method: base64
+    - url: https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml
+      type: clash
+      redirect: date
+    - url: https://v2rayshare.githubrowcontent.com/%Y/%m/%Y%m%d.yaml
+      type: clash
+      redirect: date
+    - url: https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads
+      type: clash
+    - url: https://free.datiya.com/uploads/%Y%m%d-clash.yaml
+      type: clash
+      redirect: date
+    - url: https://t.me/s/PrivateVPNs
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/VlessConfig
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/V2pedia
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/proxystore11
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/DirectVPN
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/VmessProtocol
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/networknim
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/MsV2ray
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/DailyV2RY
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/yaney_01
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/FreakConfig
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/ServerNett
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/proxystore11
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/custom_14
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/FreeVlessVpn
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/freeland8
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/V2rayNG3
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/ShadowsocksM
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/shadowsocksshop
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/VmessProtocol
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/Easy_Free_VPN
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/V2Ray_FreedomIran
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/free4allVPN
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/configV2rayForFree
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/FreeV2rays
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/DigiV2ray
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/iranvpnet
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/vmess_iran
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/vpn_proxy_custom
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/vpnmasi
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/vpn_proxy_custom
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/ViPVpn_v2ray
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/vip_vpn_2022
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/ultrasurf_12
+      type: v2ray
+      method: telegram
+    - url: https://t.me/s/FreakConfig
+      type: v2ray
+      method: telegram
+  request_timeout: 10
+  default_uuid: &default_uuid 88888888-8888-8888-8888-888888888888
+  banned_words:
+    - 5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8gb25ndGFpd2Fu
+  vmess_example:
+    v: 2
+    ps: ''
+    add: 0.0.0.0
+    port: 0
+    aid: 0
+    scy: auto,
+    net: tcp
+    type: none
+    tls: ''
+    id: *default_uuid
+  clash2vmess:
+    name: ps
+    server: add
+    port: port
+    uuid: id
+    alterId: aid
+    cipher: scy
+    network: net
+    servername: sni
+  clash_cipher_vmess:
+    - auto
+    - aes-128-gcm
+    - chacha20-poly1305
+    - none
+  clash_cipher_ss:
+    - aes-128-gcm
+    - aes-192-gcm
+    - aes-256-gcm
+    - aes-128-cfb
+    - aes-192-cfb
+    - aes-256-cfb
+    - aes-128-ctr
+    - aes-192-ctr
+    - aes-256-ctr
+    - rc4-md5
+    - chacha20-ietf
+    - xchacha20
+    - chacha20-ietf-poly1305
+    - xchacha20-ietf-poly1305
+  clash_ssr_obfs:
+    - plain
+    - http_simple
+    - http_post
+    - random_head
+    - tls1.2_ticket_auth
+    - tls1.2_ticket_fastauth
+  clash_ssr_protocol:
+    - origin
+    - auth_sha1_v4
+    - auth_aes128_md5
+    - auth_aes128_sha1
+    - auth_chain_a
+    - auth_chain_b
+  fake_ips:
+    - 8.8.8.8
+    - 8.8.4.4
+    - 4.2.2.2
+    - 4.2.2.1
+    - 114.114.114.114
+    - 127.0.0.1
+    - 0.0.0.0
+  fake_domains:
+    - google.com
+    - github.com
+  abfwhite:
+    urls:
+      - https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt
+    extras:
+      - ynuf.aliapp.org
+      - cf.aliyun.com
+      - diablo.alibaba.com
+      - g.alicdn.com
+      - af.alicdn.com
+      - aeu.alicdn.com
+      - click.email.microsoftemail.com
+  adbfurls:
+    - https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt
+    - https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt
+    - https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
+    # - "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
+    # - "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt"
+    # - "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
+    # - "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+    # - "https://anti-ad.net/adguard.txt"
+    - https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
+    - https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock
+    # - "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt"
+    # - "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt"
+    # - "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt"
+    - https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
+    # "- https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt"
