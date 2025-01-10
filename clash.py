@@ -2043,11 +2043,8 @@ class ClashAPI:
                 result = [
                     ProxyTestResult(name, delay) for name, delay in delay_result.items()
                 ]
-            except httpx.HTTPError as e:
-                logger.info(f"测试策略组 {group_name} 失败: {e.args[0]}")
-                result = {}
             except Exception as e:
-                logger.info(f"测试策略组 {group_name} 失败: {e}")
+                logger.exception(f"测试策略组 {group_name} 失败: {e}")
                 result = {}
             finally:
                 # 更新缓存
@@ -2204,7 +2201,7 @@ async def test_group_proxies(
 
     # 创建所有测试任务
     tasks = [
-        clash_api.test_group_delay(group_name) for _ in range(times if time > 3 else 3)
+        clash_api.test_group_delay(group_name) for _ in range(times if times > 3 else 3)
     ]
 
     # 使用进度显示执行所有任务
@@ -2474,13 +2471,8 @@ def work(links, check=False, allowed_types=[], only_check=False):
 
         if check or only_check:
             clash_test_alive()
-
-    except KeyboardInterrupt:
-        logger.info("\n用户中断执行")
-        sys.exit(0)
     except Exception as e:
         logger.info(f"程序执行失败: {e}")
-        sys.exit(1)
 
 
 def clash_test_alive():
@@ -2494,7 +2486,7 @@ def clash_test_alive():
         asyncio.run(proxy_clean())
         logger.info("批量检测完毕")
     except Exception as e:
-        logger.warning("Error calling Clash API:" + str(e))
+        logger.exception("Error calling Clash API:" + str(e))
     finally:
         logger.info("关闭Clash API")
         if clash_process is not None:

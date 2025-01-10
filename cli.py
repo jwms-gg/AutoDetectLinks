@@ -46,6 +46,12 @@ def safe_request(url: str) -> str:
     return ""
 
 
+def clean_div(content: str):
+    soup = BeautifulSoup(content, "lxml")
+    div = soup.find("div")
+    return div.get_text() if div else content
+
+
 def from_telegram(content: str):
     soup = BeautifulSoup(content, "html.parser")
 
@@ -89,7 +95,9 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
         elif type == "v2ray":
             v2ray_proxies = []
             if method == "base64":
-                v2ray_proxies = b64decodes(content.strip()).strip().splitlines()
+                v2ray_proxies = (
+                    b64decodes(clean_div(content).strip()).strip().splitlines()
+                )
             elif method == "telegram":
                 v2ray_proxies = from_telegram(content)
             else:
