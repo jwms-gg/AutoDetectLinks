@@ -953,20 +953,19 @@ def main():
     )
     merged = merge_proxies(sources)
     statistics_sources(sources, merged)
+
     logger.info("Testing fetched proxies...")
     alive_nodes = check_nodes_on_mihomo(merged)
     logger.info(f"There are {len(alive_nodes)} alive nodes of {len(merged)} total.")
 
     logger.info("Classifying nodes by region...")
-    snippets_config: dict[str, dict[str, Any]] = {}
     ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
     categories: dict[str, list[str]] = {}
-
-    snippets_config = read_yaml("snippets/_config.yml")
+    snippets_config: dict[str, dict[str, Any]] = read_yaml("snippets/_config.yml")
     categories = snippets_config["categories"]
     for ctg in categories:
         ctg_nodes_meta[ctg] = []
-    for n in merged:
+    for n in alive_nodes:
         if supports_meta(n):
             ctgs: list[str] = []
             for ctg, keys in categories.items():
@@ -1031,7 +1030,7 @@ def main():
     proxies_meta: list[dict[str, Any]] = []
     ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
     names_clash_meta: Union[set[str], list[str]] = set()
-    for n in merged:
+    for n in alive_nodes:
         if supports_meta(n):
             if "client-fingerprint" in n and n["client-fingerprint"] == global_fp:
                 del n["client-fingerprint"]
