@@ -1750,7 +1750,7 @@ def handle_clash_error(error_message, config_file_path):
 
 
 # 下载最新mihomo
-def download_and_extract_latest_release():
+def prepare_mihomo():
     os_type = platform.system().lower()
     targets = {
         "darwin": "mihomo-darwin-amd64",
@@ -1806,11 +1806,9 @@ def download_and_extract_latest_release():
         import pybit7z
 
         with pybit7z.lib7zip_context() as lib:
-            extractor = pybit7z.BitFileExtractor(lib, pybit7z.FormatAuto)
-            extractor.extract(str(filename), "./")
             reader = pybit7z.BitArchiveReader(lib, str(filename))
-            extract_file = reader.items()[0]
-            extract_filename = extract_file.name()
+            reader.extract_to(str(Path.cwd()))
+            extract_filename = reader.item_at(0).name()
 
             if Path(extract_filename).exists():
                 os.rename(extract_filename, new_name)
@@ -1832,7 +1830,7 @@ def read_output(pipe, output_lines):
 
 
 def start_clash():
-    download_and_extract_latest_release()
+    prepare_mihomo()
     system_platform = platform.system().lower()
 
     clash_bin = f"./mihomo-{system_platform}"
@@ -2481,7 +2479,6 @@ def clash_test_alive():
         # 启动clash
         logger.info("===================启动clash并初始化配置======================")
         clash_process = start_clash()
-        # 切换节点到'节点选择-DIRECT'
         switch_proxy("DIRECT")
         asyncio.run(proxy_clean())
         logger.info("批量检测完毕")
@@ -2489,7 +2486,7 @@ def clash_test_alive():
         logger.exception("Error calling Clash API:" + str(e))
     finally:
         logger.info("关闭Clash API")
-        if clash_process is not None:
+        if clash_process:
             clash_process.kill()
 
 

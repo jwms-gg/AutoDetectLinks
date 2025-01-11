@@ -327,12 +327,7 @@ def supports_ray(proxy: dict[str, Any]) -> bool:
 
 def v2ray2clash(proxy: str) -> dict[str, Any]:
     try:
-        proxy_parts = proxy.split("://")
-        type, uri = (
-            proxy_parts
-            if len(proxy_parts) == 2
-            else (proxy_parts[0], "://".join(proxy_parts[1:]))
-        )
+        type, uri = proxy.split("://", 1)
     except ValueError:
         raise NotANode(proxy)
 
@@ -458,8 +453,7 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
         }
         if parsed.query:
             for kv in parsed.query.split("&"):
-                kvs = kv.split("=")
-                k, v = kvs if len(kvs) == 2 else (kvs[0], "=".join(kvs[1:]))
+                k, v = kv.split("=", 1)
                 if k in ("allowInsecure", "insecure"):
                     data["skip-cert-verify"] = v != "0"
                 elif k == "sni":
@@ -495,8 +489,7 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
         data["tls"] = False
         if parsed.query:
             for kv in parsed.query.split("&"):
-                kvs = kv.split("=")
-                k, v = kvs if len(kvs) == 2 else (kvs[0], "=".join(kvs[1:]))
+                k, v = kv.split("=", 1)
                 if k in ("allowInsecure", "insecure"):
                     data["skip-cert-verify"] = v != "0"
                 elif k == "sni":
@@ -559,8 +552,7 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
             data["port"] = 443
         if parsed.query:
             for kv in parsed.query.split("&"):
-                kvs = kv.split("=")
-                k, v = kvs if len(kvs) == 2 else (kvs[0], "=".join(kvs[1:]))
+                k, v = kv.split("=", 1)
                 if k == "insecure":
                     data["skip-cert-verify"] = v != "0"
                 elif k == "alpn":
@@ -946,6 +938,24 @@ def statistics_sources(sources: list[Source], merged: list[dict[str, Any]]):
         f.write(out)
 
 
+def write_rules_fragments(config, rules: dict):
+    logger.info("Writing out rules fragments ...")
+
+    if config:
+        snippets: dict[str, list[str]] = {}
+        name_map = config["name-map"]
+        for rpolicy in name_map.values():
+            snippets[rpolicy] = []
+        for config_rule, rpolicy in rules.items():
+            if "," in rpolicy:
+                rpolicy = rpolicy.split(",")[0]
+            if rpolicy in name_map:
+                snippets[name_map[rpolicy]].append(config_rule)
+        for name, payload in snippets.items():
+            with open("snippets/" + name + ".yml", "w", encoding="utf-8") as f:
+                yaml.dump({"payload": payload}, f, allow_unicode=True)
+
+
 def main():
     sources = fetch_sources(
         [Source(_) for _ in settings.sources],
@@ -961,8 +971,8 @@ def main():
     logger.info("Classifying nodes by region...")
     ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
     categories: dict[str, list[str]] = {}
-    snippets_config: dict[str, dict[str, Any]] = read_yaml("snippets/_config.yml")
-    categories = snippets_config["categories"]
+    _config: dict[str, dict[str, Any]] = read_yaml("snippets/_config.yml")
+    categories = _config["categories"]
     for ctg in categories:
         ctg_nodes_meta[ctg] = []
     for n in alive_nodes:
@@ -1052,10 +1062,10 @@ def main():
     for group in config["proxy-groups"]:
         if not group["proxies"]:
             group["proxies"] = names_clash_meta
-    if snippets_config:
+    if _config:
         config["proxy-groups"][-1]["proxies"] = []
         ctg_selects: list[str] = config["proxy-groups"][-1]["proxies"]
-        ctg_disp: dict[str, str] = snippets_config["categories_disp"]
+        ctg_disp: dict[str, str] = _config["categories_disp"]
         for ctg, payload in ctg_nodes_meta.items():
             if ctg in ctg_disp:
                 disp = ctg_base.copy()
@@ -1078,22 +1088,7 @@ def main():
             )
         )
 
-    if snippets_config:
-        logger.info("Writing out the configuration fragment...")
-        name_map: dict[str, str] = snippets_config["name-map"]
-        snippets: dict[str, list[str]] = {}
-        for rpolicy in name_map.values():
-            snippets[rpolicy] = []
-        for config_rule, rpolicy in rules.items():
-            if "," in rpolicy:
-                rpolicy = rpolicy.split(",")[0]
-            if rpolicy in name_map:
-                snippets[name_map[rpolicy]].append(config_rule)
-        for name, payload in snippets.items():
-            with open("snippets/" + name + ".yml", "w", encoding="utf-8") as f:
-                yaml.dump({"payload": payload}, f, allow_unicode=True)
-
-    logger.info("Write done.")
+    write_rules_fragments(_config, rules)
 
 
 if __name__ == "__main__":
