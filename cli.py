@@ -110,7 +110,7 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
                 try:
                     proxies.append(v2ray2clash(v))
                 except Exception as e:
-                    logger.warning(f"Cannot parse {v}, {e}")
+                    logger.warning(f"Cannot convert v2ray to clash from {v}, error: {e}")
     except Exception:
         pass
     return proxies
@@ -964,9 +964,9 @@ def main():
     merged = merge_proxies(sources)
     statistics_sources(sources, merged)
 
-    logger.info("Testing fetched proxies...")
     alive_nodes = check_nodes_on_mihomo(merged)
-    logger.info(f"There are {len(alive_nodes)} alive nodes of {len(merged)} total.")
+    if len(alive_nodes)==0:
+        raise Exception("No alive nodes found. Please replace your proxy fetching sources")
 
     logger.info("Classifying nodes by region...")
     ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
