@@ -1,5 +1,7 @@
+from itertools import chain
 import pathlib
 import re
+import time
 import yaml
 import json
 from typing import Union, Any, Optional
@@ -110,7 +112,9 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
                 try:
                     proxies.append(v2ray2clash(v))
                 except Exception as e:
-                    logger.warning(f"Cannot convert v2ray to clash from {v}, error: {e}")
+                    logger.warning(
+                        f"Cannot convert v2ray to clash from {v}, error: {e}"
+                    )
     except Exception:
         pass
     return proxies
@@ -120,6 +124,8 @@ class Source:
     def __init__(self, source: dict[str, Any]) -> None:
         self._source = source
         self.proxies: list[dict[str, Any]] = []
+        self.unique_proxies: list[dict[str, Any]] = []
+        self.unsupported_proxies: list[dict[str, Any]] = []
 
     def parse(self) -> None:
         """Parse proxies from source."""
@@ -232,15 +238,14 @@ def isfake(proxy: dict[str, Any]) -> bool:
             return True
         if "." not in proxy["server"]:
             return True
-        if proxy["server"] in settings.fake_ips:
-            return True
         if int(str(proxy["port"])) < 20:
             return True
-        for domain in settings.fake_domains:
-            if proxy["server"] == domain.lstrip("."):
-                return True
-            if proxy["server"].endswith(domain):
-                return True
+        return any(
+            [
+                proxy["server"].endswith(_)
+                for _ in chain(settings.fake_domains, settings.fake_ips)
+            ]
+        )
     except Exception:
         logger.info("Check fake node failed", backtrace=True)
     return False
@@ -755,13 +760,11 @@ def clash2v2ray(proxy: dict[str, Any]) -> str:
     raise UnsupportedType(type)
 
 
-def merge_proxies(sources: list[Source]) -> list[dict[str, Any]]:
-    merged: list[dict[str, Any]] = []
-    unsupported: list[dict[str, Any]] = []
+def unique_sources(sources: list[Source]):
     seen = set()
     name_filter: set[str] = set()
 
-    def format_name(data: dict[str, Any], max_len=30) -> None:
+    def unique_name(data: dict[str, Any], max_len=30) -> None:
         for word in [w for ws in settings.banned_words for w in b64decodes(ws).split()]:
             data["name"] = data["name"].replace(word, "*" * len(word))
 
@@ -780,14 +783,12 @@ def merge_proxies(sources: list[Source]) -> list[dict[str, Any]]:
 
     for source in sources:
         logger.info(f"Merging proxies {len(source.proxies)} from '{source._source}'...")
-        num_before_merge = len(merged)
-        proxies = source.proxies
-        if not proxies:
+        if not source.proxies:
             logger.info(f"Empty proxies in source {source._source}, skipping...")
             continue
 
-        for proxy in proxies:
-            format_name(proxy)
+        for proxy in source.proxies:
+            unique_name(proxy)
             key = (
                 (proxy["server"], proxy["port"], proxy["type"], proxy["password"])
                 if proxy.get("password")
@@ -796,19 +797,16 @@ def merge_proxies(sources: list[Source]) -> list[dict[str, Any]]:
             if key not in seen:
                 seen.add(key)
                 if not supports_ray(proxy):
-                    unsupported.append(proxy)
+                    source.unsupported_proxies.append(proxy)
                     continue
-                merged.append(proxy)
+                source.unique_proxies.append(proxy)
         logger.info(
-            f"Merged {len(merged)-num_before_merge} proxies from '{source._source}'"
+            f"There're {len(source.proxies)-len(source.unique_proxies)} duplicate nodes, "
+            f"{len(source.unsupported_proxies)} nodes by V2ray, {len(source.unique_proxies)} "
+            f"normal nodes from '{source._source}'"
         )
 
-    logger.info(
-        f"There are {len(merged)-len(unsupported)} normal nodes, "
-        f"{len(unsupported)} unsupported nodes by V2Ray "
-        f"for a total of {len(merged)+len(unsupported)} nodes."
-    )
-    return merged
+    statistics_sources(sources)
 
 
 def merge_adblock(adblock_name: str) -> dict[str, str]:
@@ -881,7 +879,10 @@ def merge_adblock(adblock_name: str) -> dict[str, str]:
     return rules
 
 
-def fetch_sources(sources: list[Source], threads: int = 10) -> list[Source]:
+def fetch_sources(
+    sources: list[Source],
+    threads: int = 10,
+) -> list[Source]:
     logger.info("Fetching...")
 
     with ThreadPoolExecutor(max_workers=threads) as executor:
@@ -900,6 +901,7 @@ def fetch_sources(sources: list[Source], threads: int = 10) -> list[Source]:
                     f"Fetching '{s._source.url}' failed with exception: {e}",
                     backtrace=True,
                 )
+    unique_sources(sources)
     return sources
 
 
@@ -923,19 +925,19 @@ def get_region_from_ip(ip):
     return None
 
 
-def statistics_sources(sources: list[Source], merged: list[dict[str, Any]]):
-    logger.info("Writing statistics...")
+def statistics_sources(sources: list[Source]):
     out = "Serial number, link, number of nodes\n"
+    unique_total = 0
+    unsupported_total = 0
+    all = 0
     for i, s in enumerate(sources):
-        out += f"{i},{s._source.url},"
-        try:
-            out += f"{len(s.proxies)}"
-        except Exception:
-            out += "0"
-        out += "\n"
-    out += f"\nTotal,,{len(merged)}\n"
-    with open("list_result.csv", "w") as f:
-        f.write(out)
+        out += f"{i},{s._source.url},{len(s.unique_proxies)}/{len(s.unsupported_proxies)}/{len(s.proxies)}\n"
+        unique_total += len(s.unique_proxies)
+        unsupported_total += len(s.unsupported_proxies)
+        all += len(s.proxies)
+    out += f"\nTotal,,{unique_total}/{unsupported_total}/{all}\n"
+
+    logger.info(f"Writing out statistics of sources fetched:\n{out}")
 
 
 def write_rules_fragments(config, rules: dict):
@@ -956,17 +958,34 @@ def write_rules_fragments(config, rules: dict):
                 yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
+def check_nodes_in_batches(nodes: list[dict[str, Any]], batch_size=500):
+    all_alive_nodes = []
+    for i in range(0, len(nodes), batch_size):
+        batch_nodes = nodes[i : i + batch_size]
+        logger.info(
+            f"Processing batch nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+        )
+        alives = check_nodes_on_mihomo(batch_nodes)
+        logger.info(
+            f"Processed batch and result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+        )
+        all_alive_nodes.extend(alives)
+        # Sleep for a second between batches to avoid overwhelming the server
+        time.sleep(1)
+
+    return all_alive_nodes
+
+
 def main():
     sources = fetch_sources(
         [Source(_) for _ in settings.sources],
         settings.source_fetch_threads,
     )
-    merged = merge_proxies(sources)
-    statistics_sources(sources, merged)
 
-    alive_nodes = check_nodes_on_mihomo(merged)
-    if len(alive_nodes)==0:
-        raise Exception("No alive nodes found. Please replace your proxy fetching sources")
+    logger.info("Checking nodes if alive...")
+    all_nodes = [n for s in sources for n in s.unique_proxies]
+    alive_nodes = check_nodes_in_batches(all_nodes, batch_size=500)
+    logger.info(f"Found {len(alive_nodes)} alive nodes from {len(all_nodes)} nodes.")
 
     logger.info("Classifying nodes by region...")
     ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
