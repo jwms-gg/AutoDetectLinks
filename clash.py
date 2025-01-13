@@ -2131,7 +2131,7 @@ async def test_group_proxies(
         results.extend(result)
         # 显示进度
         done = i
-        total = 3
+        total = task_times
         logger.info(
             f"\r进度: {done}/{total} ({done / total * 100:.1f}%)", end="", flush=True
         )

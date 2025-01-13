@@ -781,6 +781,64 @@ def unique_sources(sources: list[Source]):
 
         name_filter.add(data["name"])
 
+    def hash_proxy(data: dict[str, Any]) -> str:
+        type = data["type"]
+        path = ""
+        if type == "vmess":
+            net: str = data.get("network", "")
+            path = net + ":"
+            if not net:
+                pass
+            elif net == "ws":
+                opts: dict[str, Any] = data.get("ws-opts", {})
+                path += opts.get("headers", {}).get("Host", "")
+                path += "/" + opts.get("path", "")
+            elif net == "h2":
+                opts: dict[str, Any] = data.get("h2-opts", {})
+                path += ",".join(opts.get("host", []))
+                path += "/" + opts.get("path", "")
+            elif net == "grpc":
+                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+        elif type == "ss":
+            opts: dict[str, Any] = data.get("plugin-opts", {})
+            path = opts.get("host", "")
+            path += "/" + opts.get("path", "")
+        elif type == "ssr":
+            path = data.get("obfs-param", "")
+        elif type == "trojan":
+            path = data.get("sni", "") + ":"
+            net: str = data.get("network", "")
+            if not net:
+                pass
+            elif net == "ws":
+                opts: dict[str, Any] = data.get("ws-opts", {})
+                path += opts.get("headers", {}).get("Host", "")
+                path += "/" + opts.get("path", "")
+            elif net == "grpc":
+                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+        elif type == "vless":
+            path = data.get("sni", "") + ":"
+            net: str = data.get("network", "")
+            if not net:
+                pass
+            elif net == "ws":
+                opts: dict[str, Any] = data.get("ws-opts", {})
+                path += opts.get("headers", {}).get("Host", "")
+                path += "/" + opts.get("path", "")
+            elif net == "grpc":
+                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+        elif type == "hysteria2":
+            path = data.get("sni", "") + ":"
+            path += data.get("obfs-password", "") + ":"
+        path += (
+            "@"
+            + ",".join(data.get("alpn", []))
+            + "@"
+            + data.get("password", "")
+            + data.get("uuid", "")
+        )
+        return hash(f"{type}:{data['server']}:{data['port']}:{path}")
+
     for source in sources:
         logger.info(f"Merging proxies {len(source.proxies)} from '{source._source}'...")
         if not source.proxies:
@@ -789,20 +847,17 @@ def unique_sources(sources: list[Source]):
 
         for proxy in source.proxies:
             unique_name(proxy)
-            key = (
-                (proxy["server"], proxy["port"], proxy["type"], proxy["password"])
-                if proxy.get("password")
-                else (proxy["server"], proxy["port"], proxy["type"])
-            )
-            if key not in seen:
-                seen.add(key)
+            unique_hash = hash_proxy(proxy)
+            if unique_hash not in seen:
+                seen.add(unique_hash)
                 if not supports_ray(proxy):
                     source.unsupported_proxies.append(proxy)
                     continue
                 source.unique_proxies.append(proxy)
+
         logger.info(
             f"There're {len(source.proxies)-len(source.unique_proxies)} duplicate nodes, "
-            f"{len(source.unsupported_proxies)} nodes by V2ray, {len(source.unique_proxies)} "
+            f"{len(source.unsupported_proxies)} unsupported nodes by V2ray, {len(source.unique_proxies)} "
             f"normal nodes from '{source._source}'"
         )
 
@@ -926,7 +981,7 @@ def get_region_from_ip(ip):
 
 
 def statistics_sources(sources: list[Source]):
-    out = "Serial number, link, number of nodes\n"
+    out = "index, link, normal/unsupported/fetched\n"
     unique_total = 0
     unsupported_total = 0
     all = 0
@@ -941,7 +996,7 @@ def statistics_sources(sources: list[Source]):
 
 
 def write_rules_fragments(config, rules: dict):
-    logger.info("Writing out rules fragments ...")
+    logger.info("Writing out filtered rules by policy")
 
     if config:
         snippets: dict[str, list[str]] = {}

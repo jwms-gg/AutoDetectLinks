@@ -43,24 +43,6 @@ proxies:
   server: 80.240.112.167
   sni: ample-cockatoo.boa152.lol
   type: trojan
-- alpn:
-  - http/1.1
-  name: (S104)🇩🇪t.me/PrivateVPNs
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.76.183.179
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: (S103)🇩🇪t.me/PrivateVPNs
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.158.80.70
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 🇩🇪DE-165.22.74.230-0406
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -73,3 +55,38 @@ proxies:
   server: 46.183.184.60
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: DE_speednode_0016
+  network: ws
+  port: 55899
+  server: 5.39.252.204
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 791a9aad-1a8b-435d-862e-627f41025d73
+- http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: DE_speednode_0017
+  network: http
+  port: 80
+  server: 2na9noed62ec.dopraxrocks.com
+  servername: speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
+- alpn:
+  - http/1.1
+  name: (S113)🇩🇪t.me/PrivateVPNs
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.72.188.43
+  sni: trojan.burgerip.co.uk
+  type: trojan
