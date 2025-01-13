@@ -1796,8 +1796,6 @@ class ClashProcess:
             if self.clash_process.poll() is None:
                 self.clash_process.kill()
 
-        logger.info("Clash process ended gracefully.")
-
     def start(self):
         logger.info("===================启动clash并初始化配置======================")
         prepare_mihomo()
@@ -2141,11 +2139,10 @@ async def test_group_proxies(
 
 async def nodes_clean(config: ClashConfig) -> None:
     # 更新全局配置
-    global MAX_CONCURRENT_TESTS, TIMEOUT, CLASH_API_SECRET, LIMIT
+    global MAX_CONCURRENT_TESTS, CLASH_API_SECRET, LIMIT
     logger.info("===================节点批量检测基本信息======================")
     logger.info(f"API: {config.get_api_url()}")
     logger.info(f"并发数量: {MAX_CONCURRENT_TESTS}")
-    logger.info(f"超时时间: {TIMEOUT}秒")
     logger.info(f"保留节点：最多保留{LIMIT}个延迟最小的有效节点")
 
     try:
@@ -2181,7 +2178,7 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             return
 
         try:
-            all_test_results: list[ProxyTestResult] = []  # 收集所有测试结果
+            all_test_results: list[ProxyTestResult] = []
 
             # 测试策略组，只需要测试其中一个即可
             group_name = groups_to_test[0]

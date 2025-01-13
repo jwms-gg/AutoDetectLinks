@@ -1028,7 +1028,8 @@ def check_nodes_in_batches(nodes: list[dict[str, Any]], batch_size=500):
         # Sleep for a second between batches to avoid overwhelming the server
         time.sleep(1)
 
-    return all_alive_nodes
+    logger.info(f"Test final alive nodes {len(all_alive_nodes)}")
+    return check_nodes_on_mihomo(all_alive_nodes)
 
 
 def main():

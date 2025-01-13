@@ -1,21 +1,41 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: Canada Akamai
-  network: ws
-  port: '443'
-  server: denc36.xtooltech.cfd
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0486
   password: JIhN6rBKkaEboLNXVSv5rq
   port: '80'
   server: ca225.vpnbook.com
+  type: ss
+- name: 🇨🇦_加拿大_1
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: uxf.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: uxf.vs2024.us.kg
+    path: /?ed=2560
+- name: 🇨🇦_加拿大_2
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: uxf.vs2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: uxf.vs2024.us.kg
+    path: /uxf.vs2024.us.kg
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-185.213.20.227-6310
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 185.213.20.227
   type: ss
