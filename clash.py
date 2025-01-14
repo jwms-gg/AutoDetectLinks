@@ -23,24 +23,18 @@ from asyncio import Semaphore
 import ssl
 
 from utils import b64decodes_safe
-
+from config import settings
 from loguru import logger
 from requests_html import HTMLSession
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# TEST_URL = "http://www.gstatic.com/generate_204"
-# TEST_URL = "http://www.pinterest.com"
-# TEST_URL = "http://connect.rom.miui.com/generate_204"
-TEST_URL = "http://www.google-analytics.com/generate_204"
 CLASH_API_PORTS = 9090
 CLASH_API_HOST = "127.0.0.1"
 CLASH_API_SECRET = ""
 TIMEOUT = 10
 MAX_CONCURRENT_TESTS = 100
 LIMIT = 10000  # 最多保留LIMIT个节点
-CONFIG_FILE = "clash_config.yaml"
-INPUT = "input"  # 从文件中加载代理节点，支持yaml/yml、txt(每条代理链接占一行)
 # BAN = ["中国", "China", "CN", "电信", "移动", "联通"]
 BAN = []
 headers = {
@@ -66,11 +60,17 @@ clash_config_template = {
     "dns": {
         "enable": True,
         "ipv6": False,
-        "default-nameserver": ["223.5.5.5", "119.29.29.29"],
+        "default-nameserver": [
+            "223.5.5.5",
+            "119.29.29.29",
+        ],
         "enhanced-mode": "fake-ip",
         "fake-ip-range": "198.18.0.1/16",
         "use-hosts": True,
-        "nameserver": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"],
+        "nameserver": [
+            "https://doh.pub/dns-query",
+            "https://dns.alidns.com/dns-query",
+        ],
         "fallback": [
             "https://doh.dns.sb/dns-query",
             "https://dns.cloudflare.com/dns-query",
@@ -91,8 +91,7 @@ clash_config_template = {
             "type": "url-test",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            # "url": "http://www.gstatic.com/generate_204",
-            "url": "http://www.pinterest.com",
+            "url": f"{settings.delay_url_test}",
             "interval": 300,
             "tolerance": 50,
         },
@@ -101,7 +100,7 @@ clash_config_template = {
             "type": "fallback",
             "exclude-filter": "(?i)中国|China|CN|电信|移动|联通",
             "proxies": [],
-            "url": "http://www.gstatic.com/generate_204",
+            "url": f"{settings.delay_url_test}",
             "interval": 300,
         },
         {"name": "手动选择", "type": "select", "proxies": []},
@@ -2004,7 +2003,10 @@ class ClashAPI:
                 response = await self.client.get(
                     f"{self.base_url}/proxies/{proxy_name}/delay",
                     headers=self.headers,
-                    params={"url": TEST_URL, "timeout": str(TIMEOUT * 1000)},
+                    params={
+                        "url": settings.delay_url_test,
+                        "timeout": str(TIMEOUT * 1000),
+                    },
                 )
                 delay_result: dict = response.json()
                 if delay_result.get("message", "") == "Timeout":
@@ -2041,7 +2043,7 @@ class ClashAPI:
                     f"{self.base_url}/group/{group_name}/delay",
                     headers=self.headers,
                     params={
-                        "url": TEST_URL,
+                        "url": settings.delay_url_test,
                         "timeout": str(TIMEOUT * 1000 * timeout_times),
                     },
                     timeout=None,
