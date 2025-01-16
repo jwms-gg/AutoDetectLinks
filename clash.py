@@ -1793,7 +1793,7 @@ class ClashProcess:
                 self.clash_process.kill()
 
     def start(self):
-        logger.info("===================启动clash并初始化配置======================")
+        logger.info("===================启动clash并初始化配置===================")
         prepare_mihomo()
         system_platform = platform.system().lower()
 
@@ -2066,7 +2066,7 @@ def print_test_summary(group_name: str, results: list[ProxyDelayResult], total: 
     valid = len(valid_results)
     invalid = total - len(valid_results)
 
-    logger.info(f"\n策略组 '{group_name}' 测试结果:")
+    logger.info(f"策略组 '{group_name}' 测试结果:")
     logger.info(f"总节点数: {total}")
     logger.info(f"可用节点数: {valid}")
     logger.info(f"失效节点数: {invalid}")
@@ -2075,7 +2075,7 @@ def print_test_summary(group_name: str, results: list[ProxyDelayResult], total: 
         avg_delay = sum(r.delay for r in valid_results) / valid
         logger.info(f"平均延迟: {avg_delay:.2f}ms")
 
-        logger.info("\n节点延迟统计:")
+        logger.info("节点延迟统计:")
         sorted_results = sorted(valid_results, key=lambda x: x.delay)
         for i, result in enumerate(sorted_results[: settings.limit], 1):
             logger.info(f"{i}. {result.name}: {result.delay:.2f}ms")
@@ -2126,7 +2126,7 @@ async def test_group_proxies(
 
 async def nodes_clean(config: ClashConfig) -> None:
     # 更新全局配置
-    logger.info("===================节点批量检测基本信息======================")
+    logger.info("===================节点批量检测基本信息===================")
     logger.info(f"API: {config.get_api_url()}")
     logger.info(f"URL_TEST: {settings.delay_url_test}")
     logger.info(f"并发数量: {settings.max_concurrent_tests}")
@@ -2155,7 +2155,7 @@ async def nodes_clean(config: ClashConfig) -> None:
 
 
 async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
-    logger.info(f"\n将测试以下策略组: {', '.join(groups_to_test)}")
+    logger.info(f"将测试以下策略组: {', '.join(groups_to_test)}")
 
     # 开始测试
     start_time = datetime.now()
@@ -2171,7 +2171,7 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             # 测试策略组，只需要测试其中一个即可
             group_name = groups_to_test[0]
             logger.info(
-                f"\n======================== 开始测试策略组: {group_name} ===================="
+                f"=================== 开始测试策略组: {group_name} ==================="
             )
             proxies = config.get_group_proxies(group_name)
 
@@ -2190,7 +2190,7 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             print_test_summary(group_name, delay_results, len(proxies))
 
             logger.info(
-                "\n===================移除失效节点并按延迟排序======================\n"
+                "===================移除失效节点并按延迟排序===================\n"
             )
             # 一次性移除所有失效节点并更新配置
             config.remove_invalid_proxies(delay_results)
@@ -2214,7 +2214,7 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
 
             # 显示总耗时
             total_time = (datetime.now() - start_time).total_seconds()
-            logger.info(f"\n总耗时: {total_time:.2f} 秒")
+            logger.info(f"总耗时: {total_time:.2f} 秒")
 
         except Exception as e:
             logger.info(f"发生错误: {e}")

@@ -7,8 +7,6 @@ import json
 from typing import Union, Any, Optional
 import requests
 import datetime
-import traceback
-import sys
 import copy
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote, unquote, urlparse
@@ -247,7 +245,7 @@ def isfake(proxy: dict[str, Any]) -> bool:
             ]
         )
     except Exception:
-        logger.info("Check fake node failed", backtrace=True)
+        logger.info("Check fake node failed")
     return False
 
 
@@ -309,9 +307,8 @@ def supports_meta(proxy: dict[str, Any], no_meta=False) -> bool:
             and not proxy["plugin-opts"]["mode"]
         ):
             return False
-    except Exception:
-        logger.info("无法验证的 Clash 节点！", file=sys.stderr)
-        traceback.print_exc(file=sys.stderr)
+    except Exception as e:
+        logger.exception(f"Cannot verify proxy with error: {e}")
         return False
     return True
 
@@ -996,8 +993,6 @@ def statistics_sources(sources: list[Source]):
 
 
 def write_rules_fragments(config, rules: dict):
-    logger.info("Writing out filtered rules by policy")
-
     if config:
         snippets: dict[str, list[str]] = {}
         name_map = config["name-map"]
@@ -1027,6 +1022,7 @@ def check_nodes_in_batches(nodes: list[dict[str, Any]]):
             )
             all_alive_nodes.extend(alives)
             time.sleep(1)
+        time.sleep(10)
     else:
         all_alive_nodes = nodes[:]
 
@@ -1094,17 +1090,17 @@ def main():
             rtype, rargument, rpolicy, rresolve = tmp
             rpolicy += "," + rresolve
         else:
-            logger.info("规则 '" + config_rule + "' 无法被解析！")
+            logger.info(f"规则 {config_rule} 无法被解析！")
             continue
 
         for kwd in keywords:
             if kwd in rargument and kwd != rargument:
-                logger.info(rargument, "已被 KEYWORD", kwd, "命中")
+                logger.info(f"{rargument} 已被 KEYWORD {kwd} 命中")
                 break
         else:
             for sfx in suffixes:
                 if ("." + rargument).endswith("." + sfx) and sfx != rargument:
-                    logger.info(rargument, "已被 SUFFIX", sfx, "命中")
+                    logger.info(f"{rargument} 已被 SUFFIX {sfx} 命中")
                     break
             else:
                 k = rtype + "," + rargument

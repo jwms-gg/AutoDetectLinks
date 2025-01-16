@@ -1,16 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 🟠_🇫🇷_📶_github.com/Ruk1ng001_39...
-  port: 22787
-  ports: 30000-40000
-  server: 195.154.184.5
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 11 Mbps
 - cipher: aes-256-cfb
   name: 🇫🇷FR-51.15.27.48-0393
   password: f8f7aCzcPKbsF8p3
@@ -53,12 +41,6 @@ proxies:
     headers:
       Host: f.khilei.com
     path: /linkvws
-- cipher: aes-256-cfb
-  name: 🇫🇷FR-195.154.169.198-9760
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 195.154.169.198
-  type: ss
 - http-opts:
     headers:
       Host:
@@ -118,12 +100,6 @@ proxies:
   port: 8080
   server: 45.158.171.132
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 'SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-Tik... #3'
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.158.171.141
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -143,7 +119,7 @@ proxies:
       Host: o.metuji.com
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  name: 'SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-Tik... #4'
+  name: 'SS-法国>荷兰-NF解锁荷兰自制剧-ChatGPT-Tik... #3'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.158.171.146
@@ -161,11 +137,27 @@ proxies:
     headers:
       Host: beyonddbc.sbs
     path: /linkws
-- cipher: aes-256-cfb
-  name: SSR-法国-NF解锁法国自制剧-ChatGPT-TikTo...
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 195.154.169.198
-  type: ssr
+- name: 🇫🇷FR-13.39.244.105-6065
+  password: JFchk1TxFG
+  port: 1935
+  server: 13.39.244.105
+  sni: x1fr-amazon.devefun.net
+  type: trojan
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 🇫🇷 FR-hysteria | 7-1
+  port: 22787
+  ports: 30000-40000
+  server: 195.154.184.5
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  up: 11 Mbps
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-45.158.171.136-0289
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: '8080'
+  server: beesyar.org
+  type: ss
