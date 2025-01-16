@@ -1013,20 +1013,22 @@ def write_rules_fragments(config, rules: dict):
                 yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
-def check_nodes_in_batches(nodes: list[dict[str, Any]], batch_size=500):
+def check_nodes_in_batches(nodes: list[dict[str, Any]]):
     all_alive_nodes = []
-    for i in range(0, len(nodes), batch_size):
-        batch_nodes = nodes[i : i + batch_size]
-        logger.info(
-            f"Processing batch nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
-        )
-        alives = check_nodes_on_mihomo(batch_nodes)
-        logger.info(
-            f"Processed batch and result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
-        )
-        all_alive_nodes.extend(alives)
-        # Sleep for a second between batches to avoid overwhelming the server
-        time.sleep(1)
+    if len(nodes) > settings.delay_batch:
+        for i in range(0, len(nodes), settings.delay_batch):
+            batch_nodes = nodes[i : i + settings.delay_batch]
+            logger.info(
+                f"Processing batch nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+            )
+            alives = check_nodes_on_mihomo(batch_nodes)
+            logger.info(
+                f"Processed batch and result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+            )
+            all_alive_nodes.extend(alives)
+            time.sleep(1)
+    else:
+        all_alive_nodes = nodes[:]
 
     logger.info(f"Test final alive nodes {len(all_alive_nodes)}")
     return check_nodes_on_mihomo(all_alive_nodes)
@@ -1040,7 +1042,7 @@ def main():
 
     logger.info("Checking nodes if alive...")
     all_nodes = [n for s in sources for n in s.unique_proxies]
-    alive_nodes = check_nodes_in_batches(all_nodes, batch_size=500)
+    alive_nodes = check_nodes_in_batches(all_nodes)
     logger.info(f"Found {len(alive_nodes)} alive nodes from {len(all_nodes)} nodes.")
 
     logger.info("Classifying nodes by region...")

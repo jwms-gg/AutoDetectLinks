@@ -191,6 +191,20 @@ default:
       method: telegram
   request_timeout: 10
   delay_url_test: http://cp.cloudflare.com
+  limit: 1100
+  delay_batch: 500
+  max_concurrent_tests: 100
+  clash_api_secret: ''
+  clash_api_host: 127.0.0.1
+  clash_api_ports_max: 9999
+  delay_timeout_unit: 10
+  ban: []
+    # - 中国
+    # - China
+    # - CN
+    # - 电信
+    # - 移动
+    # - 联通
   default_uuid: &default_uuid 88888888-8888-8888-8888-888888888888
   banned_words:
     - 5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8gb25ndGFpd2Fu
