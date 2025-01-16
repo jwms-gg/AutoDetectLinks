@@ -2144,6 +2144,7 @@ async def nodes_clean(config: ClashConfig) -> None:
     global MAX_CONCURRENT_TESTS, CLASH_API_SECRET, LIMIT
     logger.info("===================节点批量检测基本信息======================")
     logger.info(f"API: {config.get_api_url()}")
+    logger.info(f"URL_TEST: {settings.delay_url_test}")
     logger.info(f"并发数量: {MAX_CONCURRENT_TESTS}")
     logger.info(f"保留节点：最多保留{LIMIT}个延迟最小的有效节点")
 

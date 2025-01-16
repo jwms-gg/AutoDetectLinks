@@ -48,22 +48,6 @@ proxies:
   port: 443
   server: nextstepcareer.online
   type: trojan
-- http-opts:
-    headers:
-      Host:
-      - speedtest.net
-    method: GET
-    path:
-    - /
-  name: DE_speednode_0017
-  network: http
-  port: 80
-  server: 2na9noed62ec.dopraxrocks.com
-  servername: speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0
 - name: DE_speednode_0006
   password: Oe5CMj3tiO
   port: 1935
@@ -161,3 +145,21 @@ proxies:
     headers:
       Host: fixedfloati.cfd
     path: /linkwsd
+- alpn:
+  - http/1.1
+  name: (S103)🇩🇪t.me/PrivateVPNs
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.111.81
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: (S104)🇩🇪t.me/PrivateVPNs
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.68.142
+  sni: trojan.burgerip.co.uk
+  type: trojan
