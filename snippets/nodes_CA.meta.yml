@@ -1,33 +1,44 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>加拿大-NF解锁加拿大自制剧-ChatGP...
+  network: ws
+  port: 8443
+  server: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 86455bfc-dd02-4a3b-9f03-7668f39375d6
+  ws-opts:
+    headers:
+      HOST: ovhwuxian.pai50288.uk
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0486
+  name: 🇨🇦CA-79.127.233.170-0364
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0435
   password: JIhN6rBKkaEboLNXVSv5rq
   port: '80'
   server: ca225.vpnbook.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-185.213.20.227-6310
-  password: f8f7aCzcPKbsF8p3
-  port: '990'
-  server: 185.213.20.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-加拿大-NF解锁自制剧-64.74.163.130:9...
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: Canada Akamai
+- name: 🇨🇦_加拿大
   network: ws
-  port: '443'
-  server: denc36.xtooltech.cfd
-  servername: ''
+  port: 443
+  server: 40.69.106.103
+  servername: mmghgy5.azurewebsites.net
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
   ws-opts:
     headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws
+      host: mmghgy5.azurewebsites.net
+    path: /

@@ -89,7 +89,7 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
         if type == "clash":
             config = yaml.full_load(content.replace("!<str>", "!!str"))
             for p in config["proxies"]:
-                if "password" in p:
+                if "password" in p and not isinstance(p["password"], str):
                     p["password"] = str(p["password"])
                 proxies.append(p)
         elif type == "v2ray":
@@ -105,8 +105,10 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
             for v in v2ray_proxies:
                 if "://" not in v:
                     continue
+
                 if " " in v:
                     v = v.split(" ")[0]
+
                 try:
                     proxies.append(v2ray2clash(v))
                 except Exception as e:
@@ -935,8 +937,6 @@ def fetch_sources(
     sources: list[Source],
     threads: int = 10,
 ) -> list[Source]:
-    logger.info("Fetching...")
-
     with ThreadPoolExecutor(max_workers=threads) as executor:
         f2s = {executor.submit(s.parse): s for s in sources}
         for f in as_completed(f2s):
@@ -1031,14 +1031,19 @@ def check_nodes_in_batches(nodes: list[dict[str, Any]]):
 
 
 def main():
+    logger.info("Fetching proxies sources...")
     sources = fetch_sources(
         [Source(_) for _ in settings.sources],
         settings.source_fetch_threads,
     )
 
-    logger.info("Checking nodes if alive...")
+    logger.info("Checking alive nodes in batches...")
     all_nodes = [n for s in sources for n in s.unique_proxies]
     alive_nodes = check_nodes_in_batches(all_nodes)
+    if not alive_nodes:
+        logger.info("No alive nodes found, exit. And try again later.")
+        return
+
     logger.info(f"Found {len(alive_nodes)} alive nodes from {len(all_nodes)} nodes.")
 
     logger.info("Classifying nodes by region...")

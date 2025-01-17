@@ -32,7 +32,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 headers = {
     "Accept-Charset": "utf-8",
     "Accept": "text/html,application/x-yaml,*/*",
-    "User-Agent": "Clash Verge/1.7.7",
+    "User-Agent": "clash-verge/v2.0.3",
 }
 
 # Clash 配置文件的基础结构
