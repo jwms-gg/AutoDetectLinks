@@ -1041,8 +1041,7 @@ def main():
     all_nodes = [n for s in sources for n in s.unique_proxies]
     alive_nodes = check_nodes_in_batches(all_nodes)
     if not alive_nodes:
-        logger.info("No alive nodes found, exit. And try again later.")
-        return
+        raise RuntimeError("No alive nodes found, exit. And try again later.")
 
     logger.info(f"Found {len(alive_nodes)} alive nodes from {len(all_nodes)} nodes.")
 

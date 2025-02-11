@@ -1,42 +1,9 @@
 proxies:
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 🇷🇺 RU-hysteria | 7-1
-  obfs: dongtaiwang.com
-  port: 15424
-  ports: 30000-40000
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- name: 🇷🇺 RU-Hysteria2 | 0-0
-  password: dongtaiwang.com
-  port: 50717
-  server: 46.17.41.189
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺RU-45.151.62.54-0420
   password: 0zyDRZ1XmNXaaCAN7KEA8a
   port: '28825'
   server: 45.151.62.54
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺 俄罗斯 V2CROSS.COM
-  password: a0605527-28e4-449c-80ee-5642cc16a8af
-  port: '81'
-  server: 176.124.202.137
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_3 #3'
-  password: fG2artUmHfNT2cX7
-  port: 9018
-  server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
   name: 🇷🇺俄罗斯1 | ⬇️ 13.1MB/s
@@ -46,62 +13,68 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 🇷🇺_RU_俄罗斯_2
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
   name: 🇷🇺_RU_俄罗斯_3
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 217.30.10.18
   type: ss
   udp: true
-- name: 🇷🇺_俄罗斯_3
+- cipher: aes-256-cfb
+  name: '🇷🇺_RU_俄罗斯_4 #1'
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 217.30.10.18
+  type: ss
+- name: RU_speednode_0051
   network: ws
-  port: 2087
-  server: 92.243.75.49
-  servername: z0.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: z0.bgm2024.us.kg
-    path: /?ed=2560
-- name: 🇷🇺_俄罗斯_7
-  network: tcp
-  port: 38142
-  server: fi.zytro.su
-  skip-cert-verify: true
+  port: 80
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 26721978-890e-4946-bafa-cb03c9ff7f4a
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 217.30.10.18
+  type: ss
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_2 #1'
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
+  name: '🇷🇺_RU_俄罗斯_2 #6'
+  password: XPtzA9sCug3SPR4c
+  port: 9025
   server: 217.30.10.18
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🟠_🇷🇺_💻_github.com/Ruk1ng001_35...
-  network: ws
-  port: 20315
-  server: 195.58.49.42
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '🇷🇺_RU_俄罗斯_2 #2'
+  password: QWDDvVE9npNurQfA
+  port: 9026
+  server: 217.30.10.18
+  type: ss
   udp: true
-  uuid: a828394a-c871-4916-bb59-4ba5da177803
+- cipher: aes-256-cfb
+  name: '🇷🇺_RU_俄罗斯 #1'
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 🇷🇺_RU_俄罗斯_2
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
   name: '🇷🇺_RU_俄罗斯_3 #1'
@@ -110,15 +83,66 @@ proxies:
   server: 89.221.224.166
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_2 #3'
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
-  server: 217.30.10.18
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 🇷🇺_RU_俄罗斯_4
+  password: NjBlZDlk
+  port: 8388
+  server: is3.opensocks.site
   type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_4 #1'
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 217.30.10.18
+  udp: true
+- name: '🇷🇺 俄罗斯 V2CROSS.COM #1'
+  password: '!!str 3767107462583558144'
+  port: 443
+  server: modest-bulldog.goat627.mom
+  skip-cert-verify: false
+  sni: modest-bulldog.goat627.mom
+  type: trojan
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: '🇷🇺 RU-hysteria | 7-1 #1'
+  obfs: dongtaiwang.com
+  port: 63717
+  ports: 40000-50000
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- name: '🇷🇺 RU-Hysteria2 | 0-0 #1'
+  password: dongtaiwang.com
+  port: 51224
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: '🇷🇺_俄罗斯_1 #2'
+  network: ws
+  port: 2087
+  server: 92.243.75.49
+  servername: zv.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zv.bgm2024.us.kg
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 俄罗斯(yudou66.com 玉豆免费节点)
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.136
   type: ss
+  udp: true
+- name: 🇷🇺 俄罗斯 莫斯科
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 80.240.112.167
+  skip-cert-verify: false
+  sni: accepted-jennet.adder289.quest
+  type: trojan

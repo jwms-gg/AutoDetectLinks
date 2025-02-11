@@ -26,6 +26,8 @@ default:
         - ssr
     - url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
       type: clash
+    # - url: https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
+    #   type: v2ray
     - url: https://raw.githubusercontent.com/mksshare/mksshare.github.io/main/README.md
       type: v2ray
       redirect: https
@@ -50,12 +52,24 @@ default:
       redirect: https
       ignore:
         - vmess
-    # TG Channels
+    - url: https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all
+      type: v2ray
+    - url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+      type: v2ray
+      method: base64
+    - url: https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt
+      type: v2ray
+    - url: https://raw.githubusercontent.com/Space-00/V2ray-configs/main/config.txt
+      type: v2ray
     - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hysteria2
       type: v2ray
     - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/ss
       type: v2ray
     - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/trojan
+      type: v2ray
+    # - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vless
+    #   type: v2ray
+    - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vmess
       type: v2ray
     - url: https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/vless
       type: v2ray
@@ -218,7 +232,7 @@ default:
       method: telegram
   request_timeout: 10
   delay_url_test: http://www.gstatic.com/generate_204
-  limit: 1100
+  limit: 1500
   delay_batch: 500
   max_concurrent_tests: 100
   clash_api_secret: ''

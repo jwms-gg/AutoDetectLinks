@@ -6,22 +6,43 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇭🇰HK-112.213.102.228-6068
-  password: qwerREWQ@@
-  port: '4231'
-  server: 112.213.102.228
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-141.98.234.93-5598
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: '20012'
   server: 141.98.234.93
   type: ss
-- name: 🇭🇰 香港 特别行政区
-  password: Bw5Mz7QkVp
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>香港-NF解锁香港地区非自制剧-ChatG...
+  network: ws
   port: 443
-  server: 154.90.54.113
+  server: hkwapcdn.899994.xyz
+  servername: hkwapcdn.899994.xyz
   skip-cert-verify: true
-  sni: z-v2-078110.kailib.com
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    headers:
+      HOST: hkwapcdn.899994.xyz
+    path: /index
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>香港-NF解锁香港地区非自制剧-ChatG... #1'
+  network: ws
+  port: 443
+  server: hk1.899994.xyz
+  servername: hk1.899994.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
+  ws-opts:
+    headers:
+      HOST: hk1.899994.xyz
+    path: /index
