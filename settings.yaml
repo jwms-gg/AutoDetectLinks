@@ -26,8 +26,9 @@ default:
         - ssr
     - url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
       type: clash
-    # - url: https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
-    #   type: v2ray
+    - url: https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
+      type: v2ray
+      max: 199
     - url: https://raw.githubusercontent.com/mksshare/mksshare.github.io/main/README.md
       type: v2ray
       redirect: https
@@ -67,8 +68,9 @@ default:
       type: v2ray
     - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/trojan
       type: v2ray
-    # - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vless
-    #   type: v2ray
+    - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vless
+      type: v2ray
+      max: 199
     - url: https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vmess
       type: v2ray
     - url: https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/vless
@@ -81,10 +83,6 @@ default:
     - url: https://raw.githubusercontent.com/Flik6/getNode/main/v2ray.txt
       type: v2ray
       method: base64
-    - url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt
-      type: v2ray
-      method: base64
-      max: 199
     - url: https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/trojan
       type: v2ray
       method: base64
@@ -93,7 +91,11 @@ default:
       type: v2ray
       method: base64
       max: 199
-    - url: https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_trojan.txt
+    - url: https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
+      type: clash
+    - url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml
+      type: clash
+      max: 1000
     # # Update and hidden
     # - url: https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_META_IRAN-Direct.yml
     #   type: clash
@@ -233,7 +235,7 @@ default:
   request_timeout: 10
   delay_url_test: http://www.gstatic.com/generate_204
   limit: 1500
-  delay_batch: 500
+  delay_batch: 699
   max_concurrent_tests: 100
   clash_api_secret: ''
   clash_api_host: 127.0.0.1
@@ -341,3 +343,111 @@ default:
     # - "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt"
     - https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt
     # "- https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt"
+  name_map:
+    ⛔ 广告拦截: adblock
+    🚀 选择代理: proxy
+    🌐 突破锁区: region
+    DIRECT: direct
+  categories:
+    redir:
+      - ->
+      - 中转
+      - OVERALL
+    JP:
+      - JP
+      - Japan
+      - 日
+      - 🇯🇵
+    US:
+      - US
+      - United States
+      - 美
+      - 🇺🇸
+    CN:
+      - CN
+      - China
+      - 中国
+      - 上海
+      - 浙江
+      - 广东
+      - 深圳
+      - 🇨🇳
+    HK:
+      - HK
+      - Hong Kong
+      - 港
+      - 🇭🇰
+    TW:
+      - TW
+      - Taiwan
+      - 台
+      - 🇹🇼
+    CA:
+      - CA
+      - Canada
+      - 加拿大
+      - 🇨🇦
+    FR:
+      - FR
+      - French
+      - 法
+      - 🇫🇷
+    SG:
+      - SG
+      - Singapore
+      - 新加坡
+      - 狮城
+      - 🇸🇬
+    GB:
+      - GB
+      - UK
+      - United Kindom
+      - Britain
+      - 英
+      - 🇬🇧
+    KR:
+      - KR
+      - Korea
+      - 韩
+      - 🇰🇷
+    RU:
+      - RU
+      - Russia
+      - 俄
+      - 🇷🇺
+    DE:
+      - DE
+      - Germany
+      - 德
+      - 🇩🇪
+    SE:
+      - SE
+      - Sweden
+      - 瑞典
+      - 🇸🇪
+    CH:
+      - CH
+      - Switzerland
+      - 瑞士
+      - 🇨🇭
+    EE:
+      - EE
+      - Estonia
+      - 爱沙尼亚
+      - 🇪🇪
+  categories_disp:
+    JP: 🇯🇵 日本
+    US: 🇺🇸 美国
+    HK: 🇭🇰 香港
+    TW: ❔ 台湾
+    SG: 🇸🇬 新加坡
+    CA: 🇨🇦 加拿大
+    FR: 🇫🇷 法国
+    GB: 🇬🇧 英国
+    KR: 🇰🇷 韩国
+    DE: 🇩🇪 德国
+    CN: 🇨🇳 中国
+    RU: 🇷🇺 俄罗斯
+    SE: 🇸🇪 瑞典
+    CH: 🇨🇭 瑞士
+    EE: 🇪🇪 爱沙尼亚

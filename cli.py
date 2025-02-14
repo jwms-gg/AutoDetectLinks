@@ -761,7 +761,7 @@ def clash2v2ray(proxy: dict[str, Any]) -> str:
 
 def unique_sources(sources: list[Source]):
     seen = set()
-    name_filter: set[str] = set()
+    name_set: set[str] = set()
 
     def unique_name(data: dict[str, Any], max_len=30) -> None:
         for word in [w for ws in settings.banned_words for w in b64decodes(ws).split()]:
@@ -770,15 +770,19 @@ def unique_sources(sources: list[Source]):
         if len(data["name"]) > max_len:
             data["name"] = data["name"][:max_len] + "..."
 
-        if data["name"] in name_filter:
+        for disp, disp_name in settings.categories_disp.items():
+            if data["name"] == disp_name:
+                data["name"] = disp
+
+        if data["name"] in name_set:
             i = 0
             new_name: str = data["name"]
-            while new_name in name_filter:
+            while new_name in name_set:
                 i += 1
                 new_name = f"{data['name']} #{i}"
             data["name"] = new_name
 
-        name_filter.add(data["name"])
+        name_set.add(data["name"])
 
     def hash_proxy(data: dict[str, Any]) -> str:
         type = data["type"]
@@ -992,20 +996,19 @@ def statistics_sources(sources: list[Source]):
     logger.info(f"Writing out statistics of sources fetched:\n{out}")
 
 
-def write_rules_fragments(config, rules: dict):
-    if config:
-        snippets: dict[str, list[str]] = {}
-        name_map = config["name-map"]
-        for rpolicy in name_map.values():
-            snippets[rpolicy] = []
-        for config_rule, rpolicy in rules.items():
-            if "," in rpolicy:
-                rpolicy = rpolicy.split(",")[0]
-            if rpolicy in name_map:
-                snippets[name_map[rpolicy]].append(config_rule)
-        for name, payload in snippets.items():
-            with open("snippets/" + name + ".yml", "w", encoding="utf-8") as f:
-                yaml.dump({"payload": payload}, f, allow_unicode=True)
+def write_rules_fragments(rules: dict):
+    snippets: dict[str, list[str]] = {}
+    name_map = settings.name_map
+    for rpolicy in name_map.values():
+        snippets[rpolicy] = []
+    for config_rule, rpolicy in rules.items():
+        if "," in rpolicy:
+            rpolicy = rpolicy.split(",")[0]
+        if rpolicy in name_map:
+            snippets[name_map[rpolicy]].append(config_rule)
+    for name, payload in snippets.items():
+        with open("snippets/" + name + ".yml", "w", encoding="utf-8") as f:
+            yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
 def check_nodes_in_batches(nodes: list[dict[str, Any]]):
@@ -1047,9 +1050,7 @@ def main():
 
     logger.info("Classifying nodes by region...")
     ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
-    categories: dict[str, list[str]] = {}
-    _config: dict[str, dict[str, Any]] = read_yaml("snippets/_config.yml")
-    categories = _config["categories"]
+    categories: dict[str, list[str]] = settings.categories
     for ctg in categories:
         ctg_nodes_meta[ctg] = []
     for n in alive_nodes:
@@ -1139,20 +1140,19 @@ def main():
     for group in config["proxy-groups"]:
         if not group["proxies"]:
             group["proxies"] = names_clash_meta
-    if _config:
-        config["proxy-groups"][-1]["proxies"] = []
-        ctg_selects: list[str] = config["proxy-groups"][-1]["proxies"]
-        ctg_disp: dict[str, str] = _config["categories_disp"]
-        for ctg, payload in ctg_nodes_meta.items():
-            if ctg in ctg_disp:
-                disp = ctg_base.copy()
-                disp["name"] = ctg_disp[ctg]
-                if not payload:
-                    disp["proxies"] = ["REJECT"]
-                else:
-                    disp["proxies"] = [_["name"] for _ in payload]
-                config["proxy-groups"].append(disp)
-                ctg_selects.append(disp["name"])
+
+    config["proxy-groups"][-1]["proxies"] = []
+    ctg_selects: list[str] = config["proxy-groups"][-1]["proxies"]
+    for ctg, payload in ctg_nodes_meta.items():
+        if ctg in settings.categories_disp:
+            disp = ctg_base.copy()
+            disp["name"] = settings.categories_disp[ctg]
+            if not payload:
+                disp["proxies"] = ["REJECT"]
+            else:
+                disp["proxies"] = [_["name"] for _ in payload]
+            config["proxy-groups"].append(disp)
+            ctg_selects.append(disp["name"])
     if dns_mode:
         config["dns"]["enhanced-mode"] = dns_mode
     with open("list.meta.yml", "w", encoding="utf-8") as f:
@@ -1165,7 +1165,7 @@ def main():
             )
         )
 
-    write_rules_fragments(_config, rules)
+    write_rules_fragments(rules)
 
 
 if __name__ == "__main__":

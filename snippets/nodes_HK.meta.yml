@@ -1,48 +1,35 @@
 proxies:
-- name: 🇭🇰 香港4|@ripaojiedian
-  password: 43e5eeacbad3032bfe4c25a2f011b6b7
+- name: 🇭🇰[openproxylist.com]
+  network: ws
   port: 443
-  server: 104.251.227.182
+  server: 47.57.190.3
+  servername: clawhk.costs.asia
+  tls: true
+  type: vless
+  uuid: a5c6f225-4cb9-4e58-edea-1e0793b656b7
+  ws-opts:
+    headers:
+      Host: clawhk.costs.asia
+    path: '%2Fbing'
+- name: HK香港(mibei77.com 米贝节点分享) 2
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: integral-malamute.adder289.quest
   skip-cert-verify: true
-  sni: hezijiasuqi.com
+  sni: integral-malamute.adder289.quest
   type: trojan
+  udp: true
+- name: HK香港(mibei77.com 米贝节点分享) 3
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: loving-boa.treefrog761.one
+  skip-cert-verify: true
+  sni: loving-boa.treefrog761.one
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-141.98.234.93-5598
+  name: 🇭🇰HK-141.98.234.93-0497
   password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: '20012'
+  port: 20012
   server: 141.98.234.93
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>香港-NF解锁香港地区非自制剧-ChatG...
-  network: ws
-  port: 443
-  server: hkwapcdn.899994.xyz
-  servername: hkwapcdn.899994.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      HOST: hkwapcdn.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 'VMESS-未知>香港-NF解锁香港地区非自制剧-ChatG... #1'
-  network: ws
-  port: 443
-  server: hk1.899994.xyz
-  servername: hk1.899994.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      HOST: hk1.899994.xyz
-    path: /index
