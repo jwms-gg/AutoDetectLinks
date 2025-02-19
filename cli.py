@@ -230,7 +230,7 @@ class DomainTree:
         return all_domain
 
 
-def isfake(proxy: dict[str, Any]) -> bool:
+def is_fake(proxy: dict[str, Any]) -> bool:
     try:
         if "server" not in proxy:
             return True
@@ -271,63 +271,6 @@ def clash_data(proxy: dict[str, Any]) -> dict[str, Any]:
         # 'alpn' is not a slice
         ret["alpn"] = ret["alpn"].replace(" ", "").split(",")
     return ret
-
-
-def supports_meta(proxy: dict[str, Any], no_meta=False) -> bool:
-    if isfake(proxy):
-        return False
-    type = proxy["type"]
-    if type == "vmess":
-        supported = settings.clash_cipher_vmess
-    elif type == "ss" or type == "ssr":
-        supported = settings.clash_cipher_ss
-    elif type == "trojan":
-        return True
-    elif no_meta:
-        return False
-    else:
-        return True
-    if proxy.get("network", "") in ("h2", "grpc"):
-        proxy["tls"] = True
-    if "cipher" not in proxy:
-        return True
-    if not proxy["cipher"]:
-        return True
-    if proxy["cipher"] not in supported:
-        return False
-    try:
-        if type == "ssr":
-            if "obfs" in proxy and proxy["obfs"] not in settings.clash_ssr_obfs:
-                return False
-            if (
-                "protocol" in proxy
-                and proxy["protocol"] not in settings.clash_ssr_protocol
-            ):
-                return False
-        if (
-            "plugin-opts" in proxy
-            and "mode" in proxy["plugin-opts"]
-            and not proxy["plugin-opts"]["mode"]
-        ):
-            return False
-    except Exception as e:
-        logger.exception(f"Cannot verify proxy with error: {e}")
-        return False
-    return True
-
-
-def supports_clash(proxy: dict[str, Any], meta=False) -> bool:
-    if meta:
-        return supports_meta()
-    if proxy["type"] == "vless":
-        return False
-    if proxy["type"] == "vless":
-        return False
-    return supports_meta(proxy, no_meta=True)
-
-
-def supports_ray(proxy: dict[str, Any]) -> bool:
-    return not isfake(proxy)
 
 
 def v2ray2clash(proxy: str) -> dict[str, Any]:
@@ -858,7 +801,7 @@ def unique_sources(sources: list[Source]):
             unique_hash = hash_proxy(proxy)
             if unique_hash not in seen:
                 seen.add(unique_hash)
-                if not supports_ray(proxy):
+                if is_fake(proxy):
                     source.unsupported_proxies.append(proxy)
                     continue
                 source.unique_proxies.append(proxy)
@@ -1059,17 +1002,16 @@ def main():
     for ctg in categories:
         ctg_nodes_meta[ctg] = []
     for n in alive_nodes:
-        if supports_meta(n):
-            ctgs: list[str] = []
-            for ctg, keys in categories.items():
-                for key in keys:
-                    if key in n["name"]:
-                        ctgs.append(ctg)
-                        break
-                if ctgs and keys[-1] == "OVERALL":
+        ctgs: list[str] = []
+        for ctg, keys in categories.items():
+            for key in keys:
+                if key in n["name"]:
+                    ctgs.append(ctg)
                     break
-            if len(ctgs) == 1:
-                ctg_nodes_meta[ctgs[0]].append(clash_data(n))
+            if ctgs and keys[-1] == "OVERALL":
+                break
+        if len(ctgs) == 1:
+            ctg_nodes_meta[ctgs[0]].append(clash_data(n))
     for ctg, proxies in ctg_nodes_meta.items():
         with open("snippets/nodes_" + ctg + ".meta.yml", "w", encoding="utf-8") as f:
             yaml.dump({"proxies": proxies}, f, allow_unicode=True)
@@ -1124,11 +1066,10 @@ def main():
     ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
     names_clash_meta: Union[set[str], list[str]] = set()
     for n in alive_nodes:
-        if supports_meta(n):
-            if "client-fingerprint" in n and n["client-fingerprint"] == global_fp:
-                del n["client-fingerprint"]
-            proxies_meta.append(clash_data(n))
-            names_clash_meta.add(n["name"])
+        if "client-fingerprint" in n and n["client-fingerprint"] == global_fp:
+            del n["client-fingerprint"]
+        proxies_meta.append(clash_data(n))
+        names_clash_meta.add(n["name"])
     names_clash_meta = list(names_clash_meta)
     conf_meta = copy.deepcopy(config)
 
