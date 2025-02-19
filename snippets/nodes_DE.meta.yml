@@ -205,24 +205,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: '🇩🇪[openproxylist.com] #3'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.153.127.70
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🇩🇪[openproxylist.com] #5'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.193.97.92
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: '🇩🇪[openproxylist.com] #7'
   network: ws
   port: 22222
@@ -242,3 +224,50 @@ proxies:
   tls: false
   type: vless
   uuid: 26721978-890e-4946-bafa-cb03c9ff7f4a
+- client-fingerprint: chrome
+  name: 🟡_🇩🇪_💻_github.com/Ruk1ng001_61...
+  network: tcp
+  port: 21313
+  reality-opts:
+    public-key: AlUKGYa7aLWaZ2AGBHmt9pcqT8uNYMmByNrIN_bwfwI
+    short-id: db99da70
+  server: 195.201.25.40
+  servername: yahoo.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 59275d0a-c803-4d85-ce13-ba14edc710e8
+- alpn:
+  - http/1.1
+  name: '🇩🇪[openproxylist.com] #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.62.219
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '🇩🇪[openproxylist.com] #9'
+  network: ws
+  port: 22222
+  server: 3.73.231.59
+  servername: telegram-channel-vlessconfig.sohala.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
+- alpn:
+  - h2
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: '🇩🇪@Freakconfig #4'
+  network: tcp
+  port: 443
+  server: freakconfigs16.usecharge.ir
+  servername: mods.lnmarketplace.net
+  tls: true
+  type: vless
+  uuid: 9e55e24c-8de9-4357-8a37-9cf1212c6491
