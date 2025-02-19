@@ -20,10 +20,6 @@ default:
       type: clash
     - url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
       type: clash
-      ignore:
-        - vmess
-        - ss
-        - ssr
     - url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
       type: clash
     - url: https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt
@@ -33,26 +29,18 @@ default:
       type: v2ray
       redirect: https
       method: base64
-      ignore:
-        - vmess
     - url: https://raw.githubusercontent.com/mkshare3/mkshare3.github.io/main/README.md
       type: v2ray
       redirect: https
       method: base64
-      ignore:
-        - vmess
     - url: https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md
       type: v2ray
       method: base64
       redirect: https
-      ignore:
-        - vmess
     - url: https://raw.githubusercontent.com/toshare5/toshare5.github.io/main/README.md
       type: v2ray
       method: base64
       redirect: https
-      ignore:
-        - vmess
     - url: https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all
       type: v2ray
     - url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
@@ -234,6 +222,7 @@ default:
       method: telegram
   request_timeout: 10
   delay_url_test: http://www.gstatic.com/generate_204
+  user_agent: Mozilla/5.0 (X11; Linux x86_64) Clash-verge/v2.0.3 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58
   limit: 1500
   delay_batch: 699
   max_concurrent_tests: 100
@@ -327,6 +316,14 @@ default:
       - af.alicdn.com
       - aeu.alicdn.com
       - click.email.microsoftemail.com
+      - www.iconfont.cn
+      - mbdp01.bdstatic.com
+      - click.aliyun.com
+      - httpdns.push.heytapmobi.com
+      - douyincdn.com
+      - dun.163.com
+      - dun.163yun.com
+      - reg.163.com
   adbfurls:
     - https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt
     - https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt
@@ -450,4 +447,3 @@ default:
     RU: 🇷🇺 俄罗斯
     SE: 🇸🇪 瑞典
     CH: 🇨🇭 瑞士
-    EE: 🇪🇪 爱沙尼亚

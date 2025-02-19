@@ -28,9 +28,7 @@ class NotANode(Exception):
 
 session = requests.Session()
 session.trust_env = False
-session.headers["User-Agent"] = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58"
-)
+session.headers["User-Agent"] = settings.user_agent
 
 
 def safe_request(url: str) -> str:
@@ -240,6 +238,9 @@ def isfake(proxy: dict[str, Any]) -> bool:
             return True
         if int(str(proxy["port"])) < 20:
             return True
+        if "sni" in proxy and "google.com" in proxy["sni"].lower():
+            # That's not designed for China
+            proxy["sni"] = "www.bing.com"
         return any(
             [
                 proxy["server"].endswith(_)
@@ -555,8 +556,12 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
         else:
             data["port"] = 443
         if parsed.query:
+            k = v = ""
             for kv in parsed.query.split("&"):
-                k, v = kv.split("=", 1)
+                if "=" in kv:
+                    k, v = kv.split("=", 1)
+                else:
+                    v += "&" + kv
                 if k == "insecure":
                     data["skip-cert-verify"] = v != "0"
                 elif k == "alpn":
