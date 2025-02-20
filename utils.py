@@ -1,5 +1,6 @@
 import base64
 import binascii
+import re
 
 import yaml
 
@@ -38,3 +39,12 @@ def read_yaml(file_path: str) -> dict:
             return yaml.safe_load(f)
     except yaml.YAMLError:
         raise
+
+
+def is_base64(s):
+    base64_pattern = re.compile(r"^[A-Za-z0-9+/]*={0,2}$")
+
+    if base64_pattern.match(s):
+        return True
+    else:
+        return False

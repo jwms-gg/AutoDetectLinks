@@ -104,9 +104,6 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
                 if "://" not in v:
                     continue
 
-                if " " in v:
-                    v = v.split(" ")[0]
-
                 try:
                     proxies.append(v2ray2clash(v))
                 except Exception as e:
@@ -990,6 +987,9 @@ def main():
 
     logger.info("Checking alive nodes in batches...")
     all_nodes = [n for s in sources for n in s.unique_proxies]
+    if not all_nodes:
+        raise RuntimeError("No fetched nodes found, exit. And try again later.")
+
     alive_nodes = check_nodes_in_batches(all_nodes)
     if not alive_nodes:
         raise RuntimeError("No alive nodes found, exit. And try again later.")

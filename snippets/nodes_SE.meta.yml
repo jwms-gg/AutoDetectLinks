@@ -11,23 +11,6 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>保加利亚-NF解锁瑞典地区非自制剧-Cha...
-  network: ws
-  port: 8443
-  server: esna.twn24.ir
-  servername: esna.twn24.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 211e44d7-5a3f-4b0e-ad36-d8136759b77f
-  ws-opts:
-    headers:
-      HOST: esna.twn24.ir
-    path: /?ed=2048
 - name: 🇸🇪_瑞典_2
   network: ws
   port: 443
@@ -72,20 +55,48 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '🇸🇪 瑞典|@ripaojiedian #2'
-  network: tcp
-  port: '18000'
-  server: 150.241.221.64
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
   name: 🇸🇪 瑞典|@ripaojiedian
   port: 18000
   server: 150.241.221.64
   skip-cert-verify: false
   tfo: false
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: 🇸🇪_瑞典_4
+  network: ws
+  port: 443
+  server: 141.147.147.180
+  servername: agedy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      host: agedy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: '🇸🇪_瑞典_1 #1'
+  network: ws
+  port: 8443
+  server: 141.147.147.28
+  servername: nc.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nc.dbbn2024.us.kg
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇸🇪[openproxylist.com] vmess-SE
+  network: tcp
+  port: '18000'
+  server: 150.241.221.64
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -95,6 +106,6 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 16.171.213.98
+  server: 13.49.54.20
   sni: trojan.burgerip.co.uk
   type: trojan
