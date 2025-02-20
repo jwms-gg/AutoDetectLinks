@@ -1550,7 +1550,7 @@ def handle_links(new_links, resolve_name_conflicts):
 
 def generate_clash_config(nodes: list[dict[str, Any]]) -> dict[str, Any]:
     now = datetime.now()
-    logger.info(f"当前时间: {now}\n")
+    logger.info(f"当前时间: {now}")
     config = deepcopy(clash_config_template)
 
     for node in nodes:
@@ -1906,18 +1906,20 @@ class ClashProcess:
             # 读取配置
             config = self.clash_config.config
             # 获取要删除的节点的name
-            problem_proxy_name = config["proxies"][problem_index]["name"]
+            problem_proxy = config["proxies"][problem_index]
             # 删除问题节点
             del config["proxies"][problem_index]
 
             # 从所有proxy-groups中删除该节点引用
             proxies: list = config["proxy-groups"][1]["proxies"]
-            proxies.remove(problem_proxy_name)
+            proxies.remove(problem_proxy["name"])
             for group in config["proxy-groups"][1:]:
                 group["proxies"] = proxies
 
             logger.info(
-                f"配置异常：{error_message}修复配置异常，移除proxy[{problem_index}] {problem_proxy_name} 完毕，耗时{time.time() - start_time}s\n"
+                f"配置异常：{error_message}，修复配置异常，移除 proxy，"
+                f"下标：{problem_index}，节点：{problem_proxy}，"
+                f"完毕，耗时：{time.time() - start_time}s"
             )
             return True
         except Exception as e:
@@ -2098,12 +2100,14 @@ async def test_proxies(clash_api: ClashAPI, proxies: list[str]) -> None:
         done = len(clash_api.test_results)
         total = len(tasks)
         logger.info(
-            f"\r进度: {done}/{total} ({done / total * 100:.1f}%)", end="", flush=True
+            f"进度: {done}/{total} ({done / total * 100:.1f}%)", end="", flush=True
         )
 
 
 async def test_group_proxies(
-    clash_api: ClashAPI, group_name: str, times: int = 2
+    clash_api: ClashAPI,
+    group_name: str,
+    times: int = 2,
 ) -> None:
     """测试策略组中的节点组"""
     # 创建所有测试任务
@@ -2117,7 +2121,7 @@ async def test_group_proxies(
     for i, future in enumerate(asyncio.as_completed(tasks)):
         await future
         # 显示进度
-        done = i
+        done = i + 1
         total = task_times
         logger.info(
             f"\r进度: {done}/{total} ({done / total * 100:.1f}%)", end="", flush=True
@@ -2182,7 +2186,6 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
                 await test_group_proxies(
                     clash_api,
                     group_name,
-                    int(len(proxies) / 360),
                 )
 
             delay_results = clash_api.test_results.values()
@@ -2190,7 +2193,7 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             print_test_summary(group_name, delay_results, len(proxies))
 
             logger.info(
-                "===================移除失效节点并按延迟排序===================\n"
+                "===================移除失效节点并按延迟排序==================="
             )
             # 一次性移除所有失效节点并更新配置
             config.remove_invalid_proxies(delay_results)
