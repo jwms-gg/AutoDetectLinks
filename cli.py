@@ -1061,13 +1061,10 @@ def main():
     config["rules"] = [",".join(_) for _ in rules.items()] + [match_rule]
 
     # Clash Meta
-    global_fp: Optional[str] = config.get("global-client-fingerprint", None)
     proxies_meta: list[dict[str, Any]] = []
     ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
     names_clash_meta: Union[set[str], list[str]] = set()
     for n in alive_nodes:
-        if "client-fingerprint" in n and n["client-fingerprint"] == global_fp:
-            del n["client-fingerprint"]
         proxies_meta.append(clash_data(n))
         names_clash_meta.add(n["name"])
     names_clash_meta = list(names_clash_meta)
