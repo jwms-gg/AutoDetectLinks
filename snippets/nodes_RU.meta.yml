@@ -1,10 +1,4 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺RU-45.151.62.54-0420
-  password: 0zyDRZ1XmNXaaCAN7KEA8a
-  port: '28825'
-  server: 45.151.62.54
-  type: ss
 - name: RU_speednode_0051
   network: ws
   port: 80
@@ -122,14 +116,6 @@ proxies:
     headers:
       host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 🇷🇺_RU_俄罗斯_10
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   password: dongtaiwang.com
   port: 51224
@@ -151,48 +137,6 @@ proxies:
     headers:
       host: agedy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 🇷🇺_俄罗斯_5
-  network: ws
-  port: 443
-  server: 194.76.18.83
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 🇷🇺_俄罗斯_8
-  network: ws
-  port: 2057
-  server: 45.8.146.221
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nc.dbbn2024.us.kg
-    path: /?ed=2560
-- name: 🇷🇺_俄罗斯_16
-  network: ws
-  port: 9090
-  server: 178.236.246.72
-  servername: nc.dbbn2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nc.dbbn2024.us.kg
-    path: /?ed=2560
 - name: RU_speednode_0086
   network: ws
   port: 8080
@@ -209,35 +153,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇷🇺 俄罗斯 V2CROSS.COM #1'
-  network: ws
-  port: '20326'
-  server: 195.58.49.42
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 🇷🇺_RU_俄罗斯_1
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_4 #1'
-  password: NjBlZDlk
-  port: 1443
-  server: 89.221.224.166
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
   name: 🇷🇺[openproxylist.com] vmess-RU
   network: ws
   port: '16231'
@@ -247,16 +162,99 @@ proxies:
   uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺RU-195.58.49.42-023
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺_俄罗斯_1
+  password: NjBlZDlk
+  port: 8388
+  server: 89.221.224.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 🇷🇺_RU_俄罗斯_13
+  password: NjBlZDlk
+  port: 8388
+  server: is3.opensocks.site
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 'Channel id: @ShadowProxy66 🇷🇺'
+  password: 0zyDRZ1XmNXaaCAN7KEA8a
+  port: '28825'
+  server: 45.151.62.54
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 🇷🇺_RU_俄罗斯_5
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  name: '俄罗斯+V2CROSS.COM #2'
   network: ws
-  port: 20326
-  server: 195.58.49.42
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- name: 🇷🇺_俄罗斯_5
+  network: ws
+  port: 443
+  server: 194.76.18.83
+  servername: ds.dbbn2024.us.kg
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
-  ws-headers:
-    Host: 195.58.49.42
-  ws-path: /
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: '🇷🇺_俄罗斯_7 #1'
+  network: ws
+  port: 2057
+  server: 45.8.146.221
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_10
+  network: ws
+  port: 9090
+  server: 178.236.246.72
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: RU_speednode_0112
+  port: 443
+  server: tel5.vpntype.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5fcd19f2-0ecc-4449-bfab-f6b20d979d8f

@@ -12,12 +12,6 @@ proxies:
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
-  name: 🇨🇭CH-156.146.62.161-0394
-  password: shadowsocks
-  port: '443'
-  server: 156.146.62.161
-  type: ss
-- cipher: aes-128-gcm
   name: 🇨🇭CH-156.146.62.164-0392
   password: shadowsocks
   port: '443'
@@ -37,11 +31,25 @@ proxies:
     headers:
       host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 🇨🇭_瑞士_1
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 🇨🇭_CH_瑞士
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇨🇭_瑞士_1
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+- name: 🇨🇭_瑞士
   network: ws
   port: 443
   server: 141.148.203.6
-  servername: nc.dbbn2024.us.kg
+  servername: ds.dbbn2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
@@ -49,5 +57,19 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nc.dbbn2024.us.kg
+      host: ds.dbbn2024.us.kg
     path: /?ed=2560
+- name: CH_speednode_0004
+  network: ws
+  port: 443
+  server: 144.24.243.207
+  servername: dd8.transitkala.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b529971c-f46a-4eb9-a02d-e39cc3e83cf5
+  ws-opts:
+    headers:
+      Host: dd8.transitkala.com
+    path: /

@@ -81,7 +81,12 @@ def from_telegram(content: str):
     return v2ray_subs
 
 
-def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
+def parse_proxies(
+    url: str,
+    content: str,
+    method: str,
+    type: str,
+) -> list[dict[str, Any]]:
     proxies = []
     try:
         if type == "clash":
@@ -107,9 +112,7 @@ def parse_proxies(content: str, method: str, type: str) -> list[dict[str, Any]]:
                 try:
                     proxies.append(v2ray2clash(v))
                 except Exception as e:
-                    logger.warning(
-                        f"Cannot convert v2ray to clash from {v}, error: {e}"
-                    )
+                    logger.warning(f"Convert v2ray {v} from {url}, error: {e}")
     except Exception:
         pass
     return proxies
@@ -140,17 +143,26 @@ class Source:
             # search for all https url in content
             urls = re.findall(r"https?://[^\s<*]+", content)
             if urls:
-                unique_urls = []
-                [unique_urls.append(item) for item in urls if item not in unique_urls]
-                for url in unique_urls:
+                url_set = set(urls)
+                for url in url_set:
                     redirect_content = safe_request(url)
                     if not redirect_content:
                         continue
-                    self.proxies = parse_proxies(redirect_content, method, type)
+                    self.proxies = parse_proxies(
+                        url,
+                        redirect_content,
+                        method,
+                        type,
+                    )
                     if self.proxies:
                         break
         else:
-            self.proxies = parse_proxies(content, method, type)
+            self.proxies = parse_proxies(
+                self._source.url,
+                content,
+                method,
+                type,
+            )
 
         if len(self.proxies) != 0:
             if "max" in self._source:
@@ -276,6 +288,11 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
     except ValueError:
         raise NotANode(proxy)
 
+    try:
+        uri = unquote(uri)
+    except Exception:
+        pass
+
     # === Fix begin ===
     if not type.isascii():
         type = "".join([_ for _ in type if _.isascii()])
@@ -338,7 +355,7 @@ def v2ray2clash(proxy: str) -> dict[str, Any]:
         if "?" in server_info:
             server_info = server_info.split("?")[0]
         server, port = (
-            server_info.split(":") if ":" in server_info else (server_info, "")
+            server_info.rsplit(":", 1) if ":" in server_info else (server_info, "")
         )
         if port.endswith("/"):
             port = port[:-1]
