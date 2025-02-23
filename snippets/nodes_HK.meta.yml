@@ -37,136 +37,89 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: UQ62K8G88VGBNZXO
-  port: 15015
-  server: 156.245.190.24
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇭🇰[openproxylist.com] #2'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: '443'
   server: hong-kong-3.keenvpn.me
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇭🇰[openproxylist.com] ss-HK #3'
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: '443'
+  server: 43.249.36.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇭🇰HK-112.213.102.228-0508
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰[openproxylist.com] vmess-HK
+  network: ws
+  port: 443
+  server: hkvm.gecs.top
+  servername: hkvm.gecs.top
+  tls: true
+  type: vmess
+  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
+  ws-opts:
+    headers:
+      Host: hkvm.gecs.top
+    path: /vm
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-141.98.234.93-0546
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: aes-256-cfb
+  name: 🔒 SS-TCP-NA 🇭🇰 HK-154.223.21.2...
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 154.223.21.221
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-216.250.97.118-1541
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: hong-kong.keenvpn.me
+  type: ss
 - cipher: aes-256-gcm
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: '🇭🇰[openproxylist.com] ss-HK #1'
   password: MHZUEOX3KBXAV09K
   port: '15007'
   server: 156.245.190.16
   type: ss
-- cipher: aes-256-gcm
-  name: 12|🇭🇰 香港3|@ripaojiedian
-  password: ZDGC0Q2E112UAJO6
-  port: '15014'
-  server: 156.245.190.23
-  type: ss
-- name: 🇭🇰[openproxylist.com] vless-HK
-  network: ws
-  port: 2052
-  server: 104.17.148.22
-  servername: sPeedtest2.sbs.hk1.v2vless.sitespeedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9cb4a8f1-6e57-5263-a18a-84de9624853c
-  ws-opts:
-    headers:
-      Host: sPeedtest2.sbs.hk1.v2vless.sitespeedtest.net
-    path: /vless
-- alpn:
-  - http/1.1
-  name: 香港+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 154.218.15.250
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: 0|🇭🇰2 |  5.6MB/s
-  network: ws
-  port: 443
-  server: hknbyivfffj.site
-  servername: hknbyivfffj.site
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: hknbyivfffj.site
-    path: /rbqqvws
-- alpn:
-  - http/1.1
-  name: 香港+阿里云
-  network: ws
-  password: Aimer
-  port: 587
-  server: 47.79.86.103
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: '@Golestan_VPN -  🇭🇰'
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: '443'
-  server: 216.250.97.118
+  name: 🔒 SS-TCP-NA 🇭🇰 HK-203.23.128.3...
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 203.23.128.33
   type: ss
-- alterId: 0
-  cipher: auto
-  name: HK_speednode_0037
-  port: 11126
-  server: 45.78.16.72
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d09cbc30-d3ac-4fd3-8de5-c5c10455fb40
-- name: HK_speednode_0038
-  network: ws
-  port: 1935
-  server: 43.154.34.74
-  servername: agedu.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: HK_speednode_0039
-  network: ws
+- cipher: aes-256-gcm
+  name: 🔒 SS-TCP-NA 🇭🇰 HK-156.245.190....
+  password: AYC4MQ5DSGJ4QOKG
+  port: '15010'
+  server: 156.245.190.19
+  type: ss
+- client-fingerprint: chrome
+  name: 🇭🇰 香港3|@ripaojiedian
+  password: Vad3.123a)asd1234-asdasd.asdazzS.123
   port: 443
-  server: hk2.x-net.vip
+  server: 43.154.83.213
   skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6057e0b-2591-4175-b089-872e449426c4
-  ws-opts:
-    headers:
-      Host: hk2.x-net.vip
-    path: /index
+  sni: xx.tc.hk.go.107421.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: HK_speednode_0040
+  name: HK_speednode_0016
   network: http
   port: 30704
   server: 43.247.135.63
@@ -175,33 +128,22 @@ proxies:
   type: vmess
   udp: true
   uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
-- name: HK_speednode_0043
+- cipher: aes-256-gcm
+  name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #2'
+  password: ZDGC0Q2E112UAJO6
+  port: '15014'
+  server: 156.245.190.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-45.144.174.12-024
   network: ws
-  port: 443
-  server: 58.176.95.46
-  servername: agedu.aimercc.filegear-sg.me
+  port: 20330
+  server: 45.144.174.12
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedu.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alpn:
-  - http/1.1
-  name: HK_speednode_0044
-  network: ws
-  port: 2083
-  server: 154.218.15.250
-  servername: agedy.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
-  ws-opts:
-    headers:
-      Host: agedy.ambercc.filegear-sg.me
-    path: /?ed=2560
+  tls: false
+  type: vmess
+  uuid: beaad91b-40cb-4aa5-9bc8-b412a023f1ca
+  ws-headers:
+    Host: 45.144.174.12
+  ws-path: /
