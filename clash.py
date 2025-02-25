@@ -8,8 +8,6 @@ import urllib.parse
 import json
 import re
 import yaml
-import random
-import string
 import httpx
 import asyncio
 from typing import Any, Optional
@@ -43,9 +41,9 @@ clash_config_template = {
     "allow-lan": True,
     "mode": "rule",
     "log-level": "info",
+    "external-controller": "127.0.0.1:9090",
     "tcp-concurrent": True,
     "unified-delay": True,
-    "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
     "geox-url": {
         "geoip": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat",
@@ -1433,65 +1431,6 @@ def match_nodes(text):
     return yaml_data
 
 
-# link非代理协议时(https)，请求url解析
-def process_url(url):
-    isyaml = False
-    try:
-        # 发送GET请求
-        response = requests.get(
-            url, headers=headers, verify=False, allow_redirects=True
-        )
-        # 确保响应状态码为200
-        if response.status_code == 200:
-            content = response.content.decode("utf-8")
-            if "proxies:" in content:
-                # YAML格式
-                yaml_data = yaml.safe_load(content)
-                if "proxies" in yaml_data:
-                    isyaml = True
-                    proxies = yaml_data["proxies"] if yaml_data["proxies"] else []
-                    return proxies, isyaml
-            else:
-                # 尝试Base64解码
-                try:
-                    decoded_bytes = base64.b64decode(content)
-                    decoded_content = decoded_bytes.decode("utf-8")
-                    decoded_content = urllib.parse.unquote(decoded_content)
-                    return decoded_content.splitlines(), isyaml
-                except Exception:
-                    try:
-                        res = js_render(url)
-                        if "external-controller" in res.html.text:
-                            # YAML格式
-                            try:
-                                yaml_data = yaml.safe_load(res.html.text)
-                            except Exception:
-                                yaml_data = match_nodes(res.html.text)
-                            finally:
-                                if "proxies" in yaml_data:
-                                    isyaml = True
-                                    return yaml_data["proxies"], isyaml
-
-                        else:
-                            pattern = r"([A-Za-z0-9_+/\-]+={0,2})"
-                            matches = re.findall(pattern, res.html.text)
-                            stdout = matches[-1] if matches else []
-                            decoded_bytes = base64.b64decode(stdout)
-                            decoded_content = decoded_bytes.decode("utf-8")
-                            return decoded_content.splitlines(), isyaml
-                    except Exception:
-                        # 如果不是Base64编码，直接按行处理
-                        return [], isyaml
-        else:
-            logger.info(
-                f"Failed to retrieve data from {url}, status code: {response.status_code}"
-            )
-            return [], isyaml
-    except requests.RequestException as e:
-        logger.info(f"An error occurred while requesting {url}: {e}")
-        return [], isyaml
-
-
 # 解析不同的代理链接
 def parse_proxy_link(link):
     if link.startswith("hysteria2://") or link.startswith("hy2://"):
@@ -1505,34 +1444,6 @@ def parse_proxy_link(link):
     elif link.startswith("vmess://"):
         return parse_vmess_link(link)
     return None
-
-
-# 根据server和port共同约束去重
-def deduplicate_proxies(proxies_list):
-    unique_proxies = []
-    seen = set()
-    for proxy in proxies_list:
-        key = (
-            (proxy["server"], proxy["port"], proxy["type"], proxy["password"])
-            if proxy.get("password")
-            else (proxy["server"], proxy["port"], proxy["type"])
-        )
-        if key not in seen:
-            seen.add(key)
-            unique_proxies.append(proxy)
-    return unique_proxies
-
-
-# 出现节点name相同时，加上4位随机字符串
-def add_random_suffix(name, existing_names):
-    # 生成4位随机字符串
-    suffix = "".join(random.choices(string.ascii_letters + string.digits, k=4))
-    new_name = f"{name}-{suffix}"
-    # 确保生成的新名字不在已存在的名字列表中
-    while new_name in existing_names:
-        suffix = "".join(random.choices(string.ascii_letters + string.digits, k=4))
-        new_name = f"{name}-{suffix}"
-    return new_name
 
 
 def handle_links(new_links, resolve_name_conflicts):
@@ -2357,9 +2268,9 @@ def resolve_template_url(template_url):
     return resolved_url
 
 
-def check_nodes_on_mihomo(clash_nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def check_nodes_on_mihomo(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     try:
-        config = ClashConfig(generate_clash_config(clash_nodes))
+        config = ClashConfig(generate_clash_config(nodes))
         clash = ClashProcess(config)
         clash.start()
         clash.switch_proxy("DIRECT")

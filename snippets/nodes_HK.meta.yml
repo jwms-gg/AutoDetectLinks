@@ -1,24 +1,4 @@
 proxies:
-- name: 🇭🇰[openproxylist.com]
-  network: ws
-  port: 443
-  server: 47.57.190.3
-  servername: clawhk.costs.asia
-  tls: true
-  type: vless
-  uuid: a5c6f225-4cb9-4e58-edea-1e0793b656b7
-  ws-opts:
-    headers:
-      Host: clawhk.costs.asia
-    path: '%2Fbing'
-- name: HK香港(mibei77.com 米贝节点分享) 2
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: integral-malamute.adder289.quest
-  skip-cert-verify: true
-  sni: integral-malamute.adder289.quest
-  type: trojan
-  udp: true
 - name: '🇭🇰[openproxylist.com] #1'
   network: ws
   password: amclubs2024
@@ -38,12 +18,6 @@ proxies:
   sni: hezijiasuqi.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🇭🇰[openproxylist.com] #2'
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: '443'
-  server: hong-kong-3.keenvpn.me
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: '🇭🇰[openproxylist.com] ss-HK #3'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: '443'
@@ -55,20 +29,6 @@ proxies:
   port: 4231
   server: 112.213.102.228
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
-  network: ws
-  port: 443
-  server: hkvm.gecs.top
-  servername: hkvm.gecs.top
-  tls: true
-  type: vmess
-  uuid: 0a3cd062-241a-43fc-9c50-eccacbbd5aae
-  ws-opts:
-    headers:
-      Host: hkvm.gecs.top
-    path: /vm
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-141.98.234.93-0546
   password: WfmxKX2FBJRU0Ie9VLIYDL
@@ -80,12 +40,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 154.223.21.221
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-216.250.97.118-1541
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: hong-kong.keenvpn.me
   type: ss
 - cipher: aes-256-gcm
   name: '🇭🇰[openproxylist.com] ss-HK #1'
@@ -105,45 +59,21 @@ proxies:
   port: '15010'
   server: 156.245.190.19
   type: ss
-- client-fingerprint: chrome
-  name: 🇭🇰 香港3|@ripaojiedian
-  password: Vad3.123a)asd1234-asdasd.asdazzS.123
-  port: 443
-  server: 43.154.83.213
-  skip-cert-verify: false
-  sni: xx.tc.hk.go.107421.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: HK_speednode_0016
-  network: http
-  port: 30704
-  server: 43.247.135.63
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9bffecef-77db-4021-a02b-cc9915bcbb23
 - cipher: aes-256-gcm
-  name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #2'
+  name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #1'
   password: ZDGC0Q2E112UAJO6
   port: '15014'
   server: 156.245.190.23
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-45.144.174.12-024
-  network: ws
-  port: 20330
-  server: 45.144.174.12
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: beaad91b-40cb-4aa5-9bc8-b412a023f1ca
-  ws-headers:
-    Host: 45.144.174.12
-  ws-path: /
+- cipher: aes-256-gcm
+  name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #2'
+  password: UQ62K8G88VGBNZXO
+  port: '15015'
+  server: 156.245.190.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港 特别行政区
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 154.90.63.193
+  type: ss
