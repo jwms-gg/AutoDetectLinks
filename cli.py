@@ -60,9 +60,9 @@ def from_telegram(content: str):
     spans = soup.find_all("span", class_="tgme_widget_message_text")
     codes = soup.find_all("code")
     span = soup.find_all("span")
-    main = soup.find_all("div")
+    main_div = soup.find_all("div")
 
-    all_tags = divs + spans + codes + divs2 + span + main
+    all_tags = divs + spans + codes + divs2 + span + main_div
 
     v2ray_subs: list[str] = []
     pattern = r"(vless:\/\/|vmess:\/\/|ss:\/\/|trojan:\/\/|tuic:\/\/|hysteria2:\/\/)(.+?)(?=(?: |\n|\1))"
