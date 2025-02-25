@@ -43,6 +43,8 @@ clash_config_template = {
     "allow-lan": True,
     "mode": "rule",
     "log-level": "info",
+    "tcp-concurrent": True,
+    "unified-delay": True,
     "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
     "geox-url": {
