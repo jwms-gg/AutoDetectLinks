@@ -29,12 +29,6 @@ proxies:
   port: 4231
   server: 112.213.102.228
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-141.98.234.93-0546
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
 - cipher: aes-256-cfb
   name: 🔒 SS-TCP-NA 🇭🇰 HK-154.223.21.2...
   password: f8f7aCzcPKbsF8p3
@@ -53,27 +47,62 @@ proxies:
   port: '990'
   server: 203.23.128.33
   type: ss
-- cipher: aes-256-gcm
-  name: 🔒 SS-TCP-NA 🇭🇰 HK-156.245.190....
-  password: AYC4MQ5DSGJ4QOKG
-  port: '15010'
-  server: 156.245.190.19
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK 1
+  password: asd123456
+  port: '8388'
+  server: 103.149.183.10
   type: ss
+- name: 🇭🇰[openproxylist.com] vless-HK
+  network: ws
+  port: 2052
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: ccacc3df-bc84-5641-92e7-e59e71cd17a1
+  ws-opts:
+    headers:
+      Host: sPeedtest2.sbs.hk1.vless.sitespeedtest.net
+    path: '%2Fvless'
+- name: 🇭🇰香港1 | ⬇️ 5.3MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-141.98.234.93-5315
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰HK | 🟢 | vmess | @DeamNet_Pr...
+  network: ws
+  port: 443
+  server: 118.107.244.81
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      host: www.37420790.xyz
+    path: /path/230005213127
 - cipher: aes-256-gcm
   name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #1'
-  password: ZDGC0Q2E112UAJO6
-  port: '15014'
-  server: 156.245.190.23
-  type: ss
-- cipher: aes-256-gcm
-  name: '🔒 SS-TCP-NA 🇭🇰 HK-156.245.190.... #2'
   password: UQ62K8G88VGBNZXO
   port: '15015'
   server: 156.245.190.24
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港 特别行政区
-  password: f8f7aCzcPKbsF8p3
-  port: '990'
-  server: 154.90.63.193
+- cipher: chacha20-ietf
+  name: 🔒 SS-TCP-NA 🇭🇰 HK-103.149.182....
+  password: asd123456
+  port: '8388'
+  server: 103.149.182.191
   type: ss

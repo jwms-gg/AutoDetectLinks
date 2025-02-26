@@ -149,12 +149,6 @@ proxies:
   port: 3306
   server: 149.202.82.172
   type: ss
-- cipher: aes-256-gcm
-  name: SS-法国-NF解锁法国自制剧-ChatGPT-TikTok...
-  password: 1cc7ad5f-c9bc-4138-849a-02aeec8e37a7
-  port: 8443
-  server: 141.94.115.231
-  type: ss
 - name: 🇫🇷[openproxylist.com] vless-FR...
   network: ws
   port: 1001
@@ -305,23 +299,17 @@ proxies:
   port: '445'
   server: 149.202.82.172
   type: ss
+- cipher: aes-256-gcm
+  name: '🔒 SS-TCP-NA 🇫🇷 FR-149.202.82.1... #6'
+  password: TEzjfAYq2IjtuoS
+  port: '6679'
+  server: 149.202.82.172
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇫🇷 @V2ngfast
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: '8080'
   server: 45.158.171.146
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.1...
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: '8080'
-  server: 45.158.171.132
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-45.158.171.132-0341
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.132
   type: ss
 - alterId: 0
   cipher: auto
@@ -337,66 +325,53 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /linkws
+- cipher: aes-256-gcm
+  name: '🔒 SS-TCP-NA 🇫🇷 FR-54.36.174.18... #11'
+  password: FoOiGlkAA9yPEGP
+  port: '7306'
+  server: 54.36.174.181
+  type: ss
+- cipher: aes-256-gcm
+  name: '🔒 SS-TCP-NA 🇫🇷 FR-54.36.174.18... #12'
+  password: pKEW8JPByTVTLtM
+  port: '4444'
+  server: 54.36.174.181
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '@Golestan_VPN -  🇫🇷'
   password: cvII85TrW6n0OGyfpHVS1u
   port: '8080'
   server: 45.158.171.141
   type: ss
-- name: 法国_022601087+L38
-  password: 0c9d4730-e296-11ef-a5d2-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 019 ✂️-🇫🇷FR-4 of 32 total=2662...
+  network: ws
+  port: '443'
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-45.158.171.141-0372
+  name: 🇫🇷FR-45.158.171.141-0333
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.158.171.141
   type: ss
-- name: 🇫🇷 FR 2
-  network: tcp
-  port: 3237
-  server: 185.231.205.38
-  tls: false
-  type: vless
-  uuid: 1d86846c-5a27-43c8-8981-57bb75c82195
-  ws-opts:
-    path: '%2f'
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: ws
-  port: 80
-  server: 172.64.78.198
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: ®️👹🇫🇷 _@freeconfig01
-  password: dongtaiwang.com
-  port: 13861
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: '🔒 SS-TCP-NA 🇫🇷 FR-149.202.82.1... #10'
-  password: TEzjfAYq2IjtuoS
-  port: '6679'
-  server: 149.202.82.172
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.1... #3'
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: '8080'
-  server: 45.158.171.141
+  name: 🇫🇷FR-45.158.171.136-1064
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.136
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇫🇷FR-5.196.29.123-0429
+  name: 🇫🇷FR-5.196.29.123-1069
   network: ws
   port: 2082
   server: 5.196.29.123
@@ -406,3 +381,51 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 🇫🇷法国4 | ⬇️ 2.1MB/s
+  network: ws
+  port: 80
+  server: 151.101.128.155
+  type: vmess
+  udp: true
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      Host: telegram-isvvpn.dev
+    path: /racevpn
+- name: 🔒 VL-WS-NONE 🇫🇷 FR-51.75.30.8:...
+  network: ws
+  port: 80
+  server: 51.75.30.8
+  tls: false
+  type: vless
+  uuid: 1949f066-bcb0-49be-88e9-74abd940f80e
+  ws-opts:
+    path: '%2Fhttp'
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.171.82
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.254.17
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: ®️👹🇫🇷 _@freeconfig01
+  password: dongtaiwang.com
+  port: 13861
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
