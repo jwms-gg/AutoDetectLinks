@@ -20,18 +20,13 @@ from datetime import datetime
 from asyncio import Semaphore
 import ssl
 
-from utils import b64decodes_safe
+from utils import b64decodes_safe, extra_headers
 from config import settings
 from loguru import logger
 from requests_html import HTMLSession
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-headers = {
-    "Accept-Charset": "utf-8",
-    "Accept": "text/html,application/x-yaml,*/*",
-    "User-Agent": "clash-verge/v2.0.3",
-}
 
 # Clash 配置文件的基础结构
 clash_config_template = {
@@ -1348,34 +1343,6 @@ def parse_vmess_link(link):
     }
 
 
-# 解析ss订阅源
-def parse_ss_sub(link):
-    new_links = []
-    try:
-        # 发送请求并获取内容
-        response = requests.get(
-            link, headers=headers, verify=False, allow_redirects=True
-        )
-        if response.status_code == 200:
-            data = response.json()
-            new_links = [
-                {
-                    "name": x["remarks"],
-                    "type": "ss",
-                    "server": x["server"],
-                    "port": x["server_port"],
-                    "cipher": x["method"],
-                    "password": x["password"],
-                    "udp": True,
-                }
-                for x in data
-            ]
-            return new_links
-    except requests.RequestException as e:
-        logger.info(f"请求错误: {e}")
-        return new_links
-
-
 def parse_md_link(link):
     """parse nodes from md url link"""
     try:
@@ -1409,7 +1376,17 @@ def js_render(url):
         "--disable-setuid-sandbox",
     ]
     session = HTMLSession(browser_args=browser_args)
-    r = session.get(f"{url}", headers=headers, timeout=timeout, verify=False)
+    r = session.get(
+        url=f"{url}",
+        headers=extra_headers(
+            {
+                "Accept-Charset": "utf-8",
+                "Accept": "text/html,application/x-yaml,*/*",
+            }
+        ),
+        timeout=timeout,
+        verify=False,
+    )
     # 等待页面加载完成，Requests-HTML 会自动等待 JavaScript 执行完成
     r.html.render(timeout=timeout)
     return r
@@ -2020,19 +1997,15 @@ async def test_proxies(clash_api: ClashAPI, proxies: list[str]) -> None:
 async def test_group_proxies(
     clash_api: ClashAPI,
     group_name: str,
-    times: int = 2,
+    task_times: int = 2,
 ) -> None:
     """测试策略组中的节点组"""
     # 创建所有测试任务
-    task_times = times if times > 2 else 2
     logger.info(f"开始测试组 {group_name} (请求测试次数: {task_times})")
-    tasks = [
-        clash_api.test_group_delay(group_name, task_times) for _ in range(task_times)
-    ]
 
     # 使用进度显示执行所有任务
-    for i, future in enumerate(asyncio.as_completed(tasks)):
-        await future
+    for i in range(task_times):
+        await clash_api.test_group_delay(group_name, task_times)
         # 显示进度
         done = i + 1
         total = task_times
@@ -2050,30 +2023,17 @@ async def nodes_clean(config: ClashConfig) -> None:
     logger.info(f"保留节点：最多保留{settings.limit}个延迟最小的有效节点")
 
     try:
-        # 加载配置
         available_groups = config.get_group_names()[1:]
-
-        # 确定要测试的策略组
-        groups_to_test = available_groups
-        invalid_groups = set(groups_to_test) - set(available_groups)
-        if invalid_groups:
-            logger.info(f"警告: 以下策略组不存在: {', '.join(invalid_groups)}")
-            groups_to_test = list(set(groups_to_test) & set(available_groups))
-
-        if not groups_to_test:
-            logger.info("错误: 没有找到要测试的有效策略组")
-            logger.info(f"可用的策略组: {', '.join(available_groups)}")
-            return
-
-        await run_clash_test(config, groups_to_test)
+        logger.info(f"可测试策略组: {', '.join(available_groups)}")
+        # 测试策略组，只需要测试其中一个即可
+        await run_clash_group_test(config, available_groups[0])
     except Exception as e:
         logger.exception(f"错误: 测试策略组时发生异常: {e}")
     logger.info("批量检测完毕")
 
 
-async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
-    logger.info(f"将测试以下策略组: {', '.join(groups_to_test)}")
-
+async def run_clash_group_test(config: ClashConfig, test_group: str):
+    logger.info(f"=================== 开始测试策略组: {test_group} ===================")
     # 开始测试
     start_time = datetime.now()
 
@@ -2085,25 +2045,19 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             return
 
         try:
-            # 测试策略组，只需要测试其中一个即可
-            group_name = groups_to_test[0]
-            logger.info(
-                f"=================== 开始测试策略组: {group_name} ==================="
-            )
-            proxies = config.get_group_proxies(group_name)
-
+            proxies = config.get_group_proxies(test_group)
             if not proxies:
-                logger.info(f"策略组 '{group_name}' 中没有代理节点")
+                logger.info(f"策略组 '{test_group}' 中没有代理节点")
             else:
                 # 测试该组的所有节点
                 await test_group_proxies(
                     clash_api,
-                    group_name,
+                    test_group,
                 )
 
             delay_results = clash_api.test_results.values()
             # 打印测试结果摘要
-            print_test_summary(group_name, delay_results, len(proxies))
+            print_test_summary(test_group, delay_results, len(proxies))
 
             logger.info(
                 "===================移除失效节点并按延迟排序==================="
@@ -2114,14 +2068,14 @@ async def run_clash_test(config: ClashConfig, groups_to_test: list[str]):
             # 为每个组更新有效节点的顺序
             proxy_names = set()
             # 只对一个group的proxies排序即可
-            group_proxies = config.get_group_proxies(group_name)
+            group_proxies = config.get_group_proxies(test_group)
             group_results = [r for r in delay_results if r.name in group_proxies]
             if settings.limit:
                 group_results = group_results[: settings.limit]
             for r in group_results:
                 proxy_names.add(r.name)
 
-            for group_name in groups_to_test:
+            for group_name in config.get_group_names()[1:]:
                 config.update_group_proxies(group_name, group_results)
                 logger.info(f"'{group_name}'已按延迟大小重新排序")
 

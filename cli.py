@@ -1,5 +1,7 @@
 from itertools import chain
+import os
 import pathlib
+import random
 import re
 import time
 import yaml
@@ -11,16 +13,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import unquote
 from clash import check_nodes_on_mihomo
 from convert import v2ray_to_clash
-from utils import b64decodes, read_yaml
+from utils import b64decodes, extra_headers, generate_user_agents, read_yaml
 from bs4 import BeautifulSoup
 
 from loguru import logger
 from config import settings
-
-
-session = requests.Session()
-session.trust_env = False
-session.headers["User-Agent"] = settings.user_agent
 
 
 def safe_request(url: str) -> str:
@@ -28,7 +25,11 @@ def safe_request(url: str) -> str:
         if pathlib.Path(url).exists():
             with open(url, "r") as f:
                 return f.read()
-        with session.get(url, timeout=settings.request_timeout) as r:
+        with requests.get(
+            url,
+            timeout=settings.request_timeout,
+            headers=extra_headers(),
+        ) as r:
             if (r.status_code // 100) == 2:
                 return r.text.strip().replace("\ufeff", "")
     except Exception as e:
@@ -486,7 +487,11 @@ def get_region_from_ip(ip):
 
     for endpoint in api_endpoints:
         try:
-            response = session.get(endpoint)
+            response = requests.get(
+                endpoint,
+                headers={"User-Agent": random.choice(generate_user_agents())},
+                timeout=settings.request_timeout,
+            )
             if response.status_code == 200:
                 data = response.json()
                 if "country" in data:
@@ -497,12 +502,31 @@ def get_region_from_ip(ip):
 
 
 def statistics_sources(sources: list[Source]):
-    out = "index, link, normal/unsupported/fetched\n"
+    out = "index, link, unique/unsupported/fetched\n"
     unique_total = 0
     unsupported_total = 0
     all = 0
+    source_path = "results/sources"
+    if not os.path.exists(source_path):
+        os.makedirs(source_path)
+
     for i, s in enumerate(sources):
         out += f"{i},{s._source.url},{len(s.unique_proxies)}/{len(s.unsupported_proxies)}/{len(s.proxies)}\n"
+        write_proxies(
+            f"{source_path}/{i}_unique_list.yml",
+            {"proxies": s.unique_proxies},
+            comment=f"Source {i} ({s._source.url}), {len(s.unique_proxies)}",
+        )
+        write_proxies(
+            f"{source_path}/{i}_unsupported_list.yml",
+            {"proxies": s.unsupported_proxies},
+            comment=f"Source {i} ({s._source.url}), {len(s.unsupported_proxies)}",
+        )
+        write_proxies(
+            f"{source_path}/{i}_fetched_list.yml",
+            {"proxies": s.proxies},
+            comment=f"Source {i} ({s._source.url}), {len(s.proxies)}",
+        )
         unique_total += len(s.unique_proxies)
         unsupported_total += len(s.unsupported_proxies)
         all += len(s.proxies)
@@ -526,26 +550,27 @@ def write_rules_fragments(rules: dict):
             yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
-def check_nodes_in_batches(nodes: list[dict[str, Any]]):
-    all_alive_nodes = []
-    if len(nodes) > settings.delay_batch:
-        for i in range(0, len(nodes), settings.delay_batch):
-            batch_nodes = nodes[i : i + settings.delay_batch]
-            logger.info(
-                f"Processing batch nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
-            )
-            alives = check_nodes_on_mihomo(batch_nodes)
-            logger.info(
-                f"Processed batch and result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
-            )
-            all_alive_nodes.extend(alives)
-            time.sleep(1)
-        time.sleep(10)
-    else:
-        all_alive_nodes = nodes[:]
-
-    logger.info(f"Final node test num: {len(all_alive_nodes)}")
-    return check_nodes_on_mihomo(all_alive_nodes)
+def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
+    logger.info(f"Checking {len(nodes)} nodes for {save_name_prefix}...")
+    write_proxies(f"results/{save_name_prefix}_fetch_list.yml", {"proxies": nodes})
+    alive_proxies = []
+    for i in range(0, len(nodes), settings.delay_batch_test_size):
+        batch_nodes = nodes[i : i + settings.delay_batch_test_size]
+        logger.info(
+            f"batched nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+        )
+        alives = check_nodes_on_mihomo(batch_nodes)
+        logger.info(
+            f"batched result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+        )
+        alive_proxies.extend(alives)
+        time.sleep(1)
+    write_proxies(
+        f"results/{save_name_prefix}_alive_list.yml",
+        {"proxies": alive_proxies},
+    )
+    logger.info(f"Checking done, alive proxies: {len(alive_proxies)}")
+    return alive_proxies
 
 
 def main():
@@ -555,23 +580,32 @@ def main():
         settings.source_fetch_threads,
     )
 
-    logger.info("Checking alive nodes in batches...")
-    all_nodes = [n for s in sources for n in s.unique_proxies]
-    if not all_nodes:
-        raise RuntimeError("No fetched nodes found, exit. And try again later.")
+    # Retry local
+    local_alive = check_nodes(
+        "local",
+        sources[0].unique_proxies,
+    )
 
-    alive_nodes = check_nodes_in_batches(all_nodes)
-    if not alive_nodes:
-        raise RuntimeError("No alive nodes found, exit. And try again later.")
+    # Try remote
+    remote_alive = check_nodes(
+        "remote",
+        [n for s in sources[1:] for n in s.unique_proxies],
+    )
 
-    logger.info(f"Found {len(alive_nodes)} alive nodes from {len(all_nodes)} nodes.")
+    all_alives = local_alive + remote_alive
+    logger.info(f"Total alive proxies: {len(all_alives)}")
+    write_all(all_alives)
+
+
+def write_all(nodes: list[dict[str, Any]]):
+    logger.info("Writing out all proxies...")
 
     logger.info("Classifying nodes by region...")
-    ctg_nodes_meta: dict[str, list[dict[str, Any]]] = {}
+    category_nodes: dict[str, list[dict[str, Any]]] = {}
     categories: dict[str, list[str]] = settings.categories
     for ctg in categories:
-        ctg_nodes_meta[ctg] = []
-    for n in alive_nodes:
+        category_nodes[ctg] = []
+    for n in nodes:
         ctgs: list[str] = []
         for ctg, keys in categories.items():
             for key in keys:
@@ -581,10 +615,7 @@ def main():
             if ctgs and keys[-1] == "OVERALL":
                 break
         if len(ctgs) == 1:
-            ctg_nodes_meta[ctgs[0]].append(clash_data(n))
-    for ctg, proxies in ctg_nodes_meta.items():
-        with open("snippets/nodes_" + ctg + ".meta.yml", "w", encoding="utf-8") as f:
-            yaml.dump({"proxies": proxies}, f, allow_unicode=True)
+            category_nodes[ctgs[0]].append(clash_data(n))
 
     logger.info("Read clash config template...")
     config: dict[str, Any] = read_yaml("template/config.yml")
@@ -634,7 +665,7 @@ def main():
     proxies_meta: list[dict[str, Any]] = []
     ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
     names_clash_meta: Union[set[str], list[str]] = set()
-    for n in alive_nodes:
+    for n in nodes:
         proxies_meta.append(clash_data(n))
         names_clash_meta.add(n["name"])
     names_clash_meta = list(names_clash_meta)
@@ -656,7 +687,7 @@ def main():
 
     config["proxy-groups"][-1]["proxies"] = []
     ctg_selects: list[str] = config["proxy-groups"][-1]["proxies"]
-    for ctg, payload in ctg_nodes_meta.items():
+    for ctg, payload in category_nodes.items():
         if ctg in settings.categories_disp:
             disp = ctg_base.copy()
             disp["name"] = settings.categories_disp[ctg]
@@ -668,17 +699,16 @@ def main():
             ctg_selects.append(disp["name"])
     if dns_mode:
         config["dns"]["enhanced-mode"] = dns_mode
-    with open("list.meta.yml", "w", encoding="utf-8") as f:
-        f.write(datetime.datetime.now().strftime("# Update: %Y-%m-%d %H:%M\n"))
-        f.write(yaml.dump(config, allow_unicode=True).replace("!!str ", ""))
-    with open("snippets/nodes.meta.yml", "w", encoding="utf-8") as f:
-        f.write(
-            yaml.dump({"proxies": proxies_meta}, allow_unicode=True).replace(
-                "!!str ", ""
-            )
-        )
+    write_proxies("results/all_list.yml", config)
 
-    write_rules_fragments(rules)
+
+def write_proxies(save_path: str, config, comment: str = None):
+    logger.info(f"Writing out proxies to {save_path}...")
+    with open(save_path, "w", encoding="utf-8") as f:
+        f.write(datetime.datetime.now().strftime("# Update: %Y-%m-%d %H:%M\n"))
+        if comment:
+            f.write(f"# {comment}\n")
+        f.write(yaml.dump(config, allow_unicode=True).replace("!!str ", ""))
 
 
 if __name__ == "__main__":

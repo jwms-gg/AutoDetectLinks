@@ -10,7 +10,7 @@ on:
       - template/**
       - .github/workflows/**
       - '**.py'
-      - snippets/_*
+      - results/**
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -49,7 +49,7 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: snippets/* list*
+          file_pattern: results/*
           commit_message: ${{ steps.commit-date-msg.outputs.msg }}
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           skip_fetch: true

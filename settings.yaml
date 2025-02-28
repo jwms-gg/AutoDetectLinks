@@ -1,7 +1,7 @@
 default:
   source_fetch_threads: 10
   sources:
-    - url: list.meta.yml
+    - url: results/all_list.yml
       type: clash
     - url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml
       type: clash
@@ -73,6 +73,8 @@ default:
     - url: https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml
       type: clash
     - url: https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1500ms.yaml
+      type: clash
+    - url: https://raw.githubusercontent.com/qianlima8888/autoClashProxy/refs/heads/main/list.yaml
       type: clash
     - url: https://raw.githubusercontent.com/lagzian/SS-Collector/main/VLESS/VL100.txt
       type: v2ray
@@ -158,9 +160,6 @@ default:
     - url: https://t.me/s/VmessProtocol
       type: v2ray
       method: telegram
-    - url: https://t.me/s/networknim
-      type: v2ray
-      method: telegram
     - url: https://t.me/s/MsV2ray
       type: v2ray
       method: telegram
@@ -201,9 +200,8 @@ default:
   subconverter: https://subapi.cmliussss.net
   subconverter_config: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini
   delay_url_test: https://www.gstatic.com/generate_204
-  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0
   limit: 1500
-  delay_batch: 699
+  delay_batch_test_size: 600
   max_concurrent_tests: 100
   clash_api_secret: ''
   clash_api_host: 127.0.0.1

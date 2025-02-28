@@ -1,5 +1,6 @@
 import base64
 import binascii
+import random
 import re
 
 import yaml
@@ -48,3 +49,38 @@ def is_base64(s):
         return True
     else:
         return False
+
+
+def generate_user_agents():
+    user_agents = []
+    bases = [
+        "Mozilla/5.0 ({system}) AppleWebKit/537.36 (KHTML, like Gecko) {browser}/{version} Safari/537.36 clash-verge/v2.1.1",
+        "Mozilla/5.0 ({system}) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{version} Mobile/15E148 Safari/604.1 clash-verge/v2.1.1",
+    ]
+    systems = [
+        "Windows NT 10.0; Win64; x64",
+        "Macintosh; Intel Mac OS X 10_15_7",
+        "Linux; Android 8.0.0; Plume L2",
+        "iPhone; CPU iPhone OS 16_0 like Mac OS X",
+    ]
+    browsers = [
+        ("Chrome", [99, 100, 110, 116]),
+        ("Safari", [12, 13, 14, 15]),
+        ("Opera", [50, 60, 70, 80]),
+        ("Brave", [1, 1.2, 1.3, 1.5]),
+    ]
+
+    for _ in range(100):
+        system = random.choice(systems)
+        browser, versions = random.choice(browsers)
+        version = random.choice(versions)
+        base = random.choice(bases)
+        user_agents.append(base.format(system=system, browser=browser, version=version))
+
+    return user_agents
+
+
+def extra_headers(extra: dict = {}):
+    return {
+        "User-Agent": random.choice(generate_user_agents()),
+    }.update(**extra)
