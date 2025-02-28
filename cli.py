@@ -513,24 +513,27 @@ def statistics_sources(sources: list[Source]):
     for i, s in enumerate(sources):
         out += f"{i},{s._source.url},{len(s.unique_proxies)}/{len(s.unsupported_proxies)}/{len(s.proxies)}\n"
         write_proxies(
-            f"{source_path}/{i}_unique_list.yml",
+            f"{source_path}/{i}_unique.yml",
             {"proxies": s.unique_proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.unique_proxies)}",
         )
         write_proxies(
-            f"{source_path}/{i}_unsupported_list.yml",
+            f"{source_path}/{i}_unsupported.yml",
             {"proxies": s.unsupported_proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.unsupported_proxies)}",
         )
         write_proxies(
-            f"{source_path}/{i}_fetched_list.yml",
+            f"{source_path}/{i}_fetched.yml",
             {"proxies": s.proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.proxies)}",
         )
         unique_total += len(s.unique_proxies)
         unsupported_total += len(s.unsupported_proxies)
         all += len(s.proxies)
+
     out += f"\nTotal,,{unique_total}/{unsupported_total}/{all}\n"
+    with open("results/sources.csv", "w", encoding="utf-8") as f:
+        f.write(out)
 
     logger.info(f"Writing out statistics of sources fetched:\n{out}")
 
@@ -552,7 +555,11 @@ def write_rules_fragments(rules: dict):
 
 def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Checking {len(nodes)} nodes for {save_name_prefix}...")
-    write_proxies(f"results/{save_name_prefix}_fetch_list.yml", {"proxies": nodes})
+    write_proxies(
+        f"results/{save_name_prefix}_fetch.yml",
+        {"proxies": nodes},
+        comment=f"Checking proxies of {save_name_prefix}, {len(nodes)}",
+    )
     alive_proxies = []
     for i in range(0, len(nodes), settings.delay_batch_test_size):
         batch_nodes = nodes[i : i + settings.delay_batch_test_size]
@@ -566,8 +573,9 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
         alive_proxies.extend(alives)
         time.sleep(1)
     write_proxies(
-        f"results/{save_name_prefix}_alive_list.yml",
+        f"results/{save_name_prefix}_alive.yml",
         {"proxies": alive_proxies},
+        comment=f"Alive proxies of {save_name_prefix}, {len(alive_proxies)}",
     )
     logger.info(f"Checking done, alive proxies: {len(alive_proxies)}")
     return alive_proxies
@@ -699,7 +707,11 @@ def write_all(nodes: list[dict[str, Any]]):
             ctg_selects.append(disp["name"])
     if dns_mode:
         config["dns"]["enhanced-mode"] = dns_mode
-    write_proxies("results/all_list.yml", config)
+    write_proxies(
+        "results/all.yml",
+        config,
+        comment=f"All proxies, {len(nodes)}",
+    )
 
 
 def write_proxies(save_path: str, config, comment: str = None):
