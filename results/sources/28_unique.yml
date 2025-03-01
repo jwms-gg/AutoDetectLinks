@@ -1,5 +1,5 @@
-# Update: 2025-03-02 02:22
-# Source 28 (https://raw.githubusercontent.com/lagzian/SS-Collector/main/vmess_tvc_clash.yaml), 19
+# Update: 2025-03-03 09:24
+# Source 28 (https://raw.githubusercontent.com/lagzian/SS-Collector/main/vmess_tvc_clash.yaml), 18
 proxies:
 - alterId: 0
   cipher: auto
@@ -122,28 +122,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 🇲🇽MX | 🟢 | vmess | @DeamNet_Pr...
+  name: 🇨🇳CN | 🟢 | vmess | @DeamNet_Pr...
   network: raw
-  port: 18000
-  server: 79.127.229.54
+  port: 50002
+  server: 112.132.215.12
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇩🇪DE | 🟢 | vmess | @DeamNet_Pr...
-  network: raw
-  port: 41391
-  server: 159.69.120.98
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b5c3e2e8-dfb6-4a0a-b656-87e997610785
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -215,14 +204,18 @@ proxies:
     headers:
       host: tms.dingtalk.com
     path: /
-- alterId: 1
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 🇯🇵JP | 🟢 | vmess | @Hope_Net |...
-  network: tcp
-  port: 444
-  server: 57.181.175.180
+  network: ws
+  port: 22356
+  server: 54.168.205.82
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      host: 0000000000000000000000000071.cgroup-node-for-bigairport.sbs
+    path: /

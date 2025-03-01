@@ -1,5 +1,5 @@
-# Update: 2025-03-02 02:22
-# Source 7 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 4
+# Update: 2025-03-03 09:24
+# Source 7 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 6
 proxies:
 - name: tg频道:@ripaojiedian
   port: 4000
@@ -14,19 +14,41 @@ proxies:
   skip-cert-verify: false
   sni: xx.tc.hk.go.107421.xyz
   type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港10|@ripaojiedian
-  password: Vad3.123a%2529asd1234-asdasd.asdazzS.123
-  port: 443
-  server: 43.154.83.213
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港9|@ripaojiedian
+  port: 37903
+  server: 38.147.188.105
   skip-cert-verify: false
-  sni: xx.tc.hk.go.107421.xyz
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 21e549ac-f8a0-4dfe-a626-fe1630c7b804
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇯🇵 日本4|@ripaojiedian
+  port: 48019
+  server: 45.159.51.116
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '🇸🇬 狮城特殊|@ripaojiedian #1'
+  name: 🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.143.187.178
+  server: 13.231.243.205
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.248.148.112
   tfo: false
   type: ss

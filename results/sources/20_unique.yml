@@ -1,70 +1,85 @@
-# Update: 2025-03-02 02:22
-# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 9
+# Update: 2025-03-03 09:24
+# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 8
 proxies:
-- cipher: aes-256-gcm
-  name: 🇺🇸美国2 | ⬇️ 1.0MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵日本1 | ⬇️ 3.1MB/s
-  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-- name: 🌀其他1-越南 | ⬇️ 1.3MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- cipher: aes-256-gcm
-  name: 🇺🇸美国6 | ⬇️ 1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸美国8 | ⬇️ 1.1MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 139.64.165.230
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸美国9 | ⬇️ 1.1MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🌀其他2-未识别 | ⬇️ 6.6MB/s
+- alterId: 2
+  cipher: auto
+  name: 🌀其他1-印度 | ⬇️ 5.9MB/s
   network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
+  port: 23611
+  server: 11.mamamajd.site
+  skip-cert-verify: true
   tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  type: vmess
+  udp: true
+  uuid: 975eba47-5d04-3761-aca6-4bfee48b8fe9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- cipher: aes-256-gcm
-  name: 🇺🇸美国10 | ⬇️ 1.0MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.68.135.208
-  type: ss
+      Host: 11.mamamajd.site
+    path: /
+- name: 🇯🇵日本2 | ⬇️ 6.3MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
+  tfo: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸美国11 | ⬇️ 5.2MB/s
-  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
-  port: 36371
-  server: free.2weradf.xyz
-  type: ss
+- name: 🇸🇬新加坡1 | ⬇️ 6.3MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20130
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x130.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸美国3 | ⬇️ 5.3MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 975eba47-5d04-3761-aca6-4bfee48b8fe9
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
+- name: 🇺🇸美国4 | ⬇️ 1.5MB/s
+  password: iMqY3uG_5pgEj3hCfyHB-0vB
+  port: 443
+  server: 143.198.235.49
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- name: 🇺🇸美国5 | ⬇️ 2.9MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 16895
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x40.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- name: 🇰🇷韩国1 | ⬇️ 1.0MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 45168
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z263.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 🇯🇵日本6 | ⬇️ 5.1MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true

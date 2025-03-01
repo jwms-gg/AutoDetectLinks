@@ -1,200 +1,150 @@
-# Update: 2025-03-02 02:22
-# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 22
+# Update: 2025-03-03 09:24
+# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 17
 proxies:
-- name: '🇺🇸美国1 | ⬇️ 5.6MB/s #1'
-  password: sysadmin.sysadmin
-  port: 446
-  server: 23.95.20.134
+- alterId: 2
+  cipher: auto
+  name: 🌀其他1-印度 | ⬇️ 5.9MB/s
+  network: ws
+  port: 23611
+  server: 11.mamamajd.site
   skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸美国2 | ⬇️ 1.0MB/s
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵日本1 | ⬇️ 3.1MB/s
-  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-- client-fingerprint: chrome
-  name: 🇺🇸美国3 | ⬇️ 4.3MB/s
-  network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: '🇺🇸美国4 | ⬇️ 5.3MB/s #1'
-  network: ws
-  port: 2052
-  server: 45.149.12.183
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 975eba47-5d04-3761-aca6-4bfee48b8fe9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- cipher: aes-256-cfb
+      Host: 11.mamamajd.site
+    path: /
+- auth: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
   client-fingerprint: chrome
-  name: 🇯🇵日本2 | ⬇️ 2.7MB/s
+  name: 🌀其他2-瑞典 | ⬇️ 18.3MB/s
+  password: 999fe97a-5cd1-4f9f-9826-85db2b50a6ef
+  port: 8899
+  server: yingguo1.su8.lol
+  skip-cert-verify: false
+  sni: yingguo1.su8.lol
+  type: hysteria2
+- cipher: aes-256-cfb
+  name: 🇯🇵日本1 | ⬇️ 12.5MB/s
   password: amazonskr05
   port: 443
-  server: 18.181.211.125
+  server: 13.114.82.97
   type: ss
-- name: 🌀其他1-越南 | ⬇️ 1.3MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
-  udp: true
-  username: myszy
-- client-fingerprint: chrome
-  name: '🇺🇸美国5 | ⬇️ 5.4MB/s #1'
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
-- cipher: aes-256-gcm
-  name: 🇺🇸美国6 | ⬇️ 1.1MB/s
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- name: 🇺🇸美国7 | ⬇️ 5.0MB/s
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 🇯🇵日本3 | ⬇️ 1.4MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jpgmo101-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jpgmo101-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 🇷🇺俄罗斯1 | ⬇️ 5.5MB/s
-  password: dongtaiwang.com
-  port: 51224
-  server: 46.17.41.189
+- name: 🇯🇵日本2 | ⬇️ 6.3MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20071
+  server: gy.58n.net
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 🇫🇷法国1 | ⬇️ 1.3MB/s
-  password: dongtaiwang.com
-  port: 13861
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧英国1 | ⬇️ 3.8MB/s
-  password: 7kxlu80MRzBQ74VB0W20k7
-  port: 443
-  server: 78.129.140.11
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸美国8 | ⬇️ 1.1MB/s
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 139.64.165.230
-  type: ss
+  sni: x71.flybar.work
+  tfo: true
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸美国9 | ⬇️ 1.1MB/s
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🌀其他2-未识别 | ⬇️ 6.6MB/s
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- cipher: aes-256-gcm
-  name: 🇺🇸美国10 | ⬇️ 1.0MB/s
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.68.135.208
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸美国11 | ⬇️ 5.2MB/s
-  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
-  port: 36371
-  server: free.2weradf.xyz
-  type: ss
-- client-fingerprint: chrome
-  name: '🇺🇸美国12 | ⬇️ 1.0MB/s #1'
-  network: ws
-  port: 2095
-  server: 156.238.18.163
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - cipher: aes-256-cfb
-  name: '🇷🇺俄罗斯2 | ⬇️ 3.7MB/s #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.173
-  type: ss
-- name: 🇭🇰香港1 | ⬇️ 1.3MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
+  name: 🇺🇸美国1 | ⬇️ 5.6MB/s
+  password: amazonskr05
   port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  server: 52.195.185.114
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '🇺🇸美国2 | ⬇️ 1.0MB/s #1'
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 23.154.136.162
+  type: ss
+- name: 🇸🇬新加坡1 | ⬇️ 6.3MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20130
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x130.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸美国3 | ⬇️ 5.3MB/s
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 975eba47-5d04-3761-aca6-4bfee48b8fe9
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
+- name: 🇺🇸美国4 | ⬇️ 1.5MB/s
+  password: iMqY3uG_5pgEj3hCfyHB-0vB
+  port: 443
+  server: 143.198.235.49
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇯🇵日本3 | ⬇️ 2.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.20.120
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇯🇵日本4 | ⬇️ 3.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.183.221.195
+  type: ss
+  udp: true
+- name: 🇺🇸美国5 | ⬇️ 2.9MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 16895
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x40.flybar.work
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇨🇦加拿大1 | ⬇️ 10.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.48.255
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇯🇵日本5 | ⬇️ 6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.64.124.92
+  type: ss
+- name: 🇰🇷韩国1 | ⬇️ 1.0MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 45168
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z263.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 🇯🇵日本6 | ⬇️ 5.1MB/s
+  password: 4e0c3a4b-bdac-3950-b736-2c90b76ee530
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇯🇵日本7 | ⬇️ 3.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.231.162.239
+  type: ss
+  udp: true
