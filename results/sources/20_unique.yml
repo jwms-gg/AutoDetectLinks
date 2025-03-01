@@ -1,145 +1,70 @@
-# Update: 2025-03-01 14:24
-# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 15
+# Update: 2025-03-02 02:22
+# Source 20 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 9
 proxies:
-- name: 🇯🇵日本1 | ⬇️ 6.0MB/s
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 20139
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z139.hongkongnode.top
-  type: trojan
+- cipher: aes-256-gcm
+  name: 🇺🇸美国2 | ⬇️ 1.0MB/s
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.68.135.208
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧英国1 | ⬇️ 4.4MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.e1.gladns.com
+  name: 🇯🇵日本1 | ⬇️ 3.1MB/s
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
+  port: 36113
+  server: free.2weradf.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸美国1 | ⬇️ 5.8MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.d3.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦加拿大1 | ⬇️ 3.1MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.s2.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼台湾1 | ⬇️ 2.0MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m3.gladns.com
-  type: ss
-- name: 🇯🇵日本2 | ⬇️ 6.0MB/s
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 20140
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z140.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 🇸🇬新加坡1 | ⬇️ 2.3MB/s
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 20130
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x130.flybar.work
-  type: trojan
-  udp: true
-- name: 🇺🇸美国7 | ⬇️ 1.2MB/s
-  network: ws
-  port: 443
-  server: wilson.ns.cloudflare.com
-  servername: s5.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: s5.ylkszy.eu.org
-    path: /?ed=2560
-- name: 🇺🇸美国8 | ⬇️ 5.6MB/s
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 20305
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z305.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬新加坡2 | ⬇️ 5.8MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m5.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸美国9 | ⬇️ 5.7MB/s
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.f2.gladns.com
-  type: ss
-- name: 🇺🇸美国10 | ⬇️ 1.6MB/s
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: s5.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: s5.ylkszy.eu.org
-    path: /?ed=2560
-- name: 🇺🇸美国11 | ⬇️ 6.0MB/s
+- name: 🌀其他1-越南 | ⬇️ 1.3MB/s
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
   type: socks5
   udp: true
   username: myszy
-- name: 🇯🇵日本3 | ⬇️ 3.1MB/s
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 54178
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x115.flybar.work
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇦乌克兰1 | ⬇️ 6.6MB/s
-  password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
-  port: 31348
-  server: 188.191.147.127
+- cipher: aes-256-gcm
+  name: 🇺🇸美国6 | ⬇️ 1.1MB/s
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.68.135.208
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 🇺🇸美国8 | ⬇️ 1.1MB/s
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 139.64.165.230
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇺🇸美国9 | ⬇️ 1.1MB/s
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.68.135.208
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🌀其他2-未识别 | ⬇️ 6.6MB/s
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- cipher: aes-256-gcm
+  name: 🇺🇸美国10 | ⬇️ 1.0MB/s
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.135.208
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸美国11 | ⬇️ 5.2MB/s
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
+  port: 36371
+  server: free.2weradf.xyz
+  type: ss

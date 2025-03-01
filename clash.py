@@ -18,15 +18,11 @@ import platform
 import os
 from datetime import datetime
 from asyncio import Semaphore
-import ssl
 
 from utils import b64decodes_safe, extra_headers
 from config import settings
 from loguru import logger
 from requests_html import HTMLSession
-
-ssl._create_default_https_context = ssl._create_unverified_context
-
 
 # Clash 配置文件的基础结构
 clash_config_template = {
@@ -1921,34 +1917,32 @@ class ClashAPI:
         if not self.base_url:
             raise ClashAPIException("未建立与 Clash API 的连接")
 
-        async with self.semaphore:
-            try:
-                response = await self.client.get(
-                    f"{self.base_url}/group/{group_name}/delay",
-                    headers=self.headers,
-                    params={
-                        "url": settings.delay_url_test,
-                        "timeout": str(
-                            settings.delay_timeout_unit * 1000 * timeout_times
-                        ),
-                    },
-                    timeout=None,
-                )
-                response.raise_for_status()
-                delay_rsp: dict = response.json()
-                delays = [
-                    ProxyDelayResult(name, delay) for name, delay in delay_rsp.items()
-                ]
-            except Exception as e:
-                logger.exception(f"测试策略组 {group_name} 失败: {e}")
-                delays = {}
-            finally:
-                # 更新缓存
-                for d in delays:
-                    if d.name not in self.test_results:
-                        self.test_results[d.name] = d
-                    elif self.test_results[d.name].delay > d.delay:
-                        self.test_results[d.name] = d
+        try:
+            response = await self.client.get(
+                f"{self.base_url}/group/{group_name}/delay",
+                headers=self.headers,
+                params={
+                    "url": settings.delay_url_test,
+                    "timeout": str(settings.delay_timeout_unit * 1000 * timeout_times),
+                },
+                timeout=None,
+            )
+            response.raise_for_status()
+            delay_rsp: dict = response.json()
+            delays = [
+                ProxyDelayResult(name, delay) for name, delay in delay_rsp.items()
+            ]
+
+        except Exception as e:
+            logger.exception(f"测试策略组 {group_name} 失败: {e}")
+            delays = {}
+        finally:
+            # 更新缓存
+            for d in delays:
+                if d.name not in self.test_results:
+                    self.test_results[d.name] = d
+                elif self.test_results[d.name].delay > d.delay:
+                    self.test_results[d.name] = d
 
 
 # 打印测试结果摘要

@@ -1,17 +1,93 @@
-# Update: 2025-03-01 14:24
-# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 3
+# Update: 2025-03-02 02:22
+# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 11
 proxies:
-- name: '🇺🇸美国2 | ⬇️ 3.1MB/s #2'
+- name: '🇺🇸美国1 | ⬇️ 5.6MB/s #2'
+  password: sysadmin.sysadmin
+  port: 446
+  server: 23.95.20.134
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: '🇺🇸美国2 | ⬇️ 1.0MB/s #1'
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.68.135.208
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇺🇸美国3 | ⬇️ 4.3MB/s #1'
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- client-fingerprint: chrome
+  name: '🇺🇸美国5 | ⬇️ 5.4MB/s #2'
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- cipher: aes-256-gcm
+  name: '🇺🇸美国6 | ⬇️ 1.1MB/s #1'
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.68.135.208
+  type: ss
+  udp: true
+- name: '🇯🇵日本3 | ⬇️ 1.4MB/s #1'
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
-  server: usgp3-cdn-route.couldflare-cdn.com
+  server: jpgmo101-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  sni: usgp3-cdn-route.couldflare-cdn.com
+  sni: jpgmo101-cdn-route.couldflare-cdn.com
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-gcm
+  name: '🇺🇸美国9 | ⬇️ 1.1MB/s #1'
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.68.135.208
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: '🇺🇸美国12 | ⬇️ 2.3MB/s #2'
+  name: '🌀其他2-未识别 | ⬇️ 6.6MB/s #1'
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  servername: redw.pooriam.ir
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /LwW5jwrnymnOdqki?ed=2560
+- cipher: aes-256-gcm
+  name: '🇺🇸美国10 | ⬇️ 1.0MB/s #1'
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.135.208
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇺🇸美国12 | ⬇️ 1.0MB/s #2'
   network: ws
   port: 2095
   server: 156.238.18.163
@@ -23,10 +99,9 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇦乌克兰1 | ⬇️ 6.6MB/s #1'
-  password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
-  port: 31348
-  server: 188.191.147.127
+- cipher: aes-256-cfb
+  name: '🇷🇺俄罗斯2 | ⬇️ 3.7MB/s #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
   type: ss
-  udp: true

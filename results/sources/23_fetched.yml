@@ -1,57 +1,85 @@
-# Update: 2025-03-01 14:24
-# Source 23 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/youtube?ref_type=heads), 6
+# Update: 2025-03-02 02:22
+# Source 23 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/youtube?ref_type=heads), 9
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '🇨🇦加拿大1 | ⬇️ 3.1MB/s #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.s2.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇹🇼台湾1 | ⬇️ 2.0MB/s #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m3.gladns.com
-  type: ss
-- name: '🇺🇸美国5 | ⬇️ 1.6MB/s #1'
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
+- client-fingerprint: chrome
+  name: '🇺🇸美国3 | ⬇️ 4.3MB/s #3'
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
   skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- cipher: chacha20-ietf-poly1305
-  name: '🇸🇬新加坡2 | ⬇️ 5.8MB/s #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m5.gladns.com
-  type: ss
-- name: '🇺🇸美国11 | ⬇️ 6.0MB/s #2'
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: '🌀其他1-越南 | ⬇️ 1.3MB/s #1'
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
   type: socks5
   udp: true
   username: myszy
-- name: '🇯🇵日本3 | ⬇️ 3.1MB/s #2'
-  password: b2f95c69-59cd-3da9-8977-d8474b0e12d8
-  port: 54178
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x115.flybar.work
-  type: trojan
+- client-fingerprint: chrome
+  name: '🇺🇸美国5 | ⬇️ 5.4MB/s #4'
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
+- name: '🇯🇵日本3 | ⬇️ 1.4MB/s #3'
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jpgmo101-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jpgmo101-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: '🇷🇺俄罗斯1 | ⬇️ 5.5MB/s #1'
+  password: dongtaiwang.com
+  port: 51224
+  server: 46.17.41.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '🇫🇷法国1 | ⬇️ 1.3MB/s #2'
+  password: dongtaiwang.com
+  port: 13861
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: '🇬🇧英国1 | ⬇️ 3.8MB/s #2'
+  password: 7kxlu80MRzBQ74VB0W20k7
+  port: 443
+  server: 78.129.140.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸美国11 | ⬇️ 5.2MB/s #2'
+  password: 0f0b82ed-33da-4289-8196-3f88b8559b55
+  port: 36371
+  server: free.2weradf.xyz
+  type: ss
+- name: '🇭🇰香港1 | ⬇️ 1.3MB/s #1'
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=

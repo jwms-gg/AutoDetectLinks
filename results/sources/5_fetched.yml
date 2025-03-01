@@ -1,151 +1,133 @@
-# Update: 2025-03-01 14:24
-# Source 5 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 23
+# Update: 2025-03-02 02:22
+# Source 5 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 20
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  type: vmess
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      host: telegram-isvvpn.dev
+    path: /racevpn
+- cipher: chacha20-ietf
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
+- name: 🇨🇳_CN_中国
+  password: '3747000103274291200'
+  port: 443
+  server: 154.205.151.46
+  sni: loving-boa.treefrog761.one
+  type: trojan
+- cipher: aes-256-cfb
+  name: '🇷🇺_RU_俄罗斯->🇩🇪_DE_德国 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: c7fc812c-7c57-3386-8140-07935d060404
+  port: 20288
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z288.hongkongnode.top
+  type: trojan
+- cipher: aes-128-cfb
+  name: '🇺🇸_US_美国_1 #3'
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇺🇸_US_美国_4 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.185.211.74
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇬_SG_新加坡
+  password: amazonskr05
+  port: 443
+  server: 13.250.96.5
+  type: ss
 - alpn:
   - http/1.1
-  name: 🇺🇸_US_美国
+  name: '🇺🇸_US_美国->🇦🇺_AU_澳大利亚 #2'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.170.192.186
+  server: 3.73.176.102
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯
-  network: tcp
-  port: 22946
-  server: 188.130.154.56
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7ed1d138-37f7-41f7-843d-d4f2bdbba913
-- cipher: aes-256-cfb
-  name: '🇷🇴_RO_罗马尼亚 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 188.214.36.155
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_1 #3'
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.143.66.99
-  type: ss
 - cipher: aes-256-cfb
   name: '🇷🇺_RU_俄罗斯_1 #1'
-  password: TPqX8edgbAURcAMb
-  port: 9079
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_2 #1'
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_3 #1'
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_2 #3'
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 69.50.92.110
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_4 #2'
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇦_UA_乌克兰
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 176.103.53.105
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇺🇸_US_美国->🇷🇺_RU_俄罗斯 #2'
-  password: amazonskr05
-  port: 443
-  server: 54.190.1.125
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_5 #3'
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  name: '🇷🇺_RU_俄罗斯_2 #1'
+  password: fG2artUmHfNT2cX7
+  port: 9018
   server: 217.30.10.18
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国->🇨🇳_CN_中国
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
+- cipher: aes-256-cfb
+  name: '🇷🇺_RU_俄罗斯_3 #1'
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
-  name: '🇺🇸_US_美国_4 #3'
+  name: '🇷🇴_RO_罗马尼亚 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 188.214.36.155
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇷🇺_RU_俄罗斯_4 #2'
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇺🇸_US_美国_6 #1'
   password: amazonskr05
   port: 443
   server: 52.33.5.226
   type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '未知 #1'
-  network: tcp
-  port: 100
-  server: 138.199.158.245
-  sni: ''
-  type: vmess
-  uuid: 3f650cc4-39d3-4eb5-82f1-149cca0c342b
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_6 #1'
-  password: Y6R9pAtvxxzmGC
-  port: 5600
-  server: 38.143.66.99
-  type: ss
 - cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_6 #3'
-  password: TN2YqghxeFDKZfLU
-  port: 9037
+  name: '🇷🇺_RU_俄罗斯_5 #4'
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
   server: 217.30.10.18
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   name: '🇺🇸_US_美国_7 #1'
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.91.107.66
+  password: amazonskr05
+  port: 443
+  server: 34.220.211.62
   type: ss
 - cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_7 #2'
-  password: rNBfNuuANFCAk7KB
-  port: 9056
+  name: '🇷🇺_RU_俄罗斯_6 #2'
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
   server: 217.30.10.18
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇦_UA_乌克兰_1 #1'
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_8 #2'
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 69.50.92.110
-  type: ss
 - cipher: aes-256-cfb
-  name: '🇷🇴_RO_罗马尼亚_1 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.193.49.88
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇷🇺_RU_俄罗斯_8 #1'
-  password: Lp27rqyJq72bZsqX
-  port: 9045
+  name: '🇷🇺_RU_俄罗斯_7 #1'
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
   server: 217.30.10.18
   type: ss

@@ -1,78 +1,49 @@
-# Update: 2025-03-01 14:24
-# Source 3 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml), 9
+# Update: 2025-03-02 02:22
+# Source 3 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml), 5
 proxies:
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 🇷🇺_RU_俄罗斯_2
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
   name: 🇷🇺_RU_俄罗斯_3
-  password: QWDDvVE9npNurQfA
-  port: 9026
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
   server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 🇷🇺_RU_俄罗斯_4
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  name: 🇷🇺_RU_俄罗斯_7
+  password: ZET59LF6DvCC8KVt
+  port: 9005
   server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: '🇺🇸_US_美国_1 #1'
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 69.50.93.111
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 🇺🇦_UA_乌克兰_2
-  password: OWY4ODBm
-  port: 8388
-  server: at1.opensocks.site
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 🇬🇧_GB_英国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
+  name: '🇺🇸_US_美国_3 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.190.1.125
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 80
+  server: AC.fastly80-2.hosting-ip.com
+  type: vmess
+  udp: true
+  uuid: 6e3ac406-a15b-461d-8b05-ca01b284d9a0
+  ws-opts:
+    headers:
+      host: telegram-isvvpn.dev
+    path: /racevpn
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_6 #1'
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
+  name: 🇷🇺_RU_俄罗斯_11
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
   server: 217.30.10.18
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  ip-version: dual
-  name: 🇺🇸_US_美国_6
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.170.192.186
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 🇺🇦_UA_乌克兰_3
-  password: YTNjNDY5
-  port: 8388
-  server: 185.234.64.35
   type: ss
   udp: true
