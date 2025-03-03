@@ -3,7 +3,10 @@ import binascii
 import random
 import re
 
+import requests
 import yaml
+
+from config import settings
 
 
 def b64encodes(s: str):
@@ -84,3 +87,27 @@ def extra_headers(extra: dict = {}):
     return {
         "User-Agent": random.choice(generate_user_agents()),
     }.update(**extra)
+
+
+def get_region_from_ip(ip):
+    api_endpoints = [
+        f"https://ipapi.co/{ip}/json/",
+        f"https://ipwhois.app/json/{ip}",
+        f"http://www.geoplugin.net/json.gp?ip={ip}",
+        f"https://api.ipbase.com/v1/json/{ip}",
+    ]
+
+    for endpoint in api_endpoints:
+        try:
+            response = requests.get(
+                endpoint,
+                headers={"User-Agent": random.choice(generate_user_agents())},
+                timeout=settings.request_timeout,
+            )
+            if response.status_code == 200:
+                data = response.json()
+                if "country" in data:
+                    return data["country"]
+        except Exception as e:
+            print(f"Error retrieving region from {endpoint}: {e}")
+    return None

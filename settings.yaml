@@ -1,9 +1,11 @@
 default:
-  source_fetch_threads: 10
+  max_threads: 8
   sources:
     - url: results/all.yml
       type: clash
     - url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml
+      type: clash
+    - url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml
       type: clash
     - url: https://raw.githubusercontent.com/free18/v2ray/main/c.yaml
       type: clash
@@ -25,7 +27,7 @@ default:
       type: clash
     - url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml
       type: clash
-      max: 1314
+      max: 1024
     - url: https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml
       type: clash
       redirect: date
@@ -197,9 +199,9 @@ default:
   limit: 1500
   delay_batch_test_size: 600
   max_concurrent_tests: 100
-  clash_api_secret: ''
-  clash_api_host: 127.0.0.1
-  clash_api_ports_max: 9999
+  clash_secret: ''
+  clash_host: 127.0.0.1
+  clash_ports: 9090
   delay_timeout_unit: 10
   ban: []
     # - 中国

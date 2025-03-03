@@ -1,9 +1,8 @@
 from itertools import chain
 import os
 import pathlib
-import random
 import re
-import time
+import ssl
 import yaml
 from typing import Union, Any, Optional
 import requests
@@ -11,13 +10,16 @@ import datetime
 import copy
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import unquote
-from clash import check_nodes_on_mihomo
+from clash import ClashDelayChecker
 from convert import v2ray_to_clash
-from utils import b64decodes, extra_headers, generate_user_agents, read_yaml
+from model import average_delay
+from utils import b64decodes, extra_headers, read_yaml
 from bs4 import BeautifulSoup
 
 from loguru import logger
 from config import settings
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 def safe_request(url: str) -> str:
@@ -477,30 +479,6 @@ def fetch_sources(
     return sources
 
 
-def get_region_from_ip(ip):
-    api_endpoints = [
-        f"https://ipapi.co/{ip}/json/",
-        f"https://ipwhois.app/json/{ip}",
-        f"http://www.geoplugin.net/json.gp?ip={ip}",
-        f"https://api.ipbase.com/v1/json/{ip}",
-    ]
-
-    for endpoint in api_endpoints:
-        try:
-            response = requests.get(
-                endpoint,
-                headers={"User-Agent": random.choice(generate_user_agents())},
-                timeout=settings.request_timeout,
-            )
-            if response.status_code == 200:
-                data = response.json()
-                if "country" in data:
-                    return data["country"]
-        except Exception as e:
-            print(f"Error retrieving region from {endpoint}: {e}")
-    return None
-
-
 def statistics_sources(sources: list[Source]):
     out = "index, link, unique/unsupported/fetched\n"
     unique_total = 0
@@ -512,17 +490,17 @@ def statistics_sources(sources: list[Source]):
 
     for i, s in enumerate(sources):
         out += f"{i},{s._source.url},{len(s.unique_proxies)}/{len(s.unsupported_proxies)}/{len(s.proxies)}\n"
-        write_proxies(
+        write_result(
             f"{source_path}/{i}_unique.yml",
             {"proxies": s.unique_proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.unique_proxies)}",
         )
-        write_proxies(
+        write_result(
             f"{source_path}/{i}_unsupported.yml",
             {"proxies": s.unsupported_proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.unsupported_proxies)}",
         )
-        write_proxies(
+        write_result(
             f"{source_path}/{i}_fetched.yml",
             {"proxies": s.proxies},
             comment=f"Source {i} ({s._source.url}), {len(s.proxies)}",
@@ -549,33 +527,36 @@ def write_rules_fragments(rules: dict):
         if rpolicy in name_map:
             snippets[name_map[rpolicy]].append(config_rule)
     for name, payload in snippets.items():
-        with open("snippets/" + name + ".yml", "w", encoding="utf-8") as f:
+        with open("results/" + name + ".yml", "w", encoding="utf-8") as f:
             yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
 def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Checking {len(nodes)} nodes for {save_name_prefix}...")
-    write_proxies(
+    write_result(
         f"results/{save_name_prefix}_fetch.yml",
         {"proxies": nodes},
         comment=f"Checking proxies of {save_name_prefix}, {len(nodes)}",
     )
-    alive_proxies = []
-    for i in range(0, len(nodes), settings.delay_batch_test_size):
-        batch_nodes = nodes[i : i + settings.delay_batch_test_size]
+    delay_checker = ClashDelayChecker()
+    delay_checker.check_nodes(nodes)
+    delay_checker.clean_delay_results()
+    alive_proxies = delay_checker.get_nodes()
+    [
         logger.info(
-            f"batched nodes: {len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
+            f"Proxy {p['name']}: {average_delay(delay_checker.proxies_delay[p['name']].history)}ms"
         )
-        alives = check_nodes_on_mihomo(batch_nodes)
-        logger.info(
-            f"batched result: {len(alives)}/{len(batch_nodes)}/{len(batch_nodes)+i}/{len(nodes)}"
-        )
-        alive_proxies.extend(alives)
-        time.sleep(1)
-    write_proxies(
+        for p in alive_proxies
+    ]
+    write_result(
         f"results/{save_name_prefix}_alive.yml",
         {"proxies": alive_proxies},
         comment=f"Alive proxies of {save_name_prefix}, {len(alive_proxies)}",
+    )
+    write_result(
+        "results/problem.yml",
+        {"proxies": delay_checker.problem_proxies},
+        comment=f"Problem proxies, {len(delay_checker.problem_proxies)}",
     )
     logger.info(f"Checking done, alive proxies: {len(alive_proxies)}")
     return alive_proxies
@@ -585,27 +566,26 @@ def main():
     logger.info("Fetching proxies sources...")
     sources = fetch_sources(
         [Source(_) for _ in settings.sources],
-        settings.source_fetch_threads,
+        settings.max_threads,
     )
 
-    # Retry local
-    local_alive = check_nodes(
-        "local",
-        sources[0].unique_proxies,
+    all_alives = check_nodes(
+        "all",
+        [n for s in sources for n in s.unique_proxies],
     )
 
-    # Try remote
-    remote_alive = check_nodes(
-        "remote",
-        [n for s in sources[1:] for n in s.unique_proxies],
-    )
-
-    all_alives = local_alive + remote_alive
     logger.info(f"Total alive proxies: {len(all_alives)}")
-    write_all(all_alives)
+    write_all("results/all.yml", all_alives)
+
+    # Split to 3 parts
+    part_size = len(all_alives) // 3
+    for i, part in enumerate(
+        [all_alives[i : i + part_size] for i in range(0, len(all_alives), part_size)]
+    ):
+        write_all(f"results/all_{i}.yml", part)
 
 
-def write_all(nodes: list[dict[str, Any]]):
+def write_all(file_name: str, nodes: list[dict[str, Any]]):
     logger.info("Writing out all proxies...")
 
     logger.info("Classifying nodes by region...")
@@ -707,14 +687,14 @@ def write_all(nodes: list[dict[str, Any]]):
             ctg_selects.append(disp["name"])
     if dns_mode:
         config["dns"]["enhanced-mode"] = dns_mode
-    write_proxies(
-        "results/all.yml",
+    write_result(
+        file_name,
         config,
-        comment=f"All proxies, {len(nodes)}",
+        comment=f"Proxies number: {len(nodes)}",
     )
 
 
-def write_proxies(save_path: str, config, comment: str = None):
+def write_result(save_path: str, config, comment: str = None):
     logger.info(f"Writing out proxies to {save_path}...")
     with open(save_path, "w", encoding="utf-8") as f:
         f.write(datetime.datetime.now().strftime("# Update: %Y-%m-%d %H:%M\n"))
