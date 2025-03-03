@@ -1,16 +1,49 @@
-# Update: 2025-03-03 14:27
-# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 1
+# Update: 2025-03-04 07:26
+# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads), 5
 proxies:
-- client-fingerprint: chrome
-  name: 🇺🇸美国5 | ⬇️ 1.3MB/s
+- name: 🇺🇸美国1 | ⬇️ 6.5MB/s
+  password: 5a4dda4f-bd1e-35c6-98ea-6cc5e8219072
+  port: 22741
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: dufu.hongkongnode.top
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  name: 🌏亚太地区1 | ⬇️ 1.7MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸美国4 | ⬇️ 5.6MB/s
   network: ws
-  port: 80
-  server: 172.67.207.181
-  skip-cert-verify: false
+  port: 23617
+  server: 17.mamamajd.site
+  skip-cert-verify: true
+  tfo: true
   tls: false
-  type: vless
-  uuid: 5a4e040a-8de6-4222-bd6f-9f535b8772fd
+  type: vmess
+  udp: true
+  uuid: bc196dc5-48b2-3b6d-b1c0-a9a1c8d64228
   ws-opts:
     headers:
-      Host: calm-violet-0e47.pomofoc222.workers.dev
-    path: /lrJO6NEVRGHecfbo?ed=2560
+      Host: 17.mamamajd.site
+    path: /
+- name: 🇺🇸美国5 | ⬇️ 2.9MB/s
+  password: 5a4dda4f-bd1e-35c6-98ea-6cc5e8219072
+  port: 20278
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z278.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 🇯🇵日本4 | ⬇️ 3.2MB/s
+  password: 5a4dda4f-bd1e-35c6-98ea-6cc5e8219072
+  port: 20076
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x76.flybar.work
+  type: trojan
+  udp: true

@@ -59,7 +59,7 @@ clash_config_template = {
             "https://doh.dns.sb/dns-query",
             "https://dns.cloudflare.com/dns-query",
             "https://dns.twnic.tw/dns-query",
-            "tls://8.8.4.4",
+            "tls://8.8.4.4:853",
         ],
         "fallback-filter": {"geoip": True, "ipcidr": ["240.0.0.0/4", "0.0.0.0/32"]},
     },
@@ -2011,7 +2011,7 @@ class ClashDelayChecker:
     def __init__(self) -> None:
         self._lock = threading.Lock()
         self.port_pool = PortPool()
-        self.proxies_delay: dict[str, ProxyDelayItem] = {}
+        self.proxy_delay_dict: dict[str, ProxyDelayItem] = {}
         self.problem_proxies: list[dict[str, Any]] = []
         self.nodes: list[dict[str, Any]] = []
 
@@ -2030,18 +2030,6 @@ class ClashDelayChecker:
             logger.info(f"batched nodes: {batch_msg}")
             self._check_nodes(batch_nodes)
             logger.info(f"batched finished: {batch_msg}")
-        # with ThreadPoolExecutor(max_workers=settings.max_threads) as executor:
-        #     nodes_batches = [
-        #         nodes[i : i + settings.delay_batch_test_size]
-        #         for i in range(0, len(nodes), settings.delay_batch_test_size)
-        #     ]
-        #     f2s = {executor.submit(self._check_nodes, b): b for b in nodes_batches}
-
-        #     for f in as_completed(f2s):
-        #         try:
-        #             f.result()
-        #         except Exception as e:
-        #             logger.warning(f"Failed to check nodes with error: {e}")
 
     def _check_nodes(self, nodes: list[dict[str, Any]]):
         ports = [self.port_pool.get_port() for _ in range(4)]
@@ -2066,9 +2054,9 @@ class ClashDelayChecker:
             [self.port_pool.release_port(p) for p in ports]
 
     def clean_delay_results(self):
-        self.proxies_delay = {
+        self.proxy_delay_dict = {
             k: d
-            for k, d in self.proxies_delay.items()
+            for k, d in self.proxy_delay_dict.items()
             if k
             not in [
                 "自动选择",
@@ -2087,7 +2075,7 @@ class ClashDelayChecker:
 
     def get_nodes(self):
         alive_delay_results = {}
-        for k, d in self.proxies_delay.items():
+        for k, d in self.proxy_delay_dict.items():
             if d.alive:
                 if d.history is None or len(d.history) == 0:
                     logger.info(f"节点 {k} 延迟数据为空")
@@ -2097,7 +2085,7 @@ class ClashDelayChecker:
         delay_nodes = [n for n in self.nodes if n["name"] in alive_delay_results]
         delay_nodes.sort(
             key=lambda n: average_delay(
-                self.proxies_delay[n["name"]].history,
+                self.proxy_delay_dict[n["name"]].history,
             )
         )
         return delay_nodes
@@ -2162,12 +2150,12 @@ class ClashDelayChecker:
         group_name: str,
     ):
         """打印测试结果摘要"""
-        valid_proxies = [p for p in self.proxies_delay if p.alive]
+        valid_proxies = [p for p in self.proxy_delay_dict if p.alive]
         valid = len(valid_proxies)
-        invalid = len(self.proxies_delay) - len(valid_proxies)
+        invalid = len(self.proxy_delay_dict) - len(valid_proxies)
 
         logger.info(f"策略组 '{group_name}' 测试结果:")
-        logger.info(f"总节点数: {len(self.proxies_delay)}")
+        logger.info(f"总节点数: {len(self.proxy_delay_dict)}")
         logger.info(f"可用节点数: {valid}")
         logger.info(f"失效节点数: {invalid}")
 
@@ -2203,7 +2191,10 @@ class ClashDelayChecker:
         try:
             clash_proxies = await clash_api.get_proxies()
             with self._lock:
-                proxies = ProxyDelayList.model_validate(clash_proxies).proxies
-                self.proxies_delay.update(proxies)
+                self.proxy_delay_dict.update(
+                    ProxyDelayList.model_validate(
+                        clash_proxies,
+                    ).proxies
+                )
         except Exception as e:
             logger.exception(f"获取策略组 {group_name} 节点延迟失败: {e}")

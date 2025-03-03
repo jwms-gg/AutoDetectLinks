@@ -540,11 +540,10 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     )
     delay_checker = ClashDelayChecker()
     delay_checker.check_nodes(nodes)
-    delay_checker.clean_delay_results()
     alive_proxies = delay_checker.get_nodes()
     [
         logger.info(
-            f"Proxy {p['name']}: {average_delay(delay_checker.proxies_delay[p['name']].history)}ms"
+            f"Proxy {p['name']}: {average_delay(delay_checker.proxy_delay_dict[p['name']].history)}ms"
         )
         for p in alive_proxies
     ]
@@ -580,7 +579,7 @@ def main():
     # Split to 3 parts
     part_size = len(all_alives) // 3
     for i, part in enumerate(
-        [all_alives[i : i + part_size] for i in range(0, len(all_alives), part_size)]
+        [all_alives[i : i + part_size] for i in range(0, part_size * 3, part_size)]
     ):
         write_all(f"results/all_{i}.yml", part)
 

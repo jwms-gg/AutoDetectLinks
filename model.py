@@ -38,19 +38,3 @@ class ProxyDelayList(BaseModel):
 def average_delay(history: List[HistoryItem]) -> float:
     delays = [item.delay for item in history if item.delay > 0]
     return sum(delays) / len(delays)
-
-
-def sort_proxies(proxy_list: list[ProxyDelayItem]) -> List[ProxyDelayItem]:
-    """Sorts proxy nodes and excludes nodes with delay of 0."""
-    proxies_with_delay = []
-    for proxy in proxy_list:
-        if not proxy.history:
-            continue
-
-        avg_delay = average_delay(proxy.history)
-        if avg_delay is not None:
-            proxies_with_delay.append({"proxy": proxy, "avg_delay": avg_delay})
-
-    sorted_proxies = sorted(proxies_with_delay, key=lambda x: x["avg_delay"])
-
-    return [item["proxy"] for item in sorted_proxies]
