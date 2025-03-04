@@ -1,6 +1,15 @@
-# Update: 2025-03-04 14:28
-# Source 52 (https://raw.githubusercontent.com/Flik6/getNode/main/v2ray.txt), 25
+# Update: 2025-03-06 09:24
+# Source 52 (https://raw.githubusercontent.com/Flik6/getNode/main/v2ray.txt), 27
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 广东省湛江市 移动
+  network: tcp
+  port: '50095'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 🇨🇦 _CA_加拿大
@@ -27,6 +36,15 @@ proxies:
     headers:
       Host: ''
     path: /tg@hkaa0
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '32077'
+  server: 120.232.153.41
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 🇩🇪 _US_美国->🇩🇪_DE_德国
@@ -120,19 +138,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 日本 东京Fastly节点
-  network: ws
-  port: '80'
-  server: www.aetv.com
-  tls: false
-  type: vmess
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
-  ws-opts:
-    headers:
-      Host: amd.al
-    path: /XESALISTHEBEST?ed=2048
-- alterId: 0
-  cipher: auto
   name: 🇱🇹 立陶宛 V2CROSS.COM
   network: ws
   port: '8443'
@@ -157,19 +162,6 @@ proxies:
     headers:
       Host: ''
     path: /path/1696251522438
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱 荷兰 V2CROSS.COM
-  network: ws
-  port: '8443'
-  server: 188.164.248.120
-  tls: true
-  type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
 - alterId: 0
   cipher: auto
   name: 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯
@@ -250,20 +242,33 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #53'
+  name: '🇺🇸 美国 CloudFlare节点 #51'
   network: ws
-  port: '2095'
-  server: s1.db-link02.top
+  port: '2082'
+  server: s4.db-link02.top
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-33-108-197.s1.db-link02.top
-    path: /dabai.in104.24.248.64
+      Host: 100-116-85-183.s4.db-link02.top
+    path: /dabai.in172.67.8.3
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #54'
+  name: '🇺🇸 美国 CloudFlare节点 #52'
+  network: ws
+  port: '8880'
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-14-147-154.s2.db-link01.top
+    path: /dabai.in172.64.0.32
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #53'
   network: ws
   port: '2052'
   server: 104.17.221.248
@@ -276,53 +281,66 @@ proxies:
     path: /dabai.in172.67.75.187
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #55'
+  name: '🇺🇸 美国 CloudFlare节点 #54'
   network: ws
-  port: '8880'
-  server: 104.21.82.183
+  port: '8080'
+  server: s1.cn-db.top
   tls: false
   type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: server26.beheshtbaneh.com
-    path: /
+      Host: 100-230-189-184.s1.cn-db.top
+    path: /dabai.in104.19.155.231
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #55'
+  network: ws
+  port: '443'
+  server: cf.fovi.tk
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxlux.fovi.tk
+    path: /eisasqa
 - alterId: 0
   cipher: auto
   name: '🇺🇸 美国 CloudFlare节点 #56'
   network: ws
-  port: '80'
+  port: '2095'
   server: 104.16.155.10
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-49-141-209.s1.db-link02.top
-    path: /dabai.in104.17.169.115
+      Host: 100-209-47-141.s2.db-link02.top
+    path: /dabai.in104.20.27.115
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 V2CROSS.COM #2'
+  name: 🇺🇸 美国 Fastly全球Anycast节点
   network: ws
-  port: '8443'
-  server: 3h-poland1.09vpn.com
-  tls: true
+  port: '80'
+  server: 151.101.130.168
+  tls: false
   type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
-      Host: 3h-poland1.09vpn.com
-    path: /vmess/
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+  name: '🇺🇸 美国 Fastly全球Anycast节点 #1'
   network: ws
-  port: '443'
-  server: tls.94.node-for-bigairport.win
-  tls: true
+  port: '80'
+  server: 151.101.194.168
+  tls: false
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
-      Host: tls.94.node-for-bigairport.win
-    path: /
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048

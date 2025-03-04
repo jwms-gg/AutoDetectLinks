@@ -1,4 +1,4 @@
-# Update: 2025-03-04 14:28
+# Update: 2025-03-06 09:23
 # Source 8 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 27
 proxies:
 - name: tg频道:@ripaojiedian
@@ -7,7 +7,7 @@ proxies:
   tls: true
   type: http
 - client-fingerprint: chrome
-  name: '🇭🇰 香港|@ripaojiedian #1'
+  name: 🇭🇰 香港|@ripaojiedian
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
   server: 104.251.227.182
@@ -74,24 +74,25 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港9|@ripaojiedian
-  port: 37903
-  server: 38.147.188.105
+  port: 30559
+  server: 38.147.189.108
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 21e549ac-f8a0-4dfe-a626-fe1630c7b804
-- cipher: rc4-md5
+  uuid: 91a7be1d-e997-46be-9b4f-264dce62584a
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 🇭🇰 香港10|@ripaojiedian
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40208
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
+  name: 🇹🇼 台湾|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 86e8c33.dl.microsoft.eu:61496
+    mode: tls
+  port: 2377
+  server: 125.227.86.44
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '🇹🇼 台湾2|@ripaojiedian #1'
@@ -116,6 +117,18 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾5|@ripaojiedian
+  password: Sj10bnYDe7w6V29E
+  plugin: obfs
+  plugin-opts:
+    host: 1741abe87f.m.ctrip.com
+    mode: http
+  port: 11041
+  server: gzdata1.fc-sigma.xyz
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇯🇵 日本|@ripaojiedian
@@ -132,39 +145,48 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '🇯🇵 日本3|@ripaojiedian #1'
-  password: 84HMRAWILKB49QUZ
-  port: 18002
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  name: 🇯🇵 日本3|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 86e8c33.dl.nintendo.com:61496
+    mode: tls
+  port: 2377
+  server: 18.179.197.162
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 🇯🇵 日本4|@ripaojiedian
-  port: 35565
-  server: 120.198.71.214
+  network: ws
+  port: 80
+  server: a41da1ab-5ae0-fa3e-eabe-70e680bdf1bf.castlepeakhospital.moe
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '🇸🇬 新加坡2|@ripaojiedian #2'
-  password: BFYCOKHTC8HIWWRB
-  port: 16006
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇸🇬 新加坡|@ripaojiedian
   password: 0407WKIEIXMTLGC6
   port: 16007
   server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '🇸🇬 新加坡2|@ripaojiedian #2'
+  password: BFYCOKHTC8HIWWRB
+  port: 16006
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -199,7 +221,7 @@ proxies:
   name: 🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.250.31.115
+  server: 18.179.9.121
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -207,7 +229,7 @@ proxies:
   name: 🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.151.184.124
+  server: 54.65.101.11
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -215,14 +237,6 @@ proxies:
   name: 🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.143.186.182
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇦 加拿大|@ripaojiedian
-  password: M2EzY
-  port: 8388
-  server: ca1.ssocks.wiki
+  server: 13.250.31.57
   tfo: false
   type: ss

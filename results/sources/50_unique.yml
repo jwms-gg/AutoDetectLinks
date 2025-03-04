@@ -1,7 +1,7 @@
-# Update: 2025-03-04 14:28
-# Source 50 (https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/vless), 185
+# Update: 2025-03-06 09:23
+# Source 50 (https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/vless), 177
 proxies:
-- name: 防失效github+SubCrawlerCF中转_03040...
+- name: 防失效github+SubCrawlerCF中转_03060...
   network: ws
   port: 443
   server: 172.66.45.4
@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: 94391e80.uvPN-OrG.PAGes.Dev
     path: '%2F'
-- name: CF中转_030405002
+- name: CF中转_030601002
   network: ws
   port: 80
   server: 104.18.63.2
@@ -24,7 +24,18 @@ proxies:
     headers:
       Host: us3.rtacg.com
     path: '%2F'
-- name: CF中转_030405066
+- name: CF中转_030601012
+  network: ws
+  port: 80
+  server: 104.22.52.235
+  tls: false
+  type: vless
+  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+  ws-opts:
+    headers:
+      Host: cc.ailicf.us.kg
+    path: /b5cdabf0-e04
+- name: CF中转_030601077
   network: ws
   port: 443
   server: 104.17.32.100
@@ -36,7 +47,7 @@ proxies:
       Host: nl2.free2222.xyz
     path: '%2fray'
 - flow: xtls-rprx-direct-udp443
-  name: CF中转_030405075
+  name: CF中转_030601086
   network: ws
   port: 443
   server: 104.16.16.255
@@ -48,7 +59,7 @@ proxies:
     headers:
       Host: vincent-jackson2021.ga
     path: '%2fThe-Great-Awakening_ws'
-- name: CF中转_030405078
+- name: CF中转_030601089
   network: ws
   port: 443
   server: 104.17.32.10
@@ -59,7 +70,7 @@ proxies:
     headers:
       Host: v2rayge2.free3333.xyz
     path: '%2fray'
-- name: CF中转_030405082
+- name: CF中转_030601093
   network: ws
   port: 443
   server: 104.18.0.50
@@ -71,7 +82,7 @@ proxies:
       Host: nl2.free2222.xyz
     path: '%2fray'
 - flow: xtls-rprx-origin!
-  name: CF中转_030405084
+  name: CF中转_030601095
   network: ws
   port: 443
   server: 104.17.36.178
@@ -83,106 +94,7 @@ proxies:
     headers:
       Host: vincent-jackson2021.ga
     path: '%2fThe-Great-Awakening_ws'
-- name: CF中转_0304051000
-  network: kcp
-  port: 8880
-  server: 104.21.1.12
-  tls: false
-  type: vless
-  uuid: f07bf2eb-332a-4cc8-b8fa-cfb6b3b9d987
-- name: CF中转_0304051001
-  network: ws
-  port: 2096
-  server: 172.64.80.173
-  servername: J0in-te1egram-EiiiM.danesh-bonyan.Store
-  tls: true
-  type: vless
-  uuid: 05badb9a-9b94-4a07-85af-65bdc2e1c4bf
-  ws-opts:
-    headers:
-      Host: eiiim.danesh-bonyan.Store
-    path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
-- name: CF中转_0304051002
-  network: ws
-  port: 2053
-  server: 172.66.44.98
-  servername: mAhdIServER-4Rm.paGEs.Dev
-  tls: true
-  type: vless
-  uuid: a4924fd2-ffc7-4749-ab49-22435b7c0322
-  ws-opts:
-    headers:
-      Host: mAhdIServER-4Rm.paGEs.Dev
-    path: '%2F4urxrmj89fiisbgc%3Fed%3D2560'
-- name: CF中转_0304051003
-  network: ws
-  port: 2095
-  server: 162.159.152.2
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: xijinpingnmsl.s4ar.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051004
-  network: ws
-  port: 443
-  server: 190.93.246.124
-  servername: liu133.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 17272b75-51c8-4999-a4ce-b3bd8679e04e
-  ws-opts:
-    headers:
-      Host: liu133.us.kg
-- name: CF中转_0304051005
-  port: 80
-  server: 104.21.7.50
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    path: '%2Fby-AB_841.['
-- name: CF中转_0304051006
-  network: httpupgrade
-  port: 8880
-  server: 104.21.74.214
-  tls: false
-  type: vless
-  uuid: 8d86ab50-53f6-4238-97ec-c2ab4f3eed85
-  ws-opts:
-    headers:
-      Host: Euueeu.flatocnx.com
-    path: '%2FVpnmizban------------Vpnmizban------------Vpnmizban---------Vpnmizban'
-- name: CF中转_0304051007
-  network: httpupgrade
-  port: 8080
-  server: 104.16.127.23
-  tls: false
-  type: vless
-  uuid: 6df1caa9-6416-4211-ee79-322256e987c6
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.ftp.debian.org.xn--rdekors-q1a.thecreators.ir.
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051008
-  network: ws
-  port: 443
-  server: 104.22.33.78
-  servername: Bia.alLhub.Ltd
-  tls: true
-  type: vless
-  uuid: 51905fd3-29de-4b4e-b351-83542f1d5390
-  ws-opts:
-    headers:
-      Host: biA.ALlhub.LTD
-    path: /
-- name: CF中转_0304051009
+- name: CF中转_0306011000
   network: httpupgrade
   port: 8880
   server: 172.67.178.144
@@ -193,211 +105,47 @@ proxies:
     headers:
       Host: 2.v2.www.speedtest.net.blue99shop.ir
     path: ''
-- client-fingerprint: chrome
-  name: CF中转_0304051010
+- name: CF中转_0306011001
   network: ws
-  port: 443
-  server: 172.66.44.101
-  servername: pardazesh18.pages.dev
-  tls: true
-  type: vless
-  uuid: 34a83286-ba4e-4f0a-ac08-77a95469eeaf
-  ws-opts:
-    headers:
-      Host: pardazesh18.pages.dev
-- name: CF中转_0304051011
-  network: ws
-  port: 2095
-  server: 104.18.20.69
+  port: 8880
+  server: 104.22.63.232
   tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 332af47e-3375-4be0-8f2f-8ca98bf640c6
   ws-opts:
     headers:
-      Host: fuckingcloudflare.20241225.workers.dev
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: CF中转_0304051012
-  network: ws
-  port: 443
-  server: 172.64.33.81
-  servername: p0s7qm.allgums.com
-  tls: true
-  type: vless
-  uuid: 54800f53-fc9e-401b-a321-99abb2f8cd09
-  ws-opts:
-    headers:
-      Host: p0s7qm.allgums.com
-    path: /wss
-- name: CF中转_0304051013
-  network: ws
-  port: 2095
-  server: 104.26.1.117
-  tls: false
-  type: vless
-  uuid: 41bd1a4c-855e-4ebc-85ce-9c927840fa82
-  ws-opts:
-    headers:
-      Host: www.myket.ir.www.cafebazaar.ir.%E5%83%8F%E9%B8%9F%E4%B8%80%E6%A0%B7%E8%87%AA%E7%94%B1.online.
-    path: '@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet'
-- alpn:
-  - http/1.1
-  name: CF中转_0304051014
-  network: ws
-  port: 443
-  server: 108.162.195.250
-  servername: g3edta.alligator27.com
-  tls: true
-  type: vless
-  uuid: 691c7159-d48a-4d34-9999-6d69867470e3
-  ws-opts:
-    headers:
-      Host: g3edta.alligator27.com
-    path: /wss
-- name: CF中转_0304051015
-  network: ws
-  port: 443
-  server: 104.18.3.57
-  servername: vip1.yomato7390.workers.Dev
-  tls: true
-  type: vless
-  uuid: 9c682edf-7e17-41d6-83e1-d7f6996a9542
-  ws-opts:
-    headers:
-      Host: vip1.yomato7390.workers.Dev
-    path: '%2F%3Fed%3D2048'
-- name: CF中转_0304051017
-  network: httpupgrade
-  port: 2095
-  server: 104.21.80.1
-  tls: false
-  type: vless
-  uuid: fdb667db-7ba5-4f9c-aa1f-705504706257
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051018
-  network: ws
-  port: 2053
-  server: 172.66.47.53
-  servername: mahDISERVeR-Al9.pAGES.DeV
-  tls: true
-  type: vless
-  uuid: 7da3c13f-289c-4549-8151-90a413d1784a
-  ws-opts:
-    headers:
-      Host: mahdiserver-al9.pages.dev
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051019
-  network: ws
-  port: 2053
-  server: 172.66.47.119
-  servername: maHDiSErVER-5oY.pAgES.DEV
-  tls: true
-  type: vless
-  uuid: 82598762-334a-4d4b-9a97-fec2277a1e98
-  ws-opts:
-    headers:
-      Host: mahdiserver-5oy.pages.dev
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051020
-  network: ws
-  port: 443
-  server: 104.22.32.78
-  servername: Bia.alLhub.Ltd
-  tls: true
-  type: vless
-  uuid: 51905fd3-29de-4b4e-b351-83542f1d5390
-  ws-opts:
-    headers:
-      Host: biA.ALlhub.LTD
-    path: /
-- name: CF中转_0304051021
-  network: ws
-  port: 80
-  server: 104.24.172.153
-  tls: false
-  type: vless
-  uuid: 818a98bf-e7d0-45d5-800b-24d4058234c6
-  ws-opts:
-    headers:
-      Host: still-smoke-881e-ppal03.cabit21569.workers.dev
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051022
-  network: ws
-  port: 443
-  server: 104.27.207.92
-  servername: AzAdnET-SemeJ.pAGES.dev
-  tls: true
-  type: vless
-  uuid: f06ac303-e626-451d-bcfc-ee825ee69398
-  ws-opts:
-    headers:
-      Host: azADNet-seMEJ.pageS.DeV
-- name: CF中转_0304051023
-  network: ws
-  port: 80
-  server: 104.24.87.230
-  tls: false
-  type: vless
-  uuid: 590dfbde-f8c8-429b-b947-39bb767ddd9c
-  ws-opts:
-    headers:
-      Host: square-moon-bc81-ppal03.tivere6418.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051024
-  network: ws
-  port: 2095
-  server: 104.21.44.185
-  tls: false
-  type: vless
-  uuid: 7fbb0e2b-11c5-4f31-dc63-04d3d6841f0a
-  ws-opts:
-    headers:
-      Host: Freedomisnear.onetwothree123.ir
-    path: '%2Fmehdi'
+      Host: orangeorange阿斯達十點三十分.boxiaa.shop.
 - client-fingerprint: randomized
-  name: CF中转_0304051025
+  name: CF中转_0306011002
   network: ws
-  port: 443
-  server: 172.64.35.187
-  servername: setup10.pages.dev
+  port: 2083
+  server: 104.20.78.157
+  servername: hAstI.freeAIrLAINEs.coM
   tls: true
   type: vless
-  uuid: 49531eb9-e547-43bf-b34a-992d21c05280
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: setup10.pages.dev
-    path: '%2Fsetup10.pages.dev%2F%3Fed%3D2560'
-- name: CF中转_0304051026
-  network: ws
-  port: 2086
-  server: 104.16.140.135
-  servername: b4f0b859-super-smoke-7916.bouncy-vulture1054.workers.dev
-  tls: false
+      Host: HASTI.fREEAIrLAINeS.Com
+    path: /channel,ShokhmiPlus-channel,ShokhmiPlus-channel,ShokhmiPlus-channel,ShokhmiPlus%3Fed%3D2048
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: https://t.me/new_proxy_channel-@new_proxy_channel
+  name: CF中转_0306011003
+  network: grpc
+  port: 2053
+  server: 188.114.99.99
+  servername: kanon.parhamtraberthos.IR.
+  tls: true
   type: vless
-  uuid: 31348b17-4ab2-40c0-b79e-c81032331d30
-  ws-opts:
-    headers:
-      Host: b4f0b859-super-smoke-7916.bouncy-vulture1054.workers.dev
-    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560'
+  uuid: fcbdbaeb-5b6f-40ea-8979-214e79d41566
 - client-fingerprint: random
-  name: CF中转_0304051028
+  name: CF中转_0306011004
   network: ws
   port: 443
-  server: 104.16.96.120
+  server: 104.24.3.206
   servername: edgetunnel-3pc.pages.dev
   tls: true
   type: vless
@@ -405,59 +153,93 @@ proxies:
   ws-opts:
     path: '%2F%3Fed'
 - alpn:
+  - h3
   - h2
   - http/1.1
-  client-fingerprint: randomized
-  name: CF中转_0304051029
-  network: ws
-  port: 443
-  server: 172.67.210.173
-  servername: HTTPSTMeYushIkvpn.wI1KEd9-2222.WorkERs.deV
+  name: CF中转_0306011006
+  network: grpc
+  port: 2096
+  server: 104.17.147.22
+  servername: app2.year2025appdatat.lat
   tls: true
   type: vless
-  uuid: 1113a576-d328-447a-99a7-6fe72aac9596
+  uuid: c0b9dd6c-9676-4cd1-9e7c-9c6ac59afd37
+- name: CF中转_0306011007
+  network: ws
+  port: 80
+  server: 104.21.1.12
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
   ws-opts:
     headers:
-      Host: htTpSTMeyuSHIkVPn.wI1KED9-2222.workeRS.DEV
-    path: '%2F-iTHd_IhWEGiFXyL%3Fed%3D2048'
-- name: CF中转_0304051030
+      Host: pormang.webhost99.workers.dev
+    path: ''
+- name: CF中转_0306011008
   network: ws
-  port: 2053
-  server: 104.19.223.79
-  servername: wwwspeedtestnetwhiteberinsistomd6625996speed03.dropgame.ir
-  tls: true
+  port: 80
+  server: 104.24.167.96
+  tls: false
   type: vless
-  uuid: ef9a6fe6-ca59-45f8-a2a7-db870fbcd71c
+  uuid: ec1bb388-649c-4deb-9eb1-a096b784e0d3
   ws-opts:
     headers:
-      Host: wwwspeedtestnetwhiteberinsistomd6625996speed03.dropgame.ir
-- name: CF中转_0304051031
+      Host: round-truth-4e97-ppal03.vegasow726.workers.dev
+    path: '%2Ftelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: CF中转_0306011009
   network: ws
-  port: 443
-  server: 108.162.195.127
-  servername: agedw.ambercc.filegear-sg.me
+  port: 8443
+  server: 162.159.44.233
+  servername: ngedc.ambercc.filegear-sg.me
   tls: true
   type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
   ws-opts:
     path: '%2F%3Fed'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: CF中转_0304051032
+- name: CF中转_0306011010
   network: ws
-  port: 443
-  server: 104.21.78.204
-  servername: papl03.JamaNI-KInsLEr.WORKErS.dEV
+  port: 2053
+  server: 162.159.44.230
+  servername: ngedc.ambercc.filegear-sg.me
   tls: true
   type: vless
-  uuid: 2ffe29ef-258c-43f5-b63d-5017048950c2
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    path: '%2F%3Fed'
+- name: CF中转_0306011011
+  network: ws
+  port: 80
+  server: 104.16.40.145
+  tls: false
+  type: vless
+  uuid: 818a98bf-e7d0-45d5-800b-24d4058234c6
   ws-opts:
     headers:
-      Host: pAPL03.JaMANI-kinsLEr.wORKErS.dev
-    path: '%2FEmnMzJgeEcbarabP%3Fed%3D2560'
-- name: CF中转_0304051033
+      Host: still-smoke-881e-ppal03.cabit21569.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011012
+  network: ws
+  port: 80
+  server: 104.21.27.250
+  tls: false
+  type: vless
+  uuid: a9a9eebe-3716-58b2-99f3-aa5e58160be9
+  ws-opts:
+    headers:
+      Host: iranvps.fastroot.ir
+    path: '%2Fvless'
+- name: CF中转_0306011013
+  network: ws
+  port: 80
+  server: 104.24.158.124
+  tls: false
+  type: vless
+  uuid: bf73e6e5-0336-40d5-995c-283de50646d2
+  ws-opts:
+    headers:
+      Host: divine-limit-e9df-ppal03.jorekon645.workers.dev
+    path: '%2Ftelegram%40V2ray_Alpha%2F%3Fed%3D2048'
+- name: CF中转_0306011015
   network: ws
   port: 443
   server: 104.16.16.16
@@ -469,299 +251,49 @@ proxies:
     headers:
       Host: 1v-2wk.pages.dev
     path: '%2FTelegram-Xv2ry2-7%3Fed%3D512'
-- name: CF中转_0304051034
-  network: ws
-  port: 2086
-  server: 104.18.14.19
-  tls: false
-  type: vless
-  uuid: de4cffdb-4e60-4284-9161-1c37c3313029
-  ws-opts:
-    headers:
-      Host: 0228.losdnett.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051035
-  network: ws
-  port: 80
-  server: 104.18.27.94
-  tls: false
-  type: vless
-  uuid: 9b8e5b9c-cac0-44c9-b135-383c6c5c3eea
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense.tacofi5315.workers.dev
-    path: '%2F'
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: CF中转_0304051036
-  network: ws
-  port: 2053
-  server: 104.18.13.149
-  servername: laj.iranianmobail.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 563709ea-3663-4f86-b413-5299897659a5
-  ws-opts:
-    headers:
-      Host: laj.iranianmobail.ir
-    path: /telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----9KsgRW1AnYtwZOVz
-- name: CF中转_0304051037
-  network: ws
-  port: 2082
-  server: 104.18.14.19
-  tls: false
-  type: vless
-  uuid: de4cffdb-4e60-4284-9161-1c37c3313029
-  ws-opts:
-    headers:
-      Host: 0228.losdnett.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051039
-  network: ws
-  port: 8080
-  server: 104.21.7.193
-  tls: false
-  type: vless
-  uuid: b6e97b8a-1b43-4fa9-ab1b-d0139df07f59
-  ws-opts:
-    headers:
-      Host: 11tg.w79kip11.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051040
-  network: ws
-  port: 8080
-  server: 108.162.195.205
-  tls: false
-  type: vless
-  uuid: 3d2253b5-7365-4e1a-bd39-18dd2cf4b9c4
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.mifastip6.qlslow.ir
 - alpn:
   - http/1.1
-  client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: '%2F52933%2Fmehdi'
-  name: CF中转_0304051041
+  name: CF中转_0306011016
+  network: ws
+  port: 443
+  server: 162.159.44.250
+  servername: dk3h7c.alligator27.com
+  tls: true
+  type: vless
+  uuid: c446f1fe-ea8f-4759-b3f7-416dd914fe63
+  ws-opts:
+    headers:
+      Host: dk3h7c.alligator27.com
+    path: /wss
+- name: CF中转_0306011017
   network: grpc
   port: 443
-  server: 104.21.44.185
-  servername: Freedomisnear.onetwothree123.ir
+  server: 172.66.45.29
+  servername: Tp810P28gI.aNa-SoFt.Ir
   tls: true
   type: vless
-  uuid: 95342990-2fa1-4100-a559-c3f5e25f450d
-- client-fingerprint: chrome
-  name: CF中转_0304051042
-  network: ws
-  port: 443
-  server: 172.67.2.238
-  servername: v2raylandd-89.vmjisexa.workers.Dev
-  tls: true
-  type: vless
-  uuid: 68b48c28-92c7-4f0b-bd39-21e5699f50cc
-  ws-opts:
-    headers:
-      Host: v2raylandd-89.vmjisexa.workers.Dev
-- name: CF中转_0304051043
-  network: ws
-  port: 443
-  server: 188.114.96.1
-  servername: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
-  tls: true
-  type: vless
-  uuid: 4bdab609-92da-4c23-b993-bbcb8caf2b03
-  ws-opts:
-    headers:
-      Host: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
-    path: '%2F'
-- name: CF中转_0304051044
-  network: ws
-  port: 80
-  server: 104.21.8.209
-  tls: false
-  type: vless
-  uuid: 17d87202-4ca2-49d2-9c90-5eca029c97f6
-  ws-opts:
-    path: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051045
-  network: ws
-  port: 2053
-  server: 104.17.147.22
-  servername: g.yUSEFkharE.SBS
-  tls: true
-  type: vless
-  uuid: d778cbd9-bfd0-433e-ad6b-e957b5dfc776
-  ws-opts:
-    headers:
-      Host: g.yUSEFkharE.SBS
-    path: /Tel:@AnGuS_VPN
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051046
-  network: ws
-  port: 443
-  server: 141.101.113.76
-  servername: MtnIrancellNamavaAparatir.kooH75.Ir
-  tls: true
-  type: vless
-  uuid: 6f2814e5-ce0a-4a8f-be92-08cee6f6b0aa
-  ws-opts:
-    headers:
-      Host: MtnIrancellNamavaAparatir.kooH75.Ir
-    path: /Telegram:@metavpnn
+  uuid: 2a943112-138b-432d-a3a5-277ea2fd8a2e
 - alpn:
   - h3
   - h2
   client-fingerprint: chrome
-  name: CF中转_0304051047
+  name: CF中转_0306011020
   network: ws
   port: 443
-  server: 104.27.203.89
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960003.workers.dev
+  server: 188.114.99.154
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960005.workers.dev
   tls: true
   type: vless
-  uuid: fa659470-ca91-43c1-a966-2349531fb6a8
+  uuid: 9a4af176-4a4f-4a8e-af2b-91fff6856cf9
   ws-opts:
     headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960003.workers.dev
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960005.workers.dev
     path: '%2F%3Fed%3D2048'
-- client-fingerprint: random
-  name: CF中转_0304051048
-  network: ws
-  port: 8443
-  server: 104.26.13.140
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051049
-  network: ws
-  port: 80
-  server: 172.67.2.238
-  servername: v2raylandd-88.vmjisexa.workers.dev
-  tls: false
-  type: vless
-  uuid: 723af342-568e-4332-9233-6f33a9ca2de8
-  ws-opts:
-    headers:
-      Host: v2raylandd-88.vmjisexa.workers.Dev
-- client-fingerprint: randomized
-  name: CF中转_0304051050
+- client-fingerprint: chrome
+  name: CF中转_0306011021
   network: ws
   port: 443
-  server: 104.18.26.94
-  servername: esetsecuritylicense.cfmglpqb.workers.dev
-  tls: true
-  type: vless
-  uuid: d4769aab-99d9-4491-a3e3-a58867915bdf
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense.cfmglpqb.workers.dev
-    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
-- name: CF中转_0304051051
-  network: ws
-  port: 443
-  server: 172.64.35.127
-  servername: agedw.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    path: '%2F%3Fed'
-- name: CF中转_0304051052
-  network: ws
-  port: 2095
-  server: 172.64.146.66
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: xijinpingnmsl.s4ar.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051053
-  network: ws
-  port: 2053
-  server: 104.21.48.1
-  servername: khamenei313.dl-data360.ir
-  tls: true
-  type: vless
-  uuid: e0d2a95b-60c8-4b53-ae25-8fc112f7d608
-- name: CF中转_0304051054
-  network: ws
-  port: 443
-  server: 104.21.95.103
-  servername: bypass.dd-6b2.workers.dev
-  tls: true
-  type: vless
-  uuid: b0e6a2c9-e667-4e42-9cb3-77d7db3e736b
-- name: CF中转_0304051055
-  network: ws
-  port: 443
-  server: 172.67.68.240
-  servername: rayan.sahel.us.kg
-  tls: true
-  type: vless
-  uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-  ws-opts:
-    headers:
-      Host: rayan.sahel.us.kg
-- name: CF中转_0304051056
-  network: ws
-  port: 443
-  server: 172.66.47.25
-  servername: GrOupYOUNeS.PAGes.DEV
-  tls: true
-  type: vless
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
-  ws-opts:
-    headers:
-      Host: GrOupYOUNeS.PAGes.DEV
-    path: '%2FQKSAoBjr7TCbZcjm%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051057
-  network: ws
-  port: 443
-  server: 172.67.163.123
-  servername: MIKasA.drAgoNAllEy.ir.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: a96e28a5-6b24-4d38-a372-c7ed42b54212
-  ws-opts:
-    headers:
-      Host: MIKasA.drAgoNAllEy.ir.
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: CF中转_0304051058
-  network: grpc
-  port: 2053
-  server: 172.67.178.177
-  servername: CdCyRiRd73.gOzAlBaLaBiYa-bEbInAm.cOm
-  tls: true
-  type: vless
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-- name: CF中转_0304051059
-  network: ws
-  port: 443
-  server: 104.20.30.125
+  server: 104.26.8.43
   servername: a.xn--i-sx6a60i.us.kg
   tls: true
   type: vless
@@ -770,54 +302,202 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg
     path: '%2F%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: CF中转_0304051060
-  network: ws
-  port: 443
-  server: 108.162.195.157
-  servername: y64n10.soroush-app.com
-  tls: true
-  type: vless
-  uuid: 2805e3e5-25bc-4fea-9a5c-51eb800fe379
-  ws-opts:
-    headers:
-      Host: y64n10.soroush-app.com
-    path: '%2Fwss'
-- name: CF中转_0304051061
-  network: ws
-  port: 8080
-  server: 104.21.94.168
-  tls: false
-  type: vless
-  uuid: f45b9942-3d7c-44b6-bcf1-7003b8900dfe
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net
-    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy
-- name: CF中转_0304051062
-  network: ws
-  port: 8880
-  server: 172.67.202.155
-  tls: false
-  type: vless
-  uuid: ea71060b-8769-40ce-d59e-8457b0f2ce81
-  ws-opts:
-    headers:
-      Host: Freedomisnear.onetwothree123.ir
-    path: '%2Fmehdi'
-- name: CF中转_0304051063
+- name: CF中转_0306011022
   network: ws
   port: 80
-  server: 104.16.58.162
+  server: 104.24.218.13
   tls: false
   type: vless
-  uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
+  uuid: 7ee0cedb-1f06-4be9-8444-51f289a4bf12
   ws-opts:
     headers:
-      Host: worker-winter-meadow-e881.test55.workers.dev
+      Host: morning-sound-6fa2-ppal03.tinemo7285.workers.dev
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_0306011023
+  network: ws
+  port: 8443
+  server: 188.114.96.3
+  servername: wIN.sAmImOgHadSI.WORKERS.deV
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: wIn.sAmImOGhAdSI.WoRKERs.DeV
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: CF中转_0306011024
+  network: ws
+  port: 443
+  server: 172.67.200.215
+  servername: eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv
+  tls: true
+  type: vless
+  uuid: 34b3cbba-e6ac-495a-9481-976a0419eab9
+  ws-opts:
+    headers:
+      Host: eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv
     path: '%2F'
-- name: CF中转_0304051064
+- name: CF中转_0306011025
+  network: ws
+  port: 2095
+  server: 172.67.163.189
+  tls: false
+  type: vless
+  uuid: dc580147-c87c-4527-bf90-192eb1cf62d1
+  ws-opts:
+    headers:
+      Host: sTART.siTeg52770.WoRkErs.DEV
+    path: '%2Ft0DCEkrZ7kAbLwDv%2FMC4wLjAuMA%3D%3D%3Fed%3D2560'
+- name: CF中转_0306011026
+  network: ws
+  port: 8880
+  server: 104.16.1.35
+  tls: false
+  type: vless
+  uuid: 96494ca5-6dcf-4d33-b94f-5c3485586095
+  ws-opts:
+    headers:
+      Host: hamedan.hiven33959.workers.dev
+- client-fingerprint: chrome
+  name: CF中转_0306011027
+  network: ws
+  port: 443
+  server: 104.18.20.69
+  servername: us1.globals-download.com
+  tls: true
+  type: vless
+  uuid: 966dc5ee-cd6e-4698-9116-50e6bd301bd9
+  ws-opts:
+    headers:
+      Host: us1.globals-download.com
+    path: '%2Fpq%2Fus1'
+- name: CF中转_0306011028
+  network: ws
+  port: 80
+  server: 104.21.69.154
+  tls: false
+  type: vless
+  uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7
+  ws-opts:
+    headers:
+      Host: v2ra1.ecrgpk.workers.dev
+    path: '@VPNHTTPInjectorfree'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN'
+  name: CF中转_0306011029
+  network: grpc
+  port: 8443
+  server: 172.67.191.234
+  servername: 01.ev02-02-q2wx8ryz0vic3bfmd1sng7pjjn6lqk4p.tech
+  tls: true
+  type: vless
+  uuid: 8155d2bb-0eb4-40ff-ba1d-95df410a672a
+- name: CF中转_0306011030
+  network: ws
+  port: 8880
+  server: 172.67.73.253
+  tls: false
+  type: vless
+  uuid: 332af47e-3375-4be0-8f2f-8ca98bf640c6
+  ws-opts:
+    headers:
+      Host: orangeorange阿斯達十點三十分.boxiaa.shop.
+- name: CF中转_0306011031
+  network: ws
+  port: 8080
+  server: 104.16.60.79
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    headers:
+      Host: workerr.dimon22287.workers.dev
+    path: '%2F%3Fed%3D2048'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011032
+  network: ws
+  port: 443
+  server: 104.21.9.137
+  servername: de.bolagskontaktstockholm.se
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
+  ws-opts:
+    path: '%2Fws'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_0306011033
+  network: ws
+  port: 443
+  server: 172.66.44.118
+  servername: ConFIgmr.PaGeS.dEV
+  tls: true
+  type: vless
+  uuid: 63005378-e32e-4e23-bc6e-84812f147a6f
+  ws-opts:
+    headers:
+      Host: configmr.pages.dev
+    path: /VrChX4o5oasIm4In?ed%3D2560
+- client-fingerprint: chrome
+  name: CF中转_0306011034
+  network: ws
+  port: 443
+  server: 172.66.44.223
+  servername: cfpage-39t.pages.dev
+  tls: true
+  type: vless
+  uuid: bba5ce00-09e4-4fce-8d26-35db5b4e38d4
+  ws-opts:
+    headers:
+      Host: cfpage-39t.pages.dev
+- name: CF中转_0306011035
+  network: ws
+  port: 8880
+  server: 162.159.153.2
+  tls: false
+  type: vless
+  uuid: 68509c26-cfad-4dc8-9def-e8190a98d647
+  ws-opts:
+    headers:
+      Host: revolutiontime-dailyconfigs.vigilante.ir
+    path: '%2F%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs%3Fed%3D2048'
+- name: CF中转_0306011037
+  network: ws
+  port: 2095
+  server: 104.26.0.117
+  tls: false
+  type: vless
+  uuid: 41bd1a4c-855e-4ebc-85ce-9c927840fa82
+  ws-opts:
+    headers:
+      Host: www.myket.ir.www.cafebazaar.ir.%E5%83%8F%E9%B8%9F%E4%B8%80%E6%A0%B7%E8%87%AA%E7%94%B1.online.
+    path: '@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet--@Maznet'
+- name: CF中转_0306011038
+  network: httpupgrade
+  port: 8880
+  server: 104.21.95.156
+  tls: false
+  type: vless
+  uuid: 405f0726-89dc-6729-5bd6-a1464e61b6ea
+  ws-opts:
+    headers:
+      Host: 2.v2.www.speedtest.net.blue99shop.ir
+    path: ''
+- name: CF中转_0306011039
   network: ws
   port: 2083
   server: 104.16.144.242
@@ -829,171 +509,25 @@ proxies:
     headers:
       Host: test.bujidao.org
     path: '%2F%3Fed%3D2048'
-- name: CF中转_0304051065
+- name: CF中转_0306011040
+  network: kcp
+  port: 8880
+  server: 104.21.1.12
+  tls: false
+  type: vless
+  uuid: f07bf2eb-332a-4cc8-b8fa-cfb6b3b9d987
+- name: CF中转_0306011041
   network: ws
   port: 2053
-  server: 162.159.7.185
-  servername: 8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com
+  server: 104.21.96.1
+  servername: khamenei313.dl-data360.ir
   tls: true
   type: vless
-  uuid: 8b562c77-fc99-4d25-9100-d8c0849cc9ff
-  ws-opts:
-    headers:
-      Host: cosi.bvzizx.com
-    path: '%2Fwss37193'
-- name: CF中转_0304051066
-  network: ws
-  port: 80
-  server: 104.21.90.78
-  tls: false
-  type: vless
-  uuid: de6f1d99-acc6-4c6b-9820-f3a8922cc736
-  ws-opts:
-    headers:
-      Host: hk1-tg-fxnodes.sfacg.uk
-    path: '%2Ftg%40fxnodes'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: CF中转_0304051067
-  network: ws
-  port: 2083
-  server: 172.66.44.124
-  servername: mAHDiSeRver-D9N.PAGES.Dev
-  tls: true
-  type: vless
-  uuid: b3d4cf64-be93-4bc5-a58f-3145a70e29c3
-  ws-opts:
-    headers:
-      Host: mahdiserver-d9n.pages.dev
-    path: '%2F0nV5bznLGDhgkift%3Fed%3D2560'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: '%2F24464%2Fmehdi'
-  name: CF中转_0304051069
-  network: grpc
-  port: 443
-  server: 104.21.71.8
-  servername: esna.itn24.ir
-  tls: true
-  type: vless
-  uuid: 11aa66f6-19db-4858-9a42-0b7ab2b141e7
-- name: CF中转_0304051070
-  network: httpupgrade
-  port: 8080
-  server: 104.16.127.84
-  tls: false
-  type: vless
-  uuid: 6df1caa9-6416-4211-ee79-322256e987c6
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.ftp.debian.org.xn--rdekors-q1a.thecreators.ir.
-- client-fingerprint: chrome
-  name: CF中转_0304051071
-  network: ws
-  port: 443
-  server: 104.21.84.22
-  servername: freedom11.fmnxmt.workers.dev
-  tls: true
-  type: vless
-  uuid: 375dd25d-0ec6-454c-be6f-ce67b196b23b
-  ws-opts:
-    headers:
-      Host: freedom11.fmnxmt.workers.dev
-    path: '%2F'
-- name: CF中转_0304051072
-  network: ws
-  port: 443
-  server: 172.64.35.227
-  servername: agedw.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
-  ws-opts:
-    path: '%2F%3Fed'
-- client-fingerprint: random
-  name: CF中转_0304051073
-  network: ws
-  port: 8443
-  server: 172.67.75.194
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051074
-  network: ws
-  port: 443
-  server: 172.64.151.130
-  servername: liu133.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 17272b75-51c8-4999-a4ce-b3bd8679e04e
-  ws-opts:
-    headers:
-      Host: liu133.us.kg
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: CF中转_0304051075
-  network: ws
-  port: 443
-  server: 162.159.195.212
-  servername: newus.sspeednetokala.uS.kg
-  tls: true
-  type: vless
-  uuid: 538ec70c-b386-51ad-8155-aeaed37a22b6
-  ws-opts:
-    headers:
-      Host: newus.sspeednetokala.uS.kg
-    path: vless-ws%2F%3Fed%3D2048
-- name: CF中转_0304051076
-  network: ws
-  port: 443
-  server: 172.67.156.99
-  servername: PPAL03.wopaJO6948.WorKErs.dEv
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: PPAL03.wopaJO6948.WorKErs.dEv
-    path: '%2F2h9pwob102xqfyhg%3Fed%3D2560'
-- name: CF中转_0304051077
-  network: httpupgrade
-  port: 8880
-  server: 104.21.43.116
-  tls: false
-  type: vless
-  uuid: 405f0726-89dc-6729-5bd6-a1464e61b6ea
-  ws-opts:
-    headers:
-      Host: 2.v2.www.speedtest.net.blue99shop.ir
-    path: ''
-- name: CF中转_0304051078
-  network: ws
-  port: 80
-  server: 172.67.209.163
-  tls: false
-  type: vless
-  uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7
-  ws-opts:
-    headers:
-      Host: v2ra1.ecrgpk.workers.dev
-    path: '@VPNHTTPInjectorfree'
-- name: CF中转_0304051079
+  uuid: e0d2a95b-60c8-4b53-ae25-8fc112f7d608
+- name: CF中转_0306011042
   network: ws
   port: 2052
-  server: 172.67.44.149
+  server: 172.67.138.70
   tls: false
   type: vless
   uuid: 2737560d-1867-47fa-aa80-351c36d771c7
@@ -1001,19 +535,423 @@ proxies:
     headers:
       Host: 0118.kznyoum2.workers.dev
     path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011043
+  network: ws
+  port: 443
+  server: 172.67.216.94
+  servername: worker-dry-breeze-60a0.chngyznwy.workers.dev
+  tls: true
+  type: vless
+  uuid: c43cf30c-18f1-4e20-bd88-73b1288c5202
+  ws-opts:
+    headers:
+      Host: worker-dry-breeze-60a0.chngyznwy.workers.dev
+    path: '%2F%3Fed%3D2048'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011044
+  network: ws
+  port: 443
+  server: 188.114.97.21
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev
+  tls: true
+  type: vless
+  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011045
+  network: ws
+  port: 8080
+  server: 104.18.15.19
+  tls: false
+  type: vless
+  uuid: 41956a47-8432-4a3f-b70d-a54fc7efd6b8
+  ws-opts:
+    headers:
+      Host: 0223.jq2ter91.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011046
+  network: ws
+  port: 80
+  server: 172.67.151.188
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: ''
+- name: CF中转_0306011047
+  network: ws
+  port: 443
+  server: 172.67.69.227
+  servername: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
+  tls: true
+  type: vless
+  uuid: 291c2abe-716a-4691-acd0-3b13dc2f7b12
+  ws-opts:
+    headers:
+      Host: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
+    path: '%2Fvk_l-izyy3q_-noq%3Fed%3D2048%40sinabigo'
+- name: CF中转_0306011048
+  network: ws
+  port: 80
+  server: 104.21.112.1
+  tls: false
+  type: vless
+  uuid: b775ec56-b44d-473a-9e8e-99ef575d832a
+  ws-opts:
+    headers:
+      Host: young-silence-6861.sjsbdjansbdjksb.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011049
+  network: grpc
+  port: 2053
+  server: 172.67.219.166
+  servername: Poshtiban.ehsa0535.top
+  tls: true
+  type: vless
+  uuid: c4d98ed1-69a5-49ad-b785-25fd2e081326
+- name: CF中转_0306011050
+  network: ws
+  port: 80
+  server: 104.21.24.112
+  tls: false
+  type: vless
+  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
+    path: '%2FFvy0Y7NJ7uucUDha%3Fed%3D2560'
+- name: CF中转_0306011051
+  network: ws
+  port: 80
+  server: 172.67.24.121
+  tls: false
+  type: vless
+  uuid: 815724d3-0d61-4761-be07-471441d42be5
+  ws-opts:
+    headers:
+      Host: holland.%E5%88%97%E5%88%97%E7%94%B7%E4%BA%8B%E7%9A%84%E4%BA%8B%E5%88%97%E4%B8%8A%E8%B5%9B%E7%94%B778.shop
+    path: '%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_0304051081
-  network: grpc
-  port: 2083
-  server: 172.67.69.216
-  servername: vipv2rey.mamare.ir
+  name: CF中转_0306011052
+  network: ws
+  port: 443
+  server: 104.22.32.78
+  servername: Bia.alLhub.Ltd
   tls: true
   type: vless
-  uuid: 07865379-86dd-4ca6-ad22-81255519c482
-- name: CF中转_0304051082
+  uuid: 51905fd3-29de-4b4e-b351-83542f1d5390
+  ws-opts:
+    headers:
+      Host: biA.ALlhub.LTD
+    path: /
+- name: CF中转_0306011053
+  network: ws
+  port: 443
+  server: 162.159.138.178
+  servername: a.xn--i-sx6a60i.us.kg
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011054
+  network: ws
+  port: 443
+  server: 173.245.49.59
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960009.workers.dev
+  tls: true
+  type: vless
+  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960009.workers.dev
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_0306011055
+  network: ws
+  port: 443
+  server: 172.67.172.56
+  servername: RasPy-DaRKNesS-6ab6.FaRANFreLSJINEJXj.WOrkERS.DEv
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e98e99ae-6f24-476c-9920-29b8c3358967
+  ws-opts:
+    headers:
+      Host: raspy-darkness-6ab6.faranfrelsjinejxj.workers.dev
+    path: '%2Ftelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%2Ctelegram-%40EXPRESSVPN_420%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011056
+  network: ws
+  port: 443
+  server: 188.114.97.177
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+  tls: true
+  type: vless
+  uuid: 505f7f73-088d-4b88-815f-b62b2d9fb48b
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011057
+  network: ws
+  port: 2095
+  server: 104.18.20.94
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingxijinping.cnm-xijinping.workers.dev
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011058
+  network: ws
+  port: 443
+  server: 104.20.38.242
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
+  tls: true
+  type: vless
+  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011059
+  network: ws
+  port: 443
+  server: 104.21.21.137
+  servername: freedom14.geraxex389.workers.dev
+  tls: true
+  type: vless
+  uuid: 3f266d25-21aa-4498-bb1a-ce6d1d327aaf
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: CF中转_0306011060
+  network: ws
+  port: 443
+  server: 104.16.252.47
+  servername: gozargah.validbv7996.ir
+  tls: true
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+- name: CF中转_0306011061
+  network: ws
+  port: 80
+  server: 104.21.80.1
+  tls: false
+  type: vless
+  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
+  ws-opts:
+    headers:
+      Host: mahi.kosnanatfilterchi.eu.org
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011062
+  network: httpupgrade
+  port: 2082
+  server: 104.26.15.85
+  tls: false
+  type: vless
+  uuid: d424ae34-8aff-4093-b1c9-715de61aa144
+  ws-opts:
+    headers:
+      Host: 1S3-0MH-HJ1JAR06--BPKV6G4V--sWZW5eMD_QKJ__ZWB4FRTV7_KA7A.0912.ORG.
+    path: '%2F%3Fed%3D2082%2Ctelegram%2Cv2rayng_vpnrog%2Ctelegram%2Cv2rayng_vpnrog%2Ctelegram%2Cv2rayng_vpnrog%2C%3Fed%3D2082'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%2F%3Fed%3D2048'
+  name: CF中转_0306011063
+  network: grpc
+  port: 2087
+  server: 172.67.141.68
+  servername: tabnak.ITN24.IR
+  tls: true
+  type: vless
+  uuid: d9b3f928-88f5-4951-8f81-a66422b982c3
+- name: CF中转_0306011064
+  network: ws
+  port: 2082
+  server: 104.21.1.90
+  servername: m543.hosseinpool10.workers.dev
+  tls: false
+  type: vless
+  uuid: 5181717e-892b-45a9-a8b7-e6d5fac1c77b
+  ws-opts:
+    path: '%2F%3Fed'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: CF中转_0306011065
+  network: ws
+  port: 2096
+  server: 104.16.103.112
+  servername: bEAt.MIRaclETaxbiTS.Top.
+  tls: true
+  type: vless
+  uuid: 5d519fbf-29a3-4b85-b71d-a062654e9f08
+  ws-opts:
+    path: /2096/
+- name: CF中转_0306011066
+  network: ws
+  port: 2087
+  server: 162.159.44.50
+  servername: ngedc.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    path: '%2F%3Fed'
+- name: CF中转_0306011067
+  network: ws
+  port: 80
+  server: 172.67.138.69
+  tls: false
+  type: vless
+  uuid: f949cc8f-9d1a-4d56-9c6e-3daec4c92010
+  ws-opts:
+    headers:
+      Host: VPNcustomize-vpnCUSTOMIZE-VPNcustomize.CUSTOMIZEspeedtest.net.
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011068
+  network: ws
+  port: 2053
+  server: 104.17.148.22
+  servername: g.yUSEFkharE.SBS
+  tls: true
+  type: vless
+  uuid: d778cbd9-bfd0-433e-ad6b-e957b5dfc776
+  ws-opts:
+    headers:
+      Host: g.yUSEFkharE.SBS
+    path: /Tel:@AnGuS_VPN
+- name: CF中转_0306011069
+  network: ws
+  port: 80
+  server: 104.16.196.131
+  tls: false
+  type: vless
+  uuid: db60d098-86db-445b-8a06-98e8d8318083
+  ws-opts:
+    headers:
+      Host: www.opensignal.com.deepvpn.khunaungphyo.shop
+    path: '%2F'
+- name: CF中转_0306011070
+  network: ws
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    path: '%2F%3Fed'
+- client-fingerprint: randomized
+  name: CF中转_0306011071
+  network: ws
+  port: 443
+  server: 172.67.181.89
+  servername: vpn442telegram.wucwej.workers.Dev
+  tls: true
+  type: vless
+  uuid: d77906a1-59fd-4222-ba9e-3de834bb33e2
+  ws-opts:
+    headers:
+      Host: vpn442telegram.wucwej.workers.Dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011072
+  network: ws
+  port: 443
+  server: 104.18.33.45
+  servername: fatwith.us.kg
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: fatwith.us.kg
+    path: '%2F%3Fed%3DMARAMBASHI_MARAMBASHI%2F%3Fed%3D2560'
+- name: CF中转_0306011073
+  network: ws
+  port: 8080
+  server: 104.25.0.86
+  tls: false
+  type: vless
+  uuid: 5f4cb353-4fa7-4191-8e48-32e5cf34bb6f
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.whiteber.insistom.d6625996.v27.simansanat.ir.
+    path: ''
+- name: CF中转_0306011074
+  network: ws
+  port: 80
+  server: 104.24.7.232
+  servername: mute-wood-561e-ppal.megiva7664.workers.dev
+  tls: false
+  type: vless
+  uuid: 468d811a-8540-4517-9779-0f542b5150d2
+  ws-opts:
+    path: '%2FProxyIP'
+- client-fingerprint: random
+  name: CF中转_0306011075
+  network: ws
+  port: 443
+  server: 104.22.16.91
+  servername: kawaiifreevpn-7ds.pages.dev
+  tls: true
+  type: vless
+  uuid: 9dd24d01-2b7a-4bd8-8c76-129d6ca89b8c
+  ws-opts:
+    headers:
+      Host: kawaiifreevpn-7ds.pages.dev
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011078
+  network: httpupgrade
+  port: 8880
+  server: 172.67.70.123
+  tls: false
+  type: vless
+  uuid: 89b2d444-7f15-4881-80ed-4aa8057fb97c
+  ws-opts:
+    headers:
+      Host: Ger2.nanowaash-shop.ir
+- name: CF中转_0306011079
   network: ws
   port: 443
   server: 172.67.214.223
@@ -1029,86 +967,150 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_0304051083
+  name: CF中转_0306011080
   network: ws
-  port: 2083
-  server: 172.66.44.211
-  servername: MAHDISerVer-3zo.PAgES.deV
+  port: 443
+  server: 172.67.24.121
+  servername: Bia.alLhub.Ltd
   tls: true
   type: vless
-  uuid: b66a1cb8-3c03-4678-a45b-bfd045604dad
+  uuid: 51905fd3-29de-4b4e-b351-83542f1d5390
   ws-opts:
     headers:
-      Host: mahdiserver-3zo.pages.dev
-- name: CF中转_0304051084
+      Host: biA.ALlhub.LTD
+    path: /
+- name: CF中转_0306011081
   network: ws
-  port: 80
+  port: 443
+  server: 104.21.40.155
+  servername: hello-world-empty-feather-0943.sitosa5105.workers.Dev
+  tls: true
+  type: vless
+  uuid: 5d8b1149-8f78-4154-a647-16563ec99c8a
+  ws-opts:
+    headers:
+      Host: hello-world-empty-feather-0943.sitosa5105.workers.Dev
+    path: '%2F'
+- name: CF中转_0306011082
+  network: ws
+  port: 8880
+  server: 104.21.5.179
+  tls: false
+  type: vless
+  uuid: 33f8c4f4-2515-4798-9ea0-15f2030ef4d8
+  ws-opts:
+    headers:
+      Host: bia-zod-falcunargo.545c437f13.workers.Dev
+    path: '%2F'
+- name: CF中转_0306011083
+  network: ws
+  port: 443
+  server: 104.26.7.40
+  servername: a.xn--i-sx6a60i.us.kg
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011084
+  network: ws
+  port: 2095
+  server: 104.18.41.190
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.20241225.workers.dev
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_0306011085
+  network: ws
+  port: 443
+  server: 172.66.45.9
+  servername: MiSTliNK-CL9.pAgEs.Dev
+  tls: true
+  type: vless
+  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
+  ws-opts:
+    headers:
+      Host: mistlink-cl9.pages.dev
+    path: /ERlnnsHzyLczPW3c%3Fed%3D2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: CF中转_0306011086
+  network: ws
+  port: 8080
   server: 188.114.97.3
+  servername: free.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
   tls: false
   type: vless
-  uuid: e5dd37d6-4fd0-4027-90b2-c445333f63d6
+  uuid: 0751d920-cc41-4ae6-8a10-cf17efd7e6c3
   ws-opts:
     headers:
-      Host: 1.www.speedtest.net.zula.ir.zemestanil.iR.
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: CF中转_0304051085
-  network: ws
-  port: 443
-  server: 104.20.38.242
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
-  tls: true
-  type: vless
-  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
-  ws-opts:
-    headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
-    path: '%2F%3Fed%3D2048'
+      Host: free.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
+    path: '%2Fadmin'
 - client-fingerprint: chrome
-  name: CF中转_0304051086
-  network: ws
-  port: 8443
-  server: 104.21.90.210
-  servername: tnetplus-1wc.pages.dev
-  tls: true
-  type: vless
-  uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
-  ws-opts:
-    headers:
-      Host: tnetplus-1wc.pages.dev
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: CF中转_0304051087
+  name: CF中转_0306011087
   network: ws
   port: 443
-  server: 104.19.100.251
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960002.workers.dev
+  server: 172.66.47.147
+  servername: meti-u9d.pages.dev
   tls: true
   type: vless
-  uuid: fa659470-ca91-43c1-a966-2349531fb6a8
+  uuid: 1187ba87-8ebc-4a07-aa89-b331ed2cb356
   ws-opts:
     headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960002.workers.dev
-    path: '%2F%3Fed%3D2048'
-- name: CF中转_0304051088
+      Host: meti-u9d.pages.dev
+- name: CF中转_0306011088
   network: ws
   port: 80
-  server: 104.16.182.65
+  server: 104.16.52.146
   tls: false
   type: vless
-  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  uuid: 3f5eba46-f9c9-4d49-985c-2a4345da4f5a
   ws-opts:
     headers:
-      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
-    path: '%2FTelegram@V2ray_Alpha%2F%3Fed%3D2560'
-- name: CF中转_0304051089
+      Host: billowing-recipe-c066-ppal03.kerocel835.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: CF中转_0306011089
   network: ws
-  port: 2053
-  server: 104.18.9.38
+  port: 443
+  server: 104.19.4.191
+  servername: vpn930.tutorials58695647.workers.dev
+  tls: true
+  type: vless
+  uuid: d5e9297c-25fd-11ee-be56-0242ac120002
+  ws-opts:
+    headers:
+      Host: vpn930.tutorials58695647.workers.dev
+    path: '%2F'
+- alpn:
+  - http/1.1
+  name: CF中转_0306011090
+  network: ws
+  port: 443
+  server: 173.245.58.85
+  servername: hizkrh.fivegravity.com
+  tls: true
+  type: vless
+  uuid: 3fd841cb-09fa-47dc-920a-f60e728b65cf
+  ws-opts:
+    headers:
+      Host: hizkrh.fivegravity.com
+    path: /wss
+- client-fingerprint: chrome
+  name: CF中转_0306011092
+  network: ws
+  port: 443
+  server: 104.18.8.38
   servername: worker-fancy-base-7d08.yajici1215.workers.DEV
   tls: true
   type: vless
@@ -1116,56 +1118,492 @@ proxies:
   ws-opts:
     headers:
       Host: worker-fancy-base-7d08.yajici1215.workers.DEV
-    path: '%2FTABRIZ.NET%3A%40AZARBAYJAB1%2CTABRIZ.NET%3A%40AZARBAYJAB1%2CTABRIZ.NET%3A%40AZARBAYJAB1%2CTABRIZ.NET%3A%40AZARBAYJAB1%3Fed%3D2560'
+    path: '%2F'
+- name: CF中转_0306011093
+  network: ws
+  port: 80
+  server: 104.20.19.168
+  servername: v2raylandd-88.vmjisexa.workers.dev
+  tls: false
+  type: vless
+  uuid: 723af342-568e-4332-9233-6f33a9ca2de8
+  ws-opts:
+    headers:
+      Host: v2raylandd-88.vmjisexa.workers.Dev
+- name: CF中转_0306011094
+  network: ws
+  port: 2053
+  server: 162.159.44.235
+  servername: ngedo.ambercc.filegear-sg.me
+  tls: false
+  type: vless
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    headers:
+      Host: ngedo.ambercc.filegear-sg.me
+- name: CF中转_0306011095
+  network: ws
+  port: 443
+  server: 162.159.44.82
+  servername: agedw.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    path: '%2F%3Fed'
+- client-fingerprint: random
+  name: CF中转_0306011096
+  network: ws
+  port: 443
+  server: 104.24.51.228
+  servername: edgetunnel-3pc.pages.dev
+  tls: true
+  type: vless
+  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
+  ws-opts:
+    path: '%2F%3Fed'
+- name: CF中转_0306011097
+  network: ws
+  port: 443
+  server: 172.67.75.172
+  servername: a.xn--i-sx6a60i.us.kg
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg
+- client-fingerprint: randomized
+  name: CF中转_0306011099
+  network: ws
+  port: 443
+  server: 104.18.26.94
+  servername: esetsecuritylicense.cfmglpqb.workers.dev
+  tls: true
+  type: vless
+  uuid: d4769aab-99d9-4491-a3e3-a58867915bdf
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.cfmglpqb.workers.dev
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: CF中转_0306011100
+  network: httpupgrade
+  port: 8880
+  server: 104.21.69.44
+  tls: false
+  type: vless
+  uuid: c9757870-462f-4010-829f-2766522f7d46
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.ftp.debian.org.自己不看啥事基本事事.hoursebe.monster
+- client-fingerprint: chrome
+  name: CF中转_0306011101
+  network: ws
+  port: 8443
+  server: 172.64.150.8
+  servername: usa.v2ray.com.br
+  tls: true
+  type: vless
+  uuid: ee29fa1d-a706-4035-bea1-ae1f73845f65
+  ws-opts:
+    headers:
+      Host: usa.v2ray.com.br
+    path: '%2Frussian'
+- name: CF中转_0306011103
+  network: ws
+  port: 80
+  server: 104.18.14.19
+  tls: false
+  type: vless
+  uuid: 9d4f6cfb-c921-4bde-ae0a-61781848d940
+  ws-opts:
+    headers:
+      Host: 0225.axpsivp.workers.dev
+- client-fingerprint: chrome
+  name: CF中转_0306011105
+  network: ws
+  port: 443
+  server: 108.162.193.110
+  servername: ngedc.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    path: '%2F%3Fed'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011106
+  network: ws
+  port: 443
+  server: 104.18.14.89
+  servername: cpanel.pharmaweb.info
+  tls: true
+  type: vless
+  uuid: e1ad1088-c7ab-4c06-83b1-27c8188e631b
+  ws-opts:
+    headers:
+      Host: cpanel.pharmaweb.info
+    path: /wws
+- name: CF中转_0306011107
+  network: ws
+  port: 443
+  server: 162.159.44.127
+  servername: agedw.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    path: '%2F%3Fed'
+- name: CF中转_0306011108
+  network: ws
+  port: 8880
+  server: 104.18.41.138
+  servername: config-proxy-vl.telegram-config-proxy.workers.dev
+  tls: false
+  type: vless
+  uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
+  ws-opts:
+    headers:
+      Host: config-proxy-vl.telegram-config-proxy.workers.dev
+- name: CF中转_0306011109
+  network: ws
+  port: 80
+  server: 104.21.64.1
+  tls: false
+  type: vless
+  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
+  ws-opts:
+    headers:
+      Host: mahi.kosnanatfilterchi.eu.org
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: CF中转_0306011110
+  network: ws
+  port: 2096
+  server: 162.159.38.101
+  servername: ngedc.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: cf3df05c-bb63-427a-b48a-d8b1d9ada2c4
+  ws-opts:
+    path: '%2F%3Fed'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011111
+  network: ws
+  port: 443
+  server: 104.18.5.250
+  servername: iSaa1.PAGeS.DeV
+  tls: true
+  type: vless
+  uuid: a64f0cea-ca89-40e6-b316-b3badff1eb90
+  ws-opts:
+    headers:
+      Host: iSAA1.paGEs.DEV
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011112
+  network: ws
+  port: 2083
+  server: 104.21.37.43
+  servername: app.soft10.ir
+  tls: true
+  type: vless
+  uuid: e53ecb38-1974-4cca-b640-039e1f310710
+  ws-opts:
+    headers:
+      Host: app.soft10.ir
+    path: /8PaKguUsL3cShypAZpXO7Ci
+- name: CF中转_0306011113
+  network: kcp
+  port: 8880
+  server: 172.67.151.188
+  tls: false
+  type: vless
+  uuid: f07bf2eb-332a-4cc8-b8fa-cfb6b3b9d987
+- client-fingerprint: chrome
+  name: CF中转_0306011114
+  network: ws
+  port: 443
+  server: 104.16.45.12
+  servername: pages.20230619.love
+  tls: true
+  type: vless
+  uuid: 60813b9d-aa0e-4a5c-88b8-ed231058e82a
+  ws-opts:
+    headers:
+      Host: pages.20230619.love
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011115
+  network: ws
+  port: 443
+  server: 162.159.195.157
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+  tls: true
+  type: vless
+  uuid: 034ff80c-d56f-400d-bb00-958d4b6e5cb5
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011116
+  network: ws
+  port: 80
+  server: 173.245.58.31
+  tls: false
+  type: vless
+  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
+  ws-opts:
+    headers:
+      Host: mahi.kosnanatfilterchi.eu.org
+- name: CF中转_0306011117
+  network: ws
+  port: 443
+  server: 162.159.44.236
+  servername: agedw.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: edadc2f8-50b1-4049-9625-6fd5b4cb130a
+  ws-opts:
+    path: '%2F%3Fed'
+- alpn:
+  - http/1.1
+  name: CF中转_0306011119
+  network: ws
+  port: 443
+  server: 162.159.44.157
+  servername: y64n10.soroush-app.com
+  tls: true
+  type: vless
+  uuid: 2805e3e5-25bc-4fea-9a5c-51eb800fe379
+  ws-opts:
+    headers:
+      Host: y64n10.soroush-app.com
+    path: '%2Fwss'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011120
+  network: ws
+  port: 443
+  server: 104.18.53.121
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960005.workers.dev
+  tls: true
+  type: vless
+  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960005.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011121
+  network: ws
+  port: 2052
+  server: 104.17.147.210
+  tls: false
+  type: vless
+  uuid: 4aaa5edf-da3c-5c87-adb6-74431bf98ba2
+  ws-opts:
+    headers:
+      Host: sPeedtest2.sbs.tr1.vless.sitespeedtest.net
+    path: '%2Fvless%23%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: CF中转_0306011122
+  network: ws
+  port: 443
+  server: 162.159.192.153
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+  tls: true
+  type: vless
+  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: CF中转_0306011123
+  network: ws
+  port: 2095
+  server: 104.18.21.69
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingxijinping.xijinpingbigsb.workers.dev
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: CF中转_0306011124
+  network: grpc
+  port: 2096
+  server: 104.21.76.54
+  servername: app2.year2025appdatat.lat
+  tls: true
+  type: vless
+  uuid: c0b9dd6c-9676-4cd1-9e7c-9c6ac59afd37
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011125
+  network: ws
+  port: 2083
+  server: 104.16.60.8
+  servername: cpanel3.sassanidempire.com
+  tls: true
+  type: vless
+  uuid: c46a54bf-b220-4c22-cd6e-fb1fcabda0af
+  ws-opts:
+    headers:
+      Host: cpanel3.sassanidempire.com
+    path: '%2Fws'
+- name: CF中转_0306011126
+  network: httpupgrade
+  port: 2095
+  server: 104.21.32.1
+  tls: false
+  type: vless
+  uuid: fdb667db-7ba5-4f9c-aa1f-705504706257
+- name: CF中转_0306011127
+  network: ws
+  port: 2087
+  server: 172.66.47.164
+  servername: mahdISerVer-9hH.paGeS.DEv
+  tls: true
+  type: vless
+  uuid: 6d9c02ec-a9db-4860-a4e9-05e5b8e3c6c1
+  ws-opts:
+    headers:
+      Host: mahdISerVer-9hH.paGeS.DEv
+    path: '%2Fgljplfn5lykrxpqb%3Fed%3D2560'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_0304051090
-  network: ws
-  port: 443
-  server: 172.66.47.15
-  servername: GgGgr.PaGES.dEV
-  tls: true
-  type: vless
-  uuid: 9368b093-d790-4096-9d8a-1265e82f9e2f
-  ws-opts:
-    headers:
-      Host: ggggr.pages.dev
-    path: '%2Ftelegram%40v2ray_alpha%2F%3Fed%3D2560'
-- name: CF中转_0304051091
+  name: CF中转_0306011128
   network: ws
   port: 2096
-  server: 104.17.234.107
-  servername: Join-Te1gram-EiiiM.danesh-bonyan.Store
+  server: 172.66.47.15
+  servername: MaHDiSERveR-533.PAges.Dev
   tls: true
   type: vless
-  uuid: e9a5e9e1-0bdb-4a58-b7e2-c1f8b95cf260
+  uuid: d35eba2f-7504-48ab-84ab-b6460a3f303f
   ws-opts:
     headers:
-      Host: eiiim.danesh-bonyan.Store
-    path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
-- name: CF中转_0304051092
-  network: grpc
-  port: 443
-  server: 198.41.208.69
-  servername: Tp810P28gI.aNa-SoFt.Ir
+      Host: mahdiserver-533.pages.dev
+    path: '%2FdrJKqXievyg4Mlr6%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: CF中转_0306011129
+  network: ws
+  port: 8443
+  server: 172.67.132.41
+  servername: nl36.vlessx.us
   tls: true
   type: vless
-  uuid: 2a943112-138b-432d-a3a5-277ea2fd8a2e
-- name: CF中转_0304051093
+  uuid: 959dc846-1aa3-4aa7-bc58-7eb51114d1ce
+  ws-opts:
+    headers:
+      Host: nl36.vlessx.us
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: CF中转_0306011131
   network: ws
   port: 443
-  server: 104.21.44.107
-  servername: dd.gevom47953.workers.dev
+  server: 172.66.47.100
+  servername: BPb-WOrKeR-paneL1-e4P.PAGES.DEV
   tls: true
   type: vless
-  uuid: 780161d1-a345-45d4-96fb-c2c4b88bf151
+  uuid: 4045e84e-5e3c-4f70-8ff5-c1097882a55a
   ws-opts:
     headers:
-      Host: dd.gevom47953.workers.dev
-    path: '%2F'
-- name: CF中转_0304051095
+      Host: bpb-worker-panel1-e4p.pages.dev
+- name: CF中转_0306011132
+  network: ws
+  port: 2087
+  server: 104.21.69.44
+  servername: hq1.NEWrEtR432as.inFo
+  tls: true
+  type: vless
+  uuid: 48d34244-8fac-4fa4-b4fe-0931474f183d
+  ws-opts:
+    headers:
+      Host: hq1.NEWrEtR432as.inFo
+    path: '%2F%23Telegram%40V2ray_Alpha'
+- name: CF中转_0306011133
+  network: httpupgrade
+  port: 2082
+  server: 172.67.73.163
+  tls: false
+  type: vless
+  uuid: d424ae34-8aff-4093-b1c9-715de61aa144
+  ws-opts:
+    headers:
+      Host: 1S3-0MH-HJ1JAR06--BPKV6G4V--sWZW5eMD_QKJ__ZWB4FRTV7_KA7A.0912.ORG.
+    path: /?ed%3D2082,telegram,v2rayng_vpnrog,telegram,v2rayng_vpnrog,telegram,v2rayng_vpnrog,?ed%3D2082
+- grpc-opts:
+    grpc-service-name: '@Catvpns@Catvpns@Catvpns@Catvpns@Catvpns@Catvpns@Catvpns@Catvpns'
+  name: CF中转_0306011134
+  network: grpc
+  port: 2053
+  server: 172.67.214.110
+  servername: Ter.Iranasanejesh.org
+  tls: true
+  type: vless
+  uuid: 25d5ece5-8952-4529-98fa-30b09bacd307
+- client-fingerprint: randomized
+  name: CF中转_0306011135
+  network: ws
+  port: 443
+  server: 172.64.35.187
+  servername: setup10.pages.dev
+  tls: true
+  type: vless
+  uuid: 49531eb9-e547-43bf-b34a-992d21c05280
+  ws-opts:
+    headers:
+      Host: setup10.pages.dev
+    path: '%2Fsetup10.pages.dev%2F%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_0306011136
+  network: ws
+  port: 443
+  server: 104.26.13.101
+  servername: 0C9CF137-telegRAM-CaSsIUsvpn-tElegrAm-cAsSIusvpn-teLEgrAm.eamOnN-120.workers.DEV
+  tls: true
+  type: vless
+  uuid: ac7bcf0a-ef69-4949-aff2-a93630021826
+  ws-opts:
+    headers:
+      Host: 0c9cf137-telegram-cassiusvpn-telegram-cassiusvpn-telegram.eamonn-120.workers.dev
+    path: '%2FqmMTvZWWZJIvtX37%2FMy43MC4yMTkuMTk2%3Fed%3D2560'
+- name: CF中转_0306011137
+  network: ws
+  port: 8880
+  server: 104.16.24.34
+  tls: false
+  type: vless
+  uuid: 075a365b-b0c7-4ba3-b5a6-597850c223f9
+  ws-opts:
+    headers:
+      Host: sinaazizpor.wapgiz.workers.dev
+    path: /?ed%3D2048
+- name: CF中转_0306011138
   network: ws
   port: 443
   server: 188.114.96.9
@@ -1177,333 +1615,73 @@ proxies:
     headers:
       Host: n8yt9i7dizcb4nbicv55vdqyfahovzb6jvwipqntbtfmvpa4ugrxmzrlhqrfgfr.u19x5rr.workers.Dev
     path: '%2Ftelegram%40v2ray_alpha%3Fed%3D2560'
-- name: CF中转_0304051096
+- alpn:
+  - http/1.1
+  client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: '%2F52933%2Fmehdi'
+  name: CF中转_0306011139
   network: grpc
   port: 443
-  server: 172.66.46.227
-  servername: Tp810P28gI.aNa-SoFt.Ir
+  server: 104.21.44.185
+  servername: Freedomisnear.onetwothree123.ir
   tls: true
   type: vless
-  uuid: 2a943112-138b-432d-a3a5-277ea2fd8a2e
-- name: CF中转_0304051097
+  uuid: 95342990-2fa1-4100-a559-c3f5e25f450d
+- name: CF中转_0306011140
   network: ws
-  port: 8080
-  server: 172.67.153.253
-  servername: feng2.vfl83lnn.workers.dev
-  tls: true
+  port: 80
+  server: 104.21.94.168
+  tls: false
   type: vless
-  uuid: 77f2d54c-f1bd-46ff-af4c-cc44c72fd25e
+  uuid: f949cc8f-9d1a-4d56-9c6e-3daec4c92010
   ws-opts:
     headers:
-      Host: feng2.vfl83lnn.workers.dev
-    path: '%2FProxyIP%3DProxyIP.US.fxxk.dedyn.io'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051098
+      Host: VPNcustomize-vpnCUSTOMIZE-VPNcustomize.CUSTOMIZEspeedtest.net.
+- name: CF中转_0306011141
   network: ws
   port: 443
-  server: 172.67.205.138
-  servername: 1403.stopt7307.workers.dev
+  server: 172.66.44.233
+  servername: aksnmaioas.pages.dev
   tls: true
   type: vless
-  uuid: 62a49d41-e231-4a6b-af26-cec86ef64001
+  uuid: 38720105-063f-40f5-a5eb-f3198b9b617d
   ws-opts:
     headers:
-      Host: 1403.stopt7307.workers.dev
-    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2048'
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: CF中转_0304051099
-  network: ws
-  port: 443
-  server: 104.21.61.97
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
-  tls: true
-  type: vless
-  uuid: 890c9650-809e-445b-a4b0-2cd883e0de62
-  ws-opts:
-    headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
-    path: '%2F%3Fed%3D2048'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051100
-  network: ws
-  port: 2053
-  server: 104.17.148.22
-  servername: g.yUSEFkharE.SBS
-  tls: true
-  type: vless
-  uuid: d778cbd9-bfd0-433e-ad6b-e957b5dfc776
-  ws-opts:
-    headers:
-      Host: g.yUSEFkharE.SBS
-    path: /Tel:@AnGuS_VPN
+      Host: aksnmaioas.pages.dev
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_0304051102
+  name: CF中转_0306011142
   network: ws
   port: 2083
-  server: 172.66.47.42
-  servername: mAhdIserVer-9Tq.pAgES.Dev
+  server: 172.66.44.211
+  servername: MAHDISerVer-3zo.PAgES.deV
   tls: true
   type: vless
-  uuid: 3c4ba95f-dae4-4fa5-b875-44cc7a59f5c5
+  uuid: b66a1cb8-3c03-4678-a45b-bfd045604dad
   ws-opts:
     headers:
-      Host: mahdiserver-9tq.pages.dev
-- name: CF中转_0304051103
-  network: ws
-  port: 80
-  server: 141.101.121.110
-  tls: false
-  type: vless
-  uuid: f2a72ad0-d23f-4eed-96cb-7d970b1e784d
-  ws-opts:
-    headers:
-      Host: ov-germany1.09vpn.com
-    path: '%2Fvless%2F%3FVless_txt'
-- name: CF中转_0304051104
-  network: ws
-  port: 80
-  server: 104.22.53.235
-  servername: cc.ailicf.us.kg
-  tls: false
-  type: vless
-  uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-  ws-opts:
-    path: '%2Fb5cdabf0-e04'
-- name: CF中转_0304051105
-  network: grpc
-  port: 443
-  server: 104.25.97.27
-  servername: hq3.newretr432as.info
-  tls: true
-  type: vless
-  uuid: 08ef1330-8ffb-4001-a15e-96befc065c06
-- name: CF中转_0304051106
-  network: ws
-  port: 80
-  server: 104.16.179.157
-  tls: false
-  type: vless
-  uuid: 946b3994-cbcc-402c-bd93-c7f9df4d1c3b
-  ws-opts:
-    headers:
-      Host: nameless-silence-3ddd-ppal03.gecob30535.workers.dev
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051107
-  network: ws
-  port: 2096
-  server: 104.21.69.44
-  servername: iNTeRnET4EVERIeONe7.PaGes.DeV
-  tls: true
-  type: vless
-  uuid: 98f0c223-cb75-4faa-859e-47110b1f052b
-  ws-opts:
-    headers:
-      Host: internet4everieone7.pages.dev
-- name: CF中转_0304051108
-  network: ws
-  port: 443
-  server: 104.21.20.151
-  servername: bypassfilter.cmyyvat.workers.dev
-  tls: true
-  type: vless
-  uuid: b0e6a2c9-e667-4e42-9cb3-77d7db3e736b
-  ws-opts:
-    headers:
-      Host: bypassfilter.cmyyvat.workers.dev
-    path: '%2F%40bypass_filter%2F%3Fed%3D100'
-- name: CF中转_0304051109
-  network: ws
-  port: 80
-  server: 104.21.58.212
-  tls: false
-  type: vless
-  uuid: 5a4e040a-8de6-4222-bd6f-9f535b8772fd
-  ws-opts:
-    headers:
-      Host: calm-violet-0e47.pomofoc222.workers.dev
-    path: '%2FlrJO6NEVRGHecfbo%3Fed%3D2560'
+      Host: mahdiserver-3zo.pages.dev
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_0304051110
+  name: CF中转_0306011143
   network: ws
   port: 443
-  server: 172.66.44.197
-  servername: MahDISERveR-xnr.pAgES.dev
+  server: 172.67.174.89
+  servername: pPaL03.liana-guTKowSKi.wOrKErs.dEv
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: b3ec1385-e08f-422e-b32a-9d032f80ea01
+  uuid: 8cb143d6-ba4e-4217-987f-38abbf2ff4f2
   ws-opts:
     headers:
-      Host: mahdiserver-xnr.pages.dev
-    path: '%2Ftelegram%40v2ray_alpha%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051111
-  network: grpc
-  port: 2083
-  server: 104.26.1.117
-  servername: vipv2rey.mamare.ir
-  tls: true
-  type: vless
-  uuid: 07865379-86dd-4ca6-ad22-81255519c482
-- name: CF中转_0304051112
-  network: ws
-  port: 2052
-  server: 172.66.47.92
-  tls: false
-  type: vless
-  uuid: 74405eef-1eb0-44c9-bec0-80f43ff5db59
-  ws-opts:
-    headers:
-      Host: seyyed.webdade.ddns-ip.net
-    path: '%2F%40MOSIV2-%40MOSIV2-%40MOSIV2-%40MOSIV2-%40MOSIV2-%40MOSIV2%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051113
-  network: ws
-  port: 443
-  server: 172.66.47.200
-  servername: midsUMmER-Bpb.pAgES.DEV
-  tls: true
-  type: vless
-  uuid: c6d299d4-db0b-4444-8b56-b23bbdcbcd67
-  ws-opts:
-    headers:
-      Host: mIDsuMMer-bpb.PAgEs.DeV
-- name: CF中转_0304051114
-  network: ws
-  port: 443
-  server: 172.66.168.199
-  servername: Uk-FuLl.pRIvAteiP.nET
-  tls: true
-  type: vless
-  uuid: dfb6f849-e7d7-4994-80f7-1bd19b593a2a
-  ws-opts:
-    headers:
-      Host: Uk-FuLl.pRIvAteiP.nET
-    path: /VLESS
-- name: CF中转_0304051115
-  network: ws
-  port: 443
-  server: 172.67.128.212
-  servername: hexaprop.dirih76753.workers.dev
-  tls: true
-  type: vless
-  uuid: e794da45-0d8d-4b7a-9ae9-b0b84528b360
-  ws-opts:
-    headers:
-      Host: hexaprop.dirih76753.workers.dev
-    path: '%2F'
-- name: CF中转_0304051116
-  network: ws
-  port: 443
-  server: 104.22.70.81
-  servername: inputbugwildcard.cloudproxyip.my.id.winner.cloudproxyip.my.id
-  tls: true
-  type: vless
-  uuid: 26beb50a-bc24-44e1-8321-1ae1be79d052
-  ws-opts:
-    headers:
-      Host: inputbugwildcard.cloudproxyip.my.id.winner.cloudproxyip.my.id
-    path: '%2FFree-CF-Proxy-LV1'
-- name: CF中转_0304051117
-  network: ws
-  port: 80
-  server: 104.21.48.1
-  tls: false
-  type: vless
-  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
-  ws-opts:
-    headers:
-      Host: mahi.kosnanatfilterchi.eu.org
-    path: '%2F%3Fed%3D2048'
-- name: CF中转_0304051118
-  network: ws
-  port: 443
-  server: 104.21.21.137
-  servername: freedom14.geraxex389.workers.dev
-  tls: true
-  type: vless
-  uuid: 3f266d25-21aa-4498-bb1a-ce6d1d327aaf
-  ws-opts:
-    path: '%2F'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_0304051119
-  network: ws
-  port: 443
-  server: 104.21.95.83
-  servername: 13.speedtest24.ir
-  tls: true
-  type: vless
-  uuid: 9bce4294-6ada-4c32-95d0-0160855d1fc6
-  ws-opts:
-    headers:
-      Host: 13.speedtest24.ir
-    path: '%2Falfred%3Fed%3D2048'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: CF中转_0304051120
-  network: ws
-  port: 2053
-  server: 172.66.44.200
-  servername: HP-duBAi.pAgeS.dEV
-  tls: true
-  type: vless
-  uuid: fed7b870-8d40-4337-b26b-9aca5ac4846f
-  ws-opts:
-    headers:
-      Host: hp-dubai.pages.dev
-    path: '%2FW6PaDVqD7ARsLjOC%2FMy4yOS4xMDIuODk%3D%3Fed%3D2560'
-- name: CF中转_0304051121
-  network: ws
-  port: 8880
-  server: 104.21.64.1
-  tls: false
-  type: vless
-  uuid: f558f4db-96e5-4e79-8b57-34e39ba4899b
-  ws-opts:
-    headers:
-      Host: join.2.kiava.cloud.speedtest.net.xn--mgba2h8quf.cdn.ws79.cloudfront.net.kiava.fun
-- name: CF中转_030405114
-  network: ws
-  port: 80
-  server: 104.20.129.2
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_030405116
+      Host: PPaL03.LiaNA-gUtKowskI.worKerS.dev
+    path: '%2FPKeMRhnvWGG62q25%3Fed%3D2560'
+- name: CF中转_030601126
   network: ws
   port: 2052
   server: 104.17.147.22
@@ -1514,7 +1692,7 @@ proxies:
     headers:
       Host: sPeedtest2.sbs.ru1.vless.sitespeedtest.net
     path: '%2Fvless'
-- name: CF中转_030405117
+- name: CF中转_030601127
   network: ws
   port: 2095
   server: 104.18.14.19
@@ -1525,22 +1703,11 @@ proxies:
     headers:
       Host: 0228.losdnett.workers.dev
     path: '%2F%3Fed%3D2560'
-- name: CF中转_030405118
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: '%2F%3Fed%3D2560'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_030405119
+  name: CF中转_030601129
   network: ws
   port: 443
   server: 104.21.56.44
@@ -1552,18 +1719,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: '%2FShadowProxy66%3Fed%3D2560'
-- name: CF中转_030405120
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: '%2Ftelegram%40mtmvpn%3Fed%3D2560'
-- name: CF中转_030405122
+- name: CF中转_030601132
   network: ws
   port: 2086
   server: 104.18.200.200
@@ -1578,7 +1734,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_030405123
+  name: CF中转_030601133
   network: ws
   port: 2087
   server: 104.21.48.1
@@ -1594,7 +1750,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_030405124
+  name: CF中转_030601134
   network: ws
   port: 2053
   server: 104.21.16.1
@@ -1609,7 +1765,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_030405126
+  name: CF中转_030601136
   network: ws
   port: 2087
   server: 104.21.64.1
@@ -1624,7 +1780,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: CF中转_030405127
+  name: CF中转_030601137
   network: ws
   port: 8443
   server: 104.21.16.1
@@ -1639,7 +1795,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_030405128
+  name: CF中转_030601138
   network: ws
   port: 2083
   server: 104.21.80.1
@@ -1651,7 +1807,7 @@ proxies:
     headers:
       Host: mahdiserver-q9i.pages.dev
     path: '%2Fn3Jn43Xl2JTUTMBf%3Fed%3D2560'
-- name: CF中转_030405129
+- name: CF中转_030601139
   network: ws
   port: 80
   server: 188.114.97.155
@@ -1666,7 +1822,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_030405130
+  name: CF中转_030601140
   network: ws
   port: 2083
   server: 104.21.96.1
@@ -1682,7 +1838,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: CF中转_030405131
+  name: CF中转_030601141
   network: ws
   port: 2087
   server: 104.21.112.1
@@ -1694,154 +1850,75 @@ proxies:
     headers:
       Host: mahdiserver-2wn.pages.dev
     path: '%2FidJlWy8qh93NUHUR%3Fed%3D2560'
-- name: CF中转_030405132
-  network: xhttp
-  port: 443
-  server: 104.16.99.142
-  servername: z.softmeto.site
-  tls: true
-  type: vless
-  uuid: e016b7d6-f779-4bd4-a28b-de599b01be70
-- client-fingerprint: randomized
-  name: CF中转_030405133
+- name: CF中转_030601142
   network: ws
-  port: 443
-  server: 172.67.68.157
-  servername: joinmahdiserver.colib63603.workers.dev
-  tls: true
-  type: vless
-  uuid: 655309ff-3b17-4c47-8984-7646d1581bdd
-  ws-opts:
-    headers:
-      Host: joinmahdiserver.colib63603.workers.dev
-    path: '%2Fjoinmahdiserver.colib63603.workers.dev%2F%3Fed%3D2560'
-- name: CF中转_030405134
-  network: ws
-  port: 80
-  server: 104.16.171.121
+  port: 2095
+  server: 162.159.153.2
   tls: false
   type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+      Host: xijinpingnmsl.s4ar.workers.dev
     path: '%2F%3Fed%3D2560'
-- name: CF中转_030405135
-  network: ws
+- name: CF中转_030601143
+  network: httpupgrade
   port: 80
-  server: 104.21.32.1
+  server: 173.245.58.100
   tls: false
   type: vless
-  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
+  uuid: dad060e4-bfdc-438e-8400-05c15cfec3ba
   ws-opts:
     headers:
-      Host: mahi.kosnanatfilterchi.eu.org
-    path: '%2F%3Fed%3D2048'
-- name: CF中转_030405137
-  network: ws
-  port: 443
-  server: 104.20.212.228
-  servername: noFiLepanEL.PaGEs.DeV
-  tls: true
-  type: vless
-  uuid: dcf74299-42c2-4a5c-900e-2c92b16e0f8e
-  ws-opts:
-    path: '%2Fpfhfpgoct4um9olq%3Fed'
-- name: CF中转_030405138
-  network: ws
-  port: 80
-  server: 104.21.80.1
-  tls: false
-  type: vless
-  uuid: e1a928be-e289-4aef-b92e-4106fabdf42f
-  ws-opts:
-    headers:
-      Host: mahi.kosnanatfilterchi.eu.org
-    path: '%2F%3Fed%3D2048'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: CF中转_030405139
-  network: ws
-  port: 443
-  server: 172.66.44.195
-  servername: 23sPT.pAGEs.dEV
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: 23spt.pages.dev
-- client-fingerprint: chrome
-  name: CF中转_030405140
-  network: ws
-  port: 2083
-  server: 104.26.5.157
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-- name: CF中转_030405141
-  network: ws
-  port: 443
-  server: 104.17.148.22
-  servername: www.speedtest.net.www.google.com.bing.com.visa.com.tls.do2.ddns-ip.net
-  tls: true
-  type: vless
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.google.com.bing.com.visa.com.tls.do2.ddns-ip.net
-    path: '%2FTelegram-%2558V2ry2%3Fed%3D512%23%3D%2F%40bored_vpn%2C--%40bored_vpn%2C%40bored_vpn%2C--%40bored_vpn%2C%40bored_vpn%2C--%40bored_vpn%2C%40bored_vpn%2C--%40bored_vpn%2C%40bored_vpn%2C--%40bored_vpn%2C%40bored_vpn%2C--%40bored_vpn'
-- name: CF中转_030405142
-  network: ws
+      Host: ger1.nanowaash-shop.ir
+- name: CF中转_030601144
+  network: httpupgrade
   port: 2052
+  server: 173.245.58.100
+  tls: false
+  type: vless
+  uuid: 468ef333-3a15-4c8b-848b-2e0b5e089349
+  ws-opts:
+    headers:
+      Host: 3.dreshghi.ir.ferialmostofi.c-om.padaco.ir.arashnasiri.com.shafashiraz.ir.honartandis.com.shouba.ir.iran-dental.com.sardkhoone.com.mohammadsalehpour.ir.abadgan.com.arvijpub.com.chmctruck.com.gandom-yar.ir
+- name: CF中转_030601145
+  network: ws
+  port: 80
+  server: 104.16.132.207
+  tls: false
+  type: vless
+  uuid: 5b75d93d-1e40-43a4-af3d-d6cb11fbafe8
+  ws-opts:
+    headers:
+      Host: gozargah2.validbv7996.ir
+    path: '%2Ftelegram%40V2ray_Alpha%2F%3Fed%3D2048'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: CF中转_030601147
+  network: ws
+  port: 2096
+  server: 104.21.80.1
+  servername: MAHdIServEr-3Xv.paGeS.DEv
+  tls: true
+  type: vless
+  uuid: 3618c3e4-b322-4553-b776-61556bea3757
+  ws-opts:
+    headers:
+      Host: mahdiserver-3xv.pages.dev
+    path: '%2FHOEtfSgg9GnPDz38%3Fed%3D2560'
+- name: CF中转_030601148
+  network: ws
+  port: 8880
   server: 104.17.147.22
   tls: false
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: e4fe36d9-f034-421e-b8d0-75ef7550d15c
   ws-opts:
     headers:
-      Host: freev2rng---freev2rng---freev2rng---freev2rng---freev2rng.s88p4jh.workers.dev
-    path: '%2FWG9SqpThFFMyTenz%3Fed%3D2560'
-- name: CF中转_030405144
-  network: ws
-  port: 8880
-  server: 104.21.96.1
-  tls: false
-  type: vless
-  uuid: f558f4db-96e5-4e79-8b57-34e39ba4899b
-  ws-opts:
-    headers:
-      Host: join.2.kiava.cloud.speedtest.net.xn--mgba2h8quf.cdn.ws79.cloudfront.net.kiava.fun
-- client-fingerprint: random
-  name: CF中转_030405145
-  network: ws
-  port: 443
-  server: 190.93.244.221
-  servername: gozargah.validbv7996.ir
-  tls: true
-  type: vless
-  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /?ed%3D2560
-- client-fingerprint: random
-  name: CF中转_030405146
-  network: ws
-  port: 443
-  server: 104.24.51.228
-  servername: edgetunnel-3pc.pages.dev
-  tls: true
-  type: vless
-  uuid: 8b5e0dc6-abde-4323-ac8a-9f26824b3c5f
-  ws-opts:
-    path: '%2F%3Fed'
-- name: CF中转_0304051469
+      Host: api.12speedtest.bond.
+- name: CF中转_0306011482
   network: ws
   port: 80
   server: 172.67.132.209
@@ -1852,7 +1929,7 @@ proxies:
     headers:
       Host: nl21.vlessx.us
     path: /?ed%3D2048
-- name: CF中转_0304051470
+- name: CF中转_0306011483
   network: ws
   port: 80
   server: 104.17.225.220
@@ -1863,7 +1940,7 @@ proxies:
     headers:
       Host: Tak6U1.AmOOzEshGaH-pc.COM
     path: /backup
-- name: CF中转_0304051471
+- name: CF中转_0306011484
   network: ws
   port: 80
   server: 104.23.123.123
@@ -1876,7 +1953,7 @@ proxies:
     path: /backup
 - grpc-opts:
     grpc-service-name: '@V2ray_Alpha%20@V2ray_Alpha%20@V2ray_Alpha'
-  name: CF中转_0304051472
+  name: CF中转_0306011485
   network: grpc
   port: 2053
   server: 104.21.50.49
@@ -1885,7 +1962,7 @@ proxies:
   tls: true
   type: vless
   uuid: 06e87d4a-314d-4651-af86-d4f55624159a
-- name: CF中转_0304051473
+- name: CF中转_0306011486
   network: ws
   port: 80
   server: 172.67.132.41
@@ -1896,7 +1973,7 @@ proxies:
     headers:
       Host: nl42.vlessx.us
     path: /?ed%3D2048
-- name: CF中转_0304051474
+- name: CF中转_0306011487
   network: ws
   port: 2053
   server: 172.66.47.98
@@ -1909,7 +1986,7 @@ proxies:
       Host: mtnfinldefhdisjwidjsmperep0.amoozeshgah-com.com
     path: /backup
 - client-fingerprint: randomized
-  name: CF中转_0304051475
+  name: CF中转_0306011488
   network: ws
   port: 2083
   server: 172.67.132.41
@@ -1921,7 +1998,7 @@ proxies:
     headers:
       Host: nl48.vlessx.us
     path: /?ed%3D2048
-- name: CF中转_0304051476
+- name: CF中转_0306011489
   network: ws
   port: 443
   server: 172.64.68.75
@@ -1934,7 +2011,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF@iP_CF'
-  name: CF中转_0304051477
+  name: CF中转_0306011490
   network: grpc
   port: 8443
   server: 104.21.48.84
@@ -1942,7 +2019,7 @@ proxies:
   tls: true
   type: vless
   uuid: 161f6b0b-47c3-487e-bffd-90b74fb67539
-- name: CF中转_0304051478
+- name: CF中转_0306011491
   network: ws
   port: 80
   server: 190.93.245.101
@@ -1956,7 +2033,7 @@ proxies:
     path: '%2f'
 - grpc-opts:
     grpc-service-name: '@V2ray_Alpha%20@V2ray_Alpha%20@V2ray_Alpha'
-  name: CF中转_0304051479
+  name: CF中转_0306011492
   network: grpc
   port: 2053
   server: 172.67.163.123
@@ -1964,20 +2041,7 @@ proxies:
   tls: true
   type: vless
   uuid: 27056121-4d93-4dfa-839a-588dfdd259e0
-- client-fingerprint: random
-  name: CF中转_030405148
-  network: ws
-  port: 443
-  server: 104.22.24.195
-  servername: kawaiifreevpn-7ds.pages.dev
-  tls: true
-  type: vless
-  uuid: 9dd24d01-2b7a-4bd8-8c76-129d6ca89b8c
-  ws-opts:
-    headers:
-      Host: kawaiifreevpn-7ds.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051480
+- name: CF中转_0306011493
   network: ws
   port: 80
   server: 190.93.247.155
@@ -1989,7 +2053,7 @@ proxies:
     headers:
       Host: V2rayng.自己不去看啥事情基本没啥事.website
     path: '%2fdigiv%3fed%3d2048'
-- name: CF中转_0304051481
+- name: CF中转_0306011494
   network: ws
   port: 8443
   server: 104.16.122.175
@@ -2001,7 +2065,7 @@ proxies:
     headers:
       Host: usa.servervless.de
     path: /?ed%3D2048
-- name: CF中转_0304051482
+- name: CF中转_0306011495
   network: ws
   port: 8443
   server: 104.16.124.175
@@ -2013,7 +2077,7 @@ proxies:
     headers:
       Host: usa.servervless.de
     path: /?ed%3D2048
-- name: CF中转_0304051483
+- name: CF中转_0306011496
   network: ws
   port: 80
   server: 104.27.13.198
@@ -2024,7 +2088,7 @@ proxies:
     headers:
       Host: bia-to-channel3.unlimiteddev.shop
     path: /
-- name: CF中转_0304051484
+- name: CF中转_0306011497
   network: ws
   port: 443
   server: 104.17.88.212
@@ -2036,7 +2100,7 @@ proxies:
     headers:
       Host: lmn59.sbs
     path: /fflsws
-- name: CF中转_0304051485
+- name: CF中转_0306011498
   network: ws
   port: 80
   server: 104.17.42.10
@@ -2047,7 +2111,7 @@ proxies:
     headers:
       Host: Okhvod.KAshTI.WOrLd
     path: /backup
-- name: CF中转_0304051486
+- name: CF中转_0306011499
   network: ws
   port: 80
   server: 104.17.88.212
@@ -2058,7 +2122,7 @@ proxies:
     headers:
       Host: Okhvod.KAshTI.WOrLd
     path: /backup
-- name: CF中转_0304051487
+- name: CF中转_0306011500
   network: ws
   port: 80
   server: 104.19.250.20
@@ -2069,7 +2133,7 @@ proxies:
     headers:
       Host: Okhvod.KAshTI.WOrLd
     path: /backup
-- name: CF中转_0304051488
+- name: CF中转_0306011501
   network: ws
   port: 80
   server: 104.22.13.10
@@ -2079,162 +2143,4 @@ proxies:
   ws-opts:
     headers:
       Host: Okhvod.KAshTI.WOrLd
-    path: /backup
-- name: CF中转_0304051489
-  network: ws
-  port: 80
-  server: 172.67.204.84
-  tls: false
-  type: vless
-  uuid: 384193af-acf4-4e3d-a570-5720befa42ee
-  ws-opts:
-    headers:
-      Host: Okhvod.KAshTI.WOrLd
-    path: /backup
-- client-fingerprint: random
-  name: CF中转_030405149
-  network: ws
-  port: 443
-  server: 162.159.153.2
-  servername: 5-55sfjslf.ifenxiang.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-    path: '%2F%3Fed%3D2560'
-- name: CF中转_0304051490
-  network: ws
-  port: 80
-  server: 173.245.59.16
-  tls: false
-  type: vless
-  uuid: 384193af-acf4-4e3d-a570-5720befa42ee
-  ws-opts:
-    headers:
-      Host: Okhvod.KAshTI.WOrLd
-    path: /backup
-- client-fingerprint: randomized
-  name: CF中转_0304051491
-  network: ws
-  port: 2096
-  server: 104.21.4.8
-  servername: nl25.vlessx.us
-  tls: true
-  type: vless
-  uuid: 3ab1e793-7cd7-49a1-bb14-b68043888482
-  ws-opts:
-    headers:
-      Host: nl25.vlessx.us
-    path: /?ed%3D2048
-- name: CF中转_0304051492
-  network: ws
-  port: 2053
-  server: 172.67.218.84
-  servername: uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev
-  tls: true
-  type: vless
-  uuid: 3ceb909a-1a8a-4d47-9593-4226f21b2825
-  ws-opts:
-    headers:
-      Host: uciran-uciran-uciran-uciran-uciran-uciran-uciran.wapin67458.workers.dev
-- name: CF中转_0304051493
-  network: ws
-  port: 2053
-  server: 172.67.204.84
-  servername: itcenteriran.blog
-  tls: true
-  type: vless
-  uuid: 4045c6b7-1d53-4574-98cd-df21db40b0dc
-  ws-opts:
-    path: /p=19
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@vmesskhodam'
-  name: CF中转_0304051494
-  network: grpc
-  port: 443
-  server: 104.18.202.232
-  servername: pr.valivali.top
-  tls: true
-  type: vless
-  uuid: 4291f2c0-887c-4a39-b74c-aa8c0b755650
-- name: CF中转_0304051495
-  network: ws
-  port: 443
-  server: 172.67.178.12
-  servername: marly.toptechnonews.com
-  tls: true
-  type: vless
-  uuid: 43e00e4c-2316-4dc9-8262-cef31886dc56
-  ws-opts:
-    path: /nimws
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER
-  name: CF中转_0304051496
-  network: grpc
-  port: 2087
-  server: 172.67.171.12
-  servername: a.kanal-tel-nufilter.store
-  tls: true
-  type: vless
-  uuid: 4525d5e6-4981-4fed-8268-a6f1c53aefc1
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER
-  name: CF中转_0304051497
-  network: grpc
-  port: 2087
-  server: 172.67.198.195
-  servername: a.kanal-tel-nufilter.store
-  tls: true
-  type: vless
-  uuid: 4525d5e6-4981-4fed-8268-a6f1c53aefc1
-- name: CF中转_0304051498
-  network: ws
-  port: 80
-  server: 172.66.44.158
-  tls: false
-  type: vless
-  uuid: 48fd814e-214d-499d-bba9-d777530b13ac
-  ws-opts:
-    headers:
-      Host: j4a0O7.DL-vSCODE.COM
-    path: /backup
-- name: CF中转_0304051499
-  network: ws
-  port: 80
-  server: 172.66.47.98
-  tls: false
-  type: vless
-  uuid: 48fd814e-214d-499d-bba9-d777530b13ac
-  ws-opts:
-    headers:
-      Host: j4a0O7.DL-vSCODE.COM
-    path: /backup
-- name: CF中转_0304051500
-  network: ws
-  port: 2053
-  server: 104.19.255.51
-  servername: weidokxdjifmdmnr0tcjnisdx.bale.bio
-  tls: true
-  type: vless
-  uuid: 4b90796f-8973-467e-966b-54319b064ee9
-  ws-opts:
-    path: /backup
-- name: CF中转_0304051501
-  network: ws
-  port: 2053
-  server: 104.22.13.192
-  servername: weidokxdjifmdmnr0tcjnisdx.bale.bio
-  tls: true
-  type: vless
-  uuid: 4b90796f-8973-467e-966b-54319b064ee9
-  ws-opts:
     path: /backup

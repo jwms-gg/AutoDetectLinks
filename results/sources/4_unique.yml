@@ -1,35 +1,38 @@
-# Update: 2025-03-04 14:28
+# Update: 2025-03-06 09:23
 # Source 4 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml), 4
 proxies:
-- cipher: aes-256-gcm
+- alpn:
+  - http/1.1
   ip-version: dual
-  name: 🇨🇦_CA_加拿大
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.154.136.247
-  type: ss
-  udp: true
-- ip-version: dual
-  name: 🇺🇸_US_美国_2
+  name: 🇮🇪_IE_爱尔兰
+  network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 3.223.63.212
+  server: 3.254.11.81
   sni: trojan.burgerip.co.uk
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 🇺🇸_US_美国_4
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.143.66.186
+  type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_2 #1'
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 217.30.10.18
+  name: '🇺🇸_US_美国_5 #1'
+  password: amazonskr05
+  port: 443
+  server: 34.212.0.149
   type: ss
   udp: true
-- ip-version: dual
-  name: 🇮🇪_IE_爱尔兰
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 54.170.99.173
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 🇺🇸_US_美国_6
+  password: amazonskr05
+  port: 443
+  server: 52.24.145.185
+  type: ss
   udp: true

@@ -541,6 +541,7 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     delay_checker = ClashDelayChecker()
     delay_checker.check_nodes(nodes)
     alive_proxies = delay_checker.get_nodes()
+    logger.info(f"Alive proxies: {len(alive_proxies)}, Delay:")
     [
         logger.info(
             f"Proxy {p['name']}: {average_delay(delay_checker.proxy_delay_dict[p['name']].history)}ms"

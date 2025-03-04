@@ -1,115 +1,159 @@
-# Update: 2025-03-04 14:28
-# Source 4 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml), 14
+# Update: 2025-03-06 09:23
+# Source 4 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml), 15
 proxies:
-- cipher: aes-256-cfb
+- alpn:
+  - http/1.1
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_1 #1'
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '🇺🇸_US_美国_1 #4'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.47.252.251
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 🇺🇦_UA_乌克兰
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 176.103.53.105
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: 🇨🇦_CA_加拿大
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.154.136.247
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  ip-version: dual
-  name: 🇧🇬_BG_保加利亚_1
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
-  type: ss
-  udp: true
-- ip-version: dual
-  name: 🇺🇸_US_美国_2
+  name: 🇮🇪_IE_爱尔兰
+  network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 3.223.63.212
+  server: 3.254.11.81
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_2 #1'
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- ip-version: dual
-  name: 🇮🇪_IE_爱尔兰
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 54.170.99.173
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_3 #2'
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: '🇮🇹_IT_意大利 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  ip-version: dual
-  name: 🇧🇬_BG_保加利亚_2
-  password: shadowsocks
+  name: '🇺🇸_US_美国_1 #1'
+  password: amazonskr05
   port: 443
-  server: 149.34.244.80
+  server: 18.236.101.195
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: '🇩🇪_DE_德国 #1'
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
+  name: '🇺🇦_UA_乌克兰 #1'
+  password: ODA2MGZh
+  port: 8388
+  server: 95.164.36.59
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- ip-version: dual
+  name: 🇺🇸_US_美国_2
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: 161.35.34.48
+  skip-cert-verify: true
+  sni: yourjobnavigator.online
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   ip-version: dual
   name: 🇺🇸_US_美国_3
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.114.121.218
+  network: ws
+  port: 80
+  server: 151.101.194.168
+  type: vmess
+  udp: true
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- ip-version: dual
+  name: '🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
+  password: ypDt8RkT7J
+  port: 43118
+  server: 89.187.181.179
+  skip-cert-verify: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '🇷🇺_RU_俄罗斯 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '🇨🇦_CA_加拿大_1 #1'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  type: vmess
+  udp: true
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 🇸🇪_SE_瑞典
+  network: ws
+  port: 80
+  server: www.aetv.com
+  type: vmess
+  udp: true
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: 🇺🇸_US_美国_4
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.143.66.186
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: 🇸🇪_SE_瑞典
+  name: '🇩🇰_DK_丹麦 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 194.14.217.38
+  server: 185.186.79.53
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 80
+  server: 151.101.66.168
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '🇺🇸_US_美国_5 #1'
+  password: amazonskr05
+  port: 443
+  server: 34.212.0.149
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 🇺🇸_US_美国_6
+  password: amazonskr05
+  port: 443
+  server: 52.24.145.185
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: '🇨🇦_CA_加拿大_2 #1'
+  network: ws
+  port: 80
+  server: 51.79.103.76
+  type: vmess
+  udp: true
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
