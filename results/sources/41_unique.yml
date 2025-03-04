@@ -1,9 +1,62 @@
-# Update: 2025-03-04 07:26
+# Update: 2025-03-04 14:28
 # Source 41 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 8
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: 美国 Fastly全球Anycast节点
+  network: ws
+  port: 80
+  server: 151.101.194.168
+  tls: false
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '美国 Fastly全球Anycast节点 #1'
+  network: ws
+  port: 80
+  server: 151.101.130.168
+  tls: false
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '美国 Fastly全球Anycast节点 #2'
+  network: ws
+  port: 80
+  server: 151.101.66.168
+  tls: false
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- alpn:
+  - h2
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: 2053
+  server: 172.66.47.42
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nop-55q.pages.dev
+    path: '%2FtrGPZDfetEwuO25SAs%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -15,76 +68,18 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
+- alpn:
+  - http/1.1
+  name: 爱尔兰+都柏林Amazon数据中心
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 46.137.191.115
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 45.144.48.128
-  tls: true
-  type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: 印度 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
-  ws-opts:
-    headers:
-      Host: sahand.serveminecraft.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '印度 V2CROSS.COM #1'
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
-  ws-opts:
-    headers:
-      Host: pendar.onthewifi.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 8443
-  server: 3h-poland1.09vpn.com
-  tls: true
-  type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: 美国 Fastly全球Anycast节点
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #26'
+  name: '美国 CloudFlare节点 #6'
   network: ws
   port: 443
   server: bluehost.com
@@ -97,7 +92,7 @@ proxies:
     path: /19544
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #34'
+  name: '美国 CloudFlare节点 #8'
   network: ws
   port: '80'
   server: fd.shabijichang.com

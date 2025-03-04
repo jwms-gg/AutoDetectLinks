@@ -250,7 +250,7 @@ def is_fake(proxy: dict[str, Any]) -> bool:
                 proxy["server"].endswith(_)
                 for _ in chain(settings.fake_domains, settings.fake_ips)
             ]
-        )
+        ) or any(k in proxy["name"] for k in settings.ban)
     except Exception:
         logger.info("Check fake node failed")
     return False

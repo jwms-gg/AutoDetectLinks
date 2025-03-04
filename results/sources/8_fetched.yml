@@ -1,5 +1,5 @@
-# Update: 2025-03-04 07:26
-# Source 8 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 25
+# Update: 2025-03-04 14:28
+# Source 8 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 27
 proxies:
 - name: tg频道:@ripaojiedian
   port: 4000
@@ -81,6 +81,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 21e549ac-f8a0-4dfe-a626-fe1630c7b804
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇭🇰 香港10|@ripaojiedian
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40208
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '🇹🇼 台湾2|@ripaojiedian #1'
@@ -133,13 +144,13 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 🇯🇵 日本4|@ripaojiedian
-  port: 48019
-  server: 45.159.51.116
+  port: 35565
+  server: 120.198.71.214
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: c06797d5-fa41-4b48-b132-d268d2acb302
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '🇸🇬 新加坡2|@ripaojiedian #2'
@@ -188,7 +199,7 @@ proxies:
   name: 🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.129.168.96
+  server: 13.250.31.115
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -196,7 +207,7 @@ proxies:
   name: 🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.231.243.205
+  server: 54.151.184.124
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -204,6 +215,14 @@ proxies:
   name: 🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.248.148.112
+  server: 18.143.186.182
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇨🇦 加拿大|@ripaojiedian
+  password: M2EzY
+  port: 8388
+  server: ca1.ssocks.wiki
   tfo: false
   type: ss

@@ -47,10 +47,10 @@ clash_config_template = {
         "default-nameserver": [
             "223.5.5.5",
             "119.29.29.29",
+            "114.114.114.114",
         ],
         "enhanced-mode": "fake-ip",
         "fake-ip-range": "198.18.0.1/16",
-        "use-hosts": True,
         "nameserver": [
             "https://doh.pub/dns-query",
             "https://dns.alidns.com/dns-query",
@@ -1448,11 +1448,6 @@ def generate_clash_config(nodes: list[dict[str, Any]]) -> dict[str, Any]:
         config["proxy-groups"][3]["proxies"].append(name)
     config["proxies"] = nodes
     return config
-
-
-# 判断不包含
-def not_contains(s):
-    return not any(k in s for k in settings.ban)
 
 
 # 自定义 Clash API 异常

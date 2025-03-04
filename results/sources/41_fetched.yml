@@ -1,35 +1,88 @@
-# Update: 2025-03-04 07:26
-# Source 41 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 27
+# Update: 2025-03-04 14:28
+# Source 41 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 17
 proxies:
 - alterId: 0
   cipher: auto
-  name: '立陶宛 V2CROSS.COM #1'
+  name: 美国 Fastly全球Anycast节点
   network: ws
-  port: 8443
-  server: 89.117.112.235
-  tls: true
+  port: 80
+  server: 151.101.194.168
+  tls: false
   type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 斯洛文尼亚 V2CROSS.COM
+  name: '美国 Fastly全球Anycast节点 #1'
   network: ws
-  port: 8443
-  server: 92.53.188.185
-  tls: true
+  port: 80
+  server: 151.101.130.168
+  tls: false
   type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
   ws-opts:
     headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '美国 Fastly全球Anycast节点 #2'
+  network: ws
+  port: 80
+  server: 151.101.66.168
+  tls: false
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      Host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- alpn:
+  - h2
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: 2053
+  server: 172.66.47.42
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nop-55q.pages.dev
+    path: '%2FtrGPZDfetEwuO25SAs%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
+  network: ws
+  port: 2086
+  server: 104.16.155.10
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-47-154-9.s1.cn-db.top
+    path: /dabai.in104.24.181.189
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: 2052
+  server: 104.17.221.248
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-44-70-80.s1.db-link02.top
+    path: /dabai.in172.67.75.187
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -43,222 +96,51 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: '美国 CloudFlare节点 #1'
-  network: grpc
-  port: '2087'
-  server: 108.162.192.217
-  servername: 155138206163.datrsmbmrm.fun
-  tls: true
-  type: vmess
-  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
-- grpc-opts:
-    grpc-service-name: freehr01
-  name: 澳大利亚+V2CROSS.COM
-  network: grpc
-  password: e8012565-5b9f-373f-b1eb-e2445711e65c
-  port: 15055
-  server: 129.154.49.249
-  sni: freehr01.jd0001.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 北美地区 V2CROSS.COM
+  name: 丹麦 V2CROSS.COM
   network: ws
   port: 443
-  server: 23.158.56.241
+  server: www.csgo.com
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 85890618-6020-4ebc-feb4-1381534f68e8
   ws-opts:
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
+      Host: 11m.china-sg.filegear-sg.me
+    path: /?ed=2048
+- alpn:
+  - http/1.1
+  name: 爱尔兰+都柏林Amazon数据中心
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 46.137.191.115
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '英国+社会保险安全部 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.24.2.215
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 欧盟+V2CROSS.COM
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: '8080'
+  server: 45.87.175.192
+  type: ss
 - name: 美国+Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.171.123.64
+  server: 13.43.83.38
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.169.169.38
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #3'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.157.57.224
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon+EC2服务器 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.74.198.188
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 美国 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 45.144.48.128
-  tls: true
-  type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- cipher: aes-256-gcm
-  name: 南非+V2CROSS.COM
-  password: YHK82TR73114VN9O
-  port: '16016'
-  server: 154.196.244.26
-  type: ss
-- cipher: aes-256-gcm
-  name: 美国+V2CROSS.COM
-  password: TEzjfAYq2IjtuoS
-  port: '6697'
-  server: 23.166.88.104
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 印度 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
-  ws-opts:
-    headers:
-      Host: sahand.serveminecraft.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '印度 V2CROSS.COM #1'
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
-  ws-opts:
-    headers:
-      Host: pendar.onthewifi.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 8443
-  server: 3h-poland1.09vpn.com
-  tls: true
-  type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 2086
-  server: freedomisnear.onetwothree123.ir
-  tls: false
-  type: vmess
-  uuid: 666f3931-0dc1-4078-d7fa-a86b63bf067e
-  ws-opts:
-    headers:
-      Host: Freedomisnear.onetwothree123.ir
-    path: /mehdi
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #4'
   network: ws
-  port: 8880
-  server: s1.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-250-32-53.s1.db-link01.top
-    path: /dabai.in172.67.95.35
-- alterId: 0
-  cipher: auto
-  name: 美国 Fastly全球Anycast节点
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #6'
-  network: ws
-  port: 8080
-  server: s5.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-149-191-2.s5.db-link02.top
-    path: /dabai.in104.20.16.209
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #8'
-  network: ws
-  port: 8880
-  server: s5.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-85-25-119.s5.db-link02.top
-    path: /dabai.in104.19.220.104
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #12'
-  network: ws
-  port: 443
-  server: rAkesMaRT.818185.gGFF.NET
-  tls: true
-  type: vmess
-  uuid: 0343d7ab-fa29-478a-8877-0d6a8b7d2ab8
-  ws-opts:
-    headers:
-      Host: rakesmart.818185.ggff.net
-    path: /fBhqPm6Vqnob7lNM3m2RN6Lp
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #13'
-  network: ws
   port: 8080
   server: s1.db-link02.top
+  servername: ''
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
@@ -268,20 +150,7 @@ proxies:
     path: /dabai.in104.21.151.202
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #22'
-  network: ws
-  port: 2052
-  server: freedomisnear.onetwothree123.ir
-  tls: false
-  type: vmess
-  uuid: 4c2c39bd-6658-4c2d-c2da-762fef958d32
-  ws-opts:
-    headers:
-      Host: Freedomisnear.onetwothree123.ir
-    path: /mehdi
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #26'
+  name: '美国 CloudFlare节点 #6'
   network: ws
   port: 443
   server: bluehost.com
@@ -294,20 +163,7 @@ proxies:
     path: /19544
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #33'
-  network: ws
-  port: 2082
-  server: s2.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
-  ws-opts:
-    headers:
-      Host: 100-87-160-252.s2.db-link02.top
-    path: /dabai.in104.24.60.200
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #34'
+  name: '美国 CloudFlare节点 #8'
   network: ws
   port: '80'
   server: fd.shabijichang.com
@@ -319,3 +175,15 @@ proxies:
     headers:
       Host: zjg.shabijichang.com
     path: /
+- cipher: aes-256-gcm
+  name: 美国+V2CROSS.COM
+  password: TEzjfAYq2IjtuoS
+  port: '6697'
+  server: 23.166.88.104
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 浙江省台州市+台州世通网络
+  password: 3FB23A19-9424-40C7-9139-3540228283FA
+  port: '40000'
+  server: hk.fastsoonlink.com
+  type: ss

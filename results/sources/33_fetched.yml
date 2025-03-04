@@ -1,30 +1,31 @@
-# Update: 2025-03-04 07:26
+# Update: 2025-03-04 14:28
 # Source 33 (https://raw.githubusercontent.com/qianlima8888/autoClashProxy/refs/heads/main/list.yaml), 25
 proxies:
-- cipher: aes-256-cfb
-  name: 日本-6
-  password: amazonskr05
-  port: 443
-  server: 54.249.42.175
-  type: ss
 - cipher: aes-256-cfb
   name: 日本-3
   password: amazonskr05
   port: 443
-  server: 3.112.30.167
+  server: 13.231.193.189
   type: ss
 - cipher: aes-256-cfb
-  name: 新加坡-3
+  name: 日本-4
   password: amazonskr05
   port: 443
-  server: 18.140.3.253
+  server: 18.179.10.10
   type: ss
-- cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 13.230.141.176
-  type: ss
+- client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: 80
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
 - name: 美国-2
   network: ws
   port: 80
@@ -40,62 +41,106 @@ proxies:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
 - cipher: aes-256-cfb
-  name: 新加坡-4
+  name: 日本-2
   password: amazonskr05
   port: 443
-  server: 13.229.63.223
+  server: 54.249.42.175
   type: ss
-- client-fingerprint: chrome
-  name: 美国-1
+- name: 美国-1
   network: ws
-  port: 80
-  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
   port: 443
-  server: 18.143.186.182
-  type: ss
-- client-fingerprint: chrome
-  delay: 2905
-  name: 美国-3
-  network: ws
-  port: 2052
-  server: 104.26.12.101
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  server: 138.2.107.107
+  servername: c1.bgm2024.us.kg
   skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 日本-1
+  name: 韩国-1
   password: amazonskr05
   port: 443
-  server: 18.179.10.10
+  server: 54.180.128.213
   type: ss
-- cipher: aes-256-cfb
-  name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 54.255.230.67
-  type: ss
+- name: 美国-3
+  network: ws
+  port: 80
+  server: 104.26.14.85
+  servername: a.xn--i-sx6a60i.us.kg.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: /?ed=2560
+- name: 日本-1
+  network: ws
+  port: 12509
+  server: 132.145.124.43
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-2
+  network: ws
+  port: 12020
+  server: 175.213.146.92
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-3
+  network: ws
+  port: 30001
+  server: 220.86.175.229
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 韩国-4
+  network: ws
+  port: 30012
+  server: 118.47.65.248
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
 - name: '美国-5 #1'
   network: ws
   port: 443
-  server: ip.sb
-  servername: v7.ylks.us.kg
+  server: 130.250.137.94
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -103,39 +148,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c01.ylkszy.eu.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 日本-5
-  password: amazonskr05
-  port: 443
-  server: 54.64.6.209
-  type: ss
-- name: 美国-6
-  network: ws
-  port: 443
-  server: iplocation.io
-  servername: v7.ylks.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: v7.ylks.us.kg
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: '日本-4 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.230.110.170
-  type: ss
 - name: 美国-8
   network: ws
   port: 443
-  server: toy-people.com
-  servername: v7.ylks.us.kg
+  server: www.okcupid.com
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -143,13 +162,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 日本-7
+- name: 美国-9
   network: ws
   port: 443
-  server: 140.238.60.225
-  servername: v7.ylks.us.kg
+  server: 152.70.57.182
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -157,13 +176,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.103
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
     path: /?ed=2560
 - name: 美国-4
   network: ws
   port: 443
-  server: 63.141.128.96
-  servername: v7.ylks.us.kg
+  server: 104.16.153.254
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -171,13 +204,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c01.ylkszy.eu.org
     path: /?ed=2560
 - name: 美国-7
   network: ws
   port: 443
-  server: www.udemy.com
-  servername: v7.ylks.us.kg
+  server: 63.141.128.100
+  servername: c1.bgm2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
@@ -185,13 +218,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
-- name: '美国-9 #1'
+- name: 美国-10
   network: ws
   port: 443
-  server: wilson.ns.cloudflare.com
-  servername: v7.ylks.us.kg
+  server: 63.141.128.163
+  servername: c1.bgm2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
@@ -199,13 +232,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
-- name: '荷兰-1 #1'
+- name: 荷兰-2
   network: ws
   port: 443
-  server: 185.133.35.125
-  servername: v7.ylks.us.kg
+  server: 185.133.35.242
+  servername: c1.bgm2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
@@ -213,13 +246,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-3
+  network: ws
+  port: 443
+  server: 185.133.35.155
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
 - name: '美国-11 #1'
   network: ws
   port: 443
-  server: 135.84.76.110
-  servername: v7.ylks.us.kg
+  server: 192.0.54.168
+  servername: c1.bgm2024.us.kg
   skip-cert-verify: true
   tls: true
   type: vless
@@ -227,47 +274,47 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: v7.ylks.us.kg
+      host: c1.bgm2024.us.kg
     path: /?ed=2560
-- name: 美国-13
+- name: 荷兰-4
   network: ws
-  port: 8880
-  server: 154.83.2.230
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 185.133.35.99
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-- name: 美国-10
-  network: ws
-  port: 8880
-  server: 154.83.2.228
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
 - name: 美国-12
   network: ws
-  port: 8880
-  server: 154.83.2.156
-  servername: redw.pooriam.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 104.17.156.127
+  servername: c1.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      host: c1.bgm2024.us.kg
+    path: /?ed=2560
+- name: 荷兰-5
+  network: ws
+  port: 443
+  server: 185.133.35.106
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: c01.ylkszy.eu.org
+    path: /?ed=2560
