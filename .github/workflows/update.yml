@@ -1,4 +1,4 @@
-name: Fetch
+name: Update
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ env:
   FORCE_COLOR: 3
 
 jobs:
-  fetch:
+  update:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
@@ -39,8 +39,19 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
 
-      - name: Generate clash files
+      - name: Fetch new data
         run: python cli.py
+
+      - name: Run BestSub
+        run: |
+          wget https://github.com/bestruirui/BestSub/releases/download/v0.2.6/BestSub_Linux_x86_64.tar.gz
+          tar -zxvf BestSub_Linux_x86_64.tar.gz -C bestsub
+          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/config.example.yaml -O  config/config.yaml
+          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/rename.yaml -O  config/rename.yaml
+          timeout 359s python -m http.server 8080 &
+          cd bestsub
+          timeout 360s ./BestSub || true
+          python ../subconverter.py folder -i output/
 
       - name: Gernate commit date message
         id: commit-date-msg
@@ -50,7 +61,6 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: results/*
+          file_pattern: results/* bestsub/*
           commit_message: ${{ steps.commit-date-msg.outputs.msg }}
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          skip_fetch: true
