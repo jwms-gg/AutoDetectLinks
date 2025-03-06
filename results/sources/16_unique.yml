@@ -1,14 +1,30 @@
-# Update: 2025-03-06 09:23
-# Source 16 (https://node.freeclashnode.com/uploads/%Y/%m/2-%Y%m%d.yaml), 1
+# Update: 2025-03-06 20:37
+# Source 16 (https://node.freeclashnode.com/uploads/%Y/%m/3-%Y%m%d.yaml), 3
 proxies:
-- alterId: 0
-  cipher: auto
+- alpn:
+  - http/1.1
   ip-version: dual
-  name: 🇺🇸_US_美国_8
-  network: ws
-  port: 80
-  server: 151.101.194.168
-  tls: false
-  type: vmess
+  name: 🇮🇪_IE_爱尔兰
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.254.11.81
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
-  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: '🇺🇸_US_美国_4 #2'
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.143.66.186
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: '🇺🇸_US_美国_6 #1'
+  password: amazonskr05
+  port: 443
+  server: 52.24.145.185
+  type: ss
+  udp: true

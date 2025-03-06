@@ -1,23 +1,48 @@
-# Update: 2025-03-06 09:23
-# Source 22 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 3
+# Update: 2025-03-06 20:37
+# Source 22 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/openai?ref_type=heads), 6
 proxies:
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: '🌀其他2-斯洛文尼亚 | ⬇️ 5.7MB/s #1'
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 22008
-  server: 120.241.29.110
-  type: ss
-- cipher: chacha20-ietf
-  name: '🌏亚太地区1 | ⬇️ 1.3MB/s #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- client-fingerprint: chrome
-  name: '🌀其他4-印度 | ⬇️ 4.8MB/s #2'
-  password: 90c0bc87-d7dd-4233-9b1a-cc9e7cf30649
-  port: 12003
-  server: 36.151.251.12
+- name: '🇺🇸美国1 | ⬇️ 5.2MB/s #1'
+  password: nYXmrMHpoGZCFnYPTiMlg7om5Y
+  port: 12588
+  server: 159.65.69.97
   skip-cert-verify: true
-  type: trojan
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- name: '🇺🇸美国2 | ⬇️ 1.1MB/s #2'
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?edfp
+- cipher: aes-256-cfb
+  name: '🇺🇸美国3 | ⬇️ 2.2MB/s #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬新加坡1 | ⬇️ 2.7MB/s #1'
+  password: 6c451383-9b1c-4611-96a3-e14962f7e097
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+- cipher: aes-256-cfb
+  delay: 393
+  name: '🇸🇬新加坡2 | ⬇️ 5.3MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.96.253
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇰🇷韩国1 | ⬇️ 5.2MB/s #2'
+  password: 6c451383-9b1c-4611-96a3-e14962f7e097
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss

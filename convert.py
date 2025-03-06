@@ -66,7 +66,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
 
     elif type == "ss":
         if "#" in uri:
-            config_part, name = uri.rsplit("#", 1)
+            config_part, name = uri.split("#", 1)
         else:
             config_part, name = uri, ""
         decoded = b64decodes_safe(config_part.split("@")[0])
