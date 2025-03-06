@@ -1,28 +1,31 @@
-# Update: 2025-03-06 20:37
-# Source 19 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/disney?ref_type=heads), 3
+# Update: 2025-03-09 09:13
+# Source 19 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/disney?ref_type=heads), 4
 proxies:
-- client-fingerprint: chrome
-  name: 🇺🇸美国4 | ⬇️ 3.6MB/s
-  network: ws
-  port: 8880
-  server: 188.42.89.68
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷法国1 | ⬇️ 4.4MB/s
+  password: 030cedc1-c4ed-4fbe-b803-5740b1510e6a
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇦🇺澳大利亚1 | ⬇️ 5.5MB/s
+  password: 030cedc1-c4ed-4fbe-b803-5740b1510e6a
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸美国9 | ⬇️ 5.1MB/s
+  password: 030cedc1-c4ed-4fbe-b803-5740b1510e6a
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+- auth: BB42BFCA-8F51-4091-AB58-E2FB8423F714
+  client-fingerprint: chrome
+  name: 🇯🇵日本4 | ⬇️ 4.7MB/s
+  password: BB42BFCA-8F51-4091-AB58-E2FB8423F714
+  port: 7143
+  server: jp4.dexlos.com
   skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /Telegram
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵日本1 | ⬇️ 1.5MB/s
-  password: 6c451383-9b1c-4611-96a3-e14962f7e097
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷韩国1 | ⬇️ 5.2MB/s
-  password: 6c451383-9b1c-4611-96a3-e14962f7e097
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
+  sni: jp4.dexlos.com
+  type: hysteria2
+  udp: true

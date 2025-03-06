@@ -1,63 +1,91 @@
-# Update: 2025-03-06 20:37
-# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 6
+# Update: 2025-03-09 09:13
+# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 9
 proxies:
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: auto
+  port: 80
+  server: 104.17.148.22
+  type: trojan
+  ws-opts:
+    headers:
+      Host: floral-shadow-a524.bestmanvpn2020.workers.dev
+    path: '%2Ffloral-shadow-a524.bestmanvpn2020.workers.dev%2F%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: '美国+Amazon+EC2服务器 #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.73.157.246
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 广东省湛江市 移动
   network: tcp
-  port: '42055'
+  port: '50095'
   server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 法国+国际航空电讯集团公司(SITA)
-  password: 0bfa2050-b165-4156-859c-70f36d300dce
-  port: 20230
-  server: jp005.421421.xyz
+- cipher: chacha20-ietf-poly1305
+  name: '俄罗斯+V2CROSS.COM #1'
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: '54170'
+  server: 185.242.86.156
+  type: ss
+- alpn:
+  - http/1.1
+  name: 爱尔兰+都柏林Amazon数据中心
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.194.172.238
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 法国 国际航空电讯集团公司(SITA)
+  name: 法国 OVH
   network: ws
   port: 443
-  server: 57.129.28.69
+  server: 51.77.20.132
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: baradiha.com
+      Host: a.baradiha.com
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #18'
-  network: ws
-  port: 443
-  server: 172.67.198.187
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- name: 爱尔兰+都柏林Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.209.64.182
-  sni: trojan.burgerip.co.uk
+- name: 新加坡+Amazon数据中心
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: sg008.421421.xyz
+  sni: 421421.xyz
   type: trojan
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '美国 V2CROSS.COM #2'
+  name: 法国 国际航空电讯集团公司(SITA)
   network: ws
   port: 443
-  server: beyonddsz.cfd
+  server: 57.129.25.20
   tls: true
   type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: beyonddsz.cfd
-    path: /linkws
+      Host: 57.129.25.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 波兰 V2CROSS.COM
+  network: ws
+  port: 20006
+  server: 91.149.223.96
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /

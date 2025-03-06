@@ -1,34 +1,33 @@
-# Update: 2025-03-06 20:37
+# Update: 2025-03-09 09:13
 # Source 23 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/youtube?ref_type=heads), 4
 proxies:
-- name: '🇺🇸美国2 | ⬇️ 1.1MB/s #3'
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
+- auth: BB42BFCA-8F51-4091-AB58-E2FB8423F714
+  client-fingerprint: chrome
+  name: '🇸🇬新加坡1 | ⬇️ 2.5MB/s #3'
+  password: BB42BFCA-8F51-4091-AB58-E2FB8423F714
+  port: 9409
+  server: sg5.dexlos.com
   skip-cert-verify: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?edfp
-- name: '🇭🇰香港1 | ⬇️ 1.2MB/s #2'
-  password: 1e63e585ab2fef3adcc9ea75a62abc23
-  port: 443
-  server: 104.251.227.182
-  skip-cert-verify: true
-  sni: hezijiasuqi.com
-  type: trojan
+  sni: sg5.dexlos.com
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '🇸🇬新加坡1 | ⬇️ 2.7MB/s #2'
-  password: 6c451383-9b1c-4611-96a3-e14962f7e097
+  name: '🇸🇬新加坡2 | ⬇️ 4.6MB/s #2'
+  password: d117fac2-b28b-46f6-97fc-300138aac62a
   port: 36171
   server: free.2weradf.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇰🇷韩国1 | ⬇️ 5.2MB/s #3'
-  password: 6c451383-9b1c-4611-96a3-e14962f7e097
-  port: 36313
+  name: '🇸🇬新加坡3 | ⬇️ 5.0MB/s #2'
+  password: d117fac2-b28b-46f6-97fc-300138aac62a
+  port: 36173
   server: free.2weradf.xyz
   type: ss
+- name: '🇹🇼台湾1 | ⬇️ 2.0MB/s #2'
+  password: 06931654-e99d-3668-856f-eb01b9a3d200
+  port: 33323
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z261.hongkongnode.top
+  type: trojan
+  udp: true

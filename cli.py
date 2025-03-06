@@ -544,9 +544,9 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Alive proxies: {len(alive_proxies)}, Delay:")
     [
         logger.info(
-            f"Proxy {p['name']}: {average_delay(delay_checker.proxy_delay_dict[p['name']].history)}ms"
+            f"Proxy {i+1} - {p['name']}: {average_delay(delay_checker.proxy_delay_dict[p['name']].history)}ms"
         )
-        for p in alive_proxies
+        for i, p in enumerate(alive_proxies)
     ]
     write_result(
         f"results/{save_name_prefix}_alive.yml",
