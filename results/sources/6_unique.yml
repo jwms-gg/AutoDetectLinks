@@ -1,5 +1,5 @@
-# Update: 2025-03-09 09:13
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
+# Update: 2025-03-10 09:21
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 9
 proxies:
 - cipher: aes-256-cfb
   name: '🇺🇸_US_美国_1 #4'
@@ -13,6 +13,31 @@ proxies:
   port: 9102
   server: 38.86.135.223
   type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 217.30.10.18
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
+  network: ws
+  port: 80
+  server: 151.101.66.168
+  sni: ''
+  type: vmess
+  uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+  ws-opts:
+    headers:
+      host: amd.al
+    path: /XESALISTHEBEST?ed=2048
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_2
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 217.30.10.18
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪_DE_德国->🇷🇴_RO_罗马尼亚
   password: 4a2rfixophdjffa8KVA4Aa
@@ -20,7 +45,7 @@ proxies:
   server: 45.87.175.154
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_7
+  name: '🇺🇸_US_美国_7 #2'
   password: amazonskr05
   port: 443
   server: 54.244.204.173
@@ -39,3 +64,9 @@ proxies:
     headers:
       host: Freedomisnear.onetwothree123.ir
     path: /mehdi
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_6
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 217.30.10.18
+  type: ss
