@@ -1,61 +1,7 @@
 proxies:
-    - cipher: chacha20-ietf-poly1305
-      name: CA 154
-      password: f8f7aCzcPKbsF8p3
-      port: 990
-      server: 79.127.233.170
-      type: ss
     - alterId: 0
       cipher: auto
-      client-fingerprint: chrome
-      name: US 196
-      network: ws
-      port: 8443
-      server: 156.229.48.237
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-      ws-opts:
-        headers:
-            host: lax1.ibgfw.top
-        path: /xrenvws
-    - alterId: 0
-      cipher: auto
-      client-fingerprint: chrome
-      name: US 208
-      network: ws
-      port: 8443
-      server: 89.117.112.235
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-      ws-opts:
-        headers:
-            host: lax1.ibgfw.top
-        path: /xrenvws
-    - alterId: 0
-      cipher: auto
-      name: MX 217
-      network: tcp
-      port: 18000
-      server: 79.127.229.54
-      tls: false
-      type: vmess
-      uuid: fa1897db-1925-4c86-a495-939a959af900
-    - alterId: 0
-      cipher: auto
-      name: CA 233
-      network: tcp
-      port: 14812
-      server: 38.111.114.153
-      tls: false
-      type: vmess
-      uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-    - alterId: 0
-      cipher: auto
-      name: CA 234
+      name: CA 034
       network: tcp
       port: 20182
       server: 23.162.200.91
@@ -64,67 +10,18 @@ proxies:
       uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
     - alterId: 0
       cipher: auto
-      client-fingerprint: chrome
-      name: CA 273
-      network: ws
-      port: 443
-      server: cdncdncdn.aikunapp.com
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: 96cad374-7573-4463-8804-4665c2c3d932
-      ws-opts:
-        headers:
-            host: cdn-ca.sm-node.com
-        path: /vmess_ws/smjc/index?ed=8192
-    - alterId: 0
-      cipher: auto
-      name: CA 306
-      network: ws
-      port: 80
-      server: 51.79.103.76
-      skip-cert-verify: false
+      name: CA 143
+      network: tcp
+      port: 14812
+      server: 38.111.114.153
       tls: false
       type: vmess
-      uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-      ws-opts:
-        headers:
-            Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-        path: /IOebhLMhl1CTbFHbL95myfRX2
-    - cipher: aes-256-cfb
-      name: MX 307
-      password: f8f7aCzcPKbsF8p3
-      port: 989
-      server: 147.78.1.230
-      type: ss
-    - alterId: 0
-      cipher: auto
-      name: JP 308
-      port: 550
-      server: 20.78.127.141
-      skip-cert-verify: true
-      tfo: false
-      tls: false
-      type: vmess
-      uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-    - cipher: aes-256-cfb
-      name: JP 310
-      password: amazonskr05
-      port: 443
-      server: 54.238.115.236
-      type: ss
-    - cipher: aes-256-gcm
-      name: JP 313
-      password: 0A876XZUZX93N371
-      port: 18010
-      server: 156.231.104.20
-      tfo: false
-      type: ss
+      uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
     - alterId: 0
       cipher: auto
       h2-opts: {}
       http-opts: {}
-      name: CA 316
+      name: CA 147
       network: ws
       port: 80
       server: 51.79.102.253
@@ -134,120 +31,44 @@ proxies:
         headers:
             Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
         path: /IOebhLMhl1CTbFHbL95myfRX2
-    - cipher: aes-256-cfb
-      name: JP 317
-      password: amazonskr05
-      port: 443
-      server: 57.180.54.251
+    - cipher: chacha20-ietf-poly1305
+      name: CA 157
+      password: f8f7aCzcPKbsF8p3
+      port: 990
+      server: 79.127.233.170
       type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: JP 327
-      password: PGF2TGUCHQBC5IP5
-      port: 18016
-      server: 156.231.104.26
-      tfo: false
-      type: ss
-    - name: FR 329
+    - auth: 4d2845af-f33a-4ca6-bfde-33e9b7f300cf
+      client-fingerprint: chrome
+      down: 100
+      name: US 163
       obfs: salamander
-      obfs-password: hsdirhrrkskdhebdjdj
-      password: MICPT1LLn6
-      port: 44140
-      server: 161.97.108.42
+      obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+      password: 4d2845af-f33a-4ca6-bfde-33e9b7f300cf
+      port: 33006
+      server: 207.90.237.96
       skip-cert-verify: true
-      tls: false
       type: hysteria2
-    - client-fingerprint: chrome
-      fingerprint: ""
-      grpc-opts:
-        grpc-service-name: TEL--CONFIGT-TEL--@CONFIGT-JOIN-@CONFIGT-TEL-@CONFIGT-TEL--@CONFIGT-JOIN-@CONFIGT-TEL--@CONFIGT
-      name: CH 333
-      network: grpc
-      port: 666
-      server: 188.213.128.116
-      tls: false
-      type: vless
-      udp: false
-      uuid: 88f964a1-d0e9-45b5-a119-a44138649ccd
+      udp: true
+      up: 100
     - cipher: aes-256-cfb
-      name: GB 334
+      name: MX 165
       password: f8f7aCzcPKbsF8p3
       port: 989
-      server: 62.100.205.48
+      server: 147.78.1.230
       type: ss
     - alterId: 0
       cipher: auto
-      name: GB 335
+      name: GB 175
       network: tcp
       port: 55577
       server: 172.99.190.207
       tls: false
       type: vmess
       uuid: e922d485-98a7-475a-9a47-cde3722ac82e
-    - cipher: aes-128-gcm
-      name: NL 336
-      password: shadowsocks
-      port: 443
-      server: 149.34.244.80
-      type: ss
-    - cipher: aes-128-gcm
-      name: NL 338
-      password: shadowsocks
-      port: 443
-      server: 149.34.244.71
-      type: ss
-    - alterId: 0
-      cipher: auto
-      name: FR 339
-      network: tcp
-      port: 21809
-      server: 38.109.228.113
-      tls: false
-      type: vmess
-      uuid: a6179475-489c-4bcc-b05c-481386295b93
-    - cipher: aes-128-gcm
-      name: NL 341
-      password: shadowsocks
-      port: 443
-      server: 149.34.244.68
-      type: ss
-    - alterId: 0
-      cipher: auto
-      name: GB 342
-      network: tcp
-      port: 37101
-      server: 149.7.16.149
-      tls: false
-      type: vmess
-      uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
-    - cipher: aes-128-gcm
-      name: NL 344
-      password: shadowsocks
-      port: 443
-      server: 149.34.244.77
-      type: ss
-    - name: GB 345
-      network: tcp
-      port: 443
-      server: 104.248.168.91
-      skip-cert-verify: true
-      tls: false
-      type: vless
-      udp: true
-      uuid: 1937666c-9058-4f4a-bee6-cb31273cd3cd
-    - alterId: 0
-      cipher: auto
-      name: GB 346
-      network: tcp
-      port: 26924
-      server: 68.168.31.184
-      tls: false
-      type: vmess
-      uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
     - client-fingerprint: firefox
       grpc-opts:
         grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
-      name: US 348
+      name: US 176
       network: grpc
       port: 443
       reality-opts:
@@ -259,54 +80,113 @@ proxies:
       tls: true
       type: vless
       uuid: 253f59da-b708-4404-cebe-3854aad88880
-    - cipher: chacha20-ietf-poly1305
-      name: NL 352
-      password: CLphyEMQT8nbG8EImX0A2D
-      port: 45635
-      server: 5.35.47.122
-      type: ss
-    - name: JP 353
-      network: tcp
-      password: "3747000103274291200"
-      port: 443
-      server: 94.177.131.199
-      sni: open-maggot.pigeon031.one
-      type: trojan
+    - alterId: 0
+      cipher: auto
+      name: US 180
+      network: ws
+      port: 8443
+      server: 92.53.188.185
+      skip-cert-verify: false
+      tls: true
+      type: vmess
+      uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+      ws-opts:
+        headers:
+            Host: lax1.ibgfw.top
+        path: /xrenvws
     - cipher: aes-128-gcm
-      name: GB 360
+      name: NL 181
+      password: shadowsocks
+      port: 443
+      server: 149.34.244.68
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: FR 182
+      network: tcp
+      port: 21809
+      server: 38.109.228.113
+      tls: false
+      type: vmess
+      uuid: a6179475-489c-4bcc-b05c-481386295b93
+    - cipher: aes-128-gcm
+      name: NL 183
+      password: shadowsocks
+      port: 443
+      server: 149.34.244.80
+      type: ss
+    - name: GB 186
+      network: tcp
+      port: 443
+      server: 104.248.168.91
+      skip-cert-verify: true
+      tls: false
+      type: vless
+      udp: true
+      uuid: 1937666c-9058-4f4a-bee6-cb31273cd3cd
+    - cipher: aes-128-gcm
+      name: NL 187
+      password: shadowsocks
+      port: 443
+      server: 149.34.244.71
+      type: ss
+    - cipher: aes-128-gcm
+      name: NL 188
+      password: shadowsocks
+      port: 443
+      server: 149.34.244.77
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: GB 192
+      network: tcp
+      port: 37101
+      server: 149.7.16.149
+      tls: false
+      type: vmess
+      uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25
+    - cipher: aes-256-cfb
+      name: GB 196
+      obfs: plain
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      protocol: origin
+      server: 62.100.205.48
+      type: ssr
+    - client-fingerprint: chrome
+      fingerprint: ""
+      grpc-opts:
+        grpc-service-name: TEL--CONFIGT-TEL--@CONFIGT-JOIN-@CONFIGT-TEL-@CONFIGT-TEL--@CONFIGT-JOIN-@CONFIGT-TEL--@CONFIGT
+      name: CH 197
+      network: grpc
+      port: 666
+      server: 188.213.128.116
+      tls: false
+      type: vless
+      udp: false
+      uuid: 88f964a1-d0e9-45b5-a119-a44138649ccd
+    - cipher: aes-128-gcm
+      name: GB 198
       password: shadowsocks
       port: 443
       server: 212.102.53.81
       type: ss
-    - name: JP 361
-      network: tcp
-      password: "74260716866785000"
-      port: 443
-      server: discrete-shrimp.shiner427.skin
-      type: trojan
     - cipher: aes-128-gcm
-      name: GB 362
+      name: GB 199
       password: shadowsocks
       port: 443
       server: uk-dc1.yangon.club
       type: ss
     - cipher: aes-128-gcm
-      name: GB 364
+      name: GB 200
       password: shadowsocks
       port: 443
       server: 212.102.53.78
       type: ss
-    - cipher: aes-256-cfb
-      name: JP 366
-      password: amazonskr05
-      port: 443
-      server: 54.65.101.11
-      type: ss
-      udp: true
     - alterId: 0
       cipher: auto
       client-fingerprint: chrome
-      name: FR 378
+      name: FR 201
       network: tcp
       port: 22324
       server: 51.77.20.131
@@ -314,60 +194,63 @@ proxies:
       tls: false
       type: vmess
       uuid: 04621bae-ab36-11ec-b909-0242ac120002
+    - cipher: aes-256-gcm
+      name: FR 209
+      password: kDWvXYZoTBcGkC4
+      port: 8882
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 213
+      password: XKFKl2rULjIp74
+      port: 8009
+      server: 149.202.82.172
+      type: ss
     - alterId: 0
       cipher: auto
-      name: DE 381
+      name: DE 217
       network: tcp
-      port: 24164
-      server: 193.108.117.143
+      port: 48961
+      server: 23.158.56.21
       tls: false
       type: vmess
-      uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
-    - cipher: chacha20-ietf-poly1305
-      name: HK 392
-      password: WfmxKX2FBJRU0Ie9VLIYDL
-      port: 20012
-      server: 141.98.234.93
+      uuid: 6eef3448-bbc0-4933-894a-72b3e8786109
+    - cipher: aes-256-gcm
+      name: FR 221
+      password: e4FCWrgpkji3QY
+      port: 9101
+      server: 149.202.82.172
       type: ss
-    - alpn:
-        - http/1.1
-      name: GB 398
+    - cipher: aes-256-gcm
+      name: FR 222
+      password: Y6R9pAtvxxzmGC
+      port: 5001
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 224
+      password: FoOiGlkAA9yPEGP
+      port: 7307
+      server: 149.202.82.172
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: DE 227
       network: ws
       port: 443
-      server: jermaine.ns.cloudflare.com
-      servername: 444sly.payperflower.com
+      server: 172.67.169.40
+      skip-cert-verify: false
       tls: true
-      type: vless
-      uuid: e24550c4-eb54-4f0f-bcaf-e047c0d67327
+      type: vmess
+      uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
       ws-opts:
         headers:
-            Host: 444sly.payperflower.com
-        path: /wss
-    - cipher: aes-256-cfb
-      name: JP 417
-      password: amazonskr05
-      port: 443
-      server: 18.140.61.7
-      tfo: false
-      type: ss
-    - cipher: aes-256-cfb
-      name: SG 418
-      password: amazonskr05
-      port: 443
-      server: 13.250.103.231
-      type: ss
-      udp: true
-    - name: JP 419
-      password: 39BD176B-36E3-4446-B2E3-2F0E9C59DD83
-      port: 9872
-      server: jp5.dexlos.com
-      skip-cert-verify: false
-      sni: jp5.dexlos.com
-      type: hysteria2
+            Host: hms03.dongfeng.cfd
+        path: /linkws
     - alterId: 0
       cipher: auto
       client-fingerprint: chrome
-      name: DE 420
+      name: DE 229
       network: ws
       port: 443
       server: 104.21.95.16
@@ -379,83 +262,24 @@ proxies:
         headers:
             host: hms03.dongfeng.cfd
         path: /linkws
-    - cipher: aes-256-cfb
-      name: SG 421
-      password: amazonskr05
-      port: 443
-      server: 54.255.174.199
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: SG 422
-      password: amazonskr05
-      port: 443
-      server: 13.215.141.135
-      type: ss
-      udp: true
-    - cipher: aes-256-gcm
-      name: SG 423
-      password: Y7Y0EUXF5ZZKJTFU
-      port: 16014
-      server: 154.196.244.24
-      tfo: false
-      type: ss
-    - cipher: aes-256-gcm
-      client-fingerprint: chrome
-      name: SG 425
-      password: I6DRVVQ4OOMIRMJD
-      port: 16015
-      server: 154.196.244.25
-      tfo: false
-      type: ss
     - alterId: 0
       cipher: auto
-      client-fingerprint: chrome
-      name: DE 428
+      name: DE 231
       network: ws
       port: 443
-      server: 172.67.169.40
-      skip-cert-verify: true
-      tls: true
-      type: vmess
-      uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
-      ws-opts:
-        headers:
-            host: hms03.dongfeng.cfd
-        path: /linkws
-    - alterId: 0
-      cipher: auto
-      name: DE 431
-      network: ws
-      port: 443
-      server: 172.67.219.194
-      servername: adenc36v.xtooltech.cfd
+      server: 104.21.74.239
       skip-cert-verify: false
       tls: true
       type: vmess
-      uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+      uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
       ws-opts:
         headers:
-            Host: adenc36v.xtooltech.cfd
+            Host: afrhms07.xfixedfloat.cfd
         path: /linkws
-    - name: JP 432
-      network: ws
-      port: 34237
-      server: 8.209.253.101
-      servername: ccv.ylkszy.eu.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: ccv.ylkszy.eu.org
-        path: /?ed=2560
     - alterId: 0
       cipher: auto
       client-fingerprint: chrome
-      name: DE 439
+      name: DE 233
       network: ws
       port: 443
       server: 172.67.219.194
@@ -469,151 +293,165 @@ proxies:
         path: /linkws
     - alterId: 0
       cipher: auto
-      name: SG 444
+      name: DE 235
       network: tcp
-      port: 44104
-      server: 154.26.137.42
+      port: 24164
+      server: 193.108.117.143
       tls: false
       type: vmess
-      uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
-    - cipher: aes-256-cfb
-      name: SG 449
-      password: amazonskr05
-      port: 443
-      server: 13.229.110.23
-      type: ss
-    - cipher: aes-256-cfb
-      name: JP 451
-      password: amazonskr05
-      port: 443
-      server: 54.169.244.24
-      tfo: false
-      type: ss
-    - cipher: aes-256-cfb
-      name: KR 452
-      password: amazonskr05
-      port: 443
-      server: 3.38.190.30
-      type: ss
-      udp: true
+      uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35
     - alterId: 0
       cipher: auto
-      name: AU 455
-      network: tcp
-      port: 28686
-      server: 154.26.153.173
-      tls: false
-      type: vmess
-      uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48
-    - alterId: 0
-      cipher: auto
-      name: SG 456
-      network: tcp
-      port: 52856
-      server: 62.146.232.157
-      tls: false
-      type: vmess
-      uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
-    - cipher: aes-256-cfb
-      name: JP 458
-      password: amazonskr05
-      port: 443
-      server: 3.112.250.206
-      type: ss
-      udp: true
-    - alterId: 0
-      cipher: auto
-      name: DE 464
+      name: DE 238
       network: ws
       port: 443
-      server: 172.67.71.217
+      server: 172.67.219.194
+      servername: adenc36v.xtooltech.cfd
       skip-cert-verify: false
       tls: true
       type: vmess
-      uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+      uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
       ws-opts:
         headers:
-            Host: 1t3chx0.zed23.web1337.net
-        path: /fixedfloati.cfd/linkwsd
-    - name: JP 465
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 443
-      server: jpgmo101-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: jpgmo101-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - cipher: aes-256-cfb
-      name: SG 466
-      password: amazonskr05
-      port: 443
-      server: 54.255.179.37
+            Host: adenc36v.xtooltech.cfd
+        path: /linkws
+    - cipher: aes-256-gcm
+      name: FR 241
+      password: e4FCWrgpkji3QY
+      port: 9102
+      server: 149.202.82.172
       type: ss
-    - cipher: aes-256-cfb
-      name: KR 467
-      password: amazonskr05
-      port: 443
-      server: 3.38.97.249
+    - cipher: chacha20-ietf-poly1305
+      name: RU 242
+      password: 70Xwg0SbHSL8CuCkiLuGhO
+      port: 15128
+      server: sto2.g.edgeservers.org
       type: ss
       udp: true
-    - name: JP 483
-      password: exaxgqkKkd0TAMrCxeonWg==
+    - cipher: aes-256-gcm
+      name: FR 245
+      password: g5MeD6Ft3CWlJId
+      port: 5004
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 246
+      password: KixLvKzwjekG00rm
+      port: 8080
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 249
+      password: Y6R9pAtvxxzmGC
+      port: 3306
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 252
+      password: FoOiGlkAA9yPEGP
+      port: 7306
+      server: 149.202.82.172
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: DE 253
+      network: ws
       port: 443
-      server: jpgmo102-cdn-route.couldflare-cdn.com
+      server: 172.67.164.164
+      servername: afrhms07.xfixedfloat.cfd
       skip-cert-verify: false
-      sni: jpgmo102-cdn-route.couldflare-cdn.com
       tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - auth: 39BD176B-36E3-4446-B2E3-2F0E9C59DD83
-      name: JP 484
-      password: 39BD176B-36E3-4446-B2E3-2F0E9C59DD83
-      port: 5729
-      server: jp3.dexlos.com
+      type: vmess
+      uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+      ws-opts:
+        headers:
+            Host: afrhms07.xfixedfloat.cfd
+        path: /linkws
+    - auth: eW5oOg9YEcNI3wvLqbSrnTEi0J8
+      name: DE 255
+      password: eW5oOg9YEcNI3wvLqbSrnTEi0J8
+      port: 7286
+      server: 3.67.194.37
       skip-cert-verify: true
-      sni: jp3.dexlos.com
+      sni: bing.com
       type: hysteria2
       udp: true
-    - name: JP 489
-      password: exaxgqkKkd0TAMrCxeonWg==
+    - cipher: aes-128-gcm
+      name: CH 256
+      password: shadowsocks
       port: 443
-      server: jp104-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: jp104-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - client-fingerprint: qq
-      flow: xtls-rprx-vision
-      name: TW 496
+      server: 156.146.62.161
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 257
+      password: zDNVedRFPQexG9v
+      port: 6379
+      server: 149.202.82.172
+      type: ss
+    - name: US 258
       network: tcp
-      port: 23929
-      reality-opts:
-        public-key: q6BCNg-15X1VFYJubCAjXNYj8Wf8JvgexBh8toGnU3E
-        short-id: 24522e6b
-      server: tw5.7896543.xyz
-      servername: www.microsoft.com
-      tls: true
-      type: vless
-      uuid: 5407367c-cfa5-4e24-89ee-990e86d4cde8
-    - cipher: aes-256-cfb
-      name: SG 498
-      password: amazonskr05
+      password: 2cba4104747d49d18319e5ade1b93ab5
       port: 443
-      server: 54.255.138.185
-      type: ss
-      udp: true
-    - cipher: aes-256-cfb
-      name: SG 500
-      password: amazonskr05
-      port: 443
-      server: 54.169.64.98
-      type: ss
+      server: 161.35.34.48
+      skip-cert-verify: true
+      sni: yourjobnavigator.online
+      type: trojan
       udp: true
     - client-fingerprint: chrome
       fingerprint: ""
-      name: NL 504
+      name: UN 259
+      network: ws
+      port: 587
+      server: 103.214.68.133
+      servername: a.xn--i-sx6a60i.us.kg
+      tls: true
+      type: vless
+      udp: false
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            host: a.xn--i-sx6a60i.us.kg
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      fingerprint: ""
+      name: GB 263
+      network: ws
+      port: 80
+      server: 104.248.168.91
+      tls: false
+      type: vless
+      udp: false
+      uuid: 7b1c5bee-19f1-422f-8be2-e03175fabe4a
+      ws-opts:
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: GB 264
+      network: tcp
+      port: 26924
+      server: 68.168.31.184
+      tls: false
+      type: vmess
+      uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2
+    - alterId: 0
+      cipher: auto
+      name: JP 265
+      port: 550
+      server: 20.78.127.141
+      skip-cert-verify: true
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
+    - cipher: aes-256-cfb
+      name: CH 266
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 84.17.53.160
+      type: ss
+    - client-fingerprint: chrome
+      fingerprint: ""
+      name: NL 267
       network: ws
       port: 2053
       server: 173.245.59.132
@@ -626,19 +464,322 @@ proxies:
         headers:
             host: holze.gt-ov.com
         path: /
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: US 268
+      network: ws
+      port: 8443
+      server: 89.117.112.235
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+      ws-opts:
+        headers:
+            host: lax1.ibgfw.top
+        path: /xrenvws
     - cipher: aes-256-cfb
-      name: SG 511
-      password: amazonskr05
+      name: SE 272
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 121.127.46.147
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 273
+      password: faBAoD54k87UJG7
+      port: 2376
+      server: 149.202.82.172
+      type: ss
+    - cipher: aes-256-gcm
+      name: FR 274
+      password: g5MeD6Ft3CWlJId
+      port: 5003
+      server: 149.202.82.172
+      type: ss
+    - name: NL 280
+      password: "3747000103274291200"
       port: 443
-      server: 54.255.213.95
+      server: 89.39.70.165
+      skip-cert-verify: false
+      sni: inspired-cardinal.insect388.motorcycles
+      type: trojan
+    - cipher: aes-256-gcm
+      name: FR 281
+      password: cdBIDV42DCwnfIN
+      port: 8119
+      server: 149.202.82.172
+      type: ss
+    - client-fingerprint: chrome
+      name: NL 283
+      network: tcp
+      port: 47221
+      reality-opts:
+        public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0
+        short-id: 47ff9b6c
+      server: 95.179.153.250
+      servername: yahoo.com
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3
+    - name: RO 284
+      password: "3747000103274291200"
+      port: 443
+      server: 89.39.70.207
+      skip-cert-verify: false
+      sni: sunny-jackal.insect388.motorcycles
+      type: trojan
+    - name: RU 286
+      password: dongtaiwang.com
+      port: 18626
+      server: 46.29.163.171
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+    - client-fingerprint: chrome
+      fingerprint: ""
+      name: GB 294
+      network: ws
+      port: 443
+      server: 162.159.44.157
+      servername: 444sly.payperflower.com
+      tls: true
+      type: vless
+      udp: false
+      uuid: e24550c4-eb54-4f0f-bcaf-e047c0d67327
+      ws-opts:
+        headers:
+            host: 444sly.payperflower.com
+        path: /wss
+    - name: GB 299
+      network: tcp
+      password: "3747000103274291200"
+      port: 443
+      server: 185.67.127.69
+      sni: ultimate-civet.adder289.quest
+      type: trojan
+    - client-fingerprint: chrome
+      fingerprint: ""
+      name: UN 300
+      network: ws
+      port: 2501
+      server: 188.119.112.54
+      servername: a.xn--i-sx6a60i.us.kg
+      tls: true
+      type: vless
+      udp: false
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            host: a.xn--i-sx6a60i.us.kg
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: CA 302
+      network: ws
+      port: 80
+      server: 51.79.103.76
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+      ws-opts:
+        headers:
+            Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+        path: /IOebhLMhl1CTbFHbL95myfRX2
+    - grpc-opts:
+        grpc-service-name: freehr01
+      name: KR 308
+      network: grpc
+      password: e8012565-5b9f-373f-b1eb-e2445711e65c
+      port: 15055
+      server: 129.154.49.249
+      skip-cert-verify: false
+      sni: freehr01.jd0001.top
+      type: trojan
+    - name: JP 316
+      network: tcp
+      password: "3747000103274291200"
+      port: 443
+      server: 87.120.204.100
+      sni: crucial-moccasin.adder289.quest
+      type: trojan
+    - name: JP 323
+      network: tcp
+      password: "74260716866785000"
+      port: 443
+      server: discrete-shrimp.shiner427.skin
+      type: trojan
+    - cipher: aes-256-gcm
+      name: FR 329
+      password: Y6R9pAtvxxzmGC
+      port: 3389
+      server: 149.202.82.172
       type: ss
     - cipher: aes-256-cfb
-      name: SG 518
+      name: SG 331
       password: amazonskr05
       port: 443
-      server: 13.229.96.253
+      server: 54.179.211.228
       type: ss
-    - name: US 527
+      udp: true
+    - cipher: aes-256-cfb
+      name: SG 332
+      password: amazonskr05
+      port: 443
+      server: 54.255.138.185
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: SG 333
+      password: amazonskr05
+      port: 443
+      server: 13.215.178.168
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: JP 334
+      password: amazonskr05
+      port: 443
+      server: 18.140.61.7
+      tfo: false
+      type: ss
+    - cipher: aes-256-cfb
+      name: SG 335
+      password: amazonskr05
+      port: 443
+      server: 54.254.138.40
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: SG 348
+      password: amazonskr05
+      port: 443
+      server: 13.250.103.231
+      type: ss
+      udp: true
+    - auth: e3v53Tnr1AF09DVG7cVTUHGMvP0
+      name: KR 355
+      password: e3v53Tnr1AF09DVG7cVTUHGMvP0
+      port: 10610
+      server: 54.180.127.110
+      skip-cert-verify: true
+      sni: bing.com
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: AU 360
+      network: tcp
+      port: 28686
+      server: 154.26.153.173
+      tls: false
+      type: vmess
+      uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48
+    - cipher: aes-256-cfb
+      name: KR 379
+      password: amazonskr05
+      port: 443
+      server: 52.78.120.105
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      name: SG 383
+      password: amazonskr05
+      port: 443
+      server: 47.129.54.127
+      type: ss
+      udp: true
+    - cipher: aes-256-cfb
+      ip-version: dual
+      name: GB 400
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 51.15.23.63
+      type: ss
+      udp: true
+    - name: JP 403
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 443
+      server: jpgmo102-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: jpgmo102-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - client-fingerprint: qq
+      flow: xtls-rprx-vision
+      name: TW 408
+      network: tcp
+      port: 23929
+      reality-opts:
+        public-key: q6BCNg-15X1VFYJubCAjXNYj8Wf8JvgexBh8toGnU3E
+        short-id: 24522e6b
+      server: tw5.7896543.xyz
+      servername: www.microsoft.com
+      tls: true
+      type: vless
+      uuid: 5407367c-cfa5-4e24-89ee-990e86d4cde8
+    - alterId: 0
+      cipher: auto
+      name: IN 411
+      network: tcp
+      port: 14118
+      server: 4.240.73.55
+      tls: false
+      type: vmess
+      uuid: d513bfb2-b7c2-4dc6-a3f9-55145f198705
+    - name: JP 412
+      network: tcp
+      password: "3747000103274291200"
+      port: 443
+      server: 94.177.131.199
+      sni: open-maggot.pigeon031.one
+      type: trojan
+    - name: JP 413
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 443
+      server: jp104-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: jp104-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - alterId: 0
+      cipher: auto
+      name: SG 418
+      network: tcp
+      port: 44104
+      server: 154.26.137.42
+      tls: false
+      type: vmess
+      uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55
+    - cipher: aes-256-cfb
+      name: TW 421
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 154.223.20.79
+      tfo: false
+      type: ss
+    - alterId: 0
+      cipher: auto
+      name: SG 422
+      network: tcp
+      port: 52856
+      server: 62.146.232.157
+      tls: false
+      type: vmess
+      uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4
+    - name: SG 425
+      password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+      port: 443
+      server: 139.59.119.143
+      skip-cert-verify: true
+      sni: connectwithemployers.online
+      type: trojan
+    - name: US 427
       network: tcp
       port: 443
       server: free.resandunethmira.xyz
@@ -648,80 +789,48 @@ proxies:
       type: vless
       udp: true
       uuid: 2b0f62d4-a851-4243-881f-cdaccd378b8e
-    - name: SG 528
-      password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-      port: 443
-      server: 139.59.119.143
-      skip-cert-verify: true
-      sni: connectwithemployers.online
-      type: trojan
-    - cipher: aes-256-gcm
-      name: SG 529
-      password: 8WDLSCVIFB4I26GB
-      port: 16011
-      server: 154.196.244.21
-      tfo: false
-      type: ss
-    - name: SG 532
-      password: 94d219c9-1afc-4d42-b090-8b3794764380
-      port: 443
-      server: 159.65.14.166
-      skip-cert-verify: true
-      sni: std1.loadingip.com
-      type: trojan
-    - name: US 533
+    - name: US 428
       password: "74260716866785000"
       port: 443
       server: 47.130.23.75
       sni: hardy-haddock.shiner427.skin
       type: trojan
-    - alterId: 0
-      cipher: auto
-      name: SG 542
-      network: tcp
-      port: 14372
-      server: 62.146.232.159
-      tls: false
-      type: vmess
-      uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
-    - name: TW 543
+    - cipher: chacha20-ietf-poly1305
+      name: BH 430
+      password: Bog0ELmMM9DSxDdQ
+      port: 443
+      server: admin.c3.webramz.co
+      type: ss
+    - name: TW 435
       password: exaxgqkKkd0TAMrCxeonWg==
-      port: 1443
-      server: twmoon1-cdn-route.couldflare-cdn.com
+      port: 443
+      server: tw1-cdn-route.couldflare-cdn.com
       skip-cert-verify: false
-      sni: twmoon1-cdn-route.couldflare-cdn.com
+      sni: tw1-cdn-route.couldflare-cdn.com
       tls: true
       type: http
       username: mrwdfNTD8M79LCukCieldrqZWqs=
     - alterId: 0
       cipher: auto
-      name: IN 547
+      name: IN 441
       network: tcp
-      port: 14118
-      server: 4.240.73.55
+      port: 38872
+      server: 94.136.184.156
       tls: false
       type: vmess
-      uuid: d513bfb2-b7c2-4dc6-a3f9-55145f198705
-    - alterId: 0
-      cipher: auto
-      name: SG 548
-      network: tcp
-      port: 33281
-      server: 62.146.232.156
-      tls: false
-      type: vmess
-      uuid: 24eda0ea-acf0-4538-a001-f746a480237a
-    - grpc-opts:
-        grpc-service-name: freehr01
-      name: KR 550
-      network: grpc
-      password: e8012565-5b9f-373f-b1eb-e2445711e65c
-      port: 15055
-      server: 129.154.49.249
-      skip-cert-verify: false
-      sni: freehr01.jd0001.top
-      type: trojan
-    - name: SG 551
+      uuid: 220732cc-9e43-4453-83f1-c9435be25b5b
+    - alpn:
+        - h3
+      auth_str: dongtaiwang.com
+      down: 55 Mbps
+      name: RU 444
+      port: 10803
+      server: 185.22.155.71
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria
+      up: 11 Mbps
+    - name: SG 447
       network: tcp
       password: installshield
       port: 8443
@@ -729,244 +838,16 @@ proxies:
       skip-cert-verify: true
       sni: 38.180.249.177
       type: trojan
-    - alterId: 0
-      cipher: auto
-      name: IN 554
-      network: tcp
-      port: 38872
-      server: 94.136.184.156
-      tls: false
-      type: vmess
-      uuid: 220732cc-9e43-4453-83f1-c9435be25b5b
-    - auth: e3v53Tnr1AF09DVG7cVTUHGMvP0
-      name: KR 571
-      password: e3v53Tnr1AF09DVG7cVTUHGMvP0
-      port: 10610
-      server: 54.180.127.110
-      skip-cert-verify: true
-      sni: bing.com
-      type: hysteria2
-      udp: true
-    - name: US 573
-      network: ws
-      port: 1080
-      server: 18.167.74.152
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - alpn:
-        - h3
-      auth_str: dongtaiwang.com
-      down: 55 Mbps
-      name: RU 577
-      port: 24342
-      server: 185.22.155.71
-      skip-cert-verify: true
-      sni: www.bing.com
-      type: hysteria
-      up: 11 Mbps
-    - name: HK 578
-      password: exaxgqkKkd0TAMrCxeonWg==
-      port: 443
-      server: hkre1-cdn-route.couldflare-cdn.com
-      skip-cert-verify: false
-      sni: hkre1-cdn-route.couldflare-cdn.com
-      tls: true
-      type: http
-      username: mrwdfNTD8M79LCukCieldrqZWqs=
-    - name: CA 583
-      network: ws
-      port: 81
-      server: 210.61.97.241
-      servername: ccv.ylkszy.eu.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: ccv.ylkszy.eu.org
-        path: /?ed=2560
-    - cipher: aes-256-gcm
-      name: TW 584
-      password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-      port: 21115
-      server: okanc.node-is.green
-      tfo: false
-      type: ss
-    - auth: fab65333-8c8f-40b0-9d1b-164f0adedf35
-      client-fingerprint: chrome
-      down: 100
-      name: RU 592
-      obfs: salamander
-      obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-      password: fab65333-8c8f-40b0-9d1b-164f0adedf35
-      port: 33007
-      server: 185.22.152.236
-      skip-cert-verify: true
-      type: hysteria2
-      udp: true
-      up: 100
-    - name: KR 596
-      network: ws
-      port: 35100
-      server: 183.98.8.11
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: KR 598
-      network: ws
-      port: 34822
-      server: 118.46.215.195
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: KR 603
-      network: ws
-      port: 50000
-      server: 115.20.158.127
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: KR 604
-      network: ws
-      port: 12661
-      server: 211.212.43.153
-      servername: ccv.ylkszy.eu.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            host: ccv.ylkszy.eu.org
-        path: /?ed=2560
-    - name: KR 606
-      network: ws
-      port: 12445
-      server: 125.139.243.71
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: KR 607
-      network: ws
-      password: amclubs2024
-      port: 443
-      server: 58.176.95.46
-      sni: tr.amclub.us.kg
-      type: trojan
-      ws-opts:
-        headers:
-            Host: tr.amclub.us.kg
-        path: /?ed=2560
     - cipher: chacha20-ietf-poly1305
-      name: BH 614
-      password: Bog0ELmMM9DSxDdQ
-      port: 443
-      server: admin.c3.webramz.co
+      country: UA
+      name: IL 448
+      password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
+      port: 31348
+      server: 188.191.147.127
       type: ss
-    - alterId: 0
-      cipher: auto
-      name: SG 617
-      network: tcp
-      port: 53144
-      server: 62.146.232.153
-      tls: false
-      type: vmess
-      uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
-    - name: KR 618
-      network: ws
-      password: Aimer
-      port: 50000
-      server: 112.162.70.172
-      skip-cert-verify: true
-      sni: agepa.ambercc.filegear-sg.me
-      type: trojan
-      udp: true
-      ws-opts:
-        headers:
-            Host: agepa.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: US 621
-      network: ws
-      password: Aimer
-      port: 443
-      server: 38.38.251.220
-      skip-cert-verify: false
-      sni: agepa.ambercc.filegear-sg.me
-      type: trojan
-      ws-opts:
-        headers:
-            Host: agepa.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: US 624
-      network: ws
-      port: 9005
-      server: 8.210.55.92
-      servername: agedf.ambercc.filegear-sg.me
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-      ws-opts:
-        headers:
-            host: agedf.ambercc.filegear-sg.me
-        path: /?ed=2560
-    - name: KR 635
-      network: ws
-      port: 81
-      server: 210.61.97.241
-      servername: ccv.ylkszy.eu.org
-      skip-cert-verify: true
-      tls: true
-      type: vless
-      udp: true
-      uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-      ws-opts:
-        headers:
-            Host: ccv.ylkszy.eu.org
-        path: /?ed=2560
     - client-fingerprint: chrome
       fingerprint: ""
-      name: UN 639
+      name: UN 457
       network: ws
       port: 6060
       server: 195.200.19.139
@@ -979,3 +860,116 @@ proxies:
         headers:
             host: a.xn--i-sx6a60i.us.kg
         path: /
+    - name: IN 458
+      network: tcp
+      password: "3747000103274291200"
+      port: 443
+      server: 185.67.125.147
+      skip-cert-verify: true
+      sni: polished-collie.adder289.quest
+      type: trojan
+      ws-opts:
+        headers:
+            Host: polished-collie.adder289.quest
+    - name: IN 459
+      network: tcp
+      password: "3747000103274291200"
+      port: 443
+      server: 185.67.125.177
+      skip-cert-verify: true
+      sni: quality-albacore.adder289.quest
+      type: trojan
+    - cipher: chacha20-ietf-poly1305
+      name: HK 462
+      password: WfmxKX2FBJRU0Ie9VLIYDL
+      port: 20012
+      server: 141.98.234.93
+      type: ss
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: US 471
+      network: ws
+      port: 8443
+      server: 156.229.48.237
+      skip-cert-verify: true
+      tls: true
+      type: vmess
+      uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+      ws-opts:
+        headers:
+            host: lax1.ibgfw.top
+        path: /xrenvws
+    - name: UN 477
+      network: ws
+      password: amclubs2024
+      port: 443
+      server: 58.176.95.46
+      sni: tr.amclub.us.kg
+      type: trojan
+      ws-opts:
+        headers:
+            Host: tr.amclub.us.kg
+        path: '%2F%3Fed%3D2560'
+    - name: HK 479
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 443
+      server: hkre1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: hkre1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - cipher: chacha20-ietf-poly1305
+      name: IN 481
+      password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ
+      port: 51348
+      server: 159.65.149.72
+      type: ss
+    - cipher: aes-256-cfb
+      name: KZ 485
+      password: f8f7aCzcPKbsF8p3
+      port: 989
+      server: 213.156.137.67
+      type: ss
+    - name: TW 486
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      skip-cert-verify: false
+      sni: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - alterId: 0
+      cipher: auto
+      name: SG 497
+      network: tcp
+      port: 14372
+      server: 62.146.232.159
+      tls: false
+      type: vmess
+      uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7
+    - alterId: 0
+      cipher: auto
+      name: SG 498
+      network: ws
+      port: 443
+      server: sgfqkqmltcy.site
+      servername: sgfqkqmltcy.site
+      tls: true
+      type: vmess
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+      ws-opts:
+        headers:
+            Host: sgfqkqmltcy.site
+        path: /rbqqvws
+    - alterId: 0
+      cipher: auto
+      name: SG 514
+      network: tcp
+      port: 33281
+      server: 62.146.232.156
+      tls: false
+      type: vmess
+      uuid: 24eda0ea-acf0-4538-a001-f746a480237a

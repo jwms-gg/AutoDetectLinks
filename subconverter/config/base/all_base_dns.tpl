@@ -8,21 +8,31 @@ log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
 dns:
   enable: true
+  prefer-h3: false
   ipv6: false
   use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - tcp://223.5.5.5
+    - tcp://223.6.6.6
   nameserver:
-    - https://223.5.5.5/dns-query # 阿里
-    - https://120.53.53.53/dns-query # 腾讯
+    - https://223.5.5.5/dns-query # 阿里云公共DNS
+    - https://223.6.6.6/dns-query # 阿里云公共DNS
+    - https://1.12.12.12/dns-query # DNSPod
+    - https://120.53.53.53/dns-query # DNSPod
   fallback:
+    - https://1.1.1.1/dns-query # Cloudflare Public DNS
+    - https://1.0.0.1/dns-query # Cloudflare Public DNS
+    - https://208.67.222.222/dns-query # OpenDNS
+    - https://208.67.220.220/dns-query # OpenDNS
+    - https://8.8.8.8/dns-query # Google Public DNS
+    - https://8.8.4.4/dns-query # Google Public DNS
+    - https://9.9.9.11:5053/dns-query # Quad9 Public DNS
+    - https://149.112.112.11:5053/dns-query # Quad9 Public DNS
     - https://1.1.1.2/dns-query # cloudflare （过滤恶意网站）
     - https://1.0.0.2/dns-query # cloudflare （过滤恶意网站）
     - https://208.67.222.222/dns-query # OpenDNS
-    - https://208.67.220.220/dns-query
     - https://9.9.9.9/dns-query # IBM Quad9 （过滤恶意网站）
   fallback-filter:
     geoip: true  # 仅允许解析境外 IP
@@ -41,6 +51,29 @@ dns:
     - '+.stun.*.*.*'
     - '+.stun.*.*.*.*'
     - '+.stun.*.*.*.*.*'
+    - 'time.*.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - '*.steamcontent.com'
+    - '*.*.xboxlive.com'
+    - 'xbox.*.*.microsoft.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
