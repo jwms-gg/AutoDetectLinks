@@ -1,7 +1,8 @@
 default:
   max_threads: 8
+  output_dir: results/output
   sources:
-    - url: results/all.yml
+    - url: results/output/all.yml
       type: clash
     - url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml
       type: clash
@@ -190,7 +191,7 @@ default:
   request_timeout: 10
   subconverter: https://subapi.cmliussss.net
   subconverter_config: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini
-  delay_url_test: https://i.ytimg.com
+  delay_url_test: http://www.gstatic.com/generate_204
   limit: 1500
   delay_batch_test_size: 600
   max_concurrent_tests: 100

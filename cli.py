@@ -484,7 +484,7 @@ def statistics_sources(sources: list[Source]):
     unique_total = 0
     unsupported_total = 0
     all = 0
-    source_path = "results/sources"
+    source_path = f"{settings.output_dir}/sources"
     if not os.path.exists(source_path):
         os.makedirs(source_path)
 
@@ -510,7 +510,7 @@ def statistics_sources(sources: list[Source]):
         all += len(s.proxies)
 
     out += f"\nTotal,,{unique_total}/{unsupported_total}/{all}\n"
-    with open("results/sources.csv", "w", encoding="utf-8") as f:
+    with open(f"{settings.output_dir}/sources.csv", "w", encoding="utf-8") as f:
         f.write(out)
 
     logger.info(f"Writing out statistics of sources fetched:\n{out}")
@@ -527,14 +527,16 @@ def write_rules_fragments(rules: dict):
         if rpolicy in name_map:
             snippets[name_map[rpolicy]].append(config_rule)
     for name, payload in snippets.items():
-        with open("results/" + name + ".yml", "w", encoding="utf-8") as f:
+        with open(
+            f"{settings.output_dir}/" + name + ".yml", "w", encoding="utf-8"
+        ) as f:
             yaml.dump({"payload": payload}, f, allow_unicode=True)
 
 
 def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Checking {len(nodes)} nodes for {save_name_prefix}...")
     write_result(
-        f"results/{save_name_prefix}_fetch.yml",
+        f"{settings.output_dir}/{save_name_prefix}_fetch.yml",
         {"proxies": nodes},
         comment=f"Checking proxies of {save_name_prefix}, {len(nodes)}",
     )
@@ -549,12 +551,12 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
         for i, p in enumerate(alive_proxies)
     ]
     write_result(
-        f"results/{save_name_prefix}_alive.yml",
+        f"{settings.output_dir}/{save_name_prefix}_alive.yml",
         {"proxies": alive_proxies},
         comment=f"Alive proxies of {save_name_prefix}, {len(alive_proxies)}",
     )
     write_result(
-        "results/problem.yml",
+        f"{settings.output_dir}/problem.yml",
         {"proxies": delay_checker.problem_proxies},
         comment=f"Problem proxies, {len(delay_checker.problem_proxies)}",
     )
@@ -575,14 +577,14 @@ def main():
     )
 
     logger.info(f"Total alive proxies: {len(all_alives)}")
-    write_all("results/all.yml", all_alives)
+    write_all(f"{settings.output_dir}/all.yml", all_alives)
 
     # Split to 3 parts
     part_size = len(all_alives) // 3
     for i, part in enumerate(
         [all_alives[i : i + part_size] for i in range(0, part_size * 3, part_size)]
     ):
-        write_all(f"results/all_{i}.yml", part)
+        write_all(f"{settings.output_dir}/all_{i}.yml", part)
 
 
 def write_all(file_name: str, nodes: list[dict[str, Any]]):

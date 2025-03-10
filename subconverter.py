@@ -1,11 +1,16 @@
 import click
-from pysubconverter import config_context, subconverter
+from pysubconverter import config_context, subconverter, settings
 
 import pathlib
 
 
 def convert(input, output):
-    with config_context():
+    settings.pref_path = str(
+        pathlib.Path(__file__).parent / "subconverter" / "config" / "pref.toml"
+    )
+    with config_context(
+        cache_dir=str(pathlib.Path(__file__).parent.joinpath("subconverter"))
+    ):
         result = subconverter(
             {
                 "target": "clash",
@@ -42,14 +47,17 @@ def convert_cmd(input, output):
     required=True,
     help="Input folder path",
 )
-def convert_folder_cmd(input):
+@click.option(
+    "-o", "--output", type=click.Path(), required=True, help="Output folder path"
+)
+def convert_folder_cmd(input, output):
     input = pathlib.Path(input).resolve()
-    output = pathlib.Path(input).parent.joinpath("converted")
+    output = pathlib.Path(output).resolve()
     output.mkdir(exist_ok=True)
     input_files = [
         f for f in input.iterdir() if f.is_file() and f.suffix in [".yaml", ".yml"]
     ]
-    print(f"Converting {len(input_files)} files to clash format...")
+    print(f"Converting {len(input_files)} files to ${output} folder...")
     [convert(f, output.joinpath(f.name)) for f in input_files]
 
 

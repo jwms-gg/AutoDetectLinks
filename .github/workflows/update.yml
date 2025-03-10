@@ -22,7 +22,7 @@ env:
 jobs:
   update:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +40,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch new data
-        run: python cli.py
+        run: |
+          python cli.py
+          python subconverter.py folder -i results/output -o results/subconverter
 
       - name: Run BestSub
         run: |
@@ -51,7 +53,7 @@ jobs:
           timeout 359s python -m http.server 8080 &
           cd bestsub
           timeout 360s ./BestSub || true
-          python ../subconverter.py folder -i output/
+          python ../subconverter.py folder -i output -o subconverter
 
       - name: Gernate commit date message
         id: commit-date-msg
