@@ -6,21 +6,31 @@ log-level: info
 external-controller: 127.0.0.1:9090
 dns:
   enable: true
+  prefer-h3: false
   ipv6: false
   use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - tcp://223.5.5.5
+    - tcp://223.6.6.6
   nameserver:
     - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://1.12.12.12/dns-query
     - https://120.53.53.53/dns-query
   fallback:
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://208.67.222.222/dns-query
+    - https://208.67.220.220/dns-query
+    - https://8.8.8.8/dns-query
+    - https://8.8.4.4/dns-query
+    - https://9.9.9.11:5053/dns-query
+    - https://149.112.112.11:5053/dns-query
     - https://1.1.1.2/dns-query
     - https://1.0.0.2/dns-query
     - https://208.67.222.222/dns-query
-    - https://208.67.220.220/dns-query
     - https://9.9.9.9/dns-query
   fallback-filter:
     geoip: true
@@ -39,136 +49,159 @@ dns:
     - +.stun.*.*.*
     - +.stun.*.*.*.*
     - +.stun.*.*.*.*.*
+    - time.*.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.steamcontent.com"
+    - "*.*.xboxlive.com"
+    - xbox.*.*.microsoft.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
 proxies:
-  - {name: US 002, server: 38.68.134.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: UN 027, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}}
-  - {name: UN 043, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}}
-  - {name: US 044, server: 139.64.165.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US 058, server: 38.121.43.27, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US 060, server: 104.21.61.73, port: 443, type: trojan, password: yaml777, sni: yaml7.ggff.net, network: ws, ws-opts: {path: /, headers: {Host: yaml7.ggff.net}}}
-  - {name: US 061, server: japan.com, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}}
-  - {name: UN 064, server: 190.93.244.66, port: 443, type: trojan, password: bpb-trojan, sni: zeming13.us.kg, network: ws, ws-opts: {path: /tr, headers: {Host: zeming13.us.kg}}}
-  - {name: US 068, server: 38.121.43.97, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US 081, server: 172.67.180.227, port: 443, type: trojan, password: bpb-trojan, sni: bpb-hd.aaronchin.xyz, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: bpb-hd.aaronchin.xyz}}}
-  - {name: TW 084, server: 104.16.83.8, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: c2.validbv3528.eu.org}}}
-  - {name: US 088, server: 104.17.148.22, port: 443, type: trojan, password: Pooria, sni: 301.pOORiAm.ir, network: ws, ws-opts: {path: "/trPyOrWMfkHd15oxiI?ed=1520", headers: {Host: 301.pOORiAm.ir}}}
-  - {name: US 089, server: 139.64.165.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: UN 091, server: 104.16.83.43, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: c2.validbv3528.eu.org}}}
-  - {name: UN 096, server: 104.16.83.176, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: c2.validbv3528.eu.org}}}
-  - {name: US 105, server: 194.116.173.21, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ}
-  - {name: US 130, server: 172.67.207.26, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: US 133, server: 38.68.134.23, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US 142, server: 104.21.83.208, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: afrhms16v.bestxray.buzz}}}
-  - {name: UN 146, server: 154.83.2.200, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: tr.amclub.us.kg}}}
-  - {name: US 148, server: 198.62.62.156, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: tr.amclub.us.kg}}}
-  - {name: US 151, server: 38.121.43.27, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: UN 152, server: 198.62.62.4, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "", headers: {Host: tr.amclub.us.kg}}}
-  - {name: US 161, server: usgp3-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: US 177, server: usgp2-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: US 184, server: 104.18.149.76, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aa}}
-  - {name: US 193, server: 38.114.121.218, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: NL 223, server: weilai-nl.sanguayun.com, port: 443, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, sni: weilai-nl.sanguayun.com, skip-cert-verify: false}
+  - {name: US 000, server: 38.68.134.23, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: US 001, server: 38.68.134.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: FI 009, server: japan.com, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}}
+  - {name: US 023, server: 38.121.43.27, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: UN 033, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}}
+  - {name: US 042, server: 172.67.70.92, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}}
+  - {name: US 043, server: 104.21.61.73, port: 443, type: trojan, password: yaml777, sni: yaml7.ggff.net, network: ws, ws-opts: {path: /, headers: {Host: yaml7.ggff.net}}}
+  - {name: UN 055, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}}
+  - {name: US 059, server: 38.121.43.27, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: US 068, server: 104.17.148.22, port: 443, type: trojan, password: Pooria, sni: 301.pOORiAm.ir, network: ws, ws-opts: {path: "/trPyOrWMfkHd15oxiI?ed=1520", headers: {Host: 301.pOORiAm.ir}}}
+  - {name: UN 070, server: 190.93.244.66, port: 443, type: trojan, password: bpb-trojan, sni: zeming13.us.kg, network: ws, ws-opts: {path: /tr, headers: {Host: zeming13.us.kg}}}
+  - {name: US 091, server: 18.217.36.213, port: 25534, type: hysteria2, password: wT6ydpR9hrVKXvbMnrHwOoRLeBM, sni: bing.com, skip-cert-verify: true}
+  - {name: US 092, server: 139.64.165.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: UN 093, server: 104.16.83.43, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: c2.validbv3528.eu.org}}}
+  - {name: US 102, server: 139.64.165.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US 103, server: 172.67.180.227, port: 443, type: trojan, password: bpb-trojan, sni: bpb-hd.aaronchin.xyz, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: bpb-hd.aaronchin.xyz}}}
+  - {name: UN 109, server: 104.16.83.176, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: c2.validbv3528.eu.org}}}
+  - {name: US 119, server: 38.114.121.218, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: US 123, server: usgp3-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: US 124, server: usgp2-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: TW 128, server: 104.16.83.8, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: c2.validbv3528.eu.org}}}
+  - {name: US 147, server: 104.18.149.76, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aa}}
+  - {name: UN 181, server: 198.62.62.156, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "", headers: {Host: tr.amclub.us.kg}}}
+  - {name: UN 182, server: 198.62.62.4, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "", headers: {Host: tr.amclub.us.kg}}}
+  - {name: UN 187, server: 154.83.2.200, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: tr.amclub.us.kg}}}
+  - {name: US 327, server: 34.217.73.31, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US 376, server: 104.19.48.236, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 100-187-244-205.s4.db-link02.top, network: ws, ws-opts: {path: /dabai.in104.19.97.91}}
+  - {name: US 410, server: 23.185.248.13, port: 17003, type: ss, cipher: aes-256-gcm, password: LKG8G8VL60RSB59P}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -187,34 +220,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -225,101 +258,101 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -335,34 +368,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 002
-      - UN 027
-      - UN 043
-      - US 044
-      - US 058
-      - US 060
-      - US 061
-      - UN 064
+      - US 000
+      - US 001
+      - FI 009
+      - US 023
+      - UN 033
+      - US 042
+      - US 043
+      - UN 055
+      - US 059
       - US 068
-      - US 081
-      - TW 084
-      - US 088
-      - US 089
-      - UN 091
-      - UN 096
-      - US 105
-      - US 130
-      - US 133
-      - US 142
-      - UN 146
-      - US 148
-      - US 151
-      - UN 152
-      - US 161
-      - US 177
-      - US 184
-      - US 193
-      - NL 223
+      - UN 070
+      - US 091
+      - US 092
+      - UN 093
+      - US 102
+      - US 103
+      - UN 109
+      - US 119
+      - US 123
+      - US 124
+      - TW 128
+      - US 147
+      - UN 181
+      - UN 182
+      - UN 187
+      - US 327
+      - US 376
+      - US 410
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

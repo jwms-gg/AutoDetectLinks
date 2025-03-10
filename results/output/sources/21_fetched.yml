@@ -1,11 +1,29 @@
-# Update: 2025-03-10 20:38
-# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 1
+# Update: 2025-03-11 02:24
+# Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 2
 proxies:
-- name: '🇺🇸美国5 | ⬇️ 6.0MB/s #1'
-  password: 3edd1d9a-8eed-33fd-a868-447d2d7ade38
-  port: 20308
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z308.hongkongnode.top
-  type: trojan
+- name: '🇺🇸美国3 | ⬇️ 5.9MB/s #2'
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+- name: '🇺🇸美国4 | ⬇️ 2.9MB/s #2'
+  network: ws
+  port: 80
+  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  servername: Join--E-L-i-V-2-R-A-Y.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Join--E-L-i-V-2-R-A-Y.net
+    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560
