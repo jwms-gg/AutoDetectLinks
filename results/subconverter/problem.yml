@@ -73,11 +73,7 @@ dns:
     - localhost.ptlogin2.qq.com
     - localhost.sec.qq.com
 proxies:
-  - {name: US 49, server: afrhms16v.bestxray.buzz, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: "", tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: afrhms16v.bestxray.buzz}}}
-  - {name: US 81, server: hknbyivfffj.site, port: 443, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: "", tls: true, servername: hknbyivfffj.site, network: ws, ws-opts: {path: /rbqqvws, headers: {Host: hknbyivfffj.site}}}
-  - {name: FR 2, server: glweidf.cfd, port: 443, type: vmess, uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192, alterId: 0, cipher: "", tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: glweidf.cfd}}}
-  - {name: FR 3, server: hms19.best-tizi.top, port: 443, type: vmess, uuid: 62aa5f80-0328-4004-a375-7f5a59df4022, alterId: 0, cipher: "", tls: true, servername: hms19.best-tizi.top, network: ws, ws-opts: {path: /linkws, headers: {Host: hms19.best-tizi.top}}}
-  - {name: "[openproxylist.com] ss-JP", server: 156.246.94.9, port: 22579, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ""}
+  - {name: "US 64 #1", server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 5b2ad717-20db-4e2e-bce7-c388e578ed9e, alterId: 0, cipher: "", tls: true, servername: biazh.mmzhk.website, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}}
   - {name: "@daredevill_404", server: 188.34.194.165, port: 80, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ""}
 proxy-groups:
   - name: 🔰 节点选择
@@ -85,22 +81,14 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: 🎥 NETFLIX
     type: select
@@ -108,11 +96,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: ⛔️ 广告拦截
     type: select
@@ -132,11 +116,7 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: 🌏 国内媒体
     type: select
@@ -148,22 +128,14 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: 🍎 苹果服务
     type: select
@@ -171,11 +143,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
   - name: 🎯 全球直连
     type: select
@@ -192,11 +160,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 49
-      - US 81
-      - FR 2
-      - FR 3
-      - "[openproxylist.com] ss-JP"
+      - "US 64 #1"
       - "@daredevill_404"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连

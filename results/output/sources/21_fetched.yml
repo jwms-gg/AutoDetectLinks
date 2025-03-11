@@ -1,10 +1,21 @@
-# Update: 2025-03-11 02:24
+# Update: 2025-03-12 20:37
 # Source 21 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/netflix?ref_type=heads), 2
 proxies:
-- name: '🇺🇸美国3 | ⬇️ 5.9MB/s #2'
+- auth: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
+  client-fingerprint: chrome
+  name: '🌀其他1-瑞典 | ⬇️ 2.8MB/s #1'
+  password: 4ce4d6a7-e47c-4d80-800c-bf874479c9b0
+  port: 5001
+  server: jp-oracle.aikunapp.com
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-4.bilivideo.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: '🇺🇸美国3 | ⬇️ 2.5MB/s #1'
   network: ws
   port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+  server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
   servername: Join--E-L-i-V-2-R-A-Y.net
   skip-cert-verify: false
   type: vless
@@ -13,17 +24,3 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- name: '🇺🇸美国4 | ⬇️ 2.9MB/s #2'
-  network: ws
-  port: 80
-  server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-  servername: Join--E-L-i-V-2-R-A-Y.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Join--E-L-i-V-2-R-A-Y.net
-    path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed=2560

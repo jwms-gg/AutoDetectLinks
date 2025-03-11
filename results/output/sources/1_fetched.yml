@@ -1,5 +1,5 @@
-# Update: 2025-03-11 02:24
-# Source 1 (https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml), 5
+# Update: 2025-03-12 20:37
+# Source 1 (https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml), 8
 proxies:
 - alpn:
   - h3
@@ -35,7 +35,35 @@ proxies:
   sni: www.bing.com
   type: hysteria
   up: 11 Mbps
-- name: 🇷🇺 RU-Hysteria2 | 0-0
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 100
+  fast-open: true
+  name: '🇷🇺 RU-Hysteria | 1-0 #1'
+  port: 10469
+  ports: 10469
+  protocol: udp
+  server: 46.17.41.174
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 80
+- name: '🇷🇺 RU-Hysteria2 | 0-0 #2'
+  password: dongtaiwang.com
+  port: 37481
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: '🇺🇸 US-Hysteria2 | 1-0 #1'
+  password: dongtaiwang.com
+  port: 15544
+  server: 108.181.5.133
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+- name: 🇷🇺 RU-Hysteria2 | 2-0
   password: dongtaiwang.com
   port: 18626
   server: 46.29.163.171

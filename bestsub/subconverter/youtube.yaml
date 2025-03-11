@@ -73,383 +73,531 @@ dns:
     - localhost.ptlogin2.qq.com
     - localhost.sec.qq.com
 proxies:
-  - {name: CA 118, server: 23.162.200.91, port: 20182, type: vmess, uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19, alterId: 0, cipher: auto, tls: false}
-  - {name: CA 130, server: 38.111.114.153, port: 14812, type: vmess, uuid: 0146fc40-5962-4e9a-b36a-2b606d001467, alterId: 0, cipher: auto, tls: false}
-  - {name: US 141, server: 207.90.237.96, port: 33006, type: hysteria2, password: f0b38793-fb59-495f-9f39-bfa9092785f5, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, skip-cert-verify: true}
-  - {name: CA 168, server: 79.127.233.170, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
-  - {name: MX 169, server: 147.78.1.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: NL 195, server: 149.34.244.71, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: NL 196, server: 149.34.244.68, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB 198, server: 62.100.205.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: NL 199, server: 149.34.244.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: NL 200, server: 149.34.244.77, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB 206, server: 149.7.16.149, port: 37101, type: vmess, uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25, alterId: 0, cipher: auto, tls: false}
-  - {name: FR 208, server: 161.97.108.42, port: 44140, type: hysteria2, password: MICPT1LLn6, obfs: salamander, obfs-password: hsdirhrrkskdhebdjdj, skip-cert-verify: true}
-  - {name: FR 209, server: 51.77.20.131, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: FR 212, server: 38.109.228.113, port: 21809, type: vmess, uuid: a6179475-489c-4bcc-b05c-481386295b93, alterId: 0, cipher: auto, tls: false}
-  - {name: GB 213, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB 214, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB 215, server: uk-dc1.yangon.club, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: GB 222, server: 172.99.190.207, port: 55577, type: vmess, uuid: e922d485-98a7-475a-9a47-cde3722ac82e, alterId: 0, cipher: auto, tls: false}
-  - {name: RU 230, server: sto2.g.edgeservers.org, port: 15128, type: ss, cipher: chacha20-ietf-poly1305, password: 70Xwg0SbHSL8CuCkiLuGhO, udp: true}
-  - {name: FR 243, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR 247, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: JP 248, server: 20.78.127.141, port: 550, type: vmess, uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: US 249, server: 161.35.34.48, port: 443, type: trojan, password: 2cba4104747d49d18319e5ade1b93ab5, sni: yourjobnavigator.online, skip-cert-verify: true, udp: true}
-  - {name: SE 254, server: 169.150.208.83, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false}
-  - {name: DE 257, server: 172.67.179.199, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 258, server: 3.67.194.37, port: 7286, type: hysteria2, password: eW5oOg9YEcNI3wvLqbSrnTEi0J8, sni: bing.com, skip-cert-verify: true}
-  - {name: SE 260, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: DE 262, server: 188.114.97.3, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: GB 267, server: 68.168.31.184, port: 26924, type: vmess, uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2, alterId: 0, cipher: auto, tls: false}
-  - {name: DE 268, server: 188.114.97.1, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: RU 271, server: 217.30.10.18, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: FR 273, server: 13.39.34.109, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: DE 275, server: 188.114.99.134, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}}
-  - {name: DE 276, server: 172.67.161.77, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}}
-  - {name: US 278, server: 156.229.48.237, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenvws}}
-  - {name: DE 280, server: 188.114.99.183, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: FR 283, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: GB 284, server: 185.67.127.69, port: 443, type: trojan, password: 3747000103274291200, sni: ultimate-civet.adder289.quest}
-  - {name: DE 287, server: 188.114.96.5, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 290, server: 188.114.97.210, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 292, server: 188.114.97.6, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: RO 296, server: 89.39.70.207, port: 443, type: trojan, password: 3747000103274291200, sni: sunny-jackal.insect388.motorcycles, skip-cert-verify: false}
-  - {name: DE 303, server: 104.21.15.36, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 304, server: 188.114.99.205, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 313, server: 104.21.55.234, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
-  - {name: DE 316, server: 188.114.97.79, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}}
-  - {name: JP 317, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: JP 320, server: discrete-shrimp.shiner427.skin, port: 443, type: trojan, password: 74260716866785000}
-  - {name: RU 325, server: 46.29.163.171, port: 18626, type: hysteria2, password: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
-  - {name: FR 330, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: SG 333, server: 13.215.141.135, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG 334, server: 54.169.64.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG 335, server: 47.129.54.127, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TW 345, server: okanc.node-is.green, port: 21115, type: ss, cipher: aes-256-gcm, password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83}
-  - {name: SG 349, server: 54.255.138.185, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: JP 365, server: jpgmo102-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: JP 366, server: jpgmo101-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: KR 370, server: 13.209.80.72, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: JP 377, server: jp104-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: SG 381, server: 54.179.23.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: IN 388, server: 4.240.73.55, port: 14118, type: vmess, uuid: d513bfb2-b7c2-4dc6-a3f9-55145f198705, alterId: 0, cipher: auto, tls: false}
-  - {name: TW 392, server: 154.223.20.79, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: JP 393, server: 87.120.204.100, port: 443, type: trojan, password: 3747000103274291200, sni: crucial-moccasin.adder289.quest}
-  - {name: FR 394, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: RU 395, server: 185.22.152.236, port: 23008, type: vmess, uuid: 2cae1b54-57f2-42b6-9ebb-99db1b58fd8d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: JP 397, server: open-maggot.pigeon031.one, port: 443, type: trojan, password: 3747000103274291200, sni: open-maggot.pigeon031.one, skip-cert-verify: true}
-  - {name: KR 398, server: 54.180.127.110, port: 10610, type: hysteria2, password: e3v53Tnr1AF09DVG7cVTUHGMvP0, sni: bing.com, skip-cert-verify: true}
-  - {name: SG 400, server: 139.59.119.143, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: connectwithemployers.online, skip-cert-verify: true}
-  - {name: SG 401, server: 152.42.194.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: bs1.loadingip.com, skip-cert-verify: true}
-  - {name: RU 405, server: 185.22.155.71, port: 10803, type: hysteria, up: 11 Mbps, down: 55 Mbps, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: www.bing.com, skip-cert-verify: true, alpn: [h3]}
-  - {name: US 412, server: 47.130.23.75, port: 443, type: trojan, password: 74260716866785000, sni: hardy-haddock.shiner427.skin}
-  - {name: BH 415, server: admin.c3.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ}
-  - {name: TW 417, server: tw1-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: SG 419, server: 38.180.249.177, port: 8443, type: trojan, password: installshield, skip-cert-verify: true, udp: true}
-  - {name: AU 421, server: 154.26.153.173, port: 28686, type: vmess, uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48, alterId: 0, cipher: auto, tls: false}
-  - {name: DE 423, server: 193.108.117.143, port: 24164, type: vmess, uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35, alterId: 0, cipher: auto, tls: false}
-  - {name: SG 425, server: 62.146.232.157, port: 52856, type: vmess, uuid: ed54e388-bfc5-4b36-ae4d-8b3cd460d3d4, alterId: 0, cipher: auto, tls: false}
-  - {name: TW 426, server: twmoon1-cdn-route.couldflare-cdn.com, port: 1443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: RU 428, server: 217.30.10.18, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
-  - {name: IN 430, server: 94.136.184.156, port: 38872, type: vmess, uuid: 220732cc-9e43-4453-83f1-c9435be25b5b, alterId: 0, cipher: auto, tls: false}
-  - {name: RU 431, server: 185.22.152.236, port: 33007, type: hysteria2, password: 45d2e86b-e995-43df-b5b3-e4a3ef70a3a4, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, skip-cert-verify: true}
-  - {name: SG 432, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
-  - {name: IL 433, server: 188.191.147.127, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6}
-  - {name: US 437, server: 129.154.49.249, port: 15055, type: trojan, password: e8012565-5b9f-373f-b1eb-e2445711e65c, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: freehr01}}
-  - {name: IN 445, server: 185.67.125.147, port: 443, type: trojan, password: 3747000103274291200, sni: polished-collie.adder289.quest, skip-cert-verify: true}
-  - {name: HK 448, server: hkre1-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
-  - {name: IN 451, server: 185.67.125.177, port: 443, type: trojan, password: 3747000103274291200, sni: quality-albacore.adder289.quest, skip-cert-verify: true}
-  - {name: US 459, server: 185.18.250.249, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenvws, headers: {Host: lax1.ibgfw.top}}}
-  - {name: UN 468, server: 58.176.95.46, port: 443, type: trojan, password: amclubs2024, sni: tr.amclub.us.kg, network: ws, ws-opts: {path: "%2F%3Fed%3D2560", headers: {Host: tr.amclub.us.kg}}}
-  - {name: HK 470, server: hknbyivfffj.site, port: 443, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /rbqqvws, headers: {Host: hknbyivfffj.site}}}
+  - {name: US 112, server: 23.162.200.91, port: 20182, type: vmess, uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA 134, server: 38.111.114.153, port: 14812, type: vmess, uuid: 0146fc40-5962-4e9a-b36a-2b606d001467, alterId: 0, cipher: auto, tls: false}
+  - {name: CA 174, server: 51.79.102.253, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}}
+  - {name: GB 178, server: 62.100.205.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: CA 183, server: 79.127.233.170, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
+  - {name: NL 185, server: 149.34.244.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: NL 186, server: 149.34.244.82, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: NL 187, server: 149.34.244.71, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB 188, server: 149.7.16.149, port: 37101, type: vmess, uuid: fb3fc243-4698-49c4-8c44-0415f68a4d25, alterId: 0, cipher: auto, tls: false}
+  - {name: GB 189, server: 172.99.190.207, port: 55577, type: vmess, uuid: e922d485-98a7-475a-9a47-cde3722ac82e, alterId: 0, cipher: auto, tls: false}
+  - {name: NL 192, server: 149.34.244.77, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: NL 195, server: 149.34.244.68, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB 199, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: GB 201, server: uk-dc1.yangon.club, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: FR 206, server: 51.77.20.131, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: DE 208, server: 23.158.56.21, port: 48961, type: vmess, uuid: 6eef3448-bbc0-4933-894a-72b3e8786109, alterId: 0, cipher: auto, tls: false}
+  - {name: GB 210, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: FR 213, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: FR 219, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: FR 221, server: 149.202.82.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: ES 222, server: 5.188.181.201, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM}
+  - {name: FR 223, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: US 224, server: yourjobnavigator.online, port: 443, type: trojan, password: 2cba4104747d49d18319e5ade1b93ab5, sni: yourjobnavigator.online, skip-cert-verify: true, udp: true}
+  - {name: GB 225, server: 64.176.184.129, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H}
+  - {name: FR 226, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: FR 230, server: 149.202.82.172, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: FR 231, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CH 232, server: 156.146.62.161, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: FR 241, server: 149.202.82.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: FR 243, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: FR 244, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: FR 245, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: FR 248, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: GB 250, server: 141.98.101.178, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: DE 251, server: 172.67.219.194, port: 443, type: vmess, uuid: b321fd5d-e6ec-4293-a644-164e3885f52e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: DE 253, server: 104.21.74.239, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: afrhms07.xfixedfloat.cfd}}}
+  - {name: FR 254, server: 38.109.228.113, port: 21809, type: vmess, uuid: a6179475-489c-4bcc-b05c-481386295b93, alterId: 0, cipher: auto, tls: false}
+  - {name: FR 256, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: DE 258, server: 172.67.219.194, port: 443, type: vmess, uuid: b321fd5d-e6ec-4293-a644-164e3885f52e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: adenc36v.xtooltech.cfd, network: ws, ws-opts: {path: /linkws, headers: {Host: adenc36v.xtooltech.cfd}}}
+  - {name: FR 259, server: 149.202.82.172, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: NL 261, server: 89.39.70.165, port: 443, type: trojan, password: 3747000103274291200, sni: inspired-cardinal.insect388.motorcycles, skip-cert-verify: false}
+  - {name: RO 263, server: 89.39.70.207, port: 443, type: trojan, password: 3747000103274291200, sni: sunny-jackal.insect388.motorcycles, skip-cert-verify: false}
+  - {name: DE 267, server: 193.108.118.136, port: 15713, type: vmess, uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9, alterId: 0, cipher: auto, tls: false}
+  - {name: SE 271, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: CH 272, server: 84.17.53.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: FR 275, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: DE 276, server: 165.22.74.230, port: 443, type: trojan, password: 4732adfa16c6450bbef87264e41332db, sni: nextstepcareer.online, skip-cert-verify: true, udp: true}
+  - {name: FR 277, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: SE 280, server: 169.150.208.83, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false}
+  - {name: FR 288, server: www.speedtest.net, port: 443, type: vmess, uuid: cefe6e80-fb3e-11ef-b038-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.speedtest.net}}}
+  - {name: DE 290, server: 193.108.119.230, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
+  - {name: GB 292, server: uk1.test3.net, port: 443, type: trojan, password: b15a1a90-f546-11ef-b468-1239d0255272, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, udp: true}
+  - {name: BE 297, server: 192.71.249.146, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
+  - {name: RU 298, server: 217.30.10.18, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+  - {name: ES 301, server: 5.188.181.201, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: CA 302, server: 95.217.158.231, port: 8388, type: ss, cipher: aes-256-cfb, password: "eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd"}
+  - {name: RU 305, server: 46.17.41.217, port: 37481, type: hysteria2, password: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
+  - {name: FR 308, server: 104.21.82.17, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: SE 309, server: 16.170.111.103, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
+  - {name: FR 310, server: 172.67.174.42, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: FR 315, server: 104.21.83.108, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link}}
+  - {name: FR 316, server: 172.67.244.191, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: FR 317, server: hms24.ivideos.sbs, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: ivideos.sbs}}}
+  - {name: FR 319, server: 104.21.83.115, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link}}
+  - {name: FR 320, server: 104.21.55.234, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: RU 321, server: 46.29.163.171, port: 18626, type: hysteria2, password: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
+  - {name: FR 322, server: 188.114.97.7, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: ivideos.sbs}}}
+  - {name: FR 324, server: 172.67.193.108, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: gwdef.sbs}}}
+  - {name: FR 325, server: 172.67.223.119, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /link, headers: {Host: hms02.fxiaomi.sbs}}}
+  - {name: FR 326, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: FR 327, server: hms082.gwdef.sbs, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms082.gwdef.sbs}}}
+  - {name: FR 328, server: 172.67.138.140, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws}}
+  - {name: FR 329, server: 190.93.247.58, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /link, headers: {Host: hms02.fxiaomi.sbs}}}
+  - {name: DE 333, server: hms07.xfixedfloat.cfd, port: 443, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: afrhms07.xfixedfloat.cfd}}}
+  - {name: DE 334, server: 139.162.178.95, port: 443, type: vmess, uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkwsd, headers: {Host: fixedfloati.cfd}}}
+  - {name: FR 335, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: DE 342, server: 193.108.117.143, port: 24164, type: vmess, uuid: aa3c5c18-6578-4de3-b890-2fd25c3a8f35, alterId: 0, cipher: auto, tls: false}
+  - {name: FR 349, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: US 350, server: 89.117.112.235, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenvws}}
+  - {name: RU 352, server: 46.17.41.174, port: 10469, type: hysteria, ports: 10469, protocol: udp, up: 80 Mbps, up-speed: 80, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3], fast-open: true, tfo: true}
+  - {name: GB 353, server: 68.168.31.184, port: 26924, type: vmess, uuid: 9f8b16a8-369d-4b79-af82-201c089dadd2, alterId: 0, cipher: auto, tls: false}
+  - {name: US 356, server: 185.47.253.171, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CA 359, server: 51.79.103.76, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}}
+  - {name: JP 365, server: 54.249.5.208, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: JP 366, server: 20.78.127.141, port: 550, type: vmess, uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: UN 372, server: 43.206.222.219, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: SE 382, server: 188.126.93.105, port: 15128, type: ss, cipher: chacha20-ietf-poly1305, password: 70Xwg0SbHSL8CuCkiLuGhO}
+  - {name: IN 398, server: 4.240.73.55, port: 14118, type: vmess, uuid: d513bfb2-b7c2-4dc6-a3f9-55145f198705, alterId: 0, cipher: auto, tls: false}
+  - {name: US 406, server: 129.154.49.249, port: 15055, type: trojan, password: e8012565-5b9f-373f-b1eb-e2445711e65c, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: freehr01}}
+  - {name: RU 408, server: 185.22.155.71, port: 10803, type: hysteria, up: 11 Mbps, up-speed: 80, down: 55 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: www.bing.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: RU 411, server: 217.30.10.18, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+  - {name: HK 412, server: hk.fastsoonlink.com, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA}
+  - {name: FR 414, server: hms182.glweidf.sbs, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: hms182.glweidf.sbs}}}
+  - {name: SG 416, server: 54.169.255.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: JP 418, server: discrete-shrimp.shiner427.skin, port: 443, type: trojan, password: 74260716866785000}
+  - {name: JP 420, server: 57.182.190.176, port: 443, type: trojan, password: 74260714362785500, sni: unified-javelin.shiner427.skin}
+  - {name: BH 424, server: admin.c3.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ}
+  - {name: IN 427, server: 94.136.184.156, port: 38872, type: vmess, uuid: 220732cc-9e43-4453-83f1-c9435be25b5b, alterId: 0, cipher: auto, tls: false}
+  - {name: RU 428, server: 104.21.112.1, port: 2087, type: trojan, password: NcguCi3hdF, sni: tasnim.twn24.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: tasnim.twn24.ir}}}
+  - {name: RU 430, server: 185.22.152.236, port: 33007, type: hysteria2, password: 88bf1b4c-57c7-4f9e-8348-1ea977006d73, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, skip-cert-verify: true}
+  - {name: JP 431, server: 13.115.162.137, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: MY 436, server: 101.99.91.234, port: 36700, type: vmess, uuid: 127ff43c-1851-4b2d-ba8c-6afba21ec04d, alterId: 0, cipher: auto, tls: false}
+  - {name: KR 437, server: 3.38.97.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: IL 441, server: 188.191.147.127, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6}
+  - {name: FR 445, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: HK 446, server: 154.197.26.237, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
+  - {name: IN 449, server: 185.67.125.147, port: 443, type: trojan, password: 3747000103274291200, sni: polished-collie.adder289.quest, skip-cert-verify: true}
+  - {name: SG 452, server: 62.146.233.112, port: 36712, type: vmess, uuid: 9266df42-0830-48c2-8509-4c57b30fe29d, alterId: 0, cipher: auto, tls: false}
+  - {name: KR 454, server: 3.36.61.71, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: SG 455, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
+  - {name: JP 460, server: 57.180.60.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: TW 462, server: 154.223.20.79, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: JP 464, server: jpgmo102-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: JP 465, server: jpgmo101-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: KR 468, server: 52.78.120.105, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: JP 470, server: jp104-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: SG 472, server: 139.59.119.143, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: connectwithemployers.online, skip-cert-verify: true}
+  - {name: AU 473, server: 154.26.153.173, port: 28686, type: vmess, uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48, alterId: 0, cipher: auto, tls: false}
+  - {name: SG 476, server: 18.140.81.130, port: 443, type: trojan, password: 74260714362785500, sni: driving-rhino.shiner427.skin}
+  - {name: US 478, server: 47.130.23.75, port: 443, type: trojan, password: 74260716866785000, sni: hardy-haddock.shiner427.skin}
+  - {name: TW 485, server: 185.189.160.98, port: 64759, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: TW 486, server: tw1-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: TW 497, server: twmoon1-cdn-route.couldflare-cdn.com, port: 1443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: SG 498, server: 62.146.232.159, port: 14372, type: vmess, uuid: ed1d7ea8-bf40-4a4a-8eac-8e57798ba6f7, alterId: 0, cipher: auto, tls: false}
+  - {name: HK 504, server: hkre1-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
+  - {name: US 541, server: 185.47.252.251, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: US 548, server: 185.18.250.249, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenvws, headers: {Host: lax1.ibgfw.top}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -468,96 +616,133 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -568,287 +753,398 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -864,96 +1160,133 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA 118
-      - CA 130
-      - US 141
-      - CA 168
-      - MX 169
+      - US 112
+      - CA 134
+      - CA 174
+      - GB 178
+      - CA 183
+      - NL 185
+      - NL 186
+      - NL 187
+      - GB 188
+      - GB 189
+      - NL 192
       - NL 195
-      - NL 196
-      - GB 198
-      - NL 199
-      - NL 200
-      - GB 206
-      - FR 208
-      - FR 209
-      - FR 212
-      - GB 213
-      - GB 214
-      - GB 215
-      - GB 222
-      - RU 230
+      - GB 199
+      - GB 201
+      - FR 206
+      - DE 208
+      - GB 210
+      - FR 213
+      - FR 219
+      - FR 221
+      - ES 222
+      - FR 223
+      - US 224
+      - GB 225
+      - FR 226
+      - FR 230
+      - FR 231
+      - CH 232
+      - FR 241
       - FR 243
-      - FR 247
-      - JP 248
-      - US 249
-      - SE 254
-      - DE 257
+      - FR 244
+      - FR 245
+      - FR 248
+      - GB 250
+      - DE 251
+      - DE 253
+      - FR 254
+      - FR 256
       - DE 258
-      - SE 260
-      - DE 262
-      - GB 267
-      - DE 268
-      - RU 271
-      - FR 273
-      - DE 275
+      - FR 259
+      - NL 261
+      - RO 263
+      - DE 267
+      - SE 271
+      - CH 272
+      - FR 275
       - DE 276
-      - US 278
-      - DE 280
-      - FR 283
-      - GB 284
-      - DE 287
+      - FR 277
+      - SE 280
+      - FR 288
       - DE 290
-      - DE 292
-      - RO 296
-      - DE 303
-      - DE 304
-      - DE 313
-      - DE 316
-      - JP 317
-      - JP 320
-      - RU 325
-      - FR 330
-      - SG 333
-      - SG 334
-      - SG 335
-      - TW 345
-      - SG 349
+      - GB 292
+      - BE 297
+      - RU 298
+      - ES 301
+      - CA 302
+      - RU 305
+      - FR 308
+      - SE 309
+      - FR 310
+      - FR 315
+      - FR 316
+      - FR 317
+      - FR 319
+      - FR 320
+      - RU 321
+      - FR 322
+      - FR 324
+      - FR 325
+      - FR 326
+      - FR 327
+      - FR 328
+      - FR 329
+      - DE 333
+      - DE 334
+      - FR 335
+      - DE 342
+      - FR 349
+      - US 350
+      - RU 352
+      - GB 353
+      - US 356
+      - CA 359
       - JP 365
       - JP 366
-      - KR 370
-      - JP 377
-      - SG 381
-      - IN 388
-      - TW 392
-      - JP 393
-      - FR 394
-      - RU 395
-      - JP 397
-      - KR 398
-      - SG 400
-      - SG 401
-      - RU 405
-      - US 412
-      - BH 415
-      - TW 417
-      - SG 419
-      - AU 421
-      - DE 423
-      - SG 425
-      - TW 426
+      - UN 372
+      - SE 382
+      - IN 398
+      - US 406
+      - RU 408
+      - RU 411
+      - HK 412
+      - FR 414
+      - SG 416
+      - JP 418
+      - JP 420
+      - BH 424
+      - IN 427
       - RU 428
-      - IN 430
-      - RU 431
-      - SG 432
-      - IL 433
-      - US 437
-      - IN 445
-      - HK 448
-      - IN 451
-      - US 459
-      - UN 468
-      - HK 470
+      - RU 430
+      - JP 431
+      - MY 436
+      - KR 437
+      - IL 441
+      - FR 445
+      - HK 446
+      - IN 449
+      - SG 452
+      - KR 454
+      - SG 455
+      - JP 460
+      - TW 462
+      - JP 464
+      - JP 465
+      - KR 468
+      - JP 470
+      - SG 472
+      - AU 473
+      - SG 476
+      - US 478
+      - TW 485
+      - TW 486
+      - TW 497
+      - SG 498
+      - HK 504
+      - US 541
+      - US 548
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
