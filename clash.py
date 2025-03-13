@@ -1614,7 +1614,7 @@ def prepare_clash():
     if os.path.exists(new_name):
         return
 
-    url = "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest"
+    url = "https://api.github.com/repos/MetaCubeX/mihomo/releases/tags/v1.19.2"
     response = requests.get(url)
 
     if response.status_code != 200:
@@ -1626,7 +1626,6 @@ def prepare_clash():
     download_url = None
     for asset in assets:
         name = asset.get("name", "")
-        # 根据操作系统确定下载文件的名称和后缀
         if os_type == "darwin" and targets["darwin"] in name and name.endswith(".gz"):
             download_url = asset["browser_download_url"]
             break
@@ -1849,22 +1848,27 @@ class ClashAPI:
         except httpx.RequestError as e:
             raise ClashAPIException(f"请求错误: {e}")
 
-    async def test_group_delay(self, group_name: str, timeout_times: int) -> None:
+    async def test_group_delay(self, group_name: str) -> None:
         """测试指定代理组下面节点的延迟，使用缓存避免重复测试"""
         if not self.base_url:
             raise ClashAPIException("未建立与 Clash API 的连接")
 
         try:
+            delay_timeout = settings.delay_timeout_unit * 1000
             response = await self.client.get(
                 f"{self.base_url}/group/{group_name}/delay",
                 headers=self.headers,
                 params={
                     "url": settings.delay_url_test,
-                    "timeout": str(settings.delay_timeout_unit * 1000 * timeout_times),
+                    "timeout": str(delay_timeout),
                 },
-                timeout=None,
+                timeout=delay_timeout * 2,
             )
             response.raise_for_status()
+        except httpx.TimeoutException as e:
+            logger.error(
+                f"测试策略组 {group_name} 超时: {e}. URL: {settings.delay_url_test}, 超时设置: {delay_timeout * 2} ms"
+            )
         except Exception as e:
             logger.exception(f"测试策略组 {group_name} 失败: {e}")
 
@@ -2177,7 +2181,7 @@ class ClashDelayChecker:
 
         # 使用进度显示执行所有任务
         for i in range(task_times):
-            await clash_api.test_group_delay(group_name, task_times)
+            await clash_api.test_group_delay(group_name)
             # 显示进度
             done = i + 1
             total = task_times
@@ -2193,3 +2197,7 @@ class ClashDelayChecker:
                 )
         except Exception as e:
             logger.exception(f"获取策略组 {group_name} 节点延迟失败: {e}")
+
+
+if __name__ == "__main__":
+    prepare_clash()
