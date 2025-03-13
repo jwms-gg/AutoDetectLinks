@@ -1,14 +1,14 @@
-# Update: 2025-03-13 14:40
-# Problem proxies, 8
+# Update: 2025-03-13 20:58
+# Problem proxies, 7
 proxies:
 - _extra:
-    error: 'time="2025-03-13T14:29:21.330891664+08:00" level=fatal msg="Parse config
-      error: proxy 525: key ''alterId'' missing"
+    error: 'time="2025-03-13T20:47:18.604741998+08:00" level=fatal msg="Parse config
+      error: proxy 569: key ''alterId'' missing"
 
       '
   cipher: auto
   ip-version: dual
-  name: '🇷🇺_RU_俄罗斯_1 #3'
+  name: '🇷🇺_RU_俄罗斯_1 #1'
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -18,13 +18,13 @@ proxies:
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
 - _extra:
-    error: 'time="2025-03-13T14:29:24.628854207+08:00" level=fatal msg="Parse config
-      error: proxy 525: key ''alterId'' missing"
+    error: 'time="2025-03-13T20:47:21.885377599+08:00" level=fatal msg="Parse config
+      error: proxy 569: key ''alterId'' missing"
 
       '
   cipher: auto
   ip-version: dual
-  name: '🇺🇸_US_美国->🇯🇵_JP_日本 #1'
+  name: 🇺🇸_US_美国->🇯🇵_JP_日本
   network: ws
   port: 2082
   server: 172.67.202.155
@@ -34,84 +34,12 @@ proxies:
   type: vmess
   uuid: 5ce824bc-d76b-4420-aef3-45a7bade5228
 - _extra:
-    error: 'time="2025-03-13T14:29:48.891984368+08:00" level=fatal msg="Parse config
-      error: proxy 374: key ''cipher'' missing"
-
-      '
-  alterId: 0
-  cipher: null
-  name: '🇺🇸 US 64 #1'
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  servername: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  uuid: 5b2ad717-20db-4e2e-bce7-c388e578ed9e
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
-- _extra:
-    error: 'time="2025-03-13T14:30:33.898228187+08:00" level=fatal msg="Parse config
-      error: proxy 264: invalid REALITY short ID"
+    error: 'time="2025-03-13T20:47:46.161140294+08:00" level=fatal msg="Parse config
+      error: proxy 445: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-    short-id: 7266e6
-  server: 103.140.136.99
-  servername: cdn.userway.org
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- _extra:
-    error: 'time="2025-03-13T14:30:37.112274308+08:00" level=fatal msg="Parse config
-      error: proxy 271: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
-      error: missing password"
-
-      '
-  cipher: 2022-blake3-aes-256-gcm
-  name: '@daredevill_404'
-  password: ''
-  port: '80'
-  server: 188.34.194.165
-  type: ss
-- _extra:
-    error: 'time="2025-03-13T14:30:40.330770696+08:00" level=fatal msg="Parse config
-      error: proxy 344: ss 157.241.54.228:443 cipher: chacha20-poly1305 initialize
-      error: unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: '@Hope_Net #2'
-  password: Bog0ELmMM9DSxDdQ
-  port: '443'
-  server: 157.241.54.228
-  type: ss
-- _extra:
-    error: 'time="2025-03-13T14:35:15.140712555+08:00" level=fatal msg="Parse config
-      error: proxy 538: ss 15.185.103.32:443 cipher: chacha20-poly1305 initialize
-      error: unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: 🔒 SS-TCP-NA 🇧🇭 BH-15.185.103.3...
-  password: Bog0ELmMM9DSxDdQ
-  port: '443'
-  server: 15.185.103.32
-  type: ss
-- _extra:
-    error: 'time="2025-03-13T14:39:49.405976779+08:00" level=fatal msg="Parse config
-      error: proxy 141: invalid REALITY short ID"
-
-      '
-  client-fingerprint: chrome
-  name: 'telegram #357'
+  name: 🇯🇵 JP 1
   network: tcp
   port: 443
   reality-opts:
@@ -122,3 +50,63 @@ proxies:
   tls: false
   type: vless
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  ws-opts:
+    path: '%2f'
+- _extra:
+    error: 'time="2025-03-13T20:47:49.454451329+08:00" level=fatal msg="Parse config
+      error: proxy 445: invalid REALITY short ID"
+
+      '
+  client-fingerprint: chrome
+  name: 🇯🇵 JP 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    short-id: 7266e6
+  server: 103.140.136.99
+  servername: cdn.userway.org
+  tls: false
+  type: vless
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  ws-opts:
+    path: '%2f'
+- _extra:
+    error: 'time="2025-03-13T20:47:52.806155430+08:00" level=fatal msg="Parse config
+      error: proxy 445: key ''cipher'' missing"
+
+      '
+  alterId: 0
+  cipher: null
+  name: 🇯🇵 JP 3
+  network: tcp
+  port: 1069
+  server: 152.69.197.60
+  servername: null
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- _extra:
+    error: 'time="2025-03-13T20:48:37.814205878+08:00" level=fatal msg="Parse config
+      error: proxy 322: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
+      error: missing password"
+
+      '
+  cipher: 2022-blake3-aes-256-gcm
+  name: '@daredevill_404'
+  password: ''
+  port: '80'
+  server: 188.34.194.165
+  type: ss
+- _extra:
+    error: 'time="2025-03-13T20:53:10.566299173+08:00" level=fatal msg="Parse config
+      error: proxy 598: ss 16.24.193.203:443 cipher: chacha20-poly1305 initialize
+      error: unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: 🔒 SS-TCP-NA 🇧🇭 BH-16.24.193.20...
+  password: Bog0ELmMM9DSxDdQ
+  port: '443'
+  server: 16.24.193.203
+  type: ss

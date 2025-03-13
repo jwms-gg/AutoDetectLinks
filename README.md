@@ -136,3 +136,6 @@ tun:
 tcp-concurrent: true
 unified-delay: true
 ```
+
+
+- <https://github.com/hagezi/dns-blocklists>

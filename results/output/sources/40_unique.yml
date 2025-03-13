@@ -1,5 +1,5 @@
-# Update: 2025-03-13 14:27
-# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 1039
+# Update: 2025-03-13 20:45
+# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 1025
 proxies:
 - alpn:
   - http/1.1
@@ -8,15 +8,6 @@ proxies:
   password: telegram-id-directvpn
   port: 22222
   server: 18.132.237.75
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 英国+伦敦Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.130.196.100
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -52,7 +43,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #6'
+  name: '美国 CloudFlare节点 #2'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -102,6 +93,25 @@ proxies:
     headers:
       Host: amd.al
     path: /XESALISTHEBEST?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 欧盟 V2CROSS.COM
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: '8080'
+  server: 45.87.175.178
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #4'
+  network: ws
+  port: '443'
+  server: 172.67.136.233
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
   name: 2|🇩🇪1 |  4.9MB/s
@@ -128,6 +138,18 @@ proxies:
     headers:
       Host: Freedomisnear.onetwothree123.ir
     path: /mehdi
+- cipher: chacha20-ietf-poly1305
+  name: '🇩🇪 _德国 #2'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: '8080'
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇩🇪 _德国 #7'
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: '8080'
+  server: 45.87.175.178
+  type: ss
 - alterId: 64
   cipher: auto
   name: 🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23...
@@ -166,20 +188,6 @@ proxies:
   tls: true
   type: vmess
   uuid: ef700133-ad31-48f7-f0d1-873e92f5fdd6
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇺🇸 US-207.90.237.96...
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4651cf71-e87e-41ef-8ed2-61a7f409e7d3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: 🔒 VM-WS-NA 🏴‍☠️ NA-104.21.8.93...
@@ -334,7 +342,7 @@ proxies:
   server: 160.79.104.131
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #11'
+- name: '🔒 #9'
   network: ws
   password: Aimer
   port: 2053
@@ -344,13 +352,13 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #12'
+- name: '🔒 #11'
   password: Aimer
   port: 8443
   server: 162.159.44.229
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #13'
+- name: '🔒 #12'
   network: ws
   password: 1593d329-8924-4be5-bc19-1d246039b6a7
   port: 443
@@ -361,7 +369,7 @@ proxies:
     headers:
       Host: se1.safecdn.site
     path: '%2FChannel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2'
-- name: '🔒 #15'
+- name: '🔒 #14'
   network: tcp
   password: Aimer
   port: 443
@@ -370,7 +378,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #17'
+  name: '🔒 #15'
   network: ws
   password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   port: 443
@@ -381,28 +389,28 @@ proxies:
     headers:
       Host: us7-02.890624.xyz
     path: /Zseq8mE8wMzbGFtV
-- name: '🔒 #18'
+- name: '🔒 #17'
   network: tcp
   password: Aimer
   port: 8443
   server: 135.84.74.27
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #19'
+- name: '🔒 #18'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 172.67.209.80
   sni: 403b3611-99Bc-43b7-88D7-26ED5d0825a9-3.pAgeS.Dev
   type: trojan
-- name: '🔒 #21'
+- name: '🔒 #20'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 45.80.110.224
   sni: bpb.my79801.com
   type: trojan
-- name: '🔒 #22'
+- name: '🔒 #21'
   network: tcp
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
@@ -410,34 +418,34 @@ proxies:
   skip-cert-verify: true
   sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
   type: trojan
-- name: '🔒 #23'
+- name: '🔒 #22'
   network: tcp
   password: Aimer
   port: 443
   server: 206.238.236.16
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #25'
+- name: '🔒 #23'
   network: tcp
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 82.192.82.226
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #26'
+- name: '🔒 #24'
   network: tcp
   password: blue2024
   port: 443
   server: 162.159.44.161
   sni: tc.promote.icu
   type: trojan
-- name: '🔒 #27'
+- name: '🔒 #25'
   password: Aimer
   port: 443
   server: 172.64.33.128
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #28'
+- name: '🔒 #26'
   network: ws
   password: Aimer
   port: 2096
@@ -447,14 +455,14 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #29'
+- name: '🔒 #27'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 185.107.56.195
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #30'
+- name: '🔒 #28'
   network: ws
   password: blue2024
   port: 443
@@ -465,49 +473,49 @@ proxies:
     headers:
       Host: tb.promote.icu
     path: /?ed
-- name: '🔒 #32'
+- name: '🔒 #30'
   network: tcp
   password: Aimer
   port: 2083
   server: 27.50.48.186
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #33'
+- name: '🔒 #31'
   network: tcp
   password: Aimer
   port: 2096
   server: 27.50.49.179
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #34'
+- name: '🔒 #32'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 172.67.2.238
   sni: 403B3611-99Bc-43b7-88D7-26Ed5D0825a9-3.PAGeS.dev
   type: trojan
-- name: '🔒 #35'
+- name: '🔒 #33'
   network: tcp
   password: :Z#%3cdIG'c*;*O}
   port: 443
   server: 172.66.44.173
   sni: JoinmAhDiSeRvER-csn.PaGeS.DEv
   type: trojan
-- name: '🔒 #36'
+- name: '🔒 #34'
   network: tcp
   password: Aimer
   port: 2083
   server: 108.165.152.93
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #37'
+- name: '🔒 #35'
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
   server: 172.232.38.127
   skip-cert-verify: false
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '🔒 #38'
+- name: '🔒 #36'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -518,7 +526,7 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: '🔒 #39'
+- name: '🔒 #37'
   network: ws
   password: a64f0cea-ca89-40e6-b316-b3badff1eb90
   port: 443
@@ -529,21 +537,21 @@ proxies:
     headers:
       Host: iSAA1.paGEs.DEV
     path: /
-- name: '🔒 #41'
+- name: '🔒 #38'
   network: tcp
   password: Aimer
   port: 443
   server: 216.24.57.207
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #42'
+- name: '🔒 #39'
   network: tcp
   password: Aimer
   port: 2096
   server: 104.25.254.197
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #44'
+- name: '🔒 #41'
   network: tcp
   password: Aimer
   port: 2087
@@ -554,21 +562,21 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #45'
+  name: '🔒 #42'
   network: tcp
   password: ac07ddf4-a3ad-4272-a9de-d1209914cc2b
   port: 443
   server: 134.209.78.237
   sni: quangtien.appsflyer.com
   type: trojan
-- name: '🔒 #46'
+- name: '🔒 #44'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 185.238.228.6
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
   type: trojan
-- name: '🔒 #47'
+- name: '🔒 #45'
   network: ws
   password: blue2024
   port: 443
@@ -578,7 +586,7 @@ proxies:
   ws-opts:
     headers:
       Host: ta.promote.icu
-- name: '🔒 #48'
+- name: '🔒 #46'
   network: ws
   password: Aimer
   port: 993
@@ -588,29 +596,29 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #49'
+- name: '🔒 #47'
   password: opentunnel.net-sdertyuijh
   port: 443
   server: 69.16.230.165
   skip-cert-verify: true
   sni: cat-1.opensvr.net
   type: trojan
-- name: '🔒 #50'
+- name: '🔒 #48'
   password: NISHIKUITAN111
   port: 443
   server: 141.101.122.171
   type: trojan
-- name: '🔒 #52'
+- name: '🔒 #50'
   password: NISHIKUITAN111
   port: 443
   server: 104.17.157.109
   type: trojan
-- name: '🔒 #53'
+- name: '🔒 #51'
   password: NISHIKUITAN111
   port: 443
   server: 162.159.16.224
   type: trojan
-- name: '🔒 #54'
+- name: '🔒 #52'
   network: ws
   password: Aimer
   port: 443
@@ -624,7 +632,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #55'
+  name: '🔒 #53'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -635,14 +643,14 @@ proxies:
     headers:
       Host: koma-yt.pages.dev
     path: '%2Ftro8sFW1S91B6sZrM1%3Fed%3D2560'
-- name: '🔒 #56'
+- name: '🔒 #54'
   network: tcp
   password: Aimer
   port: 8443
   server: 192.200.160.19
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #57'
+- name: '🔒 #55'
   network: ws
   password: bpb-trojan
   port: 443
@@ -652,48 +660,48 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: '🔒 #58'
+- name: '🔒 #56'
   network: tcp
   password: s42&umY(K5n*csP4
   port: 8443
   server: 104.21.96.1
   sni: JOInMAHDiseRVer-EEu.pAGEs.dEv
   type: trojan
-- name: '🔒 #59'
+- name: '🔒 #57'
   network: tcp
   password: Aimer
   port: 2087
   server: 161.145.150.26
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #60'
+- name: '🔒 #58'
   password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e
   port: 443
   server: 76.223.54.146
   skip-cert-verify: true
   sni: uk.stablize.top
   type: trojan
-- name: '🔒 #61'
+- name: '🔒 #59'
   network: tcp
   password: '3778399737045327872'
   port: 443
   server: 185.67.127.66
   sni: divine-slug.adder289.quest
   type: trojan
-- name: '🔒 #62'
+- name: '🔒 #60'
   network: tcp
   password: Aimer
   port: 2087
   server: 199.34.228.164
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #65'
+- name: '🔒 #61'
   password: Aimer
   port: 2087
   server: 206.238.236.90
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #66'
+- name: '🔒 #62'
   network: ws
   password: auto
   port: 443
@@ -704,20 +712,29 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
-- name: '🔒 #67'
+- name: '🔒 #65'
   network: tcp
   password: Aimer
   port: 2053
   server: 46.254.92.201
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #68'
+- name: '🔒 #66'
   password: Aimer
   port: 2096
   server: 108.165.152.252
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #70'
+- alpn:
+  - http/1.1
+  name: '🔒 #67'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.168.68.7
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '🔒 #68'
   network: ws
   password: auto
   port: 80
@@ -730,7 +747,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #71'
+  name: '🔒 #69'
   network: ws
   password: NcguCi3hdF
   port: 2087
@@ -741,14 +758,14 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #72'
+- name: '🔒 #70'
   network: tcp
   password: Aimer
   port: 2096
   server: 154.211.8.150
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #73'
+- name: '🔒 #71'
   network: ws
   password: trojan
   port: 2053
@@ -758,34 +775,34 @@ proxies:
   ws-opts:
     headers:
       Host: ana-service-anaservice--anaservice-antenircomorg.fmwlmluu.workers.dev
-- name: '🔒 #75'
+- name: '🔒 #73'
   network: tcp
   password: Aimer
   port: 443
   server: 162.159.44.127
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #76'
+- name: '🔒 #74'
   password: Aimer
   port: 2096
   server: 172.67.157.40
   sni: agepu.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #77'
+- name: '🔒 #75'
   network: tcp
   password: Aimer
   port: 2083
   server: 108.165.152.130
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #78'
+- name: '🔒 #76'
   network: tcp
   password: Aimer
   port: 2096
   server: 104.19.107.190
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #79'
+- name: '🔒 #77'
   network: ws
   password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
   port: 443
@@ -796,14 +813,14 @@ proxies:
     headers:
       Host: md1.safecdn.site
     path: '%2FTelegram%40FreeV2Alpha'
-- name: '🔒 #80'
+- name: '🔒 #78'
   network: tcp
   password: Aimer
   port: 443
   server: 103.116.7.230
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #81'
+- name: '🔒 #79'
   network: ws
   password: auto
   port: 443
@@ -814,46 +831,48 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
-- name: '🔒 #83'
+- alpn:
+  - http/1.1
+  name: '🔒 #80'
   network: ws
-  password: auto
+  password: 6d898085-bf6a-449b-9763-0073d4dc2ce0
   port: 443
-  server: 188.114.99.81
-  sni: mazq100za43.962dael.workers.dev
+  server: 104.21.96.1
+  sni: BOsToN01.818185.GGff.NET
   type: trojan
   ws-opts:
     headers:
-      Host: mazq100za43.962dael.workers.dev
-    path: '%2F'
-- name: '🔒 #84'
+      Host: boston01.818185.ggff.net
+    path: '%2FQ3cz2AWTPMCtDGV1L6R1Jz18eIUw'
+- name: '🔒 #82'
   password: Aimer
   port: 2087
   server: 206.238.237.86
   skip-cert-verify: true
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #85'
+- name: '🔒 #84'
   network: tcp
   password: Aimer
   port: 2053
   server: 45.153.7.216
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #86'
+- name: '🔒 #85'
   network: tcp
   password: '3770966768580042752'
   port: 443
   server: 89.39.70.165
   sni: warm-oryx.goat627.mom
   type: trojan
-- name: '🔒 #88'
+- name: '🔒 #87'
   network: tcp
   password: '3763495894587285504'
   port: 443
   server: 62.112.221.46
   sni: enabling-cat.goat627.mom
   type: trojan
-- name: '🔒 #89'
+- name: '🔒 #88'
   network: tcp
   password: Aimer
   port: 2053
@@ -862,7 +881,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #90'
+  name: '🔒 #89'
   network: ws
   password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
   port: 443
@@ -877,7 +896,7 @@ proxies:
   - h2
   - http/1.1
   - h3
-  name: '🔒 #91'
+  name: '🔒 #90'
   network: ws
   password: DHvwod7oq7
   port: 2083
@@ -888,31 +907,31 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2Fmehdi'
-- name: '🔒 #92'
+- name: '🔒 #91'
   password: 8800c518-e68a-4441-a45c-cd67855784c8
   port: 443
   server: 103.224.182.210
   sni: hk1.sanfen001.pics
   type: trojan
-- name: '🔒 #93'
+- name: '🔒 #92'
   password: Aimer
   port: 2096
   server: 108.165.152.29
   skip-cert-verify: true
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #94'
+- name: '🔒 #93'
   password: NISHIKUITAN111
   port: 443
   server: 104.16.218.64
   type: trojan
-- name: '🔒 #95'
+- name: '🔒 #94'
   password: Aimer
   port: 443
   server: 45.155.121.169
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #96'
+- name: '🔒 #95'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -921,28 +940,28 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #97'
+  name: '🔒 #96'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 34.246.106.86
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #98'
+- name: '🔒 #97'
   network: tcp
   password: Aimer
   port: 8443
   server: 104.129.166.131
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #99'
+- name: '🔒 #98'
   network: tcp
   password: Aimer
   port: 2096
   server: 104.19.103.190
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #100'
+- name: '🔒 #99'
   network: ws
   password: V+@iFj2PAdz.}_Hq
   port: 8443
@@ -952,20 +971,20 @@ proxies:
   ws-opts:
     headers:
       Host: joinmahdiserver-62e.pages.dev
-- name: '🔒 #101'
+- name: '🔒 #100'
   network: tcp
   password: Aimer
   port: 80
   server: 54.203.85.46
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #103'
+- name: '🔒 #102'
   password: Aimer
   port: 443
   server: 173.245.59.203
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #105'
+- name: '🔒 #103'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 69.162.95.3
@@ -976,7 +995,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #106'
+  name: '🔒 #105'
   network: httpupgrade
   password: TUFfeTYV56
   port: 2096
@@ -987,14 +1006,14 @@ proxies:
     headers:
       Host: mizban.ITN24.IR
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #108'
+- name: '🔒 #107'
   network: tcp
   password: wb6368
   port: 443
   server: 172.66.44.86
   sni: hsdgbuys.pages.dev
   type: trojan
-- name: '🔒 #109'
+- name: '🔒 #108'
   network: ws
   password: Aimer
   port: 443
@@ -1004,7 +1023,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #110'
+- name: '🔒 #109'
   network: ws
   password: bpb-trojan
   port: 2053
@@ -1014,21 +1033,21 @@ proxies:
   ws-opts:
     headers:
       Host: g1-21n.pages.dev
-- name: '🔒 #111'
+- name: '🔒 #110'
   network: tcp
   password: Aimer
   port: 587
   server: 154.9.241.61
   sni: agepu.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #112'
+- name: '🔒 #111'
   password: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
   port: 20230
   server: 35.88.227.10
   skip-cert-verify: true
   sni: us003.421421.xyz
   type: trojan
-- name: '🔒 #113'
+- name: '🔒 #112'
   network: ws
   password: blue2024
   port: 443
@@ -1038,13 +1057,6 @@ proxies:
   ws-opts:
     headers:
       Host: ta.promote.icu
-- name: '🔒 #114'
-  network: tcp
-  password: bcf96c9b-30bf-4ab0-bc28-6076218f2a14
-  port: 443
-  server: 103.224.182.249
-  sni: z9.gozargah.one
-  type: trojan
 - name: '🔒 #115'
   password: Aimer
   port: 2087
@@ -1215,6 +1227,15 @@ proxies:
   port: 2083
   server: 27.50.49.231
   sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🔒 #138'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.235.172
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: '🔒 #139'
   network: ws
@@ -1519,7 +1540,7 @@ proxies:
   server: 199.34.228.50
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #185'
+- name: '🔒 #184'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -1530,13 +1551,13 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: //
-- name: '🔒 #186'
+- name: '🔒 #185'
   password: Aimer
   port: 587
   server: 91.217.139.169
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #188'
+- name: '🔒 #186'
   network: ws
   password: Aimer
   port: 443
@@ -1546,14 +1567,14 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #190'
+- name: '🔒 #189'
   network: tcp
   password: Aimer
   port: 443
   server: 5.182.85.28
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #191'
+- name: '🔒 #190'
   network: ws
   password: Aimer
   port: 443
@@ -1564,7 +1585,7 @@ proxies:
     headers:
       Host: ngepo.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #192'
+- name: '🔒 #191'
   network: tcp
   password: Aimer
   port: 2083
@@ -1575,7 +1596,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #194'
+  name: '🔒 #193'
   network: ws
   password: edZItoAdBZ
   port: 443
@@ -1584,13 +1605,13 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2F14755%2F%3Fed%3D2048'
-- name: '🔒 #195'
+- name: '🔒 #194'
   password: 95b
   port: 443
   server: 154.211.8.90
   sni: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
   type: trojan
-- name: '🔒 #196'
+- name: '🔒 #195'
   network: httpupgrade
   password: TUFfeTYV56
   port: 2096
@@ -1600,7 +1621,7 @@ proxies:
   ws-opts:
     headers:
       Host: esna.twn24.ir
-- name: '🔒 #197'
+- name: '🔒 #196'
   network: ws
   password: Aimer
   port: 2083
@@ -1610,7 +1631,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #198'
+- name: '🔒 #197'
   network: ws
   password: SSorg
   port: 443
@@ -1621,48 +1642,48 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.mehttp/1.1
     path: /?ed
-- name: '🔒 #199'
+- name: '🔒 #198'
   network: ws
   password: trojan
   port: 2053
   server: 104.18.5.250
   sni: ana-service-anaservice--anaservice-antenircomorg.fmwlmluu.workers.dev
   type: trojan
-- name: '🔒 #200'
+- name: '🔒 #199'
   network: tcp
   password: Aimer
   port: 443
   server: 107.175.37.179
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #201'
+- name: '🔒 #200'
   network: tcp
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 74.63.241.28
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #202'
+- name: '🔒 #201'
   password: Aimer
   port: 2083
   server: 27.50.48.189
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #203'
+- name: '🔒 #202'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 162.210.196.167
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #204'
+- name: '🔒 #203'
   network: tcp
   password: Aimer
   port: 443
   server: 108.162.193.201
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #206'
+- name: '🔒 #205'
   network: ws
   password: Aimer
   port: 2053
@@ -1672,41 +1693,41 @@ proxies:
   ws-opts:
     headers:
       Host: agept.ambercc.filegear-sg.me
-- name: '🔒 #207'
+- name: '🔒 #206'
   network: tcp
   password: Aimer
   port: 8443
   server: 188.164.159.185
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #208'
+- name: '🔒 #207'
   network: tcp
   password: blue2024
   port: 443
   server: 104.129.167.128
   sni: ta.promote.icu
   type: trojan
-- name: '🔒 #209'
+- name: '🔒 #208'
   network: tcp
   password: blue2024
   port: 443
   server: 104.18.153.27
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #210'
+- name: '🔒 #209'
   password: Aimer
   port: 443
   server: 206.238.236.134
   sni: ameqo.esslh.filegear-sg.me
   type: trojan
-- name: '🔒 #212'
+- name: '🔒 #211'
   network: tcp
   password: Aimer
   port: 8443
   server: 27.50.48.239
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #213'
+- name: '🔒 #212'
   network: ws
   password: bpb-trojan
   port: 443
@@ -1716,7 +1737,7 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: '🔒 #214'
+- name: '🔒 #213'
   network: ws
   password: Aimer
   port: 2087
@@ -1726,13 +1747,13 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #215'
+- name: '🔒 #214'
   password: Aimer
   port: 443
   server: 154.197.64.233
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #216'
+- name: '🔒 #215'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -1773,6 +1794,15 @@ proxies:
   port: 2096
   server: 167.68.4.223
   sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🔒 #221'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.49.27.216
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: '🔒 #222'
   network: ws
@@ -2324,6 +2354,15 @@ proxies:
     headers:
       Host: jobscareertoday.com
     path: '%2F6b777a91'
+- alpn:
+  - http/1.1
+  name: '🔒 #291'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.215.195.231
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alpn:
   - h2
   - http/1.1
@@ -2886,60 +2925,39 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #369'
-  network: ws
-  password: auto
-  port: 443
-  server: 104.21.35.43
-  sni: esetsecuritylicense3.wawafec355.workers.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense3.wawafec355.workers.dev
-    path: /
-- name: '🔒 #370'
+- name: '🔒 #371'
   password: Aimer
   port: 2096
   server: 172.64.33.73
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #371'
+- name: '🔒 #372'
   password: Aimer
   port: 443
   server: 108.162.195.168
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #372'
+- name: '🔒 #374'
   password: Aimer
   port: 2083
   server: 206.238.237.146
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #373'
-  network: ws
-  password: trojan
-  port: 443
-  server: 104.18.3.150
-  sni: main.xicun.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: main.xicun.us.kg
-- name: '🔒 #374'
+- name: '🔒 #376'
   password: Aimer
   port: 443
   server: 5.182.84.120
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #375'
+- name: '🔒 #377'
   network: tcp
   password: Aimer
   port: 2053
   server: 162.159.44.231
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #376'
+- name: '🔒 #378'
   network: ws
   password: 2GR07uUhjA
   port: 2083
@@ -2953,7 +2971,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #377'
+  name: '🔒 #379'
   network: ws
   password: s42&umY(K5n*csP4
   port: 8443
@@ -2964,7 +2982,7 @@ proxies:
     headers:
       Host: joinmahdiserver-eeu.pages.dev
     path: '%2FtrOagy9SuM2cDpqUqO%3Fed%3D2560'
-- name: '🔒 #379'
+- name: '🔒 #382'
   network: ws
   password: blue2024
   port: 443
@@ -2974,14 +2992,14 @@ proxies:
   ws-opts:
     headers:
       Host: ta.promote.icu
-- name: '🔒 #380'
+- name: '🔒 #383'
   network: tcp
   password: Aimer
   port: 2053
   server: 188.164.159.25
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #382'
+- name: '🔒 #384'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -2992,40 +3010,40 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: '🔒 #383'
+- name: '🔒 #386'
   network: tcp
   password: Aimer
   port: 2096
   server: 199.34.228.143
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #384'
+- name: '🔒 #387'
   password: Aimer
   port: 587
   server: 129.146.226.222
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #386'
+- name: '🔒 #388'
   network: tcp
   password: Aimer
   port: 8443
   server: 154.197.64.248
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #387'
+- name: '🔒 #389'
   password: Aimer
   port: 2083
   server: 104.19.60.193
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #388'
+- name: '🔒 #390'
   network: tcp
   password: Aimer
   port: 2083
   server: 130.250.137.63
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #389'
+- name: '🔒 #391'
   network: ws
   password: Aimer
   port: 2083
@@ -3035,21 +3053,21 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #390'
+- name: '🔒 #392'
   network: tcp
   password: Aimer
   port: 2083
   server: 173.245.59.202
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #391'
+- name: '🔒 #393'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 198.41.211.21
   sni: bpb.my79801.com
   type: trojan
-- name: '🔒 #392'
+- name: '🔒 #394'
   network: ws
   password: '123456'
   port: 8443
@@ -3060,26 +3078,26 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: '%2FAz1.vpn.33.TOP%2F%3Fed%3D2560'
-- name: '🔒 #393'
+- name: '🔒 #395'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 192.157.56.142
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #394'
+- name: '🔒 #396'
   network: tcp
   password: Aimer
   port: 587
   server: 154.17.227.138
   sni: agepu.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #395'
+- name: '🔒 #397'
   password: NISHIKUITAN111
   port: 443
   server: 104.24.140.72
   type: trojan
-- name: '🔒 #396'
+- name: '🔒 #399'
   network: ws
   password: Aimer
   port: 2083
@@ -3089,7 +3107,7 @@ proxies:
   ws-opts:
     headers:
       Host: agepb.ambercc.filegear-sg.me
-- name: '🔒 #397'
+- name: '🔒 #400'
   network: ws
   password: Aimer
   port: 2053
@@ -3099,7 +3117,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #399'
+- name: '🔒 #402'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -3110,7 +3128,7 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: '🔒 #400'
+- name: '🔒 #403'
   network: ws
   password: Aimer
   port: 2096
@@ -3120,21 +3138,21 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #402'
+- name: '🔒 #404'
   network: tcp
   password: Aimer
   port: 443
   server: 108.162.195.82
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #403'
+- name: '🔒 #405'
   network: tcp
   password: Aimer
   port: 443
   server: 46.254.92.191
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #404'
+- name: '🔒 #406'
   network: tcp
   password: Aimer
   port: 8443
@@ -3143,14 +3161,14 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #405'
+  name: '🔒 #407'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 34.232.236.120
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #406'
+- name: '🔒 #408'
   network: ws
   password: 2GR07uUhjA
   port: 2083
@@ -3161,7 +3179,7 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2Fmehdi'
-- name: '🔒 #407'
+- name: '🔒 #409'
   network: ws
   password: blue2024
   port: 443
@@ -3175,7 +3193,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #408'
+  name: '🔒 #410'
   network: httpupgrade
   password: TUFfeTYV56
   port: 2096
@@ -3186,7 +3204,7 @@ proxies:
     headers:
       Host: mizban.ITN24.IR
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #409'
+- name: '🔒 #411'
   network: ws
   password: DHvwod7oq7
   port: 2083
@@ -3197,14 +3215,14 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: /mehdi
-- name: '🔒 #410'
+- name: '🔒 #412'
   network: tcp
   password: Aimer
   port: 2096
   server: 108.165.152.55
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #411'
+- name: '🔒 #413'
   network: tcp
   password: Aimer
   port: 2053
@@ -3215,7 +3233,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #413'
+  name: '🔒 #415'
   network: httpupgrade
   password: TUFfeTYV56
   port: 2096
@@ -3226,14 +3244,14 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: /?ed%3D2048
-- name: '🔒 #414'
+- name: '🔒 #416'
   network: tcp
   password: blue2024
   port: 443
   server: 104.18.121.158
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #415'
+- name: '🔒 #417'
   network: tcp
   password: Aimer
   port: 443
@@ -3243,7 +3261,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #416'
+  name: '🔒 #418'
   network: ws
   password: NcguCi3hdF
   port: 2087
@@ -3254,14 +3272,14 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #417'
+- name: '🔒 #419'
   network: tcp
   password: Aimer
   port: 8443
   server: 104.20.30.149
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #418'
+- name: '🔒 #420'
   network: ws
   password: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
   port: 443
@@ -3272,7 +3290,7 @@ proxies:
     headers:
       Host: vbbb.ylks2024.us.kg
     path: /youlingkaishi
-- name: '🔒 #419'
+- name: '🔒 #421'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -3283,14 +3301,14 @@ proxies:
     headers:
       Host: zb.ylks.xyz
     path: /
-- name: '🔒 #420'
+- name: '🔒 #422'
   network: tcp
   password: Aimer
   port: 2083
   server: 172.67.65.113
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #421'
+- name: '🔒 #423'
   network: tcp
   password: Aimer
   port: 2083
@@ -3299,7 +3317,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #422'
+  name: '🔒 #424'
   network: ws
   password: Aimer
   port: 2053
@@ -3310,7 +3328,7 @@ proxies:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #423'
+- name: '🔒 #425'
   network: ws
   password: qCfu8t$s{2m;sTxm
   port: 2053
@@ -3320,12 +3338,12 @@ proxies:
   ws-opts:
     headers:
       Host: joinmahdiserver-c1c.pages.dev
-- name: '🔒 #424'
+- name: '🔒 #426'
   password: NISHIKUITAN111
   port: 443
   server: 173.245.59.91
   type: trojan
-- name: '🔒 #425'
+- name: '🔒 #427'
   network: tcp
   password: Aimer
   port: 8443
@@ -3335,7 +3353,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #426'
+  name: '🔒 #428'
   network: ws
   password: 0q'76Evm32qz@Q'(
   port: 2087
@@ -3346,7 +3364,7 @@ proxies:
     headers:
       Host: joinmahdiserver-11r.pages.dev
     path: '%2FtrlEKJDs7HkPpxs8rk%3Fed%3D2560'
-- name: '🔒 #427'
+- name: '🔒 #429'
   password: Aimer
   port: 8443
   server: 199.34.228.178
@@ -3355,7 +3373,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #428'
+  name: '🔒 #430'
   network: ws
   password: s42&umY(K5n*csP4
   port: 8443
@@ -3366,7 +3384,7 @@ proxies:
     headers:
       Host: joinmahdiserver-eeu.pages.dev
     path: '%2FtrOagy9SuM2cDpqUqO%3Fed%3D2560'
-- name: '🔒 #429'
+- name: '🔒 #431'
   network: ws
   password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
   port: 443
@@ -3377,7 +3395,7 @@ proxies:
     headers:
       Host: md1.safecdn.site
     path: '%2FChannel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2'
-- name: '🔒 #430'
+- name: '🔒 #432'
   network: ws
   password: Aimer
   port: 443
@@ -3387,12 +3405,12 @@ proxies:
   ws-opts:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
-- name: '🔒 #431'
+- name: '🔒 #433'
   password: NISHIKUITAN111
   port: 443
   server: 172.67.49.68
   type: trojan
-- name: '🔒 #432'
+- name: '🔒 #434'
   network: ws
   password: f8bb4ae1-2358-4a76-ab75-2a6bc94272d6
   port: 443
@@ -3402,7 +3420,7 @@ proxies:
   ws-opts:
     headers:
       Host: hgc6rct87gy.com
-- name: '🔒 #433'
+- name: '🔒 #435'
   network: ws
   password: Aimer
   port: 2087
@@ -3412,20 +3430,20 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #435'
+- name: '🔒 #437'
   password: blue2024
   port: 443
   server: 104.17.246.107
   sni: ha.lii2010.us.kg
   type: trojan
-- name: '🔒 #436'
+- name: '🔒 #438'
   password: Aimer
   port: 443
   server: 162.159.44.236
   skip-cert-verify: false
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #437'
+- name: '🔒 #439'
   network: ws
   password: auto
   port: 443
@@ -3436,7 +3454,7 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #438'
+- name: '🔒 #441'
   password: Aimer
   port: 443
   server: 103.116.7.235
@@ -3445,7 +3463,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #439'
+  name: '🔒 #442'
   network: ws
   password: Mikahyh@l4fg
   port: 443
@@ -3456,14 +3474,14 @@ proxies:
     headers:
       Host: 1da8c916-round-moon-05e0.soren-cybgu.workers.dev
     path: '%2FtrxWkEaaMxaH1BnOMa%3Fed%3D2560'
-- name: '🔒 #441'
+- name: '🔒 #443'
   network: tcp
   password: Aimer
   port: 443
   server: 172.67.77.127
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #442'
+- name: '🔒 #444'
   network: ws
   password: NISHIKUITAN222
   port: 443
@@ -3474,39 +3492,28 @@ proxies:
     headers:
       Host: im.ylks.xyz
     path: /
-- name: '🔒 #443'
+- name: '🔒 #445'
   network: tcp
   password: SSorg
   port: 2096
   server: 104.19.60.104
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
-- name: '🔒 #444'
+- name: '🔒 #447'
   network: tcp
   password: Aimer
   port: 35333
   server: 38.207.129.34
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #445'
+- name: '🔒 #448'
   network: tcp
   password: Aimer
   port: 2083
   server: 103.116.7.133
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #446'
-  network: ws
-  password: trojan
-  port: 443
-  server: 104.18.2.150
-  sni: main.xicun.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: main.xicun.us.kg
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 #447'
+- name: '🔒 #450'
   network: ws
   password: ouo
   port: 14491
@@ -3516,7 +3523,7 @@ proxies:
   ws-opts:
     headers:
       Host: tr.koiok.us.kg
-- name: '🔒 #448'
+- name: '🔒 #451'
   network: tcp
   password: Aimer
   port: 443
@@ -3526,7 +3533,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #451'
+  name: '🔒 #453'
   network: ws
   password: NcguCi3hdF
   port: 2087
@@ -3537,14 +3544,14 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #452'
+- name: '🔒 #455'
   password: Aimer
   port: 443
   server: 162.159.44.168
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #453'
+- name: '🔒 #456'
   network: ws
   password: Aimer
   port: 8443
@@ -3554,7 +3561,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #455'
+- name: '🔒 #457'
   network: ws
   password: 2GR07uUhjA
   port: 2083
@@ -3565,7 +3572,7 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2Fmehdi'
-- name: '🔒 #456'
+- name: '🔒 #458'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -3575,7 +3582,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #457'
+  name: '🔒 #459'
   network: ws
   password: NcguCi3hdF
   port: 2087
@@ -3586,7 +3593,7 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #458'
+- name: '🔒 #460'
   network: ws
   password: blue2024
   port: 443
@@ -3599,7 +3606,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #459'
+  name: '🔒 #461'
   network: ws
   password: Ys.c7?D9qmBLo^Z]
   port: 2053
@@ -3610,20 +3617,20 @@ proxies:
     headers:
       Host: joinmahdiserver-333.pages.dev
     path: '%2FtrIFLHqMRiIx9In1rG%3Fed%3D2560'
-- name: '🔒 #460'
+- name: '🔒 #462'
   password: blue2024
   port: 443
   server: 104.16.38.173
   sni: hb.lii2010.us.kg
   type: trojan
-- name: '🔒 #461'
+- name: '🔒 #463'
   network: tcp
   password: Aimer
   port: 443
   server: 172.64.33.144
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #462'
+- name: '🔒 #464'
   network: ws
   password: Aimer
   port: 2083
@@ -3633,7 +3640,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #463'
+- name: '🔒 #465'
   network: ws
   password: 71409d3e488548e8bb076d229778f008
   port: 443
@@ -3644,14 +3651,14 @@ proxies:
     headers:
       Host: bangladeshipatri.com
     path: /6b777a91
-- name: '🔒 #464'
+- name: '🔒 #466'
   network: tcp
   password: Aimer
   port: 2053
   server: 188.164.159.174
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #465'
+- name: '🔒 #467'
   network: ws
   password: blue2024
   port: 443
@@ -3662,42 +3669,42 @@ proxies:
     headers:
       Host: tc.promote.icu
     path: /?ed
-- name: '🔒 #466'
+- name: '🔒 #468'
   network: tcp
   password: Aimer
   port: 443
   server: 108.162.193.144
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #467'
+- name: '🔒 #469'
   network: tcp
   password: Aimer
   port: 2096
   server: 188.164.159.246
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #468'
+- name: '🔒 #470'
   network: tcp
   password: blue2024
   port: 443
   server: 172.64.146.66
   sni: ta.promote.icu
   type: trojan
-- name: '🔒 #469'
+- name: '🔒 #471'
   network: tcp
   password: blue2024
   port: 443
   server: 172.67.135.57
   sni: ta.promote.icu
   type: trojan
-- name: '🔒 #470'
+- name: '🔒 #472'
   network: tcp
   password: Aimer
   port: 8080
   server: 23.94.136.126
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #471'
+- name: '🔒 #473'
   network: ws
   password: 98f0c223-cb75-4faa-859e-47110b1f052b
   port: 2096
@@ -3710,7 +3717,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #472'
+  name: '🔒 #474'
   network: ws
   password: V+@iFj2PAdz.}_Hq
   port: 8443
@@ -3721,7 +3728,7 @@ proxies:
     headers:
       Host: joinmahdiserver-62e.pages.dev
     path: '%2FtrKKbFfqnLnKjEyatm%3Fed%3D2560'
-- name: '🔒 #473'
+- name: '🔒 #475'
   network: ws
   password: Aimer
   port: 2087
@@ -3731,7 +3738,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #474'
+- name: '🔒 #476'
   network: ws
   password: Aimer
   port: 443
@@ -3741,14 +3748,14 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #475'
+- name: '🔒 #477'
   network: ws
   password: QmxV21qnHf
   port: 443
   server: 104.21.71.8
   sni: tabnak.ITN24.IR
   type: trojan
-- name: '🔒 #476'
+- name: '🔒 #478'
   network: ws
   password: 6c0ed3fb-f0b0-5b53-a762-f8f8d832bdba
   port: 2083
@@ -3758,7 +3765,7 @@ proxies:
   ws-opts:
     headers:
       Host: vfarid.xcdi.wOrKERS.DEV
-- name: '🔒 #477'
+- name: '🔒 #479'
   network: tcp
   password: Aimer
   port: 8443
@@ -3767,7 +3774,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #478'
+  name: '🔒 #480'
   network: ws
   password: Aimer
   port: 2083
@@ -3780,7 +3787,7 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: '🔒 #479'
+  name: '🔒 #481'
   network: ws
   password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   port: 443
@@ -3791,7 +3798,7 @@ proxies:
     headers:
       Host: us7-03.890606.xyz
     path: /Zseq8mE8wMzbGFtV
-- name: '🔒 #480'
+- name: '🔒 #482'
   password: Aimer
   port: 2053
   server: 108.165.152.67
@@ -3800,7 +3807,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #481'
+  name: '🔒 #483'
   network: ws
   password: e53ecb38-1974-4cca-b640-039e1f310710
   port: 443
@@ -3811,7 +3818,20 @@ proxies:
     headers:
       Host: app.soft10.ir
     path: '%2FrIQYIUFzZ8PfAZpXO7Ci'
-- name: '🔒 #483'
+- alpn:
+  - http/1.1
+  name: '🔒 #484'
+  network: ws
+  password: 6d898085-bf6a-449b-9763-0073d4dc2ce0
+  port: 443
+  server: 104.21.16.1
+  sni: BOsToN01.818185.GGff.NET
+  type: trojan
+  ws-opts:
+    headers:
+      Host: boston01.818185.ggff.net
+    path: '%2FQ3cz2AWTPMCtDGV1L6R1Jz18eIUw'
+- name: '🔒 #485'
   network: ws
   password: qCfu8t$s{2m;sTxm
   port: 2053
@@ -3821,14 +3841,14 @@ proxies:
   ws-opts:
     headers:
       Host: joinmahdiserver-c1c.pages.dev
-- name: '🔒 #484'
+- name: '🔒 #486'
   network: tcp
   password: Aimer
   port: 443
   server: 172.64.35.168
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #485'
+- name: '🔒 #487'
   network: ws
   password: ba4e0314-c815-4711-81ac-4d37f0fb59fc
   port: 443
@@ -3839,19 +3859,19 @@ proxies:
     headers:
       Host: se1.safecdn.site
     path: '%2Fed%3A2044Telegram%3A%40AB_841-%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D--%5B%40BugFreeNet%5D-'
-- name: '🔒 #486'
+- name: '🔒 #488'
   network: tcp
   password: SSorg
   port: 2087
   server: 172.67.156.115
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
-- name: '🔒 #487'
+- name: '🔒 #489'
   password: NISHIKUITAN111
   port: 443
   server: 190.93.247.175
   type: trojan
-- name: '🔒 #488'
+- name: '🔒 #490'
   network: tcp
   password: Aimer
   port: 2083
@@ -3862,7 +3882,7 @@ proxies:
   - h2
   - http/1.1
   - h3
-  name: '🔒 #489'
+  name: '🔒 #491'
   network: ws
   password: DHvwod7oq7
   port: 2083
@@ -3873,20 +3893,20 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2Fmehdi'
-- name: '🔒 #490'
+- name: '🔒 #492'
   password: Aimer
   port: 443
   server: 108.165.152.113
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #491'
+- name: '🔒 #493'
   network: tcp
   password: Aimer
   port: 2083
   server: 154.218.15.250
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #492'
+- name: '🔒 #494'
   password: NISHIKUITAN111
   port: 443
   server: 104.20.65.198
@@ -3894,7 +3914,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #493'
+  name: '🔒 #495'
   network: ws
   password: Mikahyh@l4fg
   port: 443
@@ -3905,7 +3925,7 @@ proxies:
     headers:
       Host: 1da8c916-round-moon-05e0.soren-cybgu.workers.dev
     path: '%2FtrRcYvbGfmPV0XjXHV%3Fed%3D2560'
-- name: '🔒 #494'
+- name: '🔒 #496'
   network: ws
   password: Aimer
   port: 2096
@@ -3915,7 +3935,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #495'
+- name: '🔒 #497'
   network: ws
   password: 4785f3ca-8fa3-4717-8c81-9d19087c73a3
   port: 443
@@ -3925,14 +3945,14 @@ proxies:
   ws-opts:
     headers:
       Host: pardazeshvpn-tg104.pages.dev
-- name: '🔒 #496'
+- name: '🔒 #498'
   network: tcp
   password: Aimer
   port: 8443
   server: 192.200.160.109
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #497'
+- name: '🔒 #499'
   network: tcp
   password: Aimer
   port: 2053
@@ -3941,7 +3961,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #498'
+  name: '🔒 #500'
   network: ws
   password: Aimer
   port: 2087
@@ -3952,14 +3972,14 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #499'
+- name: '🔒 #501'
   password: Aimer
   port: 2087
   server: 108.165.152.59
   skip-cert-verify: true
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #500'
+- name: '🔒 #502'
   network: tcp
   password: Aimer
   port: 443
@@ -3970,7 +3990,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #501'
+  name: '🔒 #503'
   network: httpupgrade
   password: V8Ggxghv8Z
   port: 2096
@@ -3981,7 +4001,7 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #502'
+- name: '🔒 #504'
   network: tcp
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
@@ -3989,7 +4009,7 @@ proxies:
   skip-cert-verify: true
   sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
   type: trojan
-- name: '🔒 #503'
+- name: '🔒 #505'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -4000,27 +4020,27 @@ proxies:
     headers:
       Host: zb.ylks.xyz
     path: /
-- name: '🔒 #504'
+- name: '🔒 #506'
   password: blue2024
   port: 443
   server: 190.93.244.198
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #505'
+- name: '🔒 #507'
   network: tcp
   password: Aimer
   port: 8443
   server: 167.68.4.131
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #506'
+- name: '🔒 #508'
   network: tcp
   password: Aimer
   port: 2096
   server: 172.64.34.52
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #507'
+- name: '🔒 #509'
   network: ws
   password: Aimer
   port: 8443
@@ -4030,31 +4050,20 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #508'
+- name: '🔒 #511'
   network: tcp
   password: Aimer
   port: 2053
   server: 108.165.152.241
   sni: acepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #509'
+- name: '🔒 #512'
   password: Aimer
   port: 2087
   server: 104.196.250.34
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #510'
-  network: ws
-  password: auto
-  port: 443
-  server: 104.21.48.61
-  sni: nameless-term-9c25.vpnconnect202020.workers.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nameless-term-9c25.vpnconnect202020.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 #511'
+- name: '🔒 #514'
   network: ws
   password: Aimer
   port: 2096
@@ -4068,7 +4077,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: '🔒 #512'
+  name: '🔒 #516'
   network: ws
   password: NcguCi3hdF
   port: 2087
@@ -4079,14 +4088,14 @@ proxies:
     headers:
       Host: tasnim.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #513'
+- name: '🔒 #517'
   network: tcp
   password: Aimer
   port: 8443
   server: 172.66.206.205
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #514'
+- name: '🔒 #518'
   network: ws
   password: Aimer
   port: 8443
@@ -4096,19 +4105,19 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #516'
+- name: '🔒 #519'
   network: tcp
   password: blue2024
   port: 443
   server: 104.17.40.244
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #517'
+- name: '🔒 #520'
   password: NISHIKUITAN111
   port: 443
   server: 45.131.7.206
   type: trojan
-- name: '🔒 #518'
+- name: '🔒 #521'
   network: ws
   password: WOeXShhJpL
   port: 443
@@ -4119,7 +4128,7 @@ proxies:
     headers:
       Host: 10jzus.zdzdzd.xyz
     path: /juzigongyi
-- name: '🔒 #519'
+- name: '🔒 #522'
   password: SSorg
   port: 8443
   server: 199.34.228.71
@@ -4127,7 +4136,7 @@ proxies:
   type: trojan
 - alpn:
   - h3
-  name: '🔒 #520'
+  name: '🔒 #523'
   network: ws
   password: bpb-trojan
   port: 443
@@ -4138,7 +4147,7 @@ proxies:
     headers:
       Host: qq.vvii.us.kg
     path: '%2Ftr%3Fed%3D2560'
-- name: '🔒 #521'
+- name: '🔒 #524'
   network: ws
   password: Aimer
   port: 8443
@@ -4148,28 +4157,28 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #522'
+- name: '🔒 #525'
   network: tcp
   password: Aimer
   port: 8443
   server: 176.124.223.50
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #523'
+- name: '🔒 #526'
   network: tcp
   password: '3763495982449565696'
   port: 443
   server: 95.85.93.172
   sni: faithful-goshawk.goat627.mom
   type: trojan
-- name: '🔒 #524'
+- name: '🔒 #527'
   network: tcp
   password: Aimer
   port: 8443
   server: 92.243.74.3
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #525'
+- name: '🔒 #528'
   network: ws
   password: 0q'76Evm32qz@Q'(
   port: 2087
@@ -4179,27 +4188,27 @@ proxies:
   ws-opts:
     headers:
       Host: joinmahdiserver-11r.pages.dev
-- name: '🔒 #526'
+- name: '🔒 #529'
   password: Aimer
   port: 2083
   server: 206.238.236.198
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #527'
+- name: '🔒 #530'
   network: tcp
   password: Aimer
   port: 443
   server: 108.162.193.128
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #528'
+- name: '🔒 #531'
   network: tcp
   password: Aimer
   port: 2096
   server: 213.109.205.55
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #529'
+- name: '🔒 #532'
   network: ws
   password: Aimer
   port: 2083
@@ -4209,7 +4218,7 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #530'
+- name: '🔒 #534'
   network: ws
   password: auto
   port: 443
@@ -4222,7 +4231,7 @@ proxies:
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: '🔒 #531'
+  name: '🔒 #535'
   network: ws
   password: Aimer
   port: 2096
@@ -4233,14 +4242,14 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #532'
+- name: '🔒 #536'
   network: tcp
   password: Aimer
   port: 443
   server: 35.81.207.167
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #535'
+- name: '🔒 #539'
   password: Aimer
   port: 443
   server: 172.64.35.236
@@ -4249,7 +4258,7 @@ proxies:
   type: trojan
 - alpn:
   - h2
-  name: '🔒 #536'
+  name: '🔒 #540'
   network: ws
   password: 5f19c5b8-086b-4f19-ba1a-1c0aa164bd0f
   port: 443
@@ -4260,51 +4269,40 @@ proxies:
     headers:
       Host: ccs.chicago.huangshang.ddns-ip.net
     path: '%2FSocbrB0OkNylKMyqwWrZZuCPm'
-- name: '🔒 #537'
-  network: ws
-  password: rXzh;?nW1GGKB(K8
-  port: 443
-  server: 104.21.18.192
-  sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: saikoxpubgm.zhkingkurd13.workers.dev
-    path: /tr4BCdusB84159lWnu
-- name: '🔒 #538'
+- name: '🔒 #542'
   network: tcp
   password: blue2024
   port: 443
   server: 172.67.142.60
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #539'
+- name: '🔒 #543'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 198.202.211.146
   sni: bpb.my79801.com
   type: trojan
-- name: '🔒 #540'
+- name: '🔒 #544'
   network: tcp
   password: auto
   port: 443
   server: 162.159.44.148
   sni: trojanfree-76s.pages.dev
   type: trojan
-- name: '🔒 #541'
+- name: '🔒 #545'
   password: Aimer
   port: 2096
   server: 172.67.68.56
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #542'
+- name: '🔒 #546'
   password: Aimer
   port: 2083
   server: 162.159.38.103
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #543'
+- name: '🔒 #547'
   network: ws
   password: s42&umY(K5n*csP4
   port: 8443
@@ -4314,7 +4312,7 @@ proxies:
   ws-opts:
     headers:
       Host: JOInMAHDiseRVer-EEu.pAGEs.dEv
-- name: '🔒 #544'
+- name: '🔒 #548'
   network: ws
   password: Aimer
   port: 2083
@@ -4324,7 +4322,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #545'
+- name: '🔒 #549'
   network: ws
   password: '123456'
   port: 8443
@@ -4335,21 +4333,21 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: '%2FAz1.vpn.33.TOP%2F%3Fed%3D2560'
-- name: '🔒 #546'
+- name: '🔒 #550'
   network: tcp
   password: Aimer
   port: 2053
   server: 27.50.49.37
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #548'
+- name: '🔒 #552'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 172.66.44.203
   sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
   type: trojan
-- name: '🔒 #549'
+- name: '🔒 #553'
   network: ws
   password: e35026da-e985-49ca-b43b-276062a535a6
   port: 443
@@ -4360,7 +4358,7 @@ proxies:
     headers:
       Host: notdirect.howhealthyistoomajreally.homes
     path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: '🔒 #550'
+- name: '🔒 #554'
   network: httpupgrade
   password: TUFfeTYV56
   port: 2096
@@ -4370,14 +4368,14 @@ proxies:
   ws-opts:
     headers:
       Host: esna.twn24.ir
-- name: '🔒 #551'
+- name: '🔒 #555'
   network: tcp
   password: Aimer
   port: 443
   server: 209.94.90.64
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #552'
+- name: '🔒 #556'
   network: ws
   password: Aimer
   port: 8443
@@ -4387,21 +4385,21 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #553'
+- name: '🔒 #557'
   network: tcp
   password: Aimer
   port: 8443
   server: 46.254.93.243
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #554'
+- name: '🔒 #558'
   network: tcp
   password: bpb-trojan
   port: 443
   server: 108.165.216.155
   sni: bpb.my79801.com
   type: trojan
-- name: '🔒 #555'
+- name: '🔒 #559'
   network: ws
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -4412,7 +4410,7 @@ proxies:
     headers:
       Host: bangladeshipatri.com
     path: '%2F6b777a91'
-- name: '🔒 #556'
+- name: '🔒 #560'
   network: ws
   password: Aimer
   port: 8443
@@ -4422,7 +4420,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
-- name: '🔒 #557'
+- name: '🔒 #561'
   network: ws
   password: Aimer
   port: 2087
@@ -4433,7 +4431,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #558'
+- name: '🔒 #562'
   network: ws
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 443
@@ -4443,7 +4441,7 @@ proxies:
   ws-opts:
     headers:
       Host: blOOM-cHh.pAges.DeV
-- name: '🔒 #560'
+- name: '🔒 #564'
   network: ws
   password: blue2024
   port: 443
@@ -4453,7 +4451,7 @@ proxies:
   ws-opts:
     headers:
       Host: td.promote.icu
-- name: '🔒 #561'
+- name: '🔒 #565'
   network: ws
   password: auto
   port: 443
@@ -4464,14 +4462,14 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
-- name: '🔒 #562'
+- name: '🔒 #566'
   network: tcp
   password: Aimer
   port: 443
   server: 154.197.64.206
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #563'
+- name: '🔒 #567'
   network: ws
   password: ba4e0314-c815-4711-81ac-4d37f0fb59fc
   port: 443
@@ -4482,20 +4480,20 @@ proxies:
     headers:
       Host: se1.safecdn.site
     path: '%2FTelegram%40V2ray_Alpha'
-- name: '🔒 #564'
+- name: '🔒 #568'
   network: tcp
   password: Aimer
   port: 10443
   server: 156.229.164.158
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #565'
+- name: '🔒 #569'
   password: Aimer
   port: 443
   server: 154.17.228.203
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #567'
+- name: '🔒 #571'
   network: ws
   password: blue2024
   port: 443
@@ -4505,14 +4503,14 @@ proxies:
   ws-opts:
     headers:
       Host: td.promote.icu
-- name: '🔒 #568'
+- name: '🔒 #572'
   network: tcp
   password: Aimer
   port: 2083
   server: 162.159.38.105
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #569'
+- name: '🔒 #573'
   network: ws
   password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
   port: 443
@@ -4523,7 +4521,7 @@ proxies:
     headers:
       Host: md1.safecdn.site
     path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2
-- name: '🔒 #570'
+- name: '🔒 #574'
   network: tcp
   password: a3998b7d5951c3fdd571fcd1bb040047
   port: 443
@@ -4531,20 +4529,20 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: '🔒 #571'
+- name: '🔒 #575'
   password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd
   port: 80
   server: 135.148.148.4
   sni: telewebion.com
   type: trojan
-- name: '🔒 #572'
+- name: '🔒 #576'
   network: tcp
   password: Aimer
   port: 2096
   server: 188.164.159.55
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #574'
+- name: '🔒 #578'
   network: ws
   password: 0b65bb06-6b28-487a-8e3c-820dda51e977
   port: 443
@@ -4555,7 +4553,7 @@ proxies:
     headers:
       Host: series-v1.samanehha.co
     path: /43xf5zgeApzDAfhOHq
-- name: '🔒 #575'
+- name: '🔒 #579'
   network: tcp
   password: Aimer
   port: 2053
@@ -4564,14 +4562,14 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '🔒 #576'
+  name: '🔒 #580'
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
   server: 95.179.254.136
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- name: '🔒 #577'
+- name: '🔒 #581'
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -4581,7 +4579,7 @@ proxies:
   ws-opts:
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: '🔒 #578'
+- name: '🔒 #582'
   network: ws
   password: bpb-trojan
   port: 2053
@@ -4591,7 +4589,7 @@ proxies:
   ws-opts:
     headers:
       Host: bpb-worker-panel-bcr.pages.dev
-- name: '🔒 #579'
+- name: '🔒 #583'
   network: ws
   password: a0514d9b-d109-47fd-b173-1e7f83268f21
   port: 443
@@ -4602,41 +4600,41 @@ proxies:
     headers:
       Host: tws23.kallepache.store
     path: /update
-- name: '🔒 #580'
+- name: '🔒 #584'
   network: tcp
   password: Uy1,SF#]szr%y.<s
   port: 2083
   server: 172.66.46.220
   sni: jOinMaHdIsErVer-6Qj.PAgES.DEv
   type: trojan
-- name: '🔒 #581'
+- name: '🔒 #585'
   password: Aimer
   port: 443
   server: 162.159.39.181
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #582'
+- name: '🔒 #586'
   network: tcp
   password: Aimer
   port: 2053
   server: 154.211.8.152
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #583'
+- name: '🔒 #587'
   network: tcp
   password: Aimer
   port: 2096
   server: 188.164.159.241
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #584'
+- name: '🔒 #588'
   network: tcp
   password: Aimer
   port: 2096
   server: 162.159.38.101
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #585'
+- name: '🔒 #589'
   network: tcp
   password: Aimer
   port: 2096
@@ -4644,8 +4642,21 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - alpn:
+  - http/1.1
+  name: '🔒 #590'
+  network: ws
+  password: 6d898085-bf6a-449b-9763-0073d4dc2ce0
+  port: 443
+  server: 104.21.23.115
+  sni: boStoN01.852224.gGff.nET
+  type: trojan
+  ws-opts:
+    headers:
+      Host: boston01.852224.ggff.net
+    path: '%2FQ3cz2AWTPMCtDGV1L6R1Jz18eIUw'
+- alpn:
   - h3
-  name: '🔒 #587'
+  name: '🔒 #591'
   network: ws
   password: auto
   port: 443
@@ -4656,46 +4667,46 @@ proxies:
     headers:
       Host: dcf741e8.epeius-2gy.pages.dev
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #588'
+- name: '🔒 #592'
   network: tcp
   password: Aimer
   port: 2053
   server: 216.24.57.1
   sni: ngep.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #589'
+- name: '🔒 #593'
   network: tcp
   password: blue2024
   port: 443
   server: 104.16.93.142
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #591'
+- name: '🔒 #595'
   password: NISHIKUITAN111
   port: 443
   server: 104.16.80.174
   type: trojan
-- name: '🔒 #592'
+- name: '🔒 #596'
   password: Aimer
   port: 443
   server: 34.218.130.79
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #593'
+- name: '🔒 #597'
   network: tcp
   password: blue2024
   port: 443
   server: 190.93.245.62
   sni: td.promote.icu
   type: trojan
-- name: '🔒 #594'
+- name: '🔒 #598'
   network: tcp
   password: Aimer
   port: 8443
   server: 104.25.252.184
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #595'
+- name: '🔒 #599'
   network: ws
   password: blue2024
   port: 443
@@ -4705,7 +4716,7 @@ proxies:
   ws-opts:
     headers:
       Host: hb.lii2010.us.kg
-- name: '🔒 #596'
+- name: '🔒 #600'
   network: ws
   password: Aimer
   port: 2083
@@ -4715,21 +4726,21 @@ proxies:
   ws-opts:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
-- name: '🔒 #598'
+- name: '🔒 #603'
   network: tcp
   password: Aimer
   port: 2083
   server: 192.0.54.221
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #599'
+- name: '🔒 #604'
   network: tcp
   password: Aimer
   port: 443
   server: 173.245.59.201
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #600'
+- name: '🔒 #605'
   network: ws
   password: '123456'
   port: 8443
@@ -4744,7 +4755,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #602'
+  name: '🔒 #606'
   network: httpupgrade
   password: V8Ggxghv8Z
   port: 2096
@@ -4755,27 +4766,27 @@ proxies:
     headers:
       Host: esna.twn24.ir
     path: '%2F%3Fed%3D2048'
-- name: '🔒 #603'
+- name: '🔒 #607'
   network: tcp
   password: Aimer
   port: 2087
   server: 135.84.76.152
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #604'
+- name: '🔒 #608'
   network: tcp
   password: blue2024
   port: 443
   server: 104.26.14.203
   sni: hb.lii2010.us.kg
   type: trojan
-- name: '🔒 #605'
+- name: '🔒 #609'
   password: cf13832b-4ca0-4fee-8e85-2b2411104e75
   port: 20230
   server: 44.247.73.88
   sni: 421421.xyz
   type: trojan
-- name: '🔒 #606'
+- name: '🔒 #610'
   network: ws
   password: b4e8771997c94732acbc9ec4d19c2589
   port: 443
@@ -4786,21 +4797,21 @@ proxies:
     headers:
       Host: jobscareerforstudent.com
     path: '%2F6b777a91'
-- name: '🔒 #607'
+- name: '🔒 #611'
   network: tcp
   password: Aimer
   port: 2087
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #608'
+- name: '🔒 #612'
   network: tcp
   password: Aimer
   port: 2087
   server: 63.141.128.66
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #609'
+- name: '🔒 #613'
   network: ws
   password: SSorg
   port: 8443
@@ -4811,138 +4822,138 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.mehttp/1.1
     path: /?ed
-- name: '🔒 #610'
+- name: '🔒 #614'
   password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
   port: 443
   server: 64.23.162.126
   sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
   type: trojan
-- name: '🔒 #611'
+- name: '🔒 #615'
   password: NISHIKUITAN111
   port: 443
   server: 198.41.217.62
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #614'
+  name: '🔒 #618'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 38.68.135.123
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #619'
+  name: '🔒 #623'
   password: kDWvXYZoTBcGkC4
   port: '8881'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #621'
+  name: '🔒 #625'
   password: faBAoD54k87UJG7
   port: '2375'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #623'
+  name: '🔒 #627'
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: '21115'
   server: 154.83.90.11
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #624'
+  name: '🔒 #628'
   password: TEzjfAYq2IjtuoS
   port: '6697'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #628'
+  name: '🔒 #631'
   password: YKB42JGKK8H5DIWF
   port: '17002'
   server: 23.185.248.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #629'
+  name: '🔒 #632'
   password: DA30RDLW91YDLDN2
   port: '17008'
   server: 23.185.248.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #631'
+  name: '🔒 #634'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 142.202.48.52
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #632'
+  name: '🔒 #635'
   password: KixLvKzwjekG00rm
   port: '8000'
   server: 134.195.196.193
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #633'
+  name: '🔒 #636'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 38.75.137.9
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #635'
+  name: '🔒 #638'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 38.68.134.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #638'
+  name: '🔒 #644'
   password: VMiXaw4xiGhDJAleaoLGUd
   port: '9483'
   server: 92.118.112.101
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #640'
+  name: '🔒 #645'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 38.114.114.67
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #643'
+  name: '🔒 #647'
   password: Y6R9pAtvxxzmGC
   port: '3306'
   server: 38.107.226.49
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #644'
+  name: '🔒 #648'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 142.202.48.58
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #649'
+  name: '🔒 #654'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 167.88.62.68
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #658'
+  name: '🔒 #663'
   password: zDNVedRFPQexG9v
   port: '6379'
   server: 38.68.134.85
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #666'
+  name: '🔒 #672'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 142.202.48.52
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #675'
+  name: '🔒 #684'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 167.88.63.44
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #679'
+  name: '🔒 #688'
   password: NzJhMDc1
   port: '8388'
   server: 103.35.188.18
   type: ss
-- name: '🔒 #687'
+- name: '🔒 #695'
   network: tcp
   password: '3767107462583558144'
   port: 443
@@ -4950,97 +4961,91 @@ proxies:
   sni: grown-cardinal.treefrog761.one
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #690'
+  name: '🔒 #698'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 167.88.62.68
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #704'
+  name: '🔒 #713'
   password: Y6R9pAtvxxzmGC
   port: '3306'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #707'
-  password: pKEW8JPByTVTLtM
-  port: '4444'
-  server: 38.91.107.245
-  type: ss
-- cipher: aes-256-gcm
-  name: '🔒 #714'
+  name: '🔒 #723'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 167.88.62.62
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #715'
+  name: '🔒 #724'
   password: Y6R9pAtvxxzmGC
   port: '5600'
   server: 134.195.196.12
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #717'
+  name: '🔒 #726'
   password: LLInmUBrxMgEn85Y6vVjeH
   port: '56220'
   server: 185.172.129.91
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #718'
+  name: '🔒 #727'
   password: Y6R9pAtvxxzmGC
   port: '3306'
   server: 38.68.134.85
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #721'
+  name: '🔒 #730'
   password: Y6R9pAtvxxzmGC
   port: '3389'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #725'
+  name: '🔒 #735'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 167.88.63.79
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #728'
+  name: '🔒 #739'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 167.88.63.71
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #729'
+  name: '🔒 #740'
   password: RexnBgU7EV5ADxG
   port: '7002'
   server: 134.195.196.12
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #748'
+  name: '🔒 #761'
   password: ZGY1N
   port: '8388'
   server: 103.35.189.50
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #750'
+  name: '🔒 #763'
   password: FoOiGlkAA9yPEGP
   port: '7306'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #752'
+  name: '🔒 #765'
   password: kDWvXYZoTBcGkC4
   port: '8882'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #754'
+  name: '🔒 #768'
   password: Y6R9pAtvxxzmGC
   port: '5001'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #755'
+  name: '🔒 #769'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 85.208.108.60
@@ -5172,17 +5177,6 @@ proxies:
     headers:
       Host: se1.safecdn.site
     path: /ed:2044Telegram:@AB_841-[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]--[@BugFreeNet]-
-- name: 未知118
-  network: ws
-  password: auto
-  port: 443
-  server: 188.114.99.81
-  sni: mazq100za43.962dael.workers.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mazq100za43.962dael.workers.dev
-    path: /
 - name: 未知123
   network: ws
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -5194,97 +5188,13 @@ proxies:
     headers:
       Host: jobscareerfortoday.com
     path: /6b777a91
-- name: '🔒 #771'
+- name: '🔒 #787'
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
   sni: de2-full.privateip.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🏁RELAY-104.21.31.62-8476 #1'
-  network: ws
-  port: 443
-  server: 104.21.31.62
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.17.221.248-5988
-  network: ws
-  port: 8080
-  server: 104.17.221.248
-  servername: 100-166-76-245.s5.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-166-76-245.s5.cn-db.top
-    path: /dabai.in172.67.26.191
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-172.67.131.17-8383
-  network: ws
-  port: 443
-  server: 172.67.131.17
-  servername: hms19.best-tizi.top
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: hms19.best-tizi.top
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-172.67.138.69-8380
-  network: ws
-  port: 443
-  server: 172.67.138.69
-  servername: hms19.best-tizi.top
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: hms19.best-tizi.top
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.21.9.236-8372
-  network: ws
-  port: 443
-  server: 104.21.9.236
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: hms19.best-tizi.top
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 🏁RELAY-104.21.94.168-8374
-  network: ws
-  port: 443
-  server: 104.21.94.168
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      Host: hms19.best-tizi.top
-    path: /linkws
-- name: '🔒 #773'
+- name: '🔒 #791'
   network: tcp
   password: '3747000103274291200'
   port: 443
@@ -5292,12 +5202,12 @@ proxies:
   sni: epic-weasel.treefrog761.one
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #776'
+  name: '🔒 #794'
   password: xLSlIBKwXFvfCcR2hAVjCb
   port: '20684'
   server: 87.251.79.34
   type: ss
-- name: '🔒 #778'
+- name: '🔒 #796'
   network: tcp
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
@@ -5306,7 +5216,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #780'
+  name: '🔒 #797'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5320,7 +5230,7 @@ proxies:
   sni: trus.moonfree.top
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #782'
+  name: '🔒 #798'
   password: B0UPGL2IUSB0UV4B
   port: '17006'
   server: 23.185.248.16
@@ -5353,7 +5263,7 @@ proxies:
     headers:
       Host: ''
     path: /vmess-argo?ed=2048
-- name: '🔒 #787'
+- name: '🔒 #802'
   network: ws
   password: Aimer
   port: 80
@@ -5365,7 +5275,7 @@ proxies:
       Host: ngepx.ambercc.filegear-sg.me
 - alpn:
   - http/1.1
-  name: '🔒 #792'
+  name: '🔒 #806'
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22222
@@ -5386,14 +5296,14 @@ proxies:
     headers:
       Host: ''
     path: /4e10c051-2495-427b-a8ed-a627d88b59ee-vm?ed=2048
-- name: '🔒 #795'
+- name: '🔒 #809'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 37.48.65.144
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #797'
+- name: '🔒 #811'
   network: tcp
   password: Aimer
   port: 2053
@@ -5402,30 +5312,21 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #798'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.99.210
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🔒 #802'
+  name: '🔒 #818'
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22222
   server: 63.177.120.191
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #803'
+- name: '🔒 #819'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 185.107.56.193
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #804'
+- name: '🔒 #820'
   network: ws
   password: Aimer
   port: 8443
@@ -5435,7 +5336,7 @@ proxies:
   ws-opts:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
-- name: '🔒 #805'
+- name: '🔒 #821'
   network: tcp
   password: fsoOufuTGmSKzRDaAwAbww
   port: 443
@@ -5468,7 +5369,7 @@ proxies:
     path: /?ed=2560
 - alpn:
   - http/1.1
-  name: '🔒 #808'
+  name: '🔒 #824'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5477,7 +5378,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #809'
+  name: '🔒 #825'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -5485,71 +5386,68 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #812'
+  name: '🔒 #830'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 38.143.66.55
   type: ss
-- alpn:
-  - http/1.1
-  name: '🔒 #814'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 54.171.242.255
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - grpc-opts:
     grpc-service-name: grpc
-  name: '🔒 #816'
+  name: '🔒 #834'
   network: grpc
   password: da86c6b5-a130-4bb8-a6ef-00b77b85b9e7
   port: 8443
   server: 94.131.122.157
   sni: uk2.safecdn.site
   type: trojan
-- name: '🔒 #819'
+- name: '🔒 #837'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 185.67.127.69
   sni: ultimate-civet.adder289.quest
   type: trojan
-- name: '🔒 #820'
+- name: '🔒 #838'
   password: b640d791-ff83-4300-b509-c2a02f97f167
   port: 80
   server: 51.38.71.175
   sni: uk1.trojanvh.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #821'
+  name: '🔒 #839'
   password: tKsLAswLMq1C0L8IcXtpdv
   port: '17889'
   server: 212.18.104.228
   type: ss
+- cipher: chacha20-ietf
+  name: '🔒 #841'
+  password: asd123456
+  port: '8388'
+  server: 137.175.113.215
+  type: ss
 - alpn:
   - http/1.1
-  name: '🔒 #824'
+  name: '🔒 #842'
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22222
   server: 16.171.119.193
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #825'
+- name: '🔒 #843'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 37.48.65.154
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #827'
+- name: '🔒 #845'
   password: Aimer
   port: 8443
   server: 185.119.117.146
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #828'
+- name: '🔒 #846'
   network: tcp
   password: '3763495894587285504'
   port: 443
@@ -5559,59 +5457,59 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #830'
+  name: '🔒 #847'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 13.36.148.9
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #832'
+- name: '🔒 #849'
   password: 6e001f20-f93b-11ef-babd-1239d0255272
   port: 443
   server: 51.38.65.155
   type: trojan
-- name: '🔒 #834'
+- name: '🔒 #851'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 85.90.194.160
   sni: awaited-chicken.adder289.quest
   type: trojan
-- name: '🔒 #835'
+- name: '🔒 #852'
   password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
   port: 2053
   server: 185.236.233.111
   sni: ftp.debian.org
   type: trojan
-- name: '🔒 #836'
+- name: '🔒 #853'
   network: tcp
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 185.107.56.53
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #839'
+- name: '🔒 #856'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 80.240.112.32
   sni: trusting-titmouse.adder289.quest
   type: trojan
-- name: '🔒 #840'
+- name: '🔒 #857'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 37.48.65.152
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #841'
+- name: '🔒 #858'
   password: 973ed2e0-c4d8-4737-a093-71629148086d
   port: 443
   server: 51.77.213.197
   sni: frt2.sshocean.net
   type: trojan
-- name: '🔒 #845'
+- name: '🔒 #863'
   network: tcp
   password: '3778399737045327872'
   port: 443
@@ -5619,24 +5517,24 @@ proxies:
   sni: key-pangolin.treefrog761.one
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #853'
+  name: '🔒 #871'
   password: X1GBLWQ3U4ULO6XV
   port: '17005'
   server: 23.185.248.15
   type: ss
-- name: '🔒 #854'
+- name: '🔒 #872'
   password: Aimer
   port: 443
   server: 188.166.162.201
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #856'
+- name: '🔒 #874'
   password: b8808043-6566-4923-9195-e66bfb553d57
   port: 443
   server: 51.38.99.96
   sni: ba24.ir
   type: trojan
-- name: '🔒 #857'
+- name: '🔒 #875'
   network: ws
   password: Aimer
   port: 8443
@@ -5655,33 +5553,33 @@ proxies:
   tls: false
   type: vmess
   uuid: c130cb36-c93f-4be7-9228-a7a97d43885a
-- name: '🔒 #858'
+- name: '🔒 #876'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 37.48.65.155
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #860'
+- name: '🔒 #877'
   password: Aimer
   port: 443
   server: 89.248.207.37
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #861'
+- name: '🔒 #878'
   password: 555034c8-6420-45d0-893c-905c02342150
   port: 443
   server: 51.83.186.142
   sni: pl1.trojanvh.xyz
   type: trojan
-- name: '🔒 #862'
+- name: '🔒 #879'
   network: tcp
   password: Aimer
   port: 8443
   server: 77.238.236.134
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #863'
+- name: '🔒 #880'
   network: tcp
   password: E0nPlYFeYt
   port: 46420
@@ -5690,14 +5588,14 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #864'
+  name: '🔒 #881'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 15.236.9.212
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #866'
+- name: '🔒 #883'
   password: Aimer
   port: 8443
   server: 82.115.6.219
@@ -5719,7 +5617,7 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '🔒 #870'
+  name: '🔒 #887'
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -5728,21 +5626,21 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #871'
+  name: '🔒 #888'
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22222
   server: 13.53.165.90
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #872'
+- name: '🔒 #889'
   password: 3240d72a-1373-4566-9c6c-68524e4b13fc
   port: 443
   server: 164.92.178.103
   skip-cert-verify: true
   sni: es-full.privateip.net
   type: trojan
-- name: '🔒 #873'
+- name: '🔒 #890'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -5751,7 +5649,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #874'
+  name: '🔒 #891'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5759,21 +5657,21 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #876'
+  name: '🔒 #893'
   password: 2062a5ca-a34e-47bf-9810-db91185f07fc
   port: '59019'
   server: 35.95.224.186
   type: ss
 - alpn:
   - http/1.1
-  name: '🔒 #877'
+  name: '🔒 #894'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.133.56.141
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #881'
+- name: '🔒 #899'
   password: Aimer
   port: 443
   server: 212.41.15.119
@@ -5782,7 +5680,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #883'
+  name: '🔒 #901'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5791,34 +5689,26 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: '🔒 #884'
+  name: '🔒 #902'
   network: grpc
   password: mainssh-niwrhf87
   port: 443
   server: 108.61.171.167
   sni: getgrpc.mainssh.xyz
   type: trojan
-- name: '🔒 #886'
-  network: tcp
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  port: 443
-  server: 74.226.136.204
-  skip-cert-verify: true
-  sni: sg02.trojanyyds.xyz
-  type: trojan
-- name: '🔒 #887'
+- name: '🔒 #906'
   password: f6a0a650-306e-11ee-b692-1239d0255272
   port: 443
   server: 51.158.146.183
   sni: Speedtest.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #890'
+  name: '🔒 #909'
   password: GmQPbJ30RJ5sJfv3N4Z6wE
   port: '443'
   server: 78.129.140.11
   type: ss
-- name: '🔒 #893'
+- name: '🔒 #912'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 185.107.56.54
@@ -5826,28 +5716,19 @@ proxies:
   sni: trus.moonfree.top
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #894'
+  name: '🔒 #913'
   password: BwcAUZk8hUFAkDGN
   port: '9031'
   server: 5.188.181.201
   type: ss
-- alpn:
-  - http/1.1
-  name: '🔒 #896'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.51.212.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🔒 #898'
+- name: '🔒 #917'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 62.112.221.57
   sni: integral-malamute.adder289.quest
   type: trojan
-- name: '🔒 #899'
+- name: '🔒 #918'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 185.107.56.52
@@ -5855,19 +5736,28 @@ proxies:
   sni: trus.moonfree.top
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #903'
-  password: XPtzA9sCug3SPR4c
-  port: '9025'
+  name: '🔒 #923'
+  password: U6qnYRhfyDmn8sgn
+  port: '9041'
   server: 5.188.181.201
   type: ss
-- name: '🔒 #907'
+- name: '🔒 #929'
   network: tcp
   password: '3774827088566296576'
   port: 443
   server: 194.62.96.160
   sni: next-hippo.treefrog761.one
   type: trojan
-- name: '🔒 #910'
+- alpn:
+  - http/1.1
+  name: '🔒 #931'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.157.178
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '🔒 #932'
   network: ws
   password: Aimer
   port: 443
@@ -5877,46 +5767,31 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: '🔒 #911'
+- name: '🔒 #933'
   password: 9498f3a0-2992-11ee-a4c7-1239d0255272
   port: 443
   server: 51.159.59.186
   sni: zula.ir
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #917'
+  name: '🔒 #939'
   password: ACCom7GSPS2nmyFvoE8Ehw
   port: '1080'
   server: 194.116.217.181
   type: ss
-- alpn:
-  - http/1.1
-  name: '🔒 #919'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.51.138.159
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-cfb
-  name: '🔒 #921'
-  password: dU3DSNS8wYPXzEKw
-  port: '9029'
-  server: 5.188.181.201
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #922'
+  name: '🔒 #943'
   password: GZ3hvYaFBp52HupGCCOKws
   port: '80'
   server: 159.65.17.32
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #923'
+  name: '🔒 #944'
   password: 1SrLUgkAPLPMoIQKtNr727
   port: '19805'
   server: 178.208.91.118
   type: ss
-- name: '🔒 #926'
+- name: '🔒 #947'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -5924,7 +5799,7 @@ proxies:
   skip-cert-verify: true
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '🔒 #927'
+- name: '🔒 #948'
   network: grpc
   password: Cl150MQWlG
   port: 443
@@ -5932,63 +5807,57 @@ proxies:
   sni: irancell-ir-4.mmdruby13.store
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #929'
+  name: '🔒 #949'
   password: l6wNTSDWNDArQrbdeh7dBY
   port: '32404'
   server: 86.104.74.203
   type: ss
-- name: '🔒 #933'
+- name: '🔒 #953'
   network: tcp
   password: Aimer
   port: 443
   server: 65.109.199.131
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #935'
-  password: NmNlODY4
-  port: '8388'
-  server: 45.140.167.94
-  type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #936'
+  name: '🔒 #956'
   password: asdKkaskJKfnsa
   port: '443'
   server: 162.19.59.163
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #938'
+  name: '🔒 #958'
   password: W8ZVgrAoPC9sozW9UUoL3m
   port: '443'
   server: 194.87.45.189
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #939'
+  name: '🔒 #959'
   password: ib9KQ4t1dVW43mGN8FJz6A
   port: '52185'
   server: 213.159.75.89
   type: ss
 - alpn:
   - http/1.1
-  name: '🔒 #940'
+  name: '🔒 #960'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 18.158.172.124
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🔒 #942'
+- name: '🔒 #962'
   password: '74260716866785000'
   port: 443
   server: 52.194.129.239
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #944'
+  name: '🔒 #964'
   password: a3GFYt36Sm82Vys9
   port: '9000'
   server: 5.188.181.201
   type: ss
-- name: '🔒 #947'
+- name: '🔒 #967'
   network: tcp
   password: Aimer
   port: 443
@@ -5996,19 +5865,25 @@ proxies:
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #952'
+  name: '🔒 #974'
   password: RCcD1cceNKofGbUUuBCYBj
   port: '15357'
   server: 45.12.133.203
   type: ss
-- name: '🔒 #958'
+- cipher: aes-256-cfb
+  name: '🔒 #975'
+  password: TN2YqghxeFDKZfLU
+  port: '9037'
+  server: 5.188.181.201
+  type: ss
+- name: '🔒 #979'
   network: tcp
   password: 5YU_wF51gNep1pgX9wumrQ
   port: 6176
   server: 65.109.209.201
   sni: safe.sanjesh.fun
   type: trojan
-- name: '🔒 #964'
+- name: '🔒 #985'
   network: tcp
   password: '3747000103274291200'
   port: 443
@@ -6016,120 +5891,96 @@ proxies:
   sni: better-crappie.treefrog761.one
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #966'
+  name: '🔒 #987'
   password: g5PvMjS5UGRjMe6nuK3U8t
   port: '21712'
   server: 62.133.60.60
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #968'
+  name: '🔒 #989'
   password: NjBlZDlk
   port: '1443'
   server: 89.221.224.166
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #973'
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: '8080'
-  server: 45.158.171.151
-  type: ss
-- name: '🔒 #983'
+- name: '🔒 #1005'
   password: c51d3975-a40c-4a5b-929b-c8595ed87850
   port: 443
   server: 15.168.28.231
   sni: wel-usgt.optage.moe
   type: trojan
-- name: '🔒 #984'
+- name: '🔒 #1006'
   network: tcp
   password: fsoOufuTGmSKzRDaAwAbww
   port: 443
   server: 185.226.93.9
   type: trojan
-- name: '🔒 #989'
+- name: '🔒 #1011'
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
   port: 17721
   server: 31.223.184.248
   sni: data.52daishu.life
   type: trojan
-- name: '🔒 #992'
+- name: '🔒 #1014'
   password: Aimer
   port: 443
   server: 95.216.143.166
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #994'
+- name: '🔒 #1016'
   network: tcp
   password: Aimer
   port: 444
   server: 92.63.192.110
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #995'
-  password: oPq90ViY1B1keOgLVIu2kz
-  port: '443'
-  server: 81.19.141.45
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #997'
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: '52952'
-  server: 185.24.151.214
-  type: ss
-- name: '🔒 #998'
+- name: '🔒 #1019'
   password: '74260714362785500'
   port: 443
   server: 57.182.190.176
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1000'
+  name: '🔒 #1021'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 51.15.15.82
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1002'
+  name: '🔒 #1023'
   password: S1tuOSb5PU1gHUZyLYB3h6
   port: '26544'
   server: 147.45.114.160
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1004'
+  name: '🔒 #1025'
   password: 2kZMZNoI2sgKPb6C-9IQ8w
   port: '5555'
   server: 109.104.154.4
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1006'
+  name: '🔒 #1027'
   password: 9CEYcV62dPIbjvIIsaw1dg
   port: '443'
   server: 89.185.84.185
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1008'
+  name: '🔒 #1029'
   password: ueLXVkvh4hckhErQ
   port: '9060'
   server: 217.30.10.18
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #1013'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: '8080'
-  server: 45.87.175.69
-  type: ss
-- name: '🔒 #1014'
+- name: '🔒 #1036'
   password: Aimer
   port: 11300
   server: 118.37.220.10
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1016'
+  name: '🔒 #1038'
   password: xkcYmKzlR8EbxiN3psH15i
   port: '28711'
   server: 2.56.122.207
   type: ss
-- name: '🔒 #1018'
+- name: '🔒 #1040'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6137,22 +5988,28 @@ proxies:
   sni: kdlsupport.zendesk.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1021'
+  name: '🔒 #1043'
   password: AhkxiPV8FVOXXtH7xbIaot
   port: '443'
   server: 46.29.238.83
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1024'
+  name: '🔒 #1047'
   password: 5RuivPOU9jQ4VMfKhueJXU
   port: '38500'
   server: 138.124.93.193
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1025'
+  name: '🔒 #1048'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 172.99.190.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1049'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: '8080'
+  server: 193.29.139.133
   type: ss
 - alterId: 0
   cipher: auto
@@ -6178,7 +6035,7 @@ proxies:
     headers:
       Host: www.23179753.xyz
     path: /path/340434130032
-- name: '🔒 #1028'
+- name: '🔒 #1051'
   network: tcp
   password: eLpjAXg6pM
   port: 5060
@@ -6186,49 +6043,43 @@ proxies:
   sni: sv1.ahsg.top
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1029'
+  name: '🔒 #1052'
   password: jkDei6dC56GypotPqHt9k7
   port: '443'
   server: 62.210.88.22
   type: ss
-- name: '🔒 #1032'
+- name: '🔒 #1055'
   password: SQXdz0p1cP
   port: 110
   server: 95.216.13.176
   skip-cert-verify: true
   sni: fr1.ftpcomand.com
   type: trojan
-- cipher: aes-256-cfb
-  name: '🔒 #1035'
-  password: GA9KzeEgvfxNrgmM
-  port: '9019'
-  server: 80.92.204.106
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1037'
+  name: '🔒 #1061'
   password: OWUwO
   port: '8388'
   server: 45.67.35.43
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1040'
+  name: '🔒 #1064'
   password: asdKkaskJKfnsa
   port: '443'
   server: 162.19.59.161
   type: ss
-- name: '🔒 #1045'
+- name: '🔒 #1068'
   password: 072c477b-90c1-4600-998f-1a2990542782
   port: 20230
   server: 52.198.164.235
   sni: 421421.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1047'
+  name: '🔒 #1070'
   password: kOq8G3zxjPmM7mm9lXyfho
   port: '19057'
   server: 91.103.253.151
   type: ss
-- name: '🔒 #1052'
+- name: '🔒 #1075'
   password: SQXdz0p1cP
   port: 110
   server: 95.216.41.41
@@ -6236,30 +6087,30 @@ proxies:
   sni: fr1.ftpcomand.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1055'
+  name: '🔒 #1078'
   password: asdKkaskJKfnsa
   port: '443'
   server: 162.19.59.162
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1056'
+  name: '🔒 #1079'
   password: GeregetR8cvQHzYr
   port: '9030'
   server: 5.188.181.201
   type: ss
 - cipher: aes-128-gcm
-  name: '🔒 #1063'
+  name: '🔒 #1084'
   password: S_kG5IVobozVy77FTaXYzg
   port: '1080'
   server: 172.236.19.190
   type: ss
 - cipher: aes-128-gcm
-  name: '🔒 #1064'
+  name: '🔒 #1085'
   password: shadowsocks7
   port: '443'
   server: 149.34.244.68
   type: ss
-- name: '🔒 #1066'
+- name: '🔒 #1087'
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
@@ -6281,13 +6132,13 @@ proxies:
       Host: www.23179753.xyz
     path: /path/181721272114
 - cipher: aes-256-gcm
-  name: '🔒 #1069'
+  name: '🔒 #1090'
   password: KixLvKzwjekG00rm
   port: '8080'
   server: 172.99.190.149
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1072'
+  name: '🔒 #1093'
   password: qx8WvIjpBqM3CGkg8YHalk
   port: '443'
   server: 37.235.53.254
@@ -6317,18 +6168,18 @@ proxies:
   type: vmess
   uuid: e9f666fb-12d9-4f1b-e9e6-3e48e615e714
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1079'
+  name: '🔒 #1100'
   password: 7kJQs2RYHhViTYWaf1RobB
   port: '7749'
   server: 77.246.97.187
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1082'
+  name: '🔒 #1103'
   password: wHfZvjuscmkgPYQnpvXpRy
   port: '80'
   server: 165.232.120.176
   type: ss
-- name: '🔒 #1083'
+- name: '🔒 #1104'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6336,24 +6187,24 @@ proxies:
   sni: kdlsupport.zendesk.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1085'
+  name: '🔒 #1106'
   password: asdKkaskJKfnsa
   port: '443'
   server: 162.19.59.165
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1095'
+  name: '🔒 #1117'
   password: 94dvoW0TdKRq
   port: '443'
   server: 161.97.68.139
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1099'
+  name: '🔒 #1121'
   password: OWUwO
   port: '1443'
   server: 45.67.35.43
   type: ss
-- name: '🔒 #1101'
+- name: '🔒 #1123'
   network: tcp
   password: Aimer
   port: 50000
@@ -6361,43 +6212,36 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1105'
+  name: '🔒 #1126'
   password: MjE4Z
   port: '1443'
   server: 95.164.34.7
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1106'
+  name: '🔒 #1127'
   password: p9z5BVADH2YFs3MN
   port: '9040'
   server: 5.188.181.201
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1107'
+  name: '🔒 #1128'
   password: Gv2rKyabYCLunU93gMcwgB
   port: '4248'
   server: 45.95.232.236
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1108'
+  name: '🔒 #1129'
   password: /kGpYMwBUfJUS3ANCIvbr7FzOD7frU/T7wmXLkDIH5Q=
   port: '443'
   server: 23.88.54.248
   type: ss
-- name: 未知29 8.1MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 34.246.106.86
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🔒 #1119'
+- name: '🔒 #1141'
   password: Aimer
   port: 10022
   server: 125.132.46.2
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1122'
+- name: '🔒 #1144'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6405,24 +6249,18 @@ proxies:
   sni: kdlsupport.zendesk.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1129'
+  name: '🔒 #1152'
   password: piv97XS1Cval86vfwHPD5j
   port: '443'
   server: 194.87.216.121
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #1139'
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: '8080'
-  server: 45.87.175.199
-  type: ss
 - cipher: aes-128-cfb
-  name: '🔒 #1152'
+  name: '🔒 #1174'
   password: shadowsocks
   port: '443'
   server: 156.146.62.160
   type: ss
-- name: '🔒 #1155'
+- name: '🔒 #1177'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6443,19 +6281,13 @@ proxies:
     headers:
       Host: cc2.1808.site
     path: /hgqqvws
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #1163'
-  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-  port: '8080'
-  server: 5.252.25.61
-  type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1164'
+  name: '🔒 #1192'
   password: asdKkaskJKfnsa
   port: '443'
   server: 162.19.59.160
   type: ss
-- name: '🔒 #1166'
+- name: '🔒 #1194'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6466,7 +6298,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: db
-  name: '🔒 #1167'
+  name: '🔒 #1195'
   network: grpc
   password: 67eb147db1c0f8c5
   port: 443
@@ -6474,48 +6306,42 @@ proxies:
   sni: 007.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1171'
+  name: '🔒 #1200'
   password: K1O7lapGuHTn8KHzYTwRQW
   port: '80'
   server: 64.225.64.198
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1179'
-  password: FG5ddLsMPbV5CutE
-  port: '9050'
-  server: 217.30.10.18
+  name: '🔒 #1212'
+  password: cp8pRSUAyLhTfVWH
+  port: '9064'
+  server: 80.92.204.106
   type: ss
-- cipher: aes-256-cfb
-  name: '🔒 #1183'
-  password: c3NtHJ5ujV2tGDfj
-  port: '9084'
-  server: 217.30.10.18
-  type: ss
-- name: '🔒 #1188'
+- name: '🔒 #1214'
   password: Aimer
   port: 10071
   server: 220.122.114.61
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1195'
+  name: '🔒 #1222'
   password: MzYxZGRm
   port: '8388'
   server: 45.140.167.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1202'
+  name: '🔒 #1229'
   password: W2ntIaIjyoh6bVFlXvQrYs
   port: '50042'
   server: 80.242.56.218
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1204'
+  name: '🔒 #1231'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 195.154.200.150
   type: ss
-- name: '🔒 #1212'
+- name: '🔒 #1240'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6523,24 +6349,24 @@ proxies:
   sni: kdlsupport.zendesk.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1213'
+  name: '🔒 #1241'
   password: afKAHp1VfRWZu91LIi9o0D
   port: '58176'
   server: 94.228.165.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1215'
+  name: '🔒 #1243'
   password: 7J44Dp5NuxL2sPJn7nifBV
   port: '443'
   server: 51.158.252.130
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1216'
+  name: '🔒 #1244'
   password: IE7SC3YR9X2T5I76
   port: '18015'
   server: 156.231.104.25
   type: ss
-- name: '🔒 #1219'
+- name: '🔒 #1247'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -6549,24 +6375,30 @@ proxies:
   sni: kdlsupport.zendesk.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1239'
+  name: '🔒 #1258'
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: '8080'
+  server: 193.29.139.233
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1265'
   password: qmOD5x09KyNNJ6USCZiQ4RvN2lSVQ6jzAEYmvrSLtRZsSX5gF6CfcElvUcuLlnZD
   port: '29647'
   server: 94.131.96.213
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1240'
+  name: '🔒 #1266'
   password: f677e723-9776-4be7-aa59-c497d890aa60
   port: '8443'
   server: 188.119.112.242
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1241'
+  name: '🔒 #1267'
   password: 84XAJL8SYU5DFEO1
   port: '18004'
   server: 156.231.104.14
   type: ss
-- name: '🔒 #1248'
+- name: '🔒 #1273'
   network: tcp
   password: Aimer
   port: 50000
@@ -6586,31 +6418,31 @@ proxies:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org
     path: /
-- name: '🔒 #1255'
+- name: '🔒 #1279'
   password: Aimer
   port: 8443
   server: 91.197.3.168
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1258'
+  name: '🔒 #1282'
   password: asdKkaskJKfnsa
   port: '443'
   server: 143.244.58.102
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1260'
+  name: '🔒 #1284'
   password: V4R0XM7GMEZF9QA5
   port: '18012'
   server: 156.231.104.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1266'
+  name: '🔒 #1290'
   password: ZUgwve5RzoSKnKiT8iaypx
   port: '34255'
   server: 64.7.198.124
   type: ss
-- name: '🔒 #1267'
+- name: '🔒 #1291'
   network: tcp
   password: '3747000103274291200'
   port: 443
@@ -6618,31 +6450,37 @@ proxies:
   sni: crucial-moccasin.adder289.quest
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1269'
+  name: '🔒 #1293'
   password: 7ucjpFNXF6JT0djUdewYpw
   port: '5555'
   server: 195.15.215.198
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1276'
+  name: '🔒 #1297'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: '8080'
+  server: 45.158.171.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1300'
   password: 8VMVo6I6vwTB6hlbnW8Ii5
   port: '18429'
   server: 5.180.45.142
   type: ss
-- name: '🔒 #1278'
+- name: '🔒 #1302'
   password: Aimer
   port: 18048
   server: 118.46.215.195
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1281'
+- name: '🔒 #1306'
   network: tcp
   password: Aimer
   port: 50000
   server: 59.1.59.225
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1283'
+- name: '🔒 #1309'
   password: a124e41a-0fb8-4543-a0ab-a127c7b515a9
   port: 20230
   server: 18.183.102.135
@@ -6650,25 +6488,31 @@ proxies:
   sni: jp005.421421.xyz
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1284'
+  name: '🔒 #1310'
   password: Y7YAFIFIFLS9Z3PX
   port: '18007'
   server: 156.231.104.17
   type: ss
-- name: '🔒 #1291'
+- cipher: aes-256-cfb
+  name: '🔒 #1318'
+  password: EXN3S3eQpjE7EJu8
+  port: '9027'
+  server: 217.30.10.18
+  type: ss
+- name: '🔒 #1319'
   password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
   port: 443
   server: 20.2.156.182
   sni: jp.mjt001.com
   type: trojan
-- name: '🔒 #1293'
+- name: '🔒 #1321'
   network: tcp
   password: Aimer
   port: 50000
   server: 218.152.197.93
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1297'
+- name: '🔒 #1327'
   network: tcp
   password: Aimer
   port: 12101
@@ -6676,36 +6520,30 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1298'
+  name: '🔒 #1328'
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
   port: '40030'
   server: 5.187.51.212
   type: ss
-- name: '🔒 #1301'
+- name: '🔒 #1331'
   password: Aimer
   port: 50000
   server: 118.45.241.209
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- cipher: aes-256-cfb
-  name: '🔒 #1304'
-  password: HSZuyJQcWe8dxNdF
-  port: '9043'
-  server: 45.89.52.66
-  type: ss
-- name: '🔒 #1306'
+- name: '🔒 #1335'
   password: Aimer
   port: 443
   server: 129.154.207.203
   sni: agept.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1309'
+  name: '🔒 #1337'
   password: CnvDAt3WT5OFWo52DLCbtY
   port: '29149'
   server: 212.113.106.76
   type: ss
-- name: '🔒 #1311'
+- name: '🔒 #1339'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 40387
@@ -6713,42 +6551,42 @@ proxies:
   sni: cdn.alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1314'
+  name: '🔒 #1342'
   password: asdKkaskJKfnsa
   port: '443'
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1316'
+  name: '🔒 #1343'
   password: MDA4MjFlMjAzOTdhMzViOWI1MTFhNGY3YWRjYmVl
   port: '995'
   server: 38.54.27.37
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1317'
+  name: '🔒 #1344'
   password: 7U4Y1WQBHKIMGFBR
   port: '18006'
   server: 156.231.104.16
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1318'
+  name: '🔒 #1345'
   password: a0605527-28e4-449c-80ee-5642cc16a8af
   port: '81'
   server: 176.124.202.137
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1321'
+  name: '🔒 #1348'
   password: asdKkaskJKfnsa
   port: '443'
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1322'
+  name: '🔒 #1349'
   password: asdKkaskJKfnsa
   port: '443'
   server: 37.19.222.212
   type: ss
-- name: '🔒 #1324'
+- name: '🔒 #1355'
   network: tcp
   password: Aimer
   port: 34522
@@ -6756,36 +6594,42 @@ proxies:
   sni: agept.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1330'
+  name: '🔒 #1361'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: '2377'
   server: 52.199.164.162
   type: ss
-- name: '🔒 #1332'
+- name: '🔒 #1363'
   password: Aimer
   port: 443
   server: 8.212.48.236
   sni: agept.ambercc.filegear-sg.me
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1335'
+  name: '🔒 #1367'
   password: CymCd4ABN5aBMJ2X
   port: '8388'
   server: 46.246.98.130
   type: ss
-- name: '🔒 #1339'
+- name: '🔒 #1371'
   password: Aimer
   port: 12693
   server: 152.70.245.66
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1342'
+- name: '🔒 #1373'
   network: tcp
   password: Aimer
   port: 16064
   server: 118.45.113.48
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
+- cipher: aes-256-cfb
+  name: '🔒 #1377'
+  password: dU3DSNS8wYPXzEKw
+  port: '9029'
+  server: 45.89.52.66
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🔒 VM-WS-NA 🇸🇬 SG-18.143.169.73...
@@ -6800,54 +6644,53 @@ proxies:
     headers:
       Host: down.dingtalk.com
     path: /bby
-- name: '🔒 #1349'
+- name: '🔒 #1381'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 40383
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '🔒 #1352'
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: 183.240.139.235
-  skip-cert-verify: true
-  sni: official.taipeicitygovernment.biz.ua
-  type: trojan
-- name: '🔒 #1356'
+- cipher: aes-256-cfb
+  name: '🔒 #1382'
+  password: a3GFYt36Sm82Vys9
+  port: '9000'
+  server: 45.89.52.66
+  type: ss
+- name: '🔒 #1385'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 42404
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '🔒 #1362'
+- name: '🔒 #1391'
   password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
   port: 443
   server: 20.255.100.113
   sni: jp.mjt001.com
   type: trojan
-- name: '🔒 #1363'
+- name: '🔒 #1392'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
   server: 160.16.65.99
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '🔒 #1364'
+- name: '🔒 #1393'
   network: tcp
   password: Aimer
   port: 18004
   server: 121.153.45.186
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1365'
+- name: '🔒 #1394'
   password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ
   port: 443
   server: 219.76.13.181
   sni: arbettp.freetrade.link
   type: trojan
-- name: '🔒 #1367'
+- name: '🔒 #1395'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 27102
@@ -6855,13 +6698,13 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1370'
+  name: '🔒 #1399'
   password: 2ffd2bfa9c190ae9
   port: '587'
   server: 176.124.200.197
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1372'
+  name: '🔒 #1401'
   password: QCK38XJJU4WIUYRK
   port: '18003'
   server: 156.231.104.13
@@ -6881,31 +6724,31 @@ proxies:
       Host: v02.gutingting.com
     path: /aceamedv
 - cipher: aes-256-cfb
-  name: '🔒 #1380'
+  name: '🔒 #1408'
   password: asdKkaskJKfnsa
   port: '443'
   server: 37.19.222.211
   type: ss
-- name: '🔒 #1383'
+- name: '🔒 #1412'
   password: Aimer
   port: 12462
   server: 220.117.126.46
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1384'
+- name: '🔒 #1413'
   network: tcp
   password: Aimer
   port: 50000
   server: 121.180.184.145
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1387'
+- name: '🔒 #1415'
   password: Aimer
   port: 50000
   server: 45.66.216.162
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1390'
+- name: '🔒 #1418'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 10465
@@ -6916,7 +6759,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '🔒 #1393'
+  name: '🔒 #1423'
   network: grpc
   password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
   port: 2087
@@ -6924,7 +6767,7 @@ proxies:
   skip-cert-verify: true
   sni: ru2.asc-sam.ir
   type: trojan
-- name: '🔒 #1395'
+- name: '🔒 #1426'
   network: ws
   password: Aimer
   port: 17100
@@ -6935,7 +6778,7 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #1399'
+- name: '🔒 #1430'
   network: tcp
   password: Aimer
   port: 50003
@@ -6952,14 +6795,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 92c6a6e6-e11f-4743-a182-2d3d61880e43
-- name: '🔒 #1400'
+- name: '🔒 #1431'
   password: 58dcd460-65df-47b1-b062-517df30bef29
   port: 443
   server: 13.250.174.39
   skip-cert-verify: true
   sni: ca.liangyuandian.top
   type: trojan
-- name: '🔒 #1404'
+- name: '🔒 #1435'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 27102
@@ -6980,52 +6823,52 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- name: '🔒 #1407'
+- name: '🔒 #1438'
   password: Aimer
   port: 50000
   server: 112.185.223.152
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1409'
+- name: '🔒 #1440'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 27103
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1411'
+- name: '🔒 #1442'
   network: tcp
   password: Aimer
   port: 10093
   server: 220.71.185.223
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1412'
+- name: '🔒 #1443'
   network: tcp
   password: Aimer
   port: 50000
   server: 14.32.9.120
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1414'
+- name: '🔒 #1444'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27101
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1418'
+- name: '🔒 #1447'
   password: Aimer
   port: 443
   server: 188.253.6.210
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1420'
-  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+- name: '🔒 #1450'
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
-  server: 20.2.44.189
+  server: 152.42.194.105
   skip-cert-verify: true
-  sni: jp.iamnotagoodman.com
+  sni: bs1.loadingip.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -7042,46 +6885,39 @@ proxies:
       Host: tilebani.com
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1423'
+  name: '🔒 #1451'
   password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
   port: '8080'
   server: 5.188.190.54
   type: ss
-- name: '🔒 #1428'
+- name: '🔒 #1457'
   network: tcp
   password: Aimer
   port: 16992
   server: 175.192.27.197
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1429'
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: 183.240.139.234
-  skip-cert-verify: true
-  sni: official.taipeicitygovernment.org.ua
-  type: trojan
-- name: '🔒 #1431'
+- name: '🔒 #1461'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 185.67.125.177
   sni: quality-albacore.adder289.quest
   type: trojan
-- name: '🔒 #1432'
+- name: '🔒 #1462'
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   sni: getandroid.com
   type: trojan
-- name: '🔒 #1435'
+- name: '🔒 #1466'
   network: tcp
   password: Aimer
   port: 50004
   server: 222.97.9.166
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1437'
+- name: '🔒 #1468'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 46668
@@ -7102,7 +6938,7 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- name: '🔒 #1438'
+- name: '🔒 #1469'
   network: tcp
   password: Aimer
   port: 8443
@@ -7110,12 +6946,12 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1439'
+  name: '🔒 #1470'
   password: H0P889CX07EQNGNV
   port: '18005'
   server: 156.231.104.15
   type: ss
-- name: '🔒 #1441'
+- name: '🔒 #1472'
   network: tcp
   password: Aimer
   port: 50003
@@ -7123,31 +6959,44 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1445'
+  name: '🔒 #1477'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: '40031'
   server: 95.215.108.67
   type: ss
-- name: '🔒 #1446'
+- name: '🔒 #1478'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 42881
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1449'
+- cipher: chacha20-ietf
+  name: '🔒 #1480'
+  password: asd123456
+  port: '8388'
+  server: 107.148.6.121
+  type: ss
+- name: '🔒 #1481'
   network: tcp
   password: Aimer
   port: 20003
   server: 146.56.155.102
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1450'
+- name: '🔒 #1482'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 27102
   server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '🔒 #1484'
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  port: 443
+  server: 159.65.14.166
+  skip-cert-verify: true
+  sni: std1.loadingip.com
   type: trojan
 - alterId: 0
   cipher: auto
@@ -7163,7 +7012,7 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
-- name: '🔒 #1456'
+- name: '🔒 #1486'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 43396
@@ -7171,32 +7020,31 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1457'
+  name: '🔒 #1487'
   password: 24efb418-edaf-4331-b01f-4567900a0898
   port: '8443'
   server: 5.253.41.160
   type: ss
-- name: 未知69 61.4KB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.51.212.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🔒 #1458'
+- name: '🔒 #1488'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
   server: 143.110.246.228
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '🔒 #1461'
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1489'
+  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
+  port: '8080'
+  server: 139.28.4.95
+  type: ss
+- name: '🔒 #1490'
   password: b504c643-d081-4c90-8f50-9b0bf0b0902d
   port: 20223
   server: 5.83.221.31
   sni: v2sg01.fuqiangren.com
   type: trojan
-- name: '🔒 #1465'
+- name: '🔒 #1494'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 42881
@@ -7204,31 +7052,37 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1467'
+  name: '🔒 #1496'
   password: YTg3YzJh
   port: '8388'
   server: 45.84.1.33
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1468'
+  name: '🔒 #1497'
   password: QFR3FSQMQRZL4HQ2
   port: '18002'
   server: 156.231.104.12
   type: ss
-- name: '🔒 #1469'
+- name: '🔒 #1498'
   password: 261ccd4c-425d-43a2-bf2a-59c3d1f02e94
   port: 30006
   server: 5.83.221.31
   sni: v2hgc02.fuqiangren.com
   type: trojan
-- name: '🔒 #1471'
+- name: '🔒 #1500'
   network: tcp
   password: Aimer
   port: 1935
   server: 43.154.34.74
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1473'
+- cipher: aes-256-cfb
+  name: '🔒 #1501'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 185.123.101.241
+  type: ss
+- name: '🔒 #1502'
   network: ws
   password: Aimer
   port: 50000
@@ -7238,117 +7092,137 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #1476'
+- name: '🔒 #1505'
   password: fc2e30d6-474a-42a4-8de2-32720698c97f
   port: 30038
   server: 5.83.221.31
   sni: v2hgc02.fuqiangren.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1477'
+  name: '🔒 #1506'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: '40019'
   server: 93.115.10.213
   type: ss
-- name: '🔒 #1478'
+- name: '🔒 #1507'
   password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
   port: 30052
   server: 5.83.221.31
   sni: v2th01.fuqiangren.com
   type: trojan
-- name: '🔒 #1480'
+- name: '🔒 #1510'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 42406
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '🔒 #1481'
+- name: '🔒 #1511'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27401
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1483'
+- name: '🔒 #1512'
   network: tcp
   password: Aimer
   port: 35911
   server: 104.234.233.57
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1484'
+- name: '🔒 #1513'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27401
   server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1485'
+- name: '🔒 #1514'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 42881
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1487'
+- name: '🔒 #1516'
   password: 95b
   port: 443
   server: 43.129.171.137
   sni: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
   type: trojan
-- name: '🔒 #1489'
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1517'
+  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
+  port: '8080'
+  server: 92.223.2.77
+  type: ss
+- name: '🔒 #1518'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27002
   server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1490'
+- name: '🔒 #1519'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 40380
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- cipher: aes-256-cfb
-  name: '🔒 #1491'
-  password: UkXRsXvR6buDMG2Y
-  port: '9001'
-  server: 45.89.52.66
-  type: ss
-- name: '🔒 #1493'
+- name: '🔒 #1522'
   password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336
   port: 443
   server: 20.2.44.220
   sni: jp.mjt001.com
   type: trojan
-- name: '🔒 #1494'
+- name: '🔒 #1524'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 42397
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '🔒 #1496'
+- name: '🔒 #1526'
   password: 4ea1d07c-41c2-42b5-954d-414fee051856
   port: 46002
   server: 120.238.144.180
   type: trojan
+- name: '🔒 #1532'
+  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+  port: 20230
+  server: 3.0.61.142
+  sni: 421421.xyz
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1503'
+  name: '🔒 #1533'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: '2377'
   server: 18.179.197.162
   type: ss
-- name: '🔒 #1506'
+- name: '🔒 #1534'
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 42395
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '🔒 #1507'
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷FR-146.19.168.161-8070 #1'
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- name: '🔒 #1535'
   network: ws
   password: Aimer
   port: 443
@@ -7358,7 +7232,7 @@ proxies:
   ws-opts:
     headers:
       Host: agepa.ambercc.filegear-sg.me
-- name: '🔒 #1509'
+- name: '🔒 #1536'
   network: ws
   password: Aimer
   port: 12115
@@ -7369,53 +7243,53 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #1510'
+- name: '🔒 #1537'
   password: Aimer
   port: 443
   server: 129.226.150.167
   sni: agepq.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1511'
+- name: '🔒 #1538'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 43396
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1513'
+- name: '🔒 #1541'
   network: tcp
   password: fsoOufuTGmSKzRDaAwAbww
   port: 443
   server: 162.250.99.26
   type: trojan
-- name: '🔒 #1515'
+- name: '🔒 #1543'
   password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
   port: 443
   server: 219.76.13.180
   sni: stutter.freetrade.link
   type: trojan
-- name: '🔒 #1516'
+- name: '🔒 #1544'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27401
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1517'
+- name: '🔒 #1545'
   network: tcp
   password: 7d858e5a-664e-419f-b6a1-c3bceb8ac208
   port: 10465
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1518'
+- name: '🔒 #1546'
   network: tcp
   password: Aimer
   port: 443
   server: 219.76.13.166
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1519'
+- name: '🔒 #1547'
   network: tcp
   password: Aimer
   port: 11112
@@ -7428,50 +7302,50 @@ proxies:
   server: 74.226.136.204
   sni: uk01.trojanyyds.xyz
   type: trojan
-- name: '🔒 #1520'
+- name: '🔒 #1548'
   password: 61c6ceee-ee4f-475f-867d-dcfda15490fb
   port: 30017
   server: 5.83.221.31
   sni: v2hgc01.fuqiangren.com
   type: trojan
-- name: '🔒 #1521'
+- name: '🔒 #1549'
   password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
   port: 30053
   server: 5.83.221.31
   sni: v2phl01.fuqiangren.com
   type: trojan
 - cipher: aes-256-cfb
-  name: '🔒 #1522'
+  name: '🔒 #1550'
   password: amazonskr05
   port: '443'
   server: 43.201.59.8
   type: ss
-- name: '🔒 #1523'
+- name: '🔒 #1551'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27103
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1524'
+- name: '🔒 #1553'
   password: Aimer
   port: 443
   server: 47.236.251.178
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1526'
+- name: '🔒 #1555'
   password: 85c41c44-e235-4e0c-9c46-987b7233c837
   port: 40384
   server: 192.142.4.64
   sni: 400567.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1527'
+  name: '🔒 #1556'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: '2377'
   server: 125.227.86.46
   type: ss
-- name: '🔒 #1528'
+- name: '🔒 #1557'
   network: ws
   password: Aimer
   port: 443
@@ -7482,25 +7356,25 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #1529'
+- name: '🔒 #1558'
   password: Aimer
   port: 443
   server: 43.156.116.194
   sni: agepw.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1530'
+- name: '🔒 #1559'
   password: '74260714362785500'
   port: 443
   server: 18.140.81.130
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1533'
+  name: '🔒 #1561'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: '2377'
   server: 125.227.86.44
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1534'
+  name: '🔒 #1562'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: '2377'
   server: 221.215.48.118
@@ -7514,20 +7388,20 @@ proxies:
   tls: false
   type: vmess
   uuid: fa678492-65dd-3df0-800d-11f138b868ab
-- name: '🔒 #1535'
+- name: '🔒 #1563'
   network: tcp
   password: '3774827088566296576'
   port: 443
   server: 13.213.142.42
   sni: exotic-bengal.treefrog761.one
   type: trojan
-- name: '🔒 #1536'
+- name: '🔒 #1564'
   password: 1957909a-4f2a-4d9c-99ad-119d45f052c1
   port: 30055
   server: 5.83.221.31
   sni: v1jp02.fuqiangren.com
   type: trojan
-- name: '🔒 #1537'
+- name: '🔒 #1565'
   network: ws
   password: Aimer
   port: 8443
@@ -7538,42 +7412,33 @@ proxies:
     headers:
       Host: agepq.ambercc.filegear-sg.mehttp%2F1.1
     path: '%2F'
-- name: '🔒 #1538'
+- name: '🔒 #1566'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27002
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- grpc-opts:
-    grpc-service-name: freesg01
-  name: '🔒 #1539'
-  network: grpc
-  password: 86cceddb-c08a-3ffb-a7f0-cf6ab53739a7
-  port: 13498
-  server: 23.94.192.19
-  sni: freesg01.jd0001.top
-  type: trojan
-- name: '🔒 #1540'
+- name: '🔒 #1569'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 46668
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🔒 #1541'
+- name: '🔒 #1570'
   password: f42e1a2e-e650-44f4-8d17-bcb68663da18
   port: 443
   server: 150.230.201.192
   sni: www.seetheworldjp.ga
   type: trojan
-- name: '🔒 #1543'
+- name: '🔒 #1572'
   password: b26e31e5-eac1-45b0-9069-83830bd69521
   port: 443
   server: 20.187.85.198
   sni: hkt.iamnotagoodman.com
   type: trojan
-- name: '🔒 #1546'
+- name: '🔒 #1575'
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 27103
@@ -7581,70 +7446,54 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1547'
+  name: '🔒 #1576'
   password: qK4WEobTeeBS
   port: '995'
   server: 112.28.251.43
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 未知105
-  network: tcp
-  port: '47555'
-  server: 46.29.166.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
-- name: '🔒 #1549'
+- name: '🔒 #1578'
   password: b17fe152-2615-4fe1-b80e-3c61b557481d
   port: 30051
   server: 5.83.221.31
   sni: v2vn01.fuqiangren.com
   type: trojan
-- name: '🔒 #1550'
+- name: '🔒 #1579'
   password: b46a2da5-79eb-47d1-ad1e-30b988c0f93b
   port: 20224
   server: 5.83.221.31
   sni: v2usa01.fuqiangren.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #1552'
-  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-  port: '8080'
-  server: 154.90.50.137
-  type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1553'
+  name: '🔒 #1581'
   password: pKEW8JPByTVTLtM
   port: '443'
   server: 158.247.205.87
   type: ss
-- name: '🔒 #1554'
+- name: '🔒 #1582'
   password: Aimer
   port: 587
   server: 168.138.204.44
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1556'
+- name: '🔒 #1583'
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
   port: 17728
   server: 150.230.139.203
   sni: data.52daishu.life
   type: trojan
-- name: '🔒 #1558'
+- name: '🔒 #1585'
   password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
   port: 30057
   server: 5.83.221.31
   sni: v1kr02.fuqiangren.com
   type: trojan
-- name: '🔒 #1560'
+- name: '🔒 #1587'
   password: c1596d35-5f68-4cef-bf5f-ac0d2ab88b2f
   port: 30056
   server: 5.83.221.31
   sni: v1kr01.fuqiangren.com
   type: trojan
-- name: '🔒 #1563'
+- name: '🔒 #1590'
   network: tcp
   password: fsoOufuTGmSKzRDaAwAbww
   port: 443
@@ -7652,7 +7501,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🔒 #1565'
+  name: '🔒 #1592'
   network: ws
   password: Aimer
   port: 587
@@ -7663,31 +7512,31 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: '🔒 #1568'
+- name: '🔒 #1594'
   password: 261ccd4c-425d-43a2-bf2a-59c3d1f02e94
   port: 30054
   server: 5.83.221.31
   sni: v1jp01.fuqiangren.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1569'
+  name: '🔒 #1595'
   password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
   port: '61002'
   server: 45.196.222.10
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1570'
+  name: '🔒 #1596'
   password: Bog0ELmMM9DSxDdQ
   port: '443'
   server: 157.241.89.212
   type: ss
 - cipher: chacha20-ietf
-  name: '🔒 #1572'
+  name: '🔒 #1598'
   password: asd123456
   port: '8388'
   server: 194.41.59.80
   type: ss
-- name: '🔒 #1574'
+- name: '🔒 #1600'
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
@@ -7695,19 +7544,19 @@ proxies:
   skip-cert-verify: true
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: '🔒 #1576'
+- name: '🔒 #1602'
   password: 1957909a-4f2a-4d9c-99ad-119d45f052c1
   port: 30002
   server: 5.83.221.31
   sni: v2tw01.fuqiangren.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1579'
+  name: '🔒 #1605'
   password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
   port: '61019'
   server: 45.196.222.10
   type: ss
-- name: '🔒 #1580'
+- name: '🔒 #1606'
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
@@ -7715,84 +7564,84 @@ proxies:
   sni: z-v2-080532.kailib.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1581'
+  name: '🔒 #1607'
   password: 3N2JoZhDodMX5wPfr0xbT5
   port: '52839'
   server: 45.8.98.163
   type: ss
-- name: '🔒 #1582'
+- name: '🔒 #1608'
   password: 8cf18212-6899-4d09-9cdc-b7dd91cc4611
   port: 30050
   server: 5.83.221.31
   sni: v2sg02.fuqiangren.com
   type: trojan
-- name: '🔒 #1583'
+- name: '🔒 #1609'
   password: dc773e17-d94e-4f6e-a3cd-26c972a08b89
   port: 30049
   server: 5.83.221.31
   sni: v2sg02.fuqiangren.com
   type: trojan
 - cipher: chacha20-ietf
-  name: '🔒 #1584'
+  name: '🔒 #1610'
   password: asd123456
   port: '8388'
   server: 103.149.183.61
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1586'
+  name: '🔒 #1612'
   password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
   port: '61007'
   server: 45.196.222.10
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1588'
+  name: '🔒 #1614'
   password: AN3FTAV65XV9BQKG
   port: '15009'
   server: 156.245.190.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1589'
+  name: '🔒 #1615'
   password: dbefcef0-836b-4d58-aa05-146f7e63f06f
   port: '61005'
   server: 45.196.222.10
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1592'
+  name: '🔒 #1618'
   password: PT2N60DCUH6VCQPC
   port: '15004'
   server: 156.245.190.13
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1593'
+  name: '🔒 #1619'
   password: VD2XBX35QK6G1WA1
   port: '16004'
   server: 154.196.244.14
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1594'
+  name: '🔒 #1620'
   password: mejtz4AxXWj9zo4QBbvz6z
   port: '52252'
   server: 174.138.17.254
   type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1595'
+  name: '🔒 #1621'
   password: amazonskr05
   port: '443'
   server: 18.142.183.235
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1598'
+  name: '🔒 #1624'
   password: DW1B46PTWS3XSPYU
   port: '15003'
   server: 156.245.190.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1599'
+  name: '🔒 #1625'
   password: LN855BACMZWC1CR7
   port: '15012'
   server: 156.245.190.21
   type: ss
-- name: '🔒 #1600'
+- name: '🔒 #1626'
   network: tcp
   password: Aimer
   port: 50000
@@ -7800,117 +7649,123 @@ proxies:
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1602'
+  name: '🔒 #1628'
   password: L4JOYUZXFWFX9E0N
   port: '16005'
   server: 154.196.244.15
   type: ss
 - cipher: aes-128-gcm
-  name: '🔒 #1603'
+  name: '🔒 #1629'
   password: 64ddb7e7-618b-4413-bd14-8b28372cc2a3
   port: '53004'
   server: 45.196.248.144
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1605'
+  name: '🔒 #1631'
   password: 6df9d9f0-c5db-4e66-be0c-c967c0d6588e
   port: '39029'
   server: 38.150.12.187
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1607'
+  name: '🔒 #1633'
   password: AbkZdd2F8nEUp4o6M3FA1M
   port: '50690'
   server: 64.227.144.190
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🔒 #1634'
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 185.93.173.218
+  type: ss
 - cipher: aes-256-cfb
-  name: '🔒 #1612'
+  name: '🔒 #1638'
   password: amazonskr05
   port: '443'
   server: 13.215.49.89
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1614'
+  name: '🔒 #1640'
   password: a81dd416-d6dc-4268-b088-57ca0447b448
   port: '51183'
   server: 191.96.206.4
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1616'
+  name: '🔒 #1642'
   password: YJCJ0R4WY1NWFU2Y
   port: '16007'
   server: 154.196.244.17
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1620'
+  name: '🔒 #1647'
   password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
   port: '61006'
   server: 45.196.222.10
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1624'
+  name: '🔒 #1652'
   password: 9NCWDRVU7TA5Y3VQ
   port: '16003'
   server: 154.196.244.13
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1626'
+  name: '🔒 #1654'
   password: 0HLKWXU2MV5KGEX4
   port: '15013'
   server: 156.245.190.22
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1629'
+  name: '🔒 #1657'
   password: DQ2BBMW1APSCW8HD
   port: '16001'
   server: 154.196.244.11
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1632'
+  name: '🔒 #1661'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: '40033'
   server: 103.28.53.21
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1635'
+  name: '🔒 #1664'
   password: qK4WEobTeeBS
   port: '996'
   server: 121.14.196.39
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1638'
+  name: '🔒 #1666'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: '443'
   server: 43.249.36.70
   type: ss
-- name: '🔒 #1640'
+- name: '🔒 #1668'
   network: tcp
   password: '3747000103274291200'
   port: 443
   server: 38.60.217.170
   sni: dynamic-tomcat.treefrog761.one
   type: trojan
-- name: '🔒 #1642'
+- cipher: chacha20-ietf
+  name: '🔒 #1669'
+  password: asd123456
+  port: '8388'
+  server: 103.149.182.61
+  type: ss
+- name: '🔒 #1670'
   password: a13820c547fa34c5c45515c12f0cd576
   port: 10051
   server: 117.149.198.190
   skip-cert-verify: true
   sni: zz6.91js.pw
   type: trojan
-- name: '🔒 #1643'
+- name: '🔒 #1671'
   network: tcp
   password: 62ab7405-f2f3-4e76-b2d8-b6b1b1fe4fd0
   port: 443
   server: 103.77.247.224
   sni: kdlsupport.zendesk.com
   type: trojan
-- cipher: chacha20-ietf
-  name: '🔒 #1646'
-  password: asd123456
-  port: '8388'
-  server: 202.162.109.169
-  type: ss
-- name: '🔒 #1649'
+- name: '🔒 #1677'
   network: tcp
   password: Aimer
   port: 443
@@ -7928,13 +7783,13 @@ proxies:
   type: vmess
   uuid: 94983a6d-e7e1-4c7b-9dea-dc74afd683b5
 - cipher: aes-256-gcm
-  name: '🔒 #1650'
+  name: '🔒 #1678'
   password: QLuTHfBuCJrMMSDT
   port: '8388'
   server: 103.253.43.210
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1651'
+  name: '🔒 #1680'
   password: 72bb3072-7efd-4d67-9beb-2cd9c18e69f4
   port: '40006'
   server: 103.198.26.99
@@ -7946,43 +7801,36 @@ proxies:
   sni: jp.iamnotagoodman.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1653'
+  name: '🔒 #1682'
   password: BCnsj2lwoSS3NIl3m1ZHSd
   port: '18022'
   server: 128.199.220.170
   type: ss
-- name: '🔒 #1656'
+- name: '🔒 #1685'
   password: 555034c8-6420-45d0-893c-905c02342150
   port: 80
   server: 51.83.186.142
   sni: pl1.trojanvh.xyz
   type: trojan
-- name: '🔒 #1658'
-  password: d150c8c3-a667-4d3e-843c-739f8558c7d2
-  port: 443
-  server: 206.189.17.198
-  skip-cert-verify: true
-  sni: uk-full.privateip.net
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1659'
+  name: '🔒 #1687'
   password: qK4WEobTeeBS
   port: '998'
   server: 120.233.44.70
   type: ss
+- cipher: chacha20-ietf
+  name: '🔒 #1689'
+  password: asd123456
+  port: '8388'
+  server: 103.36.91.32
+  type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1663'
+  name: '🔒 #1691'
   password: ��8
   port: '80'
   server: 151.101.158.204
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 #1667'
-  password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-  port: '8080'
-  server: 156.244.36.170
-  type: ss
-- name: '🔒 #1672'
+- name: '🔒 #1702'
   network: ws
   password: Aimer
   port: 12247
@@ -8007,7 +7855,7 @@ proxies:
     headers:
       Host: ''
     path: /blue
-- name: '🔒 #1676'
+- name: '🔒 #1706'
   network: ws
   password: '123456'
   port: 8443
@@ -8018,7 +7866,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: '%2FAz1.vpn.33.TOP%2F%3Fed%3D2560'
-- name: '🔒 #1677'
+- name: '🔒 #1707'
   network: ws
   password: fnufMt:sQ&rC0HUu
   port: 2083
@@ -8028,34 +7876,34 @@ proxies:
   ws-opts:
     headers:
       Host: joinmahdiserver-6vv.pages.dev
-- name: '🔒 #1679'
+- name: '🔒 #1709'
   network: tcp
   password: Aimer
   port: 443
   server: 162.159.44.227
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1684'
+- name: '🔒 #1714'
   network: tcp
   password: Aimer
   port: 2087
   server: 103.116.7.100
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1685'
+- name: '🔒 #1715'
   network: tcp
   password: Aimer
   port: 443
   server: 162.159.44.76
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1686'
+- name: '🔒 #1716'
   password: Aimer
   port: 443
   server: 173.245.59.128
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 #1687'
+- name: '🔒 #1717'
   network: ws
   password: bpb-trojan
   port: 443
@@ -8065,7 +7913,7 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: '🔒 #1688'
+- name: '🔒 #1718'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -8074,7 +7922,7 @@ proxies:
   type: trojan
 - alpn:
   - h2
-  name: '🔒 #1689'
+  name: '🔒 #1719'
   network: ws
   password: 7285ff92-0504-4022-a236-64e87d79d2f7
   port: 443
@@ -8085,7 +7933,7 @@ proxies:
     headers:
       Host: newyork.huangshang.ddns-ip.net
     path: '%2FkcZCBL02F1uNblTGnel4M2'
-- name: '🔒 #1690'
+- name: '🔒 #1720'
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -8096,49 +7944,49 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: '🔒 #1693'
+- name: '🔒 #1723'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 162.210.199.85
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1694'
+- name: '🔒 #1724'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 162.210.196.168
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1695'
+- name: '🔒 #1725'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 199.115.116.216
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1696'
+- name: '🔒 #1726'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 162.210.199.87
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1697'
+- name: '🔒 #1727'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 192.157.56.141
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1701'
+- name: '🔒 #1731'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 69.162.95.5
   skip-cert-verify: true
   sni: trus.moonfree.top
   type: trojan
-- name: '🔒 #1702'
+- name: '🔒 #1732'
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   port: 443
   server: 69.162.95.6
@@ -8146,121 +7994,121 @@ proxies:
   sni: trus.moonfree.top
   type: trojan
 - cipher: aes-256-gcm
-  name: '🔒 #1703'
+  name: '🔒 #1733'
   password: PCnnH6SQSnfoS27
   port: '8091'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1705'
+  name: '🔒 #1734'
   password: Y6R9pAtvxxzmGC
   port: '3389'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1706'
+  name: '🔒 #1735'
   password: XKFKl2rULjIp74
   port: '8009'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1709'
+  name: '🔒 #1738'
   password: e4FCWrgpkji3QY
   port: '9102'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1710'
+  name: '🔒 #1739'
   password: KixLvKzwjekG00rm
   port: '5500'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1711'
+  name: '🔒 #1740'
   password: g5MeD6Ft3CWlJId
   port: '5004'
   server: 134.195.196.12
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1719'
+  name: '🔒 #1747'
   password: g5MeD6Ft3CWlJId
   port: '5003'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1720'
+  name: '🔒 #1748'
   password: TEzjfAYq2IjtuoS
   port: '6679'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1721'
+  name: '🔒 #1749'
   password: zDNVedRFPQexG9v
   port: '6379'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1723'
+  name: '🔒 #1750'
   password: RexnBgU7EV5ADxG
   port: '7002'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1724'
+  name: '🔒 #1751'
   password: PCnnH6SQSnfoS27
   port: '8090'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1725'
+  name: '🔒 #1752'
   password: FoOiGlkAA9yPEGP
   port: '7306'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1726'
+  name: '🔒 #1753'
   password: KixLvKzwjekG00rm
   port: '5500'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1727'
+  name: '🔒 #1754'
   password: kDWvXYZoTBcGkC4
   port: '8882'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1728'
+  name: '🔒 #1755'
   password: faBAoD54k87UJG7
   port: '2376'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1729'
+  name: '🔒 #1756'
   password: XKFKl2rULjIp74
   port: '8008'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1730'
+  name: '🔒 #1757'
   password: FoOiGlkAA9yPEGP
   port: '7307'
   server: 38.114.114.19
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1732'
+  name: '🔒 #1759'
   password: FoOiGlkAA9yPEGP
   port: '7306'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1734'
+  name: '🔒 #1761'
   password: RexnBgU7EV5ADxG
   port: '7002'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1735'
+  name: '🔒 #1762'
   password: PCnnH6SQSnfoS27
   port: '8090'
   server: 38.68.135.18
@@ -8272,31 +8120,31 @@ proxies:
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1736'
+  name: '🔒 #1763'
   password: XKFKl2rULjIp74
   port: '8009'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1737'
+  name: '🔒 #1764'
   password: pKEW8JPByTVTLtM
   port: '4444'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1739'
+  name: '🔒 #1766'
   password: Y6R9pAtvxxzmGC
   port: '3389'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🔒 #1740'
+  name: '🔒 #1767'
   password: g5MeD6Ft3CWlJId
   port: '5003'
   server: 38.68.135.18
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🔒 #1741'
+  name: '🔒 #1768'
   password: XvK0ltH67Xhv9ht9RhYsFy
   port: '8080'
   server: 199.59.243.228

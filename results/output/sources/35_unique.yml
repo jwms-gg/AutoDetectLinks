@@ -1,64 +1,47 @@
-# Update: 2025-03-13 14:27
-# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 7
+# Update: 2025-03-13 20:45
+# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 4
 proxies:
 - client-fingerprint: chrome
-  name: '🇺🇸 US 36 #1'
-  network: ws
+  name: 🇯🇵 JP 1
+  network: tcp
   port: 443
-  server: freedom14.geraxex389.workers.dev
-  servername: freedom14.geraxex389.workers.dev
-  tls: true
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    short-id: 7266e6
+  server: 103.140.136.11
+  servername: app.usercentrics.eu
+  tls: false
   type: vless
-  uuid: 3f266d25-21aa-4498-bb1a-ce6d1d327aaf
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  name: 🇯🇵 JP 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    short-id: 7266e6
+  server: 103.140.136.99
+  servername: cdn.userway.org
+  tls: false
+  type: vless
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
   ws-opts:
     path: '%2f'
 - alterId: 0
   cipher: null
-  name: '🇺🇸 US 64 #1'
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  servername: biazh.mmzhk.website
-  tls: true
+  name: 🇯🇵 JP 3
+  network: tcp
+  port: 1069
+  server: 152.69.197.60
+  servername: null
+  tls: false
   type: vmess
-  uuid: 5b2ad717-20db-4e2e-bce7-c388e578ed9e
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
-- name: 🇫🇮 FI 2
-  network: grpc
-  port: 8880
-  server: 65.109.172.239
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  ws-opts:
-    path: '%2f'
-- name: 🇮🇷 IR 1
-  network: ws
-  port: 14040
-  server: 185.208.77.113
-  tls: false
-  type: vless
-  uuid: a2691bdd-7989-4e7e-9c44-302e360c021f
-  ws-opts:
-    path: '%2f'
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 33
-  password: XPtzA9sCug3SPR4c
-  port: '9025'
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇪🇸 ES 1
-  password: M3t2ZEQcMGRWBjRa
-  port: '9011'
-  server: 5.188.181.201
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇹🇷 TR 8 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 185.123.101.241
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- cipher: aes-256-gcm
+  name: '🇺🇸 US 15 #2'
+  password: lGqs95QkFHo2NV
+  port: '5499'
+  server: 67.220.95.102
   type: ss

@@ -1854,7 +1854,7 @@ class ClashAPI:
             raise ClashAPIException("未建立与 Clash API 的连接")
 
         try:
-            delay_timeout = settings.delay_timeout_unit * 1000
+            delay_timeout = settings.delay_timeout_unit * 1000 * 2
             response = await self.client.get(
                 f"{self.base_url}/group/{group_name}/delay",
                 headers=self.headers,
@@ -1862,7 +1862,7 @@ class ClashAPI:
                     "url": settings.delay_url_test,
                     "timeout": str(delay_timeout),
                 },
-                timeout=delay_timeout * 2,
+                timeout=settings.delay_timeout_unit * 4,
             )
             response.raise_for_status()
         except httpx.TimeoutException as e:
