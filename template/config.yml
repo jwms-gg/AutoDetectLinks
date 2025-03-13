@@ -51,22 +51,18 @@ sniffer:
 
 dns:
   enable: true
-  prefer-h3: false
-  ipv6: false
+  listen: :1053
+  ipv6: true
   enhanced-mode: redir-host
-  default-nameserver:
-    - tcp://223.5.5.5
-    - tcp://223.6.6.6
   nameserver:
     - 223.5.5.5
-    - 119.29.29.29
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
-    - https://1.12.12.12/dns-query
-    - https://120.53.53.53/dns-query
+    - 223.6.6.6
+    - 114.114.114.114
   fallback:
     - 8.8.8.8
+    - 8.8.4.4
     - 1.1.1.1
+    - 1.1.1.2
 
 global-client-fingerprint: chrome
 tcp-concurrent: true

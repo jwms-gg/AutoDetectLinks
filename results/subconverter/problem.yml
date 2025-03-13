@@ -73,8 +73,9 @@ dns:
     - localhost.ptlogin2.qq.com
     - localhost.sec.qq.com
 proxies:
-  - {name: "US 64 #1", server: biazh.mmzhk.website, port: 443, type: vmess, uuid: 5b2ad717-20db-4e2e-bce7-c388e578ed9e, alterId: 0, cipher: "", tls: true, servername: biazh.mmzhk.website, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}}
-  - {name: "@daredevill_404", server: 188.34.194.165, port: 80, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ""}
+  - {name: "US 64 #1", server: biazh.mmzhk.website, port: 443, client-fingerprint: chrome, type: vmess, uuid: 5b2ad717-20db-4e2e-bce7-c388e578ed9e, alterId: 0, cipher: "", tls: true, servername: biazh.mmzhk.website, network: ws, ws-opts: {path: /, headers: {Host: biazh.mmzhk.website}}}
+  - {name: "@daredevill_404", server: 188.34.194.165, port: 80, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ""}
+  - {name: "telegram #497", server: 103.140.136.11, port: 443, reality-opts: {public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw, short-id: 7266e6}, client-fingerprint: chrome, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: false, servername: app.usercentrics.eu}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -83,6 +84,7 @@ proxy-groups:
       - 🎯 全球直连
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -90,6 +92,7 @@ proxy-groups:
     proxies:
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -98,6 +101,7 @@ proxy-groups:
       - 🎯 全球直连
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -118,6 +122,7 @@ proxy-groups:
       - 🎯 全球直连
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -130,6 +135,7 @@ proxy-groups:
       - 🔰 节点选择
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: 📲 电报信息
     type: select
     proxies:
@@ -137,6 +143,7 @@ proxy-groups:
       - 🎯 全球直连
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -145,6 +152,7 @@ proxy-groups:
       - ♻️ 自动选择
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,6 +170,7 @@ proxy-groups:
       - ♻️ 自动选择
       - "US 64 #1"
       - "@daredevill_404"
+      - "telegram #497"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
