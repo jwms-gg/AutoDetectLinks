@@ -16,33 +16,34 @@ check:
   # Timeout, in milliseconds
   timeout: 2000
   # Minimum speed, in KB/s
-  min-speed: 2048
+  min-speed: 888
   # Download test timeout, in seconds
-  download-timeout: 10
+  download-timeout: 30
   # Speed test download size, in MB
-  download-size: 50
+  download-size: 10
   # Speed test URL
   speed-test-url:
-    - https://speed.cloudflare.com/__down?bytes=1073741824
     - https://github.com/VSCodium/vscodium/releases/download/1.98.0.25067/codium-1.98.0.25067-el9.aarch64.rpm
   # Skip speed test for names matching this regex
-  speed-skip-name: 倍率|x\d+
+  # speed-skip-name: 倍率|x\d+
   # Speed test concurrent
-  speed-check-concurrent: 1
+  speed-check-concurrent: 10
   # Speed test count
   speed-count: 10
   # Speed save
-  speed-save: true
+  speed-save: false
   # Items to check
   items:
-    - openai
-    - youtube
-    - netflix
-    - disney
+    - speed
+    # - openai
+    # - youtube
+    # - netflix
+    # - disney
 
 save:
   # Save method: webdav, http, gist, or r2
-  method: local
+  method:
+    - local
   # Save port
   port: 8080
   # WebDAV

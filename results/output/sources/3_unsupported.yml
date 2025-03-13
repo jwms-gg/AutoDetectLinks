@@ -1,39 +1,11 @@
-# Update: 2025-03-12 21:47
+# Update: 2025-03-13 14:27
 # Source 3 (https://raw.githubusercontent.com/free18/v2ray/main/c.yaml), 27
 proxies:
 - name: 🇨🇳_中国_1
   network: ws
-  port: 35500
-  server: 61.239.234.5
-  servername: no1.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: no1.bgm2024.us.kg
-    path: /?ed=2560
-- name: 🇨🇳_中国_2
-  network: ws
-  port: 35500
-  server: 61.239.234.5
-  servername: no1.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: no1.bgm2024.us.kg
-    path: /?ed=2560&proxyip=61.239.234.5:35500
-- name: 🇨🇳_中国_3
-  network: ws
   port: 81
   server: 210.61.97.241
-  servername: no1.bgm2024.us.kg
+  servername: cc1.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -41,22 +13,35 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: no1.bgm2024.us.kg
+      host: cc1.ylkszy.eu.org
     path: /?ed=2560
-- name: 🇨🇳_中国_4
-  network: ws
+- name: 🇨🇳_中国_2
+  network: tcp
+  password: Aimer
   port: 8443
-  server: 27.50.49.242
-  servername: edfgh.aimercc.filegear-sg.me
+  server: 154.219.5.249
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: agepi.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
+- name: 🇨🇳_中国_3
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 154.197.64.27
+  skip-cert-verify: true
+  sni: agepi.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_4
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 154.197.64.132
+  skip-cert-verify: true
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 🇨🇳_中国_5
   network: tcp
   password: Aimer
@@ -66,119 +51,31 @@ proxies:
   sni: ageph.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇨🇳_中国_6
-  network: ws
-  port: 8443
-  server: 27.50.49.230
-  servername: edfgh.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_7
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 154.197.64.132
-  skip-cert-verify: true
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_8
-  network: ws
-  port: 443
-  server: 27.50.48.21
-  servername: edfgh.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_9
-  network: ws
-  port: 443
-  server: 172.93.165.228
-  servername: edfgh.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_10
-  network: ws
-  port: 2083
-  server: 27.50.49.47
-  servername: edfgh.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_11
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 27.50.49.230
-  skip-cert-verify: true
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_12
-  network: ws
-  port: 8443
-  server: 27.50.49.177
-  servername: edfgh.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edfgh.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_13
-  network: ws
-  port: 12457
-  server: 223.16.138.113
-  servername: no1.bgm2024.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: no1.bgm2024.us.kg
-    path: /?ed=2560
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_15
+  name: 🇨🇳_中国_7
+  network: tcp
+  port: '41699'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_10
   network: tcp
   port: '32077'
   server: 120.232.153.41
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_11
+  password: 4S85LF2Q3QK92171
+  port: 18008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_17
+  name: 🇨🇳_中国_12
   network: tcp
   port: '50095'
   server: 120.198.71.219
@@ -186,47 +83,57 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_19
+  name: 🇨🇳_中国_14
   network: tcp
   port: '53902'
   server: 183.236.51.38
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_20
-  network: tcp
-  port: '41699'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 🇨🇳_中国_24
+  name: 🇨🇳_中国_16
+  password: QF377GGQ00RATCMK
+  port: 21004
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_17
+  password: YMB3QL85L7F1KJR7
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_18
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_19
   password: LZQ0R9BL69GCC6FS
   port: 15005
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-gcm
-  name: 🇨🇳_中国_26
+  name: 🇨🇳_中国_21
   password: FCEUOASRQJC0LN0K
   port: 15009
   server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-gcm
-  name: 🇨🇳_中国_28
+  name: 🇨🇳_中国_23
   password: Y2U58S90E3GST1AQ
   port: 21001
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-gcm
-  name: 🇨🇳_中国_30
+  name: 🇨🇳_中国_25
   password: 84HMRAWILKB49QUZ
   port: 18002
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_32
+  name: 🇨🇳_中国_27
   network: tcp
   port: '35565'
   server: 120.198.71.214
@@ -234,29 +141,53 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_33
+  name: 🇨🇳_中国_28
   network: tcp
   port: '42055'
   server: 120.198.71.219
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳_中国_30
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52612
+  server: hk02.x.quickcht3.club
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_31
+  password: IHWLYZSSSX4GSKLA
+  port: 16013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_32
+  password: F7XGGN9MP0DGPLII
+  port: 21007
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇳_中国_35
+  password: TCEL1H0XD7TWAKI0
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_41
+  name: 🇨🇳_中国_36
   network: tcp
   port: '44550'
   server: 120.232.153.40
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 🇨🇳_中国_42
+  name: 🇨🇳_中国_37
   password: WNW5MZJX57ZJUNQU
   port: 16009
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_44
+  name: 🇨🇳_中国_39
   network: tcp
   port: '44014'
   server: 120.198.71.219
@@ -264,7 +195,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_45
+  name: 🇨🇳_中国_40
   network: tcp
   port: '36998'
   server: 120.234.102.229
