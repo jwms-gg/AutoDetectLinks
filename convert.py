@@ -260,14 +260,14 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                 elif k == "fp":
                     data["fingerprint"] = v
 
-    elif type == "http":
-        ...
+    # elif type == "http":
+    #     ...
 
-    elif type == "hysteria":
-        ...
+    # elif type == "hysteria":
+    #     ...
 
-    elif type == "socks5":
-        ...
+    # elif type == "socks5":
+    #     ...
 
     else:
         raise UnsupportedType(type)

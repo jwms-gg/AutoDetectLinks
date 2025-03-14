@@ -34,34 +34,23 @@ external-controller: 0.0.0.0:9090
 #   mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
 #   # asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
-sniffer:
-  enable: true
-  sniff:
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
-    # QUIC:
-    #   ports: [443, 8443]
-  skip-domain:
-    - Mijia Cloud
-    - dlg.io.mi.com
-    - +.apple.com
-
 dns:
   enable: true
   listen: :1053
   ipv6: true
   enhanced-mode: redir-host
   nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
+    - tls://223.5.5.5 # 阿里云公共DNS
+    - tls://223.6.6.6 # 阿里云公共DNS
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fallback:
     - 8.8.8.8
     - 8.8.4.4
     - 1.1.1.1
-    - 1.1.1.2
+    - 1.0.0.1
+    - tls://1.0.0.1:853
+    - tls://1.1.1.1:853
 
 global-client-fingerprint: chrome
 tcp-concurrent: true
@@ -1024,7 +1013,7 @@ rules:
   - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
   - DOMAIN-SUFFIX,apple.com,🌐 突破锁区
   - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
-  # - DOMAIN,e.crashlytics.com,⛔ 广告拦截 //注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
+  - DOMAIN,e.crashlytics.com,⛔ 广告拦截 # 注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
 
   # 国外网站
   # - DOMAIN-SUFFIX,adobe.com,🚀 选择代理

@@ -1,11 +1,14 @@
-# Update: 2025-03-13 20:45
-# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 24
+# Update: 2025-03-16 20:40
+# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 32
 proxies:
-- name: tg频道:@freenodedaily
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: tg频道:@freenodedaily
+  password: amazonskr05
+  port: 443
+  server: 35.77.94.139
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: HK
   network: ws
@@ -27,140 +30,271 @@ proxies:
   server: hk01.x.quickcht3.club
   tfo: false
   type: ss
-- client-fingerprint: chrome
+- cipher: rc4-md5
+  client-fingerprint: chrome
   name: 🇭🇰 香港3
-  password: bba1cfff-9e0b-4cb6-9df4-c741c75e59a8
-  port: 13007
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8716
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇭🇰 香港4
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8752
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 🇭🇰 香港5
+  password: ea2QsO
+  port: 22745
+  server: 183.240.116.144
+  skip-cert-verify: true
+  sni: ctldl.windowsupdate.com
   type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 🇭🇰 香港5
-  password: 2H98UZT9LT1TE3X9
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 🇭🇰 香港6
-  password: RBN1UNGVPF1BQXPK
-  port: 15006
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  password: XJPAS0N4BEP15G19
+  port: 15010
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇭🇰 香港7
-  password: TCEL1H0XD7TWAKI0
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
+  password: 2T5W8KZ3SXC3B0GJ
+  port: 15014
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港8
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
+  port: 49876
+  server: xxxlsopyyds.com
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: aes-256-gcm
+  tls: false
+  type: vmess
+  uuid: 2f0a6a99-af56-4119-bd11-04bccd6b74b7
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 🇹🇼 台湾
-  password: KM16ID6XDW3XRC7K
-  port: 21006
-  server: qh62onjn.slashdevslashnetslashtun.net
+  port: 48216
+  server: relay-cn-00.anycoin.bid
+  servername: 3233342d38352e3233372e3230372e313635.anycoin.bid
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇹🇼 台湾2
-  password: ECOQAU8O56QGBV28
-  port: 21002
-  server: qh62onjn.slashdevslashnetslashtun.net
+  password: OOW5TZHO9I1OFBAF
+  port: 21001
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 🇹🇼 台湾3
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8746
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 🇹🇼 台湾4
-  password: F7XGGN9MP0DGPLII
-  port: 21007
-  server: w72tapyb.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8745
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾5
+  password: 6VQE3NRIIDK656Q0
+  port: 21002
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: JP
-  password: 4S85LF2Q3QK92171
-  port: 18008
-  server: w72tapyb.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8764
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 🇯🇵 日本2
-  password: YMB3QL85L7F1KJR7
-  port: 18013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8761
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: SG
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
+  name: 🇯🇵 日本3
+  port: 48216
+  server: relay-cn-00.anycoin.bid
+  servername: 31313630312d3130332e3137392e34352e323033.anycoin.bid
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 🇸🇬 新加坡2
-  password: BFYCOKHTC8HIWWRB
-  port: 16006
+  name: 🇯🇵 日本4
+  password: 1S109X5IY8M2ZD3N
+  port: 18007
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 🇸🇬 新加坡3
-  password: IHWLYZSSSX4GSKLA
-  port: 16013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  name: 🇯🇵 日本5
+  password: 1KGUQG74ONAKMGN8
+  port: 18004
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: KR
+  port: 48216
+  server: relay-cn-00.anycoin.bid
+  servername: 3233342d3137352e3139332e3133382e3235.anycoin.bid
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: SG
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8722
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇸🇬 新加坡2
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8724
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇸🇬 新加坡3
+  password: ZI7MN86GBSHSFW50
+  port: 16014
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇸🇬 新加坡4
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 5.223.55.99
+  password: WG8GVCDPUARVY5TU
+  port: 16010
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: 🇰🇷 韩国特殊
-  password: amazonskr05
-  port: 443
-  server: 18.141.140.120
+  name: US
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8771
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: 🇯🇵 日本特殊
-  password: amazonskr05
-  port: 443
-  server: 13.124.103.7
+  name: 🇺🇸 美国2
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202503140983506-gBQ0aA7o7i.download.microsoft.com
+    mode: http
+  port: 8773
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇺🇸 美国3
+  port: 48216
+  server: relay-cn-00.anycoin.bid
+  servername: 3233342d3134382e3133352e3131352e3237.anycoin.bid
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇺🇸 美国4
+  password: 253KPG5GKU6EXJQB
+  port: 17007
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇺🇸 美国5
+  password: UUBUEJ1DLDQVJG7D
+  port: 17003
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -168,30 +302,22 @@ proxies:
   name: 🇸🇬 狮城特殊
   password: amazonskr05
   port: 443
-  server: 52.78.120.105
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: DE
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 91.107.219.5
+  server: 43.201.85.71
   tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: CA
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 95.217.158.231
+  name: 🇯🇵 日本特殊
+  password: amazonskr05
+  port: 443
+  server: 18.143.164.214
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: RU
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 185.158.155.33
+  name: 🇰🇷 韩国特殊
+  password: amazonskr05
+  port: 443
+  server: 54.180.137.54
   tfo: false
   type: ss
