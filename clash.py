@@ -46,22 +46,29 @@ clash_config_template = {
         "ipv6": False,
         "default-nameserver": [
             "223.5.5.5",
-            "119.29.29.29",
-            "114.114.114.114",
+            "223.6.6.6",
+            "1.1.1.1",
+            "8.8.8.8",
         ],
         "enhanced-mode": "fake-ip",
         "fake-ip-range": "198.18.0.1/16",
         "nameserver": [
-            "https://doh.pub/dns-query",
-            "https://dns.alidns.com/dns-query",
+            "https://223.5.5.5/dns-query",
+            "https://223.6.6.6/dns-query",
         ],
         "fallback": [
-            "https://doh.dns.sb/dns-query",
-            "https://dns.cloudflare.com/dns-query",
-            "https://dns.twnic.tw/dns-query",
-            "tls://8.8.4.4:853",
+            "1.1.1.1",
+            "8.8.8.8",
         ],
-        "fallback-filter": {"geoip": True, "ipcidr": ["240.0.0.0/4", "0.0.0.0/32"]},
+        "fallback-filter": {
+            "geoip": True,
+            "geoip-code": "CN",
+            "ipcidr": [
+                "240.0.0.0/4",
+                "127.0.0.1/8",
+                "0.0.0.0/32",
+            ],
+        },
     },
     "proxies": [],
     "proxy-groups": [
