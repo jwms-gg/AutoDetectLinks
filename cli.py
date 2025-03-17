@@ -610,47 +610,6 @@ def write_all(file_name: str, nodes: list[dict[str, Any]]):
     logger.info("Read clash config template...")
     config: dict[str, Any] = read_yaml("template/config.yml")
 
-    logger.info("Generating Adblock rules...")
-    rules = merge_adblock(config["proxy-groups"][-2]["name"])
-
-    logger.info("Writing the Clash.Meta subscription...")
-    keywords: list[str] = []
-    suffixes: list[str] = []
-    match_rule = None
-    for config_rule in config["rules"]:
-        config_rule: str
-        tmp = config_rule.strip().split(",")
-        if len(tmp) == 2 and tmp[0] == "MATCH":
-            match_rule = config_rule
-            break
-        if len(tmp) == 3:
-            rtype, rargument, rpolicy = tmp
-            if rtype == "DOMAIN-KEYWORD":
-                keywords.append(rargument)
-            elif rtype == "DOMAIN-SUFFIX":
-                suffixes.append(rargument)
-        elif len(tmp) == 4:
-            rtype, rargument, rpolicy, rresolve = tmp
-            rpolicy += "," + rresolve
-        else:
-            logger.info(f"规则 {config_rule} 无法被解析！")
-            continue
-
-        for kwd in keywords:
-            if kwd in rargument and kwd != rargument:
-                logger.info(f"{rargument} 已被 KEYWORD {kwd} 命中")
-                break
-        else:
-            for sfx in suffixes:
-                if ("." + rargument).endswith("." + sfx) and sfx != rargument:
-                    logger.info(f"{rargument} 已被 SUFFIX {sfx} 命中")
-                    break
-            else:
-                k = rtype + "," + rargument
-                if k not in rules:
-                    rules[k] = rpolicy
-    config["rules"] = [",".join(_) for _ in rules.items()] + [match_rule]
-
     # Clash Meta
     proxies_meta: list[dict[str, Any]] = []
     ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
