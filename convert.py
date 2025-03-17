@@ -65,6 +65,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
             data["grpc-opts"] = {"grpc-service-name": v["path"]}
 
     elif type == "ss":
+        # https://github.com/shadowsocks/shadowsocks-org/wiki/SIP002-URI-Scheme
         if "#" in uri:
             config_part, name = uri.split("#", 1)
         else:
@@ -225,6 +226,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                     data["reality-opts"]["short-id"] = v
 
     elif type == "hysteria2":
+        # https://v2.hysteria.network/docs/developers/URI-Scheme/
         parsed = urlparse(proxy)
         data = {
             "name": unquote(parsed.fragment),
@@ -260,14 +262,84 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                 elif k == "fp":
                     data["fingerprint"] = v
 
-    # elif type == "http":
-    #     ...
+    elif type == "http":
+        # http://username:password@host:port?tls=1#name
+        parsed = urlparse(proxy)
+        data = {
+            "name": unquote(parsed.fragment),
+            "server": parsed.hostname,
+            "port": parsed.port,
+            "type": "http",
+            "username": unquote(parsed.username),
+            "password": unquote(parsed.password),
+        }
+        if parsed.query:
+            for kv in parsed.query.split("&"):
+                k, v = kv.split("=", 1)
+                if k == "tls":
+                    data["tls"] = v != "0"
 
-    # elif type == "hysteria":
-    #     ...
+    elif type == "hysteria":
+        # https://v1.hysteria.network/docs/uri-scheme/
+        # hysteria://host:port?protocol=udp&auth=123456&peer=sni.domain&insecure=1&upmbps=100&downmbps=100&alpn=hysteria&obfs=xplus&obfsParam=123456#remarks
+        parsed = urlparse(proxy)
+        data = {
+            "name": unquote(parsed.fragment),
+            "server": parsed.hostname,
+            "type": "hysteria",
+            # "password": unquote(parsed.username),
+        }
+        if ":" in parsed.netloc:
+            ports = parsed.netloc.split(":")[-1]
+            if "," in ports:
+                data["port"], data["ports"] = ports.split(",", 1)
+            else:
+                data["port"] = ports
+            try:
+                data["port"] = int(data["port"])
+            except ValueError:
+                data["port"] = 443
+        else:
+            data["port"] = 443
+        if parsed.query:
+            k = v = ""
+            for kv in parsed.query.split("&"):
+                if "=" in kv:
+                    k, v = kv.split("=", 1)
+                else:
+                    v += "&" + kv
+                if k == "insecure":
+                    data["skip-cert-verify"] = v != "0"
+                elif k == "peer":
+                    data["sni"] = v
+                elif k == "auth":
+                    data["auth_str"] = v
+                elif k == "upmbps":
+                    data["up"] = v
+                elif k == "downmbps":
+                    data["down"] = v
+                elif k == "fast_open":
+                    data["fast_open"] = v != "0"
+                elif k == "alpn":
+                    data["alpn"] = unquote(v).split(",")
+                elif k in ("obfs", "obfsParam"):
+                    data["obfs"] = v
+                elif k == "mport":
+                    data["ports"] = v
+                elif k == "fp":
+                    data["fingerprint"] = v
 
-    # elif type == "socks5":
-    #     ...
+    elif type == "socks5":
+        # socks5://username:password@host:port
+        parsed = urlparse(proxy)
+        data = {
+            "name": unquote(parsed.fragment),
+            "server": parsed.hostname,
+            "port": parsed.port,
+            "type": "socks5",
+            "username": unquote(parsed.username),
+            "password": unquote(parsed.password),
+        }
 
     else:
         raise UnsupportedType(type)
@@ -451,3 +523,7 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
         return ret
 
     raise UnsupportedType(type)
+
+
+if __name__ == "__main__":
+    ...

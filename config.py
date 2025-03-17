@@ -23,5 +23,5 @@ final_settings = json.dumps(
     separators=(",", ":"),
 )
 
-with open(".settings.json", "w") as f:
+with open(".settings.json", "w", encoding="utf-8") as f:
     f.write(final_settings)
