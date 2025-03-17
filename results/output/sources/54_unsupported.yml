@@ -1,4 +1,4 @@
-# Update: 2025-03-17 09:50
+# Update: 2025-03-17 20:47
 # Source 54 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria), 44
 proxies:
 - name: 🔄 LATEST-UPDATE 📅 MON-27-ESFAN...
@@ -7,15 +7,31 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: abbcaca-acba-acba-cbda-cacbaabbbcac
+  uuid: aaabcbc-abca-acba-adbc-babbaacbcacc
 - name: 🤖 JOIN-TELEGRAM-CHANNEL 💡 @NEU...
   network: tcp
   port: 2080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: aaccbba-caba-cbaa-bdca-bbaacabbaccc
+  uuid: aaccbab-aabc-acba-adcb-bacbcacbcaab
+- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-[2400:8a2...
+  password: 18a720415df07a92
+  port: 64321
+  server: '2400:8a20:113:36::'
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c...
+  obfs: salamander
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 8443
+  server: 2606:a8c0:101:6e::a
+  skip-cert-verify: true
+  sni: kevin.serverv.net
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #1'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
@@ -24,70 +40,59 @@ proxies:
   skip-cert-verify: true
   sni: kevin.serverv.net
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f...
+- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-[2a03:6f0...
   obfs: salamander
-  obfs-password: cd29099d
-  password: 9bb452b106ffc217
+  obfs-password: 6u33lecx372cssb22nzgu5l5fpdhom4ivqwg4fqby133lzsv3q
+  password: nRSmYP828VP1UwxlAnWEbmEtlLSH5SE7
   port: 443
-  server: 2001:19f0:1000:18b3:5400:5ff:fe19:3f6d
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #1'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 8443
-  server: 2606:a8c0:101:22::a
-  skip-cert-verify: true
-  sni: kevin.serverv.net
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-[2603:c02...
-  password: de08f485-8f8c-4316-9e80-6e7ecdf91d45
-  port: 23729
-  server: 2603:c024:4510:2769:3788:4df6:250e:bc8b
-  skip-cert-verify: true
+  server: 2a03:6f00:a::30d3
+  sni: anymath.ir
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #2'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 8443
+  port: 443
   server: 2606:a8c0:101:39::a
   skip-cert-verify: true
-  sni: kevin.serverv.net
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇯🇵 JP-[2603:c02...
+  password: Hy2+3313033
+  port: 38787
+  server: 2603:c021:8011:5b69:80db:8f0e:a3c4:878e
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-[2603:c02...
+  password: de08f485-8f8c-4316-9e80-6e7ecdf91d45
+  port: 23729
+  server: 2603:c024:4510:2769:4c5b:e9a0:2427:7f58
+  skip-cert-verify: true
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #3'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 8443
-  server: 2606:a8c0:101:6e::a
-  skip-cert-verify: true
-  sni: kevin.serverv.net
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-[2a03:6f0...
-  obfs: salamander
-  obfs-password: 6u33lecx372cssb22nzgu5l5fpdhom4ivqwg4fqby133lzsv3q
-  password: 1YyXyfUGI0
   port: 443
-  server: 2a03:6f00:a::2125
-  sni: anymath.ir
+  server: 2606:a8c0:101:72::a
+  skip-cert-verify: true
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #4'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 8443
-  server: 2606:a8c0:101:86::a
+  port: 443
+  server: 2606:a8c0:101:78::a
   skip-cert-verify: true
-  sni: kevin.serverv.net
   type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇸🇬 SG-[2603:c02... #1'
-  password: de08f485-8f8c-4316-9e80-6e7ecdf91d45
-  port: 23729
-  server: 2603:c024:4510:2769:4c5b:e9a0:2427:7f58
+- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-[2a12:594...
+  obfs: salamander
+  obfs-password: 7d9dff369a11f6e0
+  password: 81ea378b37931b23
+  port: 7373
+  server: 2a12:5940:72da::2
   skip-cert-verify: true
+  sni: vkvd127.mycdn.me
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇯🇵 JP-[2406:da1...
   password: 96cad374-7573-4463-8804-4665c2c3d932
@@ -96,44 +101,43 @@ proxies:
   skip-cert-verify: true
   sni: d1--cn-gotcha204-4.bilivideo.com
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-[2400:8a2...
-  password: 18a720415df07a92
-  port: 64321
-  server: '2400:8a20:113:36::'
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-[2a11:840...
-  password: 8b2693fb-8739-46bd-b184-5e7c1778c597
-  port: 81
-  server: 2a11:840:67:1b::f4c2:ccfa
-  skip-cert-verify: true
+- name: '🔒 HYSTERIA-UDP 🇷🇺 RU-[2a03:6f0... #1'
+  obfs: salamander
+  obfs-password: 6u33lecx372cssb22nzgu5l5fpdhom4ivqwg4fqby133lzsv3q
+  password: 1YyXyfUGI0
+  port: 443
+  server: 2a03:6f00:a::2125
+  sni: anymath.ir
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #5'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
   port: 443
-  server: 2606:a8c0:101:72::a
+  server: 2606:a8c0:101:18::a
+  skip-cert-verify: true
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f...
+  obfs: salamander
+  obfs-password: 4b817757
+  password: 1f17cdf0578a2860
+  port: 443
+  server: 2001:19f0:5:34a0:5400:5ff:fe19:3f6f
+  skip-cert-verify: true
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇩🇪 DE-[2a0d:594...
+  password: 28c05d48e2f470d07a4c392c9bd43849
+  port: 443
+  server: '2a0d:5940:44:301::'
+  sni: jostar-data.nl
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-[2a0b:414...
+  password: 8b2693fb-8739-46bd-b184-5e7c1778c597
+  port: 81
+  server: 2a0b:4140:925f::2
   skip-cert-verify: true
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #6'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:78::a
-  skip-cert-verify: true
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #7'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:6e::a
-  skip-cert-verify: true
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #8'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
@@ -142,15 +146,23 @@ proxies:
   skip-cert-verify: true
   sni: kevin.serverv.net
   type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #9'
+- name: 🔒 HYSTERIA-UDP 🇬🇧 GB-[2a0e:dc0...
+  password: 6d853bb9
+  port: 61631
+  server: 2a0e:dc0:5:2264:a:b:220e:a5c9
+  skip-cert-verify: true
+  sni: 2a0e:dc0:5:2264:a:b:220e:a5c9
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #7'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:22::a
+  port: 8443
+  server: 2606:a8c0:101:18::a
   skip-cert-verify: true
+  sni: kevin.serverv.net
   type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #10'
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #8'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
@@ -158,28 +170,59 @@ proxies:
   server: 2606:a8c0:101:86::a
   skip-cert-verify: true
   type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #11'
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #9'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
   port: 8443
-  server: 2606:a8c0:101:72::a
+  server: 2606:a8c0:101:78::a
   skip-cert-verify: true
   sni: kevin.serverv.net
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-[2a0b:414...
-  password: 8b2693fb-8739-46bd-b184-5e7c1778c597
-  port: 81
-  server: 2a0b:4140:925f::2
+- name: 🔒 HYSTERIA-UDP 🇫🇷 FR-[2001:41d...
+  password: scWFJKJ5Y6Ly
+  port: 443
+  server: 2001:41d0:c:fdb::e9
+  skip-cert-verify: true
+  sni: yahoo.com
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #10'
+  obfs: salamander
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 443
+  server: 2606:a8c0:101:6d::a
   skip-cert-verify: true
   type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇷🇺 RU-[2a03:6f0... #1'
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #11'
   obfs: salamander
-  obfs-password: 6u33lecx372cssb22nzgu5l5fpdhom4ivqwg4fqby133lzsv3q
-  password: nRSmYP828VP1UwxlAnWEbmEtlLSH5SE7
+  obfs-password: KevinZakarian
+  password: KevinZakarian
   port: 443
-  server: 2a03:6f00:a::30d3
-  sni: anymath.ir
+  server: 2606:a8c0:101:82::a
+  skip-cert-verify: true
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇯🇵 JP-[2406:da1... #1'
+  password: 96cad374-7573-4463-8804-4665c2c3d932
+  port: 5001
+  server: 2406:da14:536:647f:348d:e2a4:49b7:12ac
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-4.bilivideo.com
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f... #1'
+  obfs: salamander
+  obfs-password: cd29099d
+  password: 9bb452b106ffc217
+  port: 443
+  server: 2001:19f0:1000:18b3:5400:5ff:fe19:3f6d
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-[2a11:840...
+  password: 8b2693fb-8739-46bd-b184-5e7c1778c597
+  port: 81
+  server: 2a11:840:67:1b::f4c2:ccfa
+  skip-cert-verify: true
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇩🇪 DE-[2a01:4f8...
   password: 8bd4cc567f2845c1
@@ -192,64 +235,77 @@ proxies:
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 8443
-  server: 2606:a8c0:101:18::a
-  skip-cert-verify: true
-  sni: kevin.serverv.net
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇨🇳 CN-178.236.2...
-  password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
-  server: 178.236.237.84
+  server: 2606:a8c0:101:6e::a
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇩🇪 DE-[2a0d:594...
-  password: 28c05d48e2f470d07a4c392c9bd43849
-  port: 443
-  server: '2a0d:5940:44:301::'
-  sni: jostar-data.nl
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇯🇵 JP-[2406:da1... #1'
-  password: 96cad374-7573-4463-8804-4665c2c3d932
-  port: 5001
-  server: 2406:da14:536:647f:348d:e2a4:49b7:12ac
-  skip-cert-verify: true
-  sni: d1--cn-gotcha204-4.bilivideo.com
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #13'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:82::a
+  port: 8443
+  server: 2606:a8c0:101:86::a
   skip-cert-verify: true
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇫🇷 FR-[2001:41d...
-  password: c72ee44c
-  port: 35051
-  server: 2001:41d0:a:2a7a:a:b:df4e:2408
-  skip-cert-verify: true
-  sni: 2001:41d0:a:2a7a:a:b:df4e:2408
+  sni: kevin.serverv.net
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #14'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:18::a
+  port: 8443
+  server: 2606:a8c0:101:39::a
   skip-cert-verify: true
+  sni: kevin.serverv.net
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #15'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
   port: 8443
+  server: 2606:a8c0:101:22::a
+  skip-cert-verify: true
+  sni: kevin.serverv.net
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #16'
+  obfs: salamander
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 443
+  server: 2606:a8c0:101:22::a
+  skip-cert-verify: true
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #17'
+  obfs: salamander
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 8443
+  server: 2606:a8c0:101:72::a
+  skip-cert-verify: true
+  sni: kevin.serverv.net
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇸🇬 SG-[2603:c02... #1'
+  password: de08f485-8f8c-4316-9e80-6e7ecdf91d45
+  port: 23729
+  server: 2603:c024:4510:2769:3788:4df6:250e:bc8b
+  skip-cert-verify: true
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #18'
+  obfs: salamander
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 8443
   server: 2606:a8c0:101:82::a
   skip-cert-verify: true
   sni: kevin.serverv.net
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-[2a12:594...
+- name: '🔒 HYSTERIA-UDP 🇫🇷 FR-[2001:41d... #1'
+  password: c72ee44c
+  port: 35051
+  server: 2001:41d0:a:2a7a:a:b:df4e:2408
+  skip-cert-verify: true
+  sni: 2001:41d0:a:2a7a:a:b:df4e:2408
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇳🇱 NL-[2a12:594... #1'
   obfs: salamander
   obfs-password: f809a60274316cdd
   password: 4eb5646f51e94a84
@@ -258,69 +314,6 @@ proxies:
   skip-cert-verify: true
   sni: www.google.com
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇬🇧 GB-[2a0e:dc0...
-  password: 6d853bb9
-  port: 61631
-  server: 2a0e:dc0:5:2264:a:b:220e:a5c9
-  skip-cert-verify: true
-  sni: 2a0e:dc0:5:2264:a:b:220e:a5c9
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇯🇵 JP-[2603:c02...
-  password: Hy2+3313033
-  port: 38787
-  server: 2603:c021:8011:5b69:80db:8f0e:a3c4:878e
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f... #1'
-  obfs: salamander
-  obfs-password: 4b817757
-  password: 1f17cdf0578a2860
-  port: 443
-  server: 2001:19f0:5:34a0:5400:5ff:fe19:3f6f
-  skip-cert-verify: true
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #16'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 8443
-  server: 2606:a8c0:101:78::a
-  skip-cert-verify: true
-  sni: kevin.serverv.net
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇳🇱 NL-[2a12:594... #1'
-  obfs: salamander
-  obfs-password: 7d9dff369a11f6e0
-  password: 81ea378b37931b23
-  port: 7373
-  server: 2a12:5940:72da::2
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇫🇷 FR-[2001:41d... #1'
-  password: scWFJKJ5Y6Ly
-  port: 443
-  server: 2001:41d0:c:fdb::e9
-  skip-cert-verify: true
-  sni: yahoo.com
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #17'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:7e::a
-  skip-cert-verify: true
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #18'
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 443
-  server: 2606:a8c0:101:39::a
-  skip-cert-verify: true
-  type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f... #2'
   obfs: salamander
   obfs-password: 13f7ba5f
@@ -328,15 +321,22 @@ proxies:
   port: 443
   server: 2001:19f0:1000:20d0:5400:5ff:fe19:3ba9
   skip-cert-verify: true
-  sni: '%5B2001%3A19f0%3A1000%3A20d0%3A5400%3A5ff%3Afe19%3A3ba9%5D'
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇨🇳 CN-178.236.2...
+  password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
+  port: 443
+  server: 178.236.237.84
+  skip-cert-verify: true
+  sni: www.bing.com
   type: hysteria2
 - name: '🔒 HYSTERIA-UDP 🇺🇸 US-[2606:a8c... #19'
   obfs: salamander
   obfs-password: KevinZakarian
   password: KevinZakarian
   port: 443
-  server: 2606:a8c0:101:6d::a
+  server: 2606:a8c0:101:7e::a
   skip-cert-verify: true
+  sni: kevin.serverv.net
   type: hysteria2
 - name: 👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ...
   network: tcp
@@ -344,4 +344,4 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: aacbbca-baca-abac-dcab-cbbabccbaaca
+  uuid: cbacaab-acba-aacb-dacb-cbabccabcaba
