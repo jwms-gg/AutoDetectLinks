@@ -1,60 +1,89 @@
-# Update: 2025-03-16 20:40
-# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 49
+# Update: 2025-03-17 09:50
+# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 50
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: auto
-  port: 443
-  server: 172.66.46.254
-  sni: dcf741e8.epeius-2gy.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 欧洲 V2CROSS.COM
+  name: '巴西圣保罗 CloudFlare节点 #1'
   network: ws
-  port: 8443
-  server: 147.78.140.50
+  port: 443
+  server: 188.114.96.5
+  servername: ''
   tls: true
   type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
-- alpn:
-  - h3
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  password: auto
-  port: 443
-  server: 172.66.45.2
-  sni: dcf741e8.epeius-2gy.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
-    path: '%2F%3Fed%3D2560'
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
   network: ws
-  port: 443
-  server: US7-01.890624.XyZ
-  servername: ''
-  tls: true
+  port: 8080
+  server: 104.16.155.10
+  tls: false
   type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: us7-01.890624.xyz
-    path: /bua2hMcbA8wMzbGFtV
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
+  password: 85950277-f447-48f0-9ead-aaf6d5ff3cad
+  port: 443
+  server: 104.21.49.59
+  sni: fghklo5.890617.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fghklo5.890617.xyz
+    path: '%2FI4L1BP2DQVYmx5NYQ76MGGq'
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: 443
+  server: 172.67.169.40
+  tls: true
+  type: vmess
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
+  ws-opts:
+    headers:
+      Host: hms03.dongfeng.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
+  network: ws
+  port: 80
+  server: 104.16.155.10
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-49-141-209.s1.db-link02.top
+    path: /dabai.in104.17.169.115
+- alterId: 0
+  cipher: auto
+  name: '1|🇬🇧2 |  1.5MB/s #1'
+  network: ws
+  port: 443
+  server: 172.67.169.40
+  servername: hms03.dongfeng.cfd
+  tls: true
+  type: vmess
+  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
+  ws-opts:
+    headers:
+      Host: hms03.dongfeng.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #5'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -67,29 +96,52 @@ proxies:
       Host: dp3.scproxy.top
     path: /shirker
 - cipher: aes-256-cfb
-  name: 2|🇺🇸6 |  3.0MB/s
+  name: '1|🇯🇵8 |  2.7MB/s #1'
   password: amazonskr05
   port: '443'
-  server: 18.236.137.219
+  server: 43.207.150.238
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 22000
-  server: 207.90.237.179
-  tls: false
-  type: vmess
-  uuid: 9d12b1af-923f-44bc-90ea-2edb6c1a3731
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #1 #1'
+  name: '1|🇯🇵4 |  5.7MB/s #1'
   password: amazonskr05
   port: '443'
-  server: 35.77.94.139
+  server: 18.181.194.77
+  type: ss
+- cipher: aes-256-cfb
+  name: '1|🇯🇵7 |  3.0MB/s #1'
+  password: amazonskr05
+  port: '443'
+  server: 13.230.168.61
+  type: ss
+- cipher: aes-256-cfb
+  name: '1|🇯🇵6 |  3.7MB/s #1'
+  password: amazonskr05
+  port: '443'
+  server: 52.68.10.224
+  type: ss
+- cipher: aes-256-cfb
+  name: '1|🇯🇵2 |  5.8MB/s #1'
+  password: amazonskr05
+  port: '443'
+  server: 54.95.26.81
+  type: ss
+- cipher: aes-256-cfb
+  name: '1|🇯🇵3 |  3.9MB/s #1'
+  password: amazonskr05
+  port: '443'
+  server: 18.179.8.12
+  type: ss
+- cipher: aes-256-cfb
+  name: '13|韩国特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: '443'
+  server: 57.180.240.249
+  type: ss
+- cipher: aes-256-cfb
+  name: '12|🇰🇷 韩国特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: '443'
+  server: 57.180.240.249
   type: ss
 - cipher: aes-256-cfb
   name: '12|tg频道:@ripaojiedian #3'
@@ -98,257 +150,164 @@ proxies:
   server: 35.77.94.139
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇰🇷3 |  1.7MB/s
+  name: '13|tg频道:@ripaojiedian #1 #1'
+  password: amazonskr05
+  port: '443'
+  server: 35.77.94.139
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 香港+特别行政区
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 154.90.63.193
+  type: ss
+- cipher: aes-256-cfb
+  name: '12|🇯🇵 日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
   server: 3.34.253.95
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇰🇷2 |  13.1MB/s
+  name: '13|日本特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
-  server: 52.78.98.141
-  type: ss
-- cipher: aes-256-cfb
-  name: '13|韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 54.180.137.54
+  server: 3.34.253.95
   type: ss
 - alpn:
   - http/1.1
-  name: 美国+Amazon数据中心
+  name: 美国+麻省理工学院
   network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.169.12.34
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 英国+社会保险安全部
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.24.36.142
+  server: 18.135.212.25
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-cfb
-  name: '13|狮城特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 43.201.85.71
+- cipher: chacha20-ietf-poly1305
+  name: '13|英国|@ripaojiedian #1'
+  password: 99eedf8e9170c8a4
+  port: '48977'
+  server: 57.128.190.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '12|🇬🇧 英国|@ripaojiedian #2'
+  password: 99eedf8e9170c8a4
+  port: '48977'
+  server: 57.128.190.214
   type: ss
 - alpn:
   - http/1.1
-  name: 法国+巴黎Amazon数据中心
+  name: 爱尔兰+都柏林Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.188.152.223
+  server: 52.50.156.99
   sni: trojan.burgerip.co.uk
   type: trojan
+- cipher: aes-256-cfb
+  name: '1|🌀1-T1 |  1.8MB/s #1'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 51.15.23.63
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 2|🌀6-CN |  2.0MB/s
+  name: 俄罗斯 Rubtsovsk Branch of Altai ...
   network: ws
-  port: 23013
-  server: 212.192.13.68
+  port: 21011
+  server: 212.192.13.110
   tls: false
   type: vmess
-  uuid: 6ede9de9-f53e-4391-879a-202a6fc8b543
+  uuid: 4cee31c5-ccd6-4e04-af05-846b3e727139
   ws-opts:
+    headers:
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 V2CROSS.COM
+  network: ws
+  port: 20015
+  server: 45.144.174.12
+  tls: false
+  type: vmess
+  uuid: d70f67ae-135c-4a78-a245-4cc81c93983d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alpn:
+  - http/1.1
+  name: 美国+惠普HP
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.215.134
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-cfb
-  name: 2|🇸🇬11 |  3.3MB/s
-  password: amazonskr05
-  port: '443'
-  server: 13.229.89.243
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬10 |  7.6MB/s
+  name: '1|🇸🇬1 |  6.0MB/s #1'
   password: amazonskr05
   port: '443'
   server: 54.169.15.9
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇸🇬1 |  4.3MB/s
+  name: '12|🇸🇬 狮城特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
-  server: 47.128.154.164
+  server: 54.169.134.156
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇸🇬9 |  3.0MB/s
+  name: '13|狮城特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
-  server: 54.255.183.245
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇨🇭1 |  2.7MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 84.17.53.160
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬5 |  2.0MB/s
-  password: amazonskr05
-  port: '443'
-  server: 54.255.141.129
+  server: 54.169.134.156
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '美国+V2CROSS.COM #1'
-  password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
-  port: '55330'
-  server: 166.1.157.228
+  name: 俄罗斯+V2CROSS.COM
+  password: w2HdZnGb5ibh
+  port: '443'
+  server: 89.221.225.88
   type: ss
 - alterId: 0
   cipher: auto
-  name: 俄罗斯 莫斯科JustHost
+  name: '1|🇷🇺1 |  5.6MB/s #1'
   network: ws
-  port: 21010
-  server: 176.32.35.148
+  port: 23015
+  server: 185.22.152.236
   tls: false
   type: vmess
-  uuid: 8fe40c4c-2711-468e-b846-0a1701bfcf6b
+  uuid: dce42637-5900-4265-b78a-673e20082e8a
   ws-opts:
-    headers:
-      Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: '12|🇰🇷 韩国特殊|@ripaojiedian #2'
-  password: amazonskr05
-  port: '443'
-  server: 54.180.137.54
-  type: ss
-- cipher: aes-256-cfb
-  name: '13|日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 18.143.164.214
-  type: ss
-- cipher: aes-256-cfb
-  name: '12|🇯🇵 日本特殊|@ripaojiedian #2'
-  password: amazonskr05
-  port: '443'
-  server: 18.143.164.214
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #2'
-  network: ws
-  port: '2086'
-  server: s1.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-47-154-9.s1.cn-db.top
-    path: /dabai.in104.24.181.189
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 俄罗斯新西伯利亚+justhost.ru
-  network: tcp
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  sni: ru2.asc-sam.io
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ru2.asc-sam.io
-- cipher: chacha20-ietf-poly1305
-  name: 法国+国际航空电讯集团公司(SITA)
-  password: 576f16c6d7e3ec50
-  port: '11202'
-  server: 57.130.11.121
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 美国+CDNetworks
-  password: 877c3b069c335ffc
-  port: '12317'
-  server: 163.171.181.49
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #5'
-  network: ws
-  port: 80
-  server: s5.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-16-20-50.s5.db-link01.top
-    path: /dabai.in104.20.1.186
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #6'
   network: ws
-  port: 2083
-  server: tasnim.twn24.ir
-  tls: true
+  port: 2082
+  server: s4.db-link02.top
+  tls: false
   type: vmess
-  uuid: 85340e71-495b-41b5-ab7f-cc01494f107d
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: tasnim.twn24.ir
-    path: /@M3HDIO1
+      Host: 100-116-85-183.s4.db-link02.top
+    path: /dabai.in172.67.8.3
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #7'
+  network: ws
+  port: 2095
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-130-136-50.s2.db-link01.top
+    path: /dabai.in104.21.133.12
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #8'
-  network: ws
-  port: 2086
-  server: s2.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-28-190-253.s2.cn-db.top
-    path: /dabai.in104.18.128.173
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #10'
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  uuid: 4187fdd4-ffae-4a3d-b620-ab23e04599fc
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #13'
-  network: ws
-  port: 443
-  server: Us7-04.890624.xyZ
-  tls: true
-  type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  ws-opts:
-    headers:
-      Host: us7-04.890624.xyz
-    path: /bua2hMcbA8wMzbGFtV
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #18'
-  network: ws
-  port: 2082
-  server: s2.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-4-20-123.s2.db-link02.top
-    path: /dabai.in104.21.83.57
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #19'
   network: ws
   port: 80
   server: s2.db-link02.top
@@ -361,96 +320,128 @@ proxies:
     path: /dabai.in104.20.76.67
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #21'
+  name: '美国 CloudFlare节点 #9'
   network: ws
-  port: 8880
-  server: s5.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-240-33-58.s5.cn-db.top
-    path: /dabai.in172.67.30.35
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #26'
-  network: ws
-  port: 8080
-  server: s1.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-230-189-184.s1.cn-db.top
-    path: /dabai.in104.19.155.231
-- cipher: aes-256-cfb
-  name: '12|🇸🇬 狮城特殊|@ripaojiedian #2'
-  password: amazonskr05
-  port: '443'
-  server: 43.201.85.71
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #30'
-  network: ws
-  port: 2086
-  server: s1.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-191-129-167.s1.db-link01.top
-    path: /dabai.in172.64.32.189
-- alterId: 0
-  cipher: auto
-  name: 2|🌀2- |  1.7MB/s
-  network: ws
-  port: 80
-  server: cdn1.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: 3604d6a0-8340-4efa-b08b-2ab0fa7b1b24
-  ws-opts:
-    headers:
-      Host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰2 |  3.5MB/s
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 53d943b0-df6d-47d0-9839-7da7f5c942c4
-- cipher: aes-128-gcm
-  name: 2|🇭🇰13 |  12.5MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: tcsh.76681f9610f175c6.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 2|🇭🇰14 |  9.8MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: tcgz.76681f9610f175c6.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 2|🇭🇰19 |  1.1MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: alsh.76681f9610f175c6.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 12|🇺🇸 美国3|@ripaojiedian
-  network: tcp
-  port: 48216
-  server: relay-cn-00.anycoin.bid
-  servername: 3233342d3134382e3133352e3131352e3237.anycoin.bid
+  port: 443
+  server: www.visa.com.tw
   tls: true
   type: vmess
-  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
+  uuid: 627a811e-acab-4d97-a683-ebdae2e2565b
+  ws-opts:
+    headers:
+      Host: undergraduate-ascii-minor-cape.trycloudflare.com
+    path: /vmess-argo?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #10'
+  network: ws
+  port: 443
+  server: US7-01.890624.XyZ
+  tls: true
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      Host: us7-01.890624.xyz
+    path: /bua2hMcbA8wMzbGFtV
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #13'
+  network: ws
+  port: 2086
+  server: s4.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-215-157-195.s4.db-link02.top
+    path: /dabai.in104.17.119.148
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #18'
+  network: ws
+  port: 80
+  server: s5.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-235-225-209.s5.db-link02.top
+    path: /dabai.in104.18.75.85
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #19'
+  network: ws
+  port: 8080
+  server: s5.db-link02.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #21'
+  network: ws
+  port: 2082
+  server: s1.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-113-212-3.s1.db-link02.top
+    path: /dabai.in172.67.79.231
+- cipher: rc4-md5
+  name: '12|🇭🇰 香港4|@ripaojiedian #2'
+  password: efanccyun
+  port: '8752'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇭🇰 香港3|@ripaojiedian #2'
+  password: efanccyun
+  port: '8716'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇹🇼 台湾3|@ripaojiedian #1'
+  password: efanccyun
+  port: '8746'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇹🇼 台湾4|@ripaojiedian #1'
+  password: efanccyun
+  port: '8745'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇯🇵 日本|@ripaojiedian #2'
+  password: efanccyun
+  port: '8764'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇯🇵 日本2|@ripaojiedian #2'
+  password: efanccyun
+  port: '8761'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇸🇬 新加坡|@ripaojiedian #2'
+  password: efanccyun
+  port: '8722'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '12|🇸🇬 新加坡2|@ripaojiedian #2'
+  password: efanccyun
+  port: '8724'
+  server: cn01.efan8867801.xyz
+  type: ss

@@ -1,33 +1,22 @@
-# Update: 2025-03-16 20:40
-# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 14
+# Update: 2025-03-17 09:50
+# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 9
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: auto
-  port: 443
-  server: 172.66.46.254
-  sni: dcf741e8.epeius-2gy.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
-    path: /?ed=2560
 - alpn:
-  - h3
-  name: '美国+CloudFlare节点 #1'
+  - http/1.1
+  name: 美国+CloudFlare节点
   network: ws
-  password: auto
+  password: 85950277-f447-48f0-9ead-aaf6d5ff3cad
   port: 443
-  server: 172.66.45.2
-  sni: dcf741e8.epeius-2gy.pages.dev
+  server: 104.21.49.59
+  sni: fghklo5.890617.xyz
   type: trojan
   ws-opts:
     headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
-    path: '%2F%3Fed%3D2560'
+      Host: fghklo5.890617.xyz
+    path: '%2FI4L1BP2DQVYmx5NYQ76MGGq'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #1'
+  name: '美国 CloudFlare节点 #5'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -39,108 +28,82 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 22000
-  server: 207.90.237.179
-  tls: false
-  type: vmess
-  uuid: 9d12b1af-923f-44bc-90ea-2edb6c1a3731
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 英国+社会保险安全部
+- alpn:
+  - http/1.1
+  name: 美国+麻省理工学院
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.24.36.142
+  server: 18.135.212.25
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: 法国+巴黎Amazon数据中心
+  name: 爱尔兰+都柏林Amazon数据中心
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.188.152.223
+  server: 52.50.156.99
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 俄罗斯 莫斯科JustHost
+  name: 俄罗斯 Rubtsovsk Branch of Altai ...
   network: ws
-  port: 21010
-  server: 176.32.35.148
+  port: 21011
+  server: 212.192.13.110
   tls: false
   type: vmess
-  uuid: 8fe40c4c-2711-468e-b846-0a1701bfcf6b
+  uuid: 4cee31c5-ccd6-4e04-af05-846b3e727139
   ws-opts:
     headers:
       Host: ''
     path: /
 - alpn:
-  - h3
-  - h2
   - http/1.1
-  name: 俄罗斯新西伯利亚+justhost.ru
+  name: 美国+惠普HP
   network: tcp
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  sni: ru2.asc-sam.io
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.215.134
+  sni: trojan.burgerip.co.uk
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #9'
+  network: ws
+  port: 443
+  server: www.visa.com.tw
+  tls: true
+  type: vmess
+  uuid: 627a811e-acab-4d97-a683-ebdae2e2565b
   ws-opts:
     headers:
-      Host: ru2.asc-sam.io
+      Host: undergraduate-ascii-minor-cape.trycloudflare.com
+    path: /vmess-argo?ed=2048
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #10'
   network: ws
   port: 443
-  server: biazh.mmzhk.website
+  server: US7-01.890624.XyZ
   tls: true
   type: vmess
-  uuid: 4187fdd4-ffae-4a3d-b620-ab23e04599fc
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   ws-opts:
     headers:
-      Host: biazh.mmzhk.website
-    path: /
+      Host: us7-01.890624.xyz
+    path: /bua2hMcbA8wMzbGFtV
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰2 |  3.5MB/s
-  network: tcp
-  port: 19901
-  server: xg.dashuai.cyou
+  name: '美国 CloudFlare节点 #18'
+  network: ws
+  port: 80
+  server: s5.db-link02.top
   tls: false
   type: vmess
-  uuid: 53d943b0-df6d-47d0-9839-7da7f5c942c4
-- cipher: aes-128-gcm
-  name: 2|🇭🇰13 |  12.5MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: tcsh.76681f9610f175c6.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 2|🇭🇰14 |  9.8MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: tcgz.76681f9610f175c6.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 2|🇭🇰19 |  1.1MB/s
-  password: ec588545-292e-4a11-ada2-d62e599af928
-  port: '24502'
-  server: alsh.76681f9610f175c6.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 12|🇺🇸 美国3|@ripaojiedian
-  network: tcp
-  port: 48216
-  server: relay-cn-00.anycoin.bid
-  servername: 3233342d3134382e3133352e3131352e3237.anycoin.bid
-  tls: true
-  type: vmess
-  uuid: 4fdea9bc-008d-11f0-ac34-00163c6ae8d5
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-235-225-209.s5.db-link02.top
+    path: /dabai.in104.18.75.85

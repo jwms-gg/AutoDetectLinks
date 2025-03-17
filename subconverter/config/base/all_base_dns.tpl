@@ -8,17 +8,41 @@ log-level: {{ default(global.clash.log_level, "info") }}
 external-controller: {{ default(global.clash.external_controller, "127.0.0.1:9090") }}
 dns:
   enable: true
+  ipv6: false
   listen: :1053
-  ipv6: true
-  enhanced-mode: redir-host
-  nameserver:
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
     - 223.5.5.5
     - 223.6.6.6
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
     - 1.1.1.1
-    - 1.1.1.2
+    - 8.8.8.8
+  nameserver:
+    - https://223.5.5.5/dns-query # DoH 阿里云
+    - https://223.6.6.6/dns-query # DoH 阿里云
+  fallback:
+    - dns.cloudflare.com # DoT cf
+    - dns.google # DoT gg
+    - https://8.8.8.8/dns-query # DoH gg
+    - https://1.1.1.1/dns-query # DoH cf
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain: # direct to fallback
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.github.com'
+      - '+.githubusercontent.com'
+  nameserver-policy:
+    'geosite:cn,private':
+      - https://223.5.5.5/dns-query # DoH 阿里云
+      - https://223.6.6.6/dns-query # DoH 阿里云
+
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
