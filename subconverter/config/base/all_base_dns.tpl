@@ -18,13 +18,14 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
   nameserver:
-    - https://223.5.5.5/dns-query # DoH 阿里云
-    - https://223.6.6.6/dns-query # DoH 阿里云
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
   fallback:
-    - dns.cloudflare.com # DoT cf
-    - dns.google # DoT gg
-    - https://8.8.8.8/dns-query # DoH gg
-    - https://1.1.1.1/dns-query # DoH cf
+    - tls://1.1.1.1
+    - tls://1.0.0.1
+    - tls://8.8.8.8
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -33,13 +34,11 @@ dns:
       - 127.0.0.1/8
       - 0.0.0.0/32
     domain: # direct to fallback
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
-      - '+.github.com'
-      - '+.githubusercontent.com'
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
   fake-ip-filter:
-    - '+.*'
+    - +.*
     - '*.lan'
     - '*.localdomain'
     - '*.example'
@@ -142,9 +141,9 @@ dns:
     - v4.plex.tv
     - plex.direct
   nameserver-policy:
-    'geosite:cn,private':
-      - https://223.5.5.5/dns-query # DoH 阿里云
-      - https://223.6.6.6/dns-query # DoH 阿里云
+    geosite:cn,private:
+      - https://223.5.5.5/dns-query
+      - https://223.6.6.6/dns-query
 
 {% if local.clash.new_field_name == "true" %}
 proxies: ~

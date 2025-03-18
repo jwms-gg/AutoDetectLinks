@@ -1,55 +1,106 @@
-# Update: 2025-03-18 08:41
-# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 67
+# Update: 2025-03-28 08:42
+# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 21
 proxies:
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #30'
+  name: 美国 Cloudinnovation数据中心
   network: ws
   port: 443
-  server: US7-02.890624.xyZ
+  server: 154.83.2.90
   tls: true
   type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
   ws-opts:
     headers:
-      Host: us7-02.890624.xyz
-    path: /bua2hMcbA8wMzbGFtV
-- name: 德国+黑森州法兰克福Amazon数据中心
-  password: telegram-id-privatevpns
+      Host: jahfkjha.cfd
+    path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 欧盟+V2CROSS.COM
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: '8080'
+  server: beesyar.org
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #7'
+  network: ws
+  port: 80
+  server: us2vmess.rnmcnm.com
+  tls: false
+  type: vmess
+  uuid: 7f8a1bb9-bee0-40a8-f908-21a65da0f3cc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /123qwe
+- alterId: 0
+  cipher: auto
+  name: 广东省湛江市 移动
+  network: tcp
+  port: '42055'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alpn:
+  - http/1.1
+  name: '英国+社会保险安全部 #1'
+  network: tcp
+  password: telegram-id-directvpn
   port: 22222
-  server: 35.156.177.2
+  server: 51.21.140.78
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 美国+Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.169.179.112
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国 Fastly全球Anycast节点
+  network: ws
+  port: 443
+  server: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- alterId: 0
+  cipher: auto
+  name: '广东省湛江市 移动 #1'
+  network: tcp
+  port: '51095'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: 广东省广州市+移动
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31371'
-  server: free.2apzhfa.xyz
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: '11002'
+  server: 183.232.229.164
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 广东省广州市 移动
+  network: tcp
+  port: '55754'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: '广东省广州市+移动 #1'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31611'
-  server: free.2apzhfa.xyz
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: '11008'
+  server: 120.232.150.248
   type: ss
-- name: 日本+V2CROSS.COM
-  password: p0axgx3pXT6yjp4SwSRaaYeCDxCFOFaAlRYDNaRjF8OycXn3ZE3ABaYgnDIx3Eeq9C0ce
-  port: 443
-  server: 43.206.220.255
-  sni: huzzah.meijireform.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 美国+马里兰州罗耀拉大学
-  password: 3bf8c5da10e0024a
-  port: '21448'
-  server: 144.126.142.92
-  type: ss
-- name: '美国+V2CROSS.COM #1'
-  password: 8cwxYqlSeC4Xw8KOApT3SxCIX69eZ7zBNZDE0Dap3y9AZTFBFlD5a2euA7A3YzR2DpSyI
-  port: 443
-  server: 154.17.21.41
-  sni: bedsheet.homeofbrave.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 印度 V2CROSS.COM
@@ -64,539 +115,92 @@ proxies:
     headers:
       Host: pendar.onthewifi.com
     path: /@forwardv2ray
+- cipher: aes-256-gcm
+  name: 广东省广州市+电信
+  password: N4WB5VAL40S0WSH8
+  port: '15011'
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #9'
+  network: ws
+  password: 6040a753-e35b-4384-8713-96f3c639b621
+  port: 443
+  server: 104.21.69.41
+  sni: kju84.890602.XYZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kju84.890602.xyz
+    path: '%2FWxWOWO1YA9bs2HOmaeWimvT3'
 - alterId: 0
   cipher: auto
   name: 北美地区 V2CROSS.COM
   network: ws
-  port: 443
-  server: 23.158.56.241
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /linkvws
-- name: 美国+Amazon+EC2服务器
-  password: l9S4ONBOZT236Dx9Ap7ScDnYCwAp0IASDDY3F2FyCCyRl8qeeu8layZ3KCZEazjOa65N3
-  port: 28334
-  server: yecea.coffeekit.net
-  sni: yecea.coffeekit.net
-  type: trojan
-- name: '美国+V2CROSS.COM #2'
-  password: ZS9yA0YxpC6X3aDj88YAy5l3KS4FwCcy3DCDR3F322DOS3BRO7N3nFOxEKxSY6Ky3aXCNSxAEAaNnl4
-  port: 443
-  server: dilmun.starspace.link
-  sni: dilmun.starspace.link
-  type: trojan
-- name: 日本+东京Amazon数据中心
-  password: FeCOjFDq3aXx8BD39R2O4zxSxNDY3R4zl3x6K2SZaZY3ElTRaO5EeR08yNnSI0Zew9lyC
-  port: 443
-  server: 52.69.249.182
-  sni: mailbox.meijireform.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #2'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
-  port: '36213'
-  server: free.2weradf.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 南非 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 156.229.48.237
-  tls: true
-  type: vmess
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  ws-opts:
-    headers:
-      Host: lax2.ibgfw.top
-    path: /dyajvws
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #3'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31215'
-  server: free.2apzhfa.xyz
-  type: ss
-- name: '日本+东京Amazon数据中心 #1'
-  password: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-  port: 20230
-  server: jp008.421421.xyz
-  sni: 421421.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #37'
-  network: ws
-  port: 2052
-  server: s1.db-link02.top
+  port: 21007
+  server: 134.195.211.116
   tls: false
   type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  uuid: 41c38652-db8d-4d7a-8627-d36e8565c755
   ws-opts:
     headers:
-      Host: 100-44-70-80.s1.db-link02.top
-    path: /dabai.in172.67.75.187
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #38'
-  network: ws
-  port: 443
-  server: biazh.mmzhk.website
-  tls: true
-  type: vmess
-  uuid: 4187fdd4-ffae-4a3d-b620-ab23e04599fc
-  ws-opts:
-    headers:
-      Host: biazh.mmzhk.website
+      Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #41'
-  network: ws
-  port: 8880
-  server: s4.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-128-12-180.s4.db-link02.top
-    path: /dabai.in104.25.239.131
-- cipher: aes-256-gcm
-  name: 广东省广州市+腾讯云
-  password: 645d056f-369c-46d3-a1cb-7f04c06916ce
-  port: '30018'
-  server: 114.132.40.118
-  type: ss
-- name: '美国+V2CROSS.COM #3'
-  password: 5Z3RglCCyER3pjlSe0gSyqOOeExx4qTpwKxBR63XjIa8eNzaaO84pDDBA2DlZYI2n37CX
-  port: 443
-  server: toward.taiwanesefood.link
-  sni: toward.taiwanesefood.link
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #4'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
-  port: '36721'
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '俄罗斯+V2CROSS.COM #1'
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: '54170'
-  server: 185.242.86.156
-  type: ss
-- cipher: aes-256-gcm
-  name: '美国+V2CROSS.COM #4'
-  password: T0ELS4804BGXKGMO
-  port: '20038'
-  server: 45.154.206.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #5'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31141'
-  server: free.2apzhfa.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #42'
-  network: ws
-  port: 2082
-  server: s4.cn-db.top
-  servername: 100-59-178-247.s4.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-59-178-247.s4.cn-db.top
-    path: /dabai.in104.19.101.110
-- alterId: 0
-  cipher: auto
-  name: '印度 V2CROSS.COM #1'
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-  ws-opts:
-    headers:
-      Host: irsoft.sytes.net
-    path: /@forwardv2ray
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #6'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31111'
-  server: free.2apzhfa.xyz
-  type: ss
 - alpn:
   - http/1.1
-  name: '爱尔兰+都柏林Amazon数据中心 #3'
+  name: 美国+弗吉尼亚州阿什本Amazon数据中心
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 52.212.95.164
+  server: 54.152.134.162
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '北美地区+V2CROSS.COM #1'
-  password: S3uISCSXalplOFZCy9njYOCA2AlKqDNSZly3FE8w6RzyYaxagK7eDcN0C333ES3anCOpu
-  port: 443
-  server: 104.247.121.10
-  sni: covteam.homeofbrave.net
-  type: trojan
-- cipher: aes-256-gcm
-  name: 阿尔巴尼亚+V2CROSS.COM
-  password: X6WMQ97R9AK7PX0I
-  port: '20000'
-  server: 109.104.154.131
-  type: ss
-- name: 美国+惠普公司
-  password: RaDcSOZ8KD8jRR3YY9lyF3aga3Sy8CxqaXXBpxZ8CexKzwF4CSyqOyDEIz7wNO6FCA32Y
-  port: 443
-  server: 16.16.185.202
-  sni: mstiot.golfland.club
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 罗马尼亚+V2CROSS.COM
-  password: mCeosRacsgFRtnJPq3zctq
-  port: '443'
-  server: 77.83.246.74
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #44'
-  network: ws
-  port: 443
-  server: la02.818185.XyZ
-  tls: true
-  type: vmess
-  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /gyCVORfjoXYyHHcJBuLd
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 8443
-  server: 45.144.48.128
-  tls: true
-  type: vmess
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
-- cipher: chacha20-ietf-poly1305
-  name: '美国+V2CROSS.COM #5'
-  password: 7cbfe78195fbf19c
-  port: '11738'
-  server: 100.42.182.73
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #7'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
-  port: '36141'
-  server: free.2weradf.xyz
-  type: ss
-- name: '美国+V2CROSS.COM #6'
-  password: 6qREZzexS5BDqFaSyzlwlBYXT8CDYOpcDIaeYaAC3X940A73OceAaRR32C3Sx6w9xgyCS
-  port: 443
-  server: phooey.taiwanesefood.link
-  sni: phooey.taiwanesefood.link
-  type: trojan
-- name: 广东省深圳市+移动
-  network: ws
-  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
-  port: 40021
-  server: vt-bana2-cn-11.ghpgwqswodgzv.com
-  skip-cert-verify: false
-  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
-    path: /dl_media
-- alterId: 0
-  cipher: auto
-  name: 阿塞拜疆 V2CROSS.COM
-  network: ws
-  port: 8443
-  server: 5.10.246.166
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /xrenvws
-- name: '日本+东京Amazon数据中心 #2'
-  password: 0uAOCSX3DFjDOuaacSDR75I3SqN7Bznx8Yaz8lRYyCDR2aZwwyRB5FpAlC9Sn6Epp3e8l
-  port: 443
-  server: forward.meijireform.com
-  sni: forward.meijireform.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #8'
-  password: 2dde428b-8c36-4ca0-86ec-a9f735808999
-  port: '36311'
-  server: free.2weradf.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #45'
-  network: ws
-  port: 2082
-  server: s4.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-116-85-183.s4.db-link02.top
-    path: /dabai.in172.67.8.3
-- name: 美国+Amazon数据中心
+- alpn:
+  - http/1.1
+  name: '美国+Amazon数据中心 #1'
+  network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 13.42.121.24
+  server: 13.36.99.127
   sni: trojan.burgerip.co.uk
   type: trojan
-- cipher: aes-256-gcm
-  name: 美国+马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
-  password: E8CM3R3BWXQQNYMM
-  port: '19012'
-  server: 206.245.211.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 安徽省滁州市+电信
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: '52611'
-  server: hk01.x.quickcht3.club
-  type: ss
+- name: 德国+黑森州法兰克福Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.127.171.65
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '美国+V2CROSS.COM #1'
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: 161.35.34.48
+  sni: yourjobnavigator.online
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #47'
+  name: '美国 CloudFlare节点 #9'
   network: ws
-  port: 443
-  server: 172.67.136.233
+  port: 8443
+  server: us01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: 47ce6234-5a4c-438e-8519-4722fe3790f0
   ws-opts:
     headers:
-      Host: az05.beyondy.cfd
-    path: /link
+      Host: us01.sh-cloudflare.sbs
+    path: /
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #50'
+  name: '美国 CloudFlare节点 #10'
   network: ws
   port: 443
-  server: la01.890616.GGFF.Net
-  tls: true
-  type: vmess
-  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
-  ws-opts:
-    headers:
-      Host: la01.890616.ggff.net
-    path: /gyCVORfjoXYyHHcJBuLd
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: '美国 CloudFlare节点 #51'
-  network: grpc
-  port: '2087'
-  server: elma.ns.cloudflare.com
-  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea115513821165.1-senator.info
-  tls: true
-  type: vmess
-  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #52'
-  network: ws
-  port: 443
-  server: lA01.852224.GGFF.neT
-  tls: true
-  type: vmess
-  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
-  ws-opts:
-    headers:
-      Host: la01.852224.ggff.net
-    path: /gyCVORfjoXYyHHcJBuLd
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #53'
-  network: ws
-  port: 2086
-  server: s3.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-237-59-154.s3.cn-db.top
-    path: /dabai.in104.24.43.124
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #54'
-  network: ws
-  port: 2082
-  server: s1.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-113-212-3.s1.db-link02.top
-    path: /dabai.in172.67.79.231
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #55'
-  network: ws
-  port: 443
-  server: Us7-03.890624.Xyz
+  server: US7-02.890624.Xyz
   tls: true
   type: vmess
   uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   ws-opts:
     headers:
-      Host: us7-03.890624.xyz
+      Host: us7-02.890624.xyz
     path: /bua2hMcbA8wMzbGFtV
-- alterId: 0
-  cipher: auto
-  name: 英国 V2CROSS.COM
-  network: ws
-  port: 20016
-  server: 5.39.252.72
-  tls: false
-  type: vmess
-  uuid: 14595997-1a42-4a23-aaa7-bee451535a36
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.72.223
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #56'
-  network: ws
-  port: 80
-  server: s2.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-55-60-174.s2.db-link01.top
-    path: /dabai.in172.67.60.154
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #9'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31213'
-  server: free.2apzhfa.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #57'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- name: '日本+V2CROSS.COM #1'
-  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
-  port: 443
-  server: terture.meijireform.com
-  sni: terture.meijireform.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #58'
-  network: ws
-  port: 2086
-  server: s4.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-59-133-139.s4.cn-db.top
-    path: /dabai.in172.67.103.33
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #59'
-  network: ws
-  port: 443
-  server: lA01.890616.ggff.NET
-  tls: true
-  type: vmess
-  uuid: 60cdd89e-a9cf-4850-8577-e3c6abf5515d
-  ws-opts:
-    headers:
-      Host: la01.890616.ggff.net
-    path: /gyCVORfjoXYyHHcJBuLd
-- alpn:
-  - h2
-  name: '美国+V2CROSS.COM #7'
-  network: ws
-  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
-  port: 443
-  server: 192.3.130.96
-  sni: us6-01zl.huangshang.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: us6-01zl.huangshang.ggff.net
-    path: '%2FILLcisbMYUd6MQzxVoMQ'
-- cipher: aes-256-gcm
-  name: 波兰+V2CROSS.COM
-  password: 7BcLdsO1WweoGD0X
-  port: '40368'
-  server: 193.243.147.128
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #10'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31471'
-  server: free.2apzhfa.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '广东省广州市+移动 #11'
-  password: 59027208-1d66-4604-bcce-eb7308439506
-  port: '31511'
-  server: free.2apzhfa.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 法国+国际航空电讯集团公司(SITA)
-  password: 602e2068c047d750
-  port: '11202'
-  server: 57.130.11.84
-  type: ss
-- name: '美国+Amazon数据中心 #2'
-  password: Fl4B9jyFAwE4XgFxuICw8pD0NCYIneA22OyYO30enl8Kxe3a3xcpDEyqa79CTNSpRA5D8
-  port: 443
-  server: young.golfland.club
-  sni: young.golfland.club
-  type: trojan

@@ -589,7 +589,7 @@ def write_sub(file_name: str, nodes: list[dict[str, Any]]):
     node_names: set[str] = {n["name"] for n in nodes}
     for g in config["proxy-groups"]:
         if not g["proxies"]:
-            g["proxies"] = node_names
+            g["proxies"] = list(node_names)
 
     config["proxy-groups"][-1]["proxies"] = [] # 🗺️ 选择地区
     region_proxies: list[str] = config["proxy-groups"][-1]["proxies"]
