@@ -4,13 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 0 * * *
-  push:
-    paths:
-      - settings.yaml
-      - template/**
-      - .github/workflows/**
-      - '**.py'
-      - results/**
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
