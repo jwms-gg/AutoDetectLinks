@@ -2,7 +2,7 @@ from itertools import chain
 import os
 import pathlib
 import re
-import ssl
+import time
 import yaml
 from typing import Union, Any, Optional
 import requests
@@ -19,23 +19,60 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from config import settings
 
-ssl._create_default_https_context = ssl._create_unverified_context
 
+def safe_request(url: str, max_retries: int = 3) -> str:
+    """Safely make HTTP requests with retries and error handling.
 
-def safe_request(url: str) -> str:
-    try:
-        if pathlib.Path(url).exists():
+    Args:
+        url: The URL to request
+        max_retries: Maximum number of retry attempts
+
+    Returns:
+        The response text or empty string if all attempts fail
+    """
+    # Check if URL is a local file
+    if pathlib.Path(url).exists():
+        try:
             with open(url, "r") as f:
                 return f.read()
-        with requests.get(
-            url,
-            timeout=settings.request_timeout,
-            headers=extra_headers(),
-        ) as r:
-            if (r.status_code // 100) == 2:
-                return r.text.strip().replace("\ufeff", "")
-    except Exception as e:
-        logger.warning(f"Cannot get {url}: \n{e}")
+        except Exception as e:
+            logger.warning(f"Cannot read local file {url}: {e}")
+            return ""
+
+    # Make request with retries
+    last_exception = None
+    for attempt in range(max_retries):
+        try:
+            with requests.get(
+                url,
+                timeout=settings.request_timeout,
+                headers=extra_headers(),
+            ) as r:
+                if (r.status_code // 100) == 2:
+                    return r.text.strip().replace("\ufeff", "")
+
+                # Handle non-2xx status codes
+                logger.warning(f"Request to {url} failed with status {r.status_code}")
+                if r.status_code == 404:
+                    break  # No point retrying 404
+
+        except requests.exceptions.Timeout as e:
+            last_exception = e
+            logger.warning(f"Request to {url} timed out (attempt {attempt + 1}/{max_retries})")
+        except requests.exceptions.SSLError as e:
+            last_exception = e
+            logger.warning(f"SSL error when requesting {url}: {e}")
+            break  # Don't retry SSL errors
+        except Exception as e:
+            last_exception = e
+            logger.warning(f"Error requesting {url} (attempt {attempt + 1}/{max_retries}): {e}")
+
+        # Exponential backoff
+        if attempt < max_retries - 1:
+            time.sleep(2 ** attempt)
+
+    if last_exception:
+        logger.warning(f"All attempts failed for {url}: {last_exception}")
     return ""
 
 
@@ -288,7 +325,7 @@ def unique_sources(sources: list[Source]):
         if len(data["name"]) > max_len:
             data["name"] = data["name"][:max_len] + "..."
 
-        for disp, disp_name in settings.categories_disp.items():
+        for disp, disp_name in settings.region_names.items():
             if data["name"] == disp_name:
                 data["name"] = disp
 
@@ -383,76 +420,6 @@ def unique_sources(sources: list[Source]):
         )
 
     statistics_sources(sources)
-
-
-def merge_adblock(adblock_name: str) -> dict[str, str]:
-    logger.info("Parsing Adblock list ...", end="", flush=True)
-    blocked: set[str] = set()
-    unblock: set[str] = set()
-    for item in settings.adbfurls:
-        content = safe_request(item)
-        for line in content.splitlines():
-            line = line.strip()
-            if not line or line[0] in "!#":
-                continue
-            elif line[:2] == "@@":
-                unblock.add(line.split("^")[0].strip("@|^"))
-            elif (
-                line[:2] == "||"
-                and ("/" not in line)
-                and ("?" not in line)
-                and (line[-1] == "^" or line.endswith("$all"))
-            ):
-                blocked.add(line.strip("al").strip("|^$"))
-
-    for item in settings.abfwhite.urls:
-        content = safe_request(item)
-        for line in content.splitlines():
-            line = line.strip()
-            if not line or line[0] == "!":
-                continue
-            else:
-                unblock.add(line.split("^")[0].strip("|^"))
-    unblock.update(settings.abfwhite.extras)
-
-    rules: dict[str, str] = {}
-
-    domain_root = DomainTree()
-    domain_keys: set[str] = set()
-    for domain in blocked:
-        if "/" in domain:
-            continue
-        if "*" in domain:
-            domain = domain.strip("*")
-            if "*" not in domain:
-                domain_keys.add(domain)
-            continue
-        segs = domain.split(".")
-        if len(segs) == 4 and domain.replace(".", "").isdigit():  # IP
-            for seg in segs:  # '223.73.212.020' is not valid
-                if not seg:
-                    break
-                if seg[0] == "0" and seg != "0":
-                    break
-            else:
-                rules[f"IP-CIDR,{domain}/32"] = adblock_name
-        else:
-            domain_root.insert(domain)
-    for domain in unblock:
-        domain_root.remove(domain)
-
-    for domain in domain_keys:
-        rules[f"DOMAIN-KEYWORD,{domain}"] = adblock_name
-
-    for domain in domain_root.get():
-        for key in domain_keys:
-            if key in domain:
-                break
-        else:
-            rules[f"DOMAIN-SUFFIX,{domain}"] = adblock_name
-
-    logger.info(f"There are {len(rules)} rules in Adblock list.")
-    return rules
 
 
 def fetch_sources(
@@ -577,82 +544,71 @@ def main():
     )
 
     logger.info(f"Total alive proxies: {len(all_alives)}")
-    write_all(f"{settings.output_dir}/all.yml", all_alives)
+    write_sub(f"{settings.output_dir}/all.yml", all_alives)
 
     # Split to 3 parts
     part_size = len(all_alives) // 3
     for i, part in enumerate(
         [all_alives[i : i + part_size] for i in range(0, part_size * 3, part_size)]
     ):
-        write_all(f"{settings.output_dir}/all_{i}.yml", part)
+        write_sub(f"{settings.output_dir}/all_{i}.yml", part)
 
 
-def write_all(file_name: str, nodes: list[dict[str, Any]]):
-    logger.info("Writing out all proxies...")
+def write_sub(file_name: str, nodes: list[dict[str, Any]]):
+    logger.info(f"Prepare to write out proxies{len(nodes)} to {file_name}...")
+    if not nodes:
+        logger.warning("No nodes to write out.")
+        return
 
-    logger.info("Classifying nodes by region...")
-    category_nodes: dict[str, list[dict[str, Any]]] = {}
-    categories: dict[str, list[str]] = settings.categories
-    for ctg in categories:
-        category_nodes[ctg] = []
-    for n in nodes:
-        ctgs: list[str] = []
-        for ctg, keys in categories.items():
-            for key in keys:
-                if key in n["name"]:
-                    ctgs.append(ctg)
+    logger.info("Categorize nodes by region...")
+
+    # Initialize the dictionary to hold categorized nodes
+    regional_node_dict: dict[str, list[dict[str, Any]]] = {ctg: [] for ctg in settings.region_map}
+
+    # Iterate over each node in the nodes list
+    for node in nodes:
+        # Determine region category for the current node
+        possible_regions: list[str] = []
+        for k, region_keys in settings.region_map.items():
+            for region_key in region_keys:
+                if region_key in node["name"]:
+                    possible_regions.append(k)
                     break
-            if ctgs and keys[-1] == "OVERALL":
+            # If the node has been categorized and the last key is "OVERALL", stop further checks
+            if possible_regions and region_keys[-1] == "OVERALL":
                 break
-        if len(ctgs) == 1:
-            category_nodes[ctgs[0]].append(clash_data(n))
+
+        # If the node belongs to exactly one category, add it to the corresponding list
+        if len(possible_regions) == 1:
+            regional_node_dict[possible_regions[0]].append(clash_data(node))
 
     logger.info("Read clash config template...")
     config: dict[str, Any] = read_yaml("template/config.yml")
+    config["proxies"] = [clash_data(n) for n in nodes]
 
-    # Clash Meta
-    proxies_meta: list[dict[str, Any]] = []
-    ctg_base: dict[str, Any] = config["proxy-groups"][3].copy()
-    names_clash_meta: Union[set[str], list[str]] = set()
-    for n in nodes:
-        proxies_meta.append(clash_data(n))
-        names_clash_meta.add(n["name"])
-    names_clash_meta = list(names_clash_meta)
-    conf_meta = copy.deepcopy(config)
+    node_names: set[str] = {n["name"] for n in nodes}
+    for g in config["proxy-groups"]:
+        if not g["proxies"]:
+            g["proxies"] = node_names
 
-    try:
-        dns_mode: Optional[str] = config["dns"]["enhanced-mode"]
-    except Exception:
-        dns_mode: Optional[str] = None
-    else:
-        config["dns"]["enhanced-mode"] = "fake-ip"
+    config["proxy-groups"][-1]["proxies"] = [] # 🗺️ 选择地区
+    region_proxies: list[str] = config["proxy-groups"][-1]["proxies"]
+    manual_group: dict[str, Any] = config["proxy-groups"][3].copy() # ✅ 手动选择
 
-    # Meta
-    config = conf_meta
-    config["proxies"] = proxies_meta
-    for group in config["proxy-groups"]:
-        if not group["proxies"]:
-            group["proxies"] = names_clash_meta
+    for k, v in regional_node_dict.items():
+        if k in settings.region_names:
+            dup = manual_group.copy()
+            dup["name"] = settings.region_names[k]
+            dup["proxies"] = ["REJECT"] if not v else [_["name"] for _ in v]
+            config["proxy-groups"].append(dup)
+            region_proxies.append(dup["name"])  # Add a region group
 
-    config["proxy-groups"][-1]["proxies"] = []
-    ctg_selects: list[str] = config["proxy-groups"][-1]["proxies"]
-    for ctg, payload in category_nodes.items():
-        if ctg in settings.categories_disp:
-            disp = ctg_base.copy()
-            disp["name"] = settings.categories_disp[ctg]
-            if not payload:
-                disp["proxies"] = ["REJECT"]
-            else:
-                disp["proxies"] = [_["name"] for _ in payload]
-            config["proxy-groups"].append(disp)
-            ctg_selects.append(disp["name"])
-    if dns_mode:
-        config["dns"]["enhanced-mode"] = dns_mode
     write_result(
         file_name,
         config,
         comment=f"Proxies number: {len(nodes)}",
     )
+
 
 
 def write_result(save_path: str, config, comment: str = None):

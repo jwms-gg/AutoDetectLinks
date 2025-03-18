@@ -1,5 +1,6 @@
+from dataclasses import dataclass
 import json
-from typing import Any
+from typing import Any, Dict, List, Optional, Tuple, Union
 from urllib.parse import quote, unquote, urlparse
 
 from utils import b64decodes, b64decodes_safe, b64encodes, b64encodes_safe
@@ -7,34 +8,66 @@ from config import settings
 
 
 class UnsupportedType(Exception):
-    pass
+    """Exception raised when an unsupported proxy type is encountered."""
+    def __init__(self, proxy_type: str, message: str = ""):
+        super().__init__(f"Unsupported proxy type: {proxy_type}. {message}")
+        self.proxy_type = proxy_type
 
 
 class NotANode(Exception):
-    pass
+    """Exception raised when the input is not a valid proxy node."""
+    def __init__(self, proxy: str):
+        super().__init__(f"Invalid proxy format: {proxy}")
+        self.proxy = proxy
 
 
-def v2ray_to_clash(proxy: str) -> dict[str, Any]:
+def _parse_proxy_uri(proxy: str) -> Tuple[str, str]:
+    """Parse proxy URI into type and URI components.
+
+    Args:
+        proxy: The proxy URI string
+
+    Returns:
+        Tuple of (proxy_type, uri)
+
+    Raises:
+        NotANode: If the proxy URI is invalid
+    """
     try:
-        type, uri = proxy.split("://", 1)
-    except ValueError:
-        raise NotANode(proxy)
+        proxy_type, uri = proxy.split("://", 1)
+    except ValueError as e:
+        raise NotANode(proxy) from e
+
+    # Normalize proxy type
+    if not proxy_type.isascii():
+        proxy_type = "".join([_ for _ in proxy_type if _.isascii()])
+    if proxy_type == "hy2":
+        proxy_type = "hysteria2"
 
     try:
         uri = unquote(uri)
     except Exception:
         pass
 
-    # === Fix begin ===
-    if not type.isascii():
-        type = "".join([_ for _ in type if _.isascii()])
-        proxy = type + "://" + proxy.split("://")[1]
-    if type == "hy2":
-        type = "hysteria2"
-    # === Fix end ===
+    return proxy_type, uri
 
-    data: dict[str, Any] = {}
-    if type == "vmess":
+
+def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
+    """Convert V2Ray proxy configuration to Clash format.
+
+    Args:
+        proxy: The V2Ray proxy URI string
+
+    Returns:
+        Dictionary containing Clash-compatible proxy configuration
+
+    Raises:
+        UnsupportedType: If the proxy type is not supported
+        NotANode: If the proxy URI is invalid
+    """
+    proxy_type, uri = _parse_proxy_uri(proxy)
+    data: Dict[str, Any] = {}
+    if proxy_type == "vmess":
         v = settings.vmess_example.copy()
         try:
             v.update(json.loads(b64decodes(uri)))
@@ -64,7 +97,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
         elif v["net"] == "grpc" and "path" in v:
             data["grpc-opts"] = {"grpc-service-name": v["path"]}
 
-    elif type == "ss":
+    elif proxy_type == "ss":
         # https://github.com/shadowsocks/shadowsocks-org/wiki/SIP002-URI-Scheme
         if "#" in uri:
             config_part, name = uri.split("#", 1)
@@ -101,7 +134,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
             "cipher": cipher,
         }
 
-    elif type == "ssr":
+    elif proxy_type == "ssr":
         if "?" in proxy:
             parts = uri.split(":")
         else:
@@ -137,7 +170,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
             elif k == "protoparam":
                 data["protocol-param"] = v
 
-    elif type == "trojan":
+    elif proxy_type == "trojan":
         parsed = urlparse(proxy)
         data = {
             "name": unquote(parsed.fragment),
@@ -172,7 +205,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                         data["ws-opts"] = {}
                     data["ws-opts"]["path"] = v
 
-    elif type == "vless":
+    elif proxy_type == "vless":
         parsed = urlparse(proxy)
         data = {
             "name": unquote(parsed.fragment),
@@ -225,7 +258,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                         data["reality-opts"] = {}
                     data["reality-opts"]["short-id"] = v
 
-    elif type == "hysteria2":
+    elif proxy_type == "hysteria2":
         # https://v2.hysteria.network/docs/developers/URI-Scheme/
         parsed = urlparse(proxy)
         data = {
@@ -262,7 +295,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                 elif k == "fp":
                     data["fingerprint"] = v
 
-    elif type == "http":
+    elif proxy_type == "http":
         # http://username:password@host:port?tls=1#name
         parsed = urlparse(proxy)
         data = {
@@ -279,7 +312,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                 if k == "tls":
                     data["tls"] = v != "0"
 
-    elif type == "hysteria":
+    elif proxy_type == "hysteria":
         # https://v1.hysteria.network/docs/uri-scheme/
         # hysteria://host:port?protocol=udp&auth=123456&peer=sni.domain&insecure=1&upmbps=100&downmbps=100&alpn=hysteria&obfs=xplus&obfsParam=123456#remarks
         parsed = urlparse(proxy)
@@ -329,7 +362,7 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
                 elif k == "fp":
                     data["fingerprint"] = v
 
-    elif type == "socks5":
+    elif proxy_type == "socks5":
         # socks5://username:password@host:port
         parsed = urlparse(proxy)
         data = {
@@ -342,9 +375,9 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
         }
 
     else:
-        raise UnsupportedType(type)
+        raise UnsupportedType(proxy_type)
 
-    data["type"] = type
+    data["type"] = proxy_type
 
     if not data["name"]:
         data["name"] = "unnamed"
@@ -352,12 +385,22 @@ def v2ray_to_clash(proxy: str) -> dict[str, Any]:
     return data
 
 
-def clash_to_v2ray(proxy: dict[str, Any]) -> str:
+def clash_to_v2ray(proxy: Dict[str, Any]) -> str:
+    """Convert Clash proxy configuration to V2Ray format.
+
+    Args:
+        proxy: Dictionary containing Clash proxy configuration
+
+    Returns:
+        V2Ray-compatible proxy URI string
+
+    Raises:
+        UnsupportedType: If the proxy type is not supported
+    """
     data = proxy
+    proxy_type = data["type"]
 
-    type = data["type"]
-
-    if type == "vmess":
+    if proxy_type == "vmess":
         v = settings.vmess_example.copy()
         for key, val in data.items():
             if key in settings.clash2vmess:
@@ -384,11 +427,11 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
             v["tls"] = "tls"
         return "vmess://" + b64encodes(json.dumps(v, ensure_ascii=False))
 
-    if type == "ss":
+    if proxy_type == "ss":
         passwd = b64encodes_safe(data["cipher"] + ":" + data["password"])
         return f"ss://{passwd}@{data['server']}:{data['port']}#{quote(data['name'])}"
 
-    if type == "ssr":
+    if proxy_type == "ssr":
         ret = (
             ":".join(
                 [str(data[_]) for _ in ("server", "port", "protocol", "cipher", "obfs")]
@@ -405,7 +448,7 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
                 ret += "&" + urlk + "=" + b64encodes_safe(data[k])
         return "ssr://" + ret
 
-    if type == "trojan":
+    if proxy_type == "trojan":
         passwd = quote(data["password"])
         name = quote(data["name"])
         ret = f"trojan://{passwd}@{data['server']}:{data['port']}?"
@@ -430,7 +473,7 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
         ret = ret.rstrip("&") + "#" + name
         return ret
 
-    if type == "vless":
+    if proxy_type == "vless":
         passwd = quote(data["uuid"])
         name = quote(data["name"])
         ret = f"vless://{passwd}@{data['server']}:{data['port']}?"
@@ -468,7 +511,7 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
         ret = ret.rstrip("&") + "#" + name
         return ret
 
-    if type == "hysteria2":
+    if proxy_type == "hysteria2":
         passwd = quote(data["password"])
         name = quote(data["name"])
         ret = f"hysteria2://{passwd}@{data['server']}:{data['port']}"
@@ -487,17 +530,17 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
         ret = ret.rstrip("&") + "#" + name
         return ret
 
-    if type == "http":
+    if proxy_type == "http":
         name = quote(data["name"])
         tls = True if data["tls"] else False
         return f"http://{data['server']}:{data['port']}?tls={tls}&name={name}"
 
-    if type == "socks5":
+    if proxy_type == "socks5":
         username = quote(data["username"])
         password = quote(data["password"])
         return f"socks5://{username}:{password}@{data['server']}:{data['port']}"
 
-    if type == "hysteria":
+    if proxy_type == "hysteria":
         name = quote(data["name"])
         ret = f"${data['server']}:${data['port']}?"
         ret += "?"
@@ -522,7 +565,7 @@ def clash_to_v2ray(proxy: dict[str, Any]) -> str:
         ret = ret.rstrip("&") + "#" + name
         return ret
 
-    raise UnsupportedType(type)
+    raise UnsupportedType(proxy_type)
 
 
 if __name__ == "__main__":
