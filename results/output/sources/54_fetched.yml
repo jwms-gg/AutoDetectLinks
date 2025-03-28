@@ -1,74 +1,51 @@
-# Update: 2025-03-28 08:42
-# Source 54 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria), 25
+# Update: 2025-03-31 08:45
+# Source 54 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria), 28
 proxies:
-- name: 🔄 LATEST-UPDATE 📅 FRI-08-FARVA...
+- name: 🔄 LATEST-UPDATE 📅 MON-11-FARVA...
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: abbaacc-abca-acab-dbac-cacbbacaacbb
+  uuid: bacacab-baac-caab-abcd-bcaccbcabaab
 - name: 🤖 TELEGRAM-CHANNEL 💡 NEUROVANC...
   network: tcp
   port: 2080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: acabcba-abca-cbaa-cadb-bcccbacbaaba
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-207.148.2...
-  obfs: salamander
-  obfs-password: cd29099d
-  password: 9bb452b106ffc217
-  port: 443
-  server: 207.148.22.93
-  skip-cert-verify: true
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11...
-  obfs: salamander
-  obfs-password: 13f7ba5f
-  password: 4e9ee29b39a28277
-  port: 443
-  server: 66.135.11.68
-  skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqqozy6hgvqxwfmfs%20vgvs6c7kjnrubuh.cc
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇧🇷 BR-167.234.2...
+  uuid: acbabca-baca-bcaa-cdab-bacccbaabcab
+- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
   password: sysadmin.sysadmin
-  port: 444
-  server: 167.234.249.46
+  port: 2024
+  server: 204.216.108.5
   skip-cert-verify: true
-  sni: a.961229.xyz
+  sni: 204-216-108-5.nip.io
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
-  obfs: salamander
-  obfs-password: d2648ec2
-  password: 18240b2dfdd76484
+- alpn:
+  - h3
+  auth_str: 483f8ef7-8480-490d-92fb-1fc392fb34b6
+  down: '70'
+  name: 🔒 HYSTERIA-UDP 🇫🇷 FR-141.145.1...
   port: 443
-  server: 70.34.207.153
+  ports: 6000-21000
+  server: 141.145.194.153
   skip-cert-verify: true
-  sni: 70.34.207.153
-  type: hysteria2
+  type: hysteria
+  up: '30'
 - name: 🔒 HYSTERIA-UDP 🇬🇧 GB-18.132.37...
   password: 24c588b1-2853-49c7-91d2-33d93d8c8488
   port: 443
   server: 18.132.37.93
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-45.32.234...
+- name: 🔒 HYSTERIA-UDP 🇬🇧 GB-66.245.19...
   obfs: salamander
-  obfs-password: 2pU!&Brls!0exuP+!4so
-  password: y0qochAspE+u-HLfrip-
+  obfs-password: bd7f765e
+  password: 9f73c619627d6a5d
   port: 443
-  server: 45.32.234.211
+  server: 66.245.192.15
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇩🇪 DE-5.39.252....
-  obfs: salamander
-  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
-  password: f869f5c5-18d0-4971-9d50-013ecef19daf
-  port: 32008
-  server: 5.39.252.72
-  skip-cert-verify: true
+  sni: www.apple.com
   type: hysteria2
 - alpn:
   - h3
@@ -88,12 +65,87 @@ proxies:
   skip-cert-verify: true
   sni: file-oss-ccs-02.dafei.de
   type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.8...
+  obfs: salamander
+  obfs-password: 4b817757
+  password: 1f17cdf0578a2860
+  port: 443
+  server: 45.76.0.86
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇷🇺 RU-45.140.16...
   password: a278eadd-c35c-403f-a286-7767a74307c1
   port: 8080
   server: 45.140.169.231
   skip-cert-verify: true
   sni: www.eliv2ray.net
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇳🇱 NL-45.32.234...
+  obfs: salamander
+  obfs-password: 2pU!&Brls!0exuP+!4so
+  password: y0qochAspE+u-HLfrip-
+  port: 443
+  server: 45.32.234.211
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-207.148.2...
+  obfs: salamander
+  obfs-password: cd29099d
+  password: 9bb452b106ffc217
+  port: 443
+  server: 207.148.22.93
+  skip-cert-verify: true
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.163...
+  password: dongtaiwang.com
+  port: 18626
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-195.133.5...
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ%3D%3D
+  password: f869f5c5-18d0-4971-9d50-013ecef19daf
+  port: 33007
+  server: 195.133.5.127
+  skip-cert-verify: true
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇩🇪 DE-45.63.116... #1'
+  obfs: salamander
+  obfs-password: 6c80ade6
+  password: 18463200c271aa6d
+  port: 443
+  server: 45.63.116.113
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-66.135.11...
+  obfs: salamander
+  obfs-password: 13f7ba5f
+  password: 4e9ee29b39a28277
+  port: 443
+  server: 66.135.11.68
+  skip-cert-verify: true
+  sni: wrmelmwxlf.gktevlrqznwqqqozy6hgvqxwfmfs%20vgvs6c7kjnrubuh.cc
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41....
+  password: dongtaiwang.com
+  port: 37481
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
+  obfs: salamander
+  obfs-password: d2648ec2
+  password: 18240b2dfdd76484
+  port: 443
+  server: 70.34.207.153
+  skip-cert-verify: true
+  sni: 70.34.207.153
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇺🇸 US-66.135.28...
   obfs: salamander
@@ -103,6 +155,19 @@ proxies:
   server: 66.135.28.59
   skip-cert-verify: true
   sni: www.apple.com
+  type: hysteria2
+- name: '🔒 HYSTERIA-UDP 🇺🇸 US-107.175.3... #1'
+  password: 6cc30ad1
+  port: 2024
+  server: 107.175.32.131
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇮🇳 IN-170.205.5...
+  password: sysadmin.sysadmin
+  port: 443
+  server: 170.205.54.5
+  skip-cert-verify: true
   type: hysteria2
 - alpn:
   - h3
@@ -115,62 +180,14 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: '30'
-- alpn:
-  - h3
-  auth_str: 483f8ef7-8480-490d-92fb-1fc392fb34b6
-  down: '70'
-  name: 🔒 HYSTERIA-UDP 🇫🇷 FR-141.145.1...
-  port: 443
-  ports: 6000-21000
-  server: 141.145.194.153
-  skip-cert-verify: true
-  type: hysteria
-  up: '30'
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-45.76.0.8...
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f...
   obfs: salamander
-  obfs-password: 4b817757
-  password: 1f17cdf0578a2860
+  obfs-password: 13f7ba5f
+  password: 4e9ee29b39a28277
   port: 443
-  server: 45.76.0.86
+  server: 2001:19f0:1000:20d0:5400:5ff:fe19:3ba9
   skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-107.175.3...
-  password: 6cc30ad1
-  port: 2024
-  server: 107.175.32.131
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇫🇷 FR-51.158.54... #1'
-  password: dongtaiwang.com
-  port: 44550
-  server: 51.158.54.46
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41....
-  password: dongtaiwang.com
-  port: 37481
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
-  skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇬🇧 GB-66.245.19...
-  obfs: salamander
-  obfs-password: bd7f765e
-  password: 9f73c619627d6a5d
-  port: 443
-  server: 66.245.192.15
-  skip-cert-verify: true
-  sni: www.apple.com
+  sni: '[2001:19f0:1000:20d0:5400:5ff:fe19:3ba9]'
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇺🇸 US-66.23.198...
   obfs: salamander
@@ -181,20 +198,27 @@ proxies:
   skip-cert-verify: true
   sni: www.eliv2ray.net
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-[2001:19f...
-  obfs: salamander
-  obfs-password: 13f7ba5f
-  password: 4e9ee29b39a28277
-  port: 443
-  server: 2001:19f0:1000:20d0:5400:5ff:fe19:3ba9
+- name: '🔒 HYSTERIA-UDP 🇫🇷 FR-51.158.54... #1'
+  password: dongtaiwang.com
+  port: 44550
+  server: 51.158.54.46
   skip-cert-verify: true
-  sni: '[2001:19f0:1000:20d0:5400:5ff:fe19:3ba9]'
+  sni: bing.com
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇮🇳 IN-170.205.5...
-  password: sysadmin.sysadmin
-  port: 443
-  server: 170.205.54.5
+- name: 🔒 HYSTERIA-UDP 🇩🇪 DE-5.39.252....
+  obfs: salamander
+  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
+  password: f869f5c5-18d0-4971-9d50-013ecef19daf
+  port: 32008
+  server: 5.39.252.72
   skip-cert-verify: true
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇧🇷 BR-167.234.2...
+  password: sysadmin.sysadmin
+  port: 444
+  server: 167.234.249.46
+  skip-cert-verify: true
+  sni: a.961229.xyz
   type: hysteria2
 - name: 👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ...
   network: tcp
@@ -202,4 +226,4 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: aaccbba-acab-aabc-cadb-cabacacbbacb
+  uuid: acbabca-acab-baca-dacb-bccacbaacbba

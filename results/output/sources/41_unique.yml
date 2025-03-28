@@ -1,97 +1,58 @@
-# Update: 2025-03-28 08:42
-# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 9
+# Update: 2025-03-31 08:45
+# Source 41 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 6
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 美国 Cloudinnovation数据中心
-  network: ws
-  port: 443
-  server: 154.83.2.90
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: jahfkjha.cfd
-    path: /linkws
 - alpn:
   - http/1.1
-  name: '英国+社会保险安全部 #1'
+  name: 英国+伦敦Amazon数据中心
   network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.21.140.78
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 美国+Amazon数据中心
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.169.179.112
-  skip-cert-verify: false
+  server: 3.11.226.22
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '美国+V2CROSS.COM #1'
+  password: 268f8604-ae22-47ea-a846-121bfa584236
+  port: 44397
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '美国+Amazon数据中心 #3'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.193.177.174
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国 Fastly全球Anycast节点
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: 印度 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
-  ws-opts:
-    headers:
-      Host: pendar.onthewifi.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 北美地区 V2CROSS.COM
-  network: ws
-  port: 21007
-  server: 134.195.211.116
+  name: '广东省广州市 移动 #2'
+  network: tcp
+  port: 15074
+  server: 15074.kuaiyin02.top
   tls: false
   type: vmess
-  uuid: 41c38652-db8d-4d7a-8627-d36e8565c755
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alpn:
+  - http/1.1
+  name: 美国+惠普公司
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 16.16.221.63
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #10'
+  network: ws
+  port: 8443
+  server: esna.twn24.ir
+  tls: true
+  type: vmess
+  uuid: bde20f50-841c-4117-9092-6ff7b4e12f5e
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alpn:
-  - http/1.1
-  name: 美国+弗吉尼亚州阿什本Amazon数据中心
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 54.152.134.162
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.36.99.127
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 德国+黑森州法兰克福Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.127.171.65
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      Host: esna.twn24.ir
+    path: /4sMTyjcd

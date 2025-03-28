@@ -1,5 +1,5 @@
-# Update: 2025-03-28 08:42
-# Source 68 (https://t.me/s/ServerNett), 84
+# Update: 2025-03-31 08:45
+# Source 68 (https://t.me/s/ServerNett), 91
 proxies:
 - name: '@SERVERNETT'
   network: tcp
@@ -84,24 +84,23 @@ proxies:
   ws-opts:
     headers:
       Host: testspeed-foreign.tci.ir
-- name: '@SERVERNETT #11'
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #11'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
+- name: '@SERVERNETT #12'
   network: tcp
   port: 15182
   server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #12'
+- name: '@SERVERNETT #13'
   network: tcp
   port: 31899
   server: 2a01:4f8:c010:45f6::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #13'
-  network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -114,36 +113,36 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #15'
   network: tcp
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
+  tls: false
+  type: vless
+  uuid: TELEGRAM-ServerNett
+- name: '@SERVERNETT #16'
+  network: tcp
   port: 31899
   server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #16'
+- name: '@SERVERNETT #17'
   network: tcp
   port: 15182
   server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #17'
+- name: '@SERVERNETT #18'
   network: tcp
   port: 51773
   server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #18'
+- name: '@SERVERNETT #19'
   network: tcp
   port: 31899
   server: 2a01:4f8:c010:45f6::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #19'
-  network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -154,63 +153,76 @@ proxies:
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #21'
-  network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #21'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
 - name: '@SERVERNETT #22'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #23'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #24'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #25'
-  network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #26'
   network: tcp
   port: 51773
   server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #27'
+- name: '@SERVERNETT #26'
   network: tcp
   port: 31899
   server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #28'
+- name: '@SERVERNETT #27'
   network: tcp
   port: 15182
   server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
+- name: '@SERVERNETT #28'
+  network: tcp
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
+  tls: false
+  type: vless
+  uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #29'
+  network: tcp
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
+  tls: false
+  type: vless
+  uuid: TELEGRAM-ServerNett
+- name: '@SERVERNETT #30'
+  network: tcp
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
+  tls: false
+  type: vless
+  uuid: TELEGRAM-ServerNett
+- name: '@SERVERNETT #31'
   network: tcp
   port: 1520
   server: 188.245.95.151
@@ -220,7 +232,7 @@ proxies:
   ws-opts:
     headers:
       Host: testspeed-foreign.tci.ir
-- name: '@SERVERNETT #30'
+- name: '@SERVERNETT #32'
   network: tcp
   port: 1522
   server: 3900230223.torob.com.tr
@@ -230,27 +242,12 @@ proxies:
   ws-opts:
     headers:
       Host: testspeed-foreign.tci.ir
-- name: '@SERVERNETT #31'
-  network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #32'
-  network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
-- name: '@SERVERNETT #33'
-  network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
-  tls: false
-  type: vless
-  uuid: TELEGRAM-ServerNett
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #33'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
 - name: '@SERVERNETT #34'
   network: tcp
   port: 15182
@@ -267,22 +264,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #36'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #37'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #38'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -302,22 +299,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #41'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #42'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #43'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -372,22 +369,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #51'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #52'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #53'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -407,22 +404,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #56'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #57'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #58'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -442,22 +439,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #61'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #62'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #63'
   network: tcp
-  port: 51773
-  server: 2a01:4f8:1c17:ee5c::1
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -477,22 +474,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #66'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #67'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #68'
   network: tcp
-  port: 31899
-  server: 2a01:4f8:c010:45f6::1
+  port: 51773
+  server: 2a01:4f8:1c17:ee5c::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -512,22 +509,22 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #71'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #72'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #73'
   network: tcp
-  port: 15182
-  server: 2a01:4f8:c010:1d97::1
+  port: 31899
+  server: 2a01:4f8:c010:45f6::1
   tls: false
   type: vless
   uuid: TELEGRAM-ServerNett
@@ -547,34 +544,25 @@ proxies:
   uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #76'
   network: tcp
-  port: 1520
-  server: 188.245.95.151
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
-  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
-  ws-opts:
-    headers:
-      Host: testspeed-foreign.tci.ir
+  uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #77'
   network: tcp
-  port: 1520
-  server: 188.245.95.151
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
-  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
-  ws-opts:
-    headers:
-      Host: testspeed-foreign.tci.ir
+  uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #78'
   network: tcp
-  port: 1520
-  server: 188.245.95.151
+  port: 15182
+  server: 2a01:4f8:c010:1d97::1
   tls: false
   type: vless
-  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
-  ws-opts:
-    headers:
-      Host: testspeed-foreign.tci.ir
+  uuid: TELEGRAM-ServerNett
 - name: '@SERVERNETT #79'
   network: tcp
   port: 1520
@@ -587,8 +575,8 @@ proxies:
       Host: testspeed-foreign.tci.ir
 - name: '@SERVERNETT #80'
   network: tcp
-  port: 1522
-  server: 3900230223.torob.com.tr
+  port: 1520
+  server: 188.245.95.151
   tls: false
   type: vless
   uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
@@ -597,8 +585,8 @@ proxies:
       Host: testspeed-foreign.tci.ir
 - name: '@SERVERNETT #81'
   network: tcp
-  port: 1522
-  server: 3900230223.torob.com.tr
+  port: 1520
+  server: 188.245.95.151
   tls: false
   type: vless
   uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
@@ -607,8 +595,8 @@ proxies:
       Host: testspeed-foreign.tci.ir
 - name: '@SERVERNETT #82'
   network: tcp
-  port: 1522
-  server: 3900230223.torob.com.tr
+  port: 1520
+  server: 188.245.95.151
   tls: false
   type: vless
   uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
@@ -625,3 +613,57 @@ proxies:
   ws-opts:
     headers:
       Host: testspeed-foreign.tci.ir
+- name: '@SERVERNETT #84'
+  network: tcp
+  port: 1522
+  server: 3900230223.torob.com.tr
+  tls: false
+  type: vless
+  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
+  ws-opts:
+    headers:
+      Host: testspeed-foreign.tci.ir
+- name: '@SERVERNETT #85'
+  network: tcp
+  port: 1522
+  server: 3900230223.torob.com.tr
+  tls: false
+  type: vless
+  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
+  ws-opts:
+    headers:
+      Host: testspeed-foreign.tci.ir
+- name: '@SERVERNETT #86'
+  network: tcp
+  port: 1522
+  server: 3900230223.torob.com.tr
+  tls: false
+  type: vless
+  uuid: bca5e12c-e30e-4430-9729-5a4ea40b90a6
+  ws-opts:
+    headers:
+      Host: testspeed-foreign.tci.ir
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #87'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #88'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #89'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '@SERVERNETT #90'
+  password: ZTAwMGEw
+  port: '8388'
+  server: 185.231.207.247
+  type: ss

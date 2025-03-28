@@ -302,3 +302,9 @@ rule-providers:
     url: "https://fastly.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-clash.yaml"
     interval: 86400
 ```
+
+## 节点来源
+
+- 使用fofa规则搜索：自动抓取tg频道、订阅地址、公开互联网上的
+- github 搜索：v2ray free
+- cf sub
