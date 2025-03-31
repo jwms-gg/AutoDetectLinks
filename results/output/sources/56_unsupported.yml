@@ -1,3 +1,21 @@
-# Update: 2025-03-31 08:45
-# Source 56 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 0
-proxies: []
+# Update: 2025-04-07 08:45
+# Source 56 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 2
+proxies:
+- grpc-opts:
+    grpc-service-name: vless-grpc
+  name: 🔒 VL-GRPC-NONE 🇸🇪 SE-[0000:000...
+  network: grpc
+  port: 8880
+  server: 0000:0000:0000:0000:0000:ffff:4e28:7545
+  tls: false
+  type: vless
+  uuid: 3af682f1-3e13-4216-9a4a-49953d4009c3
+- grpc-opts:
+    grpc-service-name: vless-grpc
+  name: 🔒 VL-GRPC-NONE 🇦🇹 AT-[::ffff:2...
+  network: grpc
+  port: 8880
+  server: ::ffff:2d8d:3a16
+  tls: false
+  type: vless
+  uuid: ba5a4409-159a-5e30-8806-6d97df5d85f3

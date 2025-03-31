@@ -1,44 +1,53 @@
-# Update: 2025-03-31 08:45
-# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 14
+# Update: 2025-04-07 08:45
+# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 11
 proxies:
+- name: 美国+CloudFlare节点
+  network: ws
+  password: s8xwZ]|?V>cH
+  port: 80
+  server: 104.17.147.22
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+    path: '%2Ftr9CJrMkockZObhHjc%3Fed%3D2560'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: s8xwZ]|?V>cH
+  port: 80
+  server: 104.17.148.22
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+    path: '%2Ftr9CJrMkockZObhHjc%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #8'
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: 2053
+  server: 172.66.47.42
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nop-55q.pages.dev
+    path: '%2FtrGPZDfetEwuO25SAs%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 北美地区 V2CROSS.COM
+  name: 美国 CloudFlare节点
   network: ws
-  port: 21013
-  server: 134.195.211.116
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
   tls: false
   type: vmess
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alterId: 32
-  cipher: auto
-  name: 希腊 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 77.83.141.171
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: '北美地区 V2CROSS.COM #1'
-  network: ws
-  port: 21015
-  server: 134.195.211.116
-  tls: false
-  type: vmess
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
-  ws-opts:
-    headers:
-      Host: ''
+      Host: server26.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
@@ -55,97 +64,70 @@ proxies:
       Host: dp3.scproxy.top
     path: /shirker
 - alpn:
+  - h3
+  - h2
   - http/1.1
-  name: 美国+Amazon数据中心
+  name: 俄罗斯新西伯利亚+justhost.ru
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.90.146
-  sni: trojan.burgerip.co.uk
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 8443
+  server: 195.133.52.153
+  sni: ru2.asc-sam.io
   type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.170.143.229
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 英国+社会保险安全部
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.188.8
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 法国+巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.180.236.106
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #2'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.39.115.165
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 美国+Sprint网络
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.177.223.183
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: chacha20-ietf
-  name: 2|🇭🇰6 |  2.3MB/s
-  password: asd123456
-  port: '8388'
-  server: 103.149.183.61
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '俄罗斯 V2CROSS.COM #1'
-  network: ws
-  port: 23035
-  server: 195.133.5.127
-  tls: false
-  type: vmess
-  uuid: e5381b55-ae63-4ce5-9968-b8c0af015001
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国 Akamai科技公司CDN网络节点
-  network: ws
-  port: 443
-  server: jahfkjha.cfd
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
   ws-opts:
     headers:
-      Host: jahfkjha.cfd
-    path: /linkws
+      Host: ru2.asc-sam.io
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 80
+  server: us7-02.890624.xYz
+  tls: false
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      Host: us7-02.890624.xYz
+    path: /bua2hMcbA8wMzbGFtV
 - alterId: 2
   cipher: auto
-  name: '12,13|美国5|@ripaojiedian #1'
+  name: '香港 电讯盈科有限公司 #9'
   network: ws
-  port: '420'
-  server: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
-  servername: ''
+  port: 80
+  server: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com
   tls: false
   type: vmess
-  uuid: 6e28d086-f1bd-11ed-9ebc-f23c93665044
+  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
+      Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #16'
+  network: ws
+  port: 2096
+  server: ny1-dash.890699.xyz
+  tls: true
+  type: vmess
+  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
+  ws-opts:
+    headers:
+      Host: ny1-sub.890699.xyz
+    path: /ny1-sub.890699.xyz
+- name: 1|🇯🇵1 |  2.2MB/s
+  password: 4600288a-acf9-4846-9dfe-890d2a27ab4f
+  port: 22269
+  server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 1|🌀1-PK |  3.9MB/s
+  password: 4600288a-acf9-4846-9dfe-890d2a27ab4f
+  port: 42883
+  server: aafrtpfxr.pkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan

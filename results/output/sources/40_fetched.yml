@@ -1,64 +1,32 @@
-# Update: 2025-03-31 08:45
-# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 38
+# Update: 2025-04-07 08:45
+# Source 40 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 46
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 北美地区 V2CROSS.COM
+- name: 美国+CloudFlare节点
   network: ws
-  port: 21013
-  server: 134.195.211.116
-  tls: false
-  type: vmess
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 32
-  cipher: auto
-  name: 希腊 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 77.83.141.171
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: '北美地区 V2CROSS.COM #1'
-  network: ws
-  port: 21015
-  server: 134.195.211.116
-  tls: false
-  type: vmess
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
-  port: 443
-  server: 104.21.6.179
-  sni: uS6-16.890601.xyz
+  password: s8xwZ]|?V>cH
+  port: 80
+  server: 104.17.147.22
   type: trojan
   ws-opts:
     headers:
-      Host: us6-16.890601.xyz
-    path: '%2FILLcisbMYUd6MQzxVoMQ'
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+    path: '%2Ftr9CJrMkockZObhHjc%3Fed%3D2560'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: s8xwZ]|?V>cH
+  port: 80
+  server: 104.17.148.22
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+    path: '%2Ftr9CJrMkockZObhHjc%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: '巴西圣保罗 CloudFlare节点 #1'
   network: ws
   port: 443
-  server: 188.114.97.6
+  server: 188.114.96.2
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -66,33 +34,81 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '2|🇺🇸15 |  2.8MB/s #1'
+- name: '美国+CloudFlare节点 #6'
   network: ws
-  port: 2096
-  server: 104.18.119.222
-  servername: 1743256978.speed.adl.cccp.freefly.pp.ua
-  tls: true
-  type: vmess
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  password: '123456'
+  port: 8443
+  server: 198.41.208.69
+  sni: top-azx.pages.dev
+  type: trojan
   ws-opts:
     headers:
-      Host: 1743256978.speed.adl.cccp.freefly.pp.ua
-    path: /
+      Host: top-azx.pages.dev
+    path: '%2FAz1.vpn.33.TOP%2F%3Fed%3D2560'
+- name: '美国+CloudFlare节点 #7'
+  network: ws
+  password: vs6f8hvt
+  port: 2053
+  server: 104.17.245.203
+  sni: trojan.cchappy.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.cchappy.eu.org
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #8'
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: 2053
+  server: 172.66.47.42
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nop-55q.pages.dev
+    path: '%2FtrGPZDfetEwuO25SAs%3Fed%3D2560'
+- name: '美国+CloudFlare节点 #9'
+  network: ws
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 172.67.200.238
+  skip-cert-verify: false
+  sni: 3s.890689.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3s.890689.xyz
+    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
   network: ws
-  port: 2096
-  server: 104.21.80.1
-  tls: true
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
   ws-opts:
     headers:
-      Host: de01.sh-cloudflare.sbs
+      Host: server26.beheshtbaneh.com
     path: /
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #10'
+  network: ws
+  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  port: 443
+  server: 172.67.135.23
+  sni: uS6-16.890601.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: us6-16.890601.xyz
+    path: '%2FILLcisbMYUd6MQzxVoMQ'
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #1'
@@ -107,236 +123,349 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- cipher: aes-256-cfb
-  name: '2|🇺🇸9 |  3.2MB/s #1'
-  password: amazonskr05
-  port: '443'
-  server: 34.209.118.169
-  type: ss
-- cipher: aes-256-cfb
-  name: '2|🇺🇸19 |  5.2MB/s #1'
-  password: amazonskr05
-  port: '443'
-  server: 54.69.142.224
-  type: ss
-- name: '2|🇯🇵8 |  3.2MB/s #1'
-  password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
-  port: 443
-  server: 154.31.114.12
-  skip-cert-verify: true
-  sni: visual.superpokemon.com
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸6 |  4.4MB/s
+  network: tcp
+  port: '48737'
+  server: 185.189.32.179
+  tls: false
+  type: vmess
+  uuid: 3680a006-d824-4574-90f3-21226dae6903
+- alterId: 0
+  cipher: auto
+  name: 乌克兰 V2CROSS.COM
+  network: ws
+  port: 12269
+  server: 2.58.87.221
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '乌克兰 V2CROSS.COM #2'
+  network: ws
+  port: 14555
+  server: 2.58.87.221
+  tls: true
+  type: vmess
+  uuid: 6c764a03-bb1a-4bc6-baca-452453fce1ae
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alpn:
+  - http/1.1
+  name: 爱尔兰+都柏林Amazon数据中心
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.16.255.13
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 美国+Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.170.90.109
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 法国+巴黎Amazon数据中心
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.160.153
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '德国+黑森州法兰克福Amazon数据中心 #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.29.41.209
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 美国+惠普HP
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.170.0.241
+  sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: aes-256-cfb
-  name: '12|tg频道:@ripaojiedian #1'
+  name: '13|韩国特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
-  server: 18.183.76.102
+  server: 54.238.109.190
   type: ss
 - cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #1 #1'
+  name: 1|🇯🇵13 |  1.3MB/s
   password: amazonskr05
   port: '443'
-  server: 18.183.76.102
+  server: 18.181.170.89
   type: ss
 - cipher: aes-256-cfb
-  name: '12|🇸🇬 狮城特殊|@ripaojiedian #2'
+  name: '12|🇰🇷 韩国特殊|@ripaojiedian #3'
   password: amazonskr05
   port: '443'
-  server: 18.181.194.77
+  server: 54.238.109.190
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|🇸🇬3 |  3.1MB/s
+  password: amazonskr05
+  port: '443'
+  server: 13.229.48.116
   type: ss
 - cipher: aes-256-cfb
   name: '13|狮城特殊|@ripaojiedian #1'
   password: amazonskr05
   port: '443'
-  server: 18.181.194.77
-  type: ss
-- alpn:
-  - http/1.1
-  name: 美国+Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.90.146
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.170.143.229
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 英国+社会保险安全部
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.188.8
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 法国+巴黎Amazon数据中心
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.180.236.106
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+Amazon数据中心 #2'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.39.115.165
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 美国+Sprint网络
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.177.223.183
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-cfb
-  name: '13|日本特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 43.203.206.73
+  server: 13.250.61.152
   type: ss
 - cipher: aes-256-cfb
-  name: '12|🇯🇵 日本特殊|@ripaojiedian #1'
+  name: '12|🇸🇬 狮城特殊|@ripaojiedian #3'
   password: amazonskr05
   port: '443'
-  server: 43.203.206.73
-  type: ss
-- cipher: chacha20-ietf
-  name: 2|🇭🇰6 |  2.3MB/s
-  password: asd123456
-  port: '8388'
-  server: 103.149.183.61
+  server: 13.250.61.152
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇰🇷7 |  4.5MB/s
+  name: 1|🇯🇵4 |  5.2MB/s
   password: amazonskr05
   port: '443'
-  server: 3.36.26.148
+  server: 52.199.237.27
   type: ss
-- alterId: 0
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 俄罗斯新西伯利亚+justhost.ru
+  network: tcp
+  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
+  port: 8443
+  server: 195.133.52.153
+  sni: ru2.asc-sam.io
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ru2.asc-sam.io
+    path: '%2F'
+- cipher: aes-256-cfb
+  name: 1|🇸🇬2 |  3.2MB/s
+  password: amazonskr05
+  port: '443'
+  server: 3.0.50.161
+  type: ss
+- alterId: 2
   cipher: auto
-  name: '俄罗斯 V2CROSS.COM #1'
+  name: '香港 电讯盈科有限公司 #8'
   network: ws
-  port: 23035
-  server: 195.133.5.127
+  port: 80
+  server: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
   tls: false
   type: vmess
-  uuid: e5381b55-ae63-4ce5-9968-b8c0af015001
+  uuid: 331cae90-f7e9-11ed-b4e2-f23c913c8d2b
   ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: aes-256-cfb
-  name: '13|韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 47.129.51.201
-  type: ss
-- cipher: aes-256-cfb
-  name: '12|🇰🇷 韩国特殊|@ripaojiedian #1'
-  password: amazonskr05
-  port: '443'
-  server: 47.129.51.201
-  type: ss
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #2'
   network: ws
-  port: 8880
-  server: s4.db-link01.top
+  port: 2052
+  server: s4.db-link02.top
   tls: false
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 100-44-229-26.s4.db-link01.top
-    path: /dabai.in172.67.5.70
-- alterId: 0
-  cipher: auto
-  name: 美国 Akamai科技公司CDN网络节点
-  network: ws
-  port: 443
-  server: jahfkjha.cfd
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: jahfkjha.cfd
-    path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: '欧盟+V2CROSS.COM #1'
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: '8080'
-  server: beesyar.org
-  type: ss
+      Host: 100-145-217-186.s4.db-link02.top
+    path: /dabai.in172.64.8.26
 - cipher: aes-256-gcm
-  name: 北美地区+V2CROSS.COM
-  password: RexnBgU7EV5ADxG
-  port: '7002'
-  server: 23.150.152.43
-  type: ss
-- cipher: aes-256-gcm
-  name: '广东省+移动 #1'
+  name: 广东省+移动
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: '21114'
   server: okanc.node-is.green
   type: ss
-- name: '12|🇯🇵 日本3|@ripaojiedian #2'
-  password: '74260702287384200'
-  port: 443
-  server: quality-kite.shiner427.skin
-  skip-cert-verify: false
-  sni: quality-kite.shiner427.skin
-  type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 12,13|美国3|@ripaojiedian
+  name: '美国 CloudFlare节点 #3'
   network: ws
-  port: '420'
-  server: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
-  servername: ''
+  port: 8080
+  server: s5.db-link02.top
   tls: false
   type: vmess
-  uuid: 117fc3d8-fd04-11ed-b345-f23c93136cb3
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      Host: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '12,13|美国5|@ripaojiedian #1'
-  network: ws
-  port: '420'
-  server: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e28d086-f1bd-11ed-9ebc-f23c93665044
-  ws-opts:
-    headers:
-      Host: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
-    path: /
-- name: '12|🇺🇸 美国4|@ripaojiedian #2'
-  password: '74260702287384200'
-  port: 443
-  server: settled-mite.shiner427.skin
-  skip-cert-verify: false
-  sni: settled-mite.shiner427.skin
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '12|🇮🇪 爱尔兰|@ripaojiedian #1'
-  password: ZTAwMGEw
-  port: '8388'
-  server: ie1.opensocks.site
+      Host: 100-149-191-2.s5.db-link02.top
+    path: /dabai.in104.20.16.209
+- cipher: aes-256-cfb
+  name: '13|tg频道:@ripaojiedian #1 #1'
+  password: amazonskr05
+  port: '443'
+  server: 54.199.167.92
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 80
+  server: us7-02.890624.xYz
+  tls: false
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      Host: us7-02.890624.xYz
+    path: /bua2hMcbA8wMzbGFtV
+- cipher: aes-256-cfb
+  name: '12|tg频道:@ripaojiedian #4'
+  password: amazonskr05
+  port: '443'
+  server: 54.199.167.92
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #9'
+  network: ws
+  port: 80
+  server: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #10'
+  network: ws
+  port: 80
+  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #7'
+  network: ws
+  port: 2086
+  server: s2.db-link02.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-171-104-238.s2.db-link02.top
+    path: /dabai.in172.64.43.14
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #10'
+  network: ws
+  port: 2095
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-130-136-50.s2.db-link01.top
+    path: /dabai.in104.21.133.12
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #11'
+  network: ws
+  port: 80
+  server: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b72009aa-ed88-11ed-92a4-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #11'
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #16'
+  network: ws
+  port: 2096
+  server: ny1-dash.890699.xyz
+  tls: true
+  type: vmess
+  uuid: 658b87e0-5d92-4424-d344-c167acd6a77f
+  ws-opts:
+    headers:
+      Host: ny1-sub.890699.xyz
+    path: /ny1-sub.890699.xyz
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #17'
+  network: ws
+  port: 80
+  server: uS7-09.890606.xYz
+  tls: false
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bua2hMcbA8wMzbGFtV
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #12'
+  network: ws
+  port: 80
+  server: b88d33ac-sucv40-tcum62-se45.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: d076280a-0d5f-11f0-8a7b-f23c913c8d2b
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #19'
+  network: ws
+  port: 2053
+  server: lon2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-sub.930.pp.ua
+    path: /lon2-sub.930.pp.ua
+- name: 1|🇯🇵1 |  2.2MB/s
+  password: 4600288a-acf9-4846-9dfe-890d2a27ab4f
+  port: 22269
+  server: aafrtpfxr.jpl04i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 1|🌀1-PK |  3.9MB/s
+  password: 4600288a-acf9-4846-9dfe-890d2a27ab4f
+  port: 42883
+  server: aafrtpfxr.pkl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan

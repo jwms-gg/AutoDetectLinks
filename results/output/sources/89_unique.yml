@@ -1,103 +1,156 @@
-# Update: 2025-03-31 08:45
-# Source 89 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 55
+# Update: 2025-04-07 08:45
+# Source 89 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 62
 proxies:
 - cipher: aes-256-cfb
-  name: _US_美国->🇧🇪_BE_比利时
+  name: _US_美国
   password: amazonskr05
   port: 443
-  server: 34.221.169.63
+  server: 52.37.220.218
   type: ss
   udp: true
-- name: _US_美国_1
+- cipher: chacha20-ietf-poly1305
+  name: _RU_俄罗斯->🇺🇸_US_美国_1
+  password: Qx22XZwNt4SCcnWNkypEAj
+  port: 44316
+  server: 81.19.137.66
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: _GB_英国->🇷🇺_RU_俄罗斯
+  password: sojzFfZN5WMHqzvVJcDJJ9
+  port: 28694
+  server: 77.239.117.121
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _US_美国_2
+  password: amazonskr05
+  port: 443
+  server: 34.208.203.47
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _US_美国_3
+  password: amazonskr05
+  port: 443
+  server: 54.69.221.160
+  type: ss
+  udp: true
+- name: _GB_英国->🇺🇸_US_美国
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.157.251.9
+  server: 18.135.219.247
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: _US_美国->🇸🇪_SE_瑞典
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.159.217.6
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: _US_美国_6
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.60.128.60
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: _US_美国_7
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.28.5.172
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: _US_美国_2
+  name: _RU_俄罗斯
   network: ws
-  port: 80
-  server: biiia-vpn-whal.fast.hosting-ip.com
+  port: 23039
+  server: 195.133.5.127
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: id9---@vpn-whal
-  ws-opts:
-    headers:
-      Host: biiia-vpn-whal.fast.hosting-ip.com
-    path: /?ed=2056/#id-telegram:--->@vpn_whal<---
-- cipher: aes-256-cfb
-  name: _US_美国->🏳️_unKnow_未知
-  password: amazonskr05
-  port: 443
-  server: 54.202.63.169
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: _US_美国_4
-  password: amazonskr05
-  port: 443
-  server: 34.210.253.95
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _US_美国->🏳️_unKnow_未知_1
-  network: ws
-  port: 80
-  server: 172.67.152.71
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 27c85fdb-5e8f-43ea-bf43-4ed4d0a3b306
-  ws-opts:
-    path: /dubai.html?ed=2048
-- cipher: chacha20-ietf-poly1305
-  name: _BE_比利时
-  password: e014f8ab71735926
-  port: 20568
-  server: 57.128.190.245
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _US_美国_9
-  network: ws
-  port: 20022
-  server: 207.90.238.136
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3a4acd31-f733-4e37-99d8-7fc46c4097b8
+  uuid: 9a4707a1-afe6-41a7-b787-d56c3a7eb8f9
   ws-opts:
     path: /
+- name: _US_美国->🇪🇸_ES_西班牙
+  network: ws
+  password: SD85M89IdW67
+  port: 2083
+  server: 104.21.96.1
+  skip-cert-verify: true
+  sni: yjc.twn24.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: yjc.twn24.ir
+    path: /🆔@M3HDIO1
+- cipher: aes-256-cfb
+  name: _US_美国->🇸🇬_SG_新加坡
+  password: amazonskr05
+  port: 443
+  server: 34.209.118.169
+  type: ss
+  udp: true
+- name: _IE_爱尔兰
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 99.80.72.111
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: _FR_法国
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.47.183.83
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: _US_美国_9
+  password: amazonskr05
+  port: 443
+  server: 52.88.180.184
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: _US_美国_11
   password: amazonskr05
   port: 443
-  server: 52.33.164.139
+  server: 34.222.2.112
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: _US_美国_12
-  password: amazonskr05
+- name: _US_美国_2 2
+  network: ws
+  password: 6040a753-e35b-4384-8713-96f3c639b621
   port: 443
-  server: 54.184.74.88
-  type: ss
+  server: 104.21.69.41
+  skip-cert-verify: true
+  sni: kju84.890602.XYZ
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: _US_美国_13
-  password: amazonskr05
-  port: 443
-  server: 44.242.208.211
-  type: ss
+  ws-opts:
+    headers:
+      Host: kju84.890602.XYZ
+    path: /WxWOWO1YA9bs2HOmaeWimvT3
+- name: _IE_爱尔兰->🇮🇳_IN_印度
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.16.255.13
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
