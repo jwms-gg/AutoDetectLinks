@@ -1,50 +1,85 @@
-# Update: 2025-04-07 08:45
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
+# Update: 2025-04-21 08:48
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 7
 proxies:
-- name: '🇺🇸_US_美国 #1'
+- alterId: 0
+  cipher: auto
+  name: '🇳🇱_NL_荷兰 #1'
+  network: tcp
+  port: 11577
+  server: 45.89.244.40
+  type: vmess
+  uuid: 79cc997e-d580-4f72-b7fc-f6669c9462e8
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  password: 6040a753-e35b-4384-8713-96f3c639b621
-  port: 443
-  server: 104.21.21.226
-  sni: uK803.890689.Xyz
-  type: trojan
-  udp: true
+  port: 23077
+  server: 45.147.201.231
+  type: vmess
+  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
   ws-opts:
-    path: /WxWOWO1YA9bs2HOmaeWimvT3
-- name: '🇺🇸_US_美国_2 #2'
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.16.1
-  sni: 1g.890699.xyZ
-  type: trojan
-  udp: true
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /lXENb74xF4ylXngZ
-- name: '🇬🇧_GB_英国 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.55.122
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇺🇸_US_美国_4
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  port: 443
-  server: 172.67.200.238
-  sni: 3s.890689.xyz
-  type: trojan
-  udp: true
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
-- name: '🇺🇸_US_美国_5 #1'
+    headers:
+      host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.96.1
-  sni: 1g.890699.xyZ
-  type: trojan
-  udp: true
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /lXENb74xF4ylXngZ
+    headers:
+      host: v25.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+  network: tcp
+  port: 14100
+  server: 144.255.36.254
+  sni: ''
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 8080
+  server: dingzhiyx1.sgjc.xyz
+  sni: ''
+  type: vmess
+  uuid: 2e235b81-70ad-45c0-959c-7591fa078836
+  ws-opts:
+    headers:
+      host: dingzhiadly.sgjc.xyz
+    path: /?ed=2048

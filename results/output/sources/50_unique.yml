@@ -1,80 +1,121 @@
-# Update: 2025-04-07 08:45
-# Source 50 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 9
+# Update: 2025-04-21 08:48
+# Source 50 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess), 9
 proxies:
 - alterId: 0
   cipher: auto
-  name: 'VMESS-美国-NF解锁自制剧-ChatGPT-TikTo... #5'
+  name: 🔒 VM-WS-NA 🇸🇬 SG-140.245.54.85...
   network: ws
-  port: 23451
-  server: 137.131.52.173
+  port: '23452'
+  server: 140.245.54.85
+  tls: false
+  type: vmess
+  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1... #2'
+  network: ws
+  port: '8101'
+  server: 112.120.125.105
+  tls: false
+  type: vmess
+  uuid: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.23....
+  network: ws
+  port: 2096
+  server: 104.21.23.210
+  servername: rak1-d.932.pp.ua
+  tls: true
+  type: vmess
+  uuid: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
+  ws-opts:
+    headers:
+      Host: rak1-d.932.pp.ua
+    path: /rak1-d.932.pp.ua
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.155...
+  network: ws
+  port: '2053'
+  server: 104.16.155.10
+  servername: cloudflare.182682.xyz
+  tls: true
+  type: vmess
+  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
+  ws-opts:
+    headers:
+      Host: sg1.pavo.eu.org
+    path: /sg1vmess
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.158....
+  network: ws
+  port: '80'
+  server: 172.67.158.71
   servername: ''
   tls: false
   type: vmess
-  uuid: f845faba-ef07-4ef0-b055-866bbb81143c
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
   ws-opts:
     headers:
-      Host: 137.131.52.173
-    path: /
-- name: 🇸🇬 俄罗斯新西伯利亚 justhost.ru
-  password: '@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven'
-  port: 8443
-  server: 195.133.52.153
-  skip-cert-verify: false
-  sni: ru2.asc-sam.io
-  type: trojan
+      Host: hk.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯 V2CROSS.COM
-  network: tcp
-  port: '21404'
-  server: 31.15.17.120
-  tls: false
-  type: vmess
-  uuid: 8a654039-c5f8-4910-ad09-4e471c32b385
-- name: 🇺🇸 美国 CloudFlare节点
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.96.1
-  skip-cert-verify: false
-  sni: 1g.890699.xyZ
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
-  port: 443
-  server: 172.67.149.172
-  skip-cert-verify: false
-  sni: sanjose03.890614.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #6'
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.80.1
-  skip-cert-verify: false
-  sni: 1g.890699.xyZ
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #11'
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.112.1
-  skip-cert-verify: false
-  sni: 1g.890699.xyZ
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #12'
-  password: O3666Ckn6N
-  port: 8080
-  server: 104.16.252.135
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 _美国 #40'
+  name: 🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
   network: ws
-  port: '12269'
-  server: 2.58.87.221
-  tls: false
+  port: '10805'
+  server: 18.162.51.82
+  servername: kahk.kia-ai.com
+  tls: true
   type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
   ws-opts:
     headers:
-      Host: 2.58.87.221
+      Host: kahk.kia-ai.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NONE 🇺🇸 US-89.213.184...
+  network: tcp
+  port: 26298
+  server: 89.213.184.198
+  tls: false
+  type: vmess
+  uuid: 180d7022-9cf9-4bbc-b53c-ab28af2cbc3f
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇸🇬 SG-103.177.76.79... #1'
+  network: ws
+  port: '8000'
+  server: 103.177.76.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4c7929b7-281f-4d86-ad24-d766904482e6
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-NA 🇺🇸 US-129.153.193.2...
+  network: ws
+  port: '23451'
+  server: 129.153.193.209
+  tls: false
+  type: vmess
+  uuid: 57c7a369-f74d-439d-964a-888d4d6407ea
+  ws-opts:
+    headers:
+      Host: phx-plus-1ddns.faforex.eu.org
     path: /

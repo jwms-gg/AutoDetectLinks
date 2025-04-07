@@ -1,103 +1,303 @@
-# Update: 2025-04-07 08:45
+# Update: 2025-04-21 08:48
 # Source 33 (https://raw.githubusercontent.com/lagzian/SS-Collector/main/VLESS/VL100.txt), 100
 proxies:
-- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.6.179:...
+- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.14...
   network: ws
   port: 80
-  server: 45.131.6.179
+  server: 167.82.1.141
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.13... #1'
+  network: ws
+  port: 80
+  server: 172.67.130.164
+  tls: false
+  type: vless
+  uuid: 17d87202-4ca2-49d2-9c90-5eca029c97f6
+  ws-opts:
+    path: /
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.208.23... #1'
+  network: ws
+  port: 80
+  server: 45.131.208.238
   servername: workerr.dimon22287.workers.dev
   tls: false
   type: vless
   uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
   ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
-- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.65....
+    headers:
+      Host: workerr.dimon22287.workers.dev
+    path: Telegram%40WangCai2
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.5.7:80 #1'
   network: ws
   port: 80
-  server: 151.101.65.6
+  server: 45.131.5.7
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    headers:
+      Host: workerr.dimon22287.workers.dev
+    path: Telegram%40WangCai2
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.19... #2'
+  network: ws
+  port: 443
+  server: 108.162.195.148
+  servername: in.youlingkais.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.95...
+  network: tcp
+  port: 1524
+  server: 188.245.95.151
+  tls: false
+  type: vless
+  uuid: 0791e547-9191-4981-8b38-3d490c2b41d5
+  ws-opts:
+    headers:
+      Host: testspeed-foreign.tci.ir
+- name: 🔒 VL-TCP-NONE 🇺🇸 US-44.230.182...
+  network: tcp
+  port: 80
+  server: 44.230.182.186
+  tls: false
+  type: vless
+  uuid: 3202d35a-c51c-4055-bcd7-3eb000c13dc3
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.18... #5'
+  network: ws
+  port: 80
+  server: 172.67.189.174
+  tls: false
+  type: vless
+  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
+  ws-opts:
+    headers:
+      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
+    path: '%2F'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.82....
+  network: ws
+  port: 443
+  server: 104.21.82.39
+  servername: 4dfghj.191288.xyz
+  tls: true
+  type: vless
+  uuid: 075b9690-f1cc-4d0c-aa1e-f80f07f09815
+  ws-opts:
+    headers:
+      Host: 4dfghj.191288.xyz
+    path: '%2FcXwWQOGtZd9NCd8WBZ57XYkE'
+- name: 🔒 VL-WS-TLS 🇺🇸 US-170.39.66.15...
+  network: ws
+  port: 443
+  server: 170.39.66.154
+  servername: in.youlingkais.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.129...
+  network: ws
+  port: 80
+  server: 151.101.129.6
   tls: false
   type: vless
   uuid: 0060fb3a-06d1-5962-85cb-5f22ac528d68
   ws-opts:
     headers:
       Host: 0-MOSIV2-0.COM
-    path: '%2F'
 - alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97... #7'
-  network: ws
-  port: 443
-  server: 188.114.97.62
-  servername: steep-pine-3b0b.facic63646.workers.dev
-  tls: true
-  type: vless
-  uuid: 03ae39fd-ec71-4db5-b234-94de99a6e514
-  ws-opts:
-    headers:
-      Host: steep-pine-3b0b.facic63646.workers.dev
-    path: '%2F%3Fed%3D2048'
-- alpn:
-  - h2
   - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.... #11'
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.19... #3'
   network: ws
   port: 443
-  server: 172.66.44.100
-  servername: SprING-HaLl-14EF.WOOzY-cHAmOis2822.WorkERs.DEv
+  server: 108.162.194.232
+  servername: news5.testsnew.com
   tls: true
   type: vless
-  uuid: 052e510d-d892-4dc4-a686-8986a01535cd
+  uuid: 10525b84-7f6e-43ef-912b-87434df813f4
   ws-opts:
     headers:
-      Host: spring-hall-14ef.woozy-chamois2822.workers.dev
-    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NA 🇺🇸 US-103.116.7.132...
+      Host: news5.testsnew.com
+    path: '%2Fwss'
+- name: 🔒 VL-TCP-NA 🇮🇷 IR-212.80.10.29...
+  network: tcp
+  port: 10196
+  server: 212.80.10.29
+  tls: false
+  type: vless
+  uuid: 0a32cad0-8752-4309-af82-22aae4c83aa7
+  ws-opts:
+    headers:
+      Host: efvu5cgz.speedtest1.shatel.ir
+- name: 🔒 VL-WS-NONE 🇮🇷 IR-2.188.233.1...
+  network: ws
+  port: 18010
+  server: 2.188.233.149
+  tls: false
+  type: vless
+  uuid: 1b9dabd6-b893-4cb2-99c9-9400f4f4881f
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.13... #1'
   network: ws
   port: 80
-  server: 103.116.7.132
-  servername: japan.freenods-8d6.workers.dev
+  server: 104.16.132.136
   tls: false
   type: vless
-  uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
+  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
   ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
+    headers:
+      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
+    path: '%2F%3Fed%3D2560'
 - alpn:
   - h2
   - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.15.... #1'
+  client-fingerprint: random
+  name: 🔒 VL-WS-NA 🇺🇸 US-167.82.1.136:...
   network: ws
-  port: 443
-  server: 104.17.15.166
-  servername: zYzzzOAo.pUtATa.eu.oRG
-  tls: true
-  type: vless
-  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
-  ws-opts:
-    headers:
-      Host: zyzzzoao.putata.eu.org
-    path: '%2FtbSRLeOuwtLBToSL%3Fed%3D2560'
-- name: 🔒 VL-TCP-NONE 🇩🇪 DE-128.140.90...
-  port: 8880
-  server: 128.140.90.226
+  port: 80
+  server: 167.82.1.136
+  servername: teleirani.ir
   tls: false
   type: vless
-  uuid: 1b0f1d84-c07a-4be5-a4fc-cba3aad7a407
-- name: 🔒 VL-WS-TLS 🇸🇪 SE-13.60.115.18...
-  network: ws
-  port: 22222
-  server: 13.60.115.181
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
   ws-opts:
     headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
+      Host: teleirani.ir
+    path: Telegram@proxy_mtm/?ed%3D2560
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.24.17...
+  network: ws
+  port: 80
+  server: 104.24.175.2
+  servername: rough-mud-93b4-ppal03.wedane7745.workers.dev
+  tls: false
+  type: vless
+  uuid: 3487ce43-b803-4770-97ff-f75880d7f9b4
+  ws-opts:
+    headers:
+      Host: rough-mud-93b4-ppal03.wedane7745.workers.dev
+    path: '...'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.24.24... #2'
+  network: ws
+  port: 80
+  server: 104.24.248.204
+  tls: false
+  type: vless
+  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
+  ws-opts:
+    headers:
+      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.209.18... #1'
+  network: ws
+  port: 80
+  server: 45.131.209.186
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed
+- name: 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.252....
+  network: tcp
+  port: 1521
+  server: 37.27.252.57
+  tls: false
+  type: vless
+  uuid: 0791e547-9191-4981-8b38-3d490c2b41d5
+  ws-opts:
+    headers:
+      Host: testspeed-foreign.tci.ir
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.6.57:8... #1'
+  network: ws
+  port: 80
+  server: 45.131.6.57
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    headers:
+      Host: workerr.dimon22287.workers.dev
+    path: Telegram%40WangCai2
+- name: 🔒 VL-XHTTP-NONE 🇺🇸 US-151.101....
+  network: xhttp
+  port: 80
+  server: 151.101.130.46
+  tls: false
+  type: vless
+  uuid: 097d9986-299e-495b-a72a-35998f4064cc
+  ws-opts:
+    headers:
+      Host: Vpnmizbanyour-name.global.ssl.fastly.net
+    path: '%2FVpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban'
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.47.... #7'
+  network: ws
+  port: 443
+  server: 172.66.47.173
+  servername: dfgdfgdzfgdfzgdrgdgertd.pages.dev
+  tls: true
+  type: vless
+  uuid: 0d9c223d-5dca-49cc-94c5-850ef59a3c8a
+  ws-opts:
+    headers:
+      Host: dfgdfgdzfgdfzgdrgdgertd.pages.dev
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-146.75.82....
+  network: xhttp
+  port: 80
+  server: 146.75.82.133
+  tls: false
+  type: vless
+  uuid: 3463166c-8939-4d3f-b439-ad2606e5715c
+  ws-opts:
+    headers:
+      Host: joinbede_vmessorg.ir
+    path: '%2F%40v%6de%73s%6frg----%40v%6de%73s%6frg-----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg----%40v%6de%73s%6frg%3Fed%3D2480'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.47...
+  network: ws
+  port: 80
+  server: 167.82.0.47
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+- grpc-opts:
+    grpc-service-name: TEL@AV2rayBOT-TEL--@AV2rayBOT-TEL--@AV2rayBOT-TEL--@AV2rayBOT-JOIN-@AV2rayBOT-TEL--@AV2rayBOT-JOIN-@AV2rayBOT-TEL-@AV2rayBOT-TEL--@AV2rayBOT-JOIN-@AV2rayBOT-TEL--@AV2rayBOT
+  name: 🔒 VL-GRPC-NONE 🇩🇪 DE-142.132.1...
+  network: grpc
+  port: 52524
+  server: 142.132.185.23
+  tls: false
+  type: vless
+  uuid: 1fd1551e-9e49-4d0e-b19a-c791ebfce9f9
+- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #1'
+  network: xhttp
+  port: 80
+  server: 151.101.66.46
+  tls: false
+  type: vless
+  uuid: 097d9986-299e-495b-a72a-35998f4064cc
+  ws-opts:
+    headers:
+      Host: Vpnmizbanyour-name.global.ssl.fastly.net
+    path: '%2FVpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban'
 - name: 🔒 VL-WS-NA 🇺🇸 US-103.116.7.154...
   network: ws
   port: 80
@@ -119,364 +319,35 @@ proxies:
     headers:
       Host: vistapcit.com
     path: '%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 🔒 VL-WS-TLS 🇺🇸 US-151.101.194....
-  network: ws
-  port: 443
-  server: 151.101.194.228
-  servername: davidlab.ucdavis.edu
-  tls: true
-  type: vless
-  uuid: 0f7f55fe-262d-5cc6-a59e-8dd512791a98
-  ws-opts:
-    headers:
-      Host: speedtest.net.ftp.debian.org.1.2.3.j.z.x.jjjjjjjjj.netspeedtest.net.sewzx.iuyal.ir
-    path: '%2Fvless%3Fed%3D443'
-- name: 🔒 VL-WS-NONE 🇮🇷 IR-2.188.233.1...
-  network: ws
-  port: 18010
-  server: 2.188.233.150
-  tls: false
-  type: vless
-  uuid: 1b9dabd6-b893-4cb2-99c9-9400f4f4881f
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.40.... #2'
-  network: ws
-  port: 443
-  server: 172.66.40.87
-  servername: il.ylkszy.eu.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39...
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.147.... #1'
   network: ws
   port: 80
-  server: 104.21.39.212
-  servername: v2raylandd-85.upftsx.workers.Dev
-  tls: false
-  type: vless
-  uuid: 0fb53a60-2372-412a-a693-5157b58ecc94
-  ws-opts:
-    headers:
-      Host: v2raylandd-85.upftsx.workers.Dev
-- name: 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.15...
-  network: tcp
-  port: 40240
-  server: 135.181.155.147
-  tls: false
-  type: vless
-  uuid: 308a14d1-cfae-405f-9d69-2922f87ee79b
-  ws-opts:
-    headers:
-      Host: canva.com
-- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.4.78:8... #1'
-  network: ws
-  port: 80
-  server: 45.131.4.78
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    headers:
-      Host: workerr.dimon22287.workers.dev
-    path: Telegram%40WangCai2
-- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14...
-  network: ws
-  port: 80
-  server: 104.26.14.85
-  tls: false
-  type: vless
-  uuid: 13692dc2-200c-4e3a-99f5-8ab0024fd1ae
-  ws-opts:
-    headers:
-      Host: ExuBerANt-IncIDEnt.ONEeat.Co.
-    path: '%2F%3Fed%3D2048'
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.192.... #1'
-  network: ws
-  port: 80
-  server: 104.24.192.51
-  tls: false
-  type: vless
-  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
-  ws-opts:
-    headers:
-      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
-    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
-- name: 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.250....
-  network: tcp
-  port: 1524
-  server: 37.27.250.128
-  tls: false
-  type: vless
-  uuid: 251b627e-857c-45c2-a90e-4de581f84b07
-  ws-opts:
-    headers:
-      Host: testspeed-foreign.tci.ir
-- name: 🔒 VL-WS-TLS 🇬🇧 GB-35.178.124.8...
-  network: ws
-  port: 22222
-  server: 35.178.124.83
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-172.64.148.... #1'
-  network: ws
-  port: 80
-  server: 172.64.148.32
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
   tls: false
   type: vless
   uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
   ws-opts:
     headers:
       Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-XHTTP-NONE 🇺🇸 US-199.232....
-  network: xhttp
-  port: 80
-  server: 199.232.66.133
-  tls: false
-  type: vless
-  uuid: 06d56227-1f90-428e-a613-5b253f0e42ff
-  ws-opts:
-    headers:
-      Host: joinbede_unlimiteddev.ir
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed%3D2480
-- grpc-opts:
-    grpc-service-name: TEL@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet-JOIN-@V2rayNG_SPDNet-TEL--@V2rayNG_SPDNet
-  name: 🔒 VL-GRPC-NONE 🇩🇪 DE-142.132.1...
-  network: grpc
-  port: 12685
-  server: 142.132.185.23
-  tls: false
-  type: vless
-  uuid: 0a81609b-f627-4fe4-aa52-29bf6a61f6a4
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.107.173.9...
-  network: tcp
-  port: 22344
-  server: 91.107.173.93
-  tls: false
-  type: vless
-  uuid: 0c20237c-0f96-4e84-bcbc-ead7b8364d1c
-  ws-opts:
-    headers:
-      Host: TABRIZ.NET
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.24.24... #2'
+- name: 🔒 VL-WS-NONE 🇮🇷 IR-185.143.232...
   network: ws
   port: 80
-  server: 104.24.248.204
+  server: 185.143.232.201
   tls: false
   type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
+  uuid: 014f817e-b200-4e6f-bfda-2c1cbf05aa6a
   ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.209.18...
-  network: ws
-  port: 80
-  server: 45.131.209.186
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
-- name: 🔒 VL-WS-NONE 🇺🇸 US-146.75.8.88...
-  network: ws
-  port: 80
-  server: 146.75.8.88
-  tls: false
-  type: vless
-  uuid: 1077c841-97d9-45a4-8663-7876e6b0f053
-  ws-opts:
-    headers:
-      Host: melodebot.net
-    path: '%2Fmelo%2Fws%3Fed%3D2048'
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.... #1'
-  network: ws
-  port: 443
-  server: 172.64.35.209
-  servername: il.ylkszy.eu.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: 🔒 VL-GRPC-TLS 🏴‍☠️ NA-108.162....
-  network: grpc
-  port: 443
-  server: 108.162.198.69
-  servername: Tp810P28gI.aNa-SoFt.Ir
-  tls: true
-  type: vless
-  uuid: 2a943112-138b-432d-a3a5-277ea2fd8a2e
-- name: 🔒 VL-WS-TLS 🇺🇸 US-154.17.21.13...
-  network: ws
-  port: 18446
-  server: 154.17.21.134
-  servername: nc.dbbn2024.us.kg
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    path: /?ed
-- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.193...
-  network: ws
-  port: 80
-  server: 151.101.193.6
-  tls: false
-  type: vless
-  uuid: 0060fb3a-06d1-5962-85cb-5f22ac528d68
-  ws-opts:
-    headers:
-      Host: 0-MOSIV2-0.COM
     path: '%2F'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.19... #2'
+- name: 🔒 VL-WS-NA 🇰🇷 KR-118.47.65.248...
   network: ws
-  port: 80
-  server: 104.16.19.242
+  port: 30012
+  server: 118.47.65.248
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: false
-  type: vless
-  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
-  ws-opts:
-    headers:
-      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-XHTTP-NONE 🇺🇸 US-146.75.3...
-  network: xhttp
-  port: 80
-  server: 146.75.38.133
-  tls: false
-  type: vless
-  uuid: 1325fc61-3723-4591-90cb-b66d9a079aad
-  ws-opts:
-    headers:
-      Host: joinbede_unlimiteddev.ir
-    path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed%3D2480
-- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.210.12...
-  network: ws
-  port: 80
-  server: 45.131.210.128
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
-- name: 🔒 VL-WS-TLS 🇬🇧 GB-51.24.32.72:...
-  network: ws
-  port: 22222
-  server: 51.24.32.72
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.12...
-  network: ws
-  port: 2052
-  server: 104.18.12.149
-  tls: false
-  type: vless
-  uuid: 18161878-c749-40fe-8146-8b061a41bd4f
-  ws-opts:
-    headers:
-      Host: v2cityv2raygmsix6.6.6.6.ir.com.site.列列男事的事列上赛男.科斯涅過濾器斯.mobileiraniii.ir
-    path: /telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----telegram-@alo_v2rayng----hameV2rayGmSix6.6.6.6.ir.Com.Site.xn--fhq0la447aac5504dea701axr1g
-- name: 🔒 VL-WS-TLS 🇺🇸 US-63.141.128.2...
-  network: ws
-  port: 443
-  server: 63.141.128.241
-  servername: il.ylkszy.eu.org
-  tls: true
   type: vless
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NA 🇺🇸 US-151.101.64.15...
-  network: ws
-  port: 80
-  server: 151.101.64.156
-  tls: false
-  type: vless
-  uuid: 06948934-0e10-49d6-ba42-90b15ba6a7d1
-  ws-opts:
-    headers:
-      Host: Www.speedtest.net.sPeedtest2.sbs.
-    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
-- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.6.57:8... #1'
-  network: ws
-  port: 80
-  server: 45.131.6.57
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    headers:
-      Host: workerr.dimon22287.workers.dev
-    path: Telegram%40WangCai2
-- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.47...
-  network: ws
-  port: 80
-  server: 167.82.0.47
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.64.... #2'
-  network: ws
-  port: 443
-  server: 104.21.64.10
-  servername: in.youlingkais.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.129...
-  network: ws
-  port: 80
-  server: 151.101.129.6
-  tls: false
-  type: vless
-  uuid: 0060fb3a-06d1-5962-85cb-5f22ac528d68
-  ws-opts:
-    headers:
-      Host: 0-MOSIV2-0.COM
-- name: 🔒 VL-GRPC-NONE 🇩🇪 DE-57.129.51...
-  network: grpc
-  port: 11045
-  server: 57.129.51.237
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 06f23464-b2d8-4344-a16f-dca7cf81a0a2
 - name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.8....
   network: ws
   port: 80
@@ -486,72 +357,18 @@ proxies:
   uuid: 17d87202-4ca2-49d2-9c90-5eca029c97f6
   ws-opts:
     path: /
-- name: 🔒 VL-TCP-TLS 🇺🇸 US-15.204.184....
-  network: tcp
-  port: 443
-  server: 15.204.184.159
-  servername: 147135011033.sec21org.com
-  tls: true
-  type: vless
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.37....
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.21....
   network: ws
   port: 443
-  server: 104.17.37.105
-  servername: in.youlingkais.filegear-sg.me
+  server: 172.67.21.93
+  servername: vb.ylks0033.dpdns.org
   tls: true
   type: vless
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: in.youlingkais.filegear-sg.me
+      Host: vb.ylks0033.dpdns.org
     path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.208.20...
-  network: ws
-  port: 80
-  server: 45.131.208.204
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.148.... #1'
-  network: ws
-  port: 80
-  server: 104.24.148.184
-  tls: false
-  type: vless
-  uuid: 01cb18d1-2062-47e7-999b-ec08e8b2ec85
-  ws-opts:
-    headers:
-      Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
-    path: /?ed%3D2560
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.166...
-  network: ws
-  port: 443
-  server: 104.16.166.158
-  servername: f1b953bd-round-bush-dba2.steep-lion9627.workers.dev
-  tls: true
-  type: vless
-  uuid: 0ee275fd-726e-4d7e-a7ef-c429982974c3
-  ws-opts:
-    headers:
-      Host: f1b953bd-round-bush-dba2.steep-lion9627.workers.dev
-- name: 🔒 VL-XHTTP-NONE 🇺🇸 US-146.75.9...
-  network: xhttp
-  port: 80
-  server: 146.75.94.133
-  tls: false
-  type: vless
-  uuid: 1d23ed88-d257-4118-bebc-6789bab29b7d
-  ws-opts:
-    headers:
-      Host: joinbede_vmessorg.ir
-    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed%3D2480
 - name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.81... #1'
   network: ws
   port: 80
@@ -563,54 +380,7 @@ proxies:
     headers:
       Host: DaWn-lAKE-d5E3.WocoYA4320.wOrkERs.DeV
     path: '%2FwP3dwCyRAVyMJFfW%3Fed%3D2560'
-- name: 🔒 VL-WS-NONE 🇮🇷 IR-37.202.237....
-  network: ws
-  port: 23297
-  server: 37.202.237.107
-  tls: false
-  type: vless
-  uuid: 0bb073fc-34e8-44ac-9f22-dad03dc65d34
-  ws-opts:
-    path: '%2F'
-- name: 🔒 VL-WS-NA 🇺🇸 US-151.101.64.22...
-  network: ws
-  port: 80
-  server: 151.101.64.223
-  servername: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-  tls: false
-  type: vless
-  uuid: 0792a045-c4e2-4816-bbb9-872b7aba601b
-  ws-opts:
-    headers:
-      Host: JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    path: '%2F%40UnlimitedDev----%40UnlimitedDev-----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev----%40UnlimitedDev%3Fed%3D2480'
-- name: 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.95...
-  network: tcp
-  port: 1524
-  server: 188.245.95.151
-  tls: false
-  type: vless
-  uuid: 0791e547-9191-4981-8b38-3d490c2b41d5
-  ws-opts:
-    headers:
-      Host: testspeed-foreign.tci.ir
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.25.213...
-  network: ws
-  port: 443
-  server: 104.25.213.66
-  servername: white-fire-62c1.66500-280b-471c-b2b8-d68b7f9960013.workers.dev
-  tls: true
-  type: vless
-  uuid: 03ae39fd-ec71-4db5-b234-94de99a6e514
-  ws-opts:
-    headers:
-      Host: white-fire-62c1.66500-280b-471c-b2b8-d68b7f9960013.workers.dev
-    path: '%2F%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.64.... #1'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.64....
   network: ws
   port: 80
   server: 151.101.64.158
@@ -621,412 +391,6 @@ proxies:
     headers:
       Host: Www.speedtest.net.sPeedtest2.sbs.
     path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27... #2'
-  network: ws
-  port: 80
-  server: 104.18.27.94
-  tls: false
-  type: vless
-  uuid: 2f88f00a-7465-400f-8bab-5aab861df53f
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense1.roxor95951.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-TLS 🇩🇪 DE-129.159.202....
-  network: ws
-  port: 443
-  server: 129.159.202.83
-  servername: news5.testsnew.com
-  tls: true
-  type: vless
-  uuid: 10525b84-7f6e-43ef-912b-87434df813f4
-  ws-opts:
-    path: '%2Fwss'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.18... #4'
-  network: ws
-  port: 80
-  server: 172.67.189.174
-  tls: false
-  type: vless
-  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
-  ws-opts:
-    headers:
-      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
-    path: '%2F'
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.... #2'
-  network: ws
-  port: 443
-  server: 172.67.69.227
-  servername: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
-  tls: true
-  type: vless
-  uuid: 291c2abe-716a-4691-acd0-3b13dc2f7b12
-  ws-opts:
-    headers:
-      Host: wORKER-fRosTY-buTtErfLy-B0e9.4158fb3524.wORKeRs.DeV
-    path: '%2Fvk_l-izyy3q_-noq%3Fed%3D2048%40sinabigo'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@ConfigTell,@ConfigTell,@ConfigTell'
-  name: 🔒 VL-GRPC-TLS 🏴‍☠️ NA-172.64.1...
-  network: grpc
-  port: 443
-  server: 172.64.154.144
-  servername: WWW.felafel.org.
-  tls: true
-  type: vless
-  uuid: 213d6337-7e90-43cb-b515-e392c946b371
-- name: 🔒 VL-WS-NA 🇺🇸 US-103.116.7.116...
-  network: ws
-  port: 80
-  server: 103.116.7.116
-  servername: japan.freenods-8d6.workers.dev
-  tls: false
-  type: vless
-  uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
-  ws-opts:
-    path: Telegram%40WangCai2%2F%3Fed
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🔒 VL-TCP-TLS 🇩🇪 DE-46.249.100....
-  network: tcp
-  port: 50835
-  server: 46.249.100.155
-  servername: portghal.froosh13.info
-  tls: true
-  type: vless
-  uuid: 0801c4eb-bbf0-4ec2-baa6-dd8ef6a456ed
-  ws-opts:
-    headers:
-      Host: divar.ir
-- client-fingerprint: safari
-  flow: xtls-rprx-vision!
-  name: 🔒 VL-TCP-TLS 🇬🇧 GB-143.47.237....
-  network: tcp
-  port: 443
-  server: 143.47.237.215
-  servername: dj-download-gb.xn--4gq62f52gopi49k.com
-  tls: true
-  type: vless
-  uuid: 2ed0e544-d2ea-4c92-b29e-d947cd56bb9e
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.44... #1'
-  network: ws
-  port: 443
-  server: 162.159.44.83
-  servername: il.ylkszy.eu.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-XHTTP-NONE 🇺🇸 US-151.101....
-  network: xhttp
-  port: 80
-  server: 151.101.66.46
-  tls: false
-  type: vless
-  uuid: 097d9986-299e-495b-a72a-35998f4064cc
-  ws-opts:
-    headers:
-      Host: Vpnmizbanyour-name.global.ssl.fastly.net
-    path: '%2FVpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban'
-- client-fingerprint: chrome
-  name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.14... #2'
-  network: ws
-  port: 80
-  server: 172.67.148.227
-  servername: v2raylandd-85.upftsx.workers.Dev
-  tls: false
-  type: vless
-  uuid: 0fb53a60-2372-412a-a693-5157b58ecc94
-  ws-opts:
-    headers:
-      Host: v2raylandd-85.upftsx.workers.Dev
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.21.93.9... #1'
-  network: ws
-  port: 80
-  server: 104.21.93.95
-  tls: false
-  type: vless
-  uuid: 033a4982-a8c7-4bfb-9481-5a8a1c62cfd6
-  ws-opts:
-    headers:
-      Host: azadnet.b0b723a182.workers.dev
-    path: '%2FiDE2j5JJnqTGPjmS%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.20... #4'
-  network: ws
-  port: 8080
-  server: 172.67.204.84
-  tls: false
-  type: vless
-  uuid: 0c04dd79-71ad-475e-9a22-8fe625afccbb
-  ws-opts:
-    headers:
-      Host: seyyed.webdade.ip-ddns.com
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.32... #4'
-  network: ws
-  port: 80
-  server: 104.18.32.69
-  tls: false
-  type: vless
-  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
-  ws-opts:
-    headers:
-      Host: 13tg.jpl8xmqb.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-XHTTP-NA 🇺🇸 US-151.101.63...
-  network: xhttp
-  port: 80
-  server: 151.101.63.2
-  tls: false
-  type: vless
-  uuid: 2b28e60a-27ac-41ad-9d42-8bae1e78c4e3
-  ws-opts:
-    headers:
-      Host: telegram-netpie.com
-    path: '%2Fnetpie'
-- alpn:
-  - h2
-  name: 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.17.1...
-  network: grpc
-  port: 2087
-  server: 104.17.148.22
-  servername: 8RgOrEeQ5s.MySpDmMeTi.CoM
-  tls: true
-  type: vless
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.44... #2'
-  network: ws
-  port: 443
-  server: 162.159.44.203
-  servername: il.ylkszy.eu.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.5.7:80 #1'
-  network: ws
-  port: 80
-  server: 45.131.5.7
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    headers:
-      Host: workerr.dimon22287.workers.dev
-    path: Telegram%40WangCai2
-- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.208.23... #1'
-  network: ws
-  port: 80
-  server: 45.131.208.238
-  servername: workerr.dimon22287.workers.dev
-  tls: false
-  type: vless
-  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
-  ws-opts:
-    headers:
-      Host: workerr.dimon22287.workers.dev
-    path: Telegram%40WangCai2
-- name: 🔒 VL-WS-TLS 🇫🇷 FR-15.237.71.10...
-  network: ws
-  port: 22222
-  server: 15.237.71.100
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.13... #1'
-  network: ws
-  port: 80
-  server: 104.16.132.136
-  tls: false
-  type: vless
-  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
-  ws-opts:
-    headers:
-      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.15... #3'
-  network: ws
-  port: 80
-  server: 172.64.157.124
-  tls: false
-  type: vless
-  uuid: 1ae17c7d-6074-41e2-894b-478c9fcf5715
-  ws-opts:
-    headers:
-      Host: rough-hill-2959-ppal03.fawik58803.workers.dev
-    path: /?ed%3D2560
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.44... #3'
-  network: ws
-  port: 443
-  server: 162.159.44.159
-  servername: il.ylkszy.eu.org
-  tls: true
-  type: vless
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.14...
-  network: ws
-  port: 80
-  server: 167.82.1.141
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #1'
-  network: xhttp
-  port: 80
-  server: 151.101.2.46
-  tls: false
-  type: vless
-  uuid: 097d9986-299e-495b-a72a-35998f4064cc
-  ws-opts:
-    headers:
-      Host: Vpnmizbanyour-name.global.ssl.fastly.net
-    path: '%2FVpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban'
-- name: 🔒 VL-WS-NA 🇺🇸 US-167.82.1.105:...
-  network: ws
-  port: 80
-  server: 167.82.1.105
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: /?ed%3D2048
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.78... #1'
-  network: ws
-  port: 80
-  server: 172.64.78.198
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.96... #7'
-  network: ws
-  port: 443
-  server: 188.114.96.229
-  servername: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
-  tls: true
-  type: vless
-  uuid: 28581e6c-3131-4a05-89b6-5d9aab722cc9
-  ws-opts:
-    headers:
-      Host: xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev
-    path: '%2F%3Fed%3D2048'
-- name: 🔒 VL-WS-TLS 🇺🇸 US-167.82.64.10...
-  network: ws
-  port: 443
-  server: 167.82.64.102
-  servername: live.989bull.com
-  tls: true
-  type: vless
-  uuid: 0d8727b3-696e-40ce-9ce3-4427b83e104d
-  ws-opts:
-    headers:
-      Host: wewouldworkcom.ir
-    path: '%2Fws%3Fed%3D2560'
-- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.140...
-  network: ws
-  port: 2087
-  server: 104.16.140.135
-  servername: b4f0b859-super-smoke-7916.bouncy-vulture1054.workers.dev
-  tls: true
-  type: vless
-  uuid: 31348b17-4ab2-40c0-b79e-c81032331d30
-  ws-opts:
-    headers:
-      Host: b4f0b859-super-smoke-7916.bouncy-vulture1054.workers.dev
-    path: '%2F'
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.184.... #1'
-  network: ws
-  port: 80
-  server: 104.24.184.113
-  tls: false
-  type: vless
-  uuid: 03c9f240-0bad-4f71-93f2-f5d272dada97
-  ws-opts:
-    headers:
-      Host: sparkling-limit-ppal03.yibijow194.workers.dev
-    path: '%2F'
-- name: 🔒 VL-GRPC-TLS 🇷🇺 RU-45.142.120...
-  network: grpc
-  port: 443
-  server: 45.142.120.190
-  servername: Tp810P28gI.aNa-SoFt.Ir
-  tls: true
-  type: vless
-  uuid: 2a943112-138b-432d-a3a5-277ea2fd8a2e
-- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.9.22...
-  network: ws
-  port: 80
-  server: 167.82.9.225
-  tls: false
-  type: vless
-  uuid: 14cea04c-dbfa-4436-baa8-5a497d8f9e2c
-  ws-opts:
-    headers:
-      Host: vistapcit.com
-    path: '%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist'
-- name: 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.10....
-  network: tcp
-  port: 9480
-  server: 212.80.10.28
-  tls: false
-  type: vless
-  uuid: 0b59c7bb-bdb7-414d-b381-c4bad413be0d
-  ws-opts:
-    headers:
-      Host: efvu5cgz.speedtest1.shatel.ir
-- name: '🔒 VL-WS-NA 🇺🇸 US-151.101.64.15... #1'
-  network: ws
-  port: 80
-  server: 151.101.64.157
-  tls: false
-  type: vless
-  uuid: 06948934-0e10-49d6-ba42-90b15ba6a7d1
-  ws-opts:
-    headers:
-      Host: Www.speedtest.net.sPeedtest2.sbs.
-    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🇮🇷 IR-2.188.233.1... #1'
-  network: ws
-  port: 18010
-  server: 2.188.233.148
-  tls: false
-  type: vless
-  uuid: 1b9dabd6-b893-4cb2-99c9-9400f4f4881f
 - client-fingerprint: chrome
   name: 🔒 VL-WS-TLS 🇭🇰 HK-223.16.138.1...
   network: ws
@@ -1038,6 +402,29 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     path: '%2F%3Fed'
+- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #2'
+  network: xhttp
+  port: 80
+  server: 151.101.2.133
+  tls: false
+  type: vless
+  uuid: 275d87d1-221a-4e47-96b1-9a6f76a7daba
+  ws-opts:
+    headers:
+      Host: kavianvpsnour.global.ssl.fastly.net
+    path: '%2F%3Fed%3D2048--Telegram%40V2ray_Alpha'
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.157... #3'
+  network: ws
+  port: 443
+  server: 172.67.157.34
+  servername: dce3fsg3hho43e4bxvbowf6jtnu2bhdewpvfysrzgv4pw7gqrtkgbuslfdsfsfs.aeh4d7u.workers.Dev
+  tls: true
+  type: vless
+  uuid: 1dddb054-1d6d-4f33-831e-ea3a0cd3ebe8
+  ws-opts:
+    headers:
+      Host: dce3fsg3hho43e4bxvbowf6jtnu2bhdewpvfysrzgv4pw7gqrtkgbuslfdsfsfs.aeh4d7u.workers.Dev
+    path: Telegram%20channel%20:%20@pandavpntc
 - name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.5.44:8... #1'
   network: ws
   port: 80
@@ -1050,34 +437,316 @@ proxies:
     headers:
       Host: workerr.dimon22287.workers.dev
     path: Telegram%40WangCai2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  name: 🔒 VL-WS-NA 🇺🇸 US-167.82.1.136:...
-  network: ws
-  port: 80
-  server: 167.82.1.136
-  servername: teleirani.ir
-  tls: false
-  type: vless
-  uuid: 253ef561-9e57-4336-befd-878ddd30df01
-  ws-opts:
-    headers:
-      Host: teleirani.ir
-    path: Telegram@proxy_mtm/?ed%3D2560
-- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.7.3...
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.... #1'
   network: ws
   port: 443
-  server: 104.26.7.37
-  servername: il.ylkszy.eu.org
+  server: 172.64.35.135
+  servername: cv.dong2025.cfd
   tls: true
   type: vless
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: il.ylkszy.eu.org
+      Host: cv.dong2025.cfd
     path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.210.12...
+  network: ws
+  port: 80
+  server: 45.131.210.128
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.6....
+  network: ws
+  port: 80
+  server: 104.26.6.95
+  tls: false
+  type: vless
+  uuid: 1f98b5cc-140f-46b4-987f-6936da9f2238
+  ws-opts:
+    headers:
+      Host: crxre.ribiwa9933.workers.dev
+    path: '%2F'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.32... #5'
+  network: ws
+  port: 80
+  server: 104.18.32.69
+  tls: false
+  type: vless
+  uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb
+  ws-opts:
+    headers:
+      Host: 13tg.jpl8xmqb.workers.dev
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-XHTTP-TLS 🇺🇸 US-140.248.1...
+  network: xhttp
+  port: 443
+  server: 140.248.152.85
+  servername: hajlab.ucdavis.edu
+  tls: true
+  type: vless
+  uuid: 007d0673-c371-4d09-99d3-5fe28a483615
+  ws-opts:
+    headers:
+      Host: Jointovistav2ray.fun
+    path: '%2F%40vistav2ray%40vistav2ray%40vistav2ray%40vistav2ray%40vistav2ray%40vistav2ray%40vistav2ray%40vistav2ray%3Fed%3D2048'
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.192.... #1'
+  network: ws
+  port: 80
+  server: 104.24.192.51
+  tls: false
+  type: vless
+  uuid: 0cca1132-94a6-476c-ab13-6b28e0727751
+  ws-opts:
+    headers:
+      Host: blue-pine-59a0-ppal03.haleyaw148.workers.dev
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: '🔒 VL-TCP-TLS 🇫🇮 FI-95.217.206.... #1'
+  network: tcp
+  port: 443
+  server: 95.217.206.161
+  servername: api.chandplus.com
+  tls: true
+  type: vless
+  uuid: 01d68a9b-be48-4c7b-b4f9-71b29c4cfaca
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.8.... #2'
+  network: ws
+  port: 443
+  server: 162.159.8.55
+  servername: cr7.medicaltreatment.ir
+  tls: true
+  type: vless
+  uuid: 15298f41-e80b-463a-b85b-0c903258a1c8
+  ws-opts:
+    headers:
+      Host: cr7.medicaltreatment.ir
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97... #6'
+  network: ws
+  port: 443
+  server: 188.114.97.177
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
+  tls: true
+  type: vless
+  uuid: 03ae39fd-ec71-4db5-b234-94de99a6e514
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960011.workers.dev
+    path: '%2F%3Fed%3D2048'
+- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.6.179:...
+  network: ws
+  port: 80
+  server: 45.131.6.179
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.4.78:8... #1'
+  network: ws
+  port: 80
+  server: 45.131.4.78
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    headers:
+      Host: workerr.dimon22287.workers.dev
+    path: Telegram%40WangCai2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: 🔒 VL-TCP-TLS 🇨🇦 CA-155.248.219...
+  port: 42557
+  server: 155.248.219.28
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.14... #1'
+  network: ws
+  port: 80
+  server: 172.64.148.32
+  tls: false
+  type: vless
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
+  ws-opts:
+    headers:
+      Host: ppal03-ppal03.letiwe3303.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-TCP-NONE 🇳🇱 NL-217.18.90....
+  network: tcp
+  port: 443
+  server: 217.18.90.51
+  servername: neshan.org
+  tls: false
+  type: vless
+  uuid: 32d6b925-62a8-4a61-b260-8ef974194859
+  ws-opts:
+    headers:
+      Host: neshan.org
+    path: /
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.89....
+  network: ws
+  port: 443
+  server: 172.64.89.161
+  servername: liu133.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 17272b75-51c8-4999-a4ce-b3bd8679e04e
+  ws-opts:
+    headers:
+      Host: liu133.us.kg
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.3.5...
+  network: ws
+  port: 443
+  server: 104.21.3.52
+  servername: iyjil.cfonni.info
+  tls: true
+  type: vless
+  uuid: 1d86846c-5a27-43c8-8981-57bb75c82195
+  ws-opts:
+    headers:
+      Host: iyjil.cfonni.info
+    path: /paradise
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.39...
+  network: ws
+  port: 80
+  server: 104.21.39.212
+  servername: v2raylandd-85.upftsx.workers.Dev
+  tls: false
+  type: vless
+  uuid: 0fb53a60-2372-412a-a693-5157b58ecc94
+  ws-opts:
+    headers:
+      Host: v2raylandd-85.upftsx.workers.Dev
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.24.18... #3'
+  network: ws
+  port: 80
+  server: 104.24.189.102
+  tls: false
+  type: vless
+  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
+  ws-opts:
+    headers:
+      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.66....
+  network: ws
+  port: 80
+  server: 151.101.66.216
+  tls: false
+  type: vless
+  uuid: 354e86bf-3d2f-5bfa-2c14-45cd8ac050f6
+  ws-opts:
+    headers:
+      Host: marzneshinestonia.car
+    path: '%2F%3Fed%3D1024'
+- name: 🔒 VL-WS-NA 🇳🇱 NL-45.131.208.20...
+  network: ws
+  port: 80
+  server: 45.131.208.204
+  servername: workerr.dimon22287.workers.dev
+  tls: false
+  type: vless
+  uuid: 2b4bed25-a5ef-439d-93b1-395b7bcec58b
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed
+- name: 🔒 VL-WS-TLS 🇺🇸 US-154.17.21.13...
+  network: ws
+  port: 18446
+  server: 154.17.21.134
+  servername: nc.dbbn2024.us.kg
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    path: /?ed
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.19... #3'
+  network: ws
+  port: 80
+  server: 104.16.19.242
+  tls: false
+  type: vless
+  uuid: 1853d1d2-1ccf-48e6-ae05-0c0bb285a8c4
+  ws-opts:
+    headers:
+      Host: winter-bush-f08c-ppal03.himigaw787.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.78...
+  network: ws
+  port: 80
+  server: 104.18.78.200
+  tls: false
+  type: vless
+  uuid: 1dffb1fd-09b3-4bbe-9631-a3ae6a9a57d1
+  ws-opts:
+    headers:
+      Host: gxg7RQ.dL-apArAT.coM
+    path: '%2F'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-170.114.46.... #1'
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  tls: false
+  type: vless
+  uuid: 0110d1d5-12c2-4a80-bad9-8c33722e8699
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+    path: '%2F'
+- name: 🔒 VL-WS-NA 🇺🇸 US-151.101.64.15...
+  network: ws
+  port: 80
+  server: 151.101.64.157
+  tls: false
+  type: vless
+  uuid: 06948934-0e10-49d6-ba42-90b15ba6a7d1
+  ws-opts:
+    headers:
+      Host: Www.speedtest.net.sPeedtest2.sbs.
+    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.30....
+  network: ws
+  port: 443
+  server: 104.21.30.167
+  servername: 3u.2032.pp.ua
+  tls: true
+  type: vless
+  uuid: 2fec7227-9abe-46f2-af18-78302b836c45
+  ws-opts:
+    headers:
+      Host: 3u.2032.pp.ua
+    path: '%2FqF5dXhCllosLcFpqdDoAgkondVWl'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.65....
+  network: ws
+  port: 80
+  server: 151.101.65.6
+  tls: false
+  type: vless
+  uuid: 0060fb3a-06d1-5962-85cb-5f22ac528d68
+  ws-opts:
+    headers:
+      Host: 0-MOSIV2-0.COM
+    path: '%2F'
 - client-fingerprint: chrome
   name: 🔒 VL-WS-TLS 🇧🇷 BR-185.133.35.3...
   network: ws
@@ -1089,10 +758,76 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     path: '%2F%3Fed'
-- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #2'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: Channel%3A%40UnlimitedDev
+  name: 🔒 VL-GRPC-TLS 🇮🇷 IR-2.189.59.2...
+  network: grpc
+  port: 443
+  server: 2.189.59.2
+  servername: mci.unlimiteddev-vpn.Com.
+  tls: true
+  type: vless
+  uuid: 2d037023-06eb-4949-9708-0f2473ea7c6c
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.193...
+  network: ws
+  port: 80
+  server: 151.101.193.6
+  tls: false
+  type: vless
+  uuid: 0060fb3a-06d1-5962-85cb-5f22ac528d68
+  ws-opts:
+    headers:
+      Host: 0-MOSIV2-0.COM
+    path: '%2F'
+- grpc-opts:
+    grpc-service-name: Tel
+  name: 🔒 VL-GRPC-NA 🇬🇧 GB-51.89.119.9...
+  network: grpc
+  port: 11045
+  server: 51.89.119.99
+  tls: false
+  type: vless
+  uuid: 040efcf5-0aac-4d9e-8fd6-f495c229ab7a
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.184.... #1'
+  network: ws
+  port: 80
+  server: 104.24.184.113
+  tls: false
+  type: vless
+  uuid: 03c9f240-0bad-4f71-93f2-f5d272dada97
+  ws-opts:
+    headers:
+      Host: sparkling-limit-ppal03.yibijow194.workers.dev
+    path: '%2F'
+- name: 🔒 VL-WS-NONE 🇺🇸 US-151.101.194...
+  network: ws
+  port: 80
+  server: 151.101.194.216
+  tls: false
+  type: vless
+  uuid: 354e86bf-3d2f-5bfa-2c14-45cd8ac050f6
+  ws-opts:
+    headers:
+      Host: marzneshinestonia.car
+    path: '%2F%3Fed%3D1024'
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.20.... #1'
+  network: ws
+  port: 443
+  server: 104.18.20.69
+  servername: us2s.pqvip.top
+  tls: true
+  type: vless
+  uuid: 1e5599e3-325c-49fa-a6c7-675e314a0d99
+  ws-opts:
+    headers:
+      Host: us2s.pqvip.top
+    path: '%2Fpq%2Fus2'
+- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #3'
   network: xhttp
   port: 80
-  server: 151.101.130.46
+  server: 151.101.2.46
   tls: false
   type: vless
   uuid: 097d9986-299e-495b-a72a-35998f4064cc
@@ -1100,24 +835,273 @@ proxies:
     headers:
       Host: Vpnmizbanyour-name.global.ssl.fastly.net
     path: '%2FVpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban------VpnMizban'
-- name: 🔒 VL-WS-TLS 🇮🇪 IE-54.220.86.15...
-  network: ws
-  port: 22222
-  server: 54.220.86.15
-  servername: telegram-channel-vlessconfig.sohala.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: telegram-channel-vlessconfig.sohala.uk
-    path: /telegram-channel-vlessconfig-ws
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.13... #2'
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.93...
   network: ws
   port: 80
-  server: 172.67.130.164
+  server: 104.21.93.95
   tls: false
   type: vless
-  uuid: 17d87202-4ca2-49d2-9c90-5eca029c97f6
+  uuid: 033a4982-a8c7-4bfb-9481-5a8a1c62cfd6
   ws-opts:
+    headers:
+      Host: azadnet.b0b723a182.workers.dev
+    path: '%2FiDE2j5JJnqTGPjmS%3Fed%3D2560'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.44.... #11'
+  network: ws
+  port: 2087
+  server: 172.66.44.178
+  servername: MAHdIsERveR-JsK.pages.deV
+  tls: true
+  type: vless
+  uuid: 2f6ba4db-bde4-4b91-b850-75584ae2d338
+  ws-opts:
+    headers:
+      Host: mahdiserver-jsk.pages.dev
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- name: '🔒 VL-WS-NONE 🇸🇪 SE-185.146.173... #2'
+  network: ws
+  port: 80
+  server: 185.146.173.20
+  tls: false
+  type: vless
+  uuid: 319e3dc1-ceb3-4258-b069-675db969ad62
+  ws-opts:
+    headers:
+      Host: crtU6u.dl-aPARaT.coM
+    path: /backup
+- name: '🔒 VL-WS-NA 🇺🇸 US-151.101.64.15... #1'
+  network: ws
+  port: 80
+  server: 151.101.64.156
+  tls: false
+  type: vless
+  uuid: 06948934-0e10-49d6-ba42-90b15ba6a7d1
+  ws-opts:
+    headers:
+      Host: Www.speedtest.net.sPeedtest2.sbs.
+    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.14... #1'
+  network: ws
+  port: 80
+  server: 172.67.148.227
+  servername: v2raylandd-85.upftsx.workers.Dev
+  tls: false
+  type: vless
+  uuid: 0fb53a60-2372-412a-a693-5157b58ecc94
+  ws-opts:
+    headers:
+      Host: v2raylandd-85.upftsx.workers.Dev
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.24.148.... #1'
+  network: ws
+  port: 80
+  server: 104.24.148.184
+  tls: false
+  type: vless
+  uuid: 01cb18d1-2062-47e7-999b-ec08e8b2ec85
+  ws-opts:
+    headers:
+      Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
+    path: /?ed%3D2560
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.96... #10'
+  network: ws
+  port: 443
+  server: 188.114.96.9
+  servername: n8yt9i7dizcb4nbicv55vdqyfahovzb6jvwipqntbtfmvpa4ugrxmzrlhqrfgfr.u19x5rr.workers.Dev
+  tls: true
+  type: vless
+  uuid: 229a61b0-5925-43dc-83f9-661670cfe41d
+  ws-opts:
+    headers:
+      Host: n8yt9i7dizcb4nbicv55vdqyfahovzb6jvwipqntbtfmvpa4ugrxmzrlhqrfgfr.u19x5rr.workers.Dev
+- name: 🔒 VL-WS-NONE 🇺🇸 US-167.82.9.22...
+  network: ws
+  port: 80
+  server: 167.82.9.225
+  tls: false
+  type: vless
+  uuid: 14cea04c-dbfa-4436-baa8-5a497d8f9e2c
+  ws-opts:
+    headers:
+      Host: vistapcit.com
+    path: '%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.64.... #1'
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  uuid: 2326406b-e9a6-47fc-8135-8f7e4e1d98ca
+  ws-opts:
+    headers:
+      Host: irancell.net.
+    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.37....
+  network: ws
+  port: 443
+  server: 104.17.37.105
+  servername: in.youlingkais.filegear-sg.me
+  tls: true
+  type: vless
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: in.youlingkais.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.78... #1'
+  network: ws
+  port: 80
+  server: 172.64.78.198
+  tls: false
+  type: vless
+  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
+  ws-opts:
+    headers:
+      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
+    path: '%2F%3Fed%3D2560'
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3Fed%3D2048
+  name: 🔒 VL-GRPC-NONE 🇫🇷 FR-51.77.108...
+  network: grpc
+  port: 13004
+  server: 51.77.108.99
+  tls: false
+  type: vless
+  uuid: 1b312879-3cdc-4782-a589-6d149d693854
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54...
+  network: ws
+  port: 80
+  server: 104.19.54.50
+  tls: false
+  type: vless
+  uuid: 12595a4f-6dfb-481a-90ad-feb483e88f2d
+  ws-opts:
+    headers:
+      Host: vista.elmahstyle.kavehsanaatco.site.
+    path: '%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist'
+- grpc-opts:
+    grpc-service-name: '%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e-%5aED%4d%4fDE%4f%4e%3Fed%3D2048'
+  name: 🔒 VL-GRPC-NONE 🇮🇹 IT-195.231.6...
+  network: grpc
+  port: 28125
+  server: 195.231.66.71
+  tls: false
+  type: vless
+  uuid: 20a49abc-b801-4308-83e4-80abcad4115c
+- name: 🔒 VL-WS-NONE 🇺🇸 US-146.75.8.88...
+  network: ws
+  port: 80
+  server: 146.75.8.88
+  tls: false
+  type: vless
+  uuid: 1077c841-97d9-45a4-8663-7876e6b0f053
+  ws-opts:
+    headers:
+      Host: melodebot.net
+    path: '%2Fmelo%2Fws%3Fed%3D2048'
+- name: 🔒 VL-WS-NONE 🇮🇷 IR-185.143.235...
+  network: ws
+  port: 80
+  server: 185.143.235.201
+  tls: false
+  type: vless
+  uuid: 014f817e-b200-4e6f-bfda-2c1cbf05aa6a
+  ws-opts:
+    path: '%2F'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-141.193.213... #2'
+  network: ws
+  port: 80
+  server: 141.193.213.20
+  tls: false
+  type: vless
+  uuid: 0110d1d5-12c2-4a80-bad9-8c33722e8699
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
     path: /
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.9... #6'
+  network: ws
+  port: 80
+  server: 188.114.97.171
+  tls: false
+  type: vless
+  uuid: 35323594-9ee2-4f06-ae14-3148b6950621
+  ws-opts:
+    headers:
+      Host: ooao14004.74gwenneth.workers.dev
+    path: '%2F'
+- name: 🔒 VL-GRPC-NONE 🇩🇪 DE-57.129.43...
+  network: grpc
+  port: 6669
+  server: 57.129.43.114
+  tls: false
+  type: vless
+  uuid: 197e2db1-496c-4700-b90c-86ac17b411d6
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.27... #1'
+  network: ws
+  port: 80
+  server: 104.18.27.94
+  tls: false
+  type: vless
+  uuid: 2f88f00a-7465-400f-8bab-5aab861df53f
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense1.roxor95951.workers.dev
+    path: '%2F%3Fed%3D2560'
+- name: 🔒 VL-WS-NA 🇺🇸 US-103.116.7.132...
+  network: ws
+  port: 80
+  server: 103.116.7.132
+  servername: japan.freenods-8d6.workers.dev
+  tls: false
+  type: vless
+  uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed
+- name: 🔒 VL-WS-NONE 🇺🇸 US-170.114.45....
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  tls: false
+  type: vless
+  uuid: 0110d1d5-12c2-4a80-bad9-8c33722e8699
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+    path: /
+- name: 🔒 VL-WS-NONE 🏴‍☠️ NA-172.64.32...
+  network: ws
+  port: 2052
+  server: 172.64.32.154
+  tls: false
+  type: vless
+  uuid: 32ced3f5-980a-54a7-89d5-616c2dd9188e
+  ws-opts:
+    headers:
+      Host: 6.www.abrha.com.xn--joinBede-ELiV2ry.click.abrarvan.ir.at3.vless.sitespeedtest.net.
+    path: '%2F%40ELiV2ry-%40ELiV2ry-%40ELiV2ry%3Fed%3D2048'
+- name: 🔒 VL-WS-NA 🇺🇸 US-167.82.1.105:...
+  network: ws
+  port: 80
+  server: 167.82.1.105
+  tls: false
+  type: vless
+  uuid: 253ef561-9e57-4336-befd-878ddd30df01
+  ws-opts:
+    headers:
+      Host: teleirani.ir
+    path: /?ed%3D2048
+- name: 🔒 VL-WS-NA 🇺🇸 US-103.116.7.116...
+  network: ws
+  port: 80
+  server: 103.116.7.116
+  servername: japan.freenods-8d6.workers.dev
+  tls: false
+  type: vless
+  uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
+  ws-opts:
+    path: Telegram%40WangCai2%2F%3Fed

@@ -1,30 +1,14 @@
-# Update: 2025-04-07 08:45
-# Source 62 (https://t.me/s/DirectVPN), 3
+# Update: 2025-04-21 08:48
+# Source 62 (https://t.me/s/FreakConfig), 1
 proxies:
-- alpn:
-  - http/1.1
-  name: 'Our #14'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.21.46.119
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 'Our #15'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.60.136.5
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 'Our #17'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.67.173.40
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- name: '🇩🇪@FreakConfig #1'
+  network: ws
+  port: 80
+  server: freakconfig.fastly80-3.hosting-ip.com
+  tls: false
+  type: vless
+  uuid: f3f48bd1-5f3c-47ce-bd04-3a9a2ccb51b8
+  ws-opts:
+    headers:
+      Host: mt.acvs.ir
+    path: /joinMTMVPN?ed=2560

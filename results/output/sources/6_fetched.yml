@@ -1,48 +1,85 @@
-# Update: 2025-04-07 08:45
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 7
+# Update: 2025-04-21 08:48
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 13
 proxies:
-- name: '🇺🇸_US_美国 #1'
-  network: ws
-  password: 6040a753-e35b-4384-8713-96f3c639b621
-  port: 443
-  server: 104.21.21.226
-  sni: uK803.890689.Xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /WxWOWO1YA9bs2HOmaeWimvT3
 - alterId: 0
+  cipher: auto
+  name: '🇳🇱_NL_荷兰 #1'
+  network: tcp
+  port: 11577
+  server: 45.89.244.40
+  type: vmess
+  uuid: 79cc997e-d580-4f72-b7fc-f6669c9462e8
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: 14100
+  server: dxv4.pai50288.uk
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 0
+  cipher: auto
+  name: 未知
+  network: tcp
+  port: 180
+  server: 89.18.58.104
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23077
+  server: 45.147.201.231
+  type: vmess
+  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
+  ws-opts:
+    path: /
+- alterId: 2
   cipher: auto
   name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   network: ws
-  port: 30840
-  server: v40.heduian.link
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
-- name: '🇺🇸_US_美国_2 #2'
-  network: ws
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.16.1
-  sni: 1g.890699.xyZ
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /lXENb74xF4ylXngZ
-- name: '🇬🇧_GB_英国 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.55.122
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      host: ocbc.com
+    path: /oooo
+- cipher: chacha20-ietf
+  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  password: asd123456
+  port: 8388
+  server: 137.175.113.215
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 未知_1
+  network: tcp
+  port: 180
+  server: 89.18.58.63
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -54,23 +91,48 @@ proxies:
     headers:
       host: v25.heduian.link
     path: /oooo
-- name: 🇺🇸_US_美国_4
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   network: ws
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  port: 443
-  server: 172.67.200.238
-  sni: 3s.890689.xyz
-  type: trojan
-  udp: true
+  port: 30840
+  server: v40.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
-- name: '🇺🇸_US_美国_5 #1'
+    headers:
+      host: api100-core-quic-lf.amemv.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+  network: tcp
+  port: 14100
+  server: 144.255.36.254
+  sni: ''
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
   network: ws
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
-  port: 443
-  server: 104.21.96.1
-  sni: 1g.890699.xyZ
-  type: trojan
-  udp: true
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /lXENb74xF4ylXngZ
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 8080
+  server: dingzhiyx1.sgjc.xyz
+  sni: ''
+  type: vmess
+  uuid: 2e235b81-70ad-45c0-959c-7591fa078836
+  ws-opts:
+    headers:
+      host: dingzhiadly.sgjc.xyz
+    path: /?ed=2048
