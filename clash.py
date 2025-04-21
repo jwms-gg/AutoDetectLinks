@@ -1621,7 +1621,7 @@ def prepare_clash():
     if os.path.exists(new_name):
         return
 
-    url = "https://api.github.com/repos/MetaCubeX/mihomo/releases/tags/v1.19.2"
+    url = "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest"
     response = requests.get(url)
 
     if response.status_code != 200:

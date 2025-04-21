@@ -116,8 +116,9 @@ def from_telegram(content: str):
 def parse_proxies(
     url: str,
     content: str,
-    method: str,
     type: str,
+    method: Optional[str] = None,
+    prefix: Optional[str] = None,
 ) -> list[dict[str, Any]]:
     proxies = []
     try:
@@ -137,9 +138,13 @@ def parse_proxies(
                 v2ray_proxies = from_telegram(content)
             else:
                 v2ray_proxies = content.strip().splitlines()
+
             for v in v2ray_proxies:
                 if "://" not in v:
-                    continue
+                    if prefix:
+                        v = prefix + v
+                    else:
+                        continue
 
                 try:
                     proxies.append(v2ray_to_clash(v))
@@ -161,6 +166,7 @@ class Source:
         """Parse proxies from source."""
         redirect = self._source.get("redirect", None)
         method = self._source.get("method", None)
+        prefix = self._source.get("prefix", None)
         url: str = self._source.url
         type: str = self._source.type
 
@@ -183,8 +189,9 @@ class Source:
                     self.proxies = parse_proxies(
                         url,
                         redirect_content,
-                        method,
                         type,
+                        method,
+                        prefix,
                     )
                     if self.proxies:
                         break
@@ -192,8 +199,9 @@ class Source:
             self.proxies = parse_proxies(
                 self._source.url,
                 content,
-                method,
                 type,
+                method,
+                prefix,
             )
 
         if len(self.proxies) != 0:

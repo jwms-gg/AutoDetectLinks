@@ -1,5 +1,5 @@
-# Update: 2025-04-21 11:54
-# Source 56 (https://t.me/s/proxystore11), 2
+# Update: 2025-04-23 22:04
+# Source 56 (https://t.me/s/proxystore11), 3
 proxies:
 - alpn:
   - h2
@@ -31,6 +31,24 @@ proxies:
   tls: true
   type: vless
   uuid: e886a00b-b2be-4141-af7a-0e0d8d1434ee
+  ws-opts:
+    headers:
+      Host: panel.proxystore11.news
+    path: /prx11
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: MyAwesomeConfig
+  network: ws
+  port: 2087
+  server: cname.proxystore11.news
+  servername: panel.proxystore11.news
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: c0313f79-308d-4f72-9552-0a63bc89caf7
   ws-opts:
     headers:
       Host: panel.proxystore11.news

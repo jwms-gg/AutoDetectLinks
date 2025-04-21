@@ -1,6 +1,15 @@
-# Update: 2025-04-21 11:54
-# Source 51 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 5
+# Update: 2025-04-23 22:04
+# Source 51 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 4
 proxies:
+- grpc-opts:
+    grpc-service-name: vless-grpc
+  name: 🔒 VL-GRPC-NONE 🇱🇺 LU-[::ffff:2...
+  network: grpc
+  port: 8880
+  server: ::ffff:2d88:7508
+  tls: false
+  type: vless
+  uuid: 4d54cca5-20ea-4ed7-b7b1-a7956dcc68c6
 - grpc-opts:
     grpc-service-name: vless-grpc
   name: 🔒 VL-GRPC-NONE 🇺🇸 US-[::ffff:5...
@@ -12,15 +21,6 @@ proxies:
   uuid: 9e28dd25-f4e1-4434-a31d-40c8ed0c0f52
 - grpc-opts:
     grpc-service-name: vless-grpc
-  name: 🔒 VL-GRPC-NONE 🇳🇱 NL-[0:0:0:0:...
-  network: grpc
-  port: 8880
-  server: 0:0:0:0:0:ffff:55d1:9c07
-  tls: false
-  type: vless
-  uuid: 46db85a1-9d97-46f8-9b7a-ff9704510e5e
-- grpc-opts:
-    grpc-service-name: vless-grpc
   name: 🔒 VL-GRPC-NA 🇳🇱 NL-[::ffff:5b4...
   network: grpc
   port: 8880
@@ -30,19 +30,10 @@ proxies:
   uuid: e464526a-e3de-4db9-8821-4e146507976f
 - grpc-opts:
     grpc-service-name: vless-grpc
-  name: 🔒 VL-GRPC-NONE 🇳🇱 NL-[::ffff:5...
+  name: 🔒 VL-GRPC-NONE 🇳🇱 NL-[0:0:0:0:...
   network: grpc
   port: 8880
-  server: ::ffff:55d1:9b09
+  server: 0:0:0:0:0:ffff:55d1:9c07
   tls: false
   type: vless
-  uuid: 547b91a6-dce9-45a4-9f5b-c4ce8e2f36d4
-- grpc-opts:
-    grpc-service-name: vless-grpc
-  name: 🔒 VL-GRPC-NONE 🇱🇺 LU-[::ffff:2...
-  network: grpc
-  port: 8880
-  server: ::ffff:2d88:7508
-  tls: false
-  type: vless
-  uuid: 4d54cca5-20ea-4ed7-b7b1-a7956dcc68c6
+  uuid: 46db85a1-9d97-46f8-9b7a-ff9704510e5e

@@ -295,7 +295,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
                 elif k == "fp":
                     data["fingerprint"] = v
 
-    elif proxy_type == "http":
+    elif proxy_type.startswith("http"):
         # http://username:password@host:port?tls=1#name
         parsed = urlparse(proxy)
         data = {
@@ -303,9 +303,15 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
             "server": parsed.hostname,
             "port": parsed.port,
             "type": "http",
-            "username": unquote(parsed.username),
-            "password": unquote(parsed.password),
+            # "username": unquote(parsed.username),
+            # "password": unquote(parsed.password),
         }
+        if proxy_type.startswith("https"):
+            data["tls"] = True
+            data["skip-cert-verify"] = False
+            proxy_type = "http"
+        if data["name"] == "":
+            data["name"] = proxy
         if parsed.query:
             for kv in parsed.query.split("&"):
                 k, v = kv.split("=", 1)
@@ -370,9 +376,9 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
             "server": parsed.hostname,
             "port": parsed.port,
             "type": "socks5",
-            "username": unquote(parsed.username),
-            "password": unquote(parsed.password),
         }
+        if data["name"] == "":
+            data["name"] = proxy
 
     else:
         raise UnsupportedType(proxy_type)

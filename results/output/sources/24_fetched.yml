@@ -1,4 +1,4 @@
-# Update: 2025-04-21 11:54
+# Update: 2025-04-23 22:04
 # Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 23
 proxies:
 - cipher: aes-256-cfb
@@ -6,44 +6,38 @@ proxies:
   name: tg频道:@freenodedaily
   password: amazonskr05
   port: 443
-  server: 47.128.150.221
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: HK
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
+  server: 47.128.230.36
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 🇭🇰 香港2
-  password: 22b34bca-5208-4eb1-94c8-53e77077a32e
-  port: 27102
-  server: sla.cn.964e995b760.gogodns.xin
+  name: HK
+  network: ws
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
+  ws-opts:
+    headers:
+      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
+    path: /dl_media
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 🇭🇰 香港3
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: 111.29.57.125
+  name: 🇭🇰 香港2
+  password: a77288b8-3a1b-4f1a-af4e-d721ccb92297
+  port: 18988
+  server: tencent.vpne.one
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 🇭🇰 香港4
-  port: 15228
-  server: eeb0da71-sv8cg0-t2l8w3-d32g.cm.plebai.net
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 72bda932-979f-a008-de58-0dcb3b424cfe
+  sni: hk-13-568.flztjc.net
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -88,21 +82,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 🇭🇰 香港9
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  skip-cert-verify: false
-  sni: hk06.run.place
-  type: trojan
+  password: 91a41f4e02dc
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hkkh11v1.xpmc.cc
+    mode: websocket
+    mux: true
+    path: /utvbnrzejpmt
+    skip-cert-verify: false
+    tls: true
+  port: 31402
+  server: hkkh11v1.xpmc.cc
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾
+  password: a77288b8-3a1b-4f1a-af4e-d721ccb92297
+  port: 41681
+  server: sx.75886993.xyz
+  tfo: false
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 'JP #2'
+  name: JP
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504182189466-8od2bG05Pm.download.microsoft.com
+    host: 202504212352625-mSKdydjLdf.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -135,33 +145,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: KR
-  port: 45075
-  server: xdd.dashuai.cyou
+  name: 🇯🇵 日本4
+  network: ws
+  port: 30806
+  server: v6.heduian.link
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: e1936af5-c58e-4c19-a05e-7c264aee49f2
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇯🇵 日本5
+  port: 17233
+  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: SG
-  network: ws
-  port: 8000
-  server: v7.nmcf.me
+  port: 17231
+  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 4c7929b7-281f-4d86-ad24-d766904482e6
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /nmkj
+  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -190,37 +211,34 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504182189466-8od2bG05Pm.download.microsoft.com
+    host: 202504212352625-mSKdydjLdf.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇺🇸 美国3
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.107.226.14
-  tfo: false
-  type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 🇺🇸 美国4
-  port: 5229
-  server: 8705693f-sv8cg0-t35mzx-1pp0x.cu.plebai.net
+  name: 🇺🇸 美国3
+  network: ws
+  port: 30807
+  server: v7.heduian.link
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 🇰🇷 韩国特殊
   password: amazonskr05
   port: 443
-  server: 13.212.117.64
+  server: 43.203.202.53
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -228,7 +246,7 @@ proxies:
   name: 🇸🇬 狮城特殊
   password: amazonskr05
   port: 443
-  server: 34.217.76.113
+  server: 47.129.221.216
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -236,6 +254,6 @@ proxies:
   name: 🇯🇵 日本特殊
   password: amazonskr05
   port: 443
-  server: 13.124.153.152
+  server: 3.36.89.243
   tfo: false
   type: ss
