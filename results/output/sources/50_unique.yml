@@ -1,121 +1,41 @@
-# Update: 2025-04-21 08:48
-# Source 50 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess), 9
+# Update: 2025-04-21 11:54
+# Source 50 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess), 3
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇸🇬 SG-140.245.54.85...
-  network: ws
-  port: '23452'
-  server: 140.245.54.85
-  tls: false
-  type: vmess
-  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
 - alterId: 2
   cipher: auto
-  name: '🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1... #2'
+  name: 🔒 VM-WS-NA 🇭🇰 HK-1.65.196.74:8...
   network: ws
-  port: '8101'
-  server: 112.120.125.105
+  port: '80'
+  server: 1.65.196.74
   tls: false
   type: vmess
-  uuid: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.23....
-  network: ws
-  port: 2096
-  server: 104.21.23.210
-  servername: rak1-d.932.pp.ua
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🔒 VM-GRPC-TLS 🏴‍☠️ NA-173.245....
+  network: grpc
+  port: '2087'
+  server: 173.245.58.154
+  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea1216128129210.1-senator.info
   tls: true
   type: vmess
-  uuid: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
-  ws-opts:
-    headers:
-      Host: rak1-d.932.pp.ua
-    path: /rak1-d.932.pp.ua
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.155...
+  name: 🔒 VM-WS-NA 🇸🇬 SG-140.245.46.68...
   network: ws
-  port: '2053'
-  server: 104.16.155.10
-  servername: cloudflare.182682.xyz
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: sg1.pavo.eu.org
-    path: /sg1vmess
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.158....
-  network: ws
-  port: '80'
-  server: 172.67.158.71
-  servername: ''
+  port: '23452'
+  server: 140.245.46.68
   tls: false
   type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
   ws-opts:
     headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
-  network: ws
-  port: '10805'
-  server: 18.162.51.82
-  servername: kahk.kia-ai.com
-  tls: true
-  type: vmess
-  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
-  ws-opts:
-    headers:
-      Host: kahk.kia-ai.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NONE 🇺🇸 US-89.213.184...
-  network: tcp
-  port: 26298
-  server: 89.213.184.198
-  tls: false
-  type: vmess
-  uuid: 180d7022-9cf9-4bbc-b53c-ab28af2cbc3f
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇸🇬 SG-103.177.76.79... #1'
-  network: ws
-  port: '8000'
-  server: 103.177.76.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c7929b7-281f-4d86-ad24-d766904482e6
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /nmkj
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇺🇸 US-129.153.193.2...
-  network: ws
-  port: '23451'
-  server: 129.153.193.209
-  tls: false
-  type: vmess
-  uuid: 57c7a369-f74d-439d-964a-888d4d6407ea
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
+      Host: westsg2-ddns.oraclenat.cc
     path: /

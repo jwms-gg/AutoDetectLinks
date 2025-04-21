@@ -1,4 +1,4 @@
-# Update: 2025-04-21 08:48
+# Update: 2025-04-21 11:54
 # Source 50 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess), 114
 proxies:
 - alterId: 0
@@ -10,7 +10,7 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: bbaccaa-abac-baca-bacd-cabccaababbc
+  uuid: cbabaca-bcaa-caba-bacd-ccabcabacabb
 - alterId: 0
   cipher: auto
   name: '🤖 TELEGRAM-CHANNEL 💡 NEUROVANC... #1'
@@ -20,17 +20,77 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: aacbcba-caab-bcaa-adcb-cbacabacbcab
+  uuid: caababc-abca-abac-dbac-aacbbccacbab
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NONE 🇦🇪 AE-217.60.239... #1'
+  name: '🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82... #1'
+  network: ws
+  port: '10805'
+  server: 18.162.51.82
+  servername: kahk.kia-ai.com
+  tls: true
+  type: vmess
+  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
+  ws-opts:
+    headers:
+      Host: kahk.kia-ai.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #7'
   network: tcp
-  port: '26550'
-  server: 217.60.239.120
+  port: '45215'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64... #1'
+  network: ws
+  port: '8088'
+  server: 192.9.148.64
+  servername: ora.aihi.uk
+  tls: true
+  type: vmess
+  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
+  ws-opts:
+    headers:
+      Host: ora.aihi.uk
+    path: /ray
+- alterId: 2
+  cipher: auto
+  name: 🔒 VM-WS-NA 🇭🇰 HK-1.65.196.74:8...
+  network: ws
+  port: '80'
+  server: 1.65.196.74
+  tls: false
+  type: vmess
+  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.6... #1'
+  network: tcp
+  port: '15828'
+  server: 62.146.233.66
   servername: ''
   tls: false
   type: vmess
-  uuid: de232ad7-4d26-4d59-a0f4-ee07f166268a
+  uuid: 8b9cf3dc-c282-424f-a590-c45c9a36d3f9
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2... #1'
+  network: tcp
+  port: '28872'
+  server: 46.250.253.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
   name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.148.1... #2'
@@ -41,33 +101,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇮🇳 IN-98.70.49.1... #1'
-  network: tcp
-  port: 42473
-  server: 98.70.49.107
-  tls: false
-  type: vmess
-  uuid: 63b5b76d-93f4-4568-a764-c4b967472960
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147... #1'
-  network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  tls: false
-  type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3... #1'
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '🔒 VM-WS-TLS 🇮🇪 IE-185.108.128.... #1'
@@ -84,87 +117,6 @@ proxies:
     path: /path/300022113329
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇯🇵 JP-103.214.168.... #2'
-  network: tcp
-  port: '57796'
-  server: 103.214.168.242
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇸🇬 SG-140.245.54.85...
-  network: ws
-  port: '23452'
-  server: 140.245.54.85
-  tls: false
-  type: vmess
-  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11... #1'
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17... #1'
-  network: tcp
-  port: '28984'
-  server: 91.194.11.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.149.7... #2'
-  network: tcp
-  port: '47211'
-  server: 84.247.149.77
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fb674260-1c21-4f99-8bd0-3d1d341c6771
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #7'
-  network: tcp
-  port: '45291'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110... #1'
-  network: tcp
-  port: '51352'
-  server: 5.180.30.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1... #4'
-  network: tcp
-  port: '39530'
-  server: 84.247.146.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7aa56e39-29b8-45c3-8b53-6d2a23b2461c
-- alterId: 0
-  cipher: auto
   name: '🔒 VM-TCP-NA 🇺🇸 US-15.204.86.12... #1'
   network: tcp
   port: '35696'
@@ -175,165 +127,33 @@ proxies:
   uuid: cad0504a-a9dc-4d29-8844-b11b69f14a8d
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NONE 🇺🇸 US-51.81.203.... #1'
-  network: tcp
-  port: '28860'
-  server: 51.81.203.57
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1784497d-03a1-40bb-bb8b-de4ffac7c59c
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.85:... #1'
-  network: tcp
-  port: '18598'
-  server: 5.180.30.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇾 CY-2.56.126.103... #1'
-  network: tcp
-  port: 33579
-  server: 2.56.126.103
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇳🇱 NL-157.245.73.1... #1'
-  network: tcp
-  port: '2088'
-  server: 157.245.73.170
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d0a6f712-44c1-1688-dc65-f34f9afb0556
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1... #1'
-  network: tcp
-  port: '33940'
-  server: 37.221.125.159
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NONE 🇳🇱 NL-45.89.244....
-  network: tcp
-  port: 11577
-  server: 45.89.244.40
-  tls: false
-  type: vmess
-  uuid: 79cc997e-d580-4f72-b7fc-f6669c9462e8
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇩🇪 DE-23.158.56.... #1'
-  network: tcp
-  port: '22324'
-  server: 23.158.56.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.138.82... #1'
-  network: tcp
-  port: '54757'
-  server: 45.12.138.82
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
-- alterId: 2
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1... #2'
-  network: ws
-  port: '8101'
-  server: 112.120.125.105
-  tls: false
-  type: vmess
-  uuid: f13f964e-f06c-11ec-a858-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #8'
-  network: tcp
-  port: '45215'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇳 CN-120.199.83.2... #1'
-  network: tcp
-  port: '45260'
-  server: 120.199.83.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3888997d-dca4-40ba-92e4-06b6918c9643
-- alterId: 0
-  cipher: auto
   name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #5'
   network: tcp
-  port: '50644'
-  server: 103.106.229.238
-  servername: ''
+  port: '14427'
+  server: 103.106.229.207
   tls: false
   type: vmess
-  uuid: f0d90685-7599-485c-944b-f36b48d2f88e
+  uuid: c01988cc-b0b1-4026-bb9b-9152ff19c145
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.133.43... #1'
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.1... #2'
   network: tcp
-  port: '28444'
-  server: 45.12.133.43
+  port: '29999'
+  server: 46.250.237.196
   servername: ''
   tls: false
   type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+  uuid: b31fc134-978e-4176-8579-8107d6a0cede
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.6... #2'
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-154.26.134.1... #1'
   network: tcp
-  port: '54179'
-  server: 84.247.147.67
+  port: '14129'
+  server: 154.26.134.106
   servername: ''
   tls: false
   type: vmess
-  uuid: d143ebbc-7825-4b43-a55e-f11cb153bd5b
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇳🇱 NL-45.12.145.11... #2'
-  network: tcp
-  port: '46290'
-  server: 45.12.145.111
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1b41153e-c4d4-431b-83eb-10472f869f93
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16... #1'
-  network: tcp
-  port: '58891'
-  server: 91.194.11.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+  uuid: e7798e09-3090-4366-ae80-f18afdaabf4f
 - alterId: 5
   cipher: auto
   name: '🔒 VM-WS-TLS 🇺🇸 US-107.175.96.7... #2'
@@ -350,21 +170,163 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🇭🇰 HK-103.118.40.2...
+  name: '🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74... #2'
   network: ws
-  port: '10807'
-  server: 103.118.40.200
-  servername: cnhka.kia-ai.com
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
   tls: true
   type: vmess
-  uuid: c36fc804-7fc7-4fea-b1d7-cc1e334b1c56
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
   ws-opts:
     headers:
-      Host: cnhka.kia-ai.com
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1... #4'
+  network: tcp
+  port: '39530'
+  server: 84.247.146.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7aa56e39-29b8-45c3-8b53-6d2a23b2461c
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇲🇾 MY-101.99.91.23... #1'
+  network: tcp
+  port: '36700'
+  server: 101.99.91.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 127ff43c-1851-4b2d-ba8c-6afba21ec04d
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🔒 VM-GRPC-TLS 🏴‍☠️ NA-173.245....
+  network: grpc
+  port: '2087'
+  server: 173.245.58.154
+  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea1216128129210.1-senator.info
+  tls: true
+  type: vmess
+  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇾 CY-2.56.126.103... #1'
+  network: tcp
+  port: 33579
+  server: 2.56.126.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.110... #1'
+  network: tcp
+  port: '51352'
+  server: 5.180.30.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NA 🇭🇷 HR-89.18.58.104...
+  network: tcp
+  port: '180'
+  server: 89.18.58.104
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.85:... #1'
+  network: tcp
+  port: '18598'
+  server: 5.180.30.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.146... #2'
+  network: tcp
+  port: '27773'
+  server: 5.180.30.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #6'
+  network: tcp
+  port: '38233'
+  server: 103.106.229.132
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 537a199c-c1f1-4b6b-a7dd-cd00eb1babfc
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #2'
+  network: ws
+  port: '20015'
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: e3049875-1be3-4233-9c9b-a9490612fbb5
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-WS-NA 🏴‍☠️ NA-104.17.213.... #2'
+  name: '🔒 VM-TCP-NONE 🇹🇷 TR-193.31.116... #1'
+  network: tcp
+  port: 58679
+  server: 193.31.116.198
+  tls: false
+  type: vmess
+  uuid: c3ae4baf-8470-41a2-f6a2-0bc576409263
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇮🇳 IN-94.136.184... #2'
+  network: tcp
+  port: 39253
+  server: 94.136.184.155
+  tls: false
+  type: vmess
+  uuid: 69b49a35-cf55-4d14-9f2b-d7ce3a0db72e
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇳🇴 NO-95.164.38.6:... #1'
+  network: tcp
+  port: '21938'
+  server: 95.164.38.6
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 583bebef-3e0b-4c85-ba80-39e07ce35ad9
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17... #1'
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🏴‍☠️ NA-104.17.213.... #1'
   network: ws
   port: '2082'
   server: 104.17.213.241
@@ -375,6 +337,49 @@ proxies:
     headers:
       Host: 100-6-81-226.s1.db-link02.top
     path: /dabai.in104.20.8.162
+- alterId: 2
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1... #4'
+  network: ws
+  port: 8101
+  server: 112.120.125.105
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 7cc63413-sv0xs0-tcmken-19les.wtt5.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.138.47... #1'
+  network: tcp
+  port: '22839'
+  server: 45.12.138.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101... #1'
+  network: tcp
+  port: '38088'
+  server: 2.56.125.101
+  tls: false
+  type: vmess
+  uuid: 1275ea18-bc9c-4bcb-b3fd-fee70272e143
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇧🇷 BR-95.164.4.140... #1'
+  network: tcp
+  port: '52937'
+  server: 95.164.4.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71820e62-7b99-4ed9-a836-1e0f814c33a1
 - alterId: 0
   cipher: auto
   name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.6.2...
@@ -391,133 +396,14 @@ proxies:
     path: /rbqqvws
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.23....
-  network: ws
-  port: 2096
-  server: 104.21.23.210
-  servername: rak1-d.932.pp.ua
-  tls: true
-  type: vmess
-  uuid: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
-  ws-opts:
-    headers:
-      Host: rak1-d.932.pp.ua
-    path: /rak1-d.932.pp.ua
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
-  name: '🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172.... #1'
-  network: grpc
-  port: '15145'
-  server: 88.198.172.25
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇦 UA-45.137.155.4... #1'
+  name: '🔒 VM-TCP-NA 🇳🇱 NL-45.12.145.11... #2'
   network: tcp
-  port: '17646'
-  server: 45.137.155.45
+  port: '46290'
+  server: 45.12.145.111
   servername: ''
   tls: false
   type: vmess
-  uuid: 82734724-8c06-4c2e-9cff-b34776fe1757
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.155...
-  network: ws
-  port: '2053'
-  server: 104.16.155.10
-  servername: cloudflare.182682.xyz
-  tls: true
-  type: vmess
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: sg1.pavo.eu.org
-    path: /sg1vmess
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14... #1'
-  network: tcp
-  port: '550'
-  server: 20.78.127.141
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇮🇷 IR-78.157.44.90... #1'
-  network: tcp
-  port: '28690'
-  server: 78.157.44.90
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 61869ae6-220b-4014-9bd9-ab850414c228
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🔒 VM-GRPC-TLS 🏴‍☠️ NA-108.162.... #1'
-  network: grpc
-  port: '2087'
-  server: 108.162.192.154
-  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea1207148113.2-senator.info
-  tls: true
-  type: vmess
-  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #3'
-  network: ws
-  port: '20015'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: e3049875-1be3-4233-9c9b-a9490612fbb5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1... #1'
-  network: ws
-  port: 12269
-  server: 2.58.87.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-154.26.134.1... #1'
-  network: tcp
-  port: '14129'
-  server: 154.26.134.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7798e09-3090-4366-ae80-f18afdaabf4f
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1... #1'
-  network: tcp
-  port: '53144'
-  server: 62.146.232.153
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
+  uuid: 1b41153e-c4d4-431b-83eb-10472f869f93
 - alterId: 0
   cipher: auto
   name: '🔒 VM-TCP-NONE 🇫🇮 FI-135.181.94... #1'
@@ -529,470 +415,17 @@ proxies:
   uuid: ccf950d1-fd1a-447c-8dad-c2f0c9256d18
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.44....
-  network: ws
-  port: '8443'
-  server: 104.21.44.185
-  servername: manager.onetwothree123.ir
-  tls: true
-  type: vmess
-  uuid: 167cb343-2b57-4efe-a350-2b973bc3786e
-  ws-opts:
-    headers:
-      Host: manager.onetwothree123.ir
-    path: /🆔@M3HDIO1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇦🇺 AU-154.26.153... #2'
+  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.133.43... #1'
   network: tcp
-  port: 21759
-  server: 154.26.153.161
-  tls: false
-  type: vmess
-  uuid: e5f16fad-f9c3-452b-8e71-bc9504e29fc9
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇳🇱 NL-45.8.145.145... #1'
-  network: tcp
-  port: '30520'
-  server: 45.8.145.145
-  tls: false
-  type: vmess
-  uuid: 3038024f-3a34-4228-b61c-d741b2fbec8f
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
+  port: '28444'
+  server: 45.12.133.43
   servername: ''
   tls: false
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.82.252.99... #1'
-  network: tcp
-  port: '50326'
-  server: 45.82.252.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 71323bdd-8dec-4f52-8449-5af11b90322e
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇭🇰 HK-35.220.230.2... #1'
-  network: tcp
-  port: '30251'
-  server: 35.220.230.251
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15... #1'
-  network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178... #1'
-  network: tcp
-  port: 5008
-  server: 147.45.178.63
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #9'
-  network: tcp
-  port: '45245'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.2... #2'
-  network: tcp
-  port: '51566'
-  server: 84.247.147.243
-  tls: false
-  type: vmess
-  uuid: ae6ae977-17f2-43fd-a336-20b3b3a9e791
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇲🇾 MY-101.99.91.23... #1'
-  network: tcp
-  port: '36700'
-  server: 101.99.91.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 127ff43c-1851-4b2d-ba8c-6afba21ec04d
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.6... #1'
-  network: tcp
-  port: '15828'
-  server: 62.146.233.66
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8b9cf3dc-c282-424f-a590-c45c9a36d3f9
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇸🇬 SG-194.233.87... #2'
-  network: tcp
-  port: 56667
-  server: 194.233.87.148
-  tls: false
-  type: vmess
-  uuid: 678fbc25-f63e-4e59-b859-f3c9cbc6ea3b
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.234.3... #2'
-  network: tcp
-  port: '45317'
-  server: 46.250.234.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b2836369-220b-4840-80c4-8cf904c735ee
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇿 UZ-92.223.44.16... #1'
-  network: tcp
-  port: '20118'
-  server: 92.223.44.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e9f666fb-12d9-4f1b-e9e6-3e48e615e714
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-XHTTP-NA 🏴‍☠️ NA-104.21.1... #1'
-  network: xhttp
-  port: '8880'
-  server: 104.21.16.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b447c934-c80c-4239-9274-14eb7b2654c2
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7... #2'
-  network: tcp
-  port: '44127'
-  server: 62.146.233.79
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.1... #2'
-  network: tcp
-  port: '29999'
-  server: 46.250.237.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b31fc134-978e-4176-8579-8107d6a0cede
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9... #1'
-  network: tcp
-  port: '30562'
-  server: 15.204.248.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-TLS 🇺🇸 US-192.9.148.64... #1'
-  network: ws
-  port: '8088'
-  server: 192.9.148.64
-  servername: ora.aihi.uk
-  tls: true
-  type: vmess
-  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
-  ws-opts:
-    headers:
-      Host: ora.aihi.uk
-    path: /ray
-- alterId: 64
-  cipher: auto
-  name: '🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23... #1'
-  network: ws
-  port: 47778
-  server: 38.48.227.231
-  servername: www.42266451.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.42266451.xyz
-    path: /path/240811062813
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17... #1'
-  network: tcp
-  port: '26521'
-  server: 45.82.246.173
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-5.180.30.146... #2'
-  network: tcp
-  port: '27773'
-  server: 5.180.30.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #10'
-  network: tcp
-  port: '45231'
-  server: 38.114.114.241
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #6'
-  network: tcp
-  port: '53802'
-  server: 103.106.229.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 803c04ae-2da6-434b-a692-8fd75e5964d7
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🏴‍☠️ NA-104.21.238.... #1'
-  network: ws
-  port: 2086
-  server: 104.21.238.166
-  tls: false
-  type: vmess
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  ws-opts:
-    headers:
-      Host: w58.164748.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇳🇴 NO-95.164.38.6:... #1'
-  network: tcp
-  port: '21938'
-  server: 95.164.38.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 583bebef-3e0b-4c85-ba80-39e07ce35ad9
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇮🇷 IR-5.160.144.12... #1'
-  network: tcp
-  port: '2058'
-  server: 5.160.144.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7d08f7d4-7f50-4788-800c-fabf91939e79
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2... #1'
-  network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #7'
-  network: tcp
-  port: '50266'
-  server: 103.106.229.54
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-154.26.131.3... #2'
-  network: tcp
-  port: '42654'
-  server: 154.26.131.39
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e17f46b5-e224-48c9-965f-e24f1dfc2418
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🏴‍☠️ NA-172.67.158....
-  network: ws
-  port: '80'
-  server: 172.67.158.71
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  ws-opts:
-    headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇲🇽 MX-79.127.229.5... #1'
-  network: tcp
-  port: 18000
-  server: 79.127.229.54
-  tls: false
-  type: vmess
-  uuid: fa1897db-1925-4c86-a495-939a959af900
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.138.47... #1'
-  network: tcp
-  port: '22839'
-  server: 45.12.138.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2858a404-d0ca-4d67-80a6-ce8e95e383ff
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NONE 🇩🇪 DE-85.215.233...
-  network: tcp
-  port: 16151
-  server: 85.215.233.179
-  tls: false
-  type: vmess
-  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74... #2'
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7... #1'
-  network: ws
-  port: 33202
-  server: 120.232.17.70
-  servername: yd2.ainivp.com
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...
-  network: ws
-  port: 22019
-  server: 195.58.49.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8392a60c-32fa-44f4-85d1-05b8c63dbde3
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇺🇸 US-193.39.9.61:1...
-  network: ws
-  port: '13909'
-  server: 193.39.9.61
-  tls: false
-  type: vmess
-  uuid: a24e44ff-2737-45a7-d0e2-e4ef93762741
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1... #5'
-  network: tcp
-  port: '33754'
-  server: 84.247.146.189
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 45f4f565-8c78-4906-a5b9-08ea9075cd31
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇳🇱 NL-89.23.103.... #1'
-  network: tcp
-  port: 5009
-  server: 89.23.103.242
-  tls: false
-  type: vmess
-  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇹🇷 TR-193.31.116... #1'
-  network: tcp
-  port: 58679
-  server: 193.31.116.198
-  tls: false
-  type: vmess
-  uuid: c3ae4baf-8470-41a2-f6a2-0bc576409263
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
-  network: ws
-  port: '10805'
-  server: 18.162.51.82
-  servername: kahk.kia-ai.com
-  tls: true
-  type: vmess
-  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
-  ws-opts:
-    headers:
-      Host: kahk.kia-ai.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #8'
-  network: tcp
-  port: '38233'
-  server: 103.106.229.132
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 537a199c-c1f1-4b6b-a7dd-cd00eb1babfc
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
+  name: '🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9... #1'
   network: ws
   port: '2052'
   server: 185.146.173.91
@@ -1006,145 +439,57 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.4... #2'
+  name: '🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15... #1'
   network: tcp
-  port: '16369'
-  server: 46.250.237.48
+  port: '20779'
+  server: 45.12.114.15
   servername: ''
   tls: false
   type: vmess
-  uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-TCP-NONE 🇺🇸 US-89.213.184...
-  network: tcp
-  port: 26298
-  server: 89.213.184.198
-  tls: false
-  type: vmess
-  uuid: 180d7022-9cf9-4bbc-b53c-ab28af2cbc3f
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇮🇳 IN-94.136.184... #2'
-  network: tcp
-  port: 38872
-  server: 94.136.184.156
-  tls: false
-  type: vmess
-  uuid: 220732cc-9e43-4453-83f1-c9435be25b5b
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NA 🇭🇷 HR-89.18.56.249...
-  network: tcp
-  port: '180'
-  server: 89.18.56.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇭🇰 HK-45.145.228.91... #1'
+  name: '🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #3'
   network: ws
-  port: '16892'
-  server: 45.145.228.91
-  servername: ''
+  port: '23077'
+  server: 45.147.201.231
   tls: false
   type: vmess
-  uuid: 2426b3d5-f377-44ca-a1d2-c527ef52c67f
+  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-RAW-NA 🇸🇬 SG-194.233.72.2... #1'
-  network: raw
-  port: '27575'
-  server: 194.233.72.228
-  tls: false
-  type: vmess
-  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.159... #1'
-  network: ws
-  port: 2083
-  server: 172.67.159.56
-  servername: fk2-1.890617.xyz
-  tls: true
-  type: vmess
-  uuid: feddc326-da70-4fab-95a9-8f98be6da633
-  ws-opts:
-    headers:
-      Host: fk2-bash.890617.xyz
-    path: /fj2-1
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NONE 🇦🇺 AU-154.26.153... #3'
+  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11... #1'
   network: tcp
-  port: 28686
-  server: 154.26.153.173
-  tls: false
-  type: vmess
-  uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0... #1'
-  network: tcp
-  port: '48160'
-  server: 15.204.249.0
+  port: '27699'
+  server: 91.194.11.118
   servername: ''
   tls: false
   type: vmess
-  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇨🇳 CN-112.132.215.... #1'
+  name: '🔒 VM-TCP-NA 🇳🇱 NL-45.8.145.145... #1'
   network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.150.1... #2'
-  network: tcp
-  port: '36141'
-  server: 84.247.150.177
+  port: '30520'
+  server: 45.8.145.145
   servername: ''
   tls: false
   type: vmess
-  uuid: d31ee52f-b6e4-4db8-9c95-98855ec823cc
+  uuid: 3038024f-3a34-4228-b61c-d741b2fbec8f
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NONE 🇳🇱 NL-46.8.68.21... #1'
+  name: '🔒 VM-TCP-NA 🇯🇵 JP-103.214.168.... #2'
   network: tcp
-  port: 24529
-  server: 46.8.68.212
-  tls: false
-  type: vmess
-  uuid: 70c6cbaa-a395-4014-8286-b447d1f316c3
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101... #1'
-  network: tcp
-  port: '38088'
-  server: 2.56.125.101
+  port: '57796'
+  server: 103.214.168.242
   servername: ''
   tls: false
   type: vmess
-  uuid: 1275ea18-bc9c-4bcb-b3fd-fee70272e143
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #9'
-  network: tcp
-  port: '14427'
-  server: 103.106.229.207
-  tls: false
-  type: vmess
-  uuid: c01988cc-b0b1-4026-bb9b-9152ff19c145
+  uuid: 9bc0bd8d-3a4f-4991-dfed-d71934e20335
 - alterId: 0
   cipher: auto
   name: '🔒 VM-WS-NA 🇸🇬 SG-103.177.76.79... #1'
@@ -1161,39 +506,89 @@ proxies:
     path: /nmkj
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23... #4'
+  name: '🔒 VM-WS-NA 🇺🇸 US-193.39.9.61:1... #1'
   network: ws
-  port: '23077'
-  server: 45.147.201.231
+  port: '13909'
+  server: 193.39.9.61
   tls: false
   type: vmess
-  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
+  uuid: a24e44ff-2737-45a7-d0e2-e4ef93762741
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NA 🇧🇷 BR-95.164.4.140... #1'
+  name: '🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3... #1'
   network: tcp
-  port: '52937'
-  server: 95.164.4.140
+  port: '59003'
+  server: 183.236.51.36
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.149.7... #2'
+  network: tcp
+  port: '47211'
+  server: 84.247.149.77
   servername: ''
   tls: false
   type: vmess
-  uuid: 71820e62-7b99-4ed9-a836-1e0f814c33a1
+  uuid: fb674260-1c21-4f99-8bd0-3d1d341c6771
 - alterId: 0
   cipher: auto
-  name: '🔒 VM-TCP-NONE 🇮🇳 IN-94.136.184... #3'
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.6... #2'
   network: tcp
-  port: 39253
-  server: 94.136.184.155
+  port: '54179'
+  server: 84.247.147.67
+  servername: ''
   tls: false
   type: vmess
-  uuid: 69b49a35-cf55-4d14-9f2b-d7ce3a0db72e
+  uuid: d143ebbc-7825-4b43-a55e-f11cb153bd5b
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-NA 🇺🇸 US-129.153.193.2...
+  name: '🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178... #1'
+  network: tcp
+  port: 5008
+  server: 147.45.178.63
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🏴‍☠️ NA-104.21.238.... #1'
+  network: ws
+  port: 2086
+  server: 104.21.238.166
+  tls: false
+  type: vmess
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: w58.164748.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-15.204.249.0... #1'
+  network: tcp
+  port: '48160'
+  server: 15.204.249.0
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇮🇷 IR-5.160.144.12... #1'
+  network: tcp
+  port: '2058'
+  server: 5.160.144.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7d08f7d4-7f50-4788-800c-fabf91939e79
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇺🇸 US-129.153.193.2... #2'
   network: ws
   port: '23451'
   server: 129.153.193.209
@@ -1206,6 +601,612 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🔒 VM-TCP-NA 🇳🇱 NL-45.89.244.40...
+  network: tcp
+  port: '11577'
+  server: 45.89.244.40
+  tls: false
+  type: vmess
+  uuid: 79cc997e-d580-4f72-b7fc-f6669c9462e8
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.12.138.82... #1'
+  network: tcp
+  port: '54757'
+  server: 45.12.138.82
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-185.189.32.1... #2'
+  network: tcp
+  port: '22702'
+  server: 185.189.32.179
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 483a1cce-af9b-4416-d7c6-10b9b63be66f
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇦🇺 AU-154.26.153... #2'
+  network: tcp
+  port: 21759
+  server: 154.26.153.161
+  tls: false
+  type: vmess
+  uuid: e5f16fad-f9c3-452b-8e71-bc9504e29fc9
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇾 CY-45.82.252.99... #1'
+  network: tcp
+  port: '50326'
+  server: 45.82.252.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71323bdd-8dec-4f52-8449-5af11b90322e
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇳🇱 NL-46.8.68.21... #1'
+  network: tcp
+  port: 24529
+  server: 46.8.68.212
+  tls: false
+  type: vmess
+  uuid: 70c6cbaa-a395-4014-8286-b447d1f316c3
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.234.3... #2'
+  network: tcp
+  port: '45317'
+  server: 46.250.234.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2836369-220b-4840-80c4-8cf904c735ee
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:1... #1'
+  network: ws
+  port: 12269
+  server: 2.58.87.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-15.204.248.9... #1'
+  network: tcp
+  port: '30562'
+  server: 15.204.248.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82466715-6a58-4046-a363-a0d18e5b2ab4
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.150.1... #2'
+  network: tcp
+  port: '36141'
+  server: 84.247.150.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d31ee52f-b6e4-4db8-9c95-98855ec823cc
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇳🇱 NL-157.245.73.1... #1'
+  network: tcp
+  port: '2088'
+  server: 157.245.73.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d0a6f712-44c1-1688-dc65-f34f9afb0556
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇩🇪 DE-85.215.233... #1'
+  network: tcp
+  port: 16151
+  server: 85.215.233.179
+  tls: false
+  type: vmess
+  uuid: 44ba7053-733f-4d35-9ba4-3457ee608f64
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16... #1'
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇯🇵 JP-20.78.127.14... #1'
+  network: tcp
+  port: '550'
+  server: 20.78.127.141
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e11e992-c3a4-45fb-bb67-5f4f42fcd551
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇳 CN-120.199.83.2... #1'
+  network: tcp
+  port: '45260'
+  server: 120.199.83.240
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3888997d-dca4-40ba-92e4-06b6918c9643
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇭🇰 HK-35.220.230.2... #1'
+  network: tcp
+  port: '30251'
+  server: 35.220.230.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🇭🇰 HK-103.118.40.2... #1'
+  network: ws
+  port: 10807
+  server: 103.118.40.200
+  servername: cnhka.kia-ai.com
+  tls: true
+  type: vmess
+  uuid: c36fc804-7fc7-4fea-b1d7-cc1e334b1c56
+  ws-opts:
+    headers:
+      Host: cnhka.kia-ai.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇳🇱 NL-89.23.103.... #1'
+  network: tcp
+  port: 5009
+  server: 89.23.103.242
+  tls: false
+  type: vmess
+  uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147... #1'
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: JbiB8V66V78Hf5bivfsis8vH
+  name: '🔒 VM-GRPC-NA 🇩🇪 DE-88.198.172.... #1'
+  network: grpc
+  port: '15145'
+  server: 88.198.172.25
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7eb472e-dc83-49d5-be5e-82a79a2124ee
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇿 UZ-92.223.44.16... #1'
+  network: tcp
+  port: '20118'
+  server: 92.223.44.168
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e9f666fb-12d9-4f1b-e9e6-3e48e615e714
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.233.7... #2'
+  network: tcp
+  port: '44127'
+  server: 62.146.233.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae0fa822-58bb-483f-9af5-d417d8c23b21
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-62.146.232.1... #1'
+  network: tcp
+  port: '53144'
+  server: 62.146.232.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 13e13a3e-e981-4eea-a9fc-13e50628fd9b
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇮🇳 IN-98.70.49.1... #1'
+  network: tcp
+  port: 42473
+  server: 98.70.49.107
+  tls: false
+  type: vmess
+  uuid: 63b5b76d-93f4-4568-a764-c4b967472960
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.146.1... #5'
+  network: tcp
+  port: '33754'
+  server: 84.247.146.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 45f4f565-8c78-4906-a5b9-08ea9075cd31
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇭 CH-186.190.215.... #1'
+  network: tcp
+  port: '22324'
+  server: 186.190.215.93
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-46.250.237.4... #2'
+  network: tcp
+  port: '16369'
+  server: 46.250.237.48
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇲🇽 MX-79.127.229.5... #2'
+  network: tcp
+  port: 18000
+  server: 79.127.229.54
+  tls: false
+  type: vmess
+  uuid: fa1897db-1925-4c86-a495-939a959af900
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7... #1'
+  network: ws
+  port: 33202
+  server: 120.232.17.70
+  servername: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.155... #1'
+  network: ws
+  port: '2053'
+  server: 104.16.155.10
+  servername: cloudflare.182682.xyz
+  tls: true
+  type: vmess
+  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
+  ws-opts:
+    headers:
+      Host: sg1.pavo.eu.org
+    path: /sg1vmess
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:... #1'
+  network: ws
+  port: 22019
+  server: 195.58.49.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8392a60c-32fa-44f4-85d1-05b8c63dbde3
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #7'
+  network: tcp
+  port: '50266'
+  server: 103.106.229.54
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🏴‍☠️ NA-172.67.159... #1'
+  network: ws
+  port: 2083
+  server: 172.67.159.56
+  servername: fk2-1.890617.xyz
+  tls: true
+  type: vmess
+  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  ws-opts:
+    headers:
+      Host: fk2-bash.890617.xyz
+    path: /fj2-1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.23.... #1'
+  network: ws
+  port: 2096
+  server: 104.21.23.210
+  servername: rak1-d.932.pp.ua
+  tls: true
+  type: vmess
+  uuid: d2fbbad7-3d1b-4bfb-fe4a-27bd45e25df0
+  ws-opts:
+    headers:
+      Host: rak1-d.932.pp.ua
+    path: /rak1-d.932.pp.ua
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇮🇷 IR-78.157.44.90... #1'
+  network: tcp
+  port: '28690'
+  server: 78.157.44.90
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 61869ae6-220b-4014-9bd9-ab850414c228
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-NA 🇭🇰 HK-45.145.228.91...
+  network: ws
+  port: '16892'
+  server: 45.145.228.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2426b3d5-f377-44ca-a1d2-c527ef52c67f
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇺🇸 US-51.81.203.... #1'
+  network: tcp
+  port: '28860'
+  server: 51.81.203.57
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1784497d-03a1-40bb-bb8b-de4ffac7c59c
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #1'
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-84.247.147.2... #2'
+  network: tcp
+  port: '51566'
+  server: 84.247.147.243
+  tls: false
+  type: vmess
+  uuid: ae6ae977-17f2-43fd-a336-20b3b3a9e791
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-XHTTP-NA 🏴‍☠️ NA-104.21.1... #1'
+  network: xhttp
+  port: '8880'
+  server: 104.21.16.1
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b447c934-c80c-4239-9274-14eb7b2654c2
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-141.101.12...
+  network: ws
+  port: 8443
+  server: 141.101.120.239
+  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  ws-opts:
+    headers:
+      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇦 UA-45.137.155.4... #1'
+  network: tcp
+  port: '17646'
+  server: 45.137.155.45
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82734724-8c06-4c2e-9cff-b34776fe1757
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #8'
+  network: tcp
+  port: '45245'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-RAW-NA 🇸🇬 SG-194.233.72.2... #1'
+  network: raw
+  port: '27575'
+  server: 194.233.72.228
+  tls: false
+  type: vmess
+  uuid: 16509262-dbe2-43ba-99ce-07913d2a18b4
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1... #1'
+  network: tcp
+  port: '33940'
+  server: 37.221.125.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇰🇷 KR-45.82.246.17... #1'
+  network: tcp
+  port: '26521'
+  server: 45.82.246.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cff7001e-3a74-43e8-bfd8-a7af9630a58b
+- alterId: 64
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🇺🇸 US-38.48.227.23... #1'
+  network: ws
+  port: 47778
+  server: 38.48.227.231
+  servername: www.42266451.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.42266451.xyz
+    path: /path/240811062813
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #9'
+  network: tcp
+  port: '45291'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-38.114.114.2... #10'
+  network: tcp
+  port: '45231'
+  server: 38.114.114.241
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇦🇪 AE-217.60.239... #1'
+  network: tcp
+  port: '26550'
+  server: 217.60.239.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: de232ad7-4d26-4d59-a0f4-ee07f166268a
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇸🇬 SG-194.233.87... #2'
+  network: tcp
+  port: 56667
+  server: 194.233.87.148
+  tls: false
+  type: vmess
+  uuid: 678fbc25-f63e-4e59-b859-f3c9cbc6ea3b
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #8'
+  network: tcp
+  port: '53802'
+  server: 103.106.229.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 803c04ae-2da6-434b-a692-8fd75e5964d7
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇮🇳 IN-94.136.184... #3'
+  network: tcp
+  port: 38872
+  server: 94.136.184.156
+  tls: false
+  type: vmess
+  uuid: 220732cc-9e43-4453-83f1-c9435be25b5b
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇨🇳 CN-112.132.215.... #1'
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NONE 🇦🇺 AU-154.26.153... #3'
+  network: tcp
+  port: 28686
+  server: 154.26.153.173
+  tls: false
+  type: vmess
+  uuid: 6df7d56f-4953-4a10-be2e-a88cc9f94e48
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-NA 🇸🇬 SG-140.245.46.68...
+  network: ws
+  port: '23452'
+  server: 140.245.46.68
+  tls: false
+  type: vmess
+  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-103.106.229.... #9'
+  network: tcp
+  port: '50644'
+  server: 103.106.229.238
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0d90685-7599-485c-944b-f36b48d2f88e
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇸🇬 SG-154.26.131.3... #2'
+  network: tcp
+  port: '42654'
+  server: 154.26.131.39
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e17f46b5-e224-48c9-965f-e24f1dfc2418
+- alterId: 0
+  cipher: auto
   name: '👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ... #1'
   network: tcp
   port: 8080
@@ -1213,4 +1214,4 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: aaccbab-caba-abca-acbd-cbaababcbcac
+  uuid: ccbabaa-aacb-acab-bcda-acbacbbccbaa
