@@ -328,7 +328,7 @@ def unique_sources(sources: list[Source]):
 
     def unique_name(data: dict[str, Any], max_len=30) -> None:
         for word in [w for ws in settings.banned_words for w in b64decodes(ws).split()]:
-            data["name"] = data["name"].replace(word, "*" * len(word))
+            data["name"] = str(data["name"]).replace(word, "*" * len(word))
 
         if len(data["name"]) > max_len:
             data["name"] = data["name"][:max_len] + "..."

@@ -1,5 +1,5 @@
-# Update: 2025-04-23 22:04
-# Source 58 (https://t.me/s/VmessProtocol), 26
+# Update: 2025-04-25 08:45
+# Source 58 (https://t.me/s/VmessProtocol), 29
 proxies:
 - name: (@VmessProtocol)برای
   network: tcp
@@ -104,13 +104,21 @@ proxies:
   ws-opts:
     headers:
       Host: canva.com
-- name: '(@VmessProtocol)برای #23'
-  network: grpc
-  port: 16072
-  server: 188.34.201.88
-  tls: false
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '(@VmessProtocol)برای #24'
+  network: ws
+  port: 443
+  server: 104.21.73.239
+  servername: DigITALsciENTIfiCrESeARCHGRoup.IR
+  tls: true
   type: vless
-  uuid: 82a3a5b5-f87a-4fad-a45f-e45aaafbd8ac
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /4McLR3NKFOydbxDs/MTguMTk5LjIxMy4yMDE
 - name: '(@VmessProtocol)برای #25'
   network: tcp
   port: 26745
@@ -215,6 +223,19 @@ proxies:
   tls: false
   type: vless
   uuid: 55e79d77-c2ea-40ec-b10e-8deb79972c37
+- client-fingerprint: chrome
+  name: '(@VmessProtocol)برای #53'
+  network: ws
+  port: 443
+  server: ns1.cloudflare.com
+  servername: cr7.medicaldream.ir
+  tls: true
+  type: vless
+  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
+  ws-opts:
+    headers:
+      Host: cr7.medicaldream.ir
+    path: /?ed=2550?/
 - name: 'TELEGRAM-MARAMBASHI_MARAMBASHI... #2'
   network: ws
   port: 8443
@@ -252,6 +273,20 @@ proxies:
   network: grpc
   port: 8880
   server: 638804002452812281.oslo-shleprx-aaaj.info
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '(@VmessProtocol)برای #67'
+  network: grpc
+  port: 8880
+  server: 84.32.9.52
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '(@VmessProtocol)برای #76'
+  network: grpc
+  port: 8880
+  server: 84.32.25.106
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012

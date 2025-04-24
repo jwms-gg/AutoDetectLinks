@@ -1,9 +1,33 @@
-# Update: 2025-04-23 22:30
-# Problem proxies, 15
+# Update: 2025-04-25 09:10
+# Problem proxies, 12
 proxies:
 - _extra:
-    error: 'time="2025-04-23T22:15:16.150708955+08:00" level=fatal msg="Parse config
-      error: proxy 12: ss krg2jyul092d.librekit.com:56723 cipher: 2022-blake3-aes-256-gcm
+    error: 'time="2025-04-25T08:55:10.576354435+08:00" level=fatal msg="Parse config
+      error: proxy 57: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: '🔒 #1129'
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.96.1
+  type: ss
+- _extra:
+    error: 'time="2025-04-25T08:55:13.793031253+08:00" level=fatal msg="Parse config
+      error: proxy 265: ss 157.180.30.213:56723 cipher: 2022-blake3-aes-256-gcm initialize
+      error: missing password"
+
+      '
+  cipher: 2022-blake3-aes-256-gcm
+  name: '🔒 #1532'
+  password: ''
+  port: '56723'
+  server: 157.180.30.213
+  type: ss
+- _extra:
+    error: 'time="2025-04-25T08:55:57.848848031+08:00" level=fatal msg="Parse config
+      error: proxy 98: ss krg2jyul092d.librekit.com:56723 cipher: 2022-blake3-aes-256-gcm
       initialize error: missing password"
 
       '
@@ -14,8 +38,8 @@ proxies:
   server: krg2jyul092d.librekit.com
   type: ss
 - _extra:
-    error: 'time="2025-04-23T22:15:19.391742834+08:00" level=fatal msg="Parse config
-      error: proxy 12: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-04-25T08:56:01.079981595+08:00" level=fatal msg="Parse config
+      error: proxy 98: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
@@ -26,63 +50,41 @@ proxies:
   server: 188.34.194.165
   type: ss
 - _extra:
-    error: 'time="2025-04-23T22:16:03.695137725+08:00" level=fatal msg="Parse config
-      error: proxy 540: key ''cipher'' missing"
+    error: 'time="2025-04-25T09:01:32.425613329+08:00" level=fatal msg="Parse config
+      error: proxy 549: invalid REALITY short ID"
 
       '
-  alterId: 0
-  cipher: null
-  name: 🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
-  network: ws
-  port: '10805'
-  server: 18.162.51.82
-  servername: kahk.kia-ai.com
-  tls: true
-  type: vmess
-  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
-  ws-opts:
-    headers:
-      Host: kahk.kia-ai.com
-    path: /
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: '🔒 VL-TCP-RLT 🇺🇸 US-185.122.166... #3'
+  network: tcp
+  port: 38120
+  reality-opts:
+    public-key: qdki5D30_Ilz2-eR2YN-mkH9pCtUK2OtTdXNsh9Ikm8
+    short-id: 0378
+  server: 185.122.166.216
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 684aaaf5-77b1-41db-972a-700df92f2569
 - _extra:
-    error: 'time="2025-04-23T22:20:12.833940658+08:00" level=fatal msg="Parse config
-      error: proxy 150: ss 157.180.30.213:56723 cipher: 2022-blake3-aes-256-gcm initialize
-      error: missing password"
+    error: 'time="2025-04-25T09:01:35.737758052+08:00" level=fatal msg="Parse config
+      error: proxy 579: invalid REALITY public key"
 
       '
-  cipher: 2022-blake3-aes-256-gcm
-  name: 🔒 SS-TCP-NA 🇫🇮 FI-157.180.30.2...
-  password: ''
-  port: '56723'
-  server: 157.180.30.213
-  type: ss
+  name: '🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwB
+  server: 213.202.223.233
+  servername: 02020.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - _extra:
-    error: 'time="2025-04-23T22:20:16.092225211+08:00" level=fatal msg="Parse config
-      error: proxy 165: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.32....
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.32.1
-  type: ss
-- _extra:
-    error: 'time="2025-04-23T22:20:19.344377865+08:00" level=fatal msg="Parse config
-      error: proxy 179: ss 104.21.16.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.16....
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.16.1
-  type: ss
-- _extra:
-    error: 'time="2025-04-23T22:20:22.600692684+08:00" level=fatal msg="Parse config
-      error: proxy 490: invalid REALITY short ID"
+    error: 'time="2025-04-25T09:02:19.974848441+08:00" level=fatal msg="Parse config
+      error: proxy 42: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
@@ -98,131 +100,76 @@ proxies:
   type: vless
   uuid: 81127aa8-6b03-44b0-b51b-28ec670d1402
 - _extra:
-    error: 'time="2025-04-23T22:20:25.858822969+08:00" level=fatal msg="Parse config
-      error: proxy 503: invalid REALITY public key"
-
-      '
-  name: 🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223...
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwB
-  server: 213.202.223.233
-  servername: 02020.sbs
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- _extra:
-    error: 'time="2025-04-23T22:21:10.169245110+08:00" level=fatal msg="Parse config
-      error: proxy 39: invalid REALITY short ID"
-
-      '
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: '🔒 VL-TCP-RLT 🇺🇸 US-185.122.166... #8'
-  network: tcp
-  port: 38120
-  reality-opts:
-    public-key: qdki5D30_Ilz2-eR2YN-mkH9pCtUK2OtTdXNsh9Ikm8
-    short-id: 0378
-  server: 185.122.166.216
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 684aaaf5-77b1-41db-972a-700df92f2569
-- _extra:
-    error: 'time="2025-04-23T22:23:16.361761699+08:00" level=fatal msg="Parse config
-      error: proxy 2: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
+    error: 'time="2025-04-25T09:03:04.352885464+08:00" level=fatal msg="Parse config
+      error: proxy 358: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
       invalid syntax"
 
       '
   cipher: '{"add"'
-  name: 'unnamed #43'
+  name: 'unnamed #30'
   password: ''
   port: '"2"}'
   server: oneclickvpnkeys","scy":"auto","sni":"www.14601176.xyz","tls":"tls","type":"","v"
   type: ss
 - _extra:
-    error: 'time="2025-04-23T22:23:19.682528037+08:00" level=fatal msg="Parse config
-      error: proxy 2: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
+    error: 'time="2025-04-25T09:03:07.622276332+08:00" level=fatal msg="Parse config
+      error: proxy 358: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
       invalid syntax"
 
       '
   cipher: '{"add"'
-  name: 'unnamed #44'
+  name: 'unnamed #31'
   password: ''
   port: '"2"}'
   server: ✅","scy":"auto","sni":"kapelleng.com","tls":"tls","type":"---","v"
   type: ss
 - _extra:
-    error: 'time="2025-04-23T22:25:25.712405079+08:00" level=fatal msg="Parse config
-      error: proxy 381: ss 172.67.12.88:443 obfs mode error: "
+    error: 'time="2025-04-25T09:05:54.724459814+08:00" level=fatal msg="Parse config
+      error: proxy 356: ss 104.16.96.41:443 obfs mode error: "
 
       '
   cipher: aes-128-gcm
-  name: Los Angeles|Github搜索TrojanLink...
-  password: 83XvX4Vo%*3a
+  name: Frankfurt|Github搜索TrojanLinks
+  password: SwPfc22G83_s
   plugin: v2ray-plugin
   plugin-opts:
-    host: sommd.site
+    host: v3.fjdd.shop
     mode: ''
     mux: false
     path: ''
     skip-cert-verify: true
     tls: true
   port: 443
-  server: 172.67.12.88
+  server: 104.16.96.41
   type: ss
 - _extra:
-    error: 'time="2025-04-23T22:26:10.064284803+08:00" level=fatal msg="Parse config
-      error: proxy 63: ss 172.67.192.10:443 obfs mode error: "
+    error: 'time="2025-04-25T09:09:21.023035359+08:00" level=fatal msg="Parse config
+      error: proxy 136: ss 104.16.88.23:443 obfs mode error: "
 
       '
   cipher: aes-128-gcm
-  name: 🇯🇵 Tokyo|Github搜索TrojanLinks
-  password: g12sQi#ss#&1
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: j1.pplo.online
-    mode: ''
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: true
-  port: 443
-  server: 172.67.192.10
-  type: ss
-- _extra:
-    error: 'time="2025-04-23T22:27:35.155928869+08:00" level=fatal msg="Parse config
-      error: proxy 402: ss 47.76.185.99:80 obfs mode error: "
-
-      '
-  cipher: aes-128-gcm
-  name: "\U0001F1FA\U0001F1F8 TG频道:@hkaa0▓美国\r_3"
-  password: a-wym4ovY4Yw
-  plugin: obfs
-  plugin-opts:
-    host: ''
-    mode: ''
-  port: 80
-  server: 47.76.185.99
-  type: ss
-- _extra:
-    error: 'time="2025-04-23T22:28:19.307909180+08:00" level=fatal msg="Parse config
-      error: proxy 276: ss 61.224.72.195:443 obfs mode error: "
-
-      '
-  cipher: aes-128-gcm
-  name: 🇨🇳 Taiwan|Github搜索TrojanLinks
+  name: 🇨🇳 Taiwan|Github搜索TrojanLinks ...
   password: oiwym4ovI4Yb
   plugin: v2ray-plugin
   plugin-opts:
-    host: t1.kddns.xyz
+    host: t2.kddns.xyz
     mode: ''
     mux: false
     path: ''
     skip-cert-verify: true
     tls: true
   port: 443
-  server: 61.224.72.195
+  server: 104.16.88.23
+  type: ss
+- _extra:
+    error: 'time="2025-04-25T09:10:05.086194381+08:00" level=fatal msg="Parse config
+      error: proxy 107: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: '🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.48.... #1'
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.48.1
   type: ss

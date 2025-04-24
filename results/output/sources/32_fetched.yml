@@ -1,64 +1,147 @@
-# Update: 2025-04-23 22:04
+# Update: 2025-04-25 08:45
 # Source 32 (https://raw.githubusercontent.com/qianlima8888/autoClashProxy/main/list.yaml), 36
 proxies:
-- alterId: 0
+- alterId: 2
+  cipher: auto
   name: 中国香港-1
   network: ws
-  port: 443
-  server: 162.247.5.96
-  servername: hk.qhahd.shop
+  port: 8080
+  server: 3edafc9c-svc1s0-t1bnjq-1krtb.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国香港-2
+  password: 91a41f4e02dc
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hkkh11v1.xpmc.cc
+    mode: websocket
+    mux: true
+    path: /utvbnrzejpmt
+    skip-cert-verify: false
+    tls: true
+  port: 53925
+  server: hkkh11v1.xpmc.cc
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-2
+  network: tcp
+  port: 50082
+  server: 120.198.71.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.216
+  ws-path: /
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-7
+  port: 41279
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: adad57ce-8a4d-4272-bb71-b297ca370165
-  ws-opts:
-    headers:
-      Host: hk.qhahd.shop
-    path: /bing
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国大陆-3
-  network: ws
-  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
-  port: 40021
-  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  flow: xtls-rprx-vision
+  name: 中国大陆-4
+  port: 46716
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
   skip-cert-verify: false
-  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
-    path: /dl_media
-- alterId: 2
-  cipher: auto
-  name: 中国香港-2
-  network: ws
-  port: 80
-  server: 793f272d-sv0xs0-tb36ag-1jfq7.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-3
-  network: ws
-  port: 80
-  server: b620d2bd-sv2sg0-t3b4w3-ywms.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bf109e1a-2b99-11ed-bb74-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-1
+  flow: xtls-rprx-vision
+  name: 中国大陆-1
+  port: 47531
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-3
+  port: 10860
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  name: 中国大陆-8
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 121.14.61.174
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-5
+  port: 28680
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-6
+  port: 27631
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国大陆-10
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
@@ -66,34 +149,87 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
 - alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 日本-1
+  password: 9befc9a342e2
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp06v1.xmsj.red
+    mode: websocket
+    mux: true
+    path: /plxbuqyt
+    skip-cert-verify: false
+    tls: true
+  port: 32747
+  server: jp06v1.xmsj.red
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-12
+  network: tcp
+  port: 17233
+  server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 中国大陆-6
-  port: 44015
-  server: 120.198.71.219
+  name: 中国大陆-9
+  port: 41291
+  server: 183.236.51.38
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 中国香港-7
-  network: ws
-  port: 80
-  server: 92b1e00e-sv0xs0-tb224g-1h0r9.hk.p5pv.com
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-11
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-17
+  port: 15700
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-16
+  port: 14548
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 中国大陆-2
+  name: 中国大陆-13
   network: tcp
   port: 44491
   server: 120.232.153.41
@@ -106,36 +242,218 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 中国香港-4
+  name: 中国大陆-15
   network: ws
-  port: 80
-  server: 681f042c-sv2sg0-t15duc-1nsdp.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
+  port: 30809
+  server: v9.heduian.link
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 70e061f6-796a-11ee-8f26-f23c913c8d2b
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: 681f042c-sv2sg0-t15duc-1nsdp.hk.p5pv.com
-    path: /
-- alterId: 2
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
   cipher: auto
-  name: 中国香港-5
+  client-fingerprint: chrome
+  name: 中国大陆-14
+  port: 44015
+  server: 120.198.71.219
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 中国香港-3
   network: ws
-  port: 80
-  server: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
+  password: Aimer
+  port: 2083
+  server: 154.197.64.219
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 中国香港-4
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-19
+  network: tcp
+  port: 5229
+  server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-18
+  network: tcp
+  port: 37805
+  server: 120.232.153.63
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
+    Host: 120.232.153.63
   ws-path: /
+- alterId: 0
+  name: 美国-1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.207
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 美国-2
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.36
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alpn:
+  - h3
+  alterId: 0
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 美国-3
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 0
+  name: 美国-4
+  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  port: 443
+  server: c795e23c-sva740-sxnljm-1jr1u.los.gotochinatown.net
+  tls: true
+  type: http
+  udp: true
+  username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+- alterId: 0
+  cipher: auto
+  name: 美国-5
+  network: ws
+  port: 8088
+  server: ora2.aihi.uk
+  servername: ora2.aihi.uk
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6b414f6a-9cfd-46c3-bcc8-af2c3447871d
+  ws-opts:
+    headers:
+      Host: ora2.aihi.uk
+    path: /ray
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-22
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 0
+  name: 中国香港-5
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.212.46.70
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 日本-2
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 中国大陆-1
+  name: 中国大陆-23
+  port: 36609
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-20
   port: 43674
   server: 120.234.102.229
   skip-cert-verify: false
@@ -143,205 +461,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-4
-  port: 11555
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-11
-  network: tcp
-  port: 15229
-  server: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-5
-  port: 59082
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰 HK
-  h2-opts: {}
-  http-opts: {}
-  name: 中国香港-8
-  network: ws
-  port: 80
-  server: 6bcba1b3-sv2sg0-sywkhi-1o4kv.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 87b31a02-172e-11ee-a11f-f23c913c8d2b
-  ws-headers:
-    HOST: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  name: 中国香港-6
-  network: ws
-  port: 443
-  server: 162.247.5.91
-  servername: tw.qhahd.shop
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94fadaf3-ccd8-4734-b372-8772c9bfd147
-  ws-opts:
-    headers:
-      Host: tw.qhahd.shop
-    path: /bing
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-7
-  port: 15229
-  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-10
-  port: 15229
-  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-9
-  network: tcp
-  port: 15229
-  server: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
-  ws-headers:
-    Host: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-8
-  network: tcp
-  port: 15229
-  server: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-9
-  network: ws
-  port: 80
-  server: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  ws-headers:
-    Host: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-12
-  network: tcp
-  port: 15229
-  server: 19c5d8c7-sva740-t4cl3u-1mpen.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: da1c411e-479f-11ee-9749-f23c9164ca5d
-  ws-headers:
-    Host: 19c5d8c7-sva740-t4cl3u-1mpen.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-13
-  network: tcp
-  port: 17233
-  raw:
-    add: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
-    net: tcp
-    path: ''
-    port: '17233'
-    ps: 0|🇯🇵1 |  6.2MB/s
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
-- alterId: 0
-  name: '美国-1 #2'
-  network: ws
-  port: 443
-  server: 172.67.72.73
-  servername: vless.aihi.uk
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99ce9188-20c8-437c-b68d-0a6ed701c744
-  ws-opts:
-    headers:
-      host: vless.aihi.uk
-    path: /?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-19
-  port: 47531
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 中国大陆-15
+  name: 中国大陆-21
   port: 42375
   server: 120.198.71.214
   skip-cert-verify: false
@@ -349,129 +472,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 中国大陆-17
-  password: 5d84f3b9-fb95-45ac-8e53-2e396bc19fa1
-  port: 43395
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-18
-  port: 48121
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  name: 中国香港-11
-  password: '3828095943467868160'
-  port: 443
-  server: evolving-hippo.dolphin109.quest
-  skip-cert-verify: true
-  sni: evolving-hippo.dolphin109.quest
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-20
-  network: tcp
-  port: 15229
-  server: e871a090-sva740-tcq5zn-19qpt.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-  ws-headers:
-    Host: e871a090-sva740-tcq5zn-19qpt.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-16
-  port: 13263
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-14
-  port: 41291
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-21
-  port: 23301
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  name: '美国-2 #1'
-  network: ws
-  port: 2096
-  server: 162.159.153.222
-  servername: keji.madcity.lol
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9755cc88-09d8-437f-bd89-d4a89915d9ae
-  ws-opts:
-    headers:
-      host: keji.madcity.lol
-    path: /?ed=2560
-- alterId: 0
-  name: '美国-3 #1'
-  network: ws
-  password: redfree8
-  port: 443
-  server: 104.17.147.22
-  skip-cert-verify: false
-  sni: ipsychO.SUEx12.Ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ipsychO.SUEx12.Ir
-    path: /trre5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  name: 中国香港-10
-  network: ws
-  port: 443
-  server: 45.202.113.50
-  servername: hy10.lzj520hxw.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a3c075ab-51cd-4947-e8a4-aad55e19bec2
-  ws-opts:
-    headers:
-      host: hy10.lzj520hxw.dpdns.org
-    path: /lzjjj
