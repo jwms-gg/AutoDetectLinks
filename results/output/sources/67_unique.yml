@@ -1,5 +1,5 @@
-# Update: 2025-04-28 04:15
-# Source 67 (https://t.me/s/V2rayNG3), 47
+# Update: 2025-04-29 08:45
+# Source 67 (https://t.me/s/V2rayNG3), 50
 proxies:
 - client-fingerprint: chrome
   name: '@V2rayNG3 #91'
@@ -217,6 +217,19 @@ proxies:
     headers:
       Host: HaSti.fReEaIRlAineS.coM
     path: /telegram@v2ray_alpha/?ed=2048
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '@V2rayNG3 #148'
+  network: grpc
+  port: 2087
+  server: 172.64.32.217
+  servername: ba19.bewface-smart.rest
+  tls: true
+  type: vless
+  uuid: bb29c155-d55e-4c07-8403-0581e384f7a2
 - name: '@V2rayNG3 #149'
   network: grpc
   port: 8880
@@ -490,7 +503,37 @@ proxies:
   tls: false
   type: vless
   uuid: cbb4251b-9b20-4c42-b09d-df77666bda12
-- name: '@V2rayNG3 #216'
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '@V2rayNG3 #209'
+  network: ws
+  port: 443
+  server: 188.114.97.3
+  servername: paS-kaLE-AGhA.pageS.deV
+  tls: true
+  type: vless
+  uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24
+  ws-opts:
+    headers:
+      Host: pas-kale-agha.pages.dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '@V2rayNG3 #211'
+  network: ws
+  port: 443
+  server: 104.21.112.1
+  servername: pSYcho.sUeX12.IR
+  tls: true
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: '@V2rayNG3 #214'
   network: grpc
   port: 8880
   server: 185.8.105.254
