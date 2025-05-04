@@ -123,7 +123,7 @@ def parse_proxies(
     proxies = []
     try:
         if type == "clash":
-            config = yaml.full_load(content.replace("!<str>", "!!str"))
+            config = yaml.full_load(content.replace("!<str> ", ""))
             for p in config["proxies"]:
                 if "password" in p and not isinstance(p["password"], str):
                     p["password"] = str(p["password"])
@@ -304,7 +304,7 @@ def is_fake(proxy: dict[str, Any]) -> bool:
 def clash_data(proxy: dict[str, Any]) -> dict[str, Any]:
     ret = proxy.copy()
     if "password" in ret and ret["password"].isdigit():
-        ret["password"] = "!!str " + ret["password"]
+        ret["password"] = str(ret["password"])
     if "uuid" in ret and len(ret["uuid"]) != len(settings.default_uuid):
         ret["uuid"] = settings.default_uuid
     if "group" in ret:
@@ -618,15 +618,13 @@ def write_sub(file_name: str, nodes: list[dict[str, Any]]):
     )
 
 
-
 def write_result(save_path: str, config, comment: str = None):
-    logger.info(f"Writing out proxies to {save_path}...")
     with open(save_path, "w", encoding="utf-8") as f:
         f.write(datetime.datetime.now().strftime("# Update: %Y-%m-%d %H:%M\n"))
         if comment:
             f.write(f"# {comment}\n")
-        f.write(yaml.dump(config, allow_unicode=True).replace("!!str ", ""))
-
+        yaml.dump(config, f, allow_unicode=True)
+    logger.info(f"Writing out proxies to {save_path} done.")
 
 if __name__ == "__main__":
     main()
