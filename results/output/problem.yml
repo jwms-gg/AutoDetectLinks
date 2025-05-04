@@ -1,9 +1,21 @@
-# Update: 2025-05-04 09:33
-# Problem proxies, 12
+# Update: 2025-05-05 09:09
+# Problem proxies, 13
 proxies:
 - _extra:
-    error: 'time="2025-05-04T09:23:05.769833431+08:00" level=fatal msg="Parse config
-      error: proxy 296: key ''cipher'' missing"
+    error: 'time="2025-05-05T08:59:44.391136016+08:00" level=fatal msg="Parse config
+      error: proxy 206: ss 104.21.112.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: '🔒 #1416'
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.112.1
+  type: ss
+- _extra:
+    error: 'time="2025-05-05T08:59:47.818269178+08:00" level=fatal msg="Parse config
+      error: proxy 331: key ''cipher'' missing"
 
       '
   alterId: 0
@@ -21,32 +33,20 @@ proxies:
       Host: kahk.kia-ai.com
     path: /
 - _extra:
-    error: 'time="2025-05-04T09:23:49.827783141+08:00" level=fatal msg="Parse config
-      error: proxy 478: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: '🔒 #1544'
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.48.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-04T09:24:33.846499600+08:00" level=fatal msg="Parse config
-      error: proxy 80: ss 64.226.102.252:45746 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-05T08:59:51.080504993+08:00" level=fatal msg="Parse config
+      error: proxy 455: ss 64.226.102.252:45746 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
   cipher: 2022-blake3-aes-256-gcm
-  name: '🔒 #1962'
+  name: '🔒 #1817'
   password: ''
   port: '45746'
   server: 64.226.102.252
   type: ss
 - _extra:
-    error: 'time="2025-05-04T09:24:37.058183141+08:00" level=fatal msg="Parse config
-      error: proxy 472: ss 89.110.79.39:49634 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-05T09:00:35.453031513+08:00" level=fatal msg="Parse config
+      error: proxy 290: ss 89.110.79.39:49634 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
@@ -57,8 +57,8 @@ proxies:
   server: 89.110.79.39
   type: ss
 - _extra:
-    error: 'time="2025-05-04T09:24:40.251160212+08:00" level=fatal msg="Parse config
-      error: proxy 472: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-05T09:00:38.707966600+08:00" level=fatal msg="Parse config
+      error: proxy 290: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
@@ -69,70 +69,47 @@ proxies:
   server: 188.34.194.165
   type: ss
 - _extra:
-    error: 'time="2025-05-04T09:30:13.672122276+08:00" level=fatal msg="Parse config
-      error: proxy 62: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.96....
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.96.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-04T09:30:16.978424515+08:00" level=fatal msg="Parse config
-      error: proxy 65: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.32....
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.32.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-04T09:30:20.282997295+08:00" level=fatal msg="Parse config
-      error: proxy 85: invalid REALITY short ID"
+    error: 'time="2025-05-05T09:01:23.186652847+08:00" level=fatal msg="Parse config
+      error: proxy 109: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: 🔒 VL-TCP-RLT 🇺🇸 US-185.122.166...
-  network: tcp
-  port: 38120
+  grpc-opts:
+    grpc-service-name: ''
+  name: همه اینترنت ها-Vpfreen3
+  network: grpc
+  port: 50552
   reality-opts:
-    public-key: qdki5D30_Ilz2-eR2YN-mkH9pCtUK2OtTdXNsh9Ikm8
-    short-id: 0378
-  server: 185.122.166.216
+    public-key: NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY
+    short-id: 09
+  server: kryos.cloudupdate.ir
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: 684aaaf5-77b1-41db-972a-700df92f2569
+  uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
 - _extra:
-    error: 'time="2025-05-04T09:30:23.616912236+08:00" level=fatal msg="Parse config
-      error: proxy 138: invalid REALITY short ID"
+    error: 'time="2025-05-05T09:05:35.787519520+08:00" level=fatal msg="Parse config
+      error: proxy 486: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
   name: 🔒 VL-TCP-RLT 🇫🇮 FI-65.109.212....
   network: tcp
-  port: 2052
+  port: 8880
   reality-opts:
-    public-key: lyERL7w2tINLy4Z2hlEbg8wyfzO7uTpESrZMZzr3iVo
-    short-id: 83e8
+    public-key: p54VFGd1CPXd5Vht5YHrmnOuO-uWPpxqUIpxCvYVnCs
+    short-id: 01e2
   server: 65.109.212.145
   servername: tgju.org
   tls: false
   type: vless
-  uuid: 68509f46-3d3b-4eaf-9fff-d5eb032ecddd
+  uuid: a0603305-9110-44ba-a5b5-2aa1457a6d3e
   ws-opts:
     headers:
-      Host: '%2FJOK%45%52%52VPNJoin_Bade_Channel%40JOK%45R%52VPN'
+      Host: '%2FJoin_Bade_Channel%40JOKERRVPN'
 - _extra:
-    error: 'time="2025-05-04T09:30:26.921999110+08:00" level=fatal msg="Parse config
-      error: proxy 246: invalid REALITY public key"
+    error: 'time="2025-05-05T09:06:20.215018553+08:00" level=fatal msg="Parse config
+      error: proxy 55: invalid REALITY public key"
 
       '
   name: '🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
@@ -146,26 +123,73 @@ proxies:
   type: vless
   uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - _extra:
-    error: 'time="2025-05-04T09:32:33.142449406+08:00" level=fatal msg="Parse config
-      error: proxy 28: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
+    error: 'time="2025-05-05T09:06:23.593179200+08:00" level=fatal msg="Parse config
+      error: proxy 102: invalid REALITY short ID"
+
+      '
+  client-fingerprint: chrome
+  name: 🔒 VL-GRPC-RLT 🇩🇪 DE-157.90.117...
+  network: grpc
+  port: 50552
+  reality-opts:
+    public-key: NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY
+    short-id: 09
+  server: 157.90.117.244
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
+- _extra:
+    error: 'time="2025-05-05T09:07:08.005170232+08:00" level=fatal msg="Parse config
+      error: proxy 24: invalid REALITY short ID"
+
+      '
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🔗 Vauth - 343
+  network: tcp
+  port: 38120
+  reality-opts:
+    public-key: qdki5D30_Ilz2-eR2YN-mkH9pCtUK2OtTdXNsh9Ikm8
+    short-id: 0378
+  server: 185.122.166.216
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 684aaaf5-77b1-41db-972a-700df92f2569
+- _extra:
+    error: 'time="2025-05-05T09:07:11.423639959+08:00" level=fatal msg="Parse config
+      error: proxy 546: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
       invalid syntax"
 
       '
   cipher: '{"add"'
-  name: 'unnamed #44'
+  name: 'unnamed #36'
   password: ''
   port: '"2"}'
   server: oneclickvpnkeys","scy":"auto","sni":"www.14601176.xyz","tls":"tls","type":"","v"
   type: ss
 - _extra:
-    error: 'time="2025-05-04T09:32:36.407635540+08:00" level=fatal msg="Parse config
-      error: proxy 28: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
+    error: 'time="2025-05-05T09:07:14.841784497+08:00" level=fatal msg="Parse config
+      error: proxy 546: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
       invalid syntax"
 
       '
   cipher: '{"add"'
-  name: 'unnamed #45'
+  name: 'unnamed #37'
   password: ''
   port: '"2"}'
   server: ✅","scy":"auto","sni":"kapelleng.com","tls":"tls","type":"---","v"
+  type: ss
+- _extra:
+    error: 'time="2025-05-05T09:07:59.245921594+08:00" level=fatal msg="Parse config
+      error: proxy 402: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: '🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.32.... #1'
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.32.1
   type: ss

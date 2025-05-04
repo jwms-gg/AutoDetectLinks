@@ -1,35 +1,6 @@
-# Update: 2025-05-04 09:13
-# Source 56 (https://t.me/s/proxystore11), 5
+# Update: 2025-05-05 08:49
+# Source 56 (https://t.me/s/proxystore11), 3
 proxies:
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇨🇦+prx11+🎉🔥⚡️
-  network: ws
-  port: 2087
-  server: cname.proxystore11.news
-  servername: panel.proxystore11.news
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 9ea9e410-f9b6-49eb-ad90-01e0f84f81b2
-  ws-opts:
-    headers:
-      Host: panel.proxystore11.news
-    path: /prx11
-- name: 'unnamed #11'
-  network: ws
-  port: 2087
-  server: cname.proxystore11.news
-  tls: false
-  type: vless
-  uuid: 9ea9e410-f9b6-49eb-ad90-01e0f84f81b2
-  ws-opts:
-    headers:
-      Host: panel.proxystore11.ne…
-    path: /prx11
 - alpn:
   - h3
   - h2
@@ -48,24 +19,6 @@ proxies:
     headers:
       Host: panel.proxystore11.news
     path: /prx11
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇨🇦+prx11+⚡️✨🎈
-  network: ws
-  port: 2087
-  server: cname.proxystore11.news
-  servername: panel.proxystore11.news
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 71630354-9b6d-4132-bc3c-24ebd0174bc6
-  ws-opts:
-    headers:
-      Host: panel.proxystore11.news
-    path: /prx11
 - name: 'unnamed #12'
   network: ws
   port: 2087
@@ -77,3 +30,19 @@ proxies:
     headers:
       Host: panel.proxystore11.ne…
     path: /prx11
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: panel.proxystore11.news
+  name: 🇨🇦+prx11+💖🔥⚡️
+  network: grpc
+  port: 8443
+  server: cname.proxystore11.news
+  servername: panel.proxystore11.news
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 1657b55c-00b2-444a-b4f1-91fb14c83c0b

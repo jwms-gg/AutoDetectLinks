@@ -1,42 +1,12 @@
-# Update: 2025-05-04 09:12
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 9
+# Update: 2025-05-05 08:49
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
 proxies:
-- name: 🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚
-  password: ffbd0f79-7f6e-46df-b7d9-9304584f61a8
-  port: 42882
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: '🇺🇸_US_美国_1 #3'
-  network: tcp
-  port: 26242
-  server: 103.114.160.148
-  sni: ''
-  type: vmess
-  uuid: 0d554366-2d2d-4e54-fa37-893c03c42021
-- name: 🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚_1
-  password: ffbd0f79-7f6e-46df-b7d9-9304584f61a8
-  port: 42882
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30835
+  server: v35.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -45,20 +15,30 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
+- name: '🇺🇸_US_美国 #1'
+  network: ws
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.34.159
+  sni: 2qwert.2031.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /4p35eUnmGxQ8YJFJxz
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   network: tcp
-  port: 5229
-  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
+  port: 14100
+  server: 144.255.36.254
   type: vmess
-  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30830
+  server: v30.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -67,19 +47,11 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
-  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
-  port: 11511
-  server: cdn-p1-us.youku-dns.com
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
-  network: ws
-  port: 22033
-  server: 45.147.201.231
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: tcp
+  port: 5229
+  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
   type: vmess
-  uuid: 4ee6ad73-10bc-4567-8888-546d25ad4784
-  ws-opts:
-    path: /
+  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d

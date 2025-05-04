@@ -561,6 +561,8 @@ def main():
     ):
         write_sub(f"{settings.output_dir}/all_{i}.yml", part)
 
+    logger.info("Fetching all proxies done.")
+    exit(0)
 
 def write_sub(file_name: str, nodes: list[dict[str, Any]]):
     logger.info(f"Prepare to write out proxies{len(nodes)} to {file_name}...")

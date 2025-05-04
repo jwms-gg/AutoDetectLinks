@@ -1,5 +1,5 @@
-# Update: 2025-05-04 09:13
-# Source 62 (https://t.me/s/FreakConfig), 2
+# Update: 2025-05-05 08:50
+# Source 62 (https://t.me/s/FreakConfig), 3
 proxies:
 - name: '🇩🇪@FreakConfig #1'
   network: ws
@@ -12,6 +12,23 @@ proxies:
     headers:
       Host: mt.acvs.ir
     path: /joinMTMVPN?ed=2560
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪@FreakConfig #2'
+  network: ws
+  port: 443
+  server: mw5.asalemaraghe.ir
+  servername: mw5.asalemaraghe.ir
+  tls: true
+  type: vless
+  uuid: 944d8b74-7a64-4b07-a278-9f968e9ef99c
+  ws-opts:
+    headers:
+      Host: mw5.asalemaraghe.ir
+    path: /
 - name: 🇺🇸@FreakConfig
   network: grpc
   port: 8880
