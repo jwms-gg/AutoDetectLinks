@@ -1,89 +1,85 @@
-# Update: 2025-04-29 08:45
+# Update: 2025-05-04 09:12
 # Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 9
 proxies:
-- name: '🇺🇸_US_美国_1 #4'
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 172.67.205.22
-  skip-cert-verify: false
-  sni: 1SSdDdFfffHhHJJJJ.20220420.Pp.uA
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 1ssdddffffhhhjjjj.20220420.pp.ua
-    path: /OYzPAeaZdXUq2d6J3gc4aj
-- name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
-  password: bf4604d3-39e5-4760-aa7a-b78100cae482
-  port: 46927
+- name: 🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚
+  password: ffbd0f79-7f6e-46df-b7d9-9304584f61a8
+  port: 42882
   server: 45.146.232.171
+  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '🇺🇸_US_美国_2 #1'
-  network: ws
-  password: 075b9690-f1cc-4d0c-aa1e-f80f07f09815
-  port: 443
-  server: 172.67.204.177
-  skip-cert-verify: false
-  sni: 4o.191292.xyz
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: '🇺🇸_US_美国_1 #3'
+  network: tcp
+  port: 26242
+  server: 103.114.160.148
+  sni: ''
+  type: vmess
+  uuid: 0d554366-2d2d-4e54-fa37-893c03c42021
+- name: 🇳🇱_NL_荷兰->🇷🇴_RO_罗马尼亚_1
+  password: ffbd0f79-7f6e-46df-b7d9-9304584f61a8
+  port: 42882
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 4o.191292.xyz
-    path: /w8oHMEEc9tWBZ57XYkE
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_3 #3'
-  password: VUWK9NyG
-  port: 23478
-  server: 34.234.217.178
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v29.heduian.link
+      host: baidu.com
     path: /oooo
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: tcp
+  port: 5229
+  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
+  type: vmess
+  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
-  port: 30837
-  server: v37.heduian.link
-  sni: ocbc.com
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇿_AZ_阿塞拜疆->🇺🇸_US_美国
-  password: 9CJz3J1GYljQ
-  port: 443
-  server: 88.151.192.57
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇷🇴_RO_罗马尼亚
-  password: aCRNijIj
-  port: 7713
-  server: 93.114.98.34
-  type: ss
-- name: 🇺🇸_US_美国_5
-  network: ws
-  password: 53249200-30ff-436f-a032-0bb00605f8f9
-  port: 443
-  server: 172.67.219.196
-  skip-cert-verify: false
-  sni: 3derty.852224.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
     headers:
-      host: 3derty.852224.dpdns.org
-    path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
+  port: 11511
+  server: cdn-p1-us.youku-dns.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
+  network: ws
+  port: 22033
+  server: 45.147.201.231
+  type: vmess
+  uuid: 4ee6ad73-10bc-4567-8888-546d25ad4784
+  ws-opts:
+    path: /

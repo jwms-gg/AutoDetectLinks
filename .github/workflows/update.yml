@@ -11,11 +11,12 @@ concurrency:
 
 env:
   FORCE_COLOR: 3
+  TZ: Asia/Shanghai
 
 jobs:
   update:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4

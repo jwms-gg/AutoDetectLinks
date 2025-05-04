@@ -1,4 +1,5 @@
 import base64
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
 import subprocess
 import tempfile
@@ -38,8 +39,10 @@ clash_config_template = {
     "unified-delay": True,
     "geodata-mode": True,
     "geox-url": {
-        "geoip": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat",
-        "mmdb": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb",
+        "geoip": settings.geoip,
+        "geosite": settings.geosite,
+        "mmdb": settings.mmdb,
+        "asn": settings.asn
     },
     "dns": {
         "enable": True,

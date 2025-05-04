@@ -1,43 +1,38 @@
-# Update: 2025-04-29 08:45
-# Source 12 (https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml), 3
+# Update: 2025-05-04 09:12
+# Source 12 (https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml), 6
 proxies:
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_4 #1'
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
+  port: 30805
+  server: v5.heduian.link
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: baidu.com
+      host: ocbc.com
     path: /oooo
-- ip-version: dual
-  name: '🇺🇸_US_美国_4 #1'
-  network: ws
-  password: 53249200-30ff-436f-a032-0bb00605f8f9
-  port: 443
-  server: 104.21.24.172
-  skip-cert-verify: false
-  sni: 3derty.852224.dpdns.org
+- alpn:
+  - http/1.1
+  ip-version: dual
+  name: '🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.73.237.33
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 3derty.852224.dpdns.org
-    path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
 - alterId: 2
   cipher: auto
   ip-version: dual
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30835
+  server: v35.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -47,3 +42,34 @@ proxies:
     headers:
       host: baidu.com
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: 🇷🇺_RU_俄罗斯_2
+  password: Lcc1lw8IP2KI
+  port: 443
+  server: 77.91.103.73
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国_6 #1'
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v24.heduian.link
+    path: /oooo
+- ip-version: dual
+  name: 🇳🇱_NL_荷兰->🇷🇺_RU_俄罗斯
+  network: tcp
+  password: e7793c4f-2885-475c-8046-26e660c46467
+  port: 43586
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
