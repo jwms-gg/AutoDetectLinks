@@ -1,5 +1,5 @@
-# Update: 2025-05-05 08:50
-# Source 69 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 130
+# Update: 2025-05-07 08:46
+# Source 69 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 85
 proxies:
 - name: '[🏁]t.me/ConfigsHub`'
   password: d70a8847-7c64-4912-98f2-ea21e952880f
@@ -19,77 +19,308 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2FT5yZBrY2Qkg2cThJQeJb'
-- name: 🔒 TR-WS-TLS 🇱🇺 LU-188.42.88.14...
-  network: ws
-  password: gIRrGnuuNm
-  port: 2096
-  server: 188.42.88.144
-  sni: aa.v2jey.fun
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aa.v2jey.fun
-    path: /
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #2'
-  password: 4eba3cbb-b263-4461-98b8-0e0573e646e3
-  port: 46668
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.21....
-  network: ws
-  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
-  port: 443
-  server: 104.21.21.190
-  sni: Us6-08.890606.xYZ
-  type: trojan
-  ws-opts:
-    headers:
-      Host: us6-08.890606.xyz
-    path: '%2FILLcisbMYUd6MQzxVoMQ'
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.202...
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.145...
   password: Aimer
   port: 443
-  server: 104.16.202.243
+  server: 172.67.145.95
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.144...
+  password: Aimer
+  port: 443
+  server: 172.67.144.51
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.71....
+  network: ws
+  password: 0tMQHit1k77c
+  port: 2083
+  server: 104.21.71.8
+  sni: iran.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: iran.itn24.ir
+    path: '%2FFb6mnxgS'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.18.8.3...
+  password: Aimer
+  port: 443
+  server: 104.18.8.36
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.47....
+  password: Aimer
+  port: 443
+  server: 104.16.47.213
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #1'
+  password: Aimer
+  port: 443
+  server: 108.162.193.144
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.48....
-  password: Aimer
-  port: 443
-  server: 104.16.48.55
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.177...
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.77....
   network: ws
-  password: vs6f8hvt
-  port: 2087
-  server: 104.16.177.79
-  sni: trojan.cchappy.eu.org
+  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  port: 443
+  server: 104.21.77.44
+  sni: us6-02.890603.Xyz
   type: trojan
   ws-opts:
     headers:
-      Host: trojan.cchappy.eu.org
+      Host: us6-02.890603.xyz
+    path: /ILLcisbMYUd6MQzxVoMQ
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.149...
+  password: Aimer
+  port: 443
+  server: 172.67.149.185
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #3'
+  password: Aimer
+  port: 443
+  server: 108.162.193.128
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.13...
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  sni: agepn.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agepn.ambercc.filegear-sg.me
+- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #12'
+  password: 8849efe5-f652-4c30-b467-178828c5fc73
+  port: 22271
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #4'
+  password: Aimer
+  port: 443
+  server: 108.162.195.82
+  skip-cert-verify: false
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-TLS 🏴‍☠️ NA-172.65.19...
+  password: 502560b1-6cb2-443e-ba50-361c94ddab3a
+  port: 33019
+  server: 172.65.190.172
+  sni: dtua1.bitznet.one
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.33.... #1'
+  password: Aimer
+  port: 443
+  server: 172.64.33.128
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-103.160.20...
+  network: ws
+  password: amclubs
+  port: 443
+  server: 103.160.204.1
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.112... #3'
+  network: ws
+  password: psycho
+  port: 443
+  server: 104.21.112.1
+  sni: pSYcho.sUeX12.IR
+  type: trojan
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: '%2Ftrv9KENu5FqbFAtPFq%3Fed%3D2560'
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.5.2...
+  network: ws
+  password: vip
+  port: 443
+  server: 104.18.5.250
+  sni: heihu880.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+- name: 🔒 TR-TCP-TLS 🇺🇸 US-94.131.20.3...
+  network: tcp
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: 94.131.20.3
+  sni: cache-giver-wife.stark-industries.solutions
+  type: trojan
+  ws-opts:
+    path: '%2F'
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.12... #3'
+  password: Aimer
+  port: 443
+  server: 162.159.129.80
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.165...
+  network: ws
+  password: uV8u9Q41e2
+  port: 443
+  server: 104.18.165.147
+  sni: DieGo.DIEgoMAraDOnA.iR.
+  type: trojan
+  ws-opts:
+    headers:
+      Host: DieGo.DIEgoMAraDOnA.iR.
+    path: /
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.75....
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.21.75.193
+  sni: bpb-hd.aaronchin.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb-hd.aaronchin.xyz
+    path: '%2Ftr%3Fed%3D2560%23Telegram%40Selinc'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.52....
+  password: Aimer
+  port: 443
+  server: 104.19.52.227
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.147...
+  password: Aimer
+  port: 443
+  server: 172.67.147.150
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #7'
+  password: Aimer
+  port: 443
+  server: 108.162.195.227
+  skip-cert-verify: false
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.22.54....
+  password: Aimer
+  port: 443
+  server: 104.22.54.192
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-173.245.59... #1'
+  password: Aimer
+  port: 443
+  server: 173.245.59.144
+  skip-cert-verify: false
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.202... #1'
+  network: ws
+  password: 9Qtb5266ijqU
+  port: 2053
+  server: 172.67.202.155
+  sni: aryanews.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aryanews.onetwothree123.ir
+    path: /🆔@M3HDIO1
+- alpn:
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.149... #1'
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 172.67.149.172
+  sni: usa-sanjose-one.890614.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2FT5yZBrY2Qkg2cThJQeJb'
+- alpn:
+  - http/1.1
+  name: 🔒 TR-WS-TLS 🇧🇦 BA-77.74.228.4:...
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 77.74.228.4
+  sni: agepm.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agepm.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: 🔒 TR-WS-TLS 🇸🇬 SG-27.50.49.156...
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #8'
+  network: httpupgrade
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.80.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 🔒 TR-WS-NA 🇺🇸 US-103.116.7.220...
   network: ws
   password: Aimer
   port: 2096
-  server: 27.50.49.156
+  server: 103.116.7.220
+  skip-cert-verify: true
   sni: epcch.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: epcch.ambercc.filegear-sg.me
-    path: '%2F'
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19...
+- name: 🔒 TR-TCP-NA 🇺🇸 US-154.29.150.2...
+  password: Aimer
+  port: 8080
+  server: 154.29.150.2
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.141... #1'
+  network: ws
+  password: 0tMQHit1k77c
+  port: 2083
+  server: 172.67.141.68
+  sni: iran.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: iran.itn24.ir
+    path: '%2FFb6mnxgS'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.198...
   password: Aimer
   port: 443
-  server: 108.162.195.127
+  server: 104.16.198.210
   skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
 - alpn:
   - h2
@@ -105,201 +336,93 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: '%2Ftrre5IzbZ9IZZMddtw%3Fed%3D2560'
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #7'
-  password: 2d3d96a4-6f61-4f70-a248-f6d9d4eaa7bd
-  port: 27002
-  server: 45.146.232.171
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.159...
+  password: Aimer
+  port: 443
+  server: 104.16.159.246
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.13... #26'
+  password: Aimer
+  port: 443
+  server: 162.159.137.186
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.12....
-  password: Aimer
-  port: 443
-  server: 104.16.12.82
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-WS-TLS 🇺🇸 US-108.165.152.... #1'
+- name: 🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.21...
   network: ws
   password: Aimer
-  port: 2096
-  server: 108.165.152.252
-  sni: epccf.ambercc.filegear-sg.me
+  port: 2053
+  server: 46.254.93.211
+  sni: epcch.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: epccf.ambercc.filegear-sg.me
+      Host: epcch.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.80.... #5'
+  network: ws
+  password: er668
+  port: 443
+  server: 104.21.80.1
+  skip-cert-verify: true
+  sni: kfjdi.pages.dev
+  type: trojan
+  ws-opts:
     path: '%2F'
-- name: 🔒 TR-WS-TLS 🇺🇸 US-154.211.8.24...
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.211.8.240
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epccf.ambercc.filegear-sg.me
-    path: '%2F'
-- name: 🔒 TR-TCP-NONE 🇩🇪 DE-185.204.16...
-  network: tcp
-  password: X98ViOdiRw
-  port: 14127
-  server: 185.204.168.191
-  type: trojan
-- name: 🔒 TR-WS-TLS 🇨🇾 CY-195.85.59.16...
-  network: ws
-  password: vip
-  port: 443
-  server: 195.85.59.161
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.13... #7'
-  password: Aimer
-  port: 443
-  server: 162.159.130.196
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #5'
-  network: httpupgrade
-  password: yUwBtCVdbu74
-  port: 2087
-  server: 104.21.54.208
-  sni: leader.andishehnegariran.ir
+  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.14....
+  network: ws
+  password: c1451ff5-d32c-48a4-914c-188985a3d5d7
+  port: 443
+  server: 104.18.14.19
+  skip-cert-verify: true
+  sni: azarandooz.azarina.workers.dev
   type: trojan
   ws-opts:
     headers:
-      Host: leader.andishehnegariran.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.16....
-  network: ws
-  password: er668
-  port: 443
-  server: 104.21.16.1
-  skip-cert-verify: true
-  sni: kfjdi.pages.dev
-  type: trojan
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #11'
-  password: 2d3d96a4-6f61-4f70-a248-f6d9d4eaa7bd
-  port: 27002
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.35.... #1'
+      Host: azarandooz.azarina.workers.dev
+    path: '%2Ftrojan-ws%2F%40AzarAndoozVPN'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.146...
   password: Aimer
   port: 443
-  server: 172.64.35.127
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.112... #3'
-  network: ws
-  password: er668
-  port: 443
-  server: 104.21.112.1
-  skip-cert-verify: true
-  sni: kfjdi.pages.dev
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.18.189...
-  password: Aimer
-  port: 443
-  server: 104.18.189.131
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: 4p35eUnmGrpTo3cIguYay
-  name: 🔒 TR-GRPC-TLS 🏴‍☠️ NA-104.21.2...
-  network: grpc
-  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
-  port: 443
-  server: 104.21.22.133
-  sni: 2wweertyuioop.20220420.pp.ua
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #2'
-  password: Aimer
-  port: 443
-  server: 108.162.195.236
+  server: 104.19.146.132
   skip-cert-verify: false
   sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #3'
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.144... #1'
   password: Aimer
   port: 443
-  server: 108.162.195.168
+  server: 172.67.144.9
   skip-cert-verify: false
   sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.68....
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.16....
   password: Aimer
   port: 443
-  server: 172.67.68.241
-  sni: epccf.ambercc.filegear-sg.me
+  server: 104.17.16.120
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- alpn:
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.32.... #2'
-  network: ws
-  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
-  port: 443
-  server: 104.21.32.1
-  sni: 8ui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 8ui.191262.xyz
-    path: '%2FtvowuLtlha3zxRV9PS'
-- name: 🔒 TR-TCP-TLS 🏴‍☠️ NA-172.65.19...
-  password: 502560b1-6cb2-443e-ba50-361c94ddab3a
-  port: 33019
-  server: 172.65.190.172
-  sni: dtua1.bitznet.one
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.48.... #4'
-  network: ws
-  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
-  port: 443
-  server: 104.21.48.1
-  sni: 8ui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 8ui.191262.xyz
-    path: '%2FtvowuLtlha3zxRV9PS'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #4'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.153...
   password: Aimer
   port: 443
-  server: 108.162.195.82
+  server: 172.67.153.47
   skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- alpn:
-  - h2
-  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.44....
-  network: ws
-  password: f411e405-da5e-47aa-93bb-8454c6f59ae1
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.36....
+  password: Aimer
   port: 443
-  server: 104.21.44.185
-  sni: MehRneWS.OnEtwothREe123.iR
+  server: 104.16.36.135
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-  ws-opts:
-    headers:
-      Host: mehrnews.onetwothree123.ir
-    path: '%2F26za8O91d9bS7H1OOKD'
 - alpn:
   - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.16.... #2'
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.16.... #5'
   network: ws
   password: 8e09a4d7-80fc-4bb3-b3fb-1eb23211756a
   port: 2096
@@ -310,58 +433,313 @@ proxies:
     headers:
       Host: expresstv.twn24.ir
     path: '%2FvNF7RJtVepEuGq7R6Cczl'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.35.... #2'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.122...
   password: Aimer
   port: 443
-  server: 172.64.35.82
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
+  server: 104.17.122.124
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.26.13....
-  password: 8aa7e179-739d-4195-bceb-d3e3fddf3df9
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.56....
+  password: Aimer
   port: 443
-  server: 104.26.13.54
+  server: 104.16.56.128
   skip-cert-verify: false
-  sni: digitaloceanusargo.lzj520hxw.dpdns.org
+  sni: epccg.ambercc.filegear-sg.me
   type: trojan
-- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.48.... #5'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.15....
+  password: Aimer
+  port: 443
+  server: 104.16.15.158
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-WS-TLS 🇸🇨 SC-154.197.64.6...
   network: ws
-  password: Uk*dIGV0BkVb
+  password: Aimer
   port: 2083
-  server: 104.21.48.1
-  sni: tasnim.twn24.ir
+  server: 154.197.64.62
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: tasnim.twn24.ir
-    path: /HCVjhhL2
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #14'
-  password: 42e81557-3749-4d0d-8def-2f730ff60b27
-  port: 43395
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.7.1...
-  network: ws
-  password: vip
-  port: 443
-  server: 104.26.7.112
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #5'
+      Host: epcca.ambercc.filegear-sg.me
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.44... #5'
   password: Aimer
   port: 443
-  server: 108.162.195.199
+  server: 162.159.44.82
   skip-cert-verify: false
   sni: epccf.ambercc.filegear-sg.me
   type: trojan
 - alpn:
   - http/1.1
-  name: 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.13...
+  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.155...
+  network: ws
+  password: fa0ebd45-fadc-4f0e-b191-ccf73f5aefb4
+  port: 443
+  server: 172.67.155.140
+  sni: c1SASww.hUANgshAng.DpdNs.orG
+  type: trojan
+  ws-opts:
+    headers:
+      Host: c1sasww.huangshang.dpdns.org
+    path: '%2FfQPBGpEa5OeszSdyMAdtxLQhzLw'
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.56.... #2'
+  password: Aimer
+  port: 443
+  server: 104.16.56.6
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.192...
+  password: Aimer
+  port: 443
+  server: 104.16.192.66
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.192... #1'
+  password: Aimer
+  port: 443
+  server: 104.16.192.140
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.242...
+  password: Aimer
+  port: 443
+  server: 104.17.242.34
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-173.245.59... #4'
+  password: Aimer
+  port: 443
+  server: 173.245.59.128
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.149...
+  password: Aimer
+  port: 443
+  server: 104.16.149.162
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.99....
+  password: Aimer
+  port: 443
+  server: 104.17.99.31
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.15....
+  network: ws
+  password: c1451ff5-d32c-48a4-914c-188985a3d5d7
+  port: 443
+  server: 104.18.15.19
+  skip-cert-verify: true
+  sni: azarandooz.azarina.workers.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: azarandooz.azarina.workers.dev
+    path: '%2Ftrojan-ws%2F%40AzarAndoozVPN'
+- alpn:
+  - h2
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.88.... #2'
+  network: ws
+  password: s8xwZ]|?V>cH
+  port: 443
+  server: 104.21.88.9
+  sni: fL9F9zCnHrfnvkA1oYA84yy6p44dHfqP.tUrbOOsErveR.wOrKeRS.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+    path: '%2FtrOMMGv7luGhBNaxVb%3Fed%3D2560'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.136...
+  password: Aimer
+  port: 443
+  server: 104.17.136.232
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #16'
+  network: httpupgrade
+  password: 6X1Ca9dbWv@^
+  port: 8443
+  server: 172.67.202.155
+  sni: soft.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: soft.onetwothree123.ir
+    path: '%2FL9sBUTui'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.199...
+  password: Aimer
+  port: 443
+  server: 104.16.199.254
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.153... #1'
+  password: Aimer
+  port: 443
+  server: 172.67.153.236
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.151...
+  password: Aimer
+  port: 443
+  server: 104.17.151.96
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.175... #4'
+  network: ws
+  password: NSCH50ljFtwg
+  port: 2053
+  server: 172.67.175.40
+  sni: manager.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: manager.farsonline24.ir%20
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - http/1.1
+  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.7.1...
+  network: ws
+  password: fa0ebd45-fadc-4f0e-b191-ccf73f5aefb4
+  port: 443
+  server: 104.21.7.147
+  sni: C1xxXXxx.huAngshang.dPdNs.ORg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: c1xxxxxx.huangshang.dpdns.org
+    path: '%2FfQPBGpEa5OeszSdyMAdtxLQhzLw'
+- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.18.7.5...
+  password: Aimer
+  port: 443
+  server: 104.18.7.58
+  skip-cert-verify: false
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.12....
+  network: ws
+  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
+  port: 443
+  server: 104.26.12.31
+  sni: fwd-refuse-senators-brought.trycloudflare.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fwd-refuse-senators-brought.trycloudflare.com
+    path: '%2Ftrojan-argo%3Fed%3D2560'
+- name: 未知2
+  network: ws
+  password: 2bfa08e0-ae1e-11ed-a3a0-1239d0255272
+  port: 443
+  server: 5.254.17.52
+  sni: telewebion.com
+  type: trojan
+  ws-opts:
+    path: /trojanws
+- name: '未知10 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.62
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: '未知46 #2'
+  network: ws
+  password: ctZ66Vttffqq
+  port: 2083
+  server: 104.21.64.1
+  sni: yjc.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: yjc.twn24.ir
+    path: /🆔@M3HDIO1
+- name: '未知48 #1'
+  network: ws
+  password: vip
+  port: 443
+  server: 104.21.90.78
+  sni: heihu880.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
+- name: '未知60 #1'
+  network: httpupgrade
+  password: TKsVHmEEGn3v
+  port: 2087
+  server: 104.21.64.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: /🆔@M3HDIO1
+- name: '未知78 #1'
+  network: ws
+  password: amclubs
+  port: 443
+  server: 103.160.204.1
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /Telegram@ShadowProxy66/?ed=2560
+- name: '未知106 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 5.182.85.28
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epccg.ambercc.filegear-sg.me
+- name: '未知110 #1'
+  network: ws
+  password: BTns3czXfT
+  port: 2096
+  server: 104.21.15.33
+  sni: support.sabapardaziran.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: support.sabapardaziran.ir
+    path: /🆔@M3HDIO1
+- name: '未知118 #1'
+  network: ws
+  password: s8xwZ]|?V>cH
+  port: 443
+  server: 172.67.149.227
+  sni: fL9F9zCnHrfnvkA1oYA84yy6p44dHfqP.tUrbOOsErveR.wOrKeRS.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fl9f9zcnhrfnvka1oya84yy6p44dhfqp.turbooserver.workers.dev
+- name: US34
   network: ws
   password: Aimer
   port: 2083
@@ -371,795 +749,30 @@ proxies:
   ws-opts:
     headers:
       Host: agepn.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.35.... #4'
-  password: Aimer
-  port: 443
-  server: 172.64.35.236
-  skip-cert-verify: false
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #15'
-  password: 77fc26f0-f0af-4082-9434-ef25f103dcf5
-  port: 33505
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.44... #4'
-  password: Aimer
-  port: 443
-  server: 162.159.44.127
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-TLS 🇺🇸 US-66.81.247.2...
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 66.81.247.230
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🇺🇸 US-154.29.150.2...
-  password: Aimer
-  port: 8080
-  server: 154.29.150.2
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #16'
-  password: 1161decb-384b-4528-99bb-0144cadc5e87
-  port: 44397
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.158...
-  password: Aimer
-  port: 443
-  server: 104.17.158.58
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.96....
-  network: ws
-  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
-  port: 443
-  server: 104.21.96.1
-  sni: 8ui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 8ui.191262.xyz
-    path: '%2FtvowuLtlha3zxRV9PS'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.44... #5'
-  password: Aimer
-  port: 443
-  server: 162.159.44.199
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.65.90....
+    path: /?ed=2560
+- name: '未知126 #1'
   network: ws
   password: vip
   port: 443
-  server: 172.65.90.53
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.36.... #1'
-  password: Aimer
-  port: 443
-  server: 104.19.36.124
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.45....
-  password: Aimer
-  port: 443
-  server: 104.19.45.0
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.96.... #1'
-  network: ws
-  password: x657pOt8KJBW
-  port: 2053
-  server: 104.21.96.1
-  sni: tasnim.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.twn24.ir
-    path: /🆔@M3HDIO1
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.64.145...
-  network: ws
-  password: vip
-  port: 443
-  server: 172.64.145.158
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #18'
-  password: 77fc26f0-f0af-4082-9434-ef25f103dcf5
-  port: 33505
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alpn:
-  - h2
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.83.... #3'
-  network: ws
-  password: tb5PqFczGQ
-  port: 443
-  server: 104.16.83.43
-  sni: DieGo.DIEgoMAraDOnA.iR.
-  type: trojan
-  ws-opts:
-    headers:
-      Host: DieGo.DIEgoMAraDOnA.iR.
-    path: '%2F'
-- name: 🔒 TR-WS-TLS 🇩🇪 DE-5.254.17.52:...
-  network: ws
-  password: 2bfa08e0-ae1e-11ed-a3a0-1239d0255272
-  port: 443
-  server: 5.254.17.52
-  sni: telewebion.com
-  type: trojan
-  ws-opts:
-    path: '%2Ftrojanws'
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #22'
-  password: 1161decb-384b-4528-99bb-0144cadc5e87
-  port: 44397
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.73....
-  network: ws
-  password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
-  port: 443
-  server: 172.67.73.163
-  sni: md1.safecdn.site
-  type: trojan
-  ws-opts:
-    headers:
-      Host: md1.safecdn.site
-    path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #23'
-  password: 42e81557-3749-4d0d-8def-2f730ff60b27
-  port: 43395
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.204... #1'
-  password: Aimer
-  port: 443
-  server: 104.16.204.46
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.33.... #2'
-  password: Aimer
-  port: 443
-  server: 172.64.33.144
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.12... #8'
-  password: Aimer
-  port: 443
-  server: 162.159.128.226
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.222...
-  password: Aimer
-  port: 443
-  server: 172.67.222.241
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-WS-TLS 🇺🇸 US-104.129.167....
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.167.255
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-    path: /
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.26.4.5...
-  network: ws
-  password: vip
-  port: 443
-  server: 104.26.4.57
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.142...
-  network: ws
-  password: XBONooFDZgAV
-  port: 2053
-  server: 172.67.142.21
-  sni: tasnim.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.andishehnegariran.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.152...
-  password: Aimer
-  port: 443
-  server: 104.19.152.52
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #12'
-  network: httpupgrade
-  password: IDLxH1WCvKhs
-  port: 2087
-  server: 172.67.142.21
-  sni: leader.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: leader.andishehnegariran.ir
-    path: /🆔@M3HDIO1
-- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.23.... #4'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.21.23.72
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.88....
-  network: ws
-  password: vip
-  port: 443
-  server: 104.21.88.129
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-- name: '🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #13'
-  network: httpupgrade
-  password: 5Va4g9kI9!WY
-  port: 2087
-  server: 104.21.71.8
-  sni: fars.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fars.itn24.ir
-    path: /dHV8LpKm
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.159... #1'
-  password: Aimer
-  port: 443
-  server: 172.64.159.217
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.46....
-  password: Aimer
-  port: 443
-  server: 104.19.46.24
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.179...
-  network: ws
-  password: vip
-  port: 443
-  server: 172.67.179.98
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: '%2F%3Fed%3D2560'
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.153...
-  password: Aimer
-  port: 443
-  server: 172.67.153.221
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.60....
-  password: Aimer
-  port: 443
-  server: 104.16.60.3
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.18.10....
-  network: ws
-  password: vip
-  port: 443
-  server: 104.18.10.143
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-- alpn:
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.71.... #4'
-  network: ws
-  password: ba6b9e44-3ea3-405d-a9eb-d5fcda84fdda
-  port: 443
-  server: 104.21.71.205
-  sni: XC.890603.pP.uA
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xc.890603.pp.ua
-    path: '%2FKXc8P40jGtEKiqQASULQ4Era5IOo'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.33.... #4'
-  password: Aimer
-  port: 443
-  server: 172.64.33.110
-  skip-cert-verify: false
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.148...
-  password: Aimer
-  port: 443
-  server: 104.16.148.129
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.54....
-  network: ws
-  password: XBONooFDZgAV
-  port: 2053
-  server: 104.21.54.208
-  sni: tasnim.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.andishehnegariran.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #36'
-  password: cde6d544-9c94-4262-a155-b7f9f975329c
-  port: 27202
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.170...
-  password: Aimer
-  port: 443
-  server: 172.67.170.60
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.62....
-  password: Aimer
-  port: 443
-  server: 104.19.62.94
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #9'
-  password: Aimer
-  port: 443
-  server: 108.162.193.110
-  skip-cert-verify: false
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.44... #8'
-  password: Aimer
-  port: 443
-  server: 162.159.44.168
-  skip-cert-verify: false
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.127...
-  password: Aimer
-  port: 443
-  server: 104.17.127.213
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.53....
-  password: Aimer
-  port: 443
-  server: 104.19.53.204
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.235...
-  password: Aimer
-  port: 443
-  server: 104.17.235.245
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-162.159.13... #33'
-  password: Aimer
-  port: 443
-  server: 162.159.137.243
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.48.... #9'
-  network: ws
-  password: WXHpDuEmA42F
-  port: 2087
-  server: 104.21.48.6
-  sni: tasnim.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.farsonline24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.64.... #3'
-  network: ws
-  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
-  port: 443
-  server: 104.21.64.1
-  sni: 8ui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 8ui.191262.xyz
-    path: '%2FtvowuLtlha3zxRV9PS'
-- name: '🔒 TR-TCP-TLS 🇺🇸 US-74.63.241.2... #1'
-  network: tcp
-  password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
-  port: 443
-  server: 74.63.241.26
-  sni: trus.moonfree.top
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.26.12.... #1'
-  password: 8aa7e179-739d-4195-bceb-d3e3fddf3df9
-  port: 443
-  server: 104.26.12.54
-  skip-cert-verify: false
-  sni: digitaloceanusargo.lzj520hxw.dpdns.org
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-108.162.19... #11'
-  password: Aimer
-  port: 443
-  server: 108.162.193.144
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-WS-TLS 🇺🇸 US-192.200.160.... #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 192.200.160.15
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epcch.ambercc.filegear-sg.me
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.44.... #2'
-  network: ws
-  password: 4PbOjiMDLh
-  port: 2096
-  server: 104.21.44.185
-  sni: support.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: support.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 🔒 TR-WS-TLS 🇷🇴 RO-45.85.119.0:...
-  network: ws
-  password: gIRrGnuuNm
-  port: 2096
-  server: 45.85.119.0
-  sni: aa.v2jey.fun
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aa.v2jey.fun
-    path: '%2F'
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.17.105...
-  password: Aimer
-  port: 443
-  server: 104.17.105.101
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.22.49....
-  password: Aimer
-  port: 443
-  server: 104.22.49.188
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-104.22.58.... #1'
-  password: Aimer
-  port: 443
-  server: 104.22.58.187
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-WS-TLS 🏴‍☠️ NA-162.159.15... #3'
-  network: ws
-  password: 55af195e-105f-4efc-871b-6eccb3163214
-  port: 443
-  server: 162.159.153.2
-  skip-cert-verify: true
-  sni: ft-champions-coupons-relate.trycloudflare.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ft-champions-coupons-relate.trycloudflare.com
-    path: '%2Fargox-tr%3Fed%3D2048'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.67.68.... #2'
-  password: 8aa7e179-739d-4195-bceb-d3e3fddf3df9
-  port: 443
-  server: 172.67.68.157
-  skip-cert-verify: false
-  sni: digitaloceanusargo.lzj520hxw.dpdns.org
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.51....
-  password: Aimer
-  port: 443
-  server: 104.16.51.27
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.21.224...
-  password: Aimer
-  port: 443
-  server: 104.21.224.139
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.40....
-  password: Aimer
-  port: 443
-  server: 104.16.40.66
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.16.4.2...
-  password: Aimer
-  port: 443
-  server: 104.16.4.25
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- name: '🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #54'
-  password: 4eba3cbb-b263-4461-98b8-0e0573e646e3
-  port: 46668
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 🔒 TR-TCP-NA 🏴‍☠️ NA-104.19.40....
-  password: Aimer
-  port: 443
-  server: 104.19.40.32
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.202... #2'
-  network: ws
-  password: yPuUcqd877yr
-  port: 2087
-  server: 172.67.202.155
-  sni: econews.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: econews.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: '🔒 TR-TCP-NA 🏴‍☠️ NA-172.64.35.... #5'
-  password: Aimer
-  port: 443
-  server: 172.64.35.168
-  skip-cert-verify: false
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: '未知11 #1'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.26.7.112
+  server: 104.19.173.68
   sni: heihu880.pages.dev
   type: trojan
   ws-opts:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: '未知17 #1'
-  network: ws
-  password: uV8u9Q41e2
-  port: 443
-  server: 104.18.165.78
-  sni: DieGo.DIEgoMAraDOnA.iR.
-  type: trojan
-  ws-opts:
-    headers:
-      Host: DieGo.DIEgoMAraDOnA.iR.
-    path: /
-- name: '未知20 #1'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.18.10.143
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
-- name: '未知33 #1'
-  network: ws
-  password: ctZ66Vttffqq
-  port: 2083
-  server: 104.21.64.1
-  sni: yjc.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: yjc.twn24.ir
-    path: /🆔@M3HDIO1
-- name: '未知35 #1'
+- name: '未知129 #3'
   network: grpc
-  password: c65dbe85-354d-4892-909d-2b288830ee37
-  port: 2087
-  server: 141.101.121.226
-  sni: 1744156312.speed.rdsactaa.china.nicchina.pp.ua
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.22.133
+  sni: 2wweertyuioop.20220420.pp.ua
   type: trojan
-- name: '未知36 #2'
+- name: '未知139 #1'
   network: ws
   password: vip
   port: 443
-  server: 104.21.88.129
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
-- name: '未知37 #1'
-  network: ws
-  password: 6d898085-bf6a-449b-9763-0073d4dc2ce0
-  port: 443
-  server: 104.21.63.236
-  sni: BOSton01.890604.GGff.NeT
-  type: trojan
-  ws-opts:
-    headers:
-      Host: boston01.890604.ggff.net
-    path: /Q3cz2AWTPMCtDGV1L6R1Jz18eIUw
-- name: '未知42 #1'
-  network: ws
-  password: 0212fab5-e93c-4904-b7a8-187fd535f354
-  port: 443
-  server: 172.67.159.56
-  sni: 3wsxcvbn.890617.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 3wsxcvbn.890617.xyz
-    path: /rFt8MpX4JNWO67qEaMINZ1
-- name: 未知44
-  network: ws
-  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
-  port: 443
-  server: 172.67.149.172
-  sni: usa-sanjose-one.890614.filegear-sg.me
-  type: trojan
-  ws-opts:
-    path: /T5yZBrY2Qkg2cThJQeJb
-- name: 未知50
-  network: ws
-  password: ctZ66Vttffqq
-  port: 2083
-  server: 104.21.80.1
-  sni: yjc.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: yjc.twn24.ir
-    path: /🆔@M3HDIO1
-- name: '未知89 #1'
-  network: ws
-  password: uV8u9Q41e2
-  port: 443
-  server: 104.18.165.203
-  sni: DieGo.DIEgoMAraDOnA.iR.
-  type: trojan
-  ws-opts:
-    headers:
-      Host: DieGo.DIEgoMAraDOnA.iR.
-    path: /
-- name: '未知99 #1'
-  network: ws
-  password: 8e09a4d7-80fc-4bb3-b3fb-1eb23211756a
-  port: 8443
-  server: 104.21.32.1
-  sni: tABNaK.TwN24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tabnak.twn24.ir
-    path: /vNF7RJtVepEuGq7R6Cczl
-- name: '未知100 #1'
-  network: ws
-  password: U592RRvl1vSW
-  port: 2053
-  server: 104.21.80.1
-  sni: tasnim.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tasnim.twn24.ir
-    path: /🆔@M3HDIO1
-- name: 未知124
-  network: ws
-  password: vpn
-  port: 2025
-  server: 46.29.234.154
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dns.google.com
-    path: /
-- name: '未知129 #1'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.18.4.250
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
-- name: '未知133 #1'
-  network: ws
-  password: Bc#??cut0k9l
-  port: 2053
-  server: 104.17.147.22
-  sni: G7tAU5ZF41eqnF9FpwJ8rmQY3SFYEI4l.PRX11.wORKeRS.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: g7tau5zf41eqnf9fpwj8rmqy3sfyei4l.prx11.workers.dev
-- name: '未知138 #1'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.26.8.156
+  server: 104.18.5.250
   sni: heihu880.pages.dev
   type: trojan
   ws-opts:

@@ -1,44 +1,30 @@
-# Update: 2025-05-05 08:49
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
+# Update: 2025-05-07 08:46
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 13
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- name: '🇺🇸_US_美国 #1'
-  network: ws
-  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
-  port: 443
-  server: 104.21.34.159
-  sni: 2qwert.2031.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /4p35eUnmGxQ8YJFJxz
+- cipher: aes-256-gcm
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
+  port: 11511
+  server: cdn-p1-us.youku-dns.com
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  port: 14100
-  server: 144.255.36.254
+  name: 🇺🇸_US_美国->🇮🇳_IN_印度
+  network: ws
+  port: 80
+  server: 162.159.36.141
   type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+  uuid: 4a154623-62d5-4425-8a4e-362996f32737
+  ws-opts:
+    headers:
+      host: 981115832590902025042519291113997.s15.chibaba.filegear-sg.me
+    path: /s15.html
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
-  port: 30830
-  server: v30.heduian.link
+  port: 30805
+  server: v5.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -49,9 +35,100 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  network: tcp
-  port: 5229
-  server: 5d38531f-sum4g0-svq8ok-ebxr.cu.plebai.net
+  name: 🇺🇸_US_美国->🇮🇳_IN_印度_1
+  network: ws
+  port: 80
+  server: 104.18.10.143
+  skip-cert-verify: true
+  sni: ''
   type: vmess
-  uuid: 5cfde7fa-ed1b-11ef-b5d9-f23c9164ca5d
+  uuid: 06135553-6f54-4d32-af08-83bc94823e7e
+  ws-opts:
+    headers:
+      host: 702826126377772025041118280413864.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇫🇷_FR_法国_1
+  network: tcp
+  port: 17235
+  server: 28be84b8-svdwg0-tbivec-1smvq.cm5.p5pv.com
+  type: vmess
+  uuid: 9546bb58-a66e-11ef-bbf3-f23c913c8d2b
+- name: 🇳🇱_NL_荷兰->🇯🇴_JO_约旦
+  password: 683d29d7-a3b8-42c5-9a9b-e21812e5f8b6
+  port: 34016
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '🇺🇸_US_美国_2 #1'
+  network: ws
+  password: aa424865-2762-404c-b767-66c9f98e026b
+  port: 443
+  server: 172.67.219.54
+  sni: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /P6OrM7FLvAhFqZdFGa29fCwxS
+- name: '🇳🇱_NL_荷兰->🇺🇸_US_美国 #1'
+  password: 683d29d7-a3b8-42c5-9a9b-e21812e5f8b6
+  port: 34016
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国_1
+  network: ws
+  port: 22035
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: vmess
+  uuid: 6e4b0739-2a02-44f5-892d-84ee7fdfb401
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇫🇷_FR_法国_3
+  network: tcp
+  port: 17235
+  server: 39d0166b-svc1s0-sxv7gp-8rja.cm5.p5pv.com
+  type: vmess
+  uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- name: '🇺🇸_US_美国_5 #1'
+  network: ws
+  password: aTArbZ2F0E
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  sni: uSa-vp-27.bLAzECLOUD.SITE
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /linkvkws

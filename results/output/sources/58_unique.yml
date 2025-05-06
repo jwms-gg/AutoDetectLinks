@@ -1,5 +1,5 @@
-# Update: 2025-05-05 08:49
-# Source 58 (https://t.me/s/VmessProtocol), 37
+# Update: 2025-05-07 08:46
+# Source 58 (https://t.me/s/VmessProtocol), 34
 proxies:
 - alpn:
   - h2
@@ -32,6 +32,16 @@ proxies:
     headers:
       Host: mw7.transitkala.com
     path: /
+- name: '(@VmessProtocol)برای #5'
+  network: tcp
+  port: 40240
+  server: 135.181.155.147
+  tls: false
+  type: vless
+  uuid: 63aa9c62-5da9-48e9-ab68-eecc8fce8036
+  ws-opts:
+    headers:
+      Host: canva.com
 - name: '(@VmessProtocol)برای #6'
   network: grpc
   port: 16072
@@ -74,13 +84,6 @@ proxies:
   ws-opts:
     headers:
       Host: testspeed-foreign.tci.ir
-- name: '(@VmessProtocol)برای #17'
-  network: grpc
-  port: 8880
-  server: 84.32.9.46
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: api
@@ -105,16 +108,6 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
-- name: '(@VmessProtocol)برای #24'
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
-  ws-opts:
-    headers:
-      Host: sareshab.wfft.ir
 - client-fingerprint: chrome
   name: '(@VmessProtocol)برای #26'
   network: grpc
@@ -178,6 +171,19 @@ proxies:
   tls: false
   type: vless
   uuid: 55e79d77-c2ea-40ec-b10e-8deb79972c37
+- client-fingerprint: chrome
+  name: '(@VmessProtocol)برای #33'
+  network: ws
+  port: 443
+  server: 154.17.229.206
+  servername: usa.cayuo.me
+  tls: true
+  type: vless
+  uuid: 74049a59-4a76-48bb-9689-efa31e4dad6f
+  ws-opts:
+    headers:
+      Host: usa.cayuo.me
+    path: /bing
 - client-fingerprint: chrome
   name: '(@VmessProtocol)برای #34'
   network: ws
@@ -270,13 +276,6 @@ proxies:
     headers:
       Host: 5-55sfjslf.ifenxiang.cfd
     path: /?ed=2560
-- name: '(@VmessProtocol)برای #43'
-  network: grpc
-  port: 8880
-  server: 84.32.9.44
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '(@VmessProtocol)برای #44'
   network: ws
   port: 443
@@ -308,13 +307,6 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '(@VmessProtocol)برای #47'
-  network: grpc
-  port: 8880
-  server: 84.32.9.52
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '(@VmessProtocol)برای #49'
   network: grpc
   port: 8880
@@ -341,13 +333,6 @@ proxies:
     headers:
       Host: vlee.amclubs.nyc.mn
     path: /?ed=2560
-- name: '(@VmessProtocol)برای #55'
-  network: grpc
-  port: 8880
-  server: 84.32.9.31
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '(@VmessProtocol)برای #56'
   network: grpc
   port: 8880
