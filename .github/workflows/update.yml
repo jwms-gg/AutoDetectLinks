@@ -28,14 +28,14 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: '3.11'
 
       - name: Install requirements
         run: pip install -r requirements.txt
 
       - name: Fetch new data
         run: |
-          python cli.py
+          timeout 2000s python cli.py && echo "Fetch new data success" || echo "Fetch new data failed"
 
       - name: Converter new
         run: |
@@ -45,9 +45,9 @@ jobs:
         run: |
           wget https://github.com/bestruirui/BestSub/releases/download/v0.3.2/BestSub_Linux_x86_64.tar.gz
           tar -zxvf BestSub_Linux_x86_64.tar.gz -C bestsub
-          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/config.example.yaml -O  config/config.yaml
+          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/config.example.yaml -O config/config.yaml
           # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/rename.yaml -O  config/rename.yaml
-          timeout 359s python -m http.server 8080 &
+          timeout 360s python -m http.server 8080 &
           cd bestsub
           timeout 360s ./BestSub || true
 
