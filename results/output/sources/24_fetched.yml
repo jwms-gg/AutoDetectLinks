@@ -1,27 +1,25 @@
-# Update: 2025-05-09 11:15
-# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 24
+# Update: 2025-05-17 08:45
+# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 22
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: tg频道:@freenodedaily
   password: awsps0501
   port: 443
-  server: 57.180.41.89
+  server: 35.90.251.87
   tfo: false
   type: ss
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: HK
-  network: ws
-  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
-  port: 40021
-  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  port: 25635
+  server: 103.224.80.89
   skip-cert-verify: false
-  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
-    path: /dl_media
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 🇭🇰 香港2
@@ -34,7 +32,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 37512
+  port: 15985
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -49,59 +47,75 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 🇭🇰 香港4
-  password: d64c2ba8-0ae4-4299-8af7-8c5046e3c1c1
-  port: 27102
-  server: 183.240.116.224
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港5
-  port: 59082
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 🇭🇰 香港6
-  port: 36609
-  server: 120.232.153.40
+  name: 🇭🇰 香港4
+  port: 43302
+  server: 183.236.51.38
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 🇭🇰 香港7
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
+  name: 🇭🇰 香港5
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
   skip-cert-verify: false
-  sni: hk06.run.place
+  sni: hk-13-568.flztjc.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 🇭🇰 香港8
-  password: ed0ca0bd-3aa3-4d3a-81b0-eadcd1083a4d
-  port: 46603
-  server: xg-jd.huidu51.com
+  name: 🇭🇰 香港6
+  password: NPOA4WYID2WF8N4E
+  port: 15016
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港7
+  port: 41554
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港8
+  network: ws
+  port: 8080
+  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  name: 🇹🇼 台湾
+  password: 4abad10b-be0d-48bf-ab8a-3311463084d4
+  port: 42765
+  server: wb.kaiqsz.com
+  skip-cert-verify: false
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: JP
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505061413967-ARiTaH7btE.download.microsoft.com
+    host: 202505121278853-jDmMPlEOcQ.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -110,16 +124,16 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 🇯🇵 日本2
-  password: ee003c5fb8d8
+  password: bd95d7933d72
   plugin: v2ray-plugin
   plugin-opts:
     host: jp06v1.3ci.xyz
     mode: websocket
     mux: true
-    path: /ywkyahjulb
+    path: /qvqgjshkqqep
     skip-cert-verify: false
     tls: true
-  port: 41827
+  port: 53586
   server: 103.140.136.242
   tfo: false
   type: ss
@@ -134,17 +148,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇯🇵 日本4
-  port: 53710
-  server: 47.79.88.113
-  skip-cert-verify: false
+  password: 1d6fc1e2-a36d-4bd7-b0d0-e901343d9b97
+  port: 19008
+  server: 183.36.41.50
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 1db838d0-ecd2-4b73-a7f8-5af6b401d833
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -161,31 +172,30 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡2
-  password: ce44b416-2d7e-49af-aa40-5a61d45f6fcc
-  port: 27401
-  server: 58.254.186.222
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 🇸🇬 新加坡3
-  network: ws
-  port: 35146
-  server: sg6.vip2.g2.moonbase.life
-  servername: web.xcjs.info
-  skip-cert-verify: false
+  name: 🇸🇬 新加坡2
+  password: UAO72K511KYT7NM7
+  port: 16003
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
-    path: /home
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: KR
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇰🇷 韩国2
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6666
+  server: 13.209.10.213
+  tfo: false
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -208,20 +218,29 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505061413967-ARiTaH7btE.download.microsoft.com
+    host: 202505121278853-jDmMPlEOcQ.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
   name: 🇺🇸 美国3
-  password: a8093ea8-f02e-4ffc-8a13-d068a62971bf
-  port: 27301
-  server: 183.2.150.64
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-b.tkong.cc
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -239,35 +258,3 @@ proxies:
     headers:
       Host: zxjp-b.tkong.cc
     path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇯🇵 日本特殊
-  password: awsps0501
-  port: 443
-  server: 3.112.233.244
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇸🇬 狮城特殊
-  password: awsps0501
-  port: 443
-  server: 18.183.184.244
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇰🇷 韩国特殊
-  password: awsps0501
-  port: 443
-  server: 54.199.249.6
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇻🇳 越南
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.19
-  tfo: false
-  type: ss

@@ -1,85 +1,49 @@
-# Update: 2025-05-09 11:15
-# Source 13 (https://node.freeclashnode.com/uploads/%Y/%m/0-%Y%m%d.yaml), 17
+# Update: 2025-05-17 08:45
+# Source 13 (https://node.freeclashnode.com/uploads/%Y/%m/0-%Y%m%d.yaml), 22
 proxies:
-- name: '🇺🇸_US_美国 #4'
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: false
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
-- name: 🇺🇸_US_美国->🏳️_unKnow_未知
+- alpn:
+  - http/1.1
+  name: '🇺🇸_US_美国->🇨🇳_CN_中国 #2'
   network: ws
-  password: aa424865-2762-404c-b767-66c9f98e026b
+  password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
   port: 443
-  server: 172.67.219.54
-  sni: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG
+  server: 104.21.84.58
+  skip-cert-verify: false
+  sni: XXXcddDe.IRaN2035.dpdNs.orG
   type: trojan
   udp: true
   ws-opts:
-    path: /P6OrM7FLvAhFqZdFGa29fCwxS
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #2'
-  network: ws
-  port: 30828
-  server: v28.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
-  network: tcp
-  port: 14100
-  server: 144.255.36.254
-  sni: ''
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳_CN_中国 #1'
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v37.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '🇳🇱_NL_荷兰->🇺🇸_US_美国 #2'
-  network: ws
-  port: 22035
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6e4b0739-2a02-44f5-892d-84ee7fdfb401
-  ws-opts:
-    path: /
+    path: /bdtuD5eD7Q29WxRG8DqNAB
+- cipher: aes-128-cfb
+  name: 🇺🇸_US_美国
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- name: '🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  password: b93c66cc-00ed-11ec-8673-f23c9164ca5d
+  port: 15229
+  server: 2e113de4-swb8g0-sxoons-1a3sy.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: '🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  port: 15229
+  server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: '🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  password: 398e0d38-8649-11ef-959c-f23c9164ca5d
+  port: 15229
+  server: 72135393-swb8g0-sxzls8-1gxvd.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 🇨🇦_CA_加拿大->🇨🇳_CN_中国
+  password: '74260665780162200'
+  port: 443
+  server: 52.60.142.77
+  sni: allowing-owl.shiner427.skin
+  type: trojan
 - alterId: 2
   cipher: auto
   name: '🇨🇳_CN_中国->🇺🇸_US_美国_3 #2'
@@ -94,49 +58,99 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: '🇺🇸_US_美国_1 #7'
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.114.114.108
-  type: ss
-- name: '🇺🇸_US_美国->🏳️_unKnow_未知_1 #1'
-  network: ws
-  password: aTArbZ2F0E
+- name: 🇨🇦_CA_加拿大->🇨🇳_CN_中国_1
+  password: '74260665780162200'
   port: 443
-  server: cloudgetservice.mcloudservice.site
-  sni: uSa-vp-27.bLAzECLOUD.SITE
+  server: allowing-owl.shiner427.skin
+  skip-cert-verify: true
+  sni: allowing-owl.shiner427.skin
   type: trojan
-  udp: true
-  ws-opts:
-    path: /linkvkws
 - alterId: 2
   cipher: auto
-  name: '🇨🇳_CN_中国_1 #1'
+  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
   network: ws
-  port: 30833
-  server: v33.heduian.link
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: baidu.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
-  port: 11511
-  server: cdn-p1-us.youku-dns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸_US_美国_3 #5'
-  password: 67dYfi1uAv2ZTxXvLoek39
-  port: 33133
-  server: 66.151.41.89
-  type: ss
+- alpn:
+  - http/1.1
+  name: '🇺🇸_US_美国->🇨🇳_CN_中国_1 #1'
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  skip-cert-verify: false
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /By7cEmOrNRS58yeduy9AOG
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国_4 #2'
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: '🇺🇸_US_美国_2 #5'
+  password: xxoo
+  port: 443
+  server: 138.197.5.103
+  skip-cert-verify: false
+  sni: us.blazeppn.info
+  type: trojan
+- name: '🇩🇪_DE_德国 #3'
+  password: '74260665780162200'
+  port: 443
+  server: cuddly-finch.shiner427.skin
+  skip-cert-verify: false
+  sni: cuddly-finch.shiner427.skin
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇺🇸_US_美国->🇩🇪_DE_德国_1 #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.76.237.63
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '🇨🇳_CN_中国 #2'
+  password: VfaEatGj7iXncVpijKFC1e
+  port: 59945
+  server: 62.60.231.81
+  type: ss
+- name: '🇺🇸_US_美国_3 #7'
+  network: ws
+  password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
+  port: 443
+  server: 172.67.188.77
+  skip-cert-verify: false
+  sni: edfr4.890604.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: edfr4.890604.dpdns.org
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国_1
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -146,31 +160,51 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v8.heduian.link
+      host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇦_UA_乌克兰 #1'
-  network: tcp
-  port: 14100
-  server: dxv4.pai50288.uk
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- cipher: chacha20-ietf
-  name: '🇨🇳_CN_中国_2 #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.61
-  type: ss
-- name: '🇺🇸_US_美国_4 #4'
+- name: '🇺🇸_US_美国->🇫🇷_FR_法国 #1'
   network: ws
-  password: aTArbZ2F0E
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
-  server: 172.66.168.209
-  sni: uSa-vp-27.bLAzECLOUD.SITE
+  server: 104.21.25.95
+  sni: DDd.890604.FIlEGear-sG.Me
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      host: uSa-vp-27.bLAzECLOUD.SITE
-    path: /linkvkws
+    path: /mZr1mA5hub7QHHkQBzYO
+- alpn:
+  - http/1.1
+  name: '🇺🇸_US_美国->🇨🇳_CN_中国_2 #1'
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.138.187
+  skip-cert-verify: false
+  sni: CdVftY.7282728.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /ptGwaGzcA4KNAXX
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 26a33cb5-swb8g0-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+- name: 🇩🇪_DE_德国_1
+  password: '74260665780162200'
+  port: 443
+  server: 3.121.11.241
+  skip-cert-verify: false
+  sni: cuddly-finch.shiner427.skin
+  type: trojan
+- alterId: 0
+  cipher: auto
+  http-opts: {}
+  name: '🇺🇸_US_美国_6 #2'
+  network: http
+  port: 55839
+  server: 38.54.25.204
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
