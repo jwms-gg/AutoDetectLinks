@@ -248,7 +248,6 @@ rules:
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,antiad,REJECT
-  - RULE-SET,dnsblocklists-multi-pro,REJECT
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,🚀 选择代理
@@ -348,9 +347,3 @@ rule-providers:
     behavior: domain
     url: https://fastly.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-clash.yaml
     interval: 86400
-  dnsblocklists-multi-pro:
-    behavior: domain
-    interval: 86400
-    type: http
-    format: text
-    url: https://fastly.jsdelivr.net/gh/hagezi/dns-blocklists@main/wildcard/pro.txt

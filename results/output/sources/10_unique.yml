@@ -1,19 +1,51 @@
-# Update: 2025-05-07 08:46
-# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 1
+# Update: 2025-05-09 11:15
+# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 5
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik...
+  password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
+  port: 30665
+  server: 107.191.63.241
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>中国-ChatGPT-TikTok-You...
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTo...
   network: ws
-  port: 8880
-  server: 104.17.213.241
-  servername: 100-135-125-128.s2.db-link01.top
+  port: 11611
+  server: 174.136.204.209
   skip-cert-verify: true
   type: vmess
-  uuid: 95cc876c-de44-3d02-ac9a-2cd37c37c600
+  uuid: baec9adb-d6b9-465a-f531-d0a38144cf6c
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #6'
+  network: ws
+  port: 443
+  server: tx.st0722.top
+  servername: tx.st0722.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 44fec25f-d1dc-40d1-a93d-93e7562e2b9a
   ws-opts:
     headers:
-      HOST: 100-135-125-128.s2.db-link01.top
-    path: /dabai.in104.21.29.188
+      HOST: tx.st0722.top
+    path: /bb
+- cipher: chacha20-ietf-poly1305
+  name: 'SS-美国-NF解锁自制剧-ChatGPT-TikTok-Y... #6'
+  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
+  port: 31444
+  server: 149.28.106.134
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-法国-NF解锁法国自制剧-ChatGPT-TikTok...
+  password: xy7g5bw1lriJJ20CzpHK78
+  port: 443
+  server: 62.210.88.22
+  type: ss

@@ -1,20 +1,22 @@
-# Update: 2025-05-07 08:46
-# Source 75 (https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml), 105
+# Update: 2025-05-09 11:16
+# Source 75 (https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml), 108
 proxies:
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: hkyydsrongseven
   name: 美国 001
-  network: grpc
-  port: 54739
-  server: 212.50.251.20
+  network: ws
+  port: 80
+  server: www.hdmoli.com
   skip-cert-verify: true
   tfo: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
   uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: fr.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
   name: 美国 002
@@ -47,6 +49,20 @@ proxies:
     headers:
       Host: us.freeyyds.dpdns.org
     path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: hkyydsrongseven
+  name: 美国 004
+  network: grpc
+  port: 54739
+  server: 212.50.251.20
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
 - name: '美国 049 #1'
   network: ws
   port: 80
@@ -632,7 +648,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /
 - client-fingerprint: chrome
-  name: '美国 158 #1'
+  name: 美国 158
   network: ws
   port: 80
   server: 104.16.86.2
@@ -777,7 +793,7 @@ proxies:
     path: /?ed=1080
 - alterId: 0
   cipher: auto
-  name: 美国 004
+  name: 美国 005
   network: ws
   port: 80
   server: AC.fastly80-2.hosting-ip.com
@@ -791,7 +807,7 @@ proxies:
     headers:
       Host: telegram-isvvpn.dev
     path: /racevpn
-- name: 美国 005
+- name: 美国 007
   network: ws
   port: 2052
   server: 190.93.244.226
@@ -960,7 +976,7 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 美国 007
+  name: 美国 009
   network: ws
   port: 80
   server: 151.101.130.168
@@ -976,7 +992,7 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 美国 009
+  name: 美国 013
   network: ws
   port: 42360
   server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
@@ -993,7 +1009,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: 美国 013
+  name: 美国 014
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -1007,7 +1023,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - client-fingerprint: chrome
   delay: 2653
-  name: 美国 014
+  name: 美国 015
   network: ws
   port: 2083
   server: www.parsvds.com
@@ -1023,7 +1039,7 @@ proxies:
   cipher: auto
   fingerprint: ''
   ip-version: dual
-  name: 美国 015
+  name: 美国 017
   network: ws
   port: 2052
   server: 104.21.44.185
@@ -1095,7 +1111,7 @@ proxies:
     path: /tro8sFW1S91B6sZrM1?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国 017
+  name: 美国 023
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -1109,7 +1125,7 @@ proxies:
     headers:
       Host: 100-149-191-2.s5.db-link02.top
     path: /dabai.in104.20.16.209
-- name: 美国 023
+- name: 美国 024
   network: ws
   password: T%40_WvT8Ho%40LW%25w_%2C
   port: 2053
@@ -1139,7 +1155,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 024
+  name: 美国 026
   network: ws
   port: 443
   server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
@@ -1345,7 +1361,7 @@ proxies:
     path: /cp100vp800kkkdsnx
 - alterId: 0
   cipher: auto
-  name: 美国 026
+  name: 美国 033
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -1360,7 +1376,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 033
+  name: 美国 035
   network: ws
   port: 443
   server: cdnjs.com
@@ -1373,7 +1389,7 @@ proxies:
     path: /us.kkp.me.eu.org/aa
 - alterId: 0
   cipher: auto
-  name: 美国 035
+  name: 美国 040
   network: ws
   port: 443
   server: time.is
@@ -1386,7 +1402,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 040
+  name: 美国 042
   network: ws
   port: 443
   server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
@@ -1397,16 +1413,44 @@ proxies:
     headers:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
-- alterId: 0
-  cipher: auto
-  name: 美国 042
+- name: 美国 043
   network: ws
-  port: 50279
-  server: 38.150.34.202
-  tls: true
-  type: vmess
-  uuid: 92362b77-a3bb-4cdd-a466-ca11e0819c08
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.34.159
+  sni: 2qwert.2031.pp.ua
+  type: trojan
   ws-opts:
     headers:
-      Host: www.a.wdhbvua.pics
-    path: /
+      Host: 2qwert.2031.pp.ua
+    path: /4p35eUnmGxQ8YJFJxz
+- alterId: 0
+  cipher: auto
+  name: 美国 045
+  network: ws
+  port: 2086
+  server: 104.18.114.1
+  servername: m116.164748.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 047
+  network: ws
+  port: 2086
+  server: 104.18.114.2
+  servername: m116.164748.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
