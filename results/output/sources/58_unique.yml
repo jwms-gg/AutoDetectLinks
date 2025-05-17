@@ -1,5 +1,5 @@
-# Update: 2025-05-17 08:46
-# Source 58 (https://t.me/s/VmessProtocol), 47
+# Update: 2025-05-17 23:57
+# Source 58 (https://t.me/s/VmessProtocol), 48
 proxies:
 - name: (@VmessProtocol)برای
   network: tcp
@@ -11,6 +11,16 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
+- name: '(@VmessProtocol)برای #3'
+  network: ws
+  port: 80
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
+  ws-opts:
+    headers:
+      Host: sareshab.wfft.ir
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -150,19 +160,6 @@ proxies:
   tls: false
   type: vless
   uuid: 93489dc6-47a3-4532-b050-6fb193b855e9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: '(@VmessProtocol)برای #17'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA
-    short-id: 1d13151ce1
-  server: 91.107.219.8
-  servername: direct.pdownloaddigikala.ir
-  tls: false
-  type: vless
-  uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
 - alterId: 0
   cipher: auto
   name: '(%40VmessProtocol)%D8%A8%D8%B1... #6'
@@ -327,6 +324,19 @@ proxies:
     headers:
       Host: vlee.amclubs.nyc.mn
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: '(@VmessProtocol)برای #34'
+  network: ws
+  port: 443
+  server: 104.16.190.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: /
 - name: '(@VmessProtocol)برای #36'
   network: grpc
   port: 8880
@@ -446,7 +456,7 @@ proxies:
   port: '443'
   server: 194.87.216.79
   type: ss
-- name: unnamed
+- name: 'unnamed #2'
   port: 80
   server: 45.120.178.115
   tls: false

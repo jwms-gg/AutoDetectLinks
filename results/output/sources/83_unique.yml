@@ -1,5 +1,5 @@
-# Update: 2025-05-17 08:46
-# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 62
+# Update: 2025-05-17 23:57
+# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 61
 proxies:
 - cipher: aes-256-gcm
   name: _CN_中国->🇭🇺_HU_匈牙利
@@ -8,6 +8,21 @@ proxies:
   server: cdn-p1-lm.youku-dns.com
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国_1
@@ -96,6 +111,16 @@ proxies:
   server: cdn-p1-us.youku-dns.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: _US_美国_5
+  port: 50009
+  server: 142.4.116.177
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: _US_美国_7
   network: ws
   password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
@@ -109,19 +134,6 @@ proxies:
     headers:
       Host: m9rrrfgh.459.pp.ua
     path: /l6lvY4hFZriQDBimbKYmPIggy
-- name: _US_美国_1 2
-  network: ws
-  password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
-  port: 443
-  server: 104.21.84.58
-  skip-cert-verify: true
-  sni: XXXcddDe.IRaN2035.dpdNs.orG
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: XXXcddDe.IRaN2035.dpdNs.orG
-    path: /bdtuD5eD7Q29WxRG8DqNAB
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇨🇦_CA_加拿大_1
@@ -137,32 +149,6 @@ proxies:
     headers:
       Host: v35.heduian.link
     path: /oooo
-- name: '_US_美国_2 2 #1'
-  network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 172.67.144.126
-  skip-cert-verify: true
-  sni: CFR56ty7890.288288.sHOP
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: CFR56ty7890.288288.sHOP
-    path: /By7cEmOrNRS58yeduy9AOG
-- name: _US_美国_3 2
-  network: ws
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  port: 443
-  server: 172.67.138.187
-  skip-cert-verify: true
-  sni: CdVftY.7282728.xYz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: CdVftY.7282728.xYz
-    path: /ptGwaGzcA4KNAXX
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国_6 2

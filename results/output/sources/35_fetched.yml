@@ -1,152 +1,195 @@
-# Update: 2025-05-17 08:45
-# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 30
+# Update: 2025-05-17 23:57
+# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 50
 proxies:
-- name: '🇺🇸 US 1 #1'
-  network: ws
-  password: er668
-  port: 443
-  server: kfjdi.pages.dev
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: '🇺🇸 US 2 #1'
+- cipher: aes-128-gcm
+  name: 🇳🇱 NL 1
+  password: shadowsocks
+  port: '443'
+  server: 149.34.244.71
+  type: ss
+- name: '🇳🇱 NL 2 #1'
   network: ws
   port: 443
-  server: azadnet05.pages.dev
-  servername: azadnet05.pages.dev
+  server: 5.182.86.128
+  servername: nl07.abvpn.ru
   tls: true
   type: vless
-  uuid: 4d794980-54c0-4fcb-8def-c2beaecadbad
+  uuid: 588f094b-431b-422c-b80b-007945037072
   ws-opts:
-    path: '%2fonqTSGxT0rgc7nPc%3fed%3d2560'
-- cipher: rc4-md5
-  name: '🇺🇸 US 3 #1'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 79.110.53.169
-  type: ss
-- cipher: rc4-md5
-  name: '🇺🇸 US 4 #1'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 138.199.42.68
-  type: ss
-- name: '🇺🇸 US 5 #2'
+    headers:
+      Host: nl07.abvpn.ru
+    path: '%2fwebsocket'
+- client-fingerprint: chrome
+  name: 🇳🇱 NL 3
+  network: tcp
+  port: 80
+  reality-opts:
+    public-key: dK5nR9FbarexoEC-fYTBy2jtSHxIzUS1CyV3kLFnmCo
+  server: snapp.ir.iraniantim.ir
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 76f2c7ff-1fa4-474f-f522-f2f76d5a4542
+  ws-opts:
+    path: '%2f'
+- name: 🇳🇱 NL 4
+  network: ws
+  port: 443
+  server: 5.182.86.128
+  servername: nl07.abvpn.ru
+  tls: true
+  type: vless
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      Host: nl07.abvpn.ru
+    path: '%2fwebsocket'
+- alterId: 32
+  cipher: null
+  name: 🇳🇱 NL 5
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
+- alterId: 32
+  cipher: null
+  name: '🇳🇱 NL 6 #1'
+  network: ws
+  port: 443
+  server: 77.83.141.171
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vc
+- name: 🇫🇮 FI 1
   network: grpc
   port: 8880
-  server: 84.32.131.119
+  server: 157.180.80.139
   tls: false
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
   ws-opts:
     path: '%2f'
-- name: '🇺🇸 US 6 #2'
-  network: tcp
+- name: 🇫🇮 FI 2
+  network: grpc
+  port: 8880
+  server: 157.180.45.73
+  tls: false
+  type: vless
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
+  ws-opts:
+    path: '%2f'
+- name: 🇫🇮 FI 3
+  network: grpc
+  port: 8880
+  server: 157.180.80.139
+  tls: false
+  type: vless
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
+  ws-opts:
+    path: '%2f'
+- name: 🇫🇮 FI 4
+  network: grpc
+  port: 8880
+  server: 47960081449738.4gxulocfq1mt.esfahan-yar.org
+  tls: false
+  type: vless
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
+  ws-opts:
+    path: '%2f'
+- name: 🇫🇮 FI 5
+  network: grpc
+  port: 8880
+  server: 10559431426572.u7es6pae9h48.tehran-021.org
+  tls: false
+  type: vless
+  uuid: 65343a27-de9d-4b0c-ab0a-562309c94d2b
+  ws-opts:
+    path: '%2f'
+- name: 🇫🇮 FI 6
+  network: grpc
+  port: 8880
+  server: 69650153549179.s56uhves8mkx.rasht-sib.org
+  tls: false
+  type: vless
+  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
+  ws-opts:
+    path: '%2f'
+- name: 🇫🇮 FI 7
+  network: grpc
+  port: 8880
+  server: 86331392705333.pngodjwmgsar.tehran-021.org
+  tls: false
+  type: vless
+  uuid: 65343a27-de9d-4b0c-ab0a-562309c94d2b
+  ws-opts:
+    path: '%2f'
+- name: '🇱🇻 LV 1 #2'
+  network: ws
   port: 443
-  server: 147135001178.sec22org.com
-  servername: 147135001178.sec22org.com
+  server: lv01.abvpn.ru
+  servername: lv01.abvpn.ru
   tls: true
   type: vless
-  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+  uuid: 588f094b-431b-422c-b80b-007945037072
   ws-opts:
-    path: '%2f'
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸 US 7 #1'
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: '8080'
-  server: 45.87.175.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 8
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: '8080'
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 1
-  password: u17T3BvpYaaiuW2c
-  port: '443'
-  server: 131.145.59.172
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 2
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 85.210.35.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇬🇧 GB 3 #1'
-  password: 1xO2cqPazqjGfCfd
-  port: '443'
-  server: 85.210.35.5
-  type: ss
-- name: '🇬🇧 GB 4 #1'
-  network: tcp
-  password: zsu4Mq3A9J
-  port: 8443
-  server: 51.195.254.75
-  sni: uk-02.allhubb.info
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 DE 1
-  password: wiy6LFb4OvXC6Te40HwK1F
-  port: '443'
-  server: 81.19.141.45
-  type: ss
-- client-fingerprint: chrome
-  name: 🇩🇪 DE 2
-  network: tcp
-  port: 5541
-  reality-opts:
-    public-key: Q4FlYQIDbIQT_xPDDwcbOU6RAqHdgdwyntwrkNdTu0c
-    short-id: 61c9c609ba0058ab
-  server: 134.122.92.59
-  servername: prosegur.com
-  tls: false
-  type: vless
-  uuid: 705a80fc-7d8e-484d-b44c-659ebc00def7
-  ws-opts:
-    path: '%2f'
-- alpn:
-  - http/1.1
-  name: 🇩🇪 DE 3
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.178.61.248
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs
-  name: 🇩🇪 DE 4
-  network: grpc
+    headers:
+      Host: lv01.abvpn.ru
+    path: '%2fwebsocket'
+- name: 🇱🇻 LV 2
+  network: ws
   port: 443
-  reality-opts:
-    public-key: u28jiCcALXYBSmP5K1-aY4VBd6UdUjNxJBcZ-si0YCo
-    short-id: d480
-  server: 91.107.166.17
-  servername: www.cdn77.com
+  server: 103.231.73.214
+  servername: lv01.abvpn.ru
+  tls: true
+  type: vless
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      Host: lv01.abvpn.ru
+    path: '%2fwebsocket'
+- name: 🇩🇪 DE 1
+  network: ws
+  port: 35097
+  server: 94.159.100.135
+  servername: de.uzilol.cn
+  tls: true
+  type: vless
+  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
+  ws-opts:
+    path: '%2frangws'
+- name: 🇩🇪 DE 2
+  network: ws
+  port: 2053
+  server: v2raxx-channel.cataba.ir
   tls: false
   type: vless
-  uuid: 4c34aa10-a1e6-4cfa-b58d-33725c71ce4d
+  uuid: V2RAXX1
   ws-opts:
-    path: '%2f'
-- alpn:
-  - http/1.1
-  name: 🇩🇪 DE 5
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.61.248
-  sni: trojan.burgerip.co.uk
-  type: trojan
+    path: '%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX%2f%40V2RAXX'
+- name: 🇩🇪 DE 3
+  network: ws
+  port: 443
+  server: 95.164.47.60
+  servername: de02.abvpn.ru
+  tls: true
+  type: vless
+  uuid: 588f094b-431b-422c-b80b-007945037072
   ws-opts:
-    path: '%2f'
+    headers:
+      Host: de02.abvpn.ru
+    path: '%2fwebsocket'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision!
   name: 🇮🇳 IN 1
@@ -163,84 +206,306 @@ proxies:
     headers:
       Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
     path: '%2f'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇮🇳 IN 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
+  server: 5.181.171.10
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  name: 🇬🇧 GB 1
+  network: tcp
+  port: 55311
+  reality-opts:
+    public-key: YUcUHdfvj0h3EbIe2kLT9IM4J3Q1O3Cpb29gKxE2fwM
+    short-id: 2d0fc01b3c72ce
+  server: 45.77.230.57
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: 52a0b1c0-0b8d-4e08-a2ae-89f6f13852b4
+  ws-opts:
+    path: '%2f'
 - cipher: aes-256-cfb
-  name: 🇫🇷 FR 1
+  name: '🇫🇷 FR 1 #1'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 195.154.185.174
   type: ss
-- name: 🇫🇮 FI 1
-  network: grpc
-  port: 8880
-  server: 43288132502671.v73jb5xvqts6.iranmans.com
-  tls: false
-  type: vless
-  uuid: 65343a27-de9d-4b0c-ab0a-562309c94d2b
-  ws-opts:
-    path: '%2f'
-- name: 🇫🇮 FI 2
-  network: grpc
-  port: 8880
-  server: 47960081449738.4gxulocfq1mt.esfahan-yar.org
-  tls: false
-  type: vless
-  uuid: 5a76615b-10e1-46f7-d521-17662f3c7287
-  ws-opts:
-    path: '%2f'
 - cipher: aes-256-cfb
   name: '🇦🇹 AT 1 #1'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 185.180.12.81
   type: ss
+- client-fingerprint: chrome
+  name: '🇺🇸 US 1 #1'
+  port: 443
+  server: 135.148.206.76
+  servername: 147135010072.sec21org.com
+  tls: true
+  type: vless
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 2 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.181
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 3 #1'
+  network: grpc
+  port: 8880
+  server: 45.82.251.165
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 4 #1'
+  network: grpc
+  port: 8880
+  server: 45.82.251.179
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- alterId: 0
+  cipher: null
+  name: '🇺🇸 US 5 #2'
+  network: ws
+  port: 8443
+  server: uswuxian.pai50288.uk
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
+  ws-opts:
+    headers:
+      Host: uswuxian.pai50288.uk
+    path: /
+- alterId: 0
+  cipher: null
+  name: '🇺🇸 US 6 #2'
+  network: ws
+  port: 8443
+  server: uswuxian.pai50288.uk
+  servername: null
+  tls: true
+  type: vmess
+  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
+  ws-opts:
+    headers:
+      Host: uswuxian.pai50288.uk
+    path: /
+- name: '🇺🇸 US 7 #1'
+  password: xxoo
+  port: 443
+  server: us.blazeppn.info
+  sni: us.blazeppn.info
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  name: 🇺🇸 US 8
+  port: 443
+  server: 15.204.195.77
+  servername: 147135001178.sec22org.com
+  tls: true
+  type: vless
+  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+  ws-opts:
+    path: '%2f'
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸 US 9 #3'
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: '8080'
+  server: 45.87.175.178
+  type: ss
+- name: 🇺🇸 US 10
+  network: tcp
+  port: 443
+  server: 135.148.74.148
+  servername: 147135004002.sec20org.com
+  tls: true
+  type: vless
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+  ws-opts:
+    path: '%2f'
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 11
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 12
+  network: ws
+  port: 443
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 US 13
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: '8080'
+  server: 45.87.175.199
+  type: ss
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 14
+  network: ws
+  port: 443
+  server: v33.emoyes.top
+  servername: v33.emoyes.top
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v33.emoyes.top
+    path: /
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 15
+  network: ws
+  port: 8443
+  server: v20.emoyes.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v20.emoyes.top
+    path: /
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 16
+  network: ws
+  port: 2053
+  server: v2.emoyes.top
+  servername: v2.emoyes.top
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v2.emoyes.top
+    path: /
 - name: 🇱🇹 LT 1
   network: grpc
   port: 8880
-  server: 84.32.9.31
+  server: 84.32.9.37
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   ws-opts:
     path: '%2f'
-- cipher: aes-256-cfb
-  name: 🇧🇷 BR 1
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 185.192.124.188
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 1
-  password: f63gg8EruDnUrmz4
-  port: '9010'
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 2
-  password: rNBfNuuANFCAk7KB
-  port: '9056'
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇸🇪 SE 1
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 46.246.93.24
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇽 MX 1
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 147.78.1.27
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇹🇷 TR 1
-  password: f8npKgNzdkss2ytn
-  port: '9088'
-  server: 45.89.52.66
-  type: ss
+- name: 🇱🇹 LT 2
+  network: grpc
+  port: 8880
+  server: 84.32.9.52
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 3
+  network: grpc
+  port: 8880
+  server: 84.32.9.215
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3fed%3d2048
+  name: 🇨🇿 CZ 1
+  network: grpc
+  port: 26468
+  server: 194.182.79.113
+  tls: false
+  type: vless
+  uuid: 02aa01e3-7f27-4e47-82e2-27c0b41bda9a
+  ws-opts:
+    path: '%2f'
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3fed%3d2048
+  name: 🇨🇿 CZ 2
+  network: grpc
+  port: 45831
+  server: 194.182.79.242
+  tls: false
+  type: vless
+  uuid: 056ebf82-a8b7-4e99-b682-24a45eb5aeaf
+  ws-opts:
+    path: '%2f'
+- name: 🇯🇵 JP 1
+  password: dQUWbcwECl
+  port: 443
+  server: automq3-proxy.automq-sg.com
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- name: 🇯🇵 JP 2
+  password: dQUWbcwECl
+  port: 443
+  server: 74.176.59.185
+  sni: automq3-proxy.automq-sg.com
+  type: trojan
+  ws-opts:
+    path: '%2f'
 - cipher: aes-256-cfb
   name: 🇻🇳 VN 1
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: '38388'
-  server: 103.186.155.22
+  server: 103.186.155.20
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: '38388'
+  server: 103.186.154.37
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇹🇼 TW 1
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: '30332'
+  server: vps.200566.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇻🇪 VE 1
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: '8080'
+  server: 45.158.171.132
   type: ss
