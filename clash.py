@@ -2183,7 +2183,7 @@ class ClashDelayChecker:
         self,
         clash_api: ClashAPI,
         group_name: str,
-        task_times: int = 2,
+        task_times: int = 1,
     ) -> None:
         """测试策略组中的节点组"""
         # 创建所有测试任务
