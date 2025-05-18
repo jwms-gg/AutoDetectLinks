@@ -1,9 +1,88 @@
-# Update: 2025-05-17 23:57
+# Update: 2025-05-18 11:33
 # Source 100 (https://woyooo-distribute.hf.space/api/v1/subscribe?token=335wsxrnx0ig4pg6&target=clash&list=false), 150
 proxies:
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0651
+- client-fingerprint: random
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0378
   network: ws
-  port: 80
+  port: 4443
+  server: 107.173.41.185
+  servername: mot.luyuju.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4b13ceb-11d0-4611-8e50-f5bb453defa2
+  ws-opts:
+    headers:
+      Host: mot.luyuju.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 16
+  network: ws
+  port: 12443
+  server: tls.16.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts:
+    headers:
+      Host: tls.16.node-for-bigairport.win
+    path: /
+- cipher: aes-256-gcm
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 02
+  password: ED2HJBNZ7Z1VRPN7
+  port: 18016
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0140
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.194
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.194:443&proxyIP=null
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0921
+  network: ws
+  port: 8880
+  server: 91.193.58.255
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇻🇳 [wzdnzd/aggregator] 越南 11
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 43396
+  server: 58.254.186.231
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: 2c1513f1-cd65-4e18-b15c-c5b9fd0e47a8
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 104
+  password: 2c1513f1-cd65-4e18-b15c-c5b9fd0e47a8
+  port: 32000
+  ports: 32000-33000
+  server: sg1.interld123456789.com
+  skip-cert-verify: true
+  sni: 234224.1234567890spcloud.com
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0915
+  network: ws
+  port: 8880
   server: 66.81.247.20
   tls: false
   type: vless
@@ -12,82 +91,11 @@ proxies:
   ws-opts:
     headers:
       Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇯🇵 [wzdnzd/aggregator] 日本 55
-  password: 1FVNZCDXI7ZX7765
-  port: 18007
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0282
-  network: ws
-  port: 80
-  server: 141.193.213.43
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0051
-  network: ws
-  port: 80
-  server: 141.193.213.41
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- auth: 6ba6f249-1122-4220-ae58-2347874be35d
-  name: 🇩🇪 [wzdnzd/aggregator] 德国 44
-  password: 6ba6f249-1122-4220-ae58-2347874be35d
-  port: 5001
-  server: 152.53.125.70
-  skip-cert-verify: true
-  sni: d1--cn-gotcha204-4.bilivideo.com
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0229
-  password: 4fb15f9c-f078-11ed-814b-f23c91369f2d
-  port: 443
-  server: c78dd733-swin40-t3exgk-h8vf.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0913
-  network: ws
-  port: 443
-  server: 104.21.61.154
-  servername: c3DFgH6.191266.xYz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6840587-7ac4-40be-aa4b-ae327eb4fa53
-  ws-opts:
-    headers:
-      Host: c3dfgh6.191266.xyz
-    path: /VYgbmNxgNCCs06VUXlLhk95Ad
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 [wzdnzd/aggregator] 日本 42
-  port: 20017
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0f4ddd4a-5449-4e2a-ab24-8429203d3114
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0363
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0726
   network: ws
   port: 8880
-  server: 195.85.23.20
+  server: 156.238.18.62
   tls: false
   type: vless
   udp: true
@@ -95,216 +103,44 @@ proxies:
   ws-opts:
     headers:
       Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇧🇪 [wzdnzd/aggregator] 比利时 01
-  password: XKFDCFGQVLGFUY4L
-  port: 20026
-  server: 185.213.22.93
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0575
-  network: ws
-  port: 443
-  server: 104.17.148.22
-  servername: UjIvMdYn5.ZuMuT.InFo
-  tls: true
-  type: vless
-  udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: UjIvMdYn5.ZuMuT.InFo
-    path: /
-- auth: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0396
-  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- auth: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0774
+  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
   port: 8443
-  server: 9b222080-swin40-sxgzej-1teze.hy2.gotochinatown.net
+  server: a62452a0-swin40-t6ouc9-13xtu.hy2.gotochinatown.net
   type: hysteria2
   udp: true
-- name: 🇲🇾 [wzdnzd/aggregator] 马来西亚 02
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 1046
+  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  port: 15229
+  server: af03e9ad-swexs0-taxf6m-ieln.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0906
+  network: ws
+  port: 8880
+  server: 156.238.18.91
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇵🇰 [wzdnzd/aggregator] 巴基斯坦 04
   password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 43383
-  server: 183.2.150.98
+  port: 42883
+  server: 58.254.186.231
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0450
-  password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  port: 443
-  server: 64183de4-swin40-syhw90-1rsuw.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  down: 300
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 040
-  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  port: 39686
-  server: sg02.node.cross666.top
-  skip-cert-verify: true
-  sni: mirror.sg.gs
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 102
-  network: ws
-  port: 11443
-  server: tls.10.node-for-bigairport.win
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  ws-opts:
-    headers:
-      Host: tls.10.node-for-bigairport.win
-    path: /
-- auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0817
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  port: 8443
-  server: a4e3ef78-swin40-sxlsd4-3z3v.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- auth: 19c08ccc-3281-4155-b8fd-c407f7008bbf
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0655
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 19c08ccc-3281-4155-b8fd-c407f7008bbf
-  port: 13301
-  server: baipiaoyun-us-la.baipiaoyun.site
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇿🇦 [wzdnzd/aggregator] 南非 03 #1'
-  port: 44410
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1116180a-b5ce-46ab-9595-9b248dd86709
-- auth: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  name: 🇯🇵 [wzdnzd/aggregator] 日本 83
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  port: 13301
-  server: baipiaoyun-japan.baipiaoyun.site
-  skip-cert-verify: true
-  sni: s0.awsstatic.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 052
-  port: 44443
-  server: tls.13.node-for-bigairport.win
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-- auth: cee1d5e2-17da-46ba-9fe8-41580e46a97a
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #11'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: cee1d5e2-17da-46ba-9fe8-41580e46a97a
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0626
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 8443
-  server: a37254eb-swexs0-tjuq6l-wf62.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 1047
-  network: ws
-  port: 8880
-  server: 156.238.18.178
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- auth: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0830
-  password: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  port: 8443
-  server: 2e026bef-swexs0-t3o6u7-1osdm.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0701
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0661
   network: ws
   port: 80
-  server: 141.193.213.129
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0162
-  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  port: 15229
-  server: cbb8539b-swexs0-sx0fe4-1j6h0.cu.plebai.net
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0649
-  network: ws
-  port: 8880
-  server: 209.46.30.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- auth: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0016
-  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  port: 8443
-  server: 66a0ae32-swexs0-tcinla-hrtf.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 [wzdnzd/aggregator] 日本 92
-  network: tcp
-  port: 20230
-  reality-opts:
-    public-key: opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4
-    short-id: b92b2a09
-  server: jp001.421421.xyz
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: fdd1d613-f234-40f6-b63d-97517e0fc4b3
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0898
-  network: ws
-  port: 8880
-  server: 91.193.58.133
+  server: 141.193.213.24
   tls: false
   type: vless
   udp: true
@@ -313,245 +149,56 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇲🇺 [wzdnzd/aggregator] 毛里求斯 02
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 46927
+  server: 58.254.186.222
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 1043
-  port: 54770
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 020
+  port: 20014
   server: i.needss.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 1386e81d-a70e-4f4d-b22c-9e7750e95a81
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0845
-  network: ws
-  port: 8880
-  server: 156.238.18.123
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- client-fingerprint: random
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0607
-  network: ws
-  port: 2083
-  server: 104.16.93.181
-  servername: agstick.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 91eae8ca-4e28-4fb3-b732-05373d4403c2
-  ws-opts:
-    headers:
-      Host: agstick.eu.org
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0125
-  network: ws
-  port: 80
-  server: 92.53.188.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 1018
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  port: 443
-  server: d7333ae5-swin40-t0dyyh-jjv2.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- name: '🇨🇦 [wzdnzd/aggregator] 加拿大 09 #1'
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 34016
-  server: 58.254.186.231
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- auth: 8d41cbd7-7549-4fef-ae9c-66a22faaa21b
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 1... #2'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 8d41cbd7-7549-4fef-ae9c-66a22faaa21b
-  port: 31005
-  server: 45.147.201.231
-  skip-cert-verify: true
+- auth: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0413
+  password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  port: 8443
+  server: 9fcc44c5-swexs0-sx1srd-1m0fq.hy2.gotochinatown.net
   type: hysteria2
   udp: true
-  up: 100
-- cipher: aes-256-gcm
-  name: 🇷🇸 [wzdnzd/aggregator] 塞尔维亚 01
-  password: Q9ZOGAH0AMVH6YMO
-  port: 20025
-  server: 185.186.77.137
+- cipher: aes-256-cfb
+  name: 🇸🇰 [wzdnzd/aggregator] 斯洛伐克 01
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0725
-  port: 45105
-  server: sd.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1116180a-b5ce-46ab-9595-9b248dd86709
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0294
-  password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
-  port: 15229
-  server: 03796727-swin40-t5juhn-4tue.cu.plebai.net
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0166
-  network: ws
-  port: 80
-  server: 141.193.213.21
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0924
-  password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  port: 15229
-  server: 5ce37f53-swin40-syfwbx-1k0yf.cu.plebai.net
-  type: trojan
-  udp: true
-- name: '🇳🇱 [wzdnzd/aggregator] 荷兰 02 #1'
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 12001
-  server: 45.154.98.124
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.154.98.124:12001&proxyIP=null
 - client-fingerprint: random
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0431
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0337
   network: ws
-  port: 2053
-  server: 104.16.139.32
-  servername: 4534295.dpdns.org
+  port: 2087
+  server: 104.16.218.231
+  servername: vless.vvzxyvv.sbs
   tls: true
   type: vless
   udp: true
-  uuid: b95c032c-1c91-4b7a-8712-65fc5403249b
+  uuid: 2d69fb9c-c0a5-4601-a1d0-36a2a5c8aea5
   ws-opts:
     headers:
-      Host: 4534295.dpdns.org
+      Host: vless.vvzxyvv.sbs
     path: /?ed=2560
-- name: 🇲🇺 [wzdnzd/aggregator] 毛里求斯 01
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 46927
-  server: 183.240.116.224
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0619
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0782
   network: ws
   port: 8880
-  server: 91.193.58.153
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- auth: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0258
-  password: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  port: 8443
-  server: 6150e203-svy9s0-sx4b2t-tng5.hy2.gotochinatown.net
-  sni: 6150e203-svy9s0-sx4b2t-tng5.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0171
-  network: ws
-  port: 8880
-  server: 156.238.18.130
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 [wzdnzd/aggregator] 印度 05
-  port: 15442
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0f4ddd4a-5449-4e2a-ab24-8429203d3114
-- auth: 3a514c32-65f4-11ea-97ba-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0778
-  password: 3a514c32-65f4-11ea-97ba-f23c913c8d2b
-  port: 8443
-  server: d525af0e-swd340-tcrvlr-r84q.hy2.gotochinatown.net
-  sni: d525af0e-swd340-tcrvlr-r84q.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  down: 125
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #12'
-  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  port: 37251
-  server: ru2.node.cross666.top
-  skip-cert-verify: true
-  sni: mirror.hyperdedic.ru
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: c6d93228-6393-41ec-8403-da852407390a
-  down: 400
-  name: 🇫🇷 [wzdnzd/aggregator] 法国 01
-  password: c6d93228-6393-41ec-8403-da852407390a
-  port: 38993
-  server: fr1.node.cross666.top
-  skip-cert-verify: true
-  sni: ubuntu.mirrors.ovh.net
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 3a514c32-65f4-11ea-97ba-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0714
-  password: 3a514c32-65f4-11ea-97ba-f23c913c8d2b
-  port: 8443
-  server: 4a66e1a2-swexs0-tcrvlr-r84q.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇳🇱 [wzdnzd/aggregator] 荷兰 08
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 43591
-  server: 58.254.186.222
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0310
-  network: ws
-  port: 8880
-  server: 162.159.16.20
+  server: 185.18.250.20
   tls: false
   type: vless
   udp: true
@@ -560,63 +207,131 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- auth: b751e995-b24c-4f30-8425-05db0b9eac45
-  down: 1000
-  name: 🇹🇼 [wzdnzd/aggregator] 台湾 30
-  password: b751e995-b24c-4f30-8425-05db0b9eac45
-  port: 9001
-  server: tw2-vds1.anyhk.co
+- cipher: aes-256-cfb
+  name: 🇵🇹 [wzdnzd/aggregator] 葡萄牙 02
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0878
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 33505
+  server: 58.254.186.233
   skip-cert-verify: true
-  sni: tw2-vds1.anyhk.co
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: 4ab4694d-72df-4438-b087-66a0892b7904
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 072
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 4ab4694d-72df-4438-b087-66a0892b7904
+  port: 13301
+  server: baipiaoyun-singapore.baipiaoyun.site
+  skip-cert-verify: true
+  sni: s0.awsstatic.com
   type: hysteria2
   udp: true
-  up: 600
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0276
-  password: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  port: 443
-  server: 40e4cc98-swin40-t3o6u7-1osdm.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0962
-  password: 4fb15f9c-f078-11ed-814b-f23c91369f2d
-  port: 15229
-  server: d55ab61c-swexs0-t3exgk-h8vf.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 070
-  port: 20015
-  server: i.needss.top
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0621
+  network: ws
+  port: 8880
+  server: 156.238.18.94
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: 1116180a-b5ce-46ab-9595-9b248dd86709
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0813
-  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
-  port: 443
-  server: f537210b-swin40-sww7b0-1qwp5.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇳🇱 [wzdnzd/aggregator] 荷兰 04
-  password: 7I5Q2SGQO747EVK6
-  port: 20000
-  server: 109.104.154.131
-  type: ss
-  udp: true
-- name: 🇺🇦 [wzdnzd/aggregator] 乌克兰 01
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇭🇰 [wzdnzd/aggregator] 香港 46
   network: tcp
-  port: 18217
-  server: 92.112.53.153
+  port: 81
+  server: hkg.gtnet.uk
   tls: false
   type: vless
   udp: true
-  uuid: 5a24dc4b-4711-402a-ec6d-7c174b290c83
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0793
+  uuid: de2036da-d30f-4bad-a7f6-389fe1b00ef5
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0990
+  password: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  port: 15229
+  server: 7966f101-swin40-t1rt5e-1s09x.cu.plebai.net
+  type: trojan
+  udp: true
+- auth: d23ef905-490c-4de4-a6fe-8f553db49478
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0633
+  password: d23ef905-490c-4de4-a6fe-8f553db49478
+  port: 30003
+  server: qyhg.qy1357.top
+  skip-cert-verify: true
+  sni: qyhg.qy1357.top
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0896
+  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
+  port: 15229
+  server: deccbbac-swexs0-swp71a-25xl.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇭🇰 [wzdnzd/aggregator] 香港 20
+  password: d87f9eb3-4b2a-46da-986f-0a3afa36ef9a
+  port: 42830
+  server: d9b701b112b4dc0920da51f113d69dcb.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: hk14.bilibili.com
+  type: trojan
+  udp: true
+- auth: 2f339a3e-d7d0-4ea0-a64f-f38911c5f197
+  down: 1000
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #17'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 2f339a3e-d7d0-4ea0-a64f-f38911c5f197
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 1000
+- alpn:
+  - h3%2Ch2%2Chttp%2F1.1
+  client-fingerprint: chrome
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0303
   network: ws
-  port: 80
-  server: 141.193.213.4
+  port: 8443
+  server: www.zula.ir
+  servername: apratwi.musics-fa.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2522fdea-c0b5-4c79-a210-8dd8f7915413
+  ws-opts:
+    headers:
+      Host: apratwi.musics-fa.ru
+    path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0343
+  password: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
+  port: 15229
+  server: 6409492e-swexs0-t5urb7-1i1.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 1020
+  network: ws
+  port: 8880
+  server: 91.193.58.10
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0515
+  network: ws
+  port: 8880
+  server: 156.238.18.56
   tls: false
   type: vless
   udp: true
@@ -625,19 +340,204 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇦🇺 [wzdnzd/aggregator] 澳大利亚 01
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 34017
+  server: 183.2.150.64
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: 2208650d-ec1d-4f62-b20a-f3d626be2547
+  down: 100
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #18'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 2208650d-ec1d-4f62-b20a-f3d626be2547
+  port: 30073
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0568
+  network: ws
+  port: 8880
+  server: 31.12.75.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0997
+  network: ws
+  port: 80
+  server: 141.193.213.45
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- client-fingerprint: random
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 1033
+  network: ws
+  port: 443
+  server: 104.24.83.221
+  servername: workers.0115.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9ae5aa9-ae7f-4cc4-8287-b4cb502b010e
+  ws-opts:
+    headers:
+      Host: workers.0115.eu.org
+    path: /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0615
+  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  port: 443
+  server: eddd2f5f-swin40-sxwsos-g3b3.la3.tcpbbr.net
+  type: trojan
+  udp: true
+- name: '[wzdnzd/aggregator] FASTLY 01'
+  network: ws
+  port: 80
+  server: redbrain.shopping
+  tls: false
+  type: vless
+  udp: true
+  uuid: b3bac3cf-2ea5-4985-854b-dd20d10264a3
+  ws-opts:
+    headers:
+      Host: namehmain.com
+    path: /TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray?ed=2048
+- cipher: chacha20-ietf
+  name: 🇭🇰 [wzdnzd/aggregator] 香港 56
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
+  udp: true
+- auth: 7b8dc3c9-cd74-4c22-9b29-273794751447
+  down: 190
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0739
+  password: 7b8dc3c9-cd74-4c22-9b29-273794751447
+  port: 36515
+  server: us3.node.cross666.top
+  skip-cert-verify: true
+  sni: www.yahoo.com
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: abef57a5-ac14-4356-ba5d-c3fdc85df62b
+  down: 100
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #19'
+  password: abef57a5-ac14-4356-ba5d-c3fdc85df62b
+  port: 35534
+  server: rua.node.cross666.top
+  skip-cert-verify: true
+  sni: mirror.hyperdedic.ru
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0911
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CFR56ty7890.288288.sHOP
+    path: /By7cEmOrNRS58yeduy9AOG
 - alterId: 0
   cipher: auto
-  name: 🇦🇺 [wzdnzd/aggregator] 澳大利亚 08
-  port: 20011
-  server: i.needss.top
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 82
+  network: ws
+  port: 44443
+  server: tls.20.node-for-bigairport.win
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 1116180a-b5ce-46ab-9595-9b248dd86709
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0205
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts:
+    headers:
+      Host: tls.20.node-for-bigairport.win
+    path: /
+- name: 🇮🇳 [wzdnzd/aggregator] 印度 04
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 42882
+  server: 58.254.186.233
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 [wzdnzd/aggregator] 日本 33
   network: ws
-  port: 80
-  server: 141.193.213.19
+  port: 8880
+  server: 154.197.88.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 022
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: sg1.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2c1513f1-cd65-4e18-b15c-c5b9fd0e47a8
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0670
+  network: ws
+  port: 22360
+  server: 0000000000000000000000000079.cgroup-node-for-bigairport.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts:
+    headers:
+      Host: 0000000000000000000000000079.cgroup-node-for-bigairport.sbs
+    path: /
+- cipher: 2022-blake3-aes-128-gcm
+  name: 🇭🇰 [wzdnzd/aggregator] 香港 70
+  password: MGU2Nzk1ZjI4MjNlYzk4Yw==:NDQ3N2Y4NzYtNWYzZS00OQ==
+  port: 27105
+  server: 58.254.186.222
+  type: ss
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0606
+  password: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
+  port: 443
+  server: a1a25212-swin40-sxhurg-1th8j.la3.tcpbbr.net
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0208
+  network: ws
+  port: 8880
+  server: 156.238.18.5
   tls: false
   type: vless
   udp: true
@@ -645,19 +545,38 @@ proxies:
   ws-opts:
     headers:
       Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- cipher: aes-256-gcm
-  name: '🇨🇦 [wzdnzd/aggregator] 加拿大 08 #1'
-  password: Z26NZ9PJBSWGFNHS
-  port: 20022
-  server: 46.16.129.217
-  type: ss
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0624
+  password: 861b5684-062c-11f0-8eb0-f23c9164ca5d
+  port: 15229
+  server: 55550994-swin40-sx9b4u-1sd8z.cu.plebai.net
+  type: trojan
+  udp: true
+- auth: 3ebed446-08da-497f-bf8c-ece6f6b0e684
+  down: 100
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #20'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 3ebed446-08da-497f-bf8c-ece6f6b0e684
+  port: 31005
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0930
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 33505
+  server: 183.240.116.224
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
   udp: true
 - client-fingerprint: random
-  name: 🇰🇷 [wzdnzd/aggregator] 韩国 02
+  name: 🇰🇷 [wzdnzd/aggregator] 韩国 27
   network: ws
-  port: 12766
-  server: 14.39.43.121
+  port: 10704
+  server: 118.91.83.231
   servername: mot.luyuju.dpdns.org
   tls: true
   type: vless
@@ -667,512 +586,69 @@ proxies:
     headers:
       Host: mot.luyuju.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0390
-  network: ws
-  port: 8880
-  server: 156.238.18.54
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0654
-  network: ws
-  port: 8880
-  server: 185.59.218.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- auth: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0196
-  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
-  port: 8443
-  server: be6901de-swin40-sx0fe4-1j6h0.hy2.gotochinatown.net
+- auth: 96800626-d5f0-4e81-ba40-ecfebed658f1
+  name: 🇩🇪 [wzdnzd/aggregator] 德国 32
+  password: 96800626-d5f0-4e81-ba40-ecfebed658f1
+  port: 48216
+  server: tw1.qishuijc.top
+  skip-cert-verify: true
+  sni: tw1.qishuijc.top
   type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 048
-  port: 30028
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1116180a-b5ce-46ab-9595-9b248dd86709
-- name: 🇹🇼 [wzdnzd/aggregator] 台湾 08
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 27201
-  server: 219.135.197.214
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 1032
-  network: ws
-  port: 8880
-  server: 156.238.18.68
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇪🇸 [wzdnzd/aggregator] 西班牙 03
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 46926
-  server: 219.135.197.214
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 [wzdnzd/aggregator] 香港 67
-  port: 20013
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 044
+  port: 20015
   server: i.needss.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f9c10ad1-0446-4579-9ac7-3ade22d4256c
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0539
-  network: ws
-  port: 8880
-  server: 172.66.40.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0696
-  network: ws
-  port: 8880
-  server: 91.193.58.148
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- auth: 7b8dc3c9-cd74-4c22-9b29-273794751447
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #13'
-  password: 7b8dc3c9-cd74-4c22-9b29-273794751447
-  port: 37952
-  server: rua.node.cross666.top
+  uuid: e6a4ac59-6a75-4645-ac50-40debacd3164
+- name: 🇹🇷 [wzdnzd/aggregator] 土耳其 18
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 43397
+  server: 58.254.186.231
   skip-cert-verify: true
-  sni: mirror.hyperdedic.ru
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0230
-  password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  port: 15229
-  server: 13775f1b-swin40-t5w83q-1slpx.cu.plebai.net
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0232
-  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  port: 15229
-  server: f3218d7c-swexs0-sx9mz9-m0b9.cu.plebai.net
-  type: trojan
-  udp: true
-- auth: b751e995-b24c-4f30-8425-05db0b9eac45
-  down: 1000
-  name: 🇭🇰 [wzdnzd/aggregator] 香港 60
-  password: b751e995-b24c-4f30-8425-05db0b9eac45
-  port: 2021
-  server: lx.ccwink.cc
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 600
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0014
-  network: ws
-  port: 8880
-  server: 94.247.142.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0791
-  network: ws
-  port: 80
-  server: 141.193.213.3
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0001
-  password: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
-  port: 15229
-  server: 1da6614e-swexs0-sxmlck-1ta58.cu.plebai.net
-  type: trojan
-  udp: true
-- name: 🇷🇸 [wzdnzd/aggregator] 塞尔维亚 02
+- name: 🇬🇧 [wzdnzd/aggregator] 英国 12
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 38.180.100.80
-  skip-cert-verify: true
+  server: 217.163.76.51
+  skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=38.180.100.80:443&proxyIP=null
-- name: 🇻🇳 [wzdnzd/aggregator] 越南 10
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 43396
-  server: 120.232.220.45
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0553
-  network: ws
-  port: 8880
-  server: 156.238.18.190
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0989
-  network: ws
-  port: 80
-  server: 141.11.202.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: '🇦🇹 [wzdnzd/aggregator] 奥地利 02 #1'
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 212.183.88.156
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=212.183.88.156:443&proxyIP=null
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0212
-  network: ws
-  port: 8880
-  server: 91.193.58.206
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #14'
-  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  port: 39205
-  server: rua.node.cross666.top
-  skip-cert-verify: true
-  sni: mirror.hyperdedic.ru
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0095
-  network: ws
-  port: 80
-  server: 141.193.213.6
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0365
-  network: ws
-  port: 8880
-  server: 156.238.18.169
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+    path: /proxyip=217.163.76.51:443
 - alterId: 0
   cipher: auto
-  name: 🇨🇦 [wzdnzd/aggregator] 加拿大 01
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d0a2e2f4-e0b8-4144-97f9-bfab6219b007
-- name: 🇸🇪 [wzdnzd/aggregator] 瑞典 04
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.61.166.141
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- auth: c6d93228-6393-41ec-8403-da852407390a
-  down: 400
-  name: 🇫🇷 [wzdnzd/aggregator] 法国 13
-  password: c6d93228-6393-41ec-8403-da852407390a
-  port: 38470
-  server: fr1.node.cross666.top
-  skip-cert-verify: true
-  sni: ubuntu.mirrors.ovh.net
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0331
-  network: ws
-  port: 80
-  server: 45.205.0.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 [wzdnzd/aggregator] 加拿大 06
-  port: 45065
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f203416b-bed5-4ff1-bc12-00a32def5431
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0332
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 27301
-  server: 183.240.116.235
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- auth: 41f6694a-85fe-43da-b203-37f4976949a5
-  down: 50
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #15'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 41f6694a-85fe-43da-b203-37f4976949a5
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 50
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 037
-  port: 20014
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fcc6ae50-d867-4150-97e7-42964765592c
-- name: 🇩🇪 [wzdnzd/aggregator] 德国 26
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 43583
-  server: 183.240.116.252
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #16'
-  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
-  port: 35997
-  server: rua.node.cross666.top
-  skip-cert-verify: true
-  sni: mirror.hyperdedic.ru
-  type: hysteria2
-  udp: true
-  up: 100
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0076
-  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
-  port: 15229
-  server: d8494bbc-swin40-swp71a-25xl.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0919
-  network: http
-  port: 55839
-  server: 38.54.25.204
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
-- name: '[wzdnzd/aggregator] FASTLY 04'
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  tls: false
-  type: vless
-  udp: true
-  uuid: a3e24a7a-7f5a-4fca-853c-5ec3688eafe5
-  ws-opts:
-    headers:
-      Host: Irancellman.net
-    path: /WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0704
-  network: ws
-  port: 8880
-  server: 91.193.58.119
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0156
-  network: ws
-  port: 8880
-  server: 156.238.18.55
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0285
-  network: ws
-  port: 8880
-  server: 162.159.8.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0637
-  network: ws
-  port: 8880
-  server: 154.83.2.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0011
-  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  port: 15229
-  server: 584df8da-swexs0-ta5nd4-e06r.cu.plebai.net
-  type: trojan
-  udp: true
-- name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 1... #3'
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.196
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.67.215.196:443&proxyIP=null
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0507
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0678
   port: 54770
   server: i.needss.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f9c10ad1-0446-4579-9ac7-3ade22d4256c
-- cipher: aes-256-cfb
-  name: 🇰🇷 [wzdnzd/aggregator] 韩国 01
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
+  uuid: e55d5a1f-80f8-4eaa-b03c-212a2a8d1f6a
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 032
+  port: 20015
+  server: i.needss.top
+  tls: false
+  type: vmess
   udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0263
-  password: 91365a7a-46d7-11ee-a8b9-f23c9164ca5d
-  port: 15229
-  server: 487ec53c-swexs0-t3o6u7-1osdm.cu.plebai.net
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇻🇳 [wzdnzd/aggregator] 越南 09
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.28
-  type: ss
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0980
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  port: 15229
-  server: c61add9e-swin40-sxlsd4-3z3v.cu.plebai.net
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0409
+  uuid: fcc6ae50-d867-4150-97e7-42964765592c
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0659
   network: ws
   port: 80
-  server: 141.193.213.235
+  server: 141.193.213.59
   tls: false
   type: vless
   udp: true
@@ -1181,194 +657,179 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- name: 🇪🇸 [wzdnzd/aggregator] 西班牙 06
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 46926
-  server: 183.240.116.235
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0516
-  password: 41d69b1e-cbf3-11ea-82ef-f23c9164ca5d
+- client-fingerprint: random
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0847
+  network: ws
   port: 443
-  server: d0e65851-swin40-t02jph-ugw2.la3.tcpbbr.net
-  type: trojan
+  server: 103.21.244.88
+  servername: vpn.6662221.xyz
+  tls: true
+  type: vless
   udp: true
-- auth: abef57a5-ac14-4356-ba5d-c3fdc85df62b
-  down: 300
-  name: 🇩🇪 [wzdnzd/aggregator] 德国 02
-  password: abef57a5-ac14-4356-ba5d-c3fdc85df62b
-  port: 35437
-  server: de1.node.cross666.top
+  uuid: 0c27902d-c232-4044-ba68-b808c8ad8231
+  ws-opts:
+    headers:
+      Host: vpn.6662221.xyz
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 [wzdnzd/aggregator] 香港 19
+  password: bda131d0-96d4-4a91-8e19-5482bf3b5a86
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+  udp: true
+- auth: fe506496-24eb-11ef-abd3-f23c91cfbbc9
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0976
+  password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
+  port: 8443
+  server: 551220ed-swexs0-t5juhn-4tue.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- auth: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  down: 400
+  name: 🇹🇷 [wzdnzd/aggregator] 土耳其 11
+  password: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  port: 39711
+  server: tr01.node.cross666.top
   skip-cert-verify: true
   sni: mirror.dogado.de
   type: hysteria2
   udp: true
   up: 100
-- name: 🇪🇸 [wzdnzd/aggregator] 西班牙 04
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 46926
-  server: 183.2.150.98
+- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  down: 100
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 1... #3'
+  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  port: 36068
+  server: rua.node.cross666.top
   skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
+  sni: mirror.hyperdedic.ru
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 7d74be30-1102-11ec-a0fc-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0561
+  password: 7d74be30-1102-11ec-a0fc-f23c913c8d2b
+  port: 8443
+  server: 1c9158d0-swin40-t0t8is-2vfx.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0434
+  network: ws
+  port: 8880
+  server: 188.114.99.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- auth: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0022
+  password: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
+  port: 8443
+  server: 7065741c-swd340-t67sv3-1snfs.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇱🇹 [wzdnzd/aggregator] 立陶宛 02
+  password: 5TYLL8N747ZSC93M
+  port: 20036
+  server: 185.237.185.77
+  type: ss
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0988
+  password: e8a960d8-14f5-11ec-a0fc-f23c913c8d2b
+  port: 443
+  server: 7bf12582-swin40-szt6ky-1bonh.la3.tcpbbr.net
   type: trojan
   udp: true
-- auth: 6ba6f249-1122-4220-ae58-2347874be35d
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0089
-  password: 6ba6f249-1122-4220-ae58-2347874be35d
-  port: 5001
-  server: 31.59.111.17
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0787
+  network: ws
+  port: 8880
+  server: 156.238.18.167
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 [wzdnzd/aggregator] 台湾 32
+  port: 52103
+  server: i.needss.top
   skip-cert-verify: true
-  sni: d1--cn-gotcha204-4.bilivideo.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e55d5a1f-80f8-4eaa-b03c-212a2a8d1f6a
+- auth: 51ba3f4d-06ad-4ad9-aa6b-0e4cd38b6a22
+  down: 50
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #21'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 51ba3f4d-06ad-4ad9-aa6b-0e4cd38b6a22
+  port: 30073
+  server: 45.147.201.231
+  skip-cert-verify: true
   type: hysteria2
   udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0385
-  network: ws
-  port: 8880
-  server: 198.41.193.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0751
-  network: ws
-  port: 8880
-  server: 141.101.114.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- auth: dongtaiwang.com
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #17'
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 1038
-  network: ws
-  port: 8880
-  server: 162.159.25.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
+  up: 50
 - alpn:
-  - h3%2Ch2%2Chttp%2F1.1
+  - http%2F1.1
   client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - hkg.gtnet.uk
-    method: GET
-    path:
-    - /
-  name: 🇭🇰 [wzdnzd/aggregator] 香港 28
-  network: http
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0271
+  network: ws
   port: 443
-  server: hkg.gtnet.uk
+  server: 104.21.71.112
+  servername: CccVF34ER4.288288.sHop
   tls: true
   type: vless
   udp: true
-  uuid: 42e062f1-38f3-47c9-9ed7-7294163012e4
-- auth: cf4a1644-5847-11ef-bc74-f23c91cfbbc9
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0200
-  password: cf4a1644-5847-11ef-bc74-f23c91cfbbc9
-  port: 8443
-  server: c6d7d2f2-suz340-t5tz5s-1onbp.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: c6d7d2f2-suz340-t5tz5s-1onbp.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- auth: ca9c0c54-1513-11f0-8a7b-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0517
-  password: ca9c0c54-1513-11f0-8a7b-f23c913c8d2b
-  port: 8443
-  server: 2a7a4545-swin40-tdahby-1tnab.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇰🇿 [wzdnzd/aggregator] 哈萨克斯坦 0...
-  network: ws
-  port: 8880
-  server: 194.76.18.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0786
-  network: ws
-  port: 443
-  server: 104.21.34.159
-  servername: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
+      Host: CccVF34ER4.288288.sHop
+    path: /C1SukvGdr58yeduy9AOG
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 [wzdnzd/aggregator] 法国 18
+  port: 45071
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f203416b-bed5-4ff1-bc12-00a32def5431
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0017
+  password: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
+  port: 15229
+  server: 228f8466-swexs0-t67sv3-1snfs.cu.plebai.net
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 06
+  network: tcp
+  port: 23100
+  reality-opts:
+    public-key: xiBXeWuPtKohjToiQTIVPNeI2U-OvymnzwwD6iZhMW4
+    short-id: 2463e80d
+  server: jp-a424061f-c7bb-48f6-9dc7-115b76346bd5.abjc.xyz
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
-  ws-opts:
-    headers:
-      Host: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
-    path: /ok1UBnf7txQ8YJFJxz
-- auth: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0968
-  password: 096d1c9a-9e52-11ef-87a8-f23c9164ca5d
-  port: 8443
-  server: 35278cfc-swd340-sxd0pj-1rgsa.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: 🇯🇵 [wzdnzd/aggregator] 日本 31
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 27002
-  server: 58.254.186.222
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇭🇰 [wzdnzd/aggregator] 香港 43
-  password: 4477f876-5f3e-49e5-a72b-568f385685a4
-  port: 27103
-  server: 183.2.150.90
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0570
+  uuid: 3068475b-4281-4266-ba7b-9614b81007a7
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0420
   network: ws
   port: 8880
-  server: 104.17.148.22
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6ec52bc7-fcd7-4841-ab69-70d6e03a6eda
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.zula.ir.cfw1.afhudvbhgfnet.ddns-ip.nEt.
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0581
-  network: ws
-  port: 8880
-  server: 156.238.18.46
+  server: 91.193.58.157
   tls: false
   type: vless
   udp: true
@@ -1377,11 +838,291 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- client-fingerprint: random
-  name: '🇰🇷 [wzdnzd/aggregator] 韩国 23 #1'
+- name: 🇯🇵 [wzdnzd/aggregator] 日本 97
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 22269
+  server: 58.254.186.233
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: 50a88b3f
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 78
+  password: 50a88b3f
+  port: 2308
+  server: 38.207.130.91
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0302
+  password: d87f9eb3-4b2a-46da-986f-0a3afa36ef9a
+  port: 43138
+  server: 01f8dd175218aeaa260dd2b6801615f8.us.in.node-is.green
+  skip-cert-verify: true
+  sni: local.bilibili.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 051
+  network: tcp
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90e7b2f3-fb61-4fd7-959f-176e9a51d8d7
+- auth: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0505
+  password: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
+  port: 8443
+  server: ae19093f-swin40-swp71a-25xl.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 [wzdnzd/aggregator] 香港 38
+  port: 20013
+  server: i.needss.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1386e81d-a70e-4f4d-b22c-9e7750e95a81
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0574
+  password: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
+  port: 15229
+  server: 899cbec5-swexs0-sycpj3-18jxd.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇵🇰 [wzdnzd/aggregator] 巴基斯坦 01
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 42883
+  server: 120.232.220.45
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  down: 400
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 1040
+  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  port: 36917
+  server: us4.node.cross666.top
+  skip-cert-verify: true
+  sni: www.yahoo.com
+  type: hysteria2
+  udp: true
+  up: 100
+- cipher: aes-256-gcm
+  name: 🇷🇴 [wzdnzd/aggregator] 罗马尼亚 01
+  password: SOMFC2UP3VWX9AUR
+  port: 20027
+  server: 185.126.237.58
+  type: ss
+  udp: true
+- name: 🇭🇰 [wzdnzd/aggregator] 香港 02
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 27102
+  server: 58.254.186.231
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #22'
   network: ws
-  port: 11386
-  server: 175.203.143.111
+  port: 20031
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
+  ws-opts:
+    path: /
+- name: 🇮🇩 [wzdnzd/aggregator] 印度尼西亚 0...
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 43394
+  server: 183.2.150.64
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0437
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 34014
+  server: 120.232.220.45
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  name: 🇹🇷 [wzdnzd/aggregator] 土耳其 13
+  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  port: 37795
+  server: tr01.node.cross666.top
+  skip-cert-verify: true
+  sni: mirror.dogado.de
+  type: hysteria2
+  udp: true
+- name: 🇦🇪 [wzdnzd/aggregator] 阿联酋 05
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 43497
+  server: 58.254.186.231
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: 74e74e40-e134-11ee-bded-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0743
+  password: 74e74e40-e134-11ee-bded-f23c913c8d2b
+  port: 8443
+  server: 69c5c5e9-swexs0-tchszt-1quq9.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0848
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 160.79.105.81
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=160.79.105.81:443&proxyIP=null
+- auth: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0842
+  password: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  port: 8443
+  server: c367281f-swexs0-sznzxg-1jfvb.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0613
+  network: ws
+  port: 80
+  server: 141.193.213.36
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0373
+  network: ws
+  port: 8880
+  server: 156.238.18.44
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0999
+  network: ws
+  port: 8880
+  server: 91.193.58.214
+  servername: us.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- cipher: 2022-blake3-aes-128-gcm
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 12
+  password: MGU2Nzk1ZjI4MjNlYzk4Yw==:NDQ3N2Y4NzYtNWYzZS00OQ==
+  port: 27005
+  server: 58.254.186.233
+  type: ss
+  udp: true
+- auth: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  down: 300
+  name: 🇩🇪 [wzdnzd/aggregator] 德国 36
+  password: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  port: 38619
+  server: de1.node.cross666.top
+  skip-cert-verify: true
+  sni: mirror.dogado.de
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  down: 150
+  name: 🇻🇳 [wzdnzd/aggregator] 越南 17
+  password: f9153abe-88d9-4ad7-a3a7-01eff2790b3e
+  port: 36721
+  server: vn1r.node.cross666.top
+  skip-cert-verify: true
+  sni: mirror.sg.gs
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0265
+  network: ws
+  port: 8880
+  server: 156.238.18.43
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- client-fingerprint: chrome
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0046
+  network: ws
+  port: 443
+  server: 104.24.71.251
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /
+- auth: affe7124-c118-11ef-b6b2-f23c9164ca5d
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0834
+  password: affe7124-c118-11ef-b6b2-f23c9164ca5d
+  port: 8443
+  server: a65dad8f-swexs0-td1w5f-1t3cz.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0972
+  network: ws
+  port: 8880
+  server: 104.129.166.20
+  servername: us.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- client-fingerprint: random
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0026
+  network: ws
+  port: 50002
+  server: 45.95.186.93
   servername: mot.luyuju.dpdns.org
   tls: true
   type: vless
@@ -1391,119 +1132,360 @@ proxies:
     headers:
       Host: mot.luyuju.dpdns.org
     path: /?ed=2560
-- client-fingerprint: random
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0935
+- auth: 2e24768f-a967-471a-878a-c021b766507b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0045
+  password: 2e24768f-a967-471a-878a-c021b766507b
+  port: 30003
+  server: qyhg.qy1357.top
+  skip-cert-verify: true
+  sni: qyhg.qy1357.top
+  type: hysteria2
+  udp: true
+- auth: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  down: 400
+  name: 🇫🇷 [wzdnzd/aggregator] 法国 22
+  password: 3fc383ac-5934-4139-a9a6-dbad72c41027
+  port: 37015
+  server: fr1.node.cross666.top
+  skip-cert-verify: true
+  sni: ubuntu.mirrors.ovh.net
+  type: hysteria2
+  udp: true
+  up: 100
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0261
   network: ws
-  port: 2087
-  server: 103.21.244.180
-  servername: agstick.eu.org
+  port: 8880
+  server: 156.238.18.174
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0401
+  network: ws
+  port: 443
+  server: cf.cishanjichang.me
+  servername: us.cishanjichang.me
   tls: true
   type: vless
   udp: true
-  uuid: 91eae8ca-4e28-4fb3-b732-05373d4403c2
+  uuid: 432e1e8b-18ce-488f-8203-2ba54b2fb61f
   ws-opts:
     headers:
-      Host: agstick.eu.org
+      Host: us.cishanjichang.me
+    path: /swordnewnewnew
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0597
+  network: ws
+  port: 8880
+  server: 162.159.19.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 [wzdnzd/aggregator] 英国 26
-  port: 54774
-  server: sd.needss.top
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0914
+  port: 52082
+  server: 120.198.71.216
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: fcc6ae50-d867-4150-97e7-42964765592c
-- name: 🇸🇬 [wzdnzd/aggregator] 新加坡 074
-  network: ws
-  password: d0d98f45-15ec-4a5a-9ccd-d4089e2204d9
-  port: 20230
-  server: sg005.421421.xyz
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  name: 🇯🇵 [wzdnzd/aggregator] 日本 23
+  password: 9BBQ186I173Q1XUS
+  port: 18013
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- auth: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0871
+  password: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  port: 8443
+  server: 9b454679-swin40-sx3h07-1g8k0.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 1048
+  password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
+  port: 15229
+  server: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
+  type: trojan
+  udp: true
+- auth: nfsn666
+  name: 🇬🇧 [wzdnzd/aggregator] 英国 08
+  password: nfsn666
+  port: 8888
+  server: 130.162.182.250
   skip-cert-verify: true
-  sni: www.alibaba.com
+  sni: ld-arm.nfsn666.gq
+  type: hysteria2
+  udp: true
+- name: 🇵🇭 [wzdnzd/aggregator] 菲律宾 01
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 27408
+  server: 183.2.150.98
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: www.alibaba.com
-    path: ''
-- auth: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0945
-  password: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
-  port: 8443
-  server: dc94cb09-swexs0-sxhurg-1th8j.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- auth: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0920
-  password: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  port: 8443
-  server: b46251be-swexs0-sxuzn1-11p9g.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #18'
+- client-fingerprint: random
+  name: 🇰🇷 [wzdnzd/aggregator] 韩国 36
   network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 45.67.215.153
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
+  port: 11562
+  server: 123.111.135.83
+  servername: mot.luyuju.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: c4b13ceb-11d0-4611-8e50-f5bb453defa2
   ws-opts:
     headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=45.67.215.153:443
-- auth: 2035175f-0a72-4fd5-a7cb-a7bafa8e9fc6
+      Host: mot.luyuju.dpdns.org
+    path: /?ed=2560
+- name: 🇭🇰 [wzdnzd/aggregator] 香港 39
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 27101
+  server: 58.254.186.233
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0476
+  network: ws
+  port: 8880
+  server: 156.238.18.90
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- cipher: chacha20-ietf
+  name: 🇭🇰 [wzdnzd/aggregator] 香港 05
+  password: asd123456
+  port: 8388
+  server: 154.197.26.237
+  type: ss
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0710
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 34014
+  server: 58.254.186.222
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0103
+  network: ws
+  port: 8880
+  server: 185.193.29.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 🇸🇬 [wzdnzd/aggregator] 新加坡 033
+  password: 6ba6f249-1122-4220-ae58-2347874be35d
+  port: 7001
+  server: v4-aws-sg.aikunapp.com
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 🇬🇧 [wzdnzd/aggregator] 英国 13
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 44397
+  server: 120.232.220.45
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0351
+  password: 20482402-7f76-11ed-a8bf-f23c91cfbbc9
+  port: 443
+  server: f2f24214-swin40-syl0kc-115d8.la3.tcpbbr.net
+  type: trojan
+  udp: true
+- auth: 867f512f-93d2-4344-853c-50965de9b103
+  down: 50
+  name: 🇰🇷 [wzdnzd/aggregator] 韩国 09
+  password: 867f512f-93d2-4344-853c-50965de9b103
+  port: 55215
+  server: shy26.zqjc.cloud
+  skip-cert-verify: false
+  sni: shy26.zqjc.cloud
+  type: hysteria2
+  udp: true
+  up: 500
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0549
+  port: 45053
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f203416b-bed5-4ff1-bc12-00a32def5431
+- client-fingerprint: random
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0053
+  network: ws
+  port: 443
+  server: 104.24.238.187
+  servername: vpn.6662221.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0c27902d-c232-4044-ba68-b808c8ad8231
+  ws-opts:
+    headers:
+      Host: vpn.6662221.xyz
+    path: /?ed=2560
+- name: 🇨🇦 [wzdnzd/aggregator] 加拿大 12
+  password: 4477f876-5f3e-49e5-a72b-568f385685a4
+  port: 34016
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- auth: b751e995-b24c-4f30-8425-05db0b9eac45
+  down: 1000
+  name: '[wzdnzd/aggregator] 多哥 01'
+  password: b751e995-b24c-4f30-8425-05db0b9eac45
+  port: 2026
+  server: lx.ccwink.cc
+  skip-cert-verify: true
+  sni: tw2-vds1.anyhk.co
+  type: hysteria2
+  udp: true
+  up: 600
+- auth: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0178
+  password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
+  port: 8443
+  server: 5514f9ee-swexs0-syhw90-1rsuw.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0870
+  password: b79d79ae-8bce-11ef-a2b8-f23c9164ca5d
+  port: 15229
+  server: d07f22e6-swin40-t67sv3-1snfs.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0444
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: xrr.rtxconfigz.xyz
+  tls: false
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0956
+  network: ws
+  port: 8880
+  server: 156.238.18.76
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- auth: 1c40a8e4-9b08-4c2d-9015-6061bb752613
   down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #19'
+  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 1... #4'
   obfs: salamander
   obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 2035175f-0a72-4fd5-a7cb-a7bafa8e9fc6
+  password: 1c40a8e4-9b08-4c2d-9015-6061bb752613
   port: 31005
   server: 45.147.201.231
   skip-cert-verify: true
   type: hysteria2
   udp: true
   up: 100
-- alterId: 0
-  cipher: auto
-  name: '🇿🇦 [wzdnzd/aggregator] 南非 01 #1'
-  port: 44410
-  server: i.needss.top
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fcc6ae50-d867-4150-97e7-42964765592c
-- auth: ebae1d0f-c3d2-41d7-aea2-d8f094b34587
-  down: 100
-  name: '🇷🇺 [wzdnzd/aggregator] 俄罗斯联邦 0... #20'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: ebae1d0f-c3d2-41d7-aea2-d8f094b34587
-  port: 30073
-  server: 45.147.201.231
-  skip-cert-verify: true
+- auth: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0293
+  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
+  port: 8443
+  server: 3e6a8fd6-swd340-taxf6m-ieln.hy2.gotochinatown.net
   type: hysteria2
   udp: true
-  up: 100
-- client-fingerprint: random
-  name: 🇺🇸 [wzdnzd/aggregator] 美国 0281
-  network: ws
-  port: 2087
-  server: 190.93.247.78
-  servername: 4534295.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b95c032c-1c91-4b7a-8712-65fc5403249b
-  ws-opts:
-    headers:
-      Host: 4534295.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸 [wzdnzd/aggregator] 美国 0317
-  password: cf4a1644-5847-11ef-bc74-f23c91cfbbc9
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0179
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
-  server: 8e2f03fb-swin40-t5tz5s-1onbp.cu.plebai.net
+  server: 5abd5e38-swgsg0-swy6li-tni2.cu.plebai.net
   type: trojan
   udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0180
+  network: ws
+  port: 8880
+  server: 103.169.142.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- auth: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0421
+  password: 6e9cdc20-b92a-11ef-973a-f23c913c8d2b
+  port: 8443
+  server: 47e6484a-swd340-sww7b0-1qwp5.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- auth: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0788
+  password: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
+  port: 8443
+  server: 80fa9277-swd340-swsmkh-1s0a7.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇹🇼 [wzdnzd/aggregator] 台湾 03
+  password: 9f19a22d-60d0-4cf8-935d-ebcff8546054
+  port: 42765
+  server: wb.kaiqsz.com
+  skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
+  udp: true
+- auth: 20482402-7f76-11ed-a8bf-f23c91cfbbc9
+  name: 🇺🇸 [wzdnzd/aggregator] 美国 0610
+  password: 20482402-7f76-11ed-a8bf-f23c91cfbbc9
+  port: 8443
+  server: cd2482d0-swexs0-syl0kc-115d8.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 [wzdnzd/aggregator] 美国 0132
+  network: ws
+  port: 80
+  server: 45.142.255.20
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560

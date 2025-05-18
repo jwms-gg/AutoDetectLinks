@@ -1,9 +1,9 @@
-# Update: 2025-05-18 00:17
-# Problem proxies, 11
+# Update: 2025-05-18 11:53
+# Problem proxies, 15
 proxies:
 - _extra:
-    error: 'time="2025-05-18T00:06:11.593562531+08:00" level=fatal msg="Parse config
-      error: proxy 8: key ''cipher'' missing"
+    error: 'time="2025-05-18T11:41:21.164002457+08:00" level=fatal msg="Parse config
+      error: proxy 135: key ''cipher'' missing"
 
       '
   alterId: 32
@@ -21,8 +21,8 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - _extra:
-    error: 'time="2025-05-18T00:06:14.975745932+08:00" level=fatal msg="Parse config
-      error: proxy 8: key ''cipher'' missing"
+    error: 'time="2025-05-18T11:41:24.383913053+08:00" level=fatal msg="Parse config
+      error: proxy 135: key ''cipher'' missing"
 
       '
   alterId: 32
@@ -40,56 +40,127 @@ proxies:
       Host: ''
     path: /vc
 - _extra:
-    error: 'time="2025-05-18T00:07:40.199636380+08:00" level=fatal msg="Parse config
-      error: proxy 220: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
+    error: 'time="2025-05-18T11:41:27.612721484+08:00" level=fatal msg="Parse config
+      error: proxy 143: key ''cipher'' missing"
 
       '
-  cipher: chacha20-poly1305
-  name: '🔒 #1793'
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.96.1
-  type: ss
+  alterId: 0
+  cipher: null
+  name: 🇺🇸 US 14
+  network: ws
+  port: 443
+  server: v33.emoyes.top
+  servername: v33.emoyes.top
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v33.emoyes.top
+    path: /
 - _extra:
-    error: 'time="2025-05-18T00:07:43.381235832+08:00" level=fatal msg="Parse config
-      error: proxy 223: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
+    error: 'time="2025-05-18T11:41:30.858264433+08:00" level=fatal msg="Parse config
+      error: proxy 143: key ''cipher'' missing"
+
+      '
+  alterId: 0
+  cipher: null
+  name: 🇺🇸 US 15
+  network: ws
+  port: 8443
+  server: v20.emoyes.top
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v20.emoyes.top
+    path: /
+- _extra:
+    error: 'time="2025-05-18T11:41:34.083284858+08:00" level=fatal msg="Parse config
+      error: proxy 143: key ''cipher'' missing"
+
+      '
+  alterId: 0
+  cipher: null
+  name: 🇺🇸 US 16
+  network: ws
+  port: 2053
+  server: v2.emoyes.top
+  servername: v2.emoyes.top
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v2.emoyes.top
+    path: /
+- _extra:
+    error: 'time="2025-05-18T11:42:51.596961736+08:00" level=fatal msg="Parse config
+      error: proxy 461: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
       unknown method: chacha20-poly1305"
 
       '
   cipher: chacha20-poly1305
-  name: '🔒 #1805'
+  name: '🔒 #1672'
   password: W74XFALLLuw6m5IA
   port: '443'
   server: 104.21.48.1
   type: ss
 - _extra:
-    error: 'time="2025-05-18T00:07:46.568230672+08:00" level=fatal msg="Parse config
-      error: proxy 234: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
+    error: 'time="2025-05-18T11:42:54.798615187+08:00" level=fatal msg="Parse config
+      error: proxy 461: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
       unknown method: chacha20-poly1305"
 
       '
   cipher: chacha20-poly1305
-  name: '🔒 #1859'
+  name: '🔒 #1673'
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.96.1
+  type: ss
+- _extra:
+    error: 'time="2025-05-18T11:42:58.151318585+08:00" level=fatal msg="Parse config
+      error: proxy 473: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: '🔒 #1720'
   password: W74XFALLLuw6m5IA
   port: '443'
   server: 104.21.32.1
   type: ss
 - _extra:
-    error: 'time="2025-05-18T00:07:49.757462112+08:00" level=fatal msg="Parse config
-      error: proxy 435: ss 64.226.102.252:45746 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-18T11:43:42.150216531+08:00" level=fatal msg="Parse config
+      error: proxy 11: vmess: unsupported security type: "
+
+      '
+  alterId: 0
+  cipher: ''
+  name: 🔒 VM-TCP-NA 🇮🇷 IR-5.202.5.153:...
+  network: tcp
+  port: '2082'
+  server: 5.202.5.153
+  tls: false
+  type: vmess
+  uuid: 3a81311c-35a8-4d8c-b623-74f0972a92e9
+- _extra:
+    error: 'time="2025-05-18T11:43:45.341854904+08:00" level=fatal msg="Parse config
+      error: proxy 85: ss 64.226.102.252:45746 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
   cipher: 2022-blake3-aes-256-gcm
-  name: '🔒 #2258'
+  name: '🔒 #2107'
   password: ''
   port: '45746'
   server: 64.226.102.252
   type: ss
 - _extra:
-    error: 'time="2025-05-18T00:08:33.975690406+08:00" level=fatal msg="Parse config
-      error: proxy 243: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-18T11:43:48.694799448+08:00" level=fatal msg="Parse config
+      error: proxy 474: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
@@ -100,8 +171,8 @@ proxies:
   server: 188.34.194.165
   type: ss
 - _extra:
-    error: 'time="2025-05-18T00:08:37.202711176+08:00" level=fatal msg="Parse config
-      error: proxy 455: invalid REALITY short ID"
+    error: 'time="2025-05-18T11:44:32.742652662+08:00" level=fatal msg="Parse config
+      error: proxy 86: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
@@ -119,8 +190,8 @@ proxies:
   type: vless
   uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
 - _extra:
-    error: 'time="2025-05-18T00:14:11.277945286+08:00" level=fatal msg="Parse config
-      error: proxy 467: invalid REALITY public key"
+    error: 'time="2025-05-18T11:50:45.255847294+08:00" level=fatal msg="Parse config
+      error: proxy 597: invalid REALITY public key"
 
       '
   name: '🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
@@ -134,8 +205,8 @@ proxies:
   type: vless
   uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - _extra:
-    error: 'time="2025-05-18T00:14:55.680133576+08:00" level=fatal msg="Parse config
-      error: proxy 10: invalid REALITY short ID"
+    error: 'time="2025-05-18T11:51:29.429819474+08:00" level=fatal msg="Parse config
+      error: proxy 101: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
@@ -151,13 +222,13 @@ proxies:
   type: vless
   uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
 - _extra:
-    error: 'time="2025-05-18T00:14:58.970855123+08:00" level=fatal msg="Parse config
-      error: proxy 567: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
+    error: 'time="2025-05-18T11:51:32.727892912+08:00" level=fatal msg="Parse config
+      error: proxy 548: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
       invalid syntax"
 
       '
   cipher: '{"add"'
-  name: 'unnamed #29'
+  name: 'unnamed #27'
   password: ''
   port: '"2"}'
   server: oneclickvpnkeys","scy":"auto","sni":"MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com","tls":"tls","type":"","v"
