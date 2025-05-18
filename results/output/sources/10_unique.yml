@@ -1,49 +1,66 @@
-# Update: 2025-05-18 11:33
-# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 4
+# Update: 2025-05-21 08:47
+# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 5
 proxies:
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti...
+  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatG...
   network: ws
-  port: 8443
-  server: uswuxian.pai50288.uk
-  servername: uswuxian.pai50288.uk
-  skip-cert-verify: true
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
   ws-opts:
     headers:
-      HOST: uswuxian.pai50288.uk
+      Host: de01.sh-cloudflare.sbs
     path: /
-- alterId: 5
+- alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 'VMESS-美国-NF解锁自制剧-ChatGPT-TikTo... #2'
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #4'
   network: ws
-  port: 41507
-  server: ny1.bulkcash.top
-  servername: ny1.bulkcash.top
+  port: 2082
+  server: 104.21.23.231
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
+- cipher: aes-256-cfb
+  name: SSR-英国-NF解锁英国自制剧-ChatGPT-TikTo...
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #5'
+  network: ws
+  port: 8443
+  server: orvps2.horsenma.net
+  servername: orvps2.horsenma.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 695ac0a3-406a-41d7-83c5-5af8c39d3bec
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   ws-opts:
     headers:
-      HOST: ny1.bulkcash.top
-    path: /
+      HOST: orvps2.horsenma.net
+    path: /horsen
 - cipher: chacha20-ietf-poly1305
-  name: SS-保加利亚-NF解锁泰国地区非自制剧-ChatGPT-T...
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: 63861
-  server: 85.208.139.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 'SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-Tik... #3'
-  password: ZrBmLdIcUaBZppYC4vfCvV
-  port: 11315
-  server: 147.45.114.160
+  name: 'SS-法国-NF解锁法国自制剧-ChatGPT-TikTok... #1'
+  password: JiDGG5wC5iBqYueGfbhjad
+  port: 443
+  server: 62.210.88.22
   type: ss

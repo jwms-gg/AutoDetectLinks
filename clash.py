@@ -34,7 +34,7 @@ clash_config_template = {
     "allow-lan": True,
     "mode": "rule",
     "log-level": "info",
-    "external-controller": "127.0.0.1:9090",
+    "external-controller": "0.0.0.0:9090",
     "tcp-concurrent": True,
     "unified-delay": True,
     "geodata-mode": True,
@@ -1311,12 +1311,14 @@ def parse_vless_link(link):
         )[0]
         == "true",
         "network": urllib.parse.parse_qs(query).get("type", ["tcp"])[0],
-        "ws-opts": {
-            "path": urllib.parse.parse_qs(query).get("path", [""])[0],
-            "headers": {"Host": urllib.parse.parse_qs(query).get("host", [""])[0]},
-        }
-        if urllib.parse.parse_qs(query).get("type", ["tcp"])[0] == "ws"
-        else {},
+        "ws-opts": (
+            {
+                "path": urllib.parse.parse_qs(query).get("path", [""])[0],
+                "headers": {"Host": urllib.parse.parse_qs(query).get("host", [""])[0]},
+            }
+            if urllib.parse.parse_qs(query).get("type", ["tcp"])[0] == "ws"
+            else {}
+        ),
     }
 
 
@@ -1339,12 +1341,14 @@ def parse_vmess_link(link):
         "network": vmess_info.get("net", "tcp"),
         "tls": vmess_info.get("tls", "") == "tls",
         "sni": vmess_info.get("sni", ""),
-        "ws-opts": {
-            "path": vmess_info.get("path", ""),
-            "headers": {"Host": vmess_info.get("host", "")},
-        }
-        if vmess_info.get("net", "tcp") == "ws"
-        else {},
+        "ws-opts": (
+            {
+                "path": vmess_info.get("path", ""),
+                "headers": {"Host": vmess_info.get("host", "")},
+            }
+            if vmess_info.get("net", "tcp") == "ws"
+            else {}
+        ),
     }
 
 
@@ -1808,6 +1812,7 @@ class ClashAPI:
             "Content-Type": "application/json",
         }
         self.client = httpx.AsyncClient(timeout=1)
+        self.semaphore = asyncio.Semaphore(settings.max_concurrent_tests)
         self.test_results: dict[str, ProxyDelayResult] = {}
 
     async def __aenter__(self):
@@ -1861,24 +1866,53 @@ class ClashAPI:
         if not self.base_url:
             raise ClashAPIException("未建立与 Clash API 的连接")
 
-        try:
-            delay_timeout = settings.delay_timeout_unit * 1000 * 2
-            response = await self.client.get(
-                f"{self.base_url}/group/{group_name}/delay",
-                headers=self.headers,
-                params={
-                    "url": settings.delay_url_test,
-                    "timeout": str(delay_timeout),
-                },
-                timeout=settings.delay_timeout_unit * 4,
-            )
-            response.raise_for_status()
-        except httpx.TimeoutException as e:
-            logger.error(
-                f"测试策略组 {group_name} 超时: {e}. URL: {settings.delay_url_test}, 超时设置: {delay_timeout * 2} ms"
-            )
-        except Exception as e:
-            logger.exception(f"测试策略组 {group_name} 失败: {e}")
+        max_retries = 3
+        for attempt in range(1, max_retries + 1):
+            try:
+                delay_timeout = settings.delay_timeout_unit * 1000
+                response = await self.client.get(
+                    f"{self.base_url}/group/{group_name}/delay",
+                    headers=self.headers,
+                    params={
+                        "url": settings.delay_url_test,
+                        "timeout": str(delay_timeout),
+                    },
+                    timeout=settings.delay_timeout_unit * 1.2,
+                )
+                response.raise_for_status()
+                return
+            except (httpx.TimeoutException, httpx.HTTPStatusError) as e:
+                logger.error(f"测试策略组 {group_name} 失败，URL: {settings.delay_url_test}，(第{attempt}次): {e}")
+            except Exception as e:
+                logger.exception(f"测试策略组 {group_name} 失败，URL: {settings.delay_url_test}，(第{attempt}次): {e}")
+
+            if attempt == max_retries:
+                logger.error(f"已重试 {max_retries} 次，放弃测试策略组 {group_name}")
+
+    async def test_proxy_delay(self, proxy_name: str):
+        """测试指定代理节点的延迟，使用缓存避免重复测试"""
+        if not self.base_url:
+            raise ClashAPIException("未建立与 Clash API 的连接")
+
+        async with self.semaphore:
+            try:
+                delay_timeout = settings.delay_timeout_unit * 1000
+                response = await self.client.get(
+                    f"{self.base_url}/proxies/{urllib.parse.quote_plus(proxy_name)}/delay",
+                    headers=self.headers,
+                    params={
+                        "url": settings.delay_url_test,
+                        "timeout": str(delay_timeout),
+                    },
+                    timeout=settings.delay_timeout_unit,
+                )
+                response.raise_for_status()
+            except httpx.TimeoutException as e:
+                logger.error(
+                    f"测试节点 {proxy_name} 超时: {e}. URL: {settings.delay_url_test}, 超时设置: {settings.delay_timeout_unit} ms"
+                )
+            except Exception as e:
+                logger.exception(f"测试节点 {proxy_name} 失败: {e}")
 
 
 # 获取当前时间的各个组成部分
@@ -2047,10 +2081,16 @@ class ClashDelayChecker:
                 clash_config["port"],
                 clash_config["socks-port"],
                 clash_config["redir-port"],
-            ) = f"{settings.clash_host}:{ports[0]}", ports[1], ports[2], ports[3]
+            ) = (
+                f"{settings.clash_host}:{ports[0]}",
+                ports[1],
+                ports[2],
+                ports[3],
+            )
 
             config_helper = ClashConfigHelper(clash_config)
             with ClashProcess(config_helper):
+                asyncio.sleep(1)
                 asyncio.run(self.nodes_clean(config_helper))
 
             with self._lock:
@@ -2124,11 +2164,7 @@ class ClashDelayChecker:
         start_time = datetime.now()
 
         # 创建支持多端口的API实例
-        async with ClashAPI(
-            config_helper.host,
-            [config_helper.port],
-            settings.clash_secret,
-        ) as clash_api:
+        async with ClashAPI(config_helper.host, [config_helper.port]) as clash_api:
             if not await clash_api.check_connection():
                 return
 
@@ -2138,44 +2174,14 @@ class ClashDelayChecker:
                     logger.info(f"策略组 '{test_group}' 中没有代理节点")
                     return
 
-                # 测试该组的所有节点
-                await self.test_group_proxies(
-                    clash_api,
-                    test_group,
-                )
-
-                # 显示总耗时
+                await self.test_group_proxies(clash_api, test_group)
+                # await self.test_proxies(clash_api, proxies)
+                await self.sync_delays(clash_api, test_group)
                 total_time = (datetime.now() - start_time).total_seconds()
                 logger.info(f"总耗时: {total_time:.2f} 秒")
             except Exception as e:
                 logger.info(f"发生错误: {e}")
                 raise
-
-    # 打印测试结果摘要
-    def print_test_summary(
-        self,
-        group_name: str,
-    ):
-        """打印测试结果摘要"""
-        valid_proxies = [p for p in self.proxy_delay_dict if p.alive]
-        valid = len(valid_proxies)
-        invalid = len(self.proxy_delay_dict) - len(valid_proxies)
-
-        logger.info(f"策略组 '{group_name}' 测试结果:")
-        logger.info(f"总节点数: {len(self.proxy_delay_dict)}")
-        logger.info(f"可用节点数: {valid}")
-        logger.info(f"失效节点数: {invalid}")
-
-        if valid > 0:
-            avg_delay = sum(average_delay(p) for p in valid_proxies) / valid
-            logger.info(f"平均延迟: {avg_delay:.2f}ms")
-
-            logger.info("节点延迟统计:")
-            sorted_proxies = sorted(
-                valid_proxies, key=lambda p: average_delay(p.history)
-            )
-            for i, p in enumerate(sorted_proxies[: settings.limit], 1):
-                logger.info(f"{i}. {p.name}: {average_delay(p.history):.2f}ms")
 
     async def test_group_proxies(
         self,
@@ -2190,19 +2196,27 @@ class ClashDelayChecker:
         # 使用进度显示执行所有任务
         for i in range(task_times):
             await clash_api.test_group_delay(group_name)
-            # 显示进度
             done = i + 1
             total = task_times
             logger.info(f"进度: {done}/{total} ({done / total * 100:.1f}%)")
 
+    async def test_proxies(self, clash_api: ClashAPI, proxies: list[str]):
+        """测试节点"""
+        logger.info(f"开始测试节点 {len(proxies)}")
+        # 创建所有测试任务
+        tasks = [clash_api.test_proxy_delay(proxy_name) for proxy_name in proxies]
+        total = len(tasks)
+        for i, future in enumerate(asyncio.as_completed(tasks)):
+            await future
+            done = i + 1
+            logger.info(f"进度: {done}/{total} ({done / total * 100:.1f}%)")
+
+    async def sync_delays(self, clash_api: ClashAPI, group_name: str):
         try:
             clash_proxies = await clash_api.get_proxies()
             with self._lock:
-                self.proxy_delay_dict.update(
-                    ProxyDelayList.model_validate(
-                        clash_proxies,
-                    ).proxies
-                )
+                delays = ProxyDelayList.model_validate(clash_proxies)
+                self.proxy_delay_dict.update(delays.proxies)
         except Exception as e:
             logger.exception(f"获取策略组 {group_name} 节点延迟失败: {e}")
 

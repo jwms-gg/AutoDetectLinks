@@ -1,169 +1,94 @@
-# Update: 2025-05-18 11:33
-# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 94
+# Update: 2025-05-21 08:47
+# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 86
 proxies:
-- cipher: aes-256-gcm
-  name: _CN_中国->🇭🇺_HU_匈牙利
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11514
-  server: cdn-p1-lm.youku-dns.com
-  type: ss
-  udp: true
-- name: _US_美国
-  network: ws
-  password: aTArbZ2F0E
-  port: 443
-  server: 172.66.168.209
+- name: _CN_中国
+  password: RlzoEILU
+  port: 16641
+  server: 36.151.251.61
   skip-cert-verify: true
-  sni: uSa-vp-27.bLAzECLOUD.SITE
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: uSa-vp-27.bLAzECLOUD.SITE
-    path: /linkvkws
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- name: _US_美国_1
-  network: ws
-  password: f82fb954-06a1-4f0b-9180-17e07585b61f
-  port: 443
-  server: 104.21.16.1
-  skip-cert-verify: true
-  sni: 6hj8.191262.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 6hj8.191262.xyz
-    path: /Yu29UN3Yz8hcnI3SlZor0
-- name: _US_美国_2
-  network: ws
-  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
-  port: 443
-  server: 104.21.64.1
-  skip-cert-verify: true
-  sni: 10r.iran1912.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 10r.iran1912.dpdns.org
-    path: /VEP415T5mby2DulPWRIwOavJd
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30830
-  server: v30.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v30.heduian.link
-    path: /oooo
-- cipher: aes-256-gcm
-  name: _CN_中国->🇺🇸_US_美国_2
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11526
-  server: cdn-p1-sg.weibo-dns.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: _CN_中国->🇺🇸_US_美国_3
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11538
-  server: ieplqz.youku-dns.com
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '_US_美国_3 #1'
-  network: ws
-  port: 80
-  server: FfFgTYY.7282728.XyZ
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: _US_美国_1
+  network: http
+  port: 55839
+  server: 38.54.25.204
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3d4ad187-b554-4300-bf71-d26c71962504
-  ws-opts:
-    headers:
-      Host: FfFgTYY.7282728.XyZ
-    path: /NiNQyrcaIIJ3WqRcOEICAwmfH7
-- cipher: aes-256-gcm
-  name: _CN_中国->🇹🇷_TR_土耳其
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11522
-  server: cdn-p1-lm.youku-dns.com
+  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
+- name: _CN_中国->🇺🇸_US_美国
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: _CN_中国->🇷🇺_RU_俄罗斯
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: true
+  sni: cgsg2.hysality.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: _KR_韩国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: _CN_中国->🇺🇸_US_美国_4
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11523
-  server: cdn-p1-lm.youku-dns.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: _CN_中国->🇹🇷_TR_土耳其_1
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11516
-  server: cdn-p1-lm.youku-dns.com
-  type: ss
-  udp: true
-- name: _US_美国->🇩🇪_DE_德国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.74.76.122
+- name: _US_美国->🇸🇪_SE_瑞典
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.61.166.141
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: _US_美国->🇨🇦_CA_加拿大
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.62.8.215
+- name: _CN_中国->🇺🇸_US_美国_1
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: _CN_中国->🇹🇷_TR_土耳其_2
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11518
-  server: cdn-p1-lm.youku-dns.com
+- cipher: aes-256-cfb
+  name: _RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
   udp: true
-- name: _GB_英国->🇸🇪_SE_瑞典
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.187.248
+- name: _CN_中国->🇺🇸_US_美国_2
+  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
+  port: 15229
+  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: _CN_中国->🇺🇸_US_美国_5
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11512
-  server: cdn-p1-us.youku-dns.com
+- cipher: aes-128-cfb
+  name: _US_美国->🇨🇳_CN_中国
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
   type: ss
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_3
+  password: 8f55b5d6-f98f-11ef-ba82-f23c913c8d2b
+  port: 15229
+  server: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  skip-cert-verify: true
+  sni: 301b8cf2-swexs0-sxgzej-1teze.cu.plebai.net
+  type: trojan
   udp: true
 - cipher: aes-256-cfb
   name: _IS_冰岛
@@ -172,72 +97,14 @@ proxies:
   server: 37.235.49.152
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_6
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v25.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: _US_美国_5
-  port: 50009
-  server: 142.4.116.177
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: _US_美国_7
-  network: ws
-  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
-  port: 443
-  server: 172.67.135.37
-  skip-cert-verify: true
-  sni: m9rrrfgh.459.pp.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: m9rrrfgh.459.pp.ua
-    path: /l6lvY4hFZriQDBimbKYmPIggy
-- alterId: 0
-  cipher: auto
-  name: '_US_美国_8 #1'
-  network: ws
-  port: 80
-  server: 172.67.170.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
-  ws-opts:
-    path: /PEQ7CoA1VrBwsbnEcmJLxC
-- cipher: aes-256-cfb
-  name: _RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
+- cipher: aes-256-gcm
+  name: _CN_中国->🇺🇸_US_美国_4
+  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
+  port: 11511
+  server: cdn-p1-us.youku-dns.com
   type: ss
   udp: true
-- name: _CN_中国->🇺🇸_US_美国_1 2
-  password: RlzoEILU
-  port: 7815
-  server: 36.151.251.59
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '_US_美国_1 2 #1'
+- name: '_US_美国_6 #1'
   network: ws
   password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
   port: 443
@@ -250,72 +117,7 @@ proxies:
     headers:
       Host: XXXcddDe.IRaN2035.dpdNs.orG
     path: /bdtuD5eD7Q29WxRG8DqNAB
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_2 2
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: _NL_荷兰
-  password: d3TphPPfMkIxFmPJpA0j7RkPJHjeHqaJk2D7Co7VsFuUU2v1
-  port: 31348
-  server: 45.128.151.67
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: _RU_俄罗斯_1
-  password: e6b547de43730e23
-  port: 2015
-  server: 46.17.44.47
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇨🇦_CA_加拿大_1
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v35.heduian.link
-    path: /oooo
-- name: _US_美国_2 2
-  network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 172.67.144.126
-  skip-cert-verify: true
-  sni: CFR56ty7890.288288.sHOP
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: CFR56ty7890.288288.sHOP
-    path: /By7cEmOrNRS58yeduy9AOG
-- name: _CN_中国->🇺🇸_US_美国_3 2
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  skip-cert-verify: true
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  type: trojan
-  udp: true
-- name: '_US_美国_3 2 #1'
+- name: _US_美国_7
   network: ws
   password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   port: 443
@@ -328,48 +130,102 @@ proxies:
     headers:
       Host: CdVftY.7282728.xYz
     path: /ptGwaGzcA4KNAXX
-- cipher: aes-128-cfb
-  name: _US_美国_4
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
-  udp: true
-- name: _CN_中国->🇺🇸_US_美国_4 2
+- name: _CN_中国->🇺🇸_US_美国_5
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
-  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
+  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_6
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  sni: 8941bc90-swexs0-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+  udp: true
+- name: _US_美国->🇸🇪_SE_瑞典_1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.166.141
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_7
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: _CN_中国->🇺🇸_US_美国_5 2
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
+- name: _CN_中国->🇺🇸_US_美国_1 2
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
   skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: _DE_德国->🇨🇳_CN_中国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_2 2
+  password: d30d2718-91d5-11ef-b635-f23c9164ca5d
+  port: 15229
+  server: 0ce06474-swin40-tba9vx-1qlps.cu.plebai.net
+  skip-cert-verify: true
+  sni: 0ce06474-swin40-tba9vx-1qlps.cu.plebai.net
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: _RU_俄罗斯_2
+  name: '_US_美国_1 2 #1'
+  password: awsps0501
+  port: 443
+  server: 35.91.97.85
+  type: ss
+  udp: true
+- name: _US_美国->🇸🇪_SE_瑞典 2
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.140.186
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: _SK_斯洛伐克->🇺🇸_US_美国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_3 2
+  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
+  port: 15229
+  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  skip-cert-verify: true
+  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: _RU_俄罗斯 2
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
   udp: true
-- name: _CN_中国->🇳🇱_NL_荷兰
-  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
-  port: 43591
-  server: 58.254.186.231
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_6 2
+  name: _CN_中国->🇺🇸_US_美国_4 2
   network: ws
-  port: 30824
-  server: v24.heduian.link
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -377,36 +233,72 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v24.heduian.link
+      Host: v29.heduian.link
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: _CN_中国
-  password: VfaEatGj7iXncVpijKFC1e
-  port: 59945
-  server: 62.60.231.81
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: _US_美国->🇧🇪_BE_比利时
-  password: awsps0501
-  port: 443
-  server: 35.90.251.87
-  type: ss
-  udp: true
-- name: _CN_中国->🇨🇦_CA_加拿大_2
-  password: b6200af42ccadea353f5b5856dd20d70
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-  udp: true
-- name: _CN_中国->🇺🇸_US_美国_7
+- name: _CN_中国->🇺🇸_US_美国_5 2
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
-  server: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: true
-  sni: 5541c006-swexs0-swy6li-tni2.cu.plebai.net
+  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国_6 2
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国_7 2
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- name: _US_美国_2
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.181.193
+  skip-cert-verify: true
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: EEeEee4.hUAngSHANG2030.dPdNS.org
+    path: /ptGwaGzcA4KNAXX
+- cipher: chacha20-ietf-poly1305
+  name: _NL_荷兰
+  password: d3TphPPfMkIxFmPJpA0j7RkPJHjeHqaJk2D7Co7VsFuUU2v1
+  port: 31348
+  server: 45.128.151.67
+  type: ss
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国_8
+  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  port: 15229
+  server: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
+  skip-cert-verify: true
+  sni: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305

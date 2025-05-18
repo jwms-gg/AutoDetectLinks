@@ -1,33 +1,66 @@
-# Update: 2025-05-18 11:33
-# Source 75 (https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml), 71
+# Update: 2025-05-21 08:47
+# Source 75 (https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml), 50
 proxies:
-- name: 美国 049
+- name: 美国 004
   network: ws
   port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- name: 美国 069
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
+  server: www.clickbank.com
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
   type: vless
   udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-De.85858569.xYz.
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/124.0.0.0 Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
+- name: '荷兰 001 #1'
+  network: ws
+  port: 80
+  server: www.eshipz.com
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
+  type: vless
+  udp: true
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-En.85858569.xYz.
+      User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/117.0.0.0 Mobile Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
+- name: 美国 005
+  network: ws
+  port: 80
+  server: www.drctcldfa.com
+  smux:
+    enabled: false
+    max_streams: 8
+    protocol: h2mux
+  type: vless
+  udp: true
+  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-Us.85858569.xYz.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/125.0.0.0 Safari/537.36
+    ip-version: dual
+    max-early-data: 2050
+    path: /hajmi
 - client-fingerprint: chrome
   name: 美国 034
   network: ws
@@ -110,81 +143,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 巴西 002
-  network: ws
-  port: 8880
-  server: 188.114.97.1
-  servername: falcunargo-channel.be3374a836.workers.Dev
-  tls: false
-  type: vless
-  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
-  ws-opts:
-    headers:
-      Host: falcunargo-channel.be3374a836.workers.Dev
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: 巴西 003
-  network: ws
-  port: 80
-  server: 188.114.96.223
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
-  ws-opts:
-    headers:
-      Host: zaq11000d.b835a8094d.workers.dev
-    path: /?ed=2560
-- name: 美国 073
-  network: ws
-  port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国 074
-  network: ws
-  port: 80
-  server: 104.24.248.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- name: 美国 075
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 美国 078
-  network: ws
-  port: 80
-  server: 104.24.186.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国 010
   network: ws
@@ -198,19 +156,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /LwW5jwrnymnOdqki?ed=2560
-- client-fingerprint: chrome
-  name: 美国 011
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国 019
   network: ws
@@ -285,18 +230,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 093
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
 - name: 美国 112
   network: ws
   port: 80
@@ -321,55 +254,6 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: 美国 006
-  network: ws
-  port: 80
-  server: 104.16.76.55
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
-  ws-opts:
-    headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
-    path: /?ed=2560
-- name: 荷兰 001
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: 美国 008
-  network: ws
-  port: 80
-  server: 104.24.9.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ca68a029-971c-4ea4-8c1d-411cb7adc474
-  ws-opts:
-    headers:
-      Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
-    path: /?ed=2560
-- name: 美国 012
-  network: ws
-  port: 80
-  server: 104.16.188.41
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: proud-queen-55500071.cexonoc962.workers.dev
-    path: /?ed=2560
 - name: 美国 021
   network: ws
   port: 80
@@ -395,18 +279,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: 美国 067
-  network: ws
-  port: 80
-  server: 172.67.168.60
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5335d16e-7e42-4c9b-93a3-9e83bfd3073d
-  ws-opts:
-    headers:
-      Host: workerr.johnstoner.workers.dev
-    path: /?ed=2048
 - name: 美国 068
   network: ws
   port: 8080
@@ -418,42 +290,6 @@ proxies:
   ws-opts:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
-    path: /
-- name: 美国 109
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- name: 美国 115
-  network: ws
-  port: 80
-  server: 104.21.24.112
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
-    path: /Fvy0Y7NJ7uucUDha?ed=2560
-- name: 美国 124
-  network: ws
-  port: 80
-  server: 172.67.189.174
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
-  ws-opts:
-    headers:
-      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
     path: /
 - client-fingerprint: chrome
   name: 美国 138
@@ -468,32 +304,6 @@ proxies:
     headers:
       Host: Join--E-L-i-V-2-R-A-Y.net
     path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-- client-fingerprint: chrome
-  name: 美国 140
-  network: ws
-  port: 8080
-  server: 104.18.56.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
-- client-fingerprint: chrome
-  name: 美国 145
-  network: ws
-  port: 80
-  server: 172.64.78.198
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国 149
   network: ws
@@ -521,19 +331,6 @@ proxies:
       Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
     path: /Telegram
 - client-fingerprint: chrome
-  name: 美国 151
-  network: ws
-  port: 80
-  server: 104.24.167.96
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ec1bb388-649c-4deb-9eb1-a096b784e0d3
-  ws-opts:
-    headers:
-      Host: round-truth-4e97-ppal03.vegasow726.workers.dev
-    path: /telegram
-- client-fingerprint: chrome
   name: 美国 152
   network: ws
   port: 8880
@@ -546,19 +343,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- client-fingerprint: chrome
-  name: 美国 158
-  network: ws
-  port: 80
-  server: 104.16.86.2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 美国 159
   network: ws
@@ -678,7 +462,7 @@ proxies:
     path: /bing
 - alterId: 0
   cipher: auto
-  name: 美国 005
+  name: 美国 007
   network: ws
   port: 80
   server: AC.fastly80-2.hosting-ip.com
@@ -692,7 +476,7 @@ proxies:
     headers:
       Host: telegram-isvvpn.dev
     path: /racevpn
-- name: 美国 007
+- name: 美国 009
   network: ws
   port: 2052
   server: 190.93.244.226
@@ -744,30 +528,6 @@ proxies:
     headers:
       Host: dd8.transitkala.com
     path: /
-- name: 美国 016
-  network: ws
-  port: 2095
-  server: 104.18.21.69
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingxijinping.xijinpingbigsb.workers.dev
-    path: /?ed=2560
-- name: 美国 031
-  network: ws
-  port: 80
-  server: 104.24.248.85
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 7fea28c6-f9b0-45ce-b7c2-ed3a3991d1e8
-  ws-opts:
-    headers:
-      Host: curly-waterfall-509e-ppal03.wimiba9167.workers.dev
-    path: /?ed=2560
 - delay: 2146
   name: 希腊 001
   network: ws
@@ -808,7 +568,7 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: 美国 009
+  name: 美国 013
   network: ws
   port: 80
   server: 151.101.130.168
@@ -824,7 +584,7 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - client-fingerprint: chrome
   delay: 2653
-  name: 美国 015
+  name: 美国 017
   network: ws
   port: 2083
   server: www.parsvds.com
@@ -836,7 +596,7 @@ proxies:
     headers:
       Host: bEAt.MIRaclETaxbiTS.Top.
     path: /2083/
-- name: 美国 022
+- name: 美国 023
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
@@ -881,7 +641,7 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - delay: 1319
-  name: 美国 027
+  name: 美国 032
   network: ws
   port: 8443
   server: 129.151.225.228
@@ -911,7 +671,7 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - delay: 1570
-  name: 美国 032
+  name: 美国 033
   network: ws
   port: 443
   server: 192.9.180.162

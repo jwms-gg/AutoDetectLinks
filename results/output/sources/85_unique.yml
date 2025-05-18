@@ -1,57 +1,63 @@
-# Update: 2025-05-18 11:33
-# Source 85 (https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt), 9
+# Update: 2025-05-21 08:47
+# Source 85 (https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/All_Configs_Sub.txt), 5
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🔒 SS-TCP-NA 🇷🇺 RU-193.233.253....
-  password: 5UMkeYxeu1eaKODlYkrzl8
-  port: '38264'
-  server: 193.233.253.224
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🔒 SS-TCP-NA 🇬🇧 GB-131.145.28.1... #1'
-  password: 69MUii7VDwMqh7Hz
-  port: '443'
-  server: 131.145.28.109
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA加拿大
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: '36441'
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸US美国 #3'
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: '36211'
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇪🇸ES西班牙
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: '36741'
-  server: free.2weradf.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK香港
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
-  port: '31141'
-  server: free.2apzhfa.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG新加坡
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
-  port: '31175'
-  server: free.2apzhfa.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇹🇼TW台湾 #1'
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
-  port: '31243'
-  server: free.2apzhfa.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸US美国2 #1'
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: '36215'
-  server: free.2weradf.xyz
-  type: ss
+- alpn:
+  - h3
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.16.144... #1'
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 104.16.144.63
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: '%2Fproxyip%3D45.67.215.153%3A443%26proxyIP%3Dnull'
+- alpn:
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.57.... #4'
+  network: ws
+  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
+  port: 443
+  server: 104.21.57.88
+  sni: dDcFRtY.iraN.pp.Ua
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ddcfrty.iran.pp.ua
+    path: '%2FDmby2AKiZKvMo1YauoQwY5'
+- name: 🔒 TR-TCP-TLS 🏴‍☠️ NA-104.26.4....
+  network: tcp
+  password: vip
+  port: 443
+  server: 104.26.4.57
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.17.48.... #1'
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 104.17.48.63
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: '%2Fproxyip%3D45.67.215.153%3A443%26proxyIP%3Dnull'
+- alpn:
+  - http/1.1
+  name: '🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.22.... #5'
+  network: ws
+  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
+  port: 443
+  server: 104.21.22.211
+  sni: T.taipEi108.Dpdns.Org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: t.taipei108.dpdns.org
+    path: '%2FDmby2AKiZKvMo1YauoQwY5'
