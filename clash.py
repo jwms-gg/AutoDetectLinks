@@ -41,8 +41,6 @@ clash_config_template = {
     "geox-url": {
         "geoip": settings.geoip,
         "geosite": settings.geosite,
-        "mmdb": settings.mmdb,
-        "asn": settings.asn
     },
     "dns": {
         "enable": True,

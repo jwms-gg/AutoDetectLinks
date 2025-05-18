@@ -33,7 +33,7 @@ def safe_request(url: str, max_retries: int = 3) -> str:
     # Check if URL is a local file
     if pathlib.Path(url).exists():
         try:
-            with open(url, "r") as f:
+            with open(url, "r", encoding="utf-8") as f:
                 return f.read()
         except Exception as e:
             logger.warning(f"Cannot read local file {url}: {e}")
