@@ -67,9 +67,8 @@ def safe_request(url: str, max_retries: int = 3) -> str:
             last_exception = e
             logger.warning(f"Error requesting {url} (attempt {attempt + 1}/{max_retries}): {e}")
 
-        # Exponential backoff
         if attempt < max_retries - 1:
-            time.sleep(2 ** attempt)
+            time.sleep(0.529 ** attempt)
 
     if last_exception:
         logger.warning(f"All attempts failed for {url}: {last_exception}")

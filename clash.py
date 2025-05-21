@@ -2076,16 +2076,13 @@ class ClashDelayChecker:
         ports = [self.port_pool.get_port() for _ in range(4)]
         try:
             clash_config = generate_clash_config(nodes)
-            (
-                clash_config["external-controller"],
-                clash_config["port"],
-                clash_config["socks-port"],
-                clash_config["redir-port"],
-            ) = (
-                f"{settings.clash_host}:{ports[0]}",
-                ports[1],
-                ports[2],
-                ports[3],
+            clash_config.update(
+                {
+                    "external-controller": f"{settings.clash_host}:{ports[0]}",
+                    "port": ports[1],
+                    "socks-port": ports[2],
+                    "redir-port": ports[3],
+                }
             )
 
             config_helper = ClashConfigHelper(clash_config)
