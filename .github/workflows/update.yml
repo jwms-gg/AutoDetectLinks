@@ -41,20 +41,6 @@ jobs:
         run: |
           python subconverter.py folder -i results/output -o results/subconverter
 
-      - name: Run BestSub
-        run: |
-          wget https://github.com/bestruirui/BestSub/releases/download/v0.3.2/BestSub_Linux_x86_64.tar.gz
-          tar -zxvf BestSub_Linux_x86_64.tar.gz -C bestsub
-          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/config.example.yaml -O config/config.yaml
-          # wget https://raw.githubusercontent.com/bestruirui/BestSub/master/doc/rename.yaml -O  config/rename.yaml
-          timeout 360s python -m http.server 8080 &
-          cd bestsub
-          timeout 360s ./BestSub || true
-
-      - name: Convert BestSub
-        run: |
-          python subconverter.py folder -i bestsub/output -o bestsub/subconverter
-
       - name: Gernate commit date message
         id: commit-date-msg
         run: |
