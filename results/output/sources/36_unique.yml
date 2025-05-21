@@ -1,29 +1,29 @@
-# Update: 2025-05-21 08:47
-# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 5
+# Update: 2025-05-21 22:50
+# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 8
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: auto
-  port: 80
-  server: 104.17.147.22
-  type: trojan
-  ws-opts:
-    headers:
-      Host: floral-shadow-a524.bestmanvpn2020.workers.dev
-    path: '%2Ffloral-shadow-a524.bestmanvpn2020.workers.dev%2F%3Fed%3D2560'
 - name: '美国+CloudFlare节点 #2'
   network: ws
-  password: vip
-  port: 443
-  server: 104.26.3.223
-  sni: heihu880.pages.dev
+  password: trojan
+  port: 8443
+  server: 104.18.13.229
+  sni: pangpi.pages.dev
   type: trojan
   ws-opts:
     headers:
-      Host: heihu880.pages.dev
+      Host: pangpi.pages.dev
+- name: 澳大利亚+V2CROSS.COM
+  network: ws
+  password: '123456'
+  port: 8443
+  server: 192.65.217.53
+  sni: top-azx.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #1'
+  name: '美国 CloudFlare节点 #5'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -35,19 +35,56 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- name: '南非+V2CROSS.COM #1'
+- name: '美国+CloudFlare节点 #6'
   network: ws
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  sni: store.timimi.dpdns.org
+  password: vip
+  port: 443
+  server: 104.26.3.223
+  sni: heihu880.pages.dev
   type: trojan
   ws-opts:
     headers:
-      Host: store.timimi.dpdns.org
+      Host: heihu880.pages.dev
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #18'
+  network: ws
+  password: 21e5535e-4783-4a80-a735-24a1162d315c
+  port: 443
+  server: 172.67.170.51
+  sni: sscDfr5.999182.XyZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sscdfr5.999182.xyz
+    path: '%2FcxZq9RPkYdTWbh4hKwvQX9'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #4'
+  name: 香港 UCloud
+  network: ws
+  port: 42615
+  server: 45.249.246.202
+  tls: false
+  type: vmess
+  uuid: 1123b6c2-fd2d-47a1-9e22-ad299362ef4d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /1123b6c2
+- name: '香港+电讯盈科有限公司 #1'
+  network: ws
+  password: trojan
+  port: 12265
+  server: 58.152.99.172
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #7'
   network: ws
   port: 443
   server: bluehost.com

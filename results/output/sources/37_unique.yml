@@ -1,26 +1,72 @@
-# Update: 2025-05-21 08:47
-# Source 37 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 9
+# Update: 2025-05-21 22:50
+# Source 37 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 8
 proxies:
 - alpn:
   - http/1.1
-  name: '美国+CloudFlare节点 #6'
+  name: '美国+CloudFlare节点 #21'
   network: ws
-  password: 21e5535e-4783-4a80-a735-24a1162d315c
+  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
   port: 443
-  server: 104.21.28.26
-  sni: sscDfr5.999182.XyZ
+  server: 172.67.207.27
+  sni: T.taipEi108.Dpdns.Org
   type: trojan
   ws-opts:
     headers:
-      Host: sscdfr5.999182.xyz
-    path: '%2FcxZq9RPkYdTWbh4hKwvQX9'
+      Host: t.taipei108.dpdns.org
+    path: '%2FDmby2AKiZKvMo1YauoQwY5'
+- name: '美国+CloudFlare节点 #22'
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 172.67.205.22
+  skip-cert-verify: true
+  sni: 1SSdDdFfffHhHJJJJ.20220420.Pp.uA
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1ssdddffffhhhjjjj.20220420.pp.ua
+    path: '%2FOYzPAeaZdXUq2d6J3gc4aj'
+- alterId: 0
+  cipher: auto
+  name: 广东省广州市 移动
+  network: tcp
+  port: '31609'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 中国 阿里云
+  network: tcp
+  port: '26325'
+  server: 8.222.223.192
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e58e1439-7181-4344-842f-0e46fc71ed93
+- cipher: chacha20-ietf-poly1305
+  name: 印度+卡纳塔克邦班加罗尔DigitalOcean数据中心
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 134.209.147.198
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '广东省广州市 移动 #1'
+  network: tcp
+  port: '46597'
+  server: 120.232.153.41
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alpn:
   - http/1.1
-  name: '美国+CloudFlare节点 #8'
+  name: '美国+CloudFlare节点 #26'
   network: ws
   password: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   port: 443
-  server: 104.21.96.1
+  server: 104.21.112.1
   sni: eeERrrR.999815.xYZ
   type: trojan
   ws-opts:
@@ -29,87 +75,10 @@ proxies:
     path: '%2FeS3prPmcpzbScA5VUAi1psm38Tz'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #6'
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210
-  ws-opts:
-    headers:
-      Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 香港 UCloud
-  network: ws
-  port: 42615
-  server: 45.249.246.202
+  name: 广东省湛江市 移动
+  network: tcp
+  port: '42375'
+  server: 120.198.71.214
   tls: false
   type: vmess
-  uuid: 1123b6c2-fd2d-47a1-9e22-ad299362ef4d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /1123b6c2
-- alterId: 0
-  cipher: auto
-  name: 美国 Fastly全球Anycast节点
-  network: ws
-  port: 443
-  server: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: ''
-  name: '美国 CloudFlare节点 #8'
-  network: ws
-  port: 443
-  server: cf.fovi.tk
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #9'
-  network: ws
-  port: 443
-  server: m11sERFGH.459.pP.uA
-  servername: m11serfgh.459.pp.ua
-  tls: true
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  ws-opts:
-    headers:
-      Host: m11sERFGH.459.pP.uA
-    path: /lhU8ShsoPZlulnnYPb86csp
-- name: 俄罗斯+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- name: 英国+社会保险安全部
-  network: tcp
-  password: 008a7900-34de-11f0-9f02-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
-  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

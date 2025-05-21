@@ -1,14 +1,53 @@
-# Update: 2025-05-18 11:53
-# Problem proxies, 15
+# Update: 2025-05-21 23:07
+# Problem proxies, 20
 proxies:
 - _extra:
-    error: 'time="2025-05-18T11:41:21.164002457+08:00" level=fatal msg="Parse config
-      error: proxy 135: key ''cipher'' missing"
+    error: 'time="2025-05-21T22:57:27.389588592+08:00" level=fatal msg="Parse config
+      error: proxy 395: invalid REALITY public key"
+
+      '
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU | 🟢 | vless | @prrofile_p...
+  network: tcp
+  port: 443
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkaym24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 213.219.215.89
+  servername: maviks.eu
+  tls: false
+  type: vless
+  udp: false
+  uuid: fc319d2e-3b95-4696-85db-9bdc885960d5
+- _extra:
+    error: 'time="2025-05-21T22:58:01.557094271+08:00" level=fatal msg="Parse config
+      error: proxy 147: key ''cipher'' missing"
+
+      '
+  alterId: 0
+  cipher: null
+  name: 🇫🇷 FR 2
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  servername: az05.beyondy.cfd
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- _extra:
+    error: 'time="2025-05-21T22:58:05.008238921+08:00" level=fatal msg="Parse config
+      error: proxy 148: key ''cipher'' missing"
 
       '
   alterId: 32
   cipher: null
-  name: 🇳🇱 NL 5
+  name: 🇳🇱 NL 4
   network: ws
   port: 443
   server: vc.fly.dev
@@ -21,146 +60,99 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - _extra:
-    error: 'time="2025-05-18T11:41:24.383913053+08:00" level=fatal msg="Parse config
-      error: proxy 135: key ''cipher'' missing"
+    error: 'time="2025-05-21T22:58:08.270068987+08:00" level=fatal msg="Parse config
+      error: proxy 170: invalid REALITY public key"
 
       '
-  alterId: 32
-  cipher: null
-  name: '🇳🇱 NL 6 #1'
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: ws
-  port: 443
-  server: 77.83.141.171
-  servername: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 194.147.35.22
+  tls: false
+  type: vless
+  uuid: 4fe79f13-aa15-5aa3-bfa7-122c6f661756
   ws-opts:
     headers:
-      Host: ''
-    path: /vc
+      Host: sPeedtest2.sbs.speedtest.net
+    path: '%2Fvless'
 - _extra:
-    error: 'time="2025-05-18T11:41:27.612721484+08:00" level=fatal msg="Parse config
-      error: proxy 143: key ''cipher'' missing"
-
-      '
-  alterId: 0
-  cipher: null
-  name: 🇺🇸 US 14
-  network: ws
-  port: 443
-  server: v33.emoyes.top
-  servername: v33.emoyes.top
-  tls: true
-  type: vmess
-  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
-  ws-opts:
-    headers:
-      Host: v33.emoyes.top
-    path: /
-- _extra:
-    error: 'time="2025-05-18T11:41:30.858264433+08:00" level=fatal msg="Parse config
-      error: proxy 143: key ''cipher'' missing"
-
-      '
-  alterId: 0
-  cipher: null
-  name: 🇺🇸 US 15
-  network: ws
-  port: 8443
-  server: v20.emoyes.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
-  ws-opts:
-    headers:
-      Host: v20.emoyes.top
-    path: /
-- _extra:
-    error: 'time="2025-05-18T11:41:34.083284858+08:00" level=fatal msg="Parse config
-      error: proxy 143: key ''cipher'' missing"
-
-      '
-  alterId: 0
-  cipher: null
-  name: 🇺🇸 US 16
-  network: ws
-  port: 2053
-  server: v2.emoyes.top
-  servername: v2.emoyes.top
-  tls: true
-  type: vmess
-  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
-  ws-opts:
-    headers:
-      Host: v2.emoyes.top
-    path: /
-- _extra:
-    error: 'time="2025-05-18T11:42:51.596961736+08:00" level=fatal msg="Parse config
-      error: proxy 461: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: '🔒 #1672'
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.48.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-18T11:42:54.798615187+08:00" level=fatal msg="Parse config
-      error: proxy 461: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: '🔒 #1673'
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.96.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-18T11:42:58.151318585+08:00" level=fatal msg="Parse config
-      error: proxy 473: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
-      unknown method: chacha20-poly1305"
-
-      '
-  cipher: chacha20-poly1305
-  name: '🔒 #1720'
-  password: W74XFALLLuw6m5IA
-  port: '443'
-  server: 104.21.32.1
-  type: ss
-- _extra:
-    error: 'time="2025-05-18T11:43:42.150216531+08:00" level=fatal msg="Parse config
-      error: proxy 11: vmess: unsupported security type: "
+    error: 'time="2025-05-21T22:58:11.534655571+08:00" level=fatal msg="Parse config
+      error: proxy 172: vmess: unsupported security type: "
 
       '
   alterId: 0
   cipher: ''
-  name: 🔒 VM-TCP-NA 🇮🇷 IR-5.202.5.153:...
-  network: tcp
-  port: '2082'
-  server: 5.202.5.153
-  tls: false
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: 443
+  server: cf.fovi.tk
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 3a81311c-35a8-4d8c-b623-74f0972a92e9
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxpol.fovi.tk
+    path: /eisasqa
 - _extra:
-    error: 'time="2025-05-18T11:43:45.341854904+08:00" level=fatal msg="Parse config
-      error: proxy 85: ss 64.226.102.252:45746 cipher: 2022-blake3-aes-256-gcm initialize
-      error: missing password"
+    error: 'time="2025-05-21T22:58:14.991640773+08:00" level=fatal msg="Parse config
+      error: proxy 194: invalid REALITY public key"
 
       '
-  cipher: 2022-blake3-aes-256-gcm
-  name: '🔒 #2107'
-  password: ''
-  port: '45746'
-  server: 64.226.102.252
-  type: ss
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL'
+  server: 171.22.124.42
+  tls: false
+  type: vless
+  uuid: 2c19a4ac-eeae-575b-ac7e-92a14fb4acde
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: /vless
 - _extra:
-    error: 'time="2025-05-18T11:43:48.694799448+08:00" level=fatal msg="Parse config
-      error: proxy 474: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
+    error: 'time="2025-05-21T22:58:18.249849100+08:00" level=fatal msg="Parse config
+      error: proxy 197: invalid REALITY public key"
+
+      '
+  name: '🇺🇸[openproxylist.com] vless-US #26'
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 88.218.95.12
+  tls: false
+  type: vless
+  uuid: cee39e0d-60e7-5bb3-93ba-7d687c43da39
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2Fvless'
+- _extra:
+    error: 'time="2025-05-21T22:58:21.518416966+08:00" level=fatal msg="Parse config
+      error: proxy 197: invalid REALITY public key"
+
+      '
+  name: 🇱🇺[openproxylist.com] vless-LU
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 45.136.117.14
+  tls: false
+  type: vless
+  uuid: 1d58481e-e08e-57b4-aee1-3f842b610f4f
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2Fvless'
+- _extra:
+    error: 'time="2025-05-21T22:58:24.771100200+08:00" level=fatal msg="Parse config
+      error: proxy 222: ss 188.34.194.165:80 cipher: 2022-blake3-aes-256-gcm initialize
       error: missing password"
 
       '
@@ -171,8 +163,8 @@ proxies:
   server: 188.34.194.165
   type: ss
 - _extra:
-    error: 'time="2025-05-18T11:44:32.742652662+08:00" level=fatal msg="Parse config
-      error: proxy 86: invalid REALITY short ID"
+    error: 'time="2025-05-21T22:58:28.038132527+08:00" level=fatal msg="Parse config
+      error: proxy 442: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
@@ -190,11 +182,119 @@ proxies:
   type: vless
   uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
 - _extra:
-    error: 'time="2025-05-18T11:50:45.255847294+08:00" level=fatal msg="Parse config
-      error: proxy 597: invalid REALITY public key"
+    error: 'time="2025-05-21T22:58:31.303417058+08:00" level=fatal msg="Parse config
+      error: proxy 517: invalid REALITY short ID"
 
       '
-  name: '🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
+  client-fingerprint: chrome
+  name: '@TEHRANARGO #1'
+  network: grpc
+  port: 50552
+  reality-opts:
+    public-key: NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY
+    short-id: 09
+  server: 157.90.117.244
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 19b6fa27-c968-46be-b980-ca371ff5c0f6
+- _extra:
+    error: 'time="2025-05-21T22:58:34.562348810+08:00" level=fatal msg="Parse config
+      error: proxy 517: invalid REALITY short ID"
+
+      '
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: همه اینترنت ها-VPFREEN
+  network: grpc
+  port: 50552
+  reality-opts:
+    public-key: NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY
+    short-id: 09
+  server: kryos.cloudupdate.ir
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 19b6fa27-c968-46be-b980-ca371ff5c0f6
+- _extra:
+    error: 'time="2025-05-21T23:02:17.249142868+08:00" level=fatal msg="Parse config
+      error: proxy 232: invalid REALITY public key"
+
+      '
+  name: 🔒 VL-WS-NONE 🇨🇾 CY-171.22.124....
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 171.22.124.42
+  tls: false
+  type: vless
+  uuid: 2c19a4ac-eeae-575b-ac7e-92a14fb4acde
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2Fvless'
+- _extra:
+    error: 'time="2025-05-21T23:03:22.381120474+08:00" level=fatal msg="Parse config
+      error: proxy 194: invalid REALITY public key"
+
+      '
+  name: 🔒 VL-WS-NONE 🇳🇱 NL-5.253.30.9:...
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 5.253.30.9
+  tls: false
+  type: vless
+  uuid: eecc7e65-e8bd-597b-b1a6-c5b7501c05a2
+  ws-opts:
+    headers:
+      Host: sPeedtest2.sbs.speedtest.net
+    path: '%2Fvless'
+- _extra:
+    error: 'time="2025-05-21T23:03:25.923965318+08:00" level=fatal msg="Parse config
+      error: proxy 449: ss 104.21.48.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.48....
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.48.1
+  type: ss
+- _extra:
+    error: 'time="2025-05-21T23:03:29.194241701+08:00" level=fatal msg="Parse config
+      error: proxy 591: ss 104.21.96.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.96....
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.96.1
+  type: ss
+- _extra:
+    error: 'time="2025-05-21T23:04:03.325705148+08:00" level=fatal msg="Parse config
+      error: proxy 75: ss 104.21.32.1:443 cipher: chacha20-poly1305 initialize error:
+      unknown method: chacha20-poly1305"
+
+      '
+  cipher: chacha20-poly1305
+  name: 🔒 SS-TCP-NA 🏴‍☠️ NA-104.21.32....
+  password: W74XFALLLuw6m5IA
+  port: '443'
+  server: 104.21.32.1
+  type: ss
+- _extra:
+    error: 'time="2025-05-21T23:04:06.868435580+08:00" level=fatal msg="Parse config
+      error: proxy 197: invalid REALITY public key"
+
+      '
+  name: 🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223...
   port: 8443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwB
@@ -205,31 +305,37 @@ proxies:
   type: vless
   uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - _extra:
-    error: 'time="2025-05-18T11:51:29.429819474+08:00" level=fatal msg="Parse config
-      error: proxy 101: invalid REALITY short ID"
+    error: 'time="2025-05-21T23:04:10.152006737+08:00" level=fatal msg="Parse config
+      error: proxy 322: invalid REALITY short ID"
 
       '
   client-fingerprint: chrome
-  name: 🔒 VL-GRPC-RLT 🇩🇪 DE-157.90.117...
+  name: 🔒 VL-GRPC-RLT 🇩🇪 DE-188.245.10...
   network: grpc
   port: 50552
   reality-opts:
     public-key: NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY
     short-id: 09
-  server: 157.90.117.244
+  server: 188.245.109.124
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: 0698f2cb-bb1d-4a8d-959b-73628363b73b
+  uuid: 19b6fa27-c968-46be-b980-ca371ff5c0f6
 - _extra:
-    error: 'time="2025-05-18T11:51:32.727892912+08:00" level=fatal msg="Parse config
-      error: proxy 548: cannot parse ''port'' as int: strconv.ParseInt: parsing \"\\\"2\\\"}\":
-      invalid syntax"
+    error: 'time="2025-05-21T23:04:44.279969035+08:00" level=fatal msg="Parse config
+      error: proxy 100: invalid REALITY public key"
 
       '
-  cipher: '{"add"'
-  name: 'unnamed #27'
-  password: ''
-  port: '"2"}'
-  server: oneclickvpnkeys","scy":"auto","sni":"MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com","tls":"tls","type":"","v"
-  type: ss
+  name: 🔗 Vauth - 19
+  network: ws
+  port: 2052
+  reality-opts:
+    public-key: '%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL%2C%40V2RAY_SPATIAL'
+  server: 103.189.164.171
+  tls: false
+  type: vless
+  uuid: 30448f9f-3ec8-5bd9-a8db-601e9014786b
+  ws-opts:
+    headers:
+      Host: speedtest.net
+    path: '%2Fvless'
