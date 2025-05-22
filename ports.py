@@ -10,7 +10,7 @@ class PortPool:
     """Thread-safe pool for managing and reusing ports."""
 
     start: int = settings.clash_ports
-    count: int = 900
+    count: int = 1000
     end: int = field(init=False)
     available_ports: queue.Queue[int] = field(default_factory=queue.Queue)
     used_ports: Set[int] = field(default_factory=set)
