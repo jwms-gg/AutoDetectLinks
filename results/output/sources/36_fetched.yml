@@ -1,244 +1,130 @@
-# Update: 2025-05-21 22:50
-# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 20
+# Update: 2025-05-26 08:48
+# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 12
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #1'
-  network: ws
-  port: 2053
-  server: 104.21.80.1
-  tls: true
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  ws-opts:
-    headers:
-      Host: rak2d1.777269.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #2'
-  network: ws
-  port: 2053
-  server: 104.21.96.1
-  servername: rak2d1.777269.xyz
-  tls: true
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  ws-opts:
-    headers:
-      Host: rak2d1.777269.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 2053
-  server: 104.21.64.1
-  tls: true
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  ws-opts:
-    headers:
-      Host: rak2d1.777269.xyz
-    path: /
-- name: 美国+CloudFlare节点
-  network: ws
-  password: '123456'
-  port: 8443
-  server: 104.25.97.27
-  sni: top-azx.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: top-azx.pages.dev
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
-  port: 2052
-  server: 104.17.213.241
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3e2baf6a-65f1-319a-add3-039029c97372
-  ws-opts:
-    headers:
-      Host: 100-98-75-157.s2.db-link01.top
-    path: /dabai.in104.21.188.174
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.18.13.229
-  sni: pangpi.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: pangpi.pages.dev
-- name: 澳大利亚+V2CROSS.COM
-  network: ws
-  password: '123456'
-  port: 8443
-  server: 192.65.217.53
-  sni: top-azx.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: top-azx.pages.dev
 - name: '美国+CloudFlare节点 #5'
   network: ws
   password: 53249200-30ff-436f-a032-0bb00605f8f9
   port: 443
   server: 104.21.24.172
+  skip-cert-verify: true
   sni: 3derty.852224.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: 3derty.852224.dpdns.org
-    path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
+    path: '%2FYPTDHLX8qjvTU5JqXZxjQ5ILc'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #5'
+  name: 美国 CloudFlare节点
   network: ws
-  port: '80'
-  server: 141.101.115.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts:
-    headers:
-      Host: dp3.scproxy.top
-    path: /shirker
-- name: '美国+CloudFlare节点 #6'
-  network: ws
-  password: vip
-  port: 443
-  server: 104.26.3.223
-  sni: heihu880.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-- name: '美国+CloudFlare节点 #8'
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
+  port: 2053
   server: 104.21.112.1
-  skip-cert-verify: true
-  sni: 7bhui.191262.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 7bhui.191262.xyz
-    path: '%2FwGgR8FyAGgRCKSiyxgvJgLl'
-- name: '美国+CloudFlare节点 #15'
-  network: ws
-  password: trojan
-  port: 443
-  server: 104.18.3.150
-  sni: main.xicun.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: main.xicun.us.kg
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #18'
-  network: ws
-  password: 21e5535e-4783-4a80-a735-24a1162d315c
-  port: 443
-  server: 172.67.170.51
-  sni: sscDfr5.999182.XyZ
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sscdfr5.999182.xyz
-    path: '%2FcxZq9RPkYdTWbh4hKwvQX9'
-- name: '美国+CloudFlare节点 #20'
-  network: ws
-  password: '123456'
-  port: 8443
-  server: 198.41.208.69
-  sni: top-azx.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: top-azx.pages.dev
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #6'
-  network: ws
-  port: 2082
-  server: cs.flha.ru
-  servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
   ws-opts:
     headers:
-      Host: cs.flha.ru
+      Host: cc2d4.988988.shop
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国 加利福尼亚
+  name: '美国 CloudFlare节点 #1'
   network: ws
   port: 443
-  server: 64.176.52.132
+  server: 172.67.136.233
   tls: true
   type: vmess
-  uuid: 0160afb7-f896-45af-a790-41b0ada08ed7
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
     headers:
-      Host: freesg-win.lzj520hxw.dpdns.org
-    path: /t.me/lzjjjjjjjjjjj
+      Host: az05.beyondy.cfd
+    path: /link
 - alterId: 0
   cipher: auto
-  name: 香港 UCloud
-  network: ws
-  port: 42615
-  server: 45.249.246.202
-  tls: false
-  type: vmess
-  uuid: 1123b6c2-fd2d-47a1-9e22-ad299362ef4d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /1123b6c2
-- name: '香港+电讯盈科有限公司 #1'
-  network: ws
-  password: trojan
-  port: 12265
-  server: 58.152.99.172
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: '%2F%3Fed%3D2560'
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #7'
-  network: ws
-  port: 443
-  server: bluehost.com
-  tls: true
-  type: vmess
-  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
-  ws-opts:
-    headers:
-      Host: cdntr2.digisport.shop
-    path: /19544
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #8'
+  name: 瑞典 V2CROSS.COM
   network: ws
   port: 80
-  server: www.hdmoli.com
+  server: 185.146.173.25
+  tls: false
+  type: vmess
+  uuid: 27ee8047-5da9-4433-8c85-45f5feb1967f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- name: '美国+V2CROSS.COM #1'
+  password: 3lSlAcxDSNpeKOyZ3pIlyYRC7328C3X93Aa8SFOgDX4D7An0zYSRDRuaRE8lCpCASE6Bu
+  port: 443
+  server: 154.17.25.96
+  sni: theory.wireshop.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 瑞典+V2CROSS.COM
+  password: RP0IOLQDETJW8R6B
+  port: '20016'
+  server: 185.255.123.183
+  type: ss
+- name: 新加坡+DigitalOcean数据中心
+  password: 21246bde-fab7-424c-9723-d311acce3f34
+  port: 443
+  server: 206.189.34.134
+  sni: m.zoom.us
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
+  network: ws
+  port: 80
+  server: www.xinjuc.com
   tls: false
   type: vmess
   uuid: 2f38f848-a899-4c87-9807-207a41615e3c
   ws-opts:
     headers:
-      Host: fr.freeyyds.dpdns.org
+      Host: hk.freeyyds.dpdns.org
     path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: 9x.938.pp.ua
+  tls: true
+  type: vmess
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  ws-opts:
+    headers:
+      Host: 9x.938.pp.ua
+    path: /DAxJddOdTd5pVam9w
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 443
+  server: 7fa54343-7c0a-45c9.2031.pp.ua
+  tls: true
+  type: vmess
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  ws-opts:
+    headers:
+      Host: 7fa54343-7c0a-45c9.2031.pp.ua
+    path: /usYhm60UxQ8YJFJxz
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #5'
+  network: ws
+  port: 80
+  server: 5tghyu8.999820.xyz
+  tls: false
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    headers:
+      Host: 5tghyu8.999820.xyz
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- name: '乌克兰+V2CROSS.COM #1'
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: strut-brisk-scope.stark-industries.solutions
+  sni: strut-brisk-scope.stark-industries.solutions
+  type: trojan

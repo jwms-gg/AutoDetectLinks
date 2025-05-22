@@ -1,30 +1,47 @@
-# Update: 2025-05-21 22:50
+# Update: 2025-05-26 08:48
 # Source 45 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 4
 proxies:
-- name: 🇺🇸 美国 CloudFlare节点
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 172.64.145.158
-  skip-cert-verify: false
-  sni: icecream.955850.xyz
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #4'
-  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
-  port: 443
-  server: 172.67.207.27
-  skip-cert-verify: false
-  sni: T.taipEi108.Dpdns.Org
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺 俄罗斯 V2CROSS.COM
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: '54170'
-  server: 185.242.86.156
-  type: ss
-- name: '14|US_speednode_0257 #2'
-  password: Ng35283528
-  port: 443
-  server: gozargah5.cloudflare3-80.hosting-ip.com
-  skip-cert-verify: true
-  sni: c2.validbv3528.eu.org
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '30052'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 🇩🇰 丹麦 V2CROSS.COM
+  network: ws
+  port: '2086'
+  server: csgo.com
+  tls: false
+  type: vmess
+  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  ws-opts:
+    headers:
+      Host: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 V2CROSS.COM
+  network: ws
+  port: '2086'
+  server: 170.114.45.52
+  tls: false
+  type: vmess
+  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  ws-opts:
+    headers:
+      Host: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 广东省中山市 移动
+  network: tcp
+  port: '41766'
+  server: 183.238.90.8
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

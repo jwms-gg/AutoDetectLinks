@@ -1698,7 +1698,8 @@ class ClashProcess:
             self.clash_process.stderr.close()
 
 
-    def read_output(self, pipe, output_lines):
+    @staticmethod
+    def read_output(pipe, output_lines):
         while True:
             try:
                 line = pipe.readline()
@@ -1757,7 +1758,7 @@ class ClashProcess:
                     target=self.read_output,
                     args=(self.clash_process.stdout, output_lines),
                 )
-
+                output_thread.daemon = True  # 主线程退出时自动结束线程
                 output_thread.start()
 
                 timeout = 3
@@ -2070,6 +2071,7 @@ class ClashDelayChecker:
 
     def __init__(self) -> None:
         self._lock = threading.Lock()
+        self._async_lock = asyncio.Lock()
         self.port_pool = PortPool()
         self.proxy_delay_dict: dict[str, ProxyDelayItem] = {}
         self.problem_proxies: list[dict[str, Any]] = []
@@ -2229,7 +2231,7 @@ class ClashDelayChecker:
     async def sync_delays(self, clash_api: ClashAPI, group_name: str):
         try:
             clash_proxies = await clash_api.get_proxies()
-            with self._lock:
+            async with self._async_lock:
                 delays = ProxyDelayList.model_validate(clash_proxies)
                 self.proxy_delay_dict.update(delays.proxies)
         except Exception as e:
