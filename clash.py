@@ -34,7 +34,7 @@ clash_config_template = {
     "allow-lan": True,
     "mode": "rule",
     "log-level": "info",
-    "external-controller": "0.0.0.0:9090",
+    "external-controller": "127.0.0.1:9090",
     "tcp-concurrent": True,
     "unified-delay": True,
     "geodata-mode": True,
@@ -1685,6 +1685,7 @@ def prepare_clash():
 class ClashProcess:
     def __init__(self, config_helper: ClashConfigHelper):
         self.config_helper = config_helper
+        self.clash_process = None
 
     def __enter__(self):
         self.start()
@@ -1692,6 +1693,10 @@ class ClashProcess:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.gracefully_end_clash()
+        if self.clash_process:
+            self.clash_process.stdout.close()
+            self.clash_process.stderr.close()
+
 
     def read_output(self, pipe, output_lines):
         while True:
@@ -1705,11 +1710,25 @@ class ClashProcess:
                 break
 
     def gracefully_end_clash(self):
-        if self.clash_process:
-            self.clash_process.terminate()
-            self.clash_process.wait(10)
-            if self.clash_process.poll() is None:
-                self.clash_process.kill()
+        if not self.clash_process:
+            return
+
+        # 跨平台终止逻辑
+        try:
+            # 优先发送终止信号（Unix更友好）
+            if platform.system() != "Windows":
+                import signal
+                self.clash_process.send_signal(signal.SIGTERM)
+            else:
+                self.clash_process.terminate()
+
+            # 等待进程自然退出
+            if self.clash_process.wait(timeout=5) is None:
+                self.clash_process.kill()  # 强制终止
+        except Exception as e:
+            logger.warning(f"终止Clash进程时出错: {str(e)}")
+        finally:
+            self.clash_process = None  # 清空进程句柄
 
     def start(self):
         logger.info("===================启动clash并初始化配置===================")
@@ -1769,7 +1788,7 @@ class ClashProcess:
 
     def is_clash_api_running(self) -> bool:
         try:
-            response = requests.get(f"{self.config_helper.get_api_url()}/configs")
+            response = requests.get(f"{self.config_helper.get_api_url()}/version")
             logger.info("Clash API启动成功，开始批量检测")
             return response.status_code == 200
         except requests.exceptions.RequestException:
@@ -2087,7 +2106,6 @@ class ClashDelayChecker:
 
             config_helper = ClashConfigHelper(clash_config)
             with ClashProcess(config_helper):
-                asyncio.sleep(1)
                 asyncio.run(self.nodes_clean(config_helper))
 
             with self._lock:

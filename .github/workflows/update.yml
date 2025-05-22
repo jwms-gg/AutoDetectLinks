@@ -35,7 +35,7 @@ jobs:
 
       - name: Fetch new data
         run: |
-          timeout 3600s python cli.py && echo "Fetch new data success" || exit 1
+          timeout 2000s python cli.py && echo "Fetch new data success" || exit 1
 
       - name: Converter new
         run: |
