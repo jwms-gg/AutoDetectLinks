@@ -1663,23 +1663,26 @@ def prepare_clash():
             f.write(response.content)
 
         # 解压文件并重命名
-        import pybit7z
-
-        with pybit7z.lib7zip_context() as lib:
-            reader = pybit7z.BitArchiveReader(lib, str(filename))
-            reader.extract_to(str(Path.cwd()))
-            extract_filename = reader.item_at(0).name()
-
-            if Path(extract_filename).exists():
-                os.rename(extract_filename, new_name)
-                if os_type in ["linux", "darwin"]:
-                    ensure_executable(new_name)
-
+        decompress(new_name, filename)
+        if os_type in ["linux", "darwin"]:
+            ensure_executable(new_name)
         os.remove(filename)  # 删除下载的压缩文件
     else:
         raise RuntimeError(
             "No suitable release found for the current operating system."
         )
+
+def decompress(new_name, filename):
+    """解压文件并重命名"""
+    import pybit7z
+
+    with pybit7z.lib7zip_context() as lib:
+        reader = pybit7z.BitArchiveReader(lib, str(filename))
+        reader.extract_to(str(Path.cwd()))
+        extract_filename = reader.item_at(0).name()
+
+        if Path(extract_filename).exists():
+            os.rename(extract_filename, new_name)
 
 
 class ClashProcess:
