@@ -1,13 +1,200 @@
-# Update: 2025-05-26 08:48
-# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 1
+# Update: 2025-05-27 08:45
+# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 18
 proxies:
-- name: 🇱🇹 LT 1
-  network: ws
-  password: vpn
-  port: 2025
-  server: 46.29.234.154
-  type: trojan
+- name: '🇩🇪 DE 1 #1'
+  network: tcp
+  port: 2053
+  server: 1xult.hifromir1.site
+  tls: false
+  type: vless
+  uuid: 7455dc11-4417-49f2-9d99-4269394ec40d
   ws-opts:
     headers:
-      Host: dns.google.com
+      Host: www.speedtest.net
+    path: '%2f'
+- name: 🇩🇪 DE 2
+  network: ws
+  port: 43719
+  server: p8n5b65s8931.contigolibre.com
+  tls: false
+  type: vless
+  uuid: f6e6599a-d67e-44cb-ad1f-747578023fe7
+  ws-opts:
+    path: '%2f%40drakvpn'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: Tok
+  name: '🇩🇪 DE 3 #1'
+  network: grpc
+  port: 22000
+  reality-opts:
+    public-key: f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A
+    short-id: a14a0330c8ede1cd
+  server: 162.55.185.143
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: f93a6388-c998-4864-8eb7-c61de4754aca
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: telegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray
+  name: 🇩🇪 DE 4
+  network: grpc
+  port: 3567
+  reality-opts:
+    public-key: _5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA
+    short-id: c14b9292de5a8d6f
+  server: 193.46.81.83
+  servername: maps.google.com
+  tls: false
+  type: vless
+  uuid: telegram-id-ArV2ray2
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 2 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.179
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 3 #1'
+  network: grpc
+  port: 8880
+  server: 45.82.251.128
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 4 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.176
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 5 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.171
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- alpn:
+  - h2
+  name: '🇺🇸 US 6 #3'
+  network: grpc
+  port: 443
+  server: 185.135.9.223
+  servername: pqh24v3.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  ws-opts:
+    path: '%2f'
+- alterId: 0
+  cipher: null
+  name: '🇺🇸 US 7 #1'
+  network: ws
+  port: 443
+  server: 9uyiopsdfh.iran.pp.ua
+  servername: 9uyiopsdfh.iran.pp.ua
+  tls: true
+  type: vmess
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  ws-opts:
+    headers:
+      Host: 9uyiopsdfh.iran.pp.ua
+    path: /DAxJddOdTd5pVam9w
+- alterId: 0
+  cipher: null
+  name: 🇺🇸 US 8
+  network: ws
+  port: 443
+  server: 9x.938.pp.ua
+  servername: 9x.938.pp.ua
+  tls: true
+  type: vmess
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  ws-opts:
+    headers:
+      Host: 9x.938.pp.ua
+    path: /DAxJddOdTd5pVam9w
+- name: '🇺🇸 US 9 #3'
+  network: ws
+  port: 2052
+  server: 5.180.52.15
+  tls: false
+  type: vless
+  uuid: 670d931b-9d26-5c5b-9ee2-780be46e1cf0
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2fvless'
+- name: 🇺🇸 US 16
+  network: grpc
+  port: 8880
+  server: 84.32.131.185
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 1
+  network: grpc
+  port: 8880
+  server: 84.32.25.206
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 2
+  network: grpc
+  port: 8880
+  server: 84.32.214.78
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 3
+  network: grpc
+  port: 8880
+  server: 84.32.9.86
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇸🇪 SE 1
+  network: httpupgrade
+  port: 8880
+  server: 185.146.173.39
+  tls: false
+  type: vless
+  uuid: Parsashonam-244
+  ws-opts:
+    headers:
+      Host: Search.DigiKala.CYoU.
+    path: '%2f'
+- name: 🇸🇪 SE 2
+  network: tcp
+  port: 14703
+  server: sweden.a1mshop.com
+  tls: false
+  type: vless
+  uuid: 037f5633-c294-4424-bc1a-f23d992ecc1f
+  ws-opts:
+    headers:
+      Host: analytics.google.com
     path: '%2f'

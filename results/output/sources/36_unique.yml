@@ -1,15 +1,43 @@
-# Update: 2025-05-26 08:48
-# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 1
+# Update: 2025-05-27 08:45
+# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 3
 proxies:
-- name: '美国+CloudFlare节点 #5'
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #1'
   network: ws
-  password: 53249200-30ff-436f-a032-0bb00605f8f9
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
   port: 443
-  server: 104.21.24.172
-  skip-cert-verify: true
-  sni: 3derty.852224.dpdns.org
+  server: 172.67.173.64
+  sni: 6691adc3-9923.2032.pp.ua
   type: trojan
   ws-opts:
     headers:
-      Host: 3derty.852224.dpdns.org
-    path: '%2FYPTDHLX8qjvTU5JqXZxjQ5ILc'
+      Host: 6691adc3-9923.2032.pp.ua
+    path: '%2F4p35eUnmGxQ8YJFJxz'
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: '80'
+  server: 141.101.115.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts:
+    headers:
+      Host: dp3.scproxy.top
+    path: /shirker
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: bluehost.com
+  tls: true
+  type: vmess
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  ws-opts:
+    headers:
+      Host: cdntr2.digisport.shop
+    path: /19544
