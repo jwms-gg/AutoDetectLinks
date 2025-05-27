@@ -1,130 +1,114 @@
-# Update: 2025-05-26 08:48
-# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 12
+# Update: 2025-05-27 08:45
+# Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 9
 proxies:
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: 53249200-30ff-436f-a032-0bb00605f8f9
-  port: 443
-  server: 104.21.24.172
-  skip-cert-verify: true
-  sni: 3derty.852224.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 3derty.852224.dpdns.org
-    path: '%2FYPTDHLX8qjvTU5JqXZxjQ5ILc'
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
   network: ws
-  port: 2053
-  server: 104.21.112.1
+  port: 8443
+  server: 104.21.96.1
   tls: true
   type: vmess
-  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
+  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
   ws-opts:
     headers:
-      Host: cc2d4.988988.shop
+      Host: us01.sh-cloudflare.sbs
     path: /
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 172.67.173.64
+  sni: 6691adc3-9923.2032.pp.ua
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 6691adc3-9923.2032.pp.ua
+    path: '%2F4p35eUnmGxQ8YJFJxz'
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #1'
   network: ws
-  port: 443
-  server: 172.67.136.233
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      Host: az05.beyondy.cfd
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 瑞典 V2CROSS.COM
-  network: ws
-  port: 80
-  server: 185.146.173.25
+  port: '80'
+  server: 141.101.115.65
+  servername: ''
   tls: false
   type: vmess
-  uuid: 27ee8047-5da9-4433-8c85-45f5feb1967f
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
-    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
-- name: '美国+V2CROSS.COM #1'
-  password: 3lSlAcxDSNpeKOyZ3pIlyYRC7328C3X93Aa8SFOgDX4D7An0zYSRDRuaRE8lCpCASE6Bu
-  port: 443
-  server: 154.17.25.96
-  sni: theory.wireshop.net
-  type: trojan
-- cipher: aes-256-gcm
-  name: 瑞典+V2CROSS.COM
-  password: RP0IOLQDETJW8R6B
-  port: '20016'
-  server: 185.255.123.183
-  type: ss
-- name: 新加坡+DigitalOcean数据中心
-  password: 21246bde-fab7-424c-9723-d311acce3f34
-  port: 443
-  server: 206.189.34.134
-  sni: m.zoom.us
-  type: trojan
+      Host: dp3.scproxy.top
+    path: /shirker
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #2'
   network: ws
-  port: 80
-  server: www.xinjuc.com
-  tls: false
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  tls: true
   type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210
   ws-opts:
     headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
+      Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 美国 3COM公司企业网
+  network: ws
+  port: 443
+  server: 152.67.251.232
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 英国 V2CROSS.COM
+  network: ws
+  port: 443
+  server: 193.122.58.158
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '英国 V2CROSS.COM #2'
+  network: ws
+  port: 443
+  server: 158.180.228.226
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #3'
   network: ws
   port: 443
-  server: 9x.938.pp.ua
+  server: bluehost.com
   tls: true
   type: vmess
-  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
   ws-opts:
     headers:
-      Host: 9x.938.pp.ua
-    path: /DAxJddOdTd5pVam9w
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
-  port: 443
-  server: 7fa54343-7c0a-45c9.2031.pp.ua
-  tls: true
-  type: vmess
-  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
-  ws-opts:
-    headers:
-      Host: 7fa54343-7c0a-45c9.2031.pp.ua
-    path: /usYhm60UxQ8YJFJxz
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #5'
-  network: ws
-  port: 80
-  server: 5tghyu8.999820.xyz
-  tls: false
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
-  ws-opts:
-    headers:
-      Host: 5tghyu8.999820.xyz
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-- name: '乌克兰+V2CROSS.COM #1'
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: strut-brisk-scope.stark-industries.solutions
-  sni: strut-brisk-scope.stark-industries.solutions
-  type: trojan
+      Host: cdntr2.digisport.shop
+    path: /19544
+- cipher: aes-256-gcm
+  name: 广东省湛江市+移动
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: '21114'
+  server: okanc.node-is.green
+  type: ss

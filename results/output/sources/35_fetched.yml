@@ -1,137 +1,195 @@
-# Update: 2025-05-26 08:48
-# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 47
+# Update: 2025-05-27 08:45
+# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 37
 proxies:
-- cipher: aes-256-cfb
-  name: 🇲🇰 MK 1
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 46.183.185.15
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 1
+  password: mps3FwmDjLrWaOVg
+  port: '443'
+  server: series-a1.samanehha.co
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 2
+  password: qYu8NKq5EHv1UTYWye2Fc2kdsEk6jBEXt8Ar9E26nBCijhrWejwCYkGz4wK7oXT9V75SjLTiSjBsEShWJ3J5HeF14JRAKnqC
+  port: '55988'
+  server: mx2.drawnrisha.one
+  type: ss
+- name: 🇨🇦 CA 1
+  network: ws
+  port: 2052
+  server: 171.22.124.42
+  tls: false
+  type: vless
+  uuid: 2c19a4ac-eeae-575b-ac7e-92a14fb4acde
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2fvless'
+- alterId: 0
+  cipher: null
+  name: '🇨🇦 CA 2 #1'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: null
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: '🇩🇪 DE 1 #1'
+  network: tcp
+  port: 2053
+  server: 1xult.hifromir1.site
+  tls: false
+  type: vless
+  uuid: 7455dc11-4417-49f2-9d99-4269394ec40d
+  ws-opts:
+    headers:
+      Host: www.speedtest.net
+    path: '%2f'
+- name: 🇩🇪 DE 2
+  network: ws
+  port: 43719
+  server: p8n5b65s8931.contigolibre.com
+  tls: false
+  type: vless
+  uuid: f6e6599a-d67e-44cb-ad1f-747578023fe7
+  ws-opts:
+    path: '%2f%40drakvpn'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: Tok
+  name: '🇩🇪 DE 3 #1'
+  network: grpc
+  port: 22000
+  reality-opts:
+    public-key: f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A
+    short-id: a14a0330c8ede1cd
+  server: 162.55.185.143
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: f93a6388-c998-4864-8eb7-c61de4754aca
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: telegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray%2ctelegram-ArV2ray
+  name: 🇩🇪 DE 4
+  network: grpc
+  port: 3567
+  reality-opts:
+    public-key: _5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA
+    short-id: c14b9292de5a8d6f
+  server: 193.46.81.83
+  servername: maps.google.com
+  tls: false
+  type: vless
+  uuid: telegram-id-ArV2ray2
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
   name: '🇺🇸 US 1 #1'
-  password: FoOiGlkAA9yPEGP
-  port: '7306'
-  server: 38.68.135.93
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 2 #2'
-  password: TEzjfAYq2IjtuoS
-  port: '6697'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 3 #1'
-  password: RexnBgU7EV5ADxG
-  port: '7001'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 4 #2'
-  password: RexnBgU7EV5ADxG
-  port: '7002'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 5 #2'
-  password: KixLvKzwjekG00rm
-  port: '8000'
-  server: 38.121.43.27
-  type: ss
-- cipher: aes-256-gcm
+  network: tcp
+  port: 443
+  server: 15.204.187.172
+  servername: 147135011033.sec21org.com
+  tls: true
+  type: vless
+  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 2 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.179
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 3 #1'
+  network: grpc
+  port: 8880
+  server: 45.82.251.128
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 4 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.176
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- name: '🇺🇸 US 5 #2'
+  network: grpc
+  port: 8880
+  server: 45.82.251.171
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: '%2f'
+- alpn:
+  - h2
   name: '🇺🇸 US 6 #3'
-  password: TEzjfAYq2IjtuoS
-  port: '6697'
-  server: 38.121.43.27
-  type: ss
-- cipher: aes-256-gcm
+  network: grpc
+  port: 443
+  server: 185.135.9.223
+  servername: pqh24v3.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  ws-opts:
+    path: '%2f'
+- alterId: 0
+  cipher: null
   name: '🇺🇸 US 7 #1'
-  password: RexnBgU7EV5ADxG
-  port: '7002'
-  server: 38.121.43.27
-  type: ss
-- cipher: aes-256-gcm
+  network: ws
+  port: 443
+  server: 9uyiopsdfh.iran.pp.ua
+  servername: 9uyiopsdfh.iran.pp.ua
+  tls: true
+  type: vmess
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  ws-opts:
+    headers:
+      Host: 9uyiopsdfh.iran.pp.ua
+    path: /DAxJddOdTd5pVam9w
+- alterId: 0
+  cipher: null
   name: 🇺🇸 US 8
-  password: RexnBgU7EV5ADxG
-  port: '7001'
-  server: 38.121.43.27
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 9 #3'
-  password: PCnnH6SQSnfoS27
-  port: '8090'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 10
-  password: PCnnH6SQSnfoS27
-  port: '8091'
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 11
-  password: e4FCWrgpkji3QY
-  port: '9101'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 12
-  password: e4FCWrgpkji3QY
-  port: '9102'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 13
-  password: Y6R9pAtvxxzmGC
-  port: '3306'
-  server: 38.143.66.87
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 14 #1'
-  password: faBAoD54k87UJG7
-  port: '2376'
-  server: 38.110.1.88
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 15
-  password: Y6R9pAtvxxzmGC
-  port: '3389'
-  server: 38.143.66.87
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 16
-  password: Y6R9pAtvxxzmGC
-  port: '5000'
-  server: 38.143.66.87
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 17
-  password: zDNVedRFPQexG9v
-  port: '6379'
-  server: 38.143.66.87
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 18
-  password: Y6R9pAtvxxzmGC
-  port: '5000'
-  server: 23.154.136.132
-  type: ss
-- name: 🇺🇸 US 19
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  network: ws
   port: 443
-  server: chop-wrist-bud.stark-industries.solutions
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
+  server: 9x.938.pp.ua
+  servername: 9x.938.pp.ua
+  tls: true
+  type: vmess
+  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
   ws-opts:
-    path: '%2f'
-- name: 🇺🇸 US 20
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: chop-wrist-bud.stark-industries.solutions
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
+    headers:
+      Host: 9x.938.pp.ua
+    path: /DAxJddOdTd5pVam9w
+- name: '🇺🇸 US 9 #3'
+  network: ws
+  port: 2052
+  server: 5.180.52.15
+  tls: false
+  type: vless
+  uuid: 670d931b-9d26-5c5b-9ee2-780be46e1cf0
   ws-opts:
-    path: '%2f'
-- name: 🇺🇸 US 21
+    headers:
+      Host: mihanwebhost.iri
+    path: '%2fvless'
+- name: 🇺🇸 US 10
+  network: tcp
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: 94.131.20.3
@@ -139,174 +197,165 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2f'
-- name: '🇺🇸 US 22 #1'
-  password: 3lSlAcxDSNpeKOyZ3pIlyYRC7328C3X93Aa8SFOgDX4D7An0zYSRDRuaRE8lCpCASE6Bu
+- name: 🇺🇸 US 11
+  network: tcp
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
-  server: 154.17.25.96
-  sni: theory.wireshop.net
+  server: 94.131.20.3
+  sni: cache-giver-wife.stark-industries.solutions
   type: trojan
   ws-opts:
     path: '%2f'
-- name: 🇺🇸 US 23
+- name: 🇺🇸 US 12
+  network: tcp
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
-  server: guy-trace-lyric.stark-industries.solutions
+  server: 94.131.20.3
+  sni: nacho-rerun-crepe.stark-industries.solutions
   type: trojan
   ws-opts:
     path: '%2f'
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 24
-  password: kDWvXYZoTBcGkC4
-  port: '8881'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 25
-  password: RexnBgU7EV5ADxG
-  port: '7001'
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 26
-  password: TEzjfAYq2IjtuoS
-  port: '6697'
-  server: 38.121.43.97
-  type: ss
-- name: 🇺🇸 US 27
-  password: 3lSlAcxDSNpeKOyZ3pIlyYRC7328C3X93Aa8SFOgDX4D7An0zYSRDRuaRE8lCpCASE6Bu
-  port: 443
-  server: 154.17.25.96
-  sni: theory.wireshop.net
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 28
-  password: cdBIDV42DCwnfIN
-  port: '8119'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 29 #1'
-  password: KixLvKzwjekG00rm
-  port: '5500'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 30 #1'
-  password: XKFKl2rULjIp74
-  port: '8009'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 31
-  password: kDWvXYZoTBcGkC4
-  port: '8881'
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 32
-  password: FoOiGlkAA9yPEGP
-  port: '7306'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 33
-  password: cdBIDV42DCwnfIN
-  port: '8118'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 34
-  password: KixLvKzwjekG00rm
-  port: '8080'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 35
+  name: 🇺🇸 US 13
   password: KixLvKzwjekG00rm
   port: '8000'
   server: 38.68.135.18
   type: ss
+- alterId: 0
+  cipher: null
+  name: '🇺🇸 US 14 #1'
+  network: ws
+  port: 80
+  server: m11sdfg.890604.dpdns.org
+  servername: null
+  tls: false
+  type: vmess
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  ws-opts:
+    headers:
+      Host: m11sdfg.890604.dpdns.org
+    path: /lhU8ShsoPZlulnnYPb86csp
+- name: 🇺🇸 US 15
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: 94.131.20.3
+  sni: bring-glove-shine.stark-industries.solutions
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- name: 🇺🇸 US 16
+  network: grpc
+  port: 8880
+  server: 84.32.131.185
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 36
-  password: faBAoD54k87UJG7
-  port: '2376'
-  server: 38.121.43.97
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 37
+  name: 🇺🇸 US 17
   password: Y6R9pAtvxxzmGC
   port: '8888'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 38
-  password: Y6R9pAtvxxzmGC
-  port: '3389'
+  name: 🇺🇸 US 18
+  password: cdBIDV42DCwnfIN
+  port: '8118'
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 39
+  name: 🇺🇸 US 19
   password: Y6R9pAtvxxzmGC
-  port: '5601'
-  server: 38.68.135.18
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 40
-  password: FoOiGlkAA9yPEGP
-  port: '7306'
+  port: '5000'
   server: 38.121.43.97
   type: ss
-- name: 🇹🇼 TW 1
-  password: 4cDgyx33xaypDCIFaOj84Snjy3g9XpulOI3FF0CaaTSyY3ElCOeYKx8eCeN7zRRZnCu2A
-  port: 28331
-  server: 61.221.48.98
-  sni: sohtsa.taiwanesefood.link
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: '🇫🇷 FR 1 #1'
-  network: tcp
-  password: OLq0FfOlp7
-  port: 1935
-  server: 141.227.160.88
-  sni: x1-sweden-ovh-v2.devefun.net
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: 🇫🇷 FR 2
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: 🇯🇵 JP 1
-  password: dQUWbcwECl
-  port: 443
-  server: 74.176.59.185
-  sni: automq3-proxy.automq-sg.com
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: 🇸🇬 SG 1
-  network: tcp
-  password: dQUWbcwECl
-  port: 443
-  server: 20.191.138.47
-  sni: automq4-proxy.automq-sg.com
-  type: trojan
-  ws-opts:
-    path: '%2f'
+- cipher: aes-256-cfb
+  name: 🇹🇷 TR 1
+  password: KnJGad3FqTvjqbaX
+  port: '9014'
+  server: 45.89.52.66
+  type: ss
 - name: 🇱🇹 LT 1
-  network: ws
-  password: vpn
-  port: 2025
-  server: 46.29.234.154
-  type: trojan
+  network: grpc
+  port: 8880
+  server: 84.32.25.206
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 2
+  network: grpc
+  port: 8880
+  server: 84.32.214.78
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇱🇹 LT 3
+  network: grpc
+  port: 8880
+  server: 84.32.9.86
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
+- name: 🇸🇪 SE 1
+  network: httpupgrade
+  port: 8880
+  server: 185.146.173.39
+  tls: false
+  type: vless
+  uuid: Parsashonam-244
   ws-opts:
     headers:
-      Host: dns.google.com
+      Host: Search.DigiKala.CYoU.
+    path: '%2f'
+- name: 🇸🇪 SE 2
+  network: tcp
+  port: 14703
+  server: sweden.a1mshop.com
+  tls: false
+  type: vless
+  uuid: 037f5633-c294-4424-bc1a-f23d992ecc1f
+  ws-opts:
+    headers:
+      Host: analytics.google.com
+    path: '%2f'
+- alterId: 0
+  cipher: null
+  name: 🇸🇬 SG 1
+  network: ws
+  port: 43050
+  server: 152.69.220.94
+  servername: a.ziqiu1060.ggff.net
+  tls: true
+  type: vmess
+  uuid: 28ca0567-754e-46fc-e774-b19c787975f7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /dsfsdf
+- cipher: aes-256-cfb
+  name: '🇦🇹 AT 1 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 185.180.12.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇭🇰 HK 1 #1'
+  password: OHJHa1cyZ0RnNlFxWHZQdGdrUGdqNXVo
+  port: '48019'
+  server: 45.196.235.33
+  type: ss
+- name: 🇯🇵 JP 1
+  password: AACY9aXaD0ZDyuyOBzD3Onl2ICw6anBE8l3SRl38RCSDpw7FpYzcRj7NeaFSpR5qx85Su
+  port: 443
+  server: 13.114.65.253
+  sni: forward.meijireform.com
+  type: trojan
+  ws-opts:
     path: '%2f'
