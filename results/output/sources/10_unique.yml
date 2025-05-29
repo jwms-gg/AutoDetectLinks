@@ -1,19 +1,23 @@
-# Update: 2025-05-26 08:48
+# Update: 2025-05-29 08:47
 # Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 2
 proxies:
-- cipher: rc4-md5
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-...
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
-- cipher: aes-256-cfb
-  name: SSR-美国-ChatGPT-TikTok-YouTube-...
-  obfs: plain
-  password: awsps0501
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-...
+  network: ws
   port: 443
-  protocol: origin
-  server: 34.215.48.231
-  type: ssr
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    path: /azumase.ren
+- cipher: chacha20-ietf-poly1305
+  name: 'SS-美国-NF解锁自制剧-ChatGPT-TikTok-Y... #5'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 172.233.128.126
+  type: ss

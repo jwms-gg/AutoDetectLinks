@@ -1,52 +1,24 @@
-# Update: 2025-05-26 08:49
-# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 48
+# Update: 2025-05-29 08:47
+# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 47
 proxies:
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: _CN_中国->🇺🇸_US_美国
+  name: _DK_丹麦->🇺🇸_US_美国
   network: ws
-  port: 30828
-  server: 111.26.109.79
+  port: 2086
+  server: csgo.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
   ws-opts:
-    path: /oooo
+    headers:
+      Host: csgo.com
+    path: /
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v25.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_3
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -58,6 +30,21 @@ proxies:
   ws-opts:
     headers:
       Host: v5.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国_3
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
