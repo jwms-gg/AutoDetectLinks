@@ -1,5 +1,5 @@
-# Update: 2025-05-29 08:47
-# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 36
+# Update: 2025-05-29 16:21
+# Source 35 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 35
 proxies:
 - client-fingerprint: chrome
   name: 🇺🇸 US 12
@@ -15,13 +15,18 @@ proxies:
   uuid: c7c922da-ab54-433c-8046-1f9bf9d95c23
   ws-opts:
     path: '%2f'
-- name: 🇺🇸 US 16
-  network: grpc
-  port: 8880
-  server: 45.82.251.141
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: '🇺🇸 US 14 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
+  server: 146.19.90.10
+  servername: speed.cloudflare.com
   tls: false
   type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  uuid: a0de1607-5b63-fab8-a759-9f98706b6125
   ws-opts:
     path: '%2f'
 - name: 🇺🇸 US 23
@@ -104,12 +109,6 @@ proxies:
   uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
   ws-opts:
     path: '%2f'
-- cipher: chacha20-ietf-poly1305
-  name: '🇩🇪 DE 3 #1'
-  password: xClddmgjnhUX3W3w2Qf5kn
-  port: '443'
-  server: 81.19.141.45
-  type: ss
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram---hopev2ray---telegram
@@ -167,6 +166,15 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   ws-opts:
     path: '%2f'
+- name: 🇱🇹 LT 3
+  network: grpc
+  port: 8880
+  server: 5.199.173.202
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    path: '%2f'
 - name: 🇱🇹 LT 4
   network: grpc
   port: 8880
@@ -212,10 +220,10 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   ws-opts:
     path: '%2f'
-- name: 🇫🇷 FR 5
+- name: 🇫🇷 FR 6
   network: grpc
   port: 8880
-  server: 95.164.45.95
+  server: 94.131.9.172
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
@@ -254,14 +262,20 @@ proxies:
   uuid: 57b2e6b0-c78d-41c8-b4c8-45fb1052f70a
   ws-opts:
     path: '%2f'
-- cipher: aes-256-cfb
-  name: 🇪🇸 ES 1
-  password: TN2YqghxeFDKZfLU
-  port: '9037'
-  server: 5.188.181.201
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 PL 2
+  password: WuhD2wt6r2Mjn2UVCeFAK1
+  port: '443'
+  server: 77.83.246.74
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇬🇧 GB 1 #1'
+  name: 🇪🇸 ES 2
+  password: aGcncxetyMTUBmUGFAV395
+  port: '443'
+  server: 194.87.45.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 1
   password: u17T3BvpYaaiuW2c
   port: '443'
   server: 131.145.76.165
@@ -284,23 +298,6 @@ proxies:
   port: '443'
   server: 131.145.4.207
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 5
-  password: RzBKC75Qxgq8xI44efnyok
-  port: '443'
-  server: 78.129.140.11
-  type: ss
-- name: 🇬🇧 GB 6
-  network: ws
-  port: 2052
-  server: 45.89.111.198
-  tls: false
-  type: vless
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: omidyzvg2.kamaleriz.info
-    path: '%2f'
 - name: 🇬🇧 GB 8
   network: grpc
   port: 8880
@@ -310,16 +307,21 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   ws-opts:
     path: '%2f'
-- name: 🇬🇧 GB 10
-  network: ws
-  port: 443
-  server: 46.226.162.42
-  servername: gbr01.abvpn.ru
-  tls: true
+- name: 🇬🇧 GB 9
+  network: grpc
+  port: 8880
+  server: 45.159.248.125
+  tls: false
   type: vless
-  uuid: 588f094b-431b-422c-b80b-007945037072
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   ws-opts:
-    path: '%2fwebsocket'
+    path: '%2f'
+- cipher: aes-256-cfb
+  name: 🇲🇹 MT 1
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 171.22.254.17
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇭 CH 1
   password: 0RhE9XfWOaYImp16nkTMJr
@@ -343,9 +345,3 @@ proxies:
     headers:
       Host: analytics.google.com
     path: '%2f'
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇪 SE 4
-  password: Me5uX9CWbesU2aL5S3jKGc
-  port: '59945'
-  server: 62.60.231.81
-  type: ss
