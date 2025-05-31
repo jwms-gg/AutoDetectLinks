@@ -1,43 +1,83 @@
-# Update: 2025-05-30 08:46
-# Source 9 (https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml), 3
+# Update: 2025-05-31 08:45
+# Source 9 (https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml), 6
 proxies:
-- alterId: 0
+- cipher: rc4-md5
+  name: CN_speednode_0009
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40218
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- cipher: rc4-md5
+  name: CN_speednode_0019
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40210
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- cipher: rc4-md5
+  name: CN_speednode_0035
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40211
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- alterId: 2
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: HK_speednode_0029
-  network: http
-  port: 47010
-  server: 43.247.134.85
-  skip-cert-verify: false
+  name: CN_speednode_0036
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
-  http-opts:
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
     headers:
-      Host:
-      - divarcdn.com
-    method: GET
-    path:
-    - /
-  name: NL_speednode_0052
-  network: http
-  port: 13456
-  server: 95.211.27.188
-  skip-cert-verify: false
-  tls: false
+      Host: v35.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: CN_speednode_0044
+  network: ws
+  port: 22642
+  server: 120.236.198.165
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
   type: vmess
   udp: true
-  uuid: 46924cd9-a244-4b9a-999c-f5e51dbe837f
-- cipher: aes-128-gcm
-  name: US_speednode_0105
-  password: 0dc0a0ee-008c-4063-b2f6-b1fd2b8ef47b
-  port: 10001
-  server: 45.89.109.184
-  type: ss
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: CN_speednode_0045
+  network: ws
+  port: 22643
+  server: 120.236.198.165
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
