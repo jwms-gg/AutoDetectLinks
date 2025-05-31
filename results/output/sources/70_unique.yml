@@ -1,5 +1,5 @@
-# Update: 2025-05-30 08:46
-# Source 70 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt), 59
+# Update: 2025-05-31 08:45
+# Source 70 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt), 44
 proxies:
 - name: '[🇫🇮]t.me/ConfigsHub`'
   network: grpc
@@ -20,33 +20,8 @@ proxies:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v18.networkpro.net
     path: /?ed%3D2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
 - client-fingerprint: chrome
-  name: '🔒 VL-TCP-RLT 🇩🇪 DE-91.99.13.80... #1'
-  network: tcp
-  port: 30561
-  reality-opts:
-    public-key: H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8
-    short-id: 95ac1a9f19
-  server: 91.99.13.80
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: d37d1df5-1422-4e59-a187-47cc37a1ff4b
-- client-fingerprint: chrome
   flow: xtls-rprx-vision!
-  name: '🔒 VL-TCP-RLT 🇩🇪 DE-5.75.152.15... #1'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: eR4J5FtMqaNxy-RvJb6JzcBoREYy7iDGC61J6xtQHkc
-    short-id: '48'
-  server: 5.75.152.152
-  servername: www.tgju.org
-  tls: false
-  type: vless
-  uuid: e63019a5-dc33-4a6f-83b6-d09fd104d18a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: '🔒 VL-TCP-RLT 🇳🇱 NL-194.127.173... #8'
+  name: '🔒 VL-TCP-RLT 🇳🇱 NL-194.127.173... #6'
   network: tcp
   port: 8443
   reality-opts:
@@ -58,33 +33,40 @@ proxies:
   type: vless
   uuid: 57a6c9d4-3012-4aa0-9136-7236902c0d0b
 - client-fingerprint: chrome
-  name: '🔒 VL-GRPC-RLT 🇩🇪 DE-45.14.247.... #1'
-  network: grpc
-  port: 2087
+  name: '🔒 VL-XHTTP-RLT 🇳🇱 NL-150.241.8... #1'
+  network: xhttp
+  port: 35352
   reality-opts:
-    public-key: iJdX3pipeJfuZwmbVOW6p4i41eXI-_ZwYmcigwRO9mg
-    short-id: '3523'
-  server: 45.14.247.129
-  servername: www.cdn77.com
+    public-key: GRvQgvgbqLP6iEOSPK7RWw4vVhJA4wxo6oO8qgt28jo
+    short-id: 2587dec2
+  server: 150.241.89.219
+  servername: www.microsoft.com
   tls: false
   type: vless
-  uuid: c35297ef-e06a-4379-9077-7845ccc4fb29
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: '🔒 VL-TCP-RLT 🇩🇪 DE-162.55.88.1... #1'
-  network: tcp
+  uuid: 23f9220d-6990-47d3-97ff-e8579e6c7334
+  ws-opts:
+    path: '%2Fv2raybluecrystal'
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
+  name: '🔒 VL-GRPC-RLT 🇩🇪 DE-88.198.101... #1'
+  network: grpc
   port: 443
   reality-opts:
-    public-key: tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8
-    short-id: e54b5ad736ae4c38
-  server: 162.55.88.19
-  servername: tgju.org
+    public-key: Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw
+    short-id: 05a6d4aa5e314637
+  server: 88.198.101.91
+  servername: stackoverflow.com
   tls: false
   type: vless
-  uuid: bfc73db8-88ee-4739-844d-2a1aebda0671
+  uuid: 2bec8ef8-b04e-4433-adb4-85f37f4c62c1
+  ws-opts:
+    path: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: Tel%20%3A%20%40NT_Safe
+    grpc-service-name: Tel+%3A+%40N%54_S%61fe
   name: '🔒 VL-GRPC-RLT 🇩🇪 DE-212.95.33.... #3'
   network: grpc
   port: 11045
@@ -95,247 +77,165 @@ proxies:
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: 2697231e-6bfa-42f9-b47a-16af0ed7eb8d
+  uuid: 87c7624f-b925-43ac-919e-c29d1e704d73
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs
+  name: '🔒 VL-GRPC-RLT 🇲🇩 MD-185.235.24... #1'
+  network: grpc
+  port: 2087
+  reality-opts:
+    public-key: WAexhAE6LEk2BSCikHVk7eSNTWel__rYPsJfq5Ud9Tc
+    short-id: 1f8912
+  server: 185.235.241.208
+  servername: www.cdn77.com
+  tls: false
+  type: vless
+  uuid: 9c1bb11e-de35-4666-8587-a030c1f09857
+- name: '🔒 VL-HTTPUPGRADE-NONE 🏴‍☠️ NA-... #111'
+  network: httpupgrade
+  port: 2086
+  server: 104.24.196.20
+  tls: false
+  type: vless
+  uuid: 5570a87c-f1d2-4b3d-8662-4f708969bb9d
+  ws-opts:
+    headers:
+      Host: wwW.speedtesT.net.eLectrolUxxv.ir.
+    path: '@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam%3Fed%3D2048'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.2.1... #3'
+  network: ws
+  port: 80
+  server: 151.101.2.133
+  tls: false
+  type: vless
+  uuid: b072d14f-133d-4f9f-e3d8-1185e6a00533
+  ws-opts:
+    headers:
+      Host: JOKERRVPN.com
+    path: '%2FTELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN%3Fed%3D2048'
+- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #24'
+  network: xhttp
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  uuid: f518c131-2ce2-47a2-8a2b-33da420d9a83
+  ws-opts:
+    headers:
+      Host: jointo_vistav2ray.ir
 - name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.69... #5'
   network: ws
-  port: 8880
+  port: 8080
   server: 104.21.69.44
   tls: false
   type: vless
-  uuid: b5a71c12-1584-42c6-ac34-69355620752a
-  ws-opts:
-    headers:
-      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.20... #16'
-  network: ws
-  port: 8880
-  server: 172.67.204.84
-  tls: false
-  type: vless
-  uuid: b1533182-6015-4f0d-b393-d3b94f55877f
+  uuid: f1e6a268-c410-413c-800b-a77a679320df
   ws-opts:
     headers:
       Host: de-snapp.academigroup.ir.
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147....
-  network: ws
-  port: 8880
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: e21ce3e7-8a65-437f-9b44-3518c0f984ec
-  ws-opts:
-    headers:
-      Host: de-snapp.academigroup.ir.
-    path: '%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #15'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #16'
   network: ws
   port: 8080
-  server: 104.17.147.22
+  server: 104.17.148.22
   tls: false
   type: vless
-  uuid: ab1ba65d-7af4-4ffb-bf26-44d79793af45
+  uuid: f1e6a268-c410-413c-800b-a77a679320df
   ws-opts:
     headers:
-      Host: xn--047h.iman-v2ray.sbs.
-    path: /
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.194... #8'
+      Host: de-snapp.academigroup.ir.
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3Fed%3D2048
+  name: '🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.7... #9'
+  network: grpc
+  port: 48615
+  server: 194.182.79.41
+  tls: false
+  type: vless
+  uuid: 55591059-5802-4d2c-a5aa-7033d9f72346
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.194... #9'
   network: ws
   port: 80
   server: 151.101.194.219
   tls: false
   type: vless
-  uuid: e7b2d457-40e2-4f6e-d2d2-5de7f7ac180e
+  uuid: b1f58d90-e65f-4566-91f3-1b96e9a68610
   ws-opts:
     headers:
-      Host: foffmelo.com
-    path: '%2Folem%2Fws%3Fed%3D1024'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.194... #9'
-  network: ws
-  port: 80
-  server: 151.101.194.228
-  tls: false
-  type: vless
-  uuid: 2f3c7d16-36a4-46af-979e-2a6c1d33a4a2
-  ws-opts:
-    headers:
-      Host: joinshhproxybedeedeeeeee.ir
-    path: '%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048'
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.... #1'
-  network: ws
-  port: 2082
-  server: 104.17.148.22
-  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 2f3e929e-fe8c-44d5-b96b-6ec0e4b5e569
-  ws-opts:
-    headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-- name: '🔒 VL-HTTPUPGRADE-NONE 🇷🇴 RO-45... #31'
-  network: httpupgrade
-  port: 8880
-  server: 45.12.30.239
-  tls: false
-  type: vless
-  uuid: b6e3b572-cf96-4305-afa8-22aeeba76640
-  ws-opts:
-    headers:
-      Host: liNk-cDnNeTWorK-cLoUdFlare.R-sgOOnE.ir.
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.112... #5'
-  network: ws
-  port: 2096
-  server: 104.21.112.1
-  servername: SUpERCaRs.GoBExOr577.wORkerS.dEv
-  tls: true
-  type: vless
-  uuid: e5b9b393-bac0-4bea-ad96-53acc299e622
-  ws-opts:
-    headers:
-      Host: supercars.gobexor577.workers.dev
-    path: '%2FpSJwVMDeIdkle5zb%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #17'
-  network: ws
-  port: 2052
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 880adfbf-6098-5ed9-8e3d-7716caf63e72
-  ws-opts:
-    headers:
-      Host: sPeedtest2.sbs.lu.v2vless.sitespeedtest.net
-    path: '%2Fvless'
-- name: '🔒 VL-WS-NA 🇷🇺 RU-185.59.218.20... #2'
+      Host: JoiIInNn--DIgiv2Ray.Ir.
+    path: /@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--%3Fed%3D2048
+- name: '🔒 VL-WS-NA 🇳🇱 NL-5.10.246.137:... #2'
   network: ws
   port: 8880
-  server: 185.59.218.20
+  server: 5.10.246.137
   servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
       Host: reedfree8mahsang2.redorg.ir
-- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.21.56.4... #4'
-  network: ws
-  port: 80
-  server: 104.21.56.44
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /telegram@ShadowProxy66/?ed%3D2048
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.2.1... #2'
-  network: ws
-  port: 80
-  server: 151.101.2.133
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Channel-MOSIV2--MOSIV2.IR
-    path: '%2FChannel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2%3Fed%3D2560'
-- name: '🔒 VL-XHTTP-NONE 🇺🇸 US-151.101.... #23'
-  network: xhttp
-  port: 80
-  server: 151.101.130.219
-  tls: false
-  type: vless
-  uuid: 613b7cad-e12c-4323-a205-843d246c5dcd
-  ws-opts:
-    headers:
-      Host: jointo_vmessorg.ir
-    path: '%2F%40vmessorg----%40vmessorg-----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg%3Fed%3D2480'
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148... #9'
-  network: ws
-  port: 8443
-  server: 104.17.148.22
-  servername: NvOvRkPi12.mInTiVo.oRg
-  tls: true
-  type: vless
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      Host: NvOvRkPi12.mInTiVo.oRg
-    path: /
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.64.... #2'
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  tls: false
-  type: vless
-  uuid: 45673ac8-34cd-4bd1-8d86-df4a32a6c206
-  ws-opts:
-    headers:
-      Host: irancell.net.
-    path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6%3Fed%3D2048
-- grpc-opts:
-    grpc-service-name: wizard
-  name: '🔒 VL-GRPC-TLS 🇫🇷 FR-57.130.17.... #1'
-  network: grpc
-  port: 2053
-  server: 57.130.17.72
-  servername: marzban.negintel.xyz
-  tls: true
-  type: vless
-  uuid: 624c7048-4c9b-4960-9955-edf87d8ee77a
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.16.... #9'
-  network: ws
-  port: 443
-  server: 104.21.16.1
-  servername: cggvgv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG
-  tls: true
-  type: vless
-  uuid: b9c6da73-51ba-4714-b493-e678705f5ff7
-  ws-opts:
-    headers:
-      Host: cggvgv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG
-    path: Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245... #5'
-  network: ws
-  port: 443
-  server: 190.93.245.137
-  servername: WWW.EsfahAnsimaN.infO.
-  tls: true
-  type: vless
-  uuid: c34e07f4-dd71-4f5f-9e7a-57a0b324ed7c
-  ws-opts:
-    headers:
-      Host: WWW.EsfahAnsimaN.infO.
-    path: TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-- name: '🔒 VL-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #40'
+    path: /Telegram
+- name: '🔒 VL-HTTPUPGRADE-NA 🏴‍☠️ NA-10... #18'
   network: httpupgrade
-  port: 2053
-  server: 104.17.147.22
-  servername: WWW.fashOARt749.COM
-  tls: true
+  port: 2086
+  server: 104.17.148.22
+  tls: false
   type: vless
-  uuid: 562b6618-1e9c-434f-f970-252cfd81da2e
+  uuid: da064419-96e2-4ee4-b98d-f22ef1fe0a65
   ws-opts:
     headers:
-      Host: GERNUR.fashOARt749.COM
-    path: '%2FGERNUR.fashOARt749.COM%40ipdomein-www.speedtest.net-zula.ir%3Fed%3D2048899'
+      Host: mci.mtn.ir.com.org.net.om.org.gameapkmode.info.
+    path: '%2Fd3d3LmlyYW5ob3N0LmNvbQ%3D%3D%3Fed%3D2560'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.20... #18'
+  network: ws
+  port: 8880
+  server: 172.67.204.84
+  tls: false
+  type: vless
+  uuid: 29b79b80-fb25-47e5-b7f4-4dcbcc491e54
+  ws-opts:
+    headers:
+      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: '%2F%3Fed%3D2048'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #17'
+  network: ws
+  port: 2082
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: f7086899-e9a8-4451-85a1-8313edf31c42
+  ws-opts:
+    headers:
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.66.... #5'
+  network: ws
+  port: 80
+  server: 151.101.66.219
+  tls: false
+  type: vless
+  uuid: b072d14f-133d-4f9f-e3d8-1185e6a00533
+  ws-opts:
+    headers:
+      Host: JOKERRVPN.com
+    path: '%2FTELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN%3Fed%3D2048'
+- name: '🔒 VL-HTTPUPGRADE-NONE 🏴‍☠️ NA-... #121'
+  network: httpupgrade
+  port: 2086
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: c84c18c4-189e-4fa4-fd92-f8ee4eb43879
+  ws-opts:
+    headers:
+      Host: cafebazaar.ir.novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: '%2F%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn%3Fed%3D2086'
 - alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🔒 VL-XHTTP-TLS 🏴‍☠️ NA-172.67.... #7'
+  name: '🔒 VL-XHTTP-TLS 🏴‍☠️ NA-172.67.... #6'
   network: xhttp
   port: 8443
   server: 172.67.204.84
@@ -346,17 +246,197 @@ proxies:
   ws-opts:
     headers:
       Host: Main.kasler.lol
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.20... #18'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.0.1... #4'
   network: ws
-  port: 8080
-  server: 172.67.204.84
+  port: 80
+  server: 151.101.0.155
   tls: false
   type: vless
-  uuid: f1e6a268-c410-413c-800b-a77a679320df
+  uuid: 50ee58d2-fc50-4df1-8c64-1fd1fa4a9c7d
   ws-opts:
     headers:
-      Host: de-snapp.academigroup.ir.
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #7'
+      Host: Channel-VPNCUSTOMIZE.ir
+    path: '%2FTelegram%E2%80%94VPNCUSTOMIZE%3Fed2048'
+- name: 🔒 VL-WS-NONE 🇳🇱 NL-5.180.52.15...
+  network: ws
+  port: 2052
+  server: 5.180.52.15
+  tls: false
+  type: vless
+  uuid: 670d931b-9d26-5c5b-9ee2-780be46e1cf0
+  ws-opts:
+    headers:
+      Host: mihanwebhost.iri
+    path: /vless
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.130... #6'
+  network: ws
+  port: 80
+  server: 151.101.130.133
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: Channel-MOSIV2--MOSIV2.IR
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.1... #1'
+  network: ws
+  port: 443
+  server: 91.107.176.100
+  servername: dd12.transitkala.com
+  tls: true
+  type: vless
+  uuid: 97ecb2d3-02e0-4ced-a919-2d82607e8b63
+  ws-opts:
+    headers:
+      Host: dd12.transitkala.com
+    path: /
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.73... #4'
+  network: ws
+  port: 80
+  server: 172.67.73.163
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.xn--i-sx6a60i.us.kg.
+    path: '%2F%3Fed%3D2560'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.194... #11'
+  network: ws
+  port: 80
+  server: 151.101.194.165
+  tls: false
+  type: vless
+  uuid: 575e55f1-d619-4c65-85fe-e2b757b6477b
+  ws-opts:
+    headers:
+      Host: JoinBedeeeeee--VPNCUSTOMIZE.ir.
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.2.2... #4'
+  network: ws
+  port: 80
+  server: 151.101.2.228
+  tls: false
+  type: vless
+  uuid: 67d3bda1-c496-41e8-9be0-49a9782134f9
+  ws-opts:
+    headers:
+      Host: joinshhproxybedeedeeeeee.ir
+    path: '%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.130... #7'
+  network: ws
+  port: 80
+  server: 151.101.130.219
+  tls: false
+  type: vless
+  uuid: 731fa01d-f8f6-4a58-8ab9-88da4cae76bd
+  ws-opts:
+    headers:
+      Host: retete3.ir
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.22.15.... #3'
+  network: ws
+  port: 8443
+  server: 104.22.15.132
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: '%2F%3Fed%3D2560'
+- name: '🔒 VL-WS-NA 🇬🇧 GB-91.193.58.65:... #2'
+  network: ws
+  port: 8880
+  server: 91.193.58.65
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: '%2F'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.... #11'
+  network: ws
+  port: 8443
+  server: 104.21.69.44
+  servername: vip.donghi.ir
+  tls: true
+  type: vless
+  uuid: ae5de31e-3d5f-4d32-b702-10d15ecad53f
+  ws-opts:
+    headers:
+      Host: vip.donghi.ir
+    path: '%2F%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7'
+- name: '🔒 VL-HTTPUPGRADE-NA 🏴‍☠️ NA-17... #15'
+  network: httpupgrade
+  port: 2052
+  server: 172.67.21.239
+  tls: false
+  type: vless
+  uuid: 6dd2355a-1839-4c77-b63b-67380a43d23a
+  ws-opts:
+    headers:
+      Host: v2ngfast.nanvrfood.ir.
+    path: '%2F%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast-%40V2ngFast%3Fed%3D2048'
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.223... #9'
+  network: ws
+  port: 2096
+  server: 104.19.223.79
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s28.yozplhost.ir
+  tls: true
+  type: vless
+  uuid: 2404f667-5969-4883-a71a-ea2e0db2d25b
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s28.yozplhost.ir
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.190... #2'
+  network: ws
+  port: 443
+  server: 104.16.190.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: '%2F'
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.... #12'
+  network: ws
+  port: 443
+  server: 104.21.69.44
+  servername: cr77.hedieh.dpdns.org
+  tls: true
+  type: vless
+  uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
+  ws-opts:
+    headers:
+      Host: cr77.hedieh.dpdns.org
+    path: '%2F%3Fed'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.0.... #5'
+  network: ws
+  port: 2052
+  server: 104.26.0.117
+  tls: false
+  type: vless
+  uuid: 36c9740d-bbc8-449e-8b2a-e8d9f00b4242
+  ws-opts:
+    headers:
+      Host: wWw.SpeedtesT.net.mAzMaznet.store.
+    path: '%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET%3Fed%3D2048'
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #11'
   network: ws
   port: 8443
   server: 104.17.147.22
@@ -368,340 +448,71 @@ proxies:
     headers:
       Host: NvOvRkPi12.mInTiVo.oRg
     path: /
-- grpc-opts:
-    grpc-service-name: '@V2rayNGcloud-Telegram-v2rayNGcloud-@V2rayNGcloud-Telegram-@V2rayNGcloud-Telegram-@V2rayNGcloud'
-  name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.32... #5'
+- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.194... #12'
   network: ws
   port: 80
-  server: 104.21.32.1
+  server: 151.101.194.228
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 2404f667-5969-4883-a71a-ea2e0db2d25b
   ws-opts:
     headers:
-      Host: redfree8.redorg1.ir
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.66.... #6'
+      Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v12.pronetwork12.com
+    path: '%2F%3Fed%3D2048'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.1.... #4'
   network: ws
-  port: 80
-  server: 151.101.66.133
-  tls: false
-  type: vless
-  uuid: b072d14f-133d-4f9f-e3d8-1185e6a00533
-  ws-opts:
-    headers:
-      Host: JOKERRVPN.com
-    path: '%2FTELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN,TELEGRAM-@JOKERRVPN%3Fed%3D2048'
-- name: '🔒 VL-HTTPUPGRADE-NONE 🏴‍☠️ NA-... #132'
-  network: httpupgrade
   port: 2052
-  server: 173.245.58.100
+  server: 104.26.1.117
   tls: false
   type: vless
-  uuid: 9548f8ec-ae91-4157-a3ee-703386c17317
+  uuid: 36c9740d-bbc8-449e-8b2a-e8d9f00b4242
   ws-opts:
     headers:
-      Host: Spain.serrjioo.ir
-    path: '%2FGoodLuck%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🇷🇺 RU-176.124.223... #3'
-  network: ws
-  port: 8880
-  server: 176.124.223.20
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: '%2FTelegram-%40AstroVPN_Official%2F%3Fed%3D2560'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.64.... #7'
-  network: ws
-  port: 443
-  server: 104.21.64.1
-  servername: drakvpv1.telechannel.workers.dev
-  tls: true
-  type: vless
-  uuid: 4df1203d-ddfe-4d19-81eb-1629a4dbdfcf
-  ws-opts:
-    headers:
-      Host: drakvpv1.telechannel.workers.dev
-- name: 🔒 VL-WS-NONE 🇷🇴 RO-45.12.30.86...
-  network: ws
-  port: 8880
-  server: 45.12.30.86
-  servername: reedfree8mahsang2.redorg.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: '%2F'
-- name: '🔒 VL-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #50'
-  network: httpupgrade
-  port: 2053
-  server: 104.17.148.22
-  servername: WWW.fashOARt749.COM
-  tls: true
-  type: vless
-  uuid: 562b6618-1e9c-434f-f970-252cfd81da2e
-  ws-opts:
-    headers:
-      Host: GERNUR.fashOARt749.COM
-    path: '%2FGERNUR.fashOARt749.COM%40ipdomein-www.speedtest.net-zula.ir%3Fed%3D2048899'
-- client-fingerprint: qq
-  name: '🔒 VL-WS-TLS 🇺🇸 US-140.248.180.... #3'
-  network: ws
-  port: 443
-  server: 140.248.180.62
-  servername: Channel-MOSIV2--MOSIV2.IR
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: Channel-MOSIV2--MOSIV2.IR
-    path: '%2FChannel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #9'
-  network: ws
-  port: 443
-  server: 104.17.147.22
-  servername: mypHOtoGRapIcPictURe.ir
-  tls: true
-  type: vless
-  uuid: 4d91916f-a7fd-419b-8b90-640bb8d4b9f4
-  ws-opts:
-    headers:
-      Host: myphotograpicpicture.ir
-    path: '%2FCY6EnyeHmgNASXJI%2FMTU5LjY5LjE0LjEzOA'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.2.2... #6'
-  network: ws
-  port: 80
-  server: 151.101.2.219
-  tls: false
-  type: vless
-  uuid: e7b2d457-40e2-4f6e-d2d2-5de7f7ac180e
-  ws-opts:
-    headers:
-      Host: foffmelo.com
-    path: '%2Folem%2Fws%3Fed%3D1024'
-- name: '🔒 VL-WS-TLS 🇩🇪 DE-161.35.20.87... #1'
-  network: ws
-  port: 2053
-  server: 161.35.20.87
-  servername: 95465a37-cff1-4b91-f36b-85a550ab0827.dalonr.land
-  tls: true
-  type: vless
-  uuid: 95465a37-cff1-4b91-f36b-85a550ab0827
-  ws-opts:
-    headers:
-      Host: tivi.dalonr.land
-    path: '%2Fwss24784'
-- name: '🔒 VL-WS-NONE 🇳🇱 NL-45.131.5.20... #3'
-  network: ws
-  port: 8880
-  server: 45.131.5.20
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54... #2'
-  network: ws
-  port: 8080
-  server: 104.19.54.50
-  tls: false
-  type: vless
-  uuid: a86ce4c7-b5a4-42ef-9402-3053d1fa313a
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net.
-    path: '%2F@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-151.101.192... #1'
-  network: ws
-  port: 80
-  server: 151.101.192.155
-  tls: false
-  type: vless
-  uuid: 2ce4da59-28c7-41fa-9411-7dfde437c1cb
-  ws-opts:
-    headers:
-      Host: namehmain.com
-    path: '%2FTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🇺🇸 US-23.134.82.1... #1'
-  network: ws
-  port: 80
-  server: 23.134.82.1
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: '%2FTelegram%3A%40V2RAYNG_1378%2F%3Fed%3D2560'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.18.14... #11'
-  network: ws
-  port: 80
-  server: 104.18.14.19
-  tls: false
-  type: vless
-  uuid: 252d7c6c-3f50-44fb-9a51-13963fc727e0
-  ws-opts:
-    headers:
-      Host: 0105.f5s8fbc2.workers.dev
-    path: '%2FTelegram-%40V2ray_Alpha%2F%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #10'
-  network: ws
-  port: 2083
-  server: 104.17.147.22
-  servername: iVZ693ye8o0Lmp70Bd7vr407Bwm2iB8r.kicige4119.WORKErS.deV
-  tls: true
-  type: vless
-  uuid: 45c3ceef-af58-45ba-83e9-6fad74dbb663
-  ws-opts:
-    headers:
-      Host: ivz693ye8o0lmp70bd7vr407bwm2ib8r.kicige4119.workers.dev
-    path: '%2FTXEWPV1cdVvX7c1v'
+      Host: wWw.SpeedtesT.net.mAzMaznet.store.
+    path: '%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET%3Fed%3D2048'
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.80.... #21'
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.... #11'
   network: ws
-  port: 443
-  server: 104.21.80.1
-  servername: ppaL03.mr-lOlA-rAyNoR.WORKErs.dEV
+  port: 2096
+  server: 104.26.14.16
+  servername: rEDzOnE.MirAcLehEaRTbIt.ICu
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: af811bcf-ba46-4b4e-83e6-78b771424474
   ws-opts:
     headers:
-      Host: ppAl03.mr-lOlA-raYnor.WORkeRs.Dev
-    path: '%2FqeIk5TeCFGaSnfP9%3Fed%3D2560'
-- name: '🔒 VL-XHTTP-NONE 🇦🇹 AT-77.110.1... #1'
-  network: xhttp
-  port: 27542
-  server: 77.110.110.157
-  tls: false
-  type: vless
-  uuid: 430c2e61-bce9-4565-9c77-f3b7aee7cd7d
-  ws-opts:
-    headers:
-      Host: analytics.google.com
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.41.... #3'
+      Host: rEDzOnE.MirAcLehEaRTbIt.ICu
+    path: '%2F2096%2F%40V2RayyNGVpn'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #27'
   network: ws
-  port: 8443
-  server: 104.18.41.190
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #22'
-  network: ws
-  port: 80
+  port: 2082
   server: 104.17.148.22
   tls: false
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: f7086899-e9a8-4451-85a1-8313edf31c42
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: '%2Ftelegram%40v2ray_alpha%2F%3Fed%3D2560'
-- name: 🔒 VL-TCP-NA 🇺🇸 US-154.206.12.1...
-  port: 8880
-  server: 154.206.12.170
-  tls: false
-  type: vless
-  uuid: 6f393e4a-2811-4eb6-bbe3-a6917381bdcd
-  ws-opts:
-    path: /56PNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE--VPNCUSTOMIZE?ed
-- client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.233... #5'
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+- name: 🔒 VL-WS-TLS 🇩🇪 DE-63.176.41.21...
   network: ws
-  port: 2053
-  server: 104.17.233.65
-  servername: txmt.conetcdata.dpdns.org
+  port: 22224
+  server: 63.176.41.214
+  servername: trojan.burgerip.co.uk
   tls: true
   type: vless
-  uuid: 908fe4f8-eb66-42eb-bd97-8d88be7f0ac4
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-NONE 🇹🇷 TR-91.206.71.1... #3'
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: 🔒 VL-WS-TLS 🇩🇪 DE-3.65.213.56:...
   network: ws
-  port: 8880
-  server: 91.206.71.162
-  tls: false
+  port: 22224
+  server: 3.65.213.56
+  servername: trojan.burgerip.co.uk
+  tls: true
   type: vless
-  uuid: 0868d2e0-7ea0-4652-9d69-e1f4b8fa87f0
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
-    headers:
-      Host: join.vpncustomize.iran.ir.arvancloud.ir.www.speedtest.net.shet.ddns-ip.net
-    path: '%2FTelegram—VPNCUSTOMIZE%3Fed%3D2048'
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.73... #5'
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: '%2F%3Fed%3D2560'
-- name: '🔒 VL-WS-NA 🇨🇭 CH-185.18.250.20... #2'
-  network: ws
-  port: 8880
-  server: 185.18.250.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.26.14... #1'
-  network: ws
-  port: 8080
-  server: 104.26.14.85
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  tls: false
-  type: vless
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      Host: IO.IhJtq0hklC.ZULAiR.OrG.
-    path: '%2F'
-- name: '🔒 VL-HTTPUPGRADE-NONE 🏴‍☠️ NA-... #195'
-  network: httpupgrade
-  port: 2086
-  server: 104.17.148.22
-  tls: false
-  type: vless
-  uuid: dd5d63bb-9785-4bd0-ea28-1cf4e92b407e
-  ws-opts:
-    headers:
-      Host: www.speedtest24.ir
-    path: /@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config%3Fed%3D2048
+    path: '%2Ftelegram-channel-vlessconfig'
