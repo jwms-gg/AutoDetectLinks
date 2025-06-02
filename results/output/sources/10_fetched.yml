@@ -1,5 +1,5 @@
-# Update: 2025-06-01 08:58
-# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 26
+# Update: 2025-06-02 08:50
+# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 27
 proxies:
 - alterId: 0
   cipher: auto
@@ -73,7 +73,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>德国-NF解锁波兰自制剧-ChatGPT-...
+  name: VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-...
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -177,12 +177,6 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 'SS-法国-NF解锁法国自制剧-ChatGPT-TikTok... #3'
-  password: T22ofNMxrNpTzoaYq24kbh
-  port: 443
-  server: 62.210.88.22
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -217,24 +211,6 @@ proxies:
     headers:
       HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- cipher: chacha20-ietf-poly1305
-  name: SS-黎巴嫩-NF解锁自制剧-ChatGPT-TikTok-...
-  password: zWi4bU04Vs6Zlt5oV4CTjx
-  port: 4443
-  server: 77.110.109.86
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-挪威-NF解锁荷兰自制剧-ChatGPT-TikTok...
-  password: 1112935345BtgV5PDHVww
-  port: 443
-  server: 195.35.113.79
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-加拿大-NF解锁加拿大自制剧-ChatGPT-TikT...
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -252,19 +228,57 @@ proxies:
     headers:
       HOST: de01.sh-cloudflare.sbs
     path: /
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-Yo...
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-俄罗斯联邦>法国-NF解锁法国自制剧-ChatG...
+  name: VMESS-美国-NF解锁菲律宾自制剧-ChatGPT-Ti...
   network: ws
-  port: 2095
-  server: 185.174.138.209
-  servername: yellow-paper-029c.yvonna.workers.dev
+  port: 45113
+  server: 43.153.104.62
   skip-cert-verify: true
   type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  uuid: 97cc0323-de53-4a75-d69d-c6acdac5fdc7
   ws-opts:
-    headers:
-      HOST: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
+    path: /97cc0323
+- cipher: aes-256-gcm
+  name: SS-塞舌尔>美国-NF解锁台湾自制剧-ChatGPT-Ti...
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: 154.83.90.11
+  type: ss
+- cipher: aes-256-gcm
+  name: 'SS-塞舌尔>美国-NF解锁台湾自制剧-ChatGPT-Ti... #1'
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21114
+  server: 154.83.90.11
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 'SS-法国-NF解锁法国自制剧-ChatGPT-TikTok... #3'
+  password: XGcCXh1hhr7XH1xSzQ0SM0
+  port: 443
+  server: 62.210.88.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁荷兰地区非自制剧-ChatGPT-Tik...
+  password: ojcP36n1SouDcnBg9EOZP8
+  port: 1490
+  server: 9.163.232.180
+  type: ss

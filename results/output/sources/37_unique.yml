@@ -1,238 +1,25 @@
-# Update: 2025-06-01 08:58
-# Source 37 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 25
+# Update: 2025-06-02 08:50
+# Source 37 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 2
 proxies:
-- alterId: 1
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #5'
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
   cipher: auto
   name: 日本 东京Amazon数据中心
   network: tcp
-  port: 11773
-  server: kshjl-g01.jp02-9a99-vm0.entry.fr0307a.art
+  port: 33443
+  server: tls.04.node-for-bigairport.win
   tls: false
   type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #1'
-  network: tcp
-  port: 21581
-  server: ylwgt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #2'
-  network: tcp
-  port: 21581
-  server: 6hswz-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #3'
-  network: tcp
-  port: 21581
-  server: 395gj-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: 19a78eeb-d83a-4364-b095-b7dd93436320
-  port: 443
-  server: 172.67.149.202
-  sni: CVFgTrE4.222560.XyZ
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cvfgtre4.222560.xyz
-    path: '%2FHq0I4JMuzO0WLijID'
-- alterId: 1
-  cipher: auto
-  name: 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-  network: tcp
-  port: 28783
-  server: x0f08-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #4'
-  network: tcp
-  port: 46484
-  server: 8vndq-g03.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #5'
-  network: tcp
-  port: 21581
-  server: ie9as-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #6'
-  network: tcp
-  port: 46482
-  server: gwmx9-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 日本 V2CROSS.COM
-  network: tcp
-  port: 46487
-  server: 4oxca-g06.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- name: '美国+CloudFlare节点 #6'
-  network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
-  port: 443
-  server: 172.67.204.120
-  sni: ddcDe.890603.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ddcde.890603.xyz
-    path: '%2FCOp52Dbu3dvwvDWUxOqxq'
-- alterId: 1
-  cipher: auto
-  name: '日本 V2CROSS.COM #1'
-  network: tcp
-  port: 46487
-  server: 0s7c3-g06.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: 日本 东京都Amazon数据中心
-  network: tcp
-  port: 21581
-  server: r17ld-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '日本 东京都Amazon数据中心 #1'
-  network: tcp
-  port: 21581
-  server: 7uq8b-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- name: '美国+CloudFlare节点 #7'
-  network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: 443
-  server: 172.67.133.248
-  sni: DDd.890604.FIlEGear-sG.Me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ddd.890604.filegear-sg.me
-    path: '%2FmZr1mA5hub7QHHkQBzYO'
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #7'
-  network: tcp
-  port: 46482
-  server: 0pa7j-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #8'
-  network: tcp
-  port: 21581
-  server: 7q8kz-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #9'
-  network: tcp
-  port: 11773
-  server: vlhln-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #10'
-  network: tcp
-  port: 21586
-  server: d706z-g06.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心 #1'
-  network: tcp
-  port: 28783
-  server: f51c2-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 日本 东京都亚马逊(Amazon)公司数据中心
-  network: tcp
-  port: 444
-  server: vh1ty-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '日本 东京Amazon数据中心 #11'
-  network: tcp
-  port: 11773
-  server: ij4xs-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: '美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心 #2'
-  network: tcp
-  port: 28783
-  server: fyk5u-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #9'
-  network: ws
-  port: 80
-  server: m11sdfg.890604.dpdns.org
-  tls: false
-  type: vmess
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  ws-opts:
-    headers:
-      Host: m11sdfg.890604.dpdns.org
-    path: /lhU8ShsoPZlulnnYPb86csp
-- alterId: 1
-  cipher: auto
-  name: '日本 东京都亚马逊(Amazon)公司数据中心 #1'
-  network: tcp
-  port: 444
-  server: 3lgr4-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+  uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
