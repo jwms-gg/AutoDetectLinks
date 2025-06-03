@@ -1,5 +1,5 @@
-# Update: 2025-06-02 08:50
-# Source 45 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 288
+# Update: 2025-06-03 08:48
+# Source 45 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 251
 proxies:
 - alterId: 0
   cipher: auto
@@ -61,12 +61,6 @@ proxies:
   port: '8080'
   server: 45.87.175.28
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 'SS-英国-NF解锁英国自制剧-ChatGPT-TikTok... #1'
-  password: d275849ebcfcec7e
-  port: '11703'
-  server: 57.128.190.110
-  type: ss
 - alterId: 0
   cipher: auto
   name: 'VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-... #1'
@@ -82,140 +76,90 @@ proxies:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
 - cipher: chacha20-ietf-poly1305
-  name: 'SS-法国-NF解锁法国自制剧-ChatGPT-TikTok... #4'
+  name: 'SS-法国-NF解锁法国自制剧-ChatGPT-TikTok... #3'
   password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
   port: '30665'
   server: 107.191.63.241
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 'SS-美国-NF解锁自制剧-ChatGPT-TikTok-Y... #8'
+  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
+  port: '31444'
+  server: 149.28.106.134
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 电讯盈科有限公司 #1'
+  network: ws
+  port: '8080'
+  server: 2abb3c67-swkhs0-t1457r-g53t.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: b778e4ae-1458-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 2abb3c67-swkhs0-t1457r-g53t.hgc1.tcpbbr.net
+    path: /
 - name: 🇨🇳 江苏省 移动
-  password: RlzoEILU
-  port: 3330
-  server: 36.151.251.62
-  skip-cert-verify: false
-  sni: cdn.egvra.cn
-  type: trojan
-- name: 🇨🇳 广东省 联通
-  password: 1a7f2766-e24d-11ed-98a7-f23c913c8d2b
-  port: 15229
-  server: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  skip-cert-verify: false
-  sni: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '59652'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 广东省中山市 移动
-  network: tcp
-  port: '41766'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '🇨🇳 广东省广州市 移动 #1'
-  network: ws
-  port: '52512'
-  server: aflzzul.meiquankongjian.com
-  tls: false
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-- name: '🇨🇳 广东省 联通 #1'
-  password: e542ec26-b786-11ee-9a75-f23c91cfbbc9
-  port: 15229
-  server: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  skip-cert-verify: false
-  sni: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  type: trojan
-- name: '🇨🇳 广东省 联通 #2'
-  password: 4d78032e-d27c-11ef-bd97-f23c9164ca5d
-  port: 15229
-  server: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  skip-cert-verify: false
-  sni: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳 吉林省 移动(全省通用)
-  network: ws
-  port: '30828'
-  server: 111.26.109.79
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- name: '🇨🇳 江苏省 移动 #1'
   password: RlzoEILU
   port: 33097
   server: 36.151.251.61
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 36.151.251.61
+  type: trojan
+- name: 亚太地区 V2CROSS.COM
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇨🇳 广东省中山市 移动 #1'
-  network: tcp
-  port: '39076'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 电讯盈科有限公司
+  name: '🇭🇰 香港 电讯盈科有限公司 #2'
   network: ws
   port: '8080'
-  server: a9c5b237-swd340-t7a4xd-1ln9e.hgc1.tcpbbr.net
+  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  uuid: e35ea0a0-0634-11f0-8eb0-f23c9164ca5d
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   ws-opts:
     headers:
-      Host: a9c5b237-swd340-t7a4xd-1ln9e.hgc1.tcpbbr.net
+      Host: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
     path: /
+- name: 🇺🇦 乌克兰 V2CROSS.COM
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: chop-wrist-bud.stark-industries.solutions
+  skip-cert-verify: false
+  sni: chop-wrist-bud.stark-industries.solutions
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇨🇳 广东省汕头市 移动
-  network: tcp
-  port: '17232'
-  server: 34ac196c-svlb40-tdnzz0-1qtp7.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度 V2CROSS.COM
+  name: 🇺🇸 美国 Fastly全球Anycast节点
   network: ws
   port: '443'
-  server: 202.78.162.5
+  server: gov.uk
   tls: true
   type: vmess
-  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
   ws-opts:
     headers:
-      Host: irsoft.sytes.net
-    path: /
+      Host: zheshiscp.com
+    path: /77848824
+- name: 🇬🇧 英国 社会保险安全部
+  password: df9d6880-3f0f-11f0-b00b-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: false
+  sni: fr1.test3.net
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国 CloudFlare节点
   network: ws
   port: '2082'
-  server: cs.flha.ru
+  server: 104.21.23.231
   tls: false
   type: vmess
   uuid: 2f821152-c3e9-4074-9185-2790e7425f42
@@ -225,29 +169,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '443'
-  server: hk2.lrzdx.uk
-  tls: true
-  type: vmess
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  ws-opts:
-    headers:
-      Host: hk2.lrzdx.uk
-    path: /register
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 广东省江门市 移动
+  name: 🇨🇳 广东省广州市 移动
   network: tcp
-  port: '49174'
-  server: 120.234.102.229
+  port: '41491'
+  server: 120.232.153.41
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 电讯盈科有限公司 #1'
+  name: '🇭🇰 香港 电讯盈科有限公司 #3'
   network: ws
   port: '8080'
   server: 7df05a40-svwf40-sxe8ph-mubp.hgc1.tcpbbr.net
@@ -258,69 +189,137 @@ proxies:
     headers:
       Host: 7df05a40-svwf40-sxe8ph-mubp.hgc1.tcpbbr.net
     path: /
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳 江苏省 移动 #2'
-  network: ws
-  port: '30812'
-  server: v12.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 江苏省宿迁市 电信/宿迁电信IDC机房
-  network: tcp
-  port: '15074'
-  server: 15074.kuaiyin02.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: '🇺🇸 美国 CloudFlare节点 #2'
   network: ws
   port: '80'
-  server: xxxsde4.freevpnatm2025.dpdns.org
+  server: 5tghyu8.999820.xyz
   tls: false
   type: vmess
   uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
   ws-opts:
     headers:
-      Host: xxxsde4.freevpnatm2025.dpdns.org
+      Host: 5tghyu8.999820.xyz
     path: /10W6SJaK0F0oVXeNU6S2RVRP
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '80'
-  server: 2sdfre3.999820.xyz
+  name: '🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '33919'
+  server: 183.236.51.38
   tls: false
   type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺 俄罗斯 V2CROSS.COM
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: '54170'
+  server: 185.242.86.156
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '🇨🇳 广东省广州市 移动 #2'
+  network: tcp
+  port: '50152'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 电讯盈科有限公司 #4'
+  network: ws
+  port: '8080'
+  server: 0e1121ca-swd340-teqqcv-1rc6n.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: 32bd96d6-186b-11f0-9a65-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 2sdfre3.999820.xyz
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-- cipher: aes-256-gcm
-  name: TG频道@stymei1丨4
-  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
-  port: '21227'
-  server: 910281.chasel.sbs
-  type: ss
-- cipher: aes-256-gcm
-  name: TG频道@stymei1丨6
-  password: 0S43J3FD6L7IEKGQ
-  port: '15008'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
+      Host: 0e1121ca-swd340-teqqcv-1rc6n.hgc1.tcpbbr.net
+    path: /
+- name: '🇺🇦 乌克兰 V2CROSS.COM #1'
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: bring-glove-shine.stark-industries.solutions
+  skip-cert-verify: false
+  sni: bring-glove-shine.stark-industries.solutions
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 广东省湛江市 移动
+  network: tcp
+  port: '49355'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '2|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #1'
+  name: '🇨🇳 广东省广州市 移动 #3'
+  network: tcp
+  port: '49302'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '亚太地区 V2CROSS.COM #1'
+  password: Aimer
+  port: 443
+  server: 103.116.7.248
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 电讯盈科有限公司 #5'
+  network: ws
+  port: '8080'
+  server: 1deb35dd-svn5s0-t1j1pq-sett.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: 303436ce-f8c5-11ef-8400-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳 广东省汕头市 移动
+  network: ws
+  port: '30808'
+  server: v8.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 电讯盈科有限公司 #6'
+  network: ws
+  port: '8080'
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: '🇨🇳 江苏省 移动 #1'
+  password: RlzoEILU
+  port: 3330
+  server: 36.151.251.62
+  skip-cert-verify: false
+  sni: cdn.egvra.cn
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: '3|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #2'
   network: ws
   port: '1443'
   server: sslvpn.51job.com
@@ -332,21 +331,21 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: aes-256-cfb
-  name: '2|🌀3-SK |  5.0MB/s|0%|Youtube|... #1'
+  name: '3|🌀3-SK |  5.0MB/s|0%|Youtube|... #2'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 156.146.40.194
   type: ss
 - alterId: 64
   cipher: auto
-  name: '2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #1'
+  name: '3|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
   network: tcp
   port: '49291'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '2|🇺🇸45 |  2.5MB/s|46%|Openai|G... #1'
+- name: '3|🇺🇸45 |  2.5MB/s|46%|Openai|G... #2'
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -354,7 +353,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '2|🌀4-TH |  2.6MB/s|55%|Netflix... #1'
+  name: '3|🌀4-TH |  2.6MB/s|55%|Netflix... #2'
   network: ws
   port: '443'
   server: 38.47.96.30
@@ -366,14 +365,14 @@ proxies:
       Host: th.lzj520hxw.dpdns.org
     path: /lzjjj
 - cipher: aes-256-cfb
-  name: '2|🇰🇷2 |  1.5MB/s|44%|Openai #1'
+  name: '3|🇰🇷2 |  1.5MB/s|44%|Openai #3'
   password: qwerREWQ@@
   port: '15098'
   server: 125.141.31.72
   type: ss
 - alterId: 2
   cipher: auto
-  name: '2|🇺🇸62 |  3.3MB/s|Openai|Gemin... #1'
+  name: '3|🇺🇸62 |  3.3MB/s|Openai|Gemin... #2'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -388,7 +387,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: '2|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #1'
+  name: '3|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #2'
   network: grpc
   port: '443'
   server: de.vmess.comnpmjs.com
@@ -397,7 +396,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: '2|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #1'
+  name: '3|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #3'
   network: ws
   port: '8080'
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -408,14 +407,14 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '2|🇺🇸63 |  2.1MB/s|46%|Openai|G... #1'
+- name: '3|🇺🇸63 |  2.1MB/s|46%|Openai|G... #2'
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: '2|🇺🇸64 |  1.3MB/s|46%|Openai|G... #1'
+- name: '3|🇺🇸64 |  1.3MB/s|46%|Openai|G... #2'
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -423,33 +422,33 @@ proxies:
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
 - cipher: aes-256-cfb
-  name: '12|tg频道:@ripaojiedian #1'
+  name: '13|tg频道:@ripaojiedian #2'
   password: yijian0503
   port: '443'
-  server: 43.203.240.196
+  server: 3.35.54.68
   type: ss
 - cipher: aes-256-gcm
-  name: 🇭🇰 12|🇭🇰 香港|@ripaojiedian
+  name: 🇭🇰 13|🇭🇰 香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
   port: '15010'
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 12|🇭🇰 香港2|@ripaojiedian
+  name: 🇭🇰 13|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
-  port: '34566'
+  port: '27693'
   server: hkkh11v1.xpmc.cc
   type: ss
 - alterId: 64
   cipher: auto
-  name: 🇸🇬 12|🇸🇬 新加坡2|@ripaojiedian
+  name: 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
   network: tcp
   port: '49302'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇭🇰 12,13|香港4|@ripaojiedian
+- name: 🇭🇰 13,14|香港4|@ripaojiedian
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -458,7 +457,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 🇭🇰 12|🇭🇰 香港5|@ripaojiedian
+  name: 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
   network: tcp
   port: '52182'
   server: 120.232.153.40
@@ -467,7 +466,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 12,13|香港8|@ripaojiedian
+  name: 🇭🇰 13,14|香港8|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -480,49 +479,46 @@ proxies:
     path: /oooo
 - alterId: 64
   cipher: auto
-  name: 🇭🇰 12|🇭🇰 香港9|@ripaojiedian
+  name: 🇭🇰 13|🇭🇰 香港9|@ripaojiedian
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 13|🇭🇰 香港10|@ripaojiedian
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '16100'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
 - cipher: rc4-md5
-  name: 🇯🇵 12|🇯🇵 日本|@ripaojiedian
+  name: 🇯🇵 13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   port: '8766'
   server: cn01.efan8867801.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 12|🇯🇵 日本2|@ripaojiedian
+  name: 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
   password: 2e96aa2f3054
-  port: '50494'
+  port: '25356'
   server: 43.226.17.17
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 12|🇯🇵 日本3|@ripaojiedian
-  network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- cipher: aes-256-gcm
+  name: 🇯🇵 13|🇯🇵 日本3|@ripaojiedian
+  password: 6EZ5QKFX60AVSUYT
+  port: '18008'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 12|🇯🇵 日本4|@ripaojiedian
+  name: 🇯🇵 13|🇯🇵 日本4|@ripaojiedian
   password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
   port: '32875'
   server: jg647hf446ghvw.gym0boy.com
   type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 12|🇰🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇸🇬 12,13|新加坡|@ripaojiedian
+  name: 🇸🇬 13,14|新加坡|@ripaojiedian
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -533,21 +529,39 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 🇸🇬 12|🇸🇬 新加坡3|@ripaojiedian
-  password: PIPLH14SPUJNGOS8
-  port: '16005'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '44054'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 13|🇸🇬 新加坡4|@ripaojiedian
+  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
+  port: '20347'
+  server: sg1.qqingca.cc
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷 13|🇰🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: '4857'
+  server: 125.141.26.12
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+  password: qwerREWQ@@
+  port: '36379'
+  server: p080.panda001.net
   type: ss
 - cipher: rc4-md5
-  name: 🇺🇸 12|🇺🇸 美国2|@ripaojiedian
+  name: 🇺🇸 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   port: '8774'
   server: cn01.efan8867801.xyz
   type: ss
 - alterId: 2
   cipher: auto
-  name: 🇺🇸 12,13|美国|@ripaojiedian
+  name: 🇺🇸 13,14|美国|@ripaojiedian
   network: ws
   port: '30832'
   server: v32.heduian.link
@@ -560,7 +574,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 🇺🇸 12,13|美国5|@ripaojiedian
+  name: 🇺🇸 13,14|美国5|@ripaojiedian
   network: ws
   port: '30828'
   server: 111.26.109.79
@@ -571,33 +585,27 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 12|🇺🇸 美国4|@ripaojiedian
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: '54322'
-  server: cm55-zz.moonwang.xyz
+- cipher: aes-256-gcm
+  name: 🇺🇸 13|🇺🇸 美国4|@ripaojiedian
+  password: 2Z11BX63H64YSEDM
+  port: '17005'
+  server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-cfb
-  name: 🇻🇳 12|🇻🇳 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
-  type: ss
-- cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #1 #1'
+  name: '14|tg频道:@ripaojiedian #1 #1'
   password: yijian0503
   port: '443'
-  server: 43.203.240.196
+  server: 3.35.54.68
   type: ss
 - cipher: aes-256-gcm
-  name: 🇭🇰 13|香港|@ripaojiedian
+  name: 🇭🇰 14|香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
   port: '15010'
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - alterId: 64
   cipher: auto
-  name: 🇸🇬 13|新加坡2|@ripaojiedian
+  name: 🇸🇬 14|新加坡2|@ripaojiedian
   network: tcp
   port: '49302'
   server: 183.236.51.38
@@ -606,7 +614,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇭🇰 13|香港5|@ripaojiedian
+  name: 🇭🇰 14|香港5|@ripaojiedian
   network: tcp
   port: '52182'
   server: 120.232.153.40
@@ -615,231 +623,101 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇭🇰 13|香港9|@ripaojiedian
+  name: 🇭🇰 14|香港9|@ripaojiedian
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 13|日本3|@ripaojiedian
-  network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 13|日本4|@ripaojiedian
+  name: 🇭🇰 14|香港10|@ripaojiedian
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '16100'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵 14|日本3|@ripaojiedian
+  password: 6EZ5QKFX60AVSUYT
+  port: '18008'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 14|日本4|@ripaojiedian
   password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
   port: '32875'
   server: jg647hf446ghvw.gym0boy.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 13|日本V2|@ripaojiedian
+  name: 🇯🇵 14|日本V2|@ripaojiedian
   network: kcp
   port: '50951'
   server: 8.211.154.107
   tls: false
   type: vmess
   uuid: a3d04548-625c-4658-9ff0-f9a7835d1f6d
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 14|新加坡3|@ripaojiedian
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '44054'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 14|新加坡4|@ripaojiedian
+  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
+  port: '20347'
+  server: sg1.qqingca.cc
+  type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷 13|韩国|@ripaojiedian
+  name: 🇰🇷 14|韩国|@ripaojiedian
   password: qwerREWQ@@
   port: '4857'
   server: 125.141.26.12
   type: ss
-- cipher: aes-256-gcm
-  name: 🇸🇬 13|新加坡3|@ripaojiedian
-  password: PIPLH14SPUJNGOS8
-  port: '16005'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 13|美国4|@ripaojiedian
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: '54322'
-  server: cm55-zz.moonwang.xyz
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇻🇳 13|越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
+  name: 🇰🇷 14|韩国2|@ripaojiedian
+  password: qwerREWQ@@
+  port: '36379'
+  server: p080.panda001.net
   type: ss
-- name: '14|AM_speednode_0002 #1'
-  password: Aimer
-  port: 2096
-  server: 188.164.159.241
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '14|CN_speednode_0029 #1'
-  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  port: 15229
-  server: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
-  skip-cert-verify: false
-  sni: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0030 #1'
-  password: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
-  port: 15229
-  server: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
-  skip-cert-verify: false
-  sni: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0031 #1'
-  password: 659b0268-92ca-11ef-b3af-f23c913c8d2b
-  port: 15229
-  server: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
-  skip-cert-verify: false
-  sni: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0032 #1'
-  password: f9c35596-f323-11ed-8ccd-f23c91cfbbc9
-  port: 15229
-  server: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
-  skip-cert-verify: false
-  sni: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0033 #1'
-  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-  port: 15229
-  server: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
-  skip-cert-verify: false
-  sni: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0034 #1'
-  password: 1a7f2766-e24d-11ed-98a7-f23c913c8d2b
-  port: 15229
-  server: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  skip-cert-verify: false
-  sni: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0036 #1'
-  password: 4d78032e-d27c-11ef-bd97-f23c9164ca5d
-  port: 15229
-  server: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  skip-cert-verify: false
-  sni: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0037 #1'
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  port: 15229
-  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  skip-cert-verify: false
-  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0039 #1'
-  password: e542ec26-b786-11ee-9a75-f23c91cfbbc9
-  port: 15229
-  server: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  skip-cert-verify: false
-  sni: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0040 #1'
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: 15229
-  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  skip-cert-verify: false
-  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0041 #1'
-  password: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
-  port: 15229
-  server: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
-  skip-cert-verify: false
-  sni: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0042 #1'
-  password: e3004917-ad9d-b8a2-a2ee-65a54830e020
-  port: 15229
-  server: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
-  skip-cert-verify: false
-  sni: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0043 #1'
-  password: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
-  port: 15229
-  server: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
-  skip-cert-verify: false
-  sni: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0044 #1'
-  password: 4faf123a-572a-11eb-8684-f23c913c8d2b
-  port: 15229
-  server: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
-  skip-cert-verify: false
-  sni: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0045 #1'
-  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-  port: 15229
-  server: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
-  skip-cert-verify: false
-  sni: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0046 #1'
-  password: 602e99aa-718d-11eb-b77b-f23c913c8d2b
-  port: 15229
-  server: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
-  skip-cert-verify: false
-  sni: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
-  type: trojan
-- name: '14|JP_speednode_0096 #1'
+- cipher: aes-256-gcm
+  name: 🇺🇸 14|美国4|@ripaojiedian
+  password: 2Z11BX63H64YSEDM
+  port: '17005'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+- name: '15|JP_speednode_0036 #2'
   password: Aimer
   port: 2083
   server: 103.116.7.103
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- name: '14|KR_speednode_0103 #1'
-  password: Aimer
-  port: 12088
-  server: 112.184.209.63
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '14|NO_speednode_0121 #1'
-  password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
-  port: 443
-  server: 95.164.38.151
-  skip-cert-verify: false
-  sni: copy-wifi-twins.stark-industries.solutions
-  type: trojan
-- name: '14|RU_speednode_0137 #2'
+- name: '15|RU_speednode_0064 #2'
   password: Aimer
   port: 443
   server: 5.182.84.244
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- name: '14|SI_speednode_0149 #1'
+- name: '15|SI_speednode_0067 #2'
   password: Aimer
   port: 2087
   server: 92.53.190.161
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- cipher: rc4-md5
-  name: '🇺🇸 美国2|@ripaojiedian #1'
-  password: efanccyun
-  port: '8774'
-  server: cn01.efan8867801.xyz
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇭🇰 香港2|@ripaojiedian #1'
   password: 91a41f4e02dc
-  port: '34566'
+  port: '27693'
   server: hkkh11v1.xpmc.cc
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇯🇵 日本2|@ripaojiedian #2'
   password: 2e96aa2f3054
-  port: '50494'
+  port: '25356'
   server: 43.226.17.17
   type: ss
 - cipher: rc4-md5
@@ -848,602 +726,208 @@ proxies:
   port: '8766'
   server: cn01.efan8867801.xyz
   type: ss
+- cipher: rc4-md5
+  name: '🇺🇸 美国2|@ripaojiedian #1'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
+  type: ss
 - name: '电报群：https://t.me/vvkj11 #1'
-  password: Aimer
-  port: 2087
-  server: 45.150.115.195
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: ssp1.100896.xyz
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: 🇸🇬 每天更新，请加电报群防止失联
-  password: Aimer
-  port: 2096
-  server: 108.165.152.36
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 198.41.220.125
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp2.100896.xyz
   type: trojan
-- name: '日期：06-01 #1'
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
+- name: '日期：06-02 #1'
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: ssloa1.100896.xyz
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssloa1.100896.xyz
   type: trojan
 - name: '免费VPN：https://tt.vg/gwaAy #3'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 154.197.64.67
+  server: ssloa1.100896.xyz
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssloa1.100896.xyz
   type: trojan
 - name: 🇺🇸 _美国
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: ssanj01.100896.xyz
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇰🇷 _韩国
-  password: Aimer
-  port: 12225
-  server: 59.29.143.247
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssanj01.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #2'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 162.159.152.11
+  server: ssanj01.100896.xyz
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssanj01.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #3'
-  password: Aimer
-  port: 2087
-  server: 161.145.150.26
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: ssp1.100896.xyz
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #1'
-  password: Aimer
-  port: 10013
-  server: 125.133.178.233
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #4'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 192.18.134.22
+  server: 190.93.244.105
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #2'
-  password: Aimer
-  port: 12302
-  server: 220.118.248.123
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #3'
-  password: Aimer
-  port: 50000
-  server: 121.133.117.221
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇷🇺 _俄罗斯
-  password: Aimer
-  port: 443
-  server: 194.76.18.177
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #5'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 162.159.153.212
+  server: 108.162.196.69
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #4'
-  password: Aimer
-  port: 50000
-  server: 121.133.117.221
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #5'
-  password: Aimer
-  port: 18058
-  server: 121.151.132.168
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssanj01.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #6'
-  password: Aimer
-  port: 40893
-  server: 154.7.181.207
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 141.101.114.154
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #8'
-  password: Aimer
-  port: 10511
-  server: 65.75.194.43
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 162.159.128.101
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #9'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: kip.ns.cloudflare.com
+  server: 172.67.156.239
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssloa2.100896.xyz
   type: trojan
-- name: '🇰🇷 _韩国 #6'
-  password: Aimer
-  port: 12318
-  server: 220.81.80.96
+- name: 🇧🇷 _巴西
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 188.114.97.58
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #7'
-  password: Aimer
-  port: 12088
-  server: 112.184.209.63
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: _中国
-  password: Aimer
-  port: 2053
-  server: 154.197.64.166
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #1'
-  password: Aimer
-  port: 2053
-  server: 154.211.8.152
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssloa2.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #10'
-  password: Aimer
-  port: 2083
-  server: 108.165.152.225
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 172.67.152.188
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #8'
-  password: Aimer
-  port: 33522
-  server: 220.120.172.116
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #11'
-  password: Aimer
-  port: 2087
-  server: 108.165.152.59
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 141.101.120.10
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸 _亚美尼亚
-  password: Aimer
-  port: 2096
-  server: 188.164.159.55
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp2.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #12'
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #2'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 154.197.64.27
+  server: 108.162.198.165
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇷🇺 _俄罗斯 #1'
-  password: Aimer
-  port: 443
-  server: 194.76.18.177
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #14'
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #3'
-  password: Aimer
-  port: 8443
-  server: 27.50.48.154
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇯🇵 _日本
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 103.116.7.248
+  server: 190.93.244.105
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #15'
-  password: Aimer
-  port: 2096
-  server: 108.165.152.36
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇦 _乌克兰
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 45.67.215.148
+  server: 198.41.220.125
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #4'
-  password: Aimer
-  port: 443
-  server: 154.197.64.67
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #5'
-  password: Aimer
-  port: 443
-  server: 154.197.64.27
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇦 _乌克兰 #1'
-  password: Aimer
-  port: 443
-  server: 45.67.215.148
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp2.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #19'
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #9'
-  password: Aimer
-  port: 10013
-  server: 125.133.178.233
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #1'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 188.164.159.171
+  server: 104.22.5.205
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp2.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #20'
-  password: Aimer
-  port: 2087
-  server: 108.165.152.143
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #10'
-  password: Aimer
-  port: 33522
-  server: 220.120.172.116
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #2'
-  password: Aimer
-  port: 2096
-  server: 188.164.159.55
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #3'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 188.164.159.171
+  server: 108.162.196.130
   skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇸🇮 _斯洛文尼亚
-  password: Aimer
-  port: 2087
-  server: 92.53.190.161
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
+  sni: ssp2.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #21'
-  password: Aimer
-  port: 2087
-  server: 108.165.152.59
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 108.162.198.165
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp1.100896.xyz
+  type: trojan
+- name: '🇧🇷 _巴西 #1'
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
+  port: 443
+  server: 188.114.97.58
+  skip-cert-verify: false
+  sni: ssp1.100896.xyz
   type: trojan
 - name: '🇺🇸 _美国 #22'
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #6'
-  password: Aimer
-  port: 2053
-  server: 154.197.64.166
-  skip-cert-verify: false
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #23'
-  password: Aimer
-  port: 2087
-  server: 108.165.152.249
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #11'
-  password: Aimer
-  port: 10081
-  server: 221.158.163.251
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #24'
-  password: Aimer
-  port: 40893
-  server: 154.7.181.207
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇰🇷 _韩国 #12'
-  password: Aimer
-  port: 12302
-  server: 220.118.248.123
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #25'
-  password: Aimer
+  password: 7743e1b5-d301-4a66-b765-17094890fae2
   port: 443
-  server: 104.17.223.37
+  server: cdn3.100896.xyz
   skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
+  sni: ssp6.100896.xyz
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '_中国 #7'
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #8'
-  network: tcp
-  port: '50002'
-  server: 47.104.186.133
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #9'
-  network: tcp
-  port: '50002'
-  server: 112.132.215.12
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇰🇷 _韩国 #13'
-  password: Aimer
-  port: 11111
-  server: 39.113.223.191
-  skip-cert-verify: false
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '_中国 #10'
-  network: tcp
-  port: '50002'
-  server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '_中国 #11'
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #12'
-  network: tcp
-  port: '50002'
-  server: 47.116.166.178
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '_中国 #13'
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  skip-cert-verify: false
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  type: trojan
-- name: '🇺🇸 _美国 #26'
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
-  skip-cert-verify: false
-  sni: kz.mjt000.com
-  type: trojan
-- name: '_中国 #14'
-  password: RlzoEILU
-  port: 3330
-  server: 36.151.251.62
-  skip-cert-verify: false
-  sni: cdn.egvra.cn
-  type: trojan
-- name: '🇺🇸 _美国 #27'
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
-  skip-cert-verify: false
-  sni: kz.mjt000.com
-  type: trojan
-- name: '_中国 #15'
-  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  port: 15229
-  server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: '_中国 #16'
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: false
-  sni: cdn.egvra.cn
-  type: trojan
-- name: '🇺🇸 _美国 #28'
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
-  skip-cert-verify: false
-  sni: kz.mjt000.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '_中国 #17'
-  network: tcp
-  port: '49355'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #18'
-  network: tcp
-  port: '41491'
-  server: 120.232.153.41
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #19'
-  network: tcp
-  port: '51095'
-  server: 120.198.71.219
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #20'
-  network: tcp
-  port: '49174'
-  server: 120.234.102.229
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #21'
+  name: _中国
   network: tcp
   port: '52182'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '_中国 #22'
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
+- name: '_中国 #1'
+  password: RlzoEILU
+  port: 50723
+  server: 36.156.102.123
   skip-cert-verify: false
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
+  sni: 36.156.102.123
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '_中国 #23'
-  network: tcp
-  port: '39076'
-  server: 183.238.90.8
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #24'
-  network: tcp
-  port: '47883'
-  server: 120.198.44.126
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #25'
-  network: tcp
-  port: '55002'
-  server: 183.237.84.53
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #26'
-  network: tcp
-  port: '43292'
-  server: 120.232.153.40
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #27'
+  name: '_中国 #2'
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '🇺🇸 _美国 #23'
+  password: Aimer
+  port: 18181
+  server: 38.147.187.99
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '_中国 #28'
-  network: tcp
-  port: '59652'
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #29'
+  name: '_中国 #3'
   network: tcp
   port: '33919'
   server: 183.236.51.38
@@ -1452,79 +936,128 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '_中国 #30'
-  network: tcp
-  port: '17232'
-  server: 34ac196c-svlb40-tdnzz0-1qtp7.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: '_中国 #31'
-  network: tcp
-  port: '35921'
-  server: 120.198.71.216
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #32'
+  name: '_中国 #4'
   network: tcp
   port: '50152'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '🇺🇸 _美国 #24'
+  password: Aimer
+  port: 443
+  server: 162.159.152.11
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇦🇺 _澳大利亚
+  password: Aimer
+  port: 9950
+  server: 43.134.167.135
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '_中国 #33'
+  name: '_中国 #5'
   network: tcp
-  port: '30052'
-  server: 183.236.51.38
+  port: '43292'
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '🇺🇸 _美国 #25'
+  password: Aimer
+  port: 443
+  server: 162.159.153.212
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '_中国 #6'
+  network: tcp
+  port: '51095'
+  server: 120.198.71.219
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '_中国 #34'
-  network: tcp
-  port: '15229'
-  server: e871a090-sva740-tcq5zn-19qpt.cm.plebai.net
-  tls: false
-  type: vmess
-  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: '_中国 #35'
-  network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '_中国 #36'
+  name: '_中国 #7'
   network: tcp
   port: '41024'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '_中国 #37'
+  name: '_中国 #8'
   network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
+  port: '59652'
+  server: 183.236.51.38
   tls: false
   type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '_中国 #38'
+  name: '_中国 #9'
+  network: tcp
+  port: '59652'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '_中国 #10'
+  network: tcp
+  port: '49302'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '_中国 #11'
+  network: tcp
+  port: '49554'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇦 _乌克兰
+  password: Aimer
+  port: 2053
+  server: 31.43.179.60
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #12'
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: dozo01.flztjc.top
+  type: trojan
+- name: '🇺🇸 _美国 #26'
+  password: Aimer
+  port: 2087
+  server: 108.165.152.59
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #27'
+  password: Aimer
+  port: 2096
+  server: 108.165.152.36
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: '_中国 #13'
   network: tcp
   port: '49302'
   server: 183.236.51.38
@@ -1533,34 +1066,292 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '_中国 #39'
+  name: '_中国 #14'
   network: tcp
-  port: '41766'
-  server: 183.238.90.8
+  port: '15229'
+  server: b2bb1a46-surog0-t2cl3c-14ubl.cm.plebai.net
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: d0f35ada-c39c-11ef-8a98-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: '_中国 #40'
+  name: '_中国 #15'
   network: tcp
-  port: '46920'
-  server: 183.238.90.8
+  port: '15229'
+  server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇺🇸 _美国 #29'
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: kz.mjt000.com
+  uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+- name: '_中国 #16'
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
   skip-cert-verify: false
-  sni: kz.mjt000.com
+  sni: hk-13-568.flztjc.net
+  type: trojan
+- name: '🇺🇸 _美国 #28'
+  password: Aimer
+  port: 24863
+  server: 198.12.121.169
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇰🇷 _韩国
+  password: Aimer
+  port: 33522
+  server: 220.120.172.116
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #1'
+  password: Aimer
+  port: 10013
+  server: 125.133.178.233
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #17'
+  password: Aimer
+  port: 2083
+  server: 27.50.48.189
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #29'
+  password: Aimer
+  port: 8443
+  server: 104.129.166.131
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #30'
+  password: Aimer
+  port: 2053
+  server: 108.165.152.241
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #2'
+  password: Aimer
+  port: 12302
+  server: 220.118.248.123
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #18'
+  password: Aimer
+  port: 8443
+  server: 27.50.48.154
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #3'
+  password: Aimer
+  port: 50004
+  server: 14.42.89.42
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #31'
+  password: Aimer
+  port: 2053
+  server: 162.159.44.235
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #32'
+  password: Aimer
+  port: 2083
+  server: 45.67.214.41
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇺🇸 _亚美尼亚
+  password: Aimer
+  port: 2083
+  server: 188.164.159.214
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #33'
+  password: Aimer
+  port: 443
+  server: theo.ns.cloudflare.com
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #4'
+  password: Aimer
+  port: 12578
+  server: 121.145.126.10
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #5'
+  password: Aimer
+  port: 17779
+  server: 210.100.138.35
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #6'
+  password: Aimer
+  port: 50000
+  server: 121.133.117.221
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #34'
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #7'
+  password: Aimer
+  port: 33522
+  server: 220.120.172.116
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇯🇵 _日本
+  password: Aimer
+  port: 443
+  server: 103.116.7.248
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇫🇷 _法国
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #19'
+  password: Aimer
+  port: 2096
+  server: 27.50.49.41
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _亚美尼亚 #1'
+  password: Aimer
+  port: 443
+  server: 188.164.159.171
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #8'
+  password: Aimer
+  port: 50003
+  server: 211.195.83.140
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: 🇷🇺 _俄罗斯
+  password: Aimer
+  port: 8443
+  server: 46.254.93.52
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #20'
+  password: Aimer
+  port: 2087
+  server: 45.194.53.81
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇺🇸 _美国 #35'
+  password: Aimer
+  port: 2083
+  server: 198.62.62.61
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #21'
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: false
+  sni: epmq.ambercc.filegear-sg.me
+  type: trojan
+- name: '🇰🇷 _韩国 #9'
+  password: Aimer
+  port: 50000
+  server: 121.133.117.221
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: '_中国 #22'
+  password: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
+  port: 15229
+  server: 5b224751-swzb40-t2c3sq-1spnr.cu.plebai.net
+  skip-cert-verify: false
+  sni: 5b224751-swzb40-t2c3sq-1spnr.cu.plebai.net
+  type: trojan
+- name: '_中国 #23'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: false
+  sni: 120.233.44.201
+  type: trojan
+- name: '_中国 #24'
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: false
+  sni: 120.233.44.201
+  type: trojan
+- name: ️_未知
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: guy-trace-lyric.stark-industries.solutions
+  skip-cert-verify: false
+  type: trojan
+- name: '_中国 #25'
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: false
+  sni: cdn.egvra.cn
+  type: trojan
+- name: '️_未知 #1'
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: chop-wrist-bud.stark-industries.solutions
+  skip-cert-verify: false
+  sni: chop-wrist-bud.stark-industries.solutions
+  type: trojan
+- name: '🇫🇷 _法国 #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.131.37
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '_中国 #26'
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: false
+  sni: cdn.egvra.cn
+  type: trojan
+- name: '_中国 #27'
+  password: RlzoEILU
+  port: 33097
+  server: 36.151.251.61
+  skip-cert-verify: false
+  sni: 36.151.251.61
   type: trojan
 - cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #2'
+  name: 'tg频道:@ripaojiedian #1'
   password: yijian0503
   port: '443'
-  server: 43.203.240.196
+  server: 3.35.54.68
   type: ss
 - cipher: aes-256-gcm
   name: '🇭🇰 香港|@ripaojiedian #1'
@@ -1571,7 +1362,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: '🇭🇰 香港2|@ripaojiedian #2'
   password: 91a41f4e02dc
-  port: '34566'
+  port: '27693'
   server: hkkh11v1.xpmc.cc
   type: ss
 - alterId: 64
@@ -1640,13 +1431,19 @@ proxies:
     path: /oooo
 - alterId: 64
   cipher: auto
-  name: '🇭🇰 香港9|@ripaojiedian #1'
+  name: 🇭🇰 香港9|@ripaojiedian
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰 香港10|@ripaojiedian
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '16100'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
 - cipher: rc4-md5
   name: '🇯🇵 日本|@ripaojiedian #2'
   password: efanccyun
@@ -1656,18 +1453,15 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   name: '🇯🇵 日本2|@ripaojiedian #3'
   password: 2e96aa2f3054
-  port: '50494'
+  port: '25356'
   server: 43.226.17.17
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   name: '🇯🇵 日本3|@ripaojiedian #1'
-  network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  password: 6EZ5QKFX60AVSUYT
+  port: '18008'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇯🇵 日本4|@ripaojiedian #1'
   password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
@@ -1683,12 +1477,6 @@ proxies:
   tls: false
   type: vmess
   uuid: a3d04548-625c-4658-9ff0-f9a7835d1f6d
-- cipher: aes-256-cfb
-  name: '🇰🇷 韩国|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
 - alterId: 2
   cipher: auto
   name: '🇸🇬 新加坡|@ripaojiedian #1'
@@ -1711,11 +1499,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: '🇸🇬 新加坡3|@ripaojiedian #1'
-  password: PIPLH14SPUJNGOS8
-  port: '16005'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '44054'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡4|@ripaojiedian #1'
+  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
+  port: '20347'
+  server: sg1.qqingca.cc
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇰🇷 韩国|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '4857'
+  server: 125.141.26.12
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇰🇷 韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '36379'
+  server: p080.panda001.net
   type: ss
 - cipher: rc4-md5
   name: '🇺🇸 美国2|@ripaojiedian #2'
@@ -1749,11 +1555,11 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: '🇺🇸 美国4|@ripaojiedian #1'
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: '54322'
-  server: cm55-zz.moonwang.xyz
+  password: 2Z11BX63H64YSEDM
+  port: '17005'
+  server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
 - alterId: 2
   cipher: auto
@@ -1768,15 +1574,9 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-cfb
-  name: '🇻🇳 越南|@ripaojiedian #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
-  type: ss
 - alterId: 64
   cipher: auto
-  name: '2|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #2'
+  name: '3|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #3'
   network: ws
   port: '1443'
   server: sslvpn.51job.com
@@ -1788,21 +1588,21 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: aes-256-cfb
-  name: '2|🌀3-SK |  5.0MB/s|0%|Youtube|... #2'
+  name: '3|🌀3-SK |  5.0MB/s|0%|Youtube|... #3'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 156.146.40.194
   type: ss
 - alterId: 64
   cipher: auto
-  name: '2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #2'
+  name: '3|🇸🇬1 |  1.0MB/s|0%|Netflix|Di... #3'
   network: tcp
   port: '49291'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '2|🇺🇸45 |  2.5MB/s|46%|Openai|G... #2'
+- name: '3|🇺🇸45 |  2.5MB/s|46%|Openai|G... #3'
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -1810,7 +1610,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '2|🌀4-TH |  2.6MB/s|55%|Netflix... #2'
+  name: '3|🌀4-TH |  2.6MB/s|55%|Netflix... #3'
   network: ws
   port: '443'
   server: 38.47.96.30
@@ -1822,14 +1622,14 @@ proxies:
       Host: th.lzj520hxw.dpdns.org
     path: /lzjjj
 - cipher: aes-256-cfb
-  name: '2|🇰🇷2 |  1.5MB/s|44%|Openai #2'
+  name: '3|🇰🇷2 |  1.5MB/s|44%|Openai #4'
   password: qwerREWQ@@
   port: '15098'
   server: 125.141.31.72
   type: ss
 - alterId: 2
   cipher: auto
-  name: '2|🇺🇸62 |  3.3MB/s|Openai|Gemin... #2'
+  name: '3|🇺🇸62 |  3.3MB/s|Openai|Gemin... #3'
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -1844,7 +1644,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: '2|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #2'
+  name: '3|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #3'
   network: grpc
   port: '443'
   server: de.vmess.comnpmjs.com
@@ -1853,7 +1653,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: '2|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #2'
+  name: '3|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #4'
   network: ws
   port: '8080'
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -1864,14 +1664,14 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '2|🇺🇸63 |  2.1MB/s|46%|Openai|G... #2'
+- name: '3|🇺🇸63 |  2.1MB/s|46%|Openai|G... #3'
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: '2|🇺🇸64 |  1.3MB/s|46%|Openai|G... #2'
+- name: '3|🇺🇸64 |  1.3MB/s|46%|Openai|G... #3'
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -1879,33 +1679,33 @@ proxies:
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
 - cipher: aes-256-cfb
-  name: '12|tg频道:@ripaojiedian #2'
+  name: '13|tg频道:@ripaojiedian #3'
   password: yijian0503
   port: '443'
-  server: 43.203.240.196
+  server: 3.35.54.68
   type: ss
 - cipher: aes-256-gcm
-  name: '🇭🇰 12|🇭🇰 香港|@ripaojiedian #1'
+  name: '🇭🇰 13|🇭🇰 香港|@ripaojiedian #1'
   password: ENYGONDU94UW1G6X
   port: '15010'
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇭🇰 12|🇭🇰 香港2|@ripaojiedian #1'
+  name: '🇭🇰 13|🇭🇰 香港2|@ripaojiedian #1'
   password: 91a41f4e02dc
-  port: '34566'
+  port: '27693'
   server: hkkh11v1.xpmc.cc
   type: ss
 - alterId: 64
   cipher: auto
-  name: '🇸🇬 12|🇸🇬 新加坡2|@ripaojiedian #1'
+  name: '🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian #1'
   network: tcp
   port: '49302'
   server: 183.236.51.38
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇭🇰 12,13|香港4|@ripaojiedian #1'
+- name: '🇭🇰 13,14|香港4|@ripaojiedian #1'
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -1914,7 +1714,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: '🇭🇰 12|🇭🇰 香港5|@ripaojiedian #1'
+  name: '🇭🇰 13|🇭🇰 香港5|@ripaojiedian #1'
   network: tcp
   port: '52182'
   server: 120.232.153.40
@@ -1923,7 +1723,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: '🇭🇰 12,13|香港8|@ripaojiedian #1'
+  name: '🇭🇰 13,14|香港8|@ripaojiedian #1'
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -1936,49 +1736,46 @@ proxies:
     path: /oooo
 - alterId: 64
   cipher: auto
-  name: '🇭🇰 12|🇭🇰 香港9|@ripaojiedian #1'
+  name: '🇭🇰 13|🇭🇰 香港9|@ripaojiedian #1'
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: '🇭🇰 13|🇭🇰 香港10|@ripaojiedian #1'
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '16100'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
 - cipher: rc4-md5
-  name: '🇯🇵 12|🇯🇵 日本|@ripaojiedian #1'
+  name: '🇯🇵 13|🇯🇵 日本|@ripaojiedian #1'
   password: efanccyun
   port: '8766'
   server: cn01.efan8867801.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇯🇵 12|🇯🇵 日本2|@ripaojiedian #1'
+  name: '🇯🇵 13|🇯🇵 日本2|@ripaojiedian #1'
   password: 2e96aa2f3054
-  port: '50494'
+  port: '25356'
   server: 43.226.17.17
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵 12|🇯🇵 日本3|@ripaojiedian #1'
-  network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- cipher: aes-256-gcm
+  name: '🇯🇵 13|🇯🇵 日本3|@ripaojiedian #1'
+  password: 6EZ5QKFX60AVSUYT
+  port: '18008'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇯🇵 12|🇯🇵 日本4|@ripaojiedian #1'
+  name: '🇯🇵 13|🇯🇵 日本4|@ripaojiedian #1'
   password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
   port: '32875'
   server: jg647hf446ghvw.gym0boy.com
   type: ss
-- cipher: aes-256-cfb
-  name: '🇰🇷 12|🇰🇷 韩国|@ripaojiedian #1'
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
 - alterId: 2
   cipher: auto
-  name: '🇸🇬 12,13|新加坡|@ripaojiedian #1'
+  name: '🇸🇬 13,14|新加坡|@ripaojiedian #1'
   network: ws
   port: '30812'
   server: v12.heduian.link
@@ -1989,21 +1786,39 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: '🇸🇬 12|🇸🇬 新加坡3|@ripaojiedian #1'
-  password: PIPLH14SPUJNGOS8
-  port: '16005'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 13|🇸🇬 新加坡3|@ripaojiedian #1'
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '44054'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 13|🇸🇬 新加坡4|@ripaojiedian #1'
+  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
+  port: '20347'
+  server: sg1.qqingca.cc
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇰🇷 13|🇰🇷 韩国|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '4857'
+  server: 125.141.26.12
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇰🇷 13|🇰🇷 韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '36379'
+  server: p080.panda001.net
   type: ss
 - cipher: rc4-md5
-  name: '🇺🇸 12|🇺🇸 美国2|@ripaojiedian #1'
+  name: '🇺🇸 13|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   port: '8774'
   server: cn01.efan8867801.xyz
   type: ss
 - alterId: 2
   cipher: auto
-  name: '🇺🇸 12,13|美国|@ripaojiedian #1'
+  name: '🇺🇸 13,14|美国|@ripaojiedian #1'
   network: ws
   port: '30832'
   server: v32.heduian.link
@@ -2016,7 +1831,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '🇺🇸 12,13|美国5|@ripaojiedian #1'
+  name: '🇺🇸 13,14|美国5|@ripaojiedian #1'
   network: ws
   port: '30828'
   server: 111.26.109.79
@@ -2027,33 +1842,27 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸 12|🇺🇸 美国4|@ripaojiedian #1'
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: '54322'
-  server: cm55-zz.moonwang.xyz
+- cipher: aes-256-gcm
+  name: '🇺🇸 13|🇺🇸 美国4|@ripaojiedian #1'
+  password: 2Z11BX63H64YSEDM
+  port: '17005'
+  server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
 - cipher: aes-256-cfb
-  name: '🇻🇳 12|🇻🇳 越南|@ripaojiedian #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
-  type: ss
-- cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #1 #2'
+  name: '14|tg频道:@ripaojiedian #1 #2'
   password: yijian0503
   port: '443'
-  server: 43.203.240.196
+  server: 3.35.54.68
   type: ss
 - cipher: aes-256-gcm
-  name: '🇭🇰 13|香港|@ripaojiedian #1'
+  name: '🇭🇰 14|香港|@ripaojiedian #1'
   password: ENYGONDU94UW1G6X
   port: '15010'
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
 - alterId: 64
   cipher: auto
-  name: '🇸🇬 13|新加坡2|@ripaojiedian #1'
+  name: '🇸🇬 14|新加坡2|@ripaojiedian #1'
   network: tcp
   port: '49302'
   server: 183.236.51.38
@@ -2062,7 +1871,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '🇭🇰 13|香港5|@ripaojiedian #1'
+  name: '🇭🇰 14|香港5|@ripaojiedian #1'
   network: tcp
   port: '52182'
   server: 120.232.153.40
@@ -2071,236 +1880,112 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '🇭🇰 13|香港9|@ripaojiedian #1'
+  name: '🇭🇰 14|香港9|@ripaojiedian #1'
   network: tcp
   port: '31209'
   server: 120.232.153.40
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵 13|日本3|@ripaojiedian #1'
-  network: tcp
-  port: '17233'
-  server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: '🇯🇵 13|日本4|@ripaojiedian #1'
+  name: '🇭🇰 14|香港10|@ripaojiedian #1'
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '16100'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇯🇵 14|日本3|@ripaojiedian #1'
+  password: 6EZ5QKFX60AVSUYT
+  port: '18008'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇯🇵 14|日本4|@ripaojiedian #1'
   password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
   port: '32875'
   server: jg647hf446ghvw.gym0boy.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: '🇯🇵 13|日本V2|@ripaojiedian #1'
+  name: '🇯🇵 14|日本V2|@ripaojiedian #1'
   network: kcp
   port: '50951'
   server: 8.211.154.107
   tls: false
   type: vmess
   uuid: a3d04548-625c-4658-9ff0-f9a7835d1f6d
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 14|新加坡3|@ripaojiedian #1'
+  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
+  port: '44054'
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 14|新加坡4|@ripaojiedian #1'
+  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
+  port: '20347'
+  server: sg1.qqingca.cc
+  type: ss
 - cipher: aes-256-cfb
-  name: '🇰🇷 13|韩国|@ripaojiedian #1'
+  name: '🇰🇷 14|韩国|@ripaojiedian #1'
   password: qwerREWQ@@
   port: '4857'
   server: 125.141.26.12
   type: ss
-- cipher: aes-256-gcm
-  name: '🇸🇬 13|新加坡3|@ripaojiedian #1'
-  password: PIPLH14SPUJNGOS8
-  port: '16005'
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸 13|美国4|@ripaojiedian #1'
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  port: '54322'
-  server: cm55-zz.moonwang.xyz
-  type: ss
 - cipher: aes-256-cfb
-  name: '🇻🇳 13|越南|@ripaojiedian #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
+  name: '🇰🇷 14|韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '36379'
+  server: p080.panda001.net
   type: ss
-- name: '14|AM_speednode_0002 #2'
-  password: Aimer
-  port: 2096
-  server: 188.164.159.241
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '14|CN_speednode_0029 #2'
-  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  port: 15229
-  server: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
-  skip-cert-verify: false
-  sni: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0030 #2'
-  password: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
-  port: 15229
-  server: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
-  skip-cert-verify: false
-  sni: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0031 #2'
-  password: 659b0268-92ca-11ef-b3af-f23c913c8d2b
-  port: 15229
-  server: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
-  skip-cert-verify: false
-  sni: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0032 #2'
-  password: f9c35596-f323-11ed-8ccd-f23c91cfbbc9
-  port: 15229
-  server: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
-  skip-cert-verify: false
-  sni: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0033 #2'
-  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-  port: 15229
-  server: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
-  skip-cert-verify: false
-  sni: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0034 #2'
-  password: 1a7f2766-e24d-11ed-98a7-f23c913c8d2b
-  port: 15229
-  server: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  skip-cert-verify: false
-  sni: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0036 #2'
-  password: 4d78032e-d27c-11ef-bd97-f23c9164ca5d
-  port: 15229
-  server: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  skip-cert-verify: false
-  sni: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0037 #2'
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  port: 15229
-  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  skip-cert-verify: false
-  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0039 #2'
-  password: e542ec26-b786-11ee-9a75-f23c91cfbbc9
-  port: 15229
-  server: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  skip-cert-verify: false
-  sni: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0040 #2'
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: 15229
-  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  skip-cert-verify: false
-  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0041 #2'
-  password: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
-  port: 15229
-  server: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
-  skip-cert-verify: false
-  sni: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0042 #2'
-  password: e3004917-ad9d-b8a2-a2ee-65a54830e020
-  port: 15229
-  server: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
-  skip-cert-verify: false
-  sni: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0043 #2'
-  password: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
-  port: 15229
-  server: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
-  skip-cert-verify: false
-  sni: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0044 #2'
-  password: 4faf123a-572a-11eb-8684-f23c913c8d2b
-  port: 15229
-  server: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
-  skip-cert-verify: false
-  sni: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0045 #2'
-  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-  port: 15229
-  server: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
-  skip-cert-verify: false
-  sni: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
-  type: trojan
-- name: '14|CN_speednode_0046 #2'
-  password: 602e99aa-718d-11eb-b77b-f23c913c8d2b
-  port: 15229
-  server: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
-  skip-cert-verify: false
-  sni: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
-  type: trojan
-- name: '14|JP_speednode_0096 #2'
+- cipher: aes-256-gcm
+  name: '🇺🇸 14|美国4|@ripaojiedian #1'
+  password: 2Z11BX63H64YSEDM
+  port: '17005'
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+- name: '15|JP_speednode_0036 #3'
   password: Aimer
   port: 2083
   server: 103.116.7.103
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- name: '14|KR_speednode_0103 #2'
-  password: Aimer
-  port: 12088
-  server: 112.184.209.63
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: '14|NO_speednode_0121 #2'
-  password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
-  port: 443
-  server: 95.164.38.151
-  skip-cert-verify: false
-  sni: copy-wifi-twins.stark-industries.solutions
-  type: trojan
-- name: '14|RU_speednode_0137 #3'
+- name: '15|RU_speednode_0064 #3'
   password: Aimer
   port: 443
   server: 5.182.84.244
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- name: '14|SI_speednode_0149 #2'
+- name: '15|SI_speednode_0067 #3'
   password: Aimer
   port: 2087
   server: 92.53.190.161
   skip-cert-verify: false
   sni: epme.ambercc.filegear-sg.me
   type: trojan
-- cipher: rc4-md5
-  name: '🇺🇸 美国2|@ripaojiedian #3'
-  password: efanccyun
-  port: '8774'
-  server: cn01.efan8867801.xyz
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇭🇰 香港2|@ripaojiedian #3'
   password: 91a41f4e02dc
-  port: '34566'
+  port: '27693'
   server: hkkh11v1.xpmc.cc
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇯🇵 日本2|@ripaojiedian #4'
   password: 2e96aa2f3054
-  port: '50494'
+  port: '25356'
   server: 43.226.17.17
   type: ss
 - cipher: rc4-md5
   name: '🇯🇵 日本|@ripaojiedian #3'
   password: efanccyun
   port: '8766'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '🇺🇸 美国2|@ripaojiedian #3'
+  password: efanccyun
+  port: '8774'
   server: cn01.efan8867801.xyz
   type: ss
