@@ -1,7 +1,19 @@
-# Update: 2025-06-03 08:48
-# Source 95 (https://raw.githubusercontent.com/asdsadsddas123/freevpn/refs/heads/main/README.md), 1
+# Update: 2025-06-04 08:48
+# Source 95 (https://raw.githubusercontent.com/asdsadsddas123/freevpn/refs/heads/main/README.md), 16
 proxies:
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国_2
+- name: '🇺🇸_US_美国_1 #35'
+  network: ws
+  port: 80
+  server: 104.17.252.50
+  servername: us.xyxy.dpdns.org
+  tls: false
+  type: vless
+  uuid: 3f4b57a0-f57c-4a8b-8c00-fa255eec1c79
+  ws-opts:
+    headers:
+      Host: us.xyxy.dpdns.org
+    path: '%2F'
+- name: '🇺🇸_US_美国->🇨🇳_CN_中国 #4'
   network: ws
   port: 8080
   server: 104.26.14.85
@@ -13,3 +25,132 @@ proxies:
     headers:
       Host: J9.oDOtZrHUoO.ZuLAIR.ORg.
     path: '%2F%3Fed%3D2048'
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@jp89
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: '9898'
+  server: 52.198.188.173
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@jp19tian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: '9898'
+  server: 3.115.106.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@kr89an
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: '9898'
+  server: 3.38.218.140
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@sg64men
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: '9898'
+  server: 13.251.35.63
+  type: ss
+- name: end-gfw.com
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 52.198.188.173
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- name: 'end-gfw.com #1'
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.36.123.246
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- name: 'end-gfw.com #2'
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.115.106.126
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- name: 'end-gfw.com #3'
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.38.218.140
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- name: 'end-gfw.com #4'
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 13.251.35.63
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #5'
+  network: ws
+  port: 6868
+  server: 52.198.188.173
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #6'
+  network: ws
+  port: 6868
+  server: 3.36.123.246
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #7'
+  network: ws
+  port: 6868
+  server: 3.115.106.126
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #8'
+  network: ws
+  port: 6868
+  server: 3.38.218.140
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #9'
+  network: ws
+  port: 6868
+  server: 13.251.35.63
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /

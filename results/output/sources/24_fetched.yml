@@ -1,22 +1,30 @@
-# Update: 2025-06-03 08:48
-# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 26
+# Update: 2025-06-04 08:48
+# Source 24 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 25
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: tg频道:@freenodedaily
   password: yijian0503
   port: 443
-  server: 3.35.54.68
+  server: 3.34.131.22
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: HK
-  password: ENYGONDU94UW1G6X
-  port: 15010
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  network: ws
+  port: 8080
+  server: b959ad51-sxaf40-t323lh-1t0nn.hgc1.tcpbbr.net
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: ba78226c-b772-11ef-ab53-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 🇭🇰 香港2
@@ -29,7 +37,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 27693
+  port: 48345
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -52,11 +60,22 @@ proxies:
   skip-cert-verify: false
   sni: usla.mjt000.com
   type: trojan
-- alterId: 64
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港6
+  port: 50412
+  server: 103.30.78.122
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 086124a3-0084-405b-aea4-39b69d3836f3
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港5
-  port: 52182
+  port: 43292
   server: 120.232.153.40
   skip-cert-verify: false
   tfo: false
@@ -79,42 +98,10 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港6
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港8
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 🇭🇰 香港9
+  name: 🇭🇰 香港8
   port: 31209
   server: 120.232.153.40
   skip-cert-verify: false
@@ -124,10 +111,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 🇭🇰 香港10
-  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
-  port: 16100
-  server: jg647hf446ghvw.gym0boy.com
+  name: 🇹🇼 台湾
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 9097152:93638
+    mode: tls
+  port: 2377
+  server: 60.249.28.136
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -136,7 +127,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505282364048-MMi78MWpgU.download.microsoft.com
+    host: 202505282364048-i8kTAe6y0O.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -154,7 +145,7 @@ proxies:
     path: /lornlqecrjwe
     skip-cert-verify: false
     tls: true
-  port: 25356
+  port: 37859
   server: 43.226.17.17
   tfo: false
   type: ss
@@ -166,14 +157,17 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 🇯🇵 日本4
-  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
-  port: 32875
-  server: jg647hf446ghvw.gym0boy.com
+  port: 51036
+  server: 206.237.127.188
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: af73136a-bbfa-4f95-a3e0-6c3005aa8ae1
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -201,22 +195,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 🇸🇬 新加坡3
-  password: a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00
-  port: 44054
-  server: jg647hf446ghvw.gym0boy.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
+  password: bf109e1a-2b99-11ed-bb74-f23c9164ca5d
+  port: 27231
+  server: ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com
+  skip-cert-verify: false
+  sni: ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com
+  type: trojan
+- alterId: 64
+  cipher: auto
   client-fingerprint: chrome
   name: 🇸🇬 新加坡4
-  password: 5a0b2638-8416-42c1-b87e-99864b3d3ef2
-  port: 20347
-  server: sg1.qqingca.cc
+  port: 59652
+  server: 183.236.51.38
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: KR
@@ -239,7 +236,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505160159024-hAiTvMCGlv.download.microsoft.com
+    host: 202505282364048-i8kTAe6y0O.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -277,14 +274,23 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
   name: 🇺🇸 美国4
-  password: 2Z11BX63H64YSEDM
-  port: 17005
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome

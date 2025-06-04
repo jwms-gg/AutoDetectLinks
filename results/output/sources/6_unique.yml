@@ -1,50 +1,30 @@
-# Update: 2025-06-03 08:48
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 11
+# Update: 2025-06-04 08:48
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 8
 proxies:
-- name: 🇺🇸_US_美国
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+- name: '🇺🇸_US_美国_1 #7'
   network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
   port: 443
-  server: 172.67.144.126
-  sni: CFR56ty7890.288288.sHOP
+  server: 172.67.188.77
+  sni: edfr4.890604.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: cfr56ty7890.288288.shop
-    path: /By7cEmOrNRS58yeduy9AOG
-- name: 未知_2
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bring-glove-shine.stark-industries.solutions
-  sni: bring-glove-shine.stark-industries.solutions
-  type: trojan
-- name: 未知_3
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: strut-brisk-scope.stark-industries.solutions
-  sni: strut-brisk-scope.stark-industries.solutions
-  type: trojan
-- name: 未知_4
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: cache-giver-wife.stark-industries.solutions
-  sni: cache-giver-wife.stark-industries.solutions
-  type: trojan
-- name: '🇺🇸_US_美国_3 #3'
-  network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 104.21.71.112
-  sni: CFR56ty7890.288288.sHOP
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: cfr56ty7890.288288.shop
-    path: /By7cEmOrNRS58yeduy9AOG
+      host: edfr4.890604.dpdns.org
+    path: /l6lvY4hFZriQDBimbKYmPIggy
 - name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
   password: RlzoEILU
   port: 3330
@@ -52,24 +32,12 @@ proxies:
   skip-cert-verify: true
   sni: cdn.egvra.cn
   type: trojan
-- name: '🇺🇸_US_美国_4 #1'
-  network: ws
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  port: 443
-  server: 104.21.35.247
-  sni: ff.HuangSHANg2030.DPDnS.oRg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ff.huangshang2030.dpdns.org
-    path: /ptGwaGzcA4KNAXX
-- name: 🇳🇱_NL_荷兰
-  network: tcp
-  password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
-  port: 443
-  server: 45.159.251.33
-  sni: eats-rigor-judge.stark-industries.solutions
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
   type: trojan
 - alterId: 2
   cipher: auto
@@ -83,21 +51,21 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
-- name: 🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国
-  network: tcp
-  password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
+- name: 🇺🇸_US_美国_9
+  network: ws
+  password: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   port: 443
-  server: 45.67.229.222
-  sni: morse-stank-most.stark-industries.solutions
+  server: 104.21.16.1
+  sni: eeERrrR.999815.xYZ
   type: trojan
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇺🇸_US_美国->🇨🇳_CN_中国
-  network: tcp
-  port: 57118
-  server: 142.4.119.72
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  udp: true
+  ws-opts:
+    headers:
+      host: eeerrrr.999815.xyz
+    path: /eS3prPmcpzbScA5VUAi1psm38Tz
+- name: 🇨🇳_CN_中国_1
+  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  port: 15229
+  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  type: trojan
