@@ -1,6 +1,16 @@
-# Update: 2025-06-03 08:48
+# Update: 2025-06-05 08:47
 # Source 50 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess), 26
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-TCP-NA 🇺🇸 US-198.251.83.2... #9'
+  network: tcp
+  port: '45404'
+  server: 198.251.83.208
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 🔒 VM-WS-NA 🇺🇸 US-38.150.12.188...
@@ -30,23 +40,26 @@ proxies:
     path: /victorias
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
-  network: tcp
-  port: '8874'
-  server: 95.179.216.149
-  servername: ''
+  name: 🔒 VM-WS-NA 🇺🇸 US-38.150.12.187...
+  network: ws
+  port: '52513'
+  server: 38.150.12.187
   tls: false
   type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      Host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-TCP-NA 🇺🇸 US-38.246.245.1...
-  network: tcp
-  port: '45860'
-  server: 38.246.245.128
+  name: 🔒 VM-RAW-NA 🇺🇸 US-45.39.199.10...
+  network: raw
+  port: '15074'
+  server: 45.39.199.105
   tls: false
   type: vmess
-  uuid: 7e74eb19-4291-4cf2-af2f-50d3469a986f
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -61,37 +74,87 @@ proxies:
   uuid: 864112a6-ceeb-4126-b7e2-509c2a203d20
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-TCP-NA 🇮🇷 IR-109.122.254....
+  name: 🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
   network: tcp
-  port: '79'
-  server: 109.122.254.141
+  port: '8874'
+  server: 95.179.216.149
   servername: ''
   tls: false
   type: vmess
-  uuid: 63134132-8b77-44db-8bd7-85ea826165be
-- alterId: 1
-  cipher: auto
-  name: 🔒 VM-TCP-TLS 🇺🇸 US-173.230.155...
-  network: tcp
-  port: 455
-  server: 173.230.155.32
-  servername: d085e86c-svgdc0-swut47-b2sj.fmt2-us.sghuawei.com
-  tls: true
-  type: vmess
-  uuid: 272e2176-8f6f-11ef-87d4-f23c93141fad
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
+  name: 🔒 VM-WS-TLS 🇮🇪 IE-185.108.128....
   network: ws
-  port: '8000'
-  server: 154.55.122.235
-  tls: false
+  port: '30000'
+  server: 185.108.128.137
+  servername: www.14601176.xyz
+  tls: true
   type: vmess
-  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
+  uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
   ws-opts:
     headers:
-      Host: www.bing.com
-    path: /nmkj
+      Host: www.14601176.xyz
+    path: /path/300022113329
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NA 🇺🇸 US-38.246.245.1...
+  network: tcp
+  port: '45860'
+  server: 38.246.245.128
+  tls: false
+  type: vmess
+  uuid: 7e74eb19-4291-4cf2-af2f-50d3469a986f
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.32....
+  network: ws
+  port: 2096
+  server: 104.21.32.1
+  servername: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-RAW-NA 🇹🇷 TR-94.131.123.1...
+  network: raw
+  port: '8081'
+  server: 94.131.123.188
+  tls: false
+  type: vmess
+  uuid: 195df86c-45a5-44f9-bb65-98cd7e28d503
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-NA 🇺🇸 US-38.150.12.188... #1'
+  network: ws
+  port: '52512'
+  server: 38.150.12.188
+  tls: false
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      Host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
 - alterId: 0
   cipher: auto
   name: 🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
@@ -114,30 +177,94 @@ proxies:
     headers:
       Host: us05.jssssss.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇭🇰 HK-42.2.113.136:... #3'
-  network: ws
-  port: 80
-  server: 42.2.113.136
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: cf89e064-5c77-11eb-bd3a-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 0afa2b47-sv0xs0-t51upj-ochh.hk.p5pv.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-TCP-NA 🇺🇸 US-172.232.11.2...
+  name: 🔒 VM-TCP-NA 🇮🇷 IR-178.239.144....
   network: tcp
-  port: '47781'
-  server: 172.232.11.243
+  port: '13000'
+  server: 178.239.144.40
   servername: ''
   tls: false
   type: vmess
-  uuid: 0041dada-22bc-4c80-f655-d32c9faecbc8
+  uuid: 3e53f3cb-bb35-c6be-d955-c53f5bd7c709
+- alterId: 0
+  cipher: null
+  name: 🔒 VM-WS-TLS 🇺🇸 US-74.48.178.4:...
+  network: ws
+  port: '35500'
+  server: 74.48.178.4
+  servername: www.tifafaya.top
+  tls: true
+  type: vmess
+  uuid: eaa339a8-b07f-4ed0-998d-dad023616c0f
+  ws-opts:
+    headers:
+      Host: www.tifafaya.top
+    path: /eaa339a8-b07f-4ed0-998d-dad023616c0f
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.80....
+  network: ws
+  port: 8443
+  server: 104.21.80.1
+  servername: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
+  network: tcp
+  port: '30101'
+  server: 167.179.93.158
+  tls: false
+  type: vmess
+  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NA 🇷🇴 RO-5.182.37.231...
+  network: tcp
+  port: '49664'
+  server: 5.182.37.231
+  tls: false
+  type: vmess
+  uuid: 9395474c-e2a1-4565-ba56-c16e7373c4c4
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
+  network: ws
+  port: '8000'
+  server: 154.55.122.235
+  tls: false
+  type: vmess
+  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NA 🇳🇱 NL-178.255.222....
+  network: tcp
+  port: '4879'
+  server: 178.255.222.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 583b1838-cc33-4a7c-b39d-676b7a2a0112
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-TCP-NONE 🇫🇮 FI-135.181.94...
+  network: tcp
+  port: 3378
+  server: 135.181.94.254
+  tls: false
+  type: vmess
+  uuid: ccf950d1-fd1a-447c-8dad-c2f0c9256d18
 - alterId: 0
   cipher: auto
   name: 🔒 VM-WS-NA 🇯🇵 JP-156.246.95.70...
@@ -170,127 +297,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 20ac0465-184d-4bac-927a-6f5091c7b149
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NA 🇮🇷 IR-178.239.144....
-  network: tcp
-  port: '13000'
-  server: 178.239.144.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3e53f3cb-bb35-c6be-d955-c53f5bd7c709
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NA 🇯🇵 JP-167.179.93.1...
-  network: tcp
-  port: '30101'
-  server: 167.179.93.158
-  tls: false
-  type: vmess
-  uuid: 04AD7029-AC73-C78D-2E6E-338107678C59
-- alterId: 0
-  cipher: null
-  name: 🔒 VM-WS-TLS 🇺🇸 US-74.48.178.4:...
-  network: ws
-  port: '35500'
-  server: 74.48.178.4
-  servername: www.tifafaya.top
-  tls: true
-  type: vmess
-  uuid: eaa339a8-b07f-4ed0-998d-dad023616c0f
-  ws-opts:
-    headers:
-      Host: www.tifafaya.top
-    path: /eaa339a8-b07f-4ed0-998d-dad023616c0f
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-WS-NA 🇺🇸 US-38.150.12.188... #1'
-  network: ws
-  port: '52512'
-  server: 38.150.12.188
-  tls: false
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NA 🇺🇸 US-45.39.199.10...
-  network: tcp
-  port: '15074'
-  server: 45.39.199.105
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-NA 🇺🇸 US-38.150.12.187...
-  network: ws
-  port: '52513'
-  server: 38.150.12.187
-  tls: false
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-RAW-NA 🇹🇷 TR-94.131.123.1...
-  network: raw
-  port: '8081'
-  server: 94.131.123.188
-  tls: false
-  type: vmess
-  uuid: 195df86c-45a5-44f9-bb65-98cd7e28d503
-- alterId: 0
-  cipher: auto
-  name: '🔒 VM-TCP-NA 🇺🇸 US-198.251.83.2... #18'
-  network: tcp
-  port: '45404'
-  server: 198.251.83.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-TCP-NONE 🇫🇮 FI-135.181.94...
-  network: tcp
-  port: 3378
-  server: 135.181.94.254
-  tls: false
-  type: vmess
-  uuid: ccf950d1-fd1a-447c-8dad-c2f0c9256d18
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇮🇪 IE-185.108.128....
-  network: ws
-  port: '30000'
-  server: 185.108.128.137
-  servername: www.14601176.xyz
-  tls: true
-  type: vmess
-  uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
-  ws-opts:
-    headers:
-      Host: www.14601176.xyz
-    path: /path/300022113329

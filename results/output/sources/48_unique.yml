@@ -1,65 +1,77 @@
-# Update: 2025-06-03 08:48
-# Source 48 (https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/a11), 21
+# Update: 2025-06-05 08:47
+# Source 48 (https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/a11), 28
 proxies:
 - alterId: 0
   cipher: auto
-  name: CF中转_060220511 L4
+  name: CF中转_060420008 L7
+  network: ws
+  port: '443'
+  server: 172.67.200.13
+  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  name: CF中转_06042011074 L7
   network: ws
   port: '8443'
-  server: 104.18.118.195
-  servername: ''
+  server: 141.101.121.214
+  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
   tls: true
   type: vmess
   uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
   ws-opts:
     headers:
-      Host: 1743919978.speed.zjgza.cccp.freefly.pp.ua
+      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 中国_060220002+L0
-  password: 1bf1c3de-079c-4331-8ff2-4b8a29e2d5f0
-  port: '25601'
-  server: 183.236.51.217
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 俄罗斯联邦_060220379 H
+  name: CF中转_060420547 L0
   network: ws
-  port: '23091'
-  server: 45.147.201.231
+  port: '80'
+  server: 104.21.96.1
   servername: ''
   tls: false
   type: vmess
-  uuid: 28f6d888-cbc5-4210-8cd2-b40cf566d9a8
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- cipher: aes-256-gcm
-  name: 新加坡_060220048
-  password: wpB5eyFTw7BJw67DtsKpwoINwr3DvcK6wqPDscOAC1MUdw5QLMK2Cm7Du8OwDcOe
-  port: '8443'
-  server: sg-ss.ipracevpn.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 新加坡_060220052+M59
-  password: h7FNWUk4X8VJ5bnKhK842D
-  port: '80'
-  server: 178.128.63.57
-  type: ss
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 日本_060220530
-  network: ''
-  port: '20001'
-  server: tls.06.node-for-bigairport.win
+  name: CF中转_0604208482 L0
+  network: ws
+  port: '2096'
+  server: 104.21.96.1
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 加拿大_060420083+M63
+  password: 5103d63e-0b4e-47a3-a0a1-16060cc2001b
+  port: '21001'
+  server: 132.145.102.60
+  type: ss
+- name: 新加坡_060420035+M47
+  password: 67040055-9b83-4655-b760-0be7f886a43b
+  port: 20001
+  server: 66.42.59.210
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 日本_060220531
+  name: 日本_060420023
   network: ws
   port: '20001'
   server: tls.08.node-for-bigairport.win
@@ -73,7 +85,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 日本_060220533
+  name: 日本_060420543
+  network: ''
+  port: '20001'
+  server: tls.09.node-for-bigairport.win
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
+- alterId: 0
+  cipher: auto
+  name: 日本_060420544
   network: ''
   port: '20001'
   server: tls.11.node-for-bigairport.win
@@ -83,59 +105,175 @@ proxies:
   uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
 - alterId: 0
   cipher: auto
-  name: 日本_060220534
-  network: ''
-  port: '20001'
-  server: tls.19.node-for-bigairport.win
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
-- alterId: 0
-  cipher: auto
-  name: 未知_060220019
+  name: 未知_060420178
   network: ws
-  port: '80'
-  server: FfFgTYY.7282728.XyZ
-  servername: fffgtyy.7282728.xyz
-  tls: false
-  type: vmess
-  uuid: 3d4ad187-b554-4300-bf71-d26c71962504
-  ws-opts:
-    headers:
-      Host: FfFgTYY.7282728.XyZ
-    path: /NiNQyrcaIIJ3WqRcOEICAwmfH7
-- alterId: 0
-  cipher: auto
-  name: 未知_060220201
-  network: ws
-  port: '443'
-  server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
-  servername: ''
+  port: '2096'
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
   ws-opts:
     headers:
-      Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
-    path: /h7Rcu0y30lhjdVjJ3gc4aj
-- alterId: 0
-  cipher: auto
-  name: 未知_0602202023
-  network: ws
-  port: '8443'
-  server: 1743919941.tencentapp.cn
-  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
-  tls: true
-  type: vmess
-  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
-  ws-opts:
-    headers:
-      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+      Host: de01.sh-cloudflare.sbs
     path: /
 - alterId: 0
   cipher: auto
-  name: 未知_060220207
+  name: 未知_060420179
+  network: ws
+  port: '2096'
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201893
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ccf69747-f2cc-44bf-a61d-1528a0b0dde3
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201904
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: cc108d76-f2f4-46a3-aeae-f048a47e88d1
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201933
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f8234d4a-b283-4f79-867d-879a99c4fcb2
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201936
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e64a5eb5-8bf9-4883-93a8-2e14f5d2bd03
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201961
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9036ed2a-a743-4fae-9694-c383cc767fdd
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201963
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f46cb3fa-e912-4359-83c4-7eb37003a08b
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201978
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e77f7f28-42f5-475f-8a83-e05d7f3ab160
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604201981
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 91679c3d-800b-4896-a8ea-4cdcf0016a84
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604202011
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 37b8fe0e-d7c2-4a81-b90e-9ddc4bb66dff
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_0604202014
+  network: ws
+  port: '443'
+  server: bevent.bilibili.tv
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 7b34d4b6-19d1-43e7-8c60-078ce500538d
+  ws-opts:
+    headers:
+      Host: hkt.xiaoqi555.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_060420204
   network: ws
   port: '2052'
   server: s2.db-link02.top
@@ -149,107 +287,67 @@ proxies:
     path: /dabai.in172.67.4.47
 - alterId: 0
   cipher: auto
-  name: 未知_060220208
+  name: 未知_060420213
   network: ws
-  port: '80'
-  server: C1swEw.777159.XYZ
+  port: '443'
+  server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
+    path: /h7Rcu0y30lhjdVjJ3gc4aj
+- alterId: 0
+  cipher: auto
+  name: 未知_0604202162
+  network: ws
+  port: '8443'
+  server: 1743919941.tencentapp.cn
+  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  ws-opts:
+    headers:
+      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 未知_060420221
+  network: ws
+  port: '443'
+  server: icook.hk
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
+  ws-opts:
+    headers:
+      Host: glitch.nnuu.nyc.mn
+    path: /vmess-argo?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 爱尔兰_060420005
+  password: KqF9nO1UGFrKC5ykATyL4g
+  port: '23456'
+  server: 3.255.250.127
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 美国_0604204288
+  network: tcp
+  port: '45233'
+  server: lt.fxlcn.com
   servername: ''
   tls: false
   type: vmess
-  uuid: cad5a49f-14e5-4a05-aae9-c5df8fad394f
-  ws-opts:
-    headers:
-      Host: C1swEw.777159.XYZ
-    path: /TjUzWyRmR4P2fGqXENw4Z4
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 未知_060220221
+  name: 美国_0604204361
   network: ws
-  port: '443'
-  server: XDcder.fReEVpNaTM.DpdNs.oRG
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: ac5b2e52-435b-4461-a99c-1317ab0e2889
-  ws-opts:
-    headers:
-      Host: xdcder.freevpnatm.dpdns.org
-    path: /vjvNSMXhz3o99DmZDo0oju2st1
-- alterId: 0
-  cipher: auto
-  name: 未知_060220222
-  network: ws
-  port: '443'
-  server: tqWE4.fReevPnAtm2025.dpdnS.oRg
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: ac5b2e52-435b-4461-a99c-1317ab0e2889
-  ws-opts:
-    headers:
-      Host: tqwe4.freevpnatm2025.dpdns.org
-    path: /vjvNSMXhz3o99DmZDo0oju2st1
-- alterId: 0
-  cipher: auto
-  name: 未知_060220228
-  network: ws
-  port: '443'
-  server: WwSSxXcDFR.FReEvPNaTm.dpDNS.oRG
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: ac5b2e52-435b-4461-a99c-1317ab0e2889
-  ws-opts:
-    headers:
-      Host: wwssxxcdfr.freevpnatm.dpdns.org
-    path: /vjvNSMXhz3o99DmZDo0oju2st1
-- alterId: 0
-  cipher: auto
-  name: 未知_060220234
-  network: ws
-  port: '443'
-  server: www.visa.com.tw
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: d0eb0f6f-68a8-4ece-c33f-73c5d71ac3a3
-  ws-opts:
-    headers:
-      Host: kt-icn-2.ecp.dpdns.org
-    path: /zedware-network/korea-telecom/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 未知_060220235
-  network: ws
-  port: '80'
-  server: c1xxdcswe.777169.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cad5a49f-14e5-4a05-aae9-c5df8fad394f
-  ws-opts:
-    headers:
-      Host: c1xxdcswe.777169.xyz
-    path: /TjUzWyRmR4P2fGqXENw4Z4
-- alterId: 0
-  cipher: auto
-  name: 美国_0602204253
-  network: ws
-  port: '52511'
-  server: aflzzul.meiquankongjian.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-- alterId: 0
-  cipher: auto
-  name: 美国_0602204254
-  network: ws
-  port: '52513'
+  port: '51515'
   server: aflzzul.meiquankongjian.com
   servername: ''
   tls: false

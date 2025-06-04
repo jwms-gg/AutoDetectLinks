@@ -1,22 +1,22 @@
-# Update: 2025-06-03 08:48
-# Source 77 (https://proxy.crazygeeky.com/clash/proxies), 38
+# Update: 2025-06-05 08:47
+# Source 77 (https://proxy.crazygeeky.com/clash/proxies), 57
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: Pool__02 |15.88Mb
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    tls: true
-  port: 443
-  server: 103.137.62.194
+- cipher: aes-256-cfb
+  name: _01 | 3.86Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: _03 |248.00Mb
+  name: _02 |20.15Mb
+  password: awsps0501
+  port: 443
+  server: 35.91.246.41
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _03 |254.00Mb
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -25,55 +25,51 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- name: _04 |57.77Mb
+- name: _04 |49.37Mb
   password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
   port: 443
   server: 95.164.38.151
   sni: copy-wifi-twins.stark-industries.solutions
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇦🇴AO
+  name: 🇦🇴AO_05 | 3.07Mb
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
+  country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳CN_06 |14.95Mb
-  network: tcp
-  port: 50002
-  server: 120.210.205.59
+  name: 🇨🇦CA_06 | 9.93Mb
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: mankadmu.com
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      HOST: mankadmu.com
+    path: /linkvws
+- cipher: aes-256-cfb
+  country: 🇨🇭CH
+  name: 🇨🇭CH_07 |46.07Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳CN_07 |14.95Mb
-  network: tcp
-  port: 50002
-  server: 47.92.152.169
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇳CN_08 | 4.38Mb
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇳CN_09 | 8.14Mb
+  name: 🇨🇳CN_08 | 8.88Mb
   network: tcp
   port: 50002
   server: 112.132.215.12
@@ -85,7 +81,55 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳CN_10 |21.65Mb
+  name: 🇨🇳CN_09 | 5.63Mb
+  network: tcp
+  port: 50002
+  server: 120.210.205.59
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇨🇳CN_10 |12.85Mb
+  network: tcp
+  port: 50002
+  server: 47.92.152.169
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇨🇳CN_11 | 2.84Mb
+  network: tcp
+  port: 50002
+  server: 120.26.55.225
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇨🇳CN_12 | 5.03Mb
+  network: tcp
+  port: 50002
+  server: 47.116.166.178
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇨🇳CN_13 |19.83Mb
   network: tcp
   port: 50002
   server: 47.104.186.133
@@ -97,7 +141,7 @@ proxies:
   country: 🇨🇴CO
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇨🇴CO-🇺🇸US_11 |11.59Mb
+  name: Relay_🇨🇴CO-🇺🇸US_14 | 8.09Mb
   network: ws
   port: 80
   server: xxxsde4.freevpnatm2025.dpdns.org
@@ -111,89 +155,179 @@ proxies:
     path: /10W6SJaK0F0oVXeNU6S2RVRP
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: Relay_🇬🇧GB-🇬🇧GB_12 |44.40Mb
+  name: 🇬🇧GB_15 |44.81Mb
   password: shadowsocks
   port: 443
-  server: uk-dc1.yangon.club
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 🇬🇧GB_13 |51.21Mb
+  name: 🇬🇧GB_16 |17.61Mb
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 🇬🇧GB_14 |38.65Mb
+  name: Relay_🇬🇧GB-🇬🇧GB_17 |14.85Mb
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: uk-dc1.yangon.club
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🇮🇷IR
+  country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇮🇷IR-🇩🇪DE_15 |26.82Mb
+  name: 🇭🇰HK_18 | 6.14Mb
   network: tcp
-  port: 1091
-  server: 178.22.121.98
+  port: 50412
+  server: 103.30.78.122
   skip-cert-verify: true
   type: vmess
-  uuid: 6ef3b433-eea7-4e5d-95a5-c5f742ce2fb7
+  uuid: 086124a3-0084-405b-aea4-39b69d3836f3
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇺HU-🇷🇺RU_19
+  network: tcp
+  port: 45294
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: 🇭🇺HU_20
+  network: tcp
+  port: 45229
+  server: ysl.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇺HU-🇧🇬BG_21
+  network: tcp
+  port: 45263
+  server: yal.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇺HU-🇷🇺RU_22
+  network: tcp
+  port: 45417
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: Relay_🇰🇷KR-🇰🇷KR_16 | 4.27Mb
+  name: Relay_🇰🇷KR-🇰🇷KR_23 | 1.69Mb
   password: qwerREWQ@@
   port: 36379
   server: p080.panda001.net
   type: ss
+- cipher: aes-256-cfb
+  country: 🇵🇹PT
+  name: 🇵🇹PT_24 |18.18Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.173
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇷🇺RU-🇺🇸US_25 | 4.48Mb
+  network: ws
+  port: 23092
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: vmess
+  uuid: 28f6d888-cbc5-4210-8cd2-b40cf566d9a8
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇷🇺RU-🇺🇸US_26 | 5.64Mb
+  network: ws
+  port: 23092
+  server: 45.147.201.231
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1b442ae6-307c-4afa-924f-d38745f6d80e
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  country: 🇸🇰SK
+  name: 🇸🇰SK_27 |60.70Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 🇺🇸US_20 |56.92Mb
+  name: 🇺🇸US_28 |10.44Mb
   password: KixLvKzwjekG00rm
   port: 5500
   server: 38.68.135.18
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 🇺🇸US_21 | 8.68Mb
+  name: 🇺🇸US_29 | 8.72Mb
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_30 | 8.63Mb
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 38.121.43.71
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: 🇺🇸US_31 |47.00Mb
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
 - cipher: rc4-md5
   country: 🇺🇸US
-  name: 🇺🇸US_22 |278.93Mb
+  name: 🇺🇸US_32 |248.00Mb
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_23 |63.90Mb
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 🇺🇸US_24 |53.74Mb
+  name: 🇺🇸US_33 |16.93Mb
   password: ojcP36n1SouDcnBg9EOZP8
   port: 1490
   server: 9.163.232.180
   type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_25 | 8.64Mb
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.121.43.71
-  type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_26 |437.00Mb
+  name: Relay_🇺🇸US-🇺🇸US_34 |163.00Mb
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -205,7 +339,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_27 |26.23Mb
+  name: Relay_🇺🇸US-🇺🇸US_35 |10.47Mb
   network: ws
   port: 2082
   server: 172.67.214.33
@@ -217,71 +351,25 @@ proxies:
     headers:
       HOST: cs.flha.ru
     path: /
-- country: 🇺🇸US
-  name: 🇺🇸US_28 | 3.90Mb
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bats-paper-chump.stark-industries.solutions
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇸🇬SG_36 | 5.00Mb
+  network: ws
+  port: 51515
+  server: aflzzul.meiquankongjian.com
+  servername: aflzzul.meiquankongjian.com
   skip-cert-verify: true
-  sni: bats-paper-chump.stark-industries.solutions
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      HOST: aflzzul.meiquankongjian.com
+    path: /564dfa20/
 - country: 🇺🇸US
-  name: 🇺🇸US_29 |22.27Mb
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: true
-  sni: guy-trace-lyric.stark-industries.solutions
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_30 |44.06Mb
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: chop-wrist-bud.stark-industries.solutions
-  skip-cert-verify: true
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_31 |26.85Mb
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bring-glove-shine.stark-industries.solutions
-  skip-cert-verify: true
-  sni: bring-glove-shine.stark-industries.solutions
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_32 |26.17Mb
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.179
-  skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_33 | 6.07Mb
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: true
-  sni: bats-paper-chump.stark-industries.solutions
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_34 |19.55Mb
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: true
-  sni: nacho-rerun-crepe.stark-industries.solutions
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  name: 🇺🇸US_35 |25.86Mb
+  name: 🇺🇸US_37 |36.04Mb
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: cache-giver-wife.stark-industries.solutions
@@ -290,7 +378,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸US
-  name: 🇺🇸US_36 |11.96Mb
+  name: 🇺🇸US_38 |43.17Mb
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: strut-brisk-scope.stark-industries.solutions
@@ -298,30 +386,75 @@ proxies:
   sni: strut-brisk-scope.stark-industries.solutions
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇩🇪DE_37 |41.88Mb
-  network: ws
-  port: 2096
-  server: de01.sh-cloudflare.sbs
-  servername: de01.sh-cloudflare.sbs
+- country: 🇺🇸US
+  name: 🇺🇸US_39 |16.99Mb
+  password: ypDt8RkT7J
+  port: 43118
+  server: 89.187.181.179
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
-  ws-opts:
-    headers:
-      HOST: de01.sh-cloudflare.sbs
-    path: /
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_40 |52.80Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: 94.131.20.3
+  skip-cert-verify: true
+  sni: nacho-rerun-crepe.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_41 |43.88Mb
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: 94.131.20.3
+  skip-cert-verify: true
+  sni: bats-paper-chump.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_42 |36.40Mb
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: bring-glove-shine.stark-industries.solutions
+  skip-cert-verify: true
+  sni: bring-glove-shine.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_43 |36.82Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: guy-trace-lyric.stark-industries.solutions
+  skip-cert-verify: true
+  sni: guy-trace-lyric.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_44 |42.39Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: chop-wrist-bud.stark-industries.solutions
+  skip-cert-verify: true
+  sni: chop-wrist-bud.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_45 |42.06Mb
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: bats-paper-chump.stark-industries.solutions
+  skip-cert-verify: true
+  sni: bats-paper-chump.stark-industries.solutions
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_38 |22.57Mb
+  name: Relay_🏁ZZ-🇺🇸US_46 |12.20Mb
   network: ws
   port: 2082
   server: 104.21.23.231
@@ -338,43 +471,66 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 🏁ZZ_39 |29.85Mb
+  name: Relay_🏁ZZ-🇺🇸US_47 |25.74Mb
   network: ws
-  port: 2053
-  server: 104.21.112.1
-  servername: cc2d4.988988.shop
+  port: 80
+  server: xcdvfrr54.999820.xyz
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
   ws-opts:
-    headers:
-      HOST: cc2d4.988988.shop
-    path: /
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 🏁ZZ_40 |28.65Mb
+  name: Relay_🏁ZZ-🇺🇸US_48 |24.66Mb
   network: ws
-  port: 2096
-  server: 104.21.64.1
-  servername: cc2d1.988988.shop
+  port: 80
+  server: xcvfgt6.999161.xyz
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
   ws-opts:
-    headers:
-      HOST: cc2d1.988988.shop
-    path: /
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_41 | 6.18Mb
+  name: Relay_🏁ZZ-🇺🇸US_49 |28.76Mb
+  network: ws
+  port: 80
+  server: xcvg65.999815.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇸🇬SG_50 |22.19Mb
+  network: ws
+  port: 80
+  server: www.wn03.cc
+  servername: us.freeyyds.dpdns.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      HOST: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_51 |25.61Mb
   network: ws
   port: 80
   server: 5tghyu8.999820.xyz
@@ -391,7 +547,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_42 |15.56Mb
+  name: Relay_🏁ZZ-🇺🇸US_52 |25.36Mb
   network: ws
   port: 2087
   server: 104.21.112.1
@@ -409,7 +565,61 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_43 |10.56Mb
+  name: Relay_🏁ZZ-🇩🇪DE_53 |15.14Mb
+  network: ws
+  port: 2096
+  server: 104.21.112.1
+  servername: de01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇩🇪DE_54 |20.87Mb
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇩🇪DE_55 |28.77Mb
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_56 | 4.94Mb
   network: ws
   port: 80
   server: m11sdfg.890604.dpdns.org
@@ -421,3 +631,21 @@ proxies:
     headers:
       HOST: m11sdfg.890604.dpdns.org
     path: /lhU8ShsoPZlulnnYPb86csp
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇩🇪DE_57 |39.15Mb
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
