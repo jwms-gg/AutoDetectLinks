@@ -1,4 +1,5 @@
 from itertools import chain
+import json
 import os
 import pathlib
 import re
@@ -537,11 +538,25 @@ def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Checking done, alive proxies: {len(alive_proxies)}")
     return alive_proxies
 
+def issue_sources() -> list[Source]:
+    issue_url = "https://api.github.com/repos/wzdnzd/aggregator/issues/91"
+    content=safe_request(issue_url)
+    sources = []
+    if not content:
+        return sources
+
+    body = json.loads(content)["body"]
+    # find and match url like "https://ohayoo-pm.hf.space/api/v1/subscribe?token=xxx&target=xxx&list=xxx\n\n"
+    prefix_url = re.findall(r"(https://[^\s]+/subscribe\?)", body)[0]
+    # find and match token like "统一为`ouiw0lw7h3gx9fzm`"
+    url_token = re.findall(r"统一为`([^\s]+)`", body)[0]
+    url= prefix_url + f"token={url_token}&target=clash&list=1"
+    return [Source({"url": url, "type": "clash"}) for _ in range(3)]
 
 def main():
     logger.info("Fetching proxies sources...")
     sources = fetch_sources(
-        [Source(_) for _ in settings.sources],
+        [Source(_) for _ in settings.sources] + issue_sources(),
         settings.max_threads,
     )
 
