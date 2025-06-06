@@ -1,14 +1,102 @@
-# Update: 2025-06-05 08:47
-# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 82
+# Update: 2025-06-06 15:10
+# Source 83 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 91
 proxies:
+- alterId: 0
+  cipher: auto
+  name: _GB_英国
+  network: ws
+  port: 20630
+  server: 141.11.252.64
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b7b232d1-79ae-4fb1-8fdb-6f0bdc8a41ee
+  ws-opts:
+    path: /b7b232d1
+- name: _US_美国->🇫🇷_FR_法国
+  network: ws
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 172.67.133.248
+  skip-cert-verify: true
+  sni: DDd.890604.FIlEGear-sG.Me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: DDd.890604.FIlEGear-sG.Me
+    path: /mZr1mA5hub7QHHkQBzYO
 - cipher: aes-256-cfb
-  name: _US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
+  name: _KR_韩国->🇺🇸_US_美国
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
   type: ss
   udp: true
-- name: _US_美国->🇫🇷_FR_法国
+- cipher: aes-256-cfb
+  name: _KR_韩国->🇺🇸_US_美国_1
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+  udp: true
+- name: _US_美国_1
+  network: ws
+  password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
+  port: 443
+  server: 172.67.188.77
+  skip-cert-verify: true
+  sni: edfr4.890604.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: edfr4.890604.dpdns.org
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- name: _US_美国_2
+  network: ws
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.15.232
+  skip-cert-verify: true
+  sni: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
+    path: /4p35eUnmGxQ8YJFJxz
+- name: '_US_美国_3 #1'
+  network: ws
+  password: 44ed7a37-af89-4cd1-8680-83a7207810d9
+  port: 443
+  server: 172.67.135.37
+  skip-cert-verify: true
+  sni: cCtv4.459.pp.uA
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cCtv4.459.pp.uA
+    path: /HpYP4foAlpTKtfYnjLYhU30U
+- name: _CN_中国->🇩🇪_DE_德国
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: _CN_中国->🇺🇸_US_美国
+  password: RlzoEILU
+  port: 3330
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
+- name: '_US_美国->🇫🇷_FR_法国_1 #2'
   network: ws
   password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
@@ -21,28 +109,55 @@ proxies:
     headers:
       Host: DDd.890604.FIlEGear-sG.Me
     path: /mZr1mA5hub7QHHkQBzYO
-- cipher: aes-256-cfb
-  name: _IS_冰岛
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.152
-  type: ss
-  udp: true
-- name: _DE_德国
-  password: 4732adfa16c6450bbef87264e41332db
+- name: '_US_美国_4 #1'
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   port: 443
-  server: 165.22.74.230
+  server: 104.21.35.247
   skip-cert-verify: true
-  sni: nextstepcareer.online
+  sni: ff.HuangSHANg2030.DPDnS.oRg
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: _RU_俄罗斯->🇨🇳_CN_中国
-  password: tihAgVxZO12u
-  port: 443
-  server: 81.177.215.84
+  ws-opts:
+    headers:
+      Host: ff.HuangSHANg2030.DPDnS.oRg
+    path: /ptGwaGzcA4KNAXX
+- name: _CN_中国->🇺🇸_US_美国_1
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
+- name: _CN_中国
+  password: RlzoEILU
+  port: 33097
+  server: 36.151.251.61
+  skip-cert-verify: true
+  sni: 36.151.251.61
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: _KR_韩国->🇺🇸_US_美国_2
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
   type: ss
   udp: true
+- name: _US_美国_7
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  skip-cert-verify: true
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CFR56ty7890.288288.sHOP
+    path: /By7cEmOrNRS58yeduy9AOG
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇨🇦_CA_加拿大
@@ -58,172 +173,6 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- cipher: aes-256-cfb
-  name: _RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-  udp: true
-- name: _US_美国_1
-  password: pBS63OYXOw3ATcOX5Cz0FEx4lS8CDCYZIBl3C3wzepKYa3SaSq9payCDRynqZxlKSea2A
-  port: 443
-  server: ground.wireshop.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: _CN_中国->🇺🇸_US_美国
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
-- name: _CN_中国->🇩🇪_DE_德国
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: 120.233.44.201
-  type: trojan
-  udp: true
-- name: '_US_美国_3 #1'
-  password: e3qTaj4gOeDDzR8lzYXpyZDpga5a3SCwyE4CO6c738aZxwlaaAD0SYSYyXOlF9S3FRF0x
-  port: 28331
-  server: cutlery.homeofbrave.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: _GB_英国
-  obfs: plain
-  obfs-param: ''
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protocol-param: ''
-  server: 62.100.205.48
-  type: ssr
-  udp: true
-- name: _CN_中国_1
-  password: RlzoEILU
-  port: 33097
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: 36.151.251.61
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: _KR_韩国->🇺🇸_US_美国
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇨🇦_CA_加拿大 2
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- name: _CN_中国_2
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: 15229
-  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  skip-cert-verify: true
-  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  type: trojan
-  udp: true
-- name: '_US_美国_1 2 #3'
-  network: ws
-  password: 84831b86-5c76-4173-bdf1-02fa3ed78a32
-  port: 443
-  server: 104.21.16.1
-  skip-cert-verify: true
-  sni: eeERrrR.999815.xYZ
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: eeERrrR.999815.xYZ
-    path: /eS3prPmcpzbScA5VUAi1psm38Tz
-- name: _US_美国_2
-  network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 172.67.144.126
-  skip-cert-verify: true
-  sni: CFR56ty7890.288288.sHOP
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: CFR56ty7890.288288.sHOP
-    path: /By7cEmOrNRS58yeduy9AOG
-- cipher: chacha20-ietf-poly1305
-  name: '_US_美国_3 2 #1'
-  password: ojcP36n1SouDcnBg9EOZP8
-  port: 1490
-  server: 9.163.232.180
-  type: ss
-  udp: true
-- name: '_US_美国_4 #1'
-  network: ws
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  port: 443
-  server: 104.21.35.247
-  skip-cert-verify: true
-  sni: ff.HuangSHANg2030.DPDnS.oRg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ff.HuangSHANg2030.DPDnS.oRg
-    path: /ptGwaGzcA4KNAXX
-- name: _US_美国_5
-  network: ws
-  password: 44ed7a37-af89-4cd1-8680-83a7207810d9
-  port: 443
-  server: 172.67.135.37
-  skip-cert-verify: true
-  sni: cCtv4.459.pp.uA
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: cCtv4.459.pp.uA
-    path: /HpYP4foAlpTKtfYnjLYhU30U
-- name: '_US_美国->🇫🇷_FR_法国_1 #2'
-  network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: 443
-  server: 104.21.25.95
-  skip-cert-verify: true
-  sni: DDd.890604.FIlEGear-sG.Me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: DDd.890604.FIlEGear-sG.Me
-    path: /mZr1mA5hub7QHHkQBzYO
-- name: _CN_中国->🇺🇸_US_美国_1
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
-  udp: true
 - name: _US_美国->🇫🇷_FR_法国_2
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
@@ -237,27 +186,43 @@ proxies:
     headers:
       Host: SxcDe3.859886.XYz
     path: /COp52Dbu3dvwvDWUxOqxq
-- name: '_US_美国->🇫🇷_FR_法国_3 #1'
+- name: _US_美国_9
   network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  password: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   port: 443
-  server: 172.67.133.248
+  server: 104.21.16.1
   skip-cert-verify: true
-  sni: DDd.890604.FIlEGear-sG.Me
+  sni: eeERrrR.999815.xYZ
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: DDd.890604.FIlEGear-sG.Me
-    path: /mZr1mA5hub7QHHkQBzYO
-- cipher: aes-256-cfb
-  name: _KR_韩国
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
+      Host: eeERrrR.999815.xYZ
+    path: /eS3prPmcpzbScA5VUAi1psm38Tz
+- name: _CN_中国_1
+  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  port: 15229
+  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  skip-cert-verify: true
+  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: _US_美国_10
+  password: ojcP36n1SouDcnBg9EOZP8
+  port: 1490
+  server: 9.163.232.180
   type: ss
   udp: true
-- name: '_US_美国_6 #1'
+- name: _CN_中国->🇩🇪_DE_德国 2
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: '_US_美国_1 2 #3'
   network: ws
   password: 895552fa-6284-4c1d-ba00-3944e0c7c626
   port: 443
@@ -270,12 +235,119 @@ proxies:
     headers:
       Host: CFR56ty7890.288288.sHOP
     path: /By7cEmOrNRS58yeduy9AOG
-- name: _CN_中国->🇩🇪_DE_德国 2
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
+- alterId: 0
+  cipher: auto
+  name: _SE_瑞典
+  network: ws
+  port: 80
+  server: 185.146.173.25
   skip-cert-verify: true
-  sni: 120.233.44.201
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 46181c32-8c82-413a-b836-8375e5e513eb
+  ws-opts:
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: _US_美国_2 2
+  password: ojcP36n1SouDcnBg9EOZP8
+  port: 1490
+  server: 9.163.232.180
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '_US_美国_3 2 #1'
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _KR_韩国->🇺🇸_US_美国 2
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- name: _US_美国_4 2
+  network: ws
+  password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
+  port: 443
+  server: 172.67.188.77
+  skip-cert-verify: true
+  sni: edfr4.890604.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: edfr4.890604.dpdns.org
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- name: _US_美国_5
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  skip-cert-verify: true
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CFR56ty7890.288288.sHOP
+    path: /By7cEmOrNRS58yeduy9AOG
+- name: _US_美国->🇫🇷_FR_法国_1 2
+  network: ws
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 172.67.133.248
+  skip-cert-verify: true
+  sni: DDd.890604.FIlEGear-sG.Me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: DDd.890604.FIlEGear-sG.Me
+    path: /mZr1mA5hub7QHHkQBzYO
+- name: _CN_中国 2
+  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  port: 15229
+  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  skip-cert-verify: true
+  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  type: trojan
+  udp: true
+- name: _US_美国->🇫🇷_FR_法国_2 2
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  skip-cert-verify: true
+  sni: ddcDe.890603.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ddcDe.890603.XYz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- name: '_US_美国->🇫🇷_FR_法国_3 #1'
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 104.21.83.113
+  skip-cert-verify: true
+  sni: SxcDe3.859886.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: SxcDe3.859886.XYz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- name: _CN_中国->🇺🇸_US_美国_1 2
+  password: RlzoEILU
+  port: 13542
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
   type: trojan
   udp: true
 - name: _CN_中国->🇺🇸_US_美国_2
@@ -286,11 +358,52 @@ proxies:
   sni: cdn.egvra.cn
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: _NL_荷兰->🇫🇷_FR_法国
-  password: l3gh4XX7l9nuQwETBNU85v
-  port: 52703
-  server: 45.144.54.33
+- alterId: 0
+  cipher: auto
+  name: _CN_中国->🇯🇵_JP_日本
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: _RO_罗马尼亚->🇺🇸_US_美国
+  port: 2010
+  server: 188.213.128.64
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b117bd27-0e16-4342-852a-59f0c0aa61f4
+- name: _CN_中国->🇺🇸_US_美国_3
+  password: RlzoEILU
+  port: 33097
+  server: 36.151.251.61
+  skip-cert-verify: true
+  sni: 36.151.251.61
+  type: trojan
+  udp: true
+- name: _US_美国->🇫🇷_FR_法国_4
+  network: ws
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 104.21.25.95
+  skip-cert-verify: true
+  sni: DDd.890604.FIlEGear-sG.Me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: DDd.890604.FIlEGear-sG.Me
+    path: /mZr1mA5hub7QHHkQBzYO
+- cipher: aes-256-cfb
+  name: _US_美国->🇷🇴_RO_罗马尼亚
+  password: awsps0501
+  port: 443
+  server: 35.91.246.41
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
