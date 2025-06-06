@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 
 from loguru import logger
 from config import settings
-
+from dynaconf.utils.boxing import DynaBox
 
 def safe_request(url: str, max_retries: int = 3) -> str:
     """Safely make HTTP requests with retries and error handling.
@@ -167,8 +167,8 @@ class Source:
         redirect = self._source.get("redirect", None)
         method = self._source.get("method", None)
         prefix = self._source.get("prefix", None)
-        url: str = self._source.url
-        type: str = self._source.type
+        url: str = self._source.get("url")
+        type: str = self._source.get("type")
 
         if redirect == "date":
             url = datetime.datetime.now().strftime(url)
@@ -551,7 +551,7 @@ def issue_sources() -> list[Source]:
     # find and match token like "统一为`ouiw0lw7h3gx9fzm`"
     url_token = re.findall(r"统一为`([^\s]+)`", body)[0]
     url= prefix_url + f"token={url_token}&target=clash&list=1"
-    return [Source({"url": url, "type": "clash"}) for _ in range(3)]
+    return [Source(DynaBox({"url": url, "type": "clash"})) for _ in range(3)]
 
 def main():
     logger.info("Fetching proxies sources...")
