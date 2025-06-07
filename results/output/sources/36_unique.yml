@@ -1,6 +1,17 @@
-# Update: 2025-06-06 15:10
+# Update: 2025-06-07 08:46
 # Source 36 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 3
 proxies:
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
@@ -17,26 +28,15 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #1'
+  name: '美国 CloudFlare节点 #7'
   network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
+  port: 443
+  server: cf.fovi.tk
+  servername: cf.fovi.tk
   tls: true
   type: vmess
-  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 80
-  server: xscdddfr5.999820.xyz
-  tls: false
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      Host: ''
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
+      Host: foxpol.fovi.tk
+    path: /eisasqa

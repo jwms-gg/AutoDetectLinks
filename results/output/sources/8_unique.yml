@@ -1,3 +1,91 @@
-# Update: 2025-06-06 15:10
-# Source 8 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 0
-proxies: []
+# Update: 2025-06-07 08:46
+# Source 8 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 7
+proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: tg频道:@ripaojiedian
+  password: yijian0503
+  port: 443
+  server: 43.203.225.190
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 1450cecfb93f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.pmxiaonan.xyz
+    mode: websocket
+    mux: true
+    path: /simieepvt
+    skip-cert-verify: false
+    tls: true
+  port: 37689
+  server: 121.127.231.217
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 🇹🇼 台湾|@ripaojiedian
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505310989964-u6lMbYHt99.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 60a930c17ff0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr6v1.xpmc.cc
+    mode: websocket
+    mux: true
+    path: /matwnpkhug
+    skip-cert-verify: false
+    tls: true
+  port: 17018
+  server: 43.226.17.11
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202505310989964-u6lMbYHt99.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇺🇸 美国3|@ripaojiedian
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo

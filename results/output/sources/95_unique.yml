@@ -1,65 +1,38 @@
-# Update: 2025-06-06 15:10
-# Source 95 (https://raw.githubusercontent.com/asdsadsddas123/freevpn/refs/heads/main/README.md), 9
+# Update: 2025-06-07 08:46
+# Source 95 (https://raw.githubusercontent.com/asdsadsddas123/freevpn/refs/heads/main/README.md), 6
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: end-gfw.com@jp89
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: '9898'
-  server: 52.69.142.253
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: end-gfw.com@kr64
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: '9898'
-  server: 52.78.226.126
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: end-gfw.com@jp19tian
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: '9898'
-  server: 35.72.34.1
+  server: 57.181.175.8
   type: ss
-- name: end-gfw.com
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@us19
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 52.69.142.253
-  skip-cert-verify: true
-  sni: baidu.com
-  type: trojan
+  port: '9898'
+  server: 34.219.250.20
+  type: ss
 - name: 'end-gfw.com #1'
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6668
-  server: 52.78.226.126
+  server: 57.181.175.8
   skip-cert-verify: true
   sni: baidu.com
   type: trojan
 - name: 'end-gfw.com #2'
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6668
-  server: 35.72.34.1
+  server: 34.219.250.20
   skip-cert-verify: true
   sni: baidu.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 'end-gfw.com #3'
-  network: ws
-  port: 6868
-  server: 52.69.142.253
-  servername: baidu.com
-  tls: false
-  type: vmess
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  ws-opts:
-    headers:
-      Host: end-gfw.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 'end-gfw.com #4'
   network: ws
   port: 6868
-  server: 52.78.226.126
+  server: 57.181.175.8
   servername: baidu.com
   tls: false
   type: vmess
@@ -73,7 +46,7 @@ proxies:
   name: 'end-gfw.com #5'
   network: ws
   port: 6868
-  server: 35.72.34.1
+  server: 34.219.250.20
   servername: baidu.com
   tls: false
   type: vmess

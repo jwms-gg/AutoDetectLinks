@@ -1,29 +1,87 @@
-# Update: 2025-06-06 15:10
-# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 3
+# Update: 2025-06-07 08:46
+# Source 6 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 9
 proxies:
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 🇨🇳_CN_中国
-  network: tcp
-  port: 42353
-  server: 62.60.155.13
+  name: 🇺🇸_US_美国->🇬🇧_GB_英国
+  network: ws
+  port: 80
+  server: tci2.tiamoci.us.kg
+  type: vmess
+  uuid: 749c4694-c824-4d51-b210-cc54d5925444
+  ws-opts:
+    headers:
+      host: tci2.tiamoci.us.kg
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 30807
+  server: v7.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
-  uuid: 5b07db1e-67a1-4b10-be27-dfaf17755e73
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  network: tcp
-  port: 17232
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23093
+  server: 45.147.201.231
   type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  uuid: 78546323-3c10-4c50-813a-66bf2e6d93f9
+  ws-opts:
+    path: /
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
   port: 15229
   server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
   skip-cert-verify: false
   sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: '🇺🇸_US_美国_2 #2'
+  password: 4QHLWJ3KNY7GIS40
+  port: 20007
+  server: 185.47.254.177
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇨🇭_CH_瑞士
+  network: tcp
+  port: 15002
+  server: 15002.kuaiyin02.top
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
   type: trojan
