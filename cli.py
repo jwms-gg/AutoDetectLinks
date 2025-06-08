@@ -356,43 +356,33 @@ def unique_sources(sources: list[Source]):
             if not net:
                 pass
             elif net == "ws":
-                opts: dict[str, Any] = data.get("ws-opts", {})
-                path += opts.get("headers", {}).get("Host", "")
-                path += "/" + opts.get("path", "")
+                path += json.dumps(data.get("ws-opts", {}))
             elif net == "h2":
-                opts: dict[str, Any] = data.get("h2-opts", {})
-                path += ",".join(opts.get("host", []))
-                path += "/" + opts.get("path", "")
+                path += json.dumps(data.get("h2-opts", {}))
             elif net == "grpc":
-                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+                path += json.dumps(data.get("grpc-opts", {}))
         elif type == "ss":
-            opts: dict[str, Any] = data.get("plugin-opts", {})
-            path = opts.get("host", "")
-            path += "/" + opts.get("path", "")
+            path = json.dumps(data.get("plugin-opts", {}))
         elif type == "ssr":
-            path = data.get("obfs-param", "")
+            path = json.dumps(data.get("obfs-param", {}))
         elif type == "trojan":
             path = data.get("sni", "") + ":"
             net: str = data.get("network", "")
             if not net:
                 pass
             elif net == "ws":
-                opts: dict[str, Any] = data.get("ws-opts", {})
-                path += opts.get("headers", {}).get("Host", "")
-                path += "/" + opts.get("path", "")
+                path += json.dumps(data.get("ws-opts", {}))
             elif net == "grpc":
-                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+                path += json.dumps(data.get("grpc-opts", {}))
         elif type == "vless":
             path = data.get("sni", "") + ":"
             net: str = data.get("network", "")
             if not net:
                 pass
             elif net == "ws":
-                opts: dict[str, Any] = data.get("ws-opts", {})
-                path += opts.get("headers", {}).get("Host", "")
-                path += "/" + opts.get("path", "")
+                path += json.dumps(data.get("ws-opts", {}))
             elif net == "grpc":
-                path += data.get("grpc-opts", {}).get("grpc-service-name", "")
+                path += json.dumps(data.get("grpc-opts", {}))
         elif type == "hysteria2":
             path = data.get("sni", "") + ":"
             path += data.get("obfs-password", "") + ":"
@@ -556,7 +546,7 @@ def issue_sources() -> list[Source]:
 def main():
     logger.info("Fetching proxies sources...")
     sources = fetch_sources(
-        [Source(_) for _ in settings.sources] + issue_sources(),
+        [Source(_) for _ in settings.sources] ,
         settings.max_threads,
     )
 
