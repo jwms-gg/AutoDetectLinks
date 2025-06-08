@@ -1,6 +1,19 @@
-# Update: 2025-06-07 18:08
-# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 3
+# Update: 2025-06-08 18:05
+# Source 10 (https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml), 10
 proxies:
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGP...
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -20,6 +33,54 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #4'
+  network: ws
+  port: 2082
+  server: 172.67.214.33
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #5'
+  network: ws
+  port: 2082
+  server: 104.21.23.231
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #6'
+  network: ws
+  port: 2082
+  server: cs.flha.ru
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: VMESS-未知>法国-ChatGPT-1a2d514b-3...
   network: ws
   port: 443
@@ -33,11 +94,40 @@ proxies:
     headers:
       HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- cipher: rc4-md5
-  name: SSR-德国-NF解锁德国地区非自制剧-ChatGPT-Ti...
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 193.108.119.230
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 'VMESS-未知>美国-NF解锁自制剧-ChatGPT-Ti... #7'
+  network: ws
+  port: 8443
+  server: orvps2.horsenma.net
+  servername: orvps2.horsenma.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  ws-opts:
+    headers:
+      HOST: orvps2.horsenma.net
+    path: /horsen
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁法国地区非自制剧-ChatGPT-Tik...
+  password: oHOP1bWFMkQVx3PdbhRlOk
+  port: 8315
+  server: 77.239.116.76
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 'SS-法国-NF解锁法国地区非自制剧-ChatGPT-Tik... #2'
+  password: xfMebyGyanMcUig3ItWR2E
+  port: 443
+  server: 62.210.88.22
+  type: ss
+- cipher: aes-128-cfb
+  name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-T...
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
   type: ssr
