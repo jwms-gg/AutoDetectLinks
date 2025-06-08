@@ -1,206 +1,145 @@
-# Update: 2025-06-08 18:05
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 21
+# Update: 2025-06-11 08:47
+# Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 14
 proxies:
-- name: '🇺🇸 US 1 #1'
-  network: tcp
-  port: 443
-  server: 15.204.192.150
-  servername: 147135010072.sec21org.com
-  tls: true
-  type: vless
-  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-  ws-opts:
-    path: /
-- name: 🇺🇸 US 2
-  network: grpc
-  port: 8880
-  server: 45.82.251.141
-  tls: false
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  ws-opts:
-    path: /
-- name: '🇺🇸 US 3 #1'
-  network: tcp
-  port: 443
-  server: 147135011033.sec21org.com
-  servername: 147135011033.sec21org.com
-  tls: true
-  type: vless
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-  ws-opts:
-    path: /
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 4
-  password: KixLvKzwjekG00rm
-  port: '5500'
-  server: 38.121.43.97
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 5
+  name: 美国 CloudFlare节点
   network: ws
-  port: 443
-  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  port: 2082
+  server: 172.67.214.33
+  tls: false
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      Host: cs.flha.ru
+    path: /
+- name: 美国+Cloudinnovation数据中心
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2096
+  server: 154.83.2.54
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: '80'
+  server: 141.101.115.65
   servername: ''
   tls: false
   type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
   ws-opts:
     headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-    path: /azumase.ren
+      Host: dp3.scproxy.top
+    path: /shirker
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 US 6 #2'
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 80
+  server: 2sdfre3.999820.xyz
+  tls: false
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    headers:
+      Host: 2sdfre3.999820.xyz
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- alterId: 0
+  cipher: auto
+  name: 美国 加利福尼亚州圣何塞PEG TECH
+  network: tcp
+  port: 57118
+  server: 142.4.119.72
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 英国+V2CROSS.COM
+  password: oHOP1bWFMkQVx3PdbhRlOk
+  port: '8315'
+  server: 77.239.116.76
+  type: ss
+- cipher: aes-256-cfb
+  name: '2|🌀3-SK |  5.0MB/s|0%|Youtube|... #1'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 156.146.40.194
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '2|🌀4-TH |  2.6MB/s|55%|Netflix... #1'
   network: ws
   port: 443
-  server: hk2.lrzdx.uk
-  servername: hk2.lrzdx.uk
+  server: 38.47.96.30
   tls: true
   type: vmess
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  uuid: 164a6ad0-476a-4bae-b78f-a3d37cf0f414
   ws-opts:
     headers:
-      Host: hk2.lrzdx.uk
-    path: /register
-- name: 🇺🇸 US 7
-  network: tcp
-  port: 443
-  server: 135.148.74.150
-  servername: 147135004002.sec20org.com
-  tls: true
-  type: vless
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-  ws-opts:
-    path: /
-- name: 🇺🇸 US 8
-  network: tcp
-  port: 443
-  server: 135.148.174.211
-  servername: 147135011033.sec21org.com
-  tls: true
-  type: vless
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-  ws-opts:
-    path: /
+      Host: th.lzj520hxw.dpdns.org
+    path: /lzjjj
+- cipher: aes-256-cfb
+  name: '2|🇰🇷2 |  1.5MB/s|44%|Openai #1'
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 9
+  name: '美国 CloudFlare节点 #7'
   network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
-  servername: de01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 2864e301-8023-4433-b703-bdd1a52e0376
+  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
   ws-opts:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- client-fingerprint: chrome
-  name: 🇺🇸 US 10
-  network: tcp
-  port: 443
-  server: 15.204.191.46
-  servername: 147135001178.sec22org.com
-  tls: true
-  type: vless
-  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-  ws-opts:
-    path: /
-- name: 🇺🇸 US 11
-  password: xxoo
-  port: 443
-  server: 138.197.5.103
-  sni: us.blazeppn.info
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: 🇺🇸 US 12
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
-  type: trojan
-  ws-opts:
-    path: '%2f'
 - cipher: aes-256-cfb
-  name: '🇦🇹 AT 1 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 185.180.12.81
+  name: '13|tg频道:@ripaojiedian #2'
+  password: qawszxc123
+  port: '443'
+  server: 13.229.50.252
   type: ss
-- name: '🇫🇷 FR 1 #1'
-  network: tcp
-  password: d2adff89-5143-4d67-921f-3478464de5bb
-  port: 443
-  server: 38.180.240.150
-  sni: fr.freeguard.org
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- alpn:
-  - http/1.1
-  name: 🇩🇪 DE 1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.195.146.37
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod-%40FergalVpnMod'
-  name: 🇩🇪 DE 2
-  network: grpc
-  port: 45868
-  reality-opts:
-    public-key: Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ
-    short-id: 7f
-  server: 84.201.20.248
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 0549a04c-28ff-4a35-95c7-ed5651f4ee53
-  ws-opts:
-    path: /
+- cipher: aes-256-cfb
+  name: '14|tg频道:@ripaojiedian #1 #1'
+  password: qawszxc123
+  port: '443'
+  server: 13.229.50.252
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 HK 1 #1'
-  network: tcp
-  port: 34625
-  server: 45.207.201.15
-  servername: null
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  name: '2|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #1'
+  network: grpc
+  port: 443
+  server: de.vmess.comnpmjs.com
+  servername: de.vmess.comnpmjs.com
+  tls: true
+  type: vmess
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- alterId: 0
+  cipher: auto
+  name: '2|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #1'
+  network: ws
+  port: 8080
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  uuid: 35510df4-9899-4427-e826-d005f0aabc6c
-- cipher: aes-256-cfb
-  name: 🇭🇷 HR 1
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 46.183.184.60
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇵🇱 PL 1 #1'
-  password: KnJGad3FqTvjqbaX
-  port: '9014'
-  server: 217.30.10.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇵🇱 PL 2 #1'
-  password: d3837224ed465f00
-  port: '57456'
-  server: war.ssvpnapp.win
-  type: ss
-- name: 🇱🇹 LT 1
-  network: ws
-  password: vpn
-  port: 2025
-  server: 46.29.234.154
-  type: trojan
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
   ws-opts:
     headers:
-      Host: dns.google.com
-    path: '%2f'
+      Host: broadcastlv.chat.bilibili.com
+    path: /
