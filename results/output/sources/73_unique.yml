@@ -1,354 +1,302 @@
-# Update: 2025-06-07 18:09
-# Source 73 (https://raw.githubusercontent.com/ts-sf/fly/main/clash), 32
+# Update: 2025-06-08 18:05
+# Source 73 (https://proxy.crazygeeky.com/clash/proxies), 21
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: Pool__02 | 6.35Mb
+  password: 937f6b6168b6
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
+    path: /oqhygtklyhwi
+    tls: true
+  port: 443
+  server: 103.137.62.194
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Pool__05 |868.00Mb
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
+  type: ssr
 - alterId: 0
-  name: '未知 #1'
+  cipher: auto
+  country: 🇨🇴CO
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇨🇴CO-🇺🇸US_13 | 9.49Mb
   network: ws
-  password: 8e09a4d7-80fc-4bb3-b3fb-1eb23211756a
+  port: 80
+  server: xxxsde4.freevpnatm2025.dpdns.org
+  servername: xxxsde4.freevpnatm2025.dpdns.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    headers:
+      HOST: xxxsde4.freevpnatm2025.dpdns.org
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇺HU-🇷🇺RU_19
+  network: tcp
+  port: 45417
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇭🇺HU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇺HU-🇧🇬BG_23
+  network: tcp
+  port: 45263
+  server: yal.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  group: https://v2rayse.com
+  name: Relay_🇯🇵JP-🇯🇵JP_24 |271.00Mb
+  obfs: tls1.2_ticket_auth
+  password: eAokbaDN6
+  port: 8081
+  protocol: origin
+  server: jp-am48-6.eqnode.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 🇯🇵JP_25
+  network: tcp
+  port: 32443
+  server: tls.03.node-for-bigairport.win
+  servername: tls.03.node-for-bigairport.win
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5ac8224f-6126-4ffb-9fad-97e3207f8c33
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_41 |149.00Mb
+  obfs: http_simple
+  password: Uk92CS
+  port: 13000
+  protocol: auth_aes128_sha1
+  server: nm3.boom.party
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_43 |20.14Mb
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  servername: Usa-Vp-192.blazEcloudMAin.SitE
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 96e44a22-4f5c-48f9-99d9-f2c1985dd5b9
+  ws-opts:
+    headers:
+      HOST: Usa-Vp-192.blazEcloudMAin.SitE
+    path: /linkvkws
+- country: 🇺🇸US
+  name: 🇺🇸US_44 |26.93Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: 94.131.20.3
+  skip-cert-verify: true
+  sni: nacho-rerun-crepe.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_46 |37.15Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: guy-trace-lyric.stark-industries.solutions
+  skip-cert-verify: true
+  sni: guy-trace-lyric.stark-industries.solutions
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_49 |13.89Mb
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: both-cramp-banjo.stark-industries.solutions
+  skip-cert-verify: true
+  sni: both-cramp-banjo.stark-industries.solutions
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_51 | 5.37Mb
+  network: ws
+  port: 80
+  server: xcdvfrr54.999820.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇩🇪DE_53 | 8.73Mb
+  network: ws
   port: 2096
-  server: 104.21.32.1
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
   skip-cert-verify: true
-  sni: MehRnEWs.twn24.Ir
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
 - alterId: 0
-  name: '未知6 #1'
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_55 |15.16Mb
   network: ws
-  password: blue2024
-  port: 443
-  server: 104.17.165.253
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知12 #1'
-  network: ws
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 104.21.71.112
-  skip-cert-verify: true
-  sni: CFR56ty7890.288288.sHOP
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知15 #1'
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.19.90.210
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知18 #1'
-  network: ws
-  password: Mojtaba-shieldheart
   port: 8443
-  server: 104.16.211.9
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
   skip-cert-verify: true
-  sni: broken-bread-6ba6.shieldheart4.workers.dev
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
+  ws-opts:
+    headers:
+      HOST: us01.sh-cloudflare.sbs
+    path: /
 - alterId: 0
-  name: '未知33 #1'
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_57 | 3.16Mb
   network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 104.18.34.202
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 'US6 #1'
-  network: ws
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.17
-  skip-cert-verify: true
-  sni: uk8i7uufxlcbr2hbym.jjjiedian6j4tblb.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知36 #2'
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.21.84.200
-  skip-cert-verify: true
-  sni: zb.ylks.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知40 #1'
-  network: ws
-  password: vs6f8hvt
-  port: 443
-  server: 104.26.4.157
-  skip-cert-verify: true
-  sni: trojan.cchappy.eu.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知41 #1'
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 172.67.161.104
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知43 #1'
-  network: ws
-  password: auto
-  port: 443
-  server: 104.21.35.43
-  skip-cert-verify: true
-  sni: esetsecuritylicense3.wawafec355.workers.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 'US10 #1'
-  network: ws
-  password: f8bb4ae1-2358-4a76-ab75-2a6bc94272d6
-  port: 443
-  server: 151.101.194.228
-  skip-cert-verify: true
-  sni: pscresearch.faculty.ucdavis.edu
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知45 #1'
-  network: ws
-  password: ctZ66Vttffqq
-  port: 2083
-  server: 104.21.64.1
-  skip-cert-verify: true
-  sni: yjc.twn24.ir
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知54 #1'
-  network: ws
-  password: ctZ66Vttffqq
-  port: 2083
-  server: 104.21.32.1
-  skip-cert-verify: true
-  sni: yjc.twn24.ir
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知55 #1'
-  network: ws
-  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
-  port: 443
-  server: 104.21.21.190
-  skip-cert-verify: true
-  sni: Us6-08.890606.xYZ
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知61 #1'
-  network: ws
-  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
-  port: 443
-  server: 172.67.162.74
-  skip-cert-verify: true
-  sni: 16gG.irAN.pP.UA
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知63 #1'
-  network: ws
-  password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
-  port: 443
-  server: 104.26.15.85
-  skip-cert-verify: true
-  sni: md1.safecdn.site
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知67 #2'
-  network: ws
-  password: juzi
-  port: 443
-  server: 172.66.46.221
-  skip-cert-verify: true
-  sni: juzi8186-sr1.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知78 #1'
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: 104.21.70.125
+  server: cf.fovi.tk
+  servername: foxpol.fovi.tk
   skip-cert-verify: true
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      HOST: foxpol.fovi.tk
+    path: /eisasqa
 - alterId: 0
-  name: '未知79 #1'
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇩🇪DE_60 |22.31Mb
   network: ws
-  password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
-  port: 443
-  server: 104.26.14.85
-  skip-cert-verify: true
-  sni: md1.safecdn.site
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知83 #2'
-  network: ws
-  password: 4PbOjiMDLh
   port: 2096
-  server: 104.21.44.185
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
   skip-cert-verify: true
-  sni: support.onetwothree123.ir
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
 - alterId: 0
-  name: '未知86 #1'
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_61 | 2.41Mb
   network: ws
-  password: U%26YcI8%3E7ep%7D%3CeT8%5D
-  port: 8443
-  server: 104.17.147.22
-  skip-cert-verify: true
-  sni: jOInMaHdisErVeR-Ys7.pagEs.DEV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知92 #1'
-  network: ws
-  password: EbtvoL1xJV
-  port: 2096
-  server: 172.67.161.74
-  skip-cert-verify: true
-  sni: support.sabapardaziran.ir
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知93 #1'
-  network: ws
-  password: qCfu8t%24s%7B2m%3BsTxm
-  port: 2053
-  server: 172.66.44.194
-  skip-cert-verify: true
-  sni: JOinMaHdISeRvEr-C1C.PaGES.dEV
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知96 #1'
-  network: ws
-  password: 2YDH6ktJOt
-  port: 8443
-  server: 104.21.15.33
-  skip-cert-verify: true
-  sni: support.sabapardaziran.ir
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知103 #1'
-  network: ws
-  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
-  port: 443
-  server: 104.26.12.31
-  skip-cert-verify: true
-  sni: fwd-refuse-senators-brought.trycloudflare.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知106 #1'
-  network: ws
-  password: 6d898085-bf6a-449b-9763-0073d4dc2ce0
-  port: 443
-  server: 104.21.26.69
-  skip-cert-verify: true
-  sni: BoSTON03.862224.ggFf.neT
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知116 #1'
-  network: ws
-  password: 82bacaef-f56f-4ac4-9db3-d4754a06d1ef
-  port: 443
-  server: 104.21.63.226
-  skip-cert-verify: true
-  sni: xCdFvgBHy6.457.Pp.uA
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知133 #1'
-  network: ws
-  password: vs6f8hvt
   port: 2087
-  server: 104.16.177.79
+  server: 104.21.112.1
+  servername: rak1d3.777269.xyz
   skip-cert-verify: true
-  sni: trojan.cchappy.eu.org
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
+  ws-opts:
+    headers:
+      HOST: rak1d3.777269.xyz
+    path: /
 - alterId: 0
-  name: '未知143 #1'
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_62 | 9.82Mb
   network: ws
-  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
-  port: 443
-  server: 172.67.200.117
-  skip-cert-verify: true
-  sni: ccdfRt6.890634.Xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知148 #1'
-  network: ws
-  password: 61d4840a5f23ac24873dd72e54a607e7
-  port: 443
-  server: 172.67.178.220
-  skip-cert-verify: true
-  sni: notice.2513142.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知152 #1'
-  network: ws
-  password: d2638b15-7c54-4a83-b217-de0928070e2d
   port: 8443
-  server: 172.67.175.40
+  server: 104.21.96.1
+  servername: us01.sh-cloudflare.sbs
   skip-cert-verify: true
-  sni: eXPrEssTv.faRsOnline24.Ir
   tls: true
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
+  ws-opts:
+    headers:
+      HOST: us01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_63 | 7.61Mb
+  network: ws
+  port: 80
+  server: 5tghyu8.999820.xyz
+  servername: 5tghyu8.999820.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    headers:
+      HOST: 5tghyu8.999820.xyz
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇺🇸US_65 | 9.03Mb
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  ws-opts:
+    headers:
+      HOST: us01.sh-cloudflare.sbs
+    path: /
