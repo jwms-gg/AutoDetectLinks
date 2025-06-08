@@ -70,7 +70,13 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
     if proxy_type == "vmess":
         v = settings.vmess_example.copy()
         try:
-            v.update(json.loads(b64decodes(uri)))
+            decode_uri = json.loads(b64decodes(uri))
+            v.update(decode_uri)
+            if 'host' in v and not v["host"] and "add" in v:
+                if not v["add"].replace(".", "").isdigit():
+                    v["host"] = v["add"]
+            if not v["scy"]:
+                v["scy"] = settings.vmess_example["scy"]
         except Exception:
             raise UnsupportedType("vmess", "SP")
         data = {}
@@ -84,7 +90,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
             opts = {}
             if "path" in v:
                 opts["path"] = v["path"]
-            if "host" in v:
+            if "host" in v and v["host"]:
                 opts["headers"] = {"Host": v["host"]}
             data["ws-opts"] = opts
         elif v["net"] == "h2":
@@ -239,7 +245,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
                 elif k == "path":
                     if "ws-opts" not in data:
                         data["ws-opts"] = {}
-                    data["ws-opts"]["path"] = v
+                    data["ws-opts"]["path"] = unquote(v)
                 elif k == "flow":
                     if v.endswith("-udp443"):
                         data["flow"] = v
@@ -575,4 +581,4 @@ def clash_to_v2ray(proxy: Dict[str, Any]) -> str:
 
 
 if __name__ == "__main__":
-    ...
+    v2ray_to_clash("")

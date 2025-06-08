@@ -2212,12 +2212,13 @@ class ClashDelayChecker:
         """测试策略组中的节点组"""
         # 创建所有测试任务
         logger.info(f"开始测试组 {group_name} (请求测试次数: {task_times})")
+        tasks = [clash_api.test_group_delay(group_name) for _ in range(task_times)]
 
         # 使用进度显示执行所有任务
-        for i in range(task_times):
-            await clash_api.test_group_delay(group_name)
+        total = task_times
+        for i, future in enumerate(asyncio.as_completed(tasks)):
+            await future
             done = i + 1
-            total = task_times
             logger.info(f"进度: {done}/{total} ({done / total * 100:.1f}%)")
 
     async def test_proxies(self, clash_api: ClashAPI, proxies: list[str]):
