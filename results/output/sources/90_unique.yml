@@ -1,3 +1,30 @@
-# Update: 2025-06-08 18:05
-# Source 90 (http://kiwi2.zxzn.xyz/clash/proxies), 0
-proxies: []
+# Update: 2025-06-09 08:52
+# Source 90 (https://raw.githubusercontent.com/asdsadsddas123/freevpn/refs/heads/main/README.md), 3
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: end-gfw.com@jp19tian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: '9898'
+  server: 35.72.246.60
+  type: ss
+- name: end-gfw.com
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 35.72.246.60
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 'end-gfw.com #1'
+  network: ws
+  port: 6868
+  server: 35.72.246.60
+  servername: baidu.com
+  tls: false
+  type: vmess
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  ws-opts:
+    headers:
+      Host: end-gfw.com
+    path: /
