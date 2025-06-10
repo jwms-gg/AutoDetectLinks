@@ -1,6 +1,18 @@
-# Update: 2025-06-09 08:51
-# Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 3
+# Update: 2025-06-10 08:47
+# Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 4
 proxies:
+- name: 澳大利亚+V2CROSS.COM
+  network: ws
+  password: '123456'
+  port: 8443
+  server: 192.65.217.53
+  skip-cert-verify: true
+  sni: top-azx.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: top-azx.pages.dev
+    path: '%2FAz1.vpn.33.TOP%2F%3Fed%3D2560'
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
@@ -15,23 +27,23 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #2'
-  password: yijian0503
-  port: '443'
-  server: 43.203.225.190
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #1'
+  name: '美国 CloudFlare节点 #2'
   network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  tls: true
+  port: 80
+  server: 2sdfre3.999820.xyz
+  tls: false
   type: vmess
-  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
   ws-opts:
     headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
+      Host: 2sdfre3.999820.xyz
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- name: 12,13|台湾|@ripaojiedian
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  port: 443
+  server: hinet.mjt000.com
+  skip-cert-verify: false
+  sni: hinet.mjt000.com
+  type: trojan

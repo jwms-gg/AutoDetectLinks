@@ -1,22 +1,26 @@
-# Update: 2025-06-09 08:51
-# Source 40 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 2
+# Update: 2025-06-10 08:47
+# Source 40 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 3
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
+- cipher: aes-128-cfb
+  group: U1NSUHJvdmlkZXI
+  name: VEfpopHpgZNAc3R5bWVpMeS4qDM
+  obfs: http_post
+  obfs-param: bnVsbA
+  password: $$Turb0VPN$$
   port: '443'
-  server: hk2.lrzdx.uk
-  tls: true
-  type: vmess
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  ws-opts:
-    headers:
-      Host: hk2.lrzdx.uk
-    path: /register
+  protocol: auth_aes128_md5
+  protocol-param: bnVsbA
+  server: ssca.irundns.net
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: TG频道@stymei1丨17
+  password: 937f6b6168b6
+  port: '443'
+  server: 103.137.62.194
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #1'
+  name: '🇺🇸 _美国 #9'
   network: ws
   port: '2096'
   server: de01.sh-cloudflare.sbs

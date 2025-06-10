@@ -1,6 +1,14 @@
-# Update: 2025-06-09 08:51
-# Source 7 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 9
+# Update: 2025-06-10 08:47
+# Source 7 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 12
 proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: tg频道:@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 18.183.219.5
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 🇭🇰 香港2|@ripaojiedian
@@ -13,7 +21,7 @@ proxies:
     path: /simieepvt
     skip-cert-verify: false
     tls: true
-  port: 54778
+  port: 41099
   server: 121.127.231.217
   tfo: false
   type: ss
@@ -33,13 +41,40 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港7@ripaojiedian
+  port: 29992
+  server: 103.224.80.111
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c3659582-a6e0-45c2-92ec-3b4d8b240e07
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港8|@ripaojiedian
+  network: ws
+  port: 460
+  server: 9b53711d-sxlj40-szcxa1-dmd8.hkt.east.wctype.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2058bdd6-1505-11f0-a035-f23c95b6f51d
+  ws-opts:
+    headers:
+      Host: a605477178.m.ctrip.com
+    path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506070920094-XtwGcPhiXY.download.microsoft.com
+    host: 202506070920094-JZCkrm5A71.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -57,7 +92,7 @@ proxies:
     path: /matwnpkhug
     skip-cert-verify: false
     tls: true
-  port: 41952
+  port: 40990
   server: 43.226.17.11
   tfo: false
   type: ss
@@ -83,7 +118,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506070920094-XtwGcPhiXY.download.microsoft.com
+    host: 202506070920094-JZCkrm5A71.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
