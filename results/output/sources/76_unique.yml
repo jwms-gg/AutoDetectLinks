@@ -1,32 +1,32 @@
-# Update: 2025-06-10 08:47
+# Update: 2025-06-11 08:47
 # Source 76 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 9
 proxies:
 - alterId: 0
   cipher: auto
-  name: 节点日期：06-09
+  name: 中国【机场推荐：https://socks.news】21
   network: tcp
-  port: '30052'
-  server: 183.236.51.38
+  port: '51095'
+  server: 120.198.71.219
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 中国【机场推荐：https://socks.news】6
+  name: 中国【机场推荐：https://socks.news】12
   network: tcp
-  port: '41766'
-  server: 183.238.90.8
+  port: '52352'
+  server: 120.232.153.123
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 中国【机场推荐：https://socks.news】10
+  name: 中国【机场推荐：https://socks.news】13
   network: tcp
-  port: '46159'
-  server: 120.198.71.216
+  port: '49355'
+  server: 120.198.71.219
   servername: ''
   tls: false
   type: vmess
@@ -53,9 +53,9 @@ proxies:
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
-  name: 中国【机场推荐：https://socks.news】20
+  name: 中国【机场推荐：https://socks.news】10
   network: tcp
-  port: '59082'
+  port: '46159'
   server: 120.198.71.216
   servername: ''
   tls: false
@@ -63,28 +63,30 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 中国【机场推荐：https://socks.news】23
+  name: 中国【机场推荐：https://socks.news】28
   network: tcp
-  port: '39076'
-  server: 183.238.90.8
+  port: '49174'
+  server: 120.234.102.229
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 美国【机场推荐：https://socks.news】32
+- cipher: aes-256-gcm
+  name: 中国【机场推荐：https://socks.news】26
+  password: N4WB5VAL40S0WSH8
+  port: '15011'
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #10'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 154.83.2.54
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: '%2F'
-- name: 美国+Sprint网络
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.113.241
-  sni: trojan.burgerip.co.uk
-  type: trojan
+      Host: us01.sh-cloudflare.sbs
+    path: /

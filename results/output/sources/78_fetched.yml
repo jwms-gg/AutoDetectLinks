@@ -1,5 +1,5 @@
-# Update: 2025-06-10 08:47
-# Source 78 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 80
+# Update: 2025-06-11 08:47
+# Source 78 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 75
 proxies:
 - alterId: 2
   cipher: auto
@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- name: _US_美国_3
+- name: '_US_美国_3 #1'
   network: ws
   password: 15b24b56-d667-4fa8-b548-f3dc942fb461
   port: 443
@@ -126,7 +126,7 @@ proxies:
   uuid: eeafeff6-0adb-4cc7-93a8-15fbc65cddde
   ws-opts:
     path: /
-- name: _US_美国->🇫🇷_FR_法国
+- name: '_US_美国->🇫🇷_FR_法国 #1'
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
   port: 443
@@ -171,112 +171,86 @@ proxies:
   server: 125.141.26.12
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: _US_美国_1
-  password: 4QHLWJ3KNY7GIS40
-  port: 20007
-  server: 185.47.254.177
-  type: ss
-  udp: true
-- name: _US_美国_2
-  network: ws
-  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
-  port: 443
-  server: 104.21.15.232
+- alterId: 0
+  cipher: auto
+  name: _CN_中国_1 2
+  port: 17799
+  server: 62.60.229.38
   skip-cert-verify: true
-  sni: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: ed2d7357-4951-43e7-92d3-f880d2481ffe
+- alterId: 0
+  cipher: auto
+  name: _CN_中国->🇬🇧_GB_英国_1
+  port: 40550
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇬🇧_GB_英国_2
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
-    path: /4p35eUnmGxQ8YJFJxz
+      Host: v25.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: _CN_中国_2
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v37.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: _DE_德国->🇨🇳_CN_中国
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
+  name: _GB_英国
+  password: oHOP1bWFMkQVx3PdbhRlOk
+  port: 8315
+  server: 77.239.116.76
   type: ss
   udp: true
-- name: _CN_中国->🇩🇪_DE_德国
+- name: _CN_中国->🇺🇸_US_美国 2
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
+  port: 21179
   server: 120.233.44.201
   skip-cert-verify: true
-  sni: 120.233.44.201
+  sni: k30.tudou211.com
   type: trojan
   udp: true
-- name: _CN_中国->🇺🇸_US_美国_1 2
-  password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  port: 15229
-  server: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
-  skip-cert-verify: true
-  sni: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: _DE_德国->🇷🇺_RU_俄罗斯
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-  udp: true
-- name: _CN_中国->🇺🇸_US_美国_2
-  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
-  port: 15229
-  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
-  skip-cert-verify: true
-  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '_US_美国_3 2 #1'
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  type: ss
-  udp: true
-- name: _CN_中国->🇺🇸_US_美国_3
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: 15229
-  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  skip-cert-verify: true
-  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: _KR_韩国->🇺🇸_US_美国
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: _SE_瑞典->🇨🇳_CN_中国
+  name: _CN_中国->🇨🇦_CA_加拿大 2
   network: ws
-  port: 80
-  server: 185.146.173.25
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 46181c32-8c82-413a-b836-8375e5e513eb
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _NL_荷兰->🇺🇸_US_美国 2
-  network: ws
-  port: 20055
-  server: 45.147.201.231
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3a9a3f3f-4480-41b1-a21d-57a6fa958f7b
-  ws-opts:
-    path: /
+    headers:
+      Host: v8.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 日本(nodeshare.xyz免费节点)_1
   password: Nk9asglDzHzjktVzTkvhaA

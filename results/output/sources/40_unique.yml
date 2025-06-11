@@ -1,6 +1,19 @@
-# Update: 2025-06-10 08:47
-# Source 40 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 3
+# Update: 2025-06-11 08:47
+# Source 40 (https://raw.githubusercontent.com/mfuu/v2ray/master/merge/merge_base64.txt), 5
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: cf.fovi.tk
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxpol.fovi.tk
+    path: /eisasqa
 - cipher: aes-128-cfb
   group: U1NSUHJvdmlkZXI
   name: VEfpopHpgZNAc3R5bWVpMeS4qDM
@@ -18,16 +31,23 @@ proxies:
   port: '443'
   server: 103.137.62.194
   type: ss
+- name: '15|US_speednode_0065 #1'
+  password: 0bf83a1d-f785-487a-a479-3c3de2566ba6
+  port: 443
+  server: 172.67.204.120
+  skip-cert-verify: false
+  sni: VV.890603.xyZ
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 _美国 #9'
+  name: '🇺🇸 _美国 #8'
   network: ws
-  port: '2096'
-  server: de01.sh-cloudflare.sbs
+  port: '8443'
+  server: us01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8
+  uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a
   ws-opts:
     headers:
-      Host: de01.sh-cloudflare.sbs
+      Host: us01.sh-cloudflare.sbs
     path: /

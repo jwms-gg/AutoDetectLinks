@@ -1,67 +1,26 @@
-# Update: 2025-06-10 08:47
-# Source 8 (https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml), 28
+# Update: 2025-06-11 08:47
+# Source 8 (https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml), 22
 proxies:
-- name: 'BG_speednode_0001 #2'
-  network: ws
-  port: 8880
-  server: 147.78.140.20
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 2
-  cipher: auto
-  name: CN_speednode_0003
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-a.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
+- cipher: aes-256-gcm
   name: CN_speednode_0005
-  network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+  password: b3f793d1-8054-4651-aec6-b3d6837571de
+  port: 15923
+  server: gzbgp.098999.xyz
+  type: ss
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- name: DE_speednode_0007
-  network: ws
-  port: 8880
-  server: 45.80.111.20
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
+- cipher: dummy
+  name: CN_speednode_0007
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: 44003
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: aieq.mt.mt5888.top
+  type: ssr
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
 - client-fingerprint: chrome
-  name: DE_speednode_0008
+  name: DE_speednode_0011
   network: ws
   port: 443
   server: 5.39.249.146
@@ -75,8 +34,7 @@ proxies:
     headers:
       Host: 0926.qiang2000.link
     path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
-- client-fingerprint: chrome
-  name: FI_speednode_0009
+- name: FI_speednode_0012
   network: ws
   port: 443
   server: 77.221.159.70
@@ -89,208 +47,26 @@ proxies:
   ws-opts:
     headers:
       Host: 0926.qiang2000.link
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
-- name: FI_speednode_0010
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2
+- alterId: 2
+  cipher: auto
+  name: HK_speednode_0016
+  network: ws
+  port: 460
+  server: 9a6be8fa-sxhts0-sxkcyq-b4pt.hkt.east.wctype.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  ws-opts:
+    headers:
+      Host: a605477178.m.ctrip.com
+    path: /
+- name: JP_speednode_0021
   network: ws
   port: 443
-  server: 77.221.159.70
-  servername: 0926.qiang2000.link
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  ws-opts:
-    headers:
-      Host: 0926.qiang2000.link
-    path: /Telegram🇨🇳@WangCai2
-- name: GB_speednode_0011
-  network: ws
-  port: 8880
-  server: 25.129.197.19
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /telegram🇨🇳 @pgkj666 /?ed=2560
-- name: GB_speednode_0012
-  network: ws
-  port: 8880
-  server: 91.193.58.4
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0013
-  network: ws
-  port: 8880
-  server: 91.193.58.108
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0014
-  network: ws
-  port: 8880
-  server: 91.193.58.79
-  servername: us.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0015
-  network: ws
-  port: 8880
-  server: 91.193.58.64
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0016
-  network: ws
-  port: 8880
-  server: 91.193.58.63
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0017
-  network: ws
-  port: 8880
-  server: 91.193.58.245
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0018
-  network: ws
-  port: 8880
-  server: 91.193.58.65
-  servername: us.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0019
-  network: ws
-  port: 8880
-  server: 91.193.58.184
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0020
-  network: ws
-  port: 8880
-  server: 91.193.58.172
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- name: GB_speednode_0021
-  network: ws
-  port: 8880
-  server: 91.193.58.78
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /
-- client-fingerprint: chrome
-  name: GG_speednode_0022
-  network: ws
-  port: 443
-  server: 213.163.200.215
-  servername: pasindu.vpnhub.news
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 12d6eb6c-7fe7-4d13-9587-3bb9fda1bd28
-  ws-opts:
-    headers:
-      Host: pasindu.vpnhub.news
-    path: /
-- name: HK_speednode_0023
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @pgkj666 /?ed=2560
-- name: KR_speednode_0029
-  network: ws
-  port: 30060
-  server: 183.96.245.165
+  server: 141.147.185.15
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -300,14 +76,98 @@ proxies:
   ws-opts:
     headers:
       Host: steep.skyfigure.top
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- client-fingerprint: chrome
-  name: NL_speednode_0030
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: JP_speednode_0022
   network: ws
   port: 443
-  server: 91.201.113.193
-  servername: 0926.qiang2000.link
+  server: 150.66.0.85
+  servername: steep.skyfigure.top
   skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: KR_speednode_0023
+  network: ws
+  port: 21789
+  server: 183.100.144.36
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 'KR_speednode_0024 #1'
+  network: ws
+  port: 443
+  server: 158.179.171.53
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: SG_speednode_0029
+  network: ws
+  port: 28983
+  server: 146.235.19.79
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: SG_speednode_0030
+  network: ws
+  port: 443
+  server: 160.22.79.221
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: SG_speednode_0031
+  network: ws
+  port: 443
+  server: 160.22.79.120
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- client-fingerprint: chrome
+  name: SG_speednode_0032
+  network: ws
+  port: 443
+  server: 164.52.2.99
+  servername: 0926.qiang2000.link
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -315,23 +175,9 @@ proxies:
   ws-opts:
     headers:
       Host: 0926.qiang2000.link
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
-- name: RU_speednode_0031
-  network: ws
-  port: 8880
-  server: 5.182.84.20
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
+    path: /Telegram@WangCai2/?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: TW_speednode_0035
+  name: TW_speednode_0034
   password: 937f6b6168b6
   plugin: v2ray-plugin
   plugin-opts:
@@ -344,59 +190,115 @@ proxies:
   server: 103.137.62.194
   type: ss
   udp: true
-- name: US_speednode_0043
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  servername: Aparatay.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 15face3d-979a-40e5-fcbe-62b82a46aed4
-  ws-opts:
-    headers:
-      Host: Aparatay.com
-    path: /tel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
-- name: US_speednode_0044
+- name: US_speednode_0035
   network: ws
   port: 8880
-  server: 69.84.182.29
-  servername: hk.laoyoutiao.link
+  server: 108.162.195.20
+  servername: ip.langmanshanxi.top
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
-    path: /
-- name: US_speednode_0045
+      Host: ip.langmanshanxi.top
+    path: /Telegram@WangCai2/?ed=2560
+- name: US_speednode_0052
   network: ws
   port: 80
-  server: 141.193.213.190
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
+  server: speedtest.net
+  servername: foffmelo.com
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 7cccefc2-6e9b-47bb-f30c-ea2d3cdc8593
   ws-opts:
     headers:
-      Host: cs.laoyoutiao.link
+      Host: foffmelo.com
+    path: /olem/ws?ed=1024
+- client-fingerprint: chrome
+  name: US_speednode_0059
+  network: ws
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /
-- name: US_speednode_0049
+- name: US_speednode_0060
+  network: ws
+  port: 8880
+  server: 104.21.69.44
+  servername: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: da3fca59-74f6-43b8-87e1-7970587de887
+  ws-opts:
+    headers:
+      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: /?ed=2048
+- name: US_speednode_0061
   network: ws
   port: 80
-  server: 162.251.82.187
-  servername: my-mail-management-pr0-git-land-manager.clients-github.com
+  server: 151.101.2.228
+  servername: foffmelo.com
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 8c9a892c-e9d5-4fff-bfdb-8ef9c50272b1
+  uuid: 7cccefc2-6e9b-47bb-f30c-ea2d3cdc8593
   ws-opts:
     headers:
-      Host: my-mail-management-pr0-git-land-manager.clients-github.com
-    path: /58834/mail-template
+      Host: foffmelo.com
+    path: /olem/ws
+- name: US_speednode_0064
+  network: ws
+  port: 443
+  server: 64.188.97.173
+  servername: europeless.duckdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 524ef193-d0ee-4f6b-bf0b-1ab15a76cc9a
+  ws-opts:
+    headers:
+      Host: europeless.duckdns.org
+    path: /getupdates
+- name: US_speednode_0065
+  network: ws
+  password: 0bf83a1d-f785-487a-a479-3c3de2566ba6
+  port: 443
+  server: 172.67.204.120
+  skip-cert-verify: false
+  sni: VV.890603.xyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: VV.890603.xyZ
+    path: /xJXdWGMbbZovkcaL2SsGTGxE
+- name: US_speednode_0066
+  network: ws
+  port: 443
+  server: hostone-sg.zdsa.me
+  servername: hostone-sg.zdsa.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43ef1f94-978f-4539-ba01-1e6005859950
+  ws-opts:
+    headers:
+      Host: hostone-sg.zdsa.me
+    path: /

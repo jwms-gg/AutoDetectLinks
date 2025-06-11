@@ -1,9 +1,9 @@
-# Update: 2025-06-10 08:47
-# Source 69 (https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/combine.yaml), 164
+# Update: 2025-06-11 08:47
+# Source 69 (https://raw.githubusercontent.com/ronghuaxueleng/get_v2/main/pub/combine.yaml), 166
 proxies:
 - alterId: 2
   cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #5'
   network: ws
   port: 30836
   server: v36.heduian.link
@@ -32,14 +32,14 @@ proxies:
   type: vmess
   uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_1 #2'
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国_1 #1'
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41068
   server: zz5.fgmcx.top
   type: ss
 - alterId: 0
   cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_2 #2'
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国_2 #1'
   network: tcp
   port: 5228
   server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
@@ -47,7 +47,7 @@ proxies:
   uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国_3 #1'
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   network: tcp
   port: 5229
   server: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
@@ -206,7 +206,7 @@ proxies:
     path: /s15.html
 - alterId: 2
   cipher: auto
-  name: '🇨🇳_CN_中国->🇨🇦_CA_加拿大 #2'
+  name: '🇨🇳_CN_中国->🇨🇦_CA_加拿大 #5'
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -723,6 +723,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 2|🇺🇸11 |  1.7MB/s
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
 - alterId: 0
   cipher: auto
   name: 2,13|台湾|@ripaojiedian
@@ -821,7 +838,7 @@ proxies:
   type: vmess
   uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
 - cipher: aes-256-cfb
-  name: 12|tg频道:@ripaojiedian
+  name: '12|tg频道:@ripaojiedian #1'
   password: amazonskr05
   port: 443
   server: 18.246.215.6
@@ -835,7 +852,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: '12|🇭🇰 香港2|@ripaojiedian #1'
   password: be443689-bc64-49ff-85a5-8eecaa2235d3
   port: 41049
   server: hk2.fgmcx.top
@@ -850,7 +867,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: '12|🇭🇰 香港5|@ripaojiedian #1'
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -903,7 +920,7 @@ proxies:
       Host: fadawtawd.zhangwei.li
     path: /zh-cn
 - cipher: rc4-md5
-  name: 12|🇯🇵 日本|@ripaojiedian
+  name: '12|🇯🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -915,7 +932,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|🇯🇵 日本2|@ripaojiedian
+  name: '12|🇯🇵 日本2|@ripaojiedian #1'
   port: 23919
   server: hzz9.fgmcx.top
   skip-cert-verify: false
@@ -973,15 +990,31 @@ proxies:
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - cipher: chacha20-ietf-poly1305
-  name: 12|🇸🇬 新加坡2|@ripaojiedian
+  name: '12|🇸🇬 新加坡2|@ripaojiedian #1'
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 13203
   server: gg21.hangfengjiasu.com
   tfo: false
   type: ss
+- alterId: 2
+  cipher: auto
+  name: '12,13|美国|@ripaojiedian #1'
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: '12|🇺🇸 美国2|@ripaojiedian #1'
   port: 23903
   server: usz1.fgmcx.top
   skip-cert-verify: false
@@ -991,7 +1024,7 @@ proxies:
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - alterId: 2
   cipher: auto
-  name: 12,13|美国3|@ripaojiedian
+  name: '12,13|美国3|@ripaojiedian #1'
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -1039,7 +1072,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13|香港5|@ripaojiedian
+  name: '13|香港5|@ripaojiedian #1'
   network: ws
   port: 46003
   server: cloudgd.coemn.com
@@ -1061,16 +1094,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-- alterId: 64
-  cipher: auto
-  name: 13|香港7|@ripaojiedian
-  network: tcp
-  port: 36609
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 13|日本2|@ripaojiedian
@@ -1330,7 +1353,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 🇨🇳 广东省湛江市 移动
+  name: '🇨🇳 广东省湛江市 移动 #2'
   port: 35001
   server: 120.198.71.216
   tls: false
@@ -1362,7 +1385,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '🇺🇸 美国 CloudFlare节点 #3'
+  name: '🇺🇸 美国 CloudFlare节点 #4'
   network: ws
   port: 443
   server: 104.21.15.36
@@ -1422,3 +1445,17 @@ proxies:
     headers:
       Host: 1g.890699.xyZ
     path: /lXENb74xF4ylXngZ
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇺🇸 美国 CloudFlare节点 6
+  network: ws
+  port: 443
+  server: hk2.lrzdx.uk
+  tls: true
+  type: vmess
+  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  ws-opts:
+    headers:
+      Host: hk2.lrzdx.uk
+    path: /register
