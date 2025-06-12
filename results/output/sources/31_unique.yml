@@ -1,21 +1,33 @@
-# Update: 2025-06-11 08:47
-# Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 4
+# Update: 2025-06-22 08:54
+# Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 5
 proxies:
-- name: 美国+Cloudinnovation数据中心
+- name: 美国+CloudFlare节点
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2096
-  server: 154.83.2.54
+  server: 104.17.128.1
   skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
+  sni: vle.amclubdns.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
+      Host: vle.amclubdns.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
     path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #3'
+  name: '美国 CloudFlare节点 #1'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -29,27 +41,27 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
-  port: 80
-  server: 2sdfre3.999820.xyz
-  tls: false
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
-  ws-opts:
-    headers:
-      Host: 2sdfre3.999820.xyz
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #7'
+  name: '美国 CloudFlare节点 #2'
   network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
+  uuid: 16c09798-7b2a-46ec-993c-7e24aad20ce8
   ws-opts:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: bluehost.com
+  tls: true
+  type: vmess
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  ws-opts:
+    headers:
+      Host: cdntr2.digisport.shop
+    path: /19544

@@ -1,5 +1,5 @@
-# Update: 2025-06-11 08:47
-# Source 18 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/all.yaml?ref_type=heads), 141
+# Update: 2025-06-22 08:54
+# Source 18 (https://gitlab.com/colloq168/nodefiltrate/-/raw/main/all.yaml?ref_type=heads), 146
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -241,6 +241,18 @@ proxies:
   tls: true
   type: http
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- down: ''
+  fingerprint: ''
+  name: 🇫🇷法国4 | ⬇️ 1.1MB/s|15%|Openai
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: '4489'
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
 - alterId: 0
   cipher: auto
   name: 🇫🇷法国5 | ⬇️ 2.1MB/s|100%|Openai
@@ -372,6 +384,24 @@ proxies:
   xudp: true
 - alpn:
   - http/1.1
+  name: 🇺🇸美国29 | ⬇️ 2.5MB/s|50%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.163.14
+  servername: 1QQsSS.2031.PP.UA
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      Host: 1qqsss.2031.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /XcQF058rNJ3gc4aj
+  xudp: true
+- alpn:
+  - http/1.1
   name: 🇺🇸美国30 | ⬇️ 1.6MB/s|Openai
   network: ws
   port: '443'
@@ -406,13 +436,24 @@ proxies:
         like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /
   xudp: true
-- cipher: aes-256-gcm
-  name: 🇫🇷法国10 | ⬇️ 4.6MB/s|36%|Openai
-  password: PqJc89bEJnYJ-3mFetkZRQ
-  port: '20'
-  server: ss.sps1.sbs
-  type: ss
+- alpn:
+  - http/1.1
+  name: 🇺🇸美国31 | ⬇️ 1.5MB/s|Openai
+  network: ws
+  port: '443'
+  server: 172.67.208.155
+  servername: 2werty.2030.pp.ua
+  tls: true
+  type: vless
   udp: true
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  ws-opts:
+    headers:
+      Host: 2werty.2030.pp.ua
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /ok1UBnf7txQ8YJFJxz
+  xudp: true
 - name: 🇺🇸美国32 | ⬇️ 5.2MB/s|Openai
   port: 443
   server: f8f8fe13-sw1z40-swy6li-tni2.sv.plebai.net
@@ -637,6 +678,23 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: /Telegram🇨🇳 @WangCai2 /?ed
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸美国52 | ⬇️ 5.9MB/s|29%|Openai
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
   xudp: true
 - client-fingerprint: chrome
   name: 🇰🇷韩国1 | ⬇️ 4.9MB/s|61%|Disney|...
@@ -930,6 +988,21 @@ proxies:
         like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /?ed=2560security=tls
   xudp: true
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇺🇸美国64 | ⬇️ 3.7MB/s|55%|Openai
+  network: tcp
+  port: '443'
+  server: 15.204.145.23
+  servername: 147135001178.sec22org.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+  xudp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -1073,6 +1146,21 @@ proxies:
     path: /re5IzbZ9IZZMddtw
   xudp: true
 - client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇺🇸美国73 | ⬇️ 5.0MB/s|55%|Openai
+  network: tcp
+  port: '443'
+  server: 135.148.142.30
+  servername: 147135010072.sec21org.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+  xudp: true
+- client-fingerprint: chrome
   name: 🇺🇸美国74 | ⬇️ 5.1MB/s|46%|Openai...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: '15229'
@@ -1196,6 +1284,21 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
         Chrome/70.0.3538.102 Safari/537.36
     path: /dRTvoZIiPpwkqKrjE
+  xudp: true
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇺🇸美国79 | ⬇️ 5.1MB/s|55%|Openai
+  network: tcp
+  port: '443'
+  server: 51.81.37.20
+  servername: 147135010072.sec21org.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
   xudp: true
 - alterId: 0
   cipher: auto
@@ -1708,22 +1811,6 @@ proxies:
   server: 54.218.227.44
   tfo: false
   type: ss
-- delay: 2606
-  name: 🇫🇷法国22 | ⬇️ 5.5MB/s|15%|Openai
-  network: ws
-  port: 8080
-  server: tgju.org
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  type: vless
-  udp: true
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      Host: IO.IhJtq0hklC.ZULAiR.OrG.
-      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
-        Chrome/v1.0.0 Safari/538.1
-    path: /
-  xudp: true
 - delay: 1704
   name: 🇯🇵日本4 | ⬇️ 1.7MB/s|20%|Netflix...
   network: ws

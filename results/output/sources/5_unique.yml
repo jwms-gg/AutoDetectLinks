@@ -1,48 +1,51 @@
-# Update: 2025-06-11 08:47
+# Update: 2025-06-22 08:54
 # Source 5 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
 proxies:
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国_1
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: tcp
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  port: 15229
-  server: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
-  sni: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
-  type: trojan
-- name: 🇺🇸_US_美国_7
-  network: ws
-  password: 0bf83a1d-f785-487a-a479-3c3de2566ba6
-  port: 443
-  server: 172.67.204.120
-  skip-cert-verify: false
-  sni: VV.890603.xyZ
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: VV.890603.xyZ
-    path: /xJXdWGMbbZovkcaL2SsGTGxE
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  sni: k28.tudou211.com
-  type: trojan
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  name: 🇨🇳_CN_中国
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30835
+  server: v35.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v8.heduian.link
+      host: v35.heduian.link
     path: /oooo
+- name: '🇺🇸_US_美国 #1'
+  network: ws
+  password: 03e92910-34b1-4245-ac63-04a865f43cd5
+  port: 443
+  server: 104.21.84.242
+  sni: 3ERt.4444916.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 3ert.4444916.xyz
+    path: /bi35bFWoRrnPhIJoo2wcE6Q
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: ws
+  port: 30825
+  server: 111.26.109.79
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v25.heduian.link
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺_RU_俄罗斯
+  password: WTW3IKzimgbaBa0jELvP7R
+  port: 34218
+  server: 62.133.60.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳_CN_中国->🇵🇱_PL_波兰
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss

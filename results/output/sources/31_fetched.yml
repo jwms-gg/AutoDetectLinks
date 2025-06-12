@@ -1,34 +1,33 @@
-# Update: 2025-06-11 08:47
+# Update: 2025-06-22 08:54
 # Source 31 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 14
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 2082
-  server: 172.67.214.33
-  tls: false
-  type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-  ws-opts:
-    headers:
-      Host: cs.flha.ru
-    path: /
-- name: 美国+Cloudinnovation数据中心
+- name: 美国+CloudFlare节点
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2096
-  server: 154.83.2.54
+  server: 104.17.128.1
   skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
+  sni: vle.amclubdns.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
+      Host: vle.amclubdns.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
     path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #3'
+  name: '美国 CloudFlare节点 #1'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -40,89 +39,59 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
-  port: 80
-  server: 2sdfre3.999820.xyz
-  tls: false
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
-  ws-opts:
-    headers:
-      Host: 2sdfre3.999820.xyz
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-- alterId: 0
-  cipher: auto
-  name: 美国 加利福尼亚州圣何塞PEG TECH
-  network: tcp
-  port: 57118
-  server: 142.4.119.72
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 英国+V2CROSS.COM
-  password: oHOP1bWFMkQVx3PdbhRlOk
-  port: '8315'
-  server: 77.239.116.76
-  type: ss
 - cipher: aes-256-cfb
-  name: '2|🌀3-SK |  5.0MB/s|0%|Youtube|... #1'
+  name: 2|🌀3-SK |  5.0MB/s|0%|Youtube|...
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 156.146.40.194
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '2|🌀4-TH |  2.6MB/s|55%|Netflix... #1'
-  network: ws
-  port: 443
-  server: 38.47.96.30
-  tls: true
-  type: vmess
-  uuid: 164a6ad0-476a-4bae-b78f-a3d37cf0f414
-  ws-opts:
-    headers:
-      Host: th.lzj520hxw.dpdns.org
-    path: /lzjjj
 - cipher: aes-256-cfb
-  name: '2|🇰🇷2 |  1.5MB/s|44%|Openai #1'
+  name: 2|🇰🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: '15098'
   server: 125.141.31.72
   type: ss
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #7'
+  name: 俄罗斯 莫斯科JustHost
+  network: ws
+  port: 23105
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: bf00ec1d-a900-4d38-8ea9-37c8391a37fe
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: 13|韩国3|@ripaojiedian
+  password: qwerREWQ@@
+  port: '5344'
+  server: 125.141.26.14
+  type: ss
+- cipher: aes-256-cfb
+  name: 12|🇰🇷 韩国3|@ripaojiedian
+  password: qwerREWQ@@
+  port: '5344'
+  server: 125.141.26.14
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
   network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
   tls: true
   type: vmess
-  uuid: 82cfa018-72d8-464e-9973-ce37fb4ad938
+  uuid: 16c09798-7b2a-46ec-993c-7e24aad20ce8
   ws-opts:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- cipher: aes-256-cfb
-  name: '13|tg频道:@ripaojiedian #2'
-  password: qawszxc123
-  port: '443'
-  server: 13.229.50.252
-  type: ss
-- cipher: aes-256-cfb
-  name: '14|tg频道:@ripaojiedian #1 #1'
-  password: qawszxc123
-  port: '443'
-  server: 13.229.50.252
-  type: ss
 - alterId: 0
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: '2|🇩🇪5 |  1.4MB/s|0%|Youtube|Op... #1'
+  name: 2|🇩🇪5 |  1.4MB/s|0%|Youtube|Op...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -132,7 +101,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: '2|🇭🇰1 |  1.8MB/s|15%|Disney|Yo... #1'
+  name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yo...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -143,3 +112,44 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 12,13|美国|@ripaojiedian
+  network: ws
+  port: '80'
+  server: SssssssW.222560.XYz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 393b1061-d615-459a-8616-3f9447bdff5a
+  ws-opts:
+    headers:
+      Host: sssssssw.222560.xyz
+    path: /iXfi0mMmPYp9UA6Y34zWUk6JUQ
+- alterId: 0
+  cipher: auto
+  name: 12,13|美国3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: iIiiI8.222560.xYZ
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 393b1061-d615-459a-8616-3f9447bdff5a
+  ws-opts:
+    headers:
+      Host: iiiii8.222560.xyz
+    path: /iXfi0mMmPYp9UA6Y34zWUk6JUQ
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: bluehost.com
+  tls: true
+  type: vmess
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  ws-opts:
+    headers:
+      Host: cdntr2.digisport.shop
+    path: /19544
