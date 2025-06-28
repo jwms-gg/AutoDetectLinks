@@ -187,7 +187,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
         }
         if parsed.query:
             for kv in parsed.query.split("&"):
-                k, v = kv.split("=", 1)
+                k, v = (kv, "") if kv == "" else kv.split("=", 1)
                 if k in ("allowInsecure", "insecure"):
                     data["skip-cert-verify"] = v != "0"
                 elif k == "sni":
@@ -223,7 +223,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
         data["tls"] = False
         if parsed.query:
             for kv in parsed.query.split("&"):
-                k, v = kv.split("=", 1)
+                k, v = (kv, "") if kv == "" else kv.split("=", 1)
                 if k in ("allowInsecure", "insecure"):
                     data["skip-cert-verify"] = v != "0"
                 elif k == "sni":
@@ -320,7 +320,7 @@ def v2ray_to_clash(proxy: str) -> Dict[str, Any]:
             data["name"] = proxy
         if parsed.query:
             for kv in parsed.query.split("&"):
-                k, v = kv.split("=", 1)
+                k, v = (kv, "") if kv == "" else kv.split("=", 1)
                 if k == "tls":
                     data["tls"] = v != "0"
 

@@ -356,33 +356,33 @@ def unique_sources(sources: list[Source]):
             if not net:
                 pass
             elif net == "ws":
-                path += json.dumps(data.get("ws-opts", {}))
+                path += json.dumps(data.get("ws-opts", {}), sort_keys=True)
             elif net == "h2":
-                path += json.dumps(data.get("h2-opts", {}))
+                path += json.dumps(data.get("h2-opts", {}), sort_keys=True)
             elif net == "grpc":
-                path += json.dumps(data.get("grpc-opts", {}))
+                path += json.dumps(data.get("grpc-opts", {}), sort_keys=True)
         elif type == "ss":
-            path = json.dumps(data.get("plugin-opts", {}))
+            path = json.dumps(data.get("plugin-opts", {}), sort_keys=True)
         elif type == "ssr":
-            path = json.dumps(data.get("obfs-param", {}))
+            path = json.dumps(data.get("obfs-param", {}), sort_keys=True)
         elif type == "trojan":
             path = data.get("sni", "") + ":"
             net: str = data.get("network", "")
             if not net:
                 pass
             elif net == "ws":
-                path += json.dumps(data.get("ws-opts", {}))
+                path += json.dumps(data.get("ws-opts", {}), sort_keys=True)
             elif net == "grpc":
-                path += json.dumps(data.get("grpc-opts", {}))
+                path += json.dumps(data.get("grpc-opts", {}), sort_keys=True)
         elif type == "vless":
             path = data.get("sni", "") + ":"
             net: str = data.get("network", "")
             if not net:
                 pass
             elif net == "ws":
-                path += json.dumps(data.get("ws-opts", {}))
+                path += json.dumps(data.get("ws-opts", {}), sort_keys=True)
             elif net == "grpc":
-                path += json.dumps(data.get("grpc-opts", {}))
+                path += json.dumps(data.get("grpc-opts", {}), sort_keys=True)
         elif type == "hysteria2":
             path = data.get("sni", "") + ":"
             path += data.get("obfs-password", "") + ":"
