@@ -480,24 +480,6 @@ def statistics_sources(sources: list[Source]):
 
     logger.info(f"Writing out statistics of sources fetched:\n{out}")
 
-
-def write_rules_fragments(rules: dict):
-    snippets: dict[str, list[str]] = {}
-    name_map = settings.name_map
-    for rpolicy in name_map.values():
-        snippets[rpolicy] = []
-    for config_rule, rpolicy in rules.items():
-        if "," in rpolicy:
-            rpolicy = rpolicy.split(",")[0]
-        if rpolicy in name_map:
-            snippets[name_map[rpolicy]].append(config_rule)
-    for name, payload in snippets.items():
-        with open(
-            f"{settings.output_dir}/" + name + ".yml", "w", encoding="utf-8"
-        ) as f:
-            yaml.dump({"payload": payload}, f, allow_unicode=True)
-
-
 def check_nodes(save_name_prefix: str, nodes: list[dict[str, Any]]):
     logger.info(f"Checking {len(nodes)} nodes for {save_name_prefix}...")
     write_result(
@@ -564,58 +546,63 @@ def main():
         [all_alives[i : i + part_size] for i in range(0, part_size * 3, part_size)]
     ):
         write_sub(f"{settings.output_dir}/all_{i}.yml", part)
+        write_sub(f"{settings.output_dir}/all_{i}_qichiyun.yml", part, template = "qichiyun.yml")
 
     logger.info("Fetching all proxies done.")
 
 
-def write_sub(file_name: str, nodes: list[dict[str, Any]]):
-    logger.info(f"Prepare to write out proxies{len(nodes)} to {file_name}...")
+def write_sub(file_name: str, nodes: list[dict[str, Any]], template: str = "config.yml"):
+    logger.info(f"Prepare to write out proxies{len(nodes)} to {file_name} with template {template}...")
     if not nodes:
         logger.warning("No nodes to write out.")
         return
 
-    logger.info("Categorize nodes by region...")
-
-    # Initialize the dictionary to hold categorized nodes
-    regional_node_dict: dict[str, list[dict[str, Any]]] = {ctg: [] for ctg in settings.region_map}
-
-    # Iterate over each node in the nodes list
-    for node in nodes:
-        # Determine region category for the current node
-        possible_regions: list[str] = []
-        for k, region_keys in settings.region_map.items():
-            for region_key in region_keys:
-                if region_key in node["name"]:
-                    possible_regions.append(k)
-                    break
-            # If the node has been categorized and the last key is "OVERALL", stop further checks
-            if possible_regions and region_keys[-1] == "OVERALL":
-                break
-
-        # If the node belongs to exactly one category, add it to the corresponding list
-        if len(possible_regions) == 1:
-            regional_node_dict[possible_regions[0]].append(clash_data(node))
-
     logger.info("Read clash config template...")
-    config: dict[str, Any] = read_yaml("template/config.yml")
-    config["proxies"] = [clash_data(n) for n in nodes]
+    config: dict[str, Any] = read_yaml(f"template/{template}")
+    config_proxies: list[str] = config["proxies"]
+    config_proxies.extend([clash_data(n) for n in nodes])
+    match template:
+        case "qichiyun.yml":
+            logger.info("No extra handling steps for template qichiyun.yml")
+        case _:
+            logger.info("Categorize nodes by region...")
 
-    node_names: set[str] = {n["name"] for n in nodes}
-    for g in config["proxy-groups"]:
-        if not g["proxies"]:
-            g["proxies"] = list(node_names)
+            # Initialize the dictionary to hold categorized nodes
+            regional_node_dict: dict[str, list[dict[str, Any]]] = {ctg: [] for ctg in settings.region_map}
 
-    config["proxy-groups"][-1]["proxies"] = [] # 🗺️ 选择地区
-    region_proxies: list[str] = config["proxy-groups"][-1]["proxies"]
-    manual_group: dict[str, Any] = config["proxy-groups"][3].copy() # ✅ 手动选择
+            # Iterate over each node in the nodes list
+            for node in nodes:
+                # Determine region category for the current node
+                possible_regions: list[str] = []
+                for k, region_keys in settings.region_map.items():
+                    for region_key in region_keys:
+                        if region_key in node["name"]:
+                            possible_regions.append(k)
+                            break
+                    # If the node has been categorized and the last key is "OVERALL", stop further checks
+                    if possible_regions and region_keys[-1] == "OVERALL":
+                        break
 
-    for k, v in regional_node_dict.items():
-        if k in settings.region_names:
-            dup = manual_group.copy()
-            dup["name"] = settings.region_names[k]
-            dup["proxies"] = ["REJECT"] if not v else [_["name"] for _ in v]
-            config["proxy-groups"].append(dup)
-            region_proxies.append(dup["name"])  # Add a region group
+                # If the node belongs to exactly one category, add it to the corresponding list
+                if len(possible_regions) == 1:
+                    regional_node_dict[possible_regions[0]].append(clash_data(node))
+
+            node_names: set[str] = {n["name"] for n in nodes}
+            for g in config["proxy-groups"]:
+                if not g["proxies"]:
+                    g["proxies"] = list(node_names)
+
+            config["proxy-groups"][-1]["proxies"] = [] # 🗺️ 选择地区
+            region_proxies: list[str] = config["proxy-groups"][-1]["proxies"]
+            manual_group: dict[str, Any] = config["proxy-groups"][3].copy() # ✅ 手动选择
+
+            for k, v in regional_node_dict.items():
+                if k in settings.region_names:
+                    dup = manual_group.copy()
+                    dup["name"] = settings.region_names[k]
+                    dup["proxies"] = ["REJECT"] if not v else [_["name"] for _ in v]
+                    config["proxy-groups"].append(dup)
+                    region_proxies.append(dup["name"])  # Add a region group
 
     write_result(
         file_name,
