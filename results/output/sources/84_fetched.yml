@@ -1,24 +1,19 @@
-# Update: 2025-06-29 08:56
-# Source 84 (http://brovee.myds.me:12580/clash/proxies), 52
+# Update: 2025-07-04 00:05
+# Source 84 (http://brovee.myds.me:12580/clash/proxies), 60
 proxies:
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳 CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇳 CN_02 |51.55Mb
-  network: tcp
-  port: 50007
-  server: 112.132.215.34
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇭CH
+  name: ' | 1.39Mb'
+  password: M-nffO40KlclwbCX9CV1DQ
+  port: 1080
+  server: 138.124.115.157
+  type: ss
 - alterId: 64
   cipher: auto
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_03 |46.82Mb
+  name: 🇨🇳 CN_03 |67.98Mb
   network: tcp
   port: 59003
   server: 183.236.51.36
@@ -30,7 +25,7 @@ proxies:
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_04 |23.35Mb
+  name: 🇨🇳 CN_05 |74.36Mb
   network: tcp
   port: 50002
   server: 47.92.152.169
@@ -42,7 +37,7 @@ proxies:
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_05 |27.12Mb
+  name: 🇨🇳 CN_06 | 5.95Mb
   network: tcp
   port: 50002
   server: 120.26.55.225
@@ -54,10 +49,11 @@ proxies:
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_06 |24.66Mb
+  name: 🇨🇳 CN_07 | 6.35Mb
   network: tcp
   port: 50002
-  server: 47.104.186.133
+  server: 112.132.215.12
+  servername: ury-unit-c030ehei8.poget71138.workers.dev
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -66,77 +62,20 @@ proxies:
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_07 |54.86Mb
+  name: 🇨🇳 CN_08 |60.94Mb
   network: tcp
   port: 50002
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
+  server: 47.104.186.133
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
   country: 🇨🇳CN
-  name: Relay_🇨🇳CN-🇹🇼TW_08 | 1.57Mb
+  name: Relay_ | 9.67Mb
   password: dwz1GtF7
   port: 30015
   server: 120.233.128.98
   type: ss
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇨🇳CN-🇺🇸US_10 | 1.32Mb
-  network: tcp
-  port: 43491
-  server: 120.232.153.41
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇨🇳CN-🇺🇸US_11 | 1.76Mb
-  network: ws
-  port: 30829
-  server: 111.26.109.79
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇳CN_12
-  network: tcp
-  port: 45407
-  server: fg.fxlcn.com
-  servername: fg.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇨🇳CN-🇺🇸US_13 | 1.87Mb
-  network: ws
-  port: 30807
-  server: 111.26.109.79
-  servername: ocbc.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      HOST: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   country: 🇨🇳CN
@@ -150,39 +89,71 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: Pool_🇨🇳CN_17 | 1.69Mb
+  network: ws
+  port: 31001
+  server: 45.58.186.23
+  servername: www.24420256.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      HOST: www.24420256.xyz
+    path: /path/1751546044274
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇨🇳CN-🇺🇸US_18 | 9.18Mb
+  network: ws
+  port: 30829
+  server: 111.26.109.79
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - alterId: 0
   cipher: auto
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇨🇳CN-🇧🇪BE_15
+  name: 🇨🇳CN_21
   network: tcp
-  port: 45228
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
+  port: 45407
+  server: fg.fxlcn.com
+  servername: fg.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - country: 🇨🇳CN
-  name: Relay_🇨🇳CN-🇨🇳CN_17 |11.81Mb
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
+  name: Relay_🇨🇳CN-🇰🇷KR_24 | 6.01Mb
+  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+  port: 15234
+  server: 8dec597f-sytz40-td95qh-1isea.cm5.cnkuaishou.com
   skip-cert-verify: true
-  sni: www.yrtok.com
+  sni: 8dec597f-sytz40-td95qh-1isea.cm5.cnkuaishou.com
   type: trojan
   udp: true
 - country: 🇨🇳CN
-  name: Relay_🇨🇳CN-🇰🇷KR_18 | 6.54Mb
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
+  name: Relay_🇨🇳CN-🇫🇷FR_25
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  port: 27235
+  server: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
   skip-cert-verify: true
-  sni: www.yrtok.com
+  sni: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
   type: trojan
   udp: true
 - country: 🇨🇳CN
-  name: Relay_🇨🇳CN-🇨🇳CN_19 |19.83Mb
+  name: Relay_🇨🇳CN-🇨🇳CN_26 | 7.55Mb
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
@@ -190,71 +161,199 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- country: 🇨🇳CN
-  name: Relay_🇨🇳CN-🇯🇵JP_20 |27.15Mb
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.11
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- country: 🇩🇪DE
-  name: 🇩🇪DE_21 | 3.54Mb
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.58.129.157
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇫🇷FR
-  name: 🇫🇷FR_22
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.11.16
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 🇭🇰 HK_24 |13.54Mb
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇵🇱 PL
-  name: Relay_🇵🇱 PL-🇺🇸US_27 | 1.73Mb
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺 RU
-  name: 🇷🇺 RU_28 |71.40Mb
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
 - alterId: 0
   cipher: auto
-  country: 🇷🇺 RU
+  country: 🇭🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 🇷🇺 RU_29
-  network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
+  name: Relay_🇭🇰 HK-🇭🇰HK_28
+  network: ws
+  port: 8080
+  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_29
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_30
+  network: ws
+  port: 8080
+  server: 2d7952be-sw7j40-t6yqh9-1bhda.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: f61628aa-3d18-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_31
+  network: ws
+  port: 8080
+  server: 7b5d670c-sw1z40-swjbhe-8bem.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: ca506e08-ce3d-5e5a-c128-6358caca15e5
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇷🇺RU_32 | 1.73Mb
+  network: tcp
+  port: 15002
+  server: 15002.vpdnss.top
+  servername: 15002.vpdnss.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_33
+  network: ws
+  port: 8080
+  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_34
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 24e32978-4858-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_35
+  network: ws
+  port: 8080
+  server: d0192da7-svlb40-t7h9gl-1q15s.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 11303a62-9a33-11ee-be7f-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰 HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰 HK-🇭🇰HK_36
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰HK-🇭🇰HK_37
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  country: 🇮🇶 IQ
+  name: ' | 5.07Mb'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇮🇷IR
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇮🇷IR-🇫🇷FR_40 | 8.79Mb
+  network: tcp
+  port: 52262
+  server: 193.151.151.93
+  skip-cert-verify: true
+  type: vmess
+  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
+- cipher: aes-256-cfb
+  country: 🇰🇷 KR
+  name: ' |32.91Mb'
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷 KR
+  name: Relay_ | 8.42Mb
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇷🇺 RU
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇷🇺 RU-🇺🇸US_30
+  name: Relay_🇷🇺 RU-🇺🇸US_43
   network: tcp
   port: 45215
   server: fa.fxlcn.com
@@ -263,13 +362,34 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
+  country: 🇷🇺 RU
+  h2-opts: {}
+  http-opts: {}
+  name: 🇷🇺 RU_44
+  network: tcp
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- country: 🇷🇺 RU
+  name: Relay_🇷🇺 RU-🇺🇸US_45 | 1.79Mb
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_31
+  name: Relay_🇺🇸 US-🇨🇿CZ_46
   network: tcp
-  port: 45273
-  server: yal.fxlcn.com
+  port: 45291
+  server: lt.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -278,19 +398,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸 US-🇧🇬BG_32 |43.53Mb
-  network: tcp
-  port: 45263
-  server: yal.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_33
+  name: 🇺🇸 US_47
   network: tcp
   port: 45247
   server: fa.fxlcn.com
@@ -302,7 +410,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸 US-🇪🇸ES_34
+  name: Relay_🇺🇸 US-🇪🇸ES_48
   network: tcp
   port: 45266
   server: yal.fxlcn.com
@@ -314,95 +422,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_35
-  network: tcp
-  port: 45242
-  server: fg.fxlcn.com
-  servername: fg.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸 US-🇬🇧GB_36 |14.47Mb
-  network: tcp
-  port: 45288
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_37
-  network: tcp
-  port: 45229
-  server: ysl.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸 US-🇧🇬BG_38
-  network: tcp
-  port: 45258
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸 US-🇷🇺RU_39
-  network: tcp
-  port: 45287
-  server: lt.fxlcn.com
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸 US-🇺🇸US_40
-  network: tcp
-  port: 45276
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_41
-  network: tcp
-  port: 45417
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸 US-🇷🇺RU_42
+  name: Relay_🇺🇸 US-🇷🇺RU_49
   network: tcp
   port: 45294
   server: lt.fxlcn.com
@@ -414,7 +434,19 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_43
+  name: Relay_🇺🇸 US-🇧🇬BG_50 |43.53Mb
+  network: tcp
+  port: 45263
+  server: yal.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_51
   network: tcp
   port: 45237
   server: fa.fxlcn.com
@@ -427,7 +459,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸 US-🇷🇺RU_44
+  name: Relay_🇺🇸 US-🇷🇺RU_52 | 2.20Mb
   network: tcp
   port: 45235
   server: lt.fxlcn.com
@@ -439,10 +471,11 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_45
+  name: Relay_🇺🇸 US-🇬🇧GB_53 |14.47Mb
   network: tcp
-  port: 45271
+  port: 45288
   server: lt.fxlcn.com
+  servername: lt.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -451,7 +484,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸 US-🇺🇦UA_46
+  name: Relay_🇺🇸 US-🇺🇦UA_54
   network: tcp
   port: 45419
   server: ysl.fxlcn.com
@@ -463,27 +496,108 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸 US-🇨🇿CZ_47
+  name: Relay_🇺🇸 US-🇺🇸US_55
   network: tcp
-  port: 45291
+  port: 45276
   server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸 US-🇺🇦UA_56
+  network: tcp
+  port: 45229
+  server: ysl.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸 US-🇷🇺RU_57
+  network: tcp
+  port: 45417
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸 US-🇺🇸US_58
+  network: tcp
+  port: 45273
+  server: yal.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸 US-🇨🇦CA_59
+  network: tcp
+  port: 45271
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_60
+  network: tcp
+  port: 45242
+  server: fg.fxlcn.com
+  servername: fg.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - cipher: rc4-md5
   country: 🇺🇸US
   group: muma16fx
-  name: Relay_🇺🇸US-🇺🇸US_48 |231.00Mb
+  name: Relay_🇺🇸US-🇺🇸US_63 |565.00Mb
   obfs: plain
   password: cht1997...///
   port: 3572
   protocol: origin
   server: sgp2.oyvpnserver.com
   type: ssr
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  group: muma16fx
+  name: Pool_🇺🇸US_64 |172.00Mb
+  obfs: plain
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+  port: 443
+  protocol: origin
+  server: 45.79.93.178
+  type: ssr
 - cipher: rc4-md5
   country: 🇺🇸US
   group: muma16fx
-  name: Relay_🇺🇸US-🇺🇸US_49 |562.00Mb
+  name: Relay_🇺🇸US-🇺🇸US_65 |218.00Mb
+  obfs: plain
+  password: cht1997...///
+  port: 3572
+  protocol: origin
+  server: usa1.oyvpnserver.com
+  type: ssr
+- cipher: rc4-md5
+  country: 🇺🇸US
+  group: muma16fx
+  name: Relay_🇺🇸US-🇺🇸US_66 |237.00Mb
   obfs: plain
   password: cht1997...///
   port: 3572
@@ -493,85 +607,98 @@ proxies:
 - cipher: rc4-md5
   country: 🇺🇸US
   group: muma16fx
-  name: Relay_🇺🇸US-🇺🇸US_50 |235.00Mb
+  name: Relay_🇺🇸US-🇺🇸US_67 |257.00Mb
   obfs: plain
   password: cht1997...///
   port: 3572
   protocol: origin
-  server: usa1.oyvpnserver.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  group: muma16fx
-  name: Pool_🇺🇸US_51 |159.00Mb
-  obfs: plain
-  password: 9d6cceaa373bf2c8acb22e60b6a58be6
-  port: 443
-  protocol: origin
-  server: 45.79.93.178
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  group: muma16fx
-  name: Pool_🇺🇸US_52 |172.00Mb
-  obfs: plain
-  password: 9d6cceaa373bf2c8acb22e60b6a58be6
-  port: 443
-  protocol: origin
-  server: 45.79.79.37
+  server: usa5.oyvpnserver.com
   type: ssr
 - cipher: rc4-md5
   country: 🇺🇸US
   group: muma16fx
-  name: Relay_🇺🇸US-🇺🇸US_53 |241.00Mb
+  name: Relay_🇺🇸US-🇺🇸US_68 |226.00Mb
   obfs: plain
   password: cht1997...///
   port: 3572
   protocol: origin
   server: jp3.oyvpnserver.com
   type: ssr
+- cipher: rc4-md5
+  country: 🇺🇸US
+  group: muma16fx
+  name: Relay_🇺🇸US-🇺🇸US_69 |234.00Mb
+  obfs: plain
+  password: cht1997...///
+  port: 3572
+  protocol: origin
+  server: usa2.oyvpnserver.com
+  type: ssr
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_71 | 1.58Mb
+  network: ws
+  port: 31004
+  server: 107.167.31.126
+  servername: www.34250201.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      HOST: www.34250201.xyz
+    path: /path/1751545834550
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: 🏁 ZZ_54 | 2.36Mb
+  name: ' | 3.40Mb'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.25
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: ' | 2.43Mb'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.29
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🏁 ZZ_74 | 6.36Mb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: ' | 1.25Mb'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 🏁 ZZ_76 | 0.06Mb
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.163.218.2
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 🏁 ZZ_55 | 7.07Mb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 🏁 ZZ_57 | 1.57Mb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.19
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 🏁 ZZ_58 | 5.40Mb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.33
   type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 🏁ZZ_59
+  name: 🏁ZZ_77 | 1.80Mb
   network: ws
-  port: 2095
-  server: s1.db-link02.top
-  servername: 100-70-39-54.s1.db-link02.top
+  port: 443
+  server: FffvvVbnhJui8.222560.XYz
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: c7820065-fa05-36d6-ab77-56e4b03c5881
+  uuid: 7701ddf5-6a48-401b-a3ec-8af52b6deb48
   ws-opts:
-    headers:
-      HOST: 100-70-39-54.s1.db-link02.top
-    path: /dabai.in104.21.212.19
+    path: /mlyR5tmcKx3hweBopuhWEbIX

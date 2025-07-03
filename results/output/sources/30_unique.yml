@@ -1,24 +1,17 @@
-# Update: 2025-06-29 08:55
-# Source 30 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 3
+# Update: 2025-07-04 00:04
+# Source 30 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 7
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #8'
-  network: ws
-  port: 443
-  server: EeedcFvg.999824.xYZ
-  tls: true
-  type: vmess
-  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
-  ws-opts:
-    headers:
-      Host: eeedcfvg.999824.xyz
-    path: /9dZlJLjHHrL0VwSolbqFpg
-- name: 印度+V2CROSS.COM
+- name: 香港+V2CROSS.COM
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  sni: 194.104.147.74
+  type: trojan
+- name: 美国+CloudFlare节点
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
+  port: 2096
+  server: 104.17.128.1
   skip-cert-verify: true
   sni: vle.amclubdns.dpdns.org
   type: trojan
@@ -26,16 +19,67 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
-- alterId: 0
-  cipher: auto
-  name: 江苏省镇江市 电信
+- name: 美国+Cloudinnovation数据中心
   network: ws
-  port: 51515
-  server: aflzzul.meiquankongjian.com
-  tls: false
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 154.83.2.200
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
   ws-opts:
     headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
+      Host: vle.amclubdns.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+- alterId: 64
+  cipher: auto
+  name: 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+  network: ws
+  port: '31001'
+  server: 45.58.186.23
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.24420256.xyz
+    path: /path/1751546044274
+- alterId: 0
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #1'
+  network: ws
+  port: 8080
+  server: a9316cd5-sx4v40-t1ppk8-1i3g8.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: 437cef58-f10b-11ef-8eaf-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #6'
+  network: ws
+  port: 2086
+  server: awetdfgn_cdn.hfhfb.homes
+  tls: false
+  type: vmess
+  uuid: 16f000d7-7805-459d-9130-200d00180b7c
+  ws-opts:
+    headers:
+      Host: mgcdn8.hfhfb.homes
+    path: /market?ed=1024
+- alterId: 64
+  cipher: auto
+  name: 美国 华盛顿Cogent通信公司
+  network: ws
+  port: '38003'
+  server: 38.11.49.40
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.45700497.xyz
+    path: /path/1751545632122

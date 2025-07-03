@@ -1,437 +1,649 @@
-# Update: 2025-06-29 08:55
-# Source 61 (https://raw.githubusercontent.com/Joker-funland/V2ray-configs/main/config.txt), 57
+# Update: 2025-07-04 00:05
+# Source 61 (https://raw.githubusercontent.com/Joker-funland/V2ray-configs/main/config.txt), 75
 proxies:
 - cipher: 2022-blake3-aes-256-gcm
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #1'
+  name: 🃏Telegram:Joker_v2ray_configs🃏
   password: ''
   port: '8444'
   server: direct.yangon.ca
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🃏Telegram:Joker_v2ray_configs🃏 #5'
-  password: 3qbOlPe0SbNGznFQmGt6FA
-  port: '8443'
-  server: delta.yangon.ca
+  password: 835ab5d2-df2e-4be5-8ef5-fefd932c2c46
+  port: '51102'
+  server: 154.83.90.11
+  type: ss
+- cipher: aes-256-cfb
+  name: 'unnamed #38'
+  password: amazonskr05
+  port: '443'
+  server: 54.64.68.162
+  type: ss
+- cipher: aes-256-cfb
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #20'
+  password: rNBfNuuANFCAk7KB
+  port: '9056'
+  server: 217.30.10.18
   type: ss
 - cipher: aes-256-gcm
-  name: 'unnamed #63'
-  password: lGqs95QkFHo2NV
-  port: '5499'
-  server: 23.154.136.51
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #23'
+  password: FoOiGlkAA9yPEGP
+  port: '7306'
+  server: 67.220.95.102
   type: ss
-- alpn:
-  - http/1.1
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #32'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.38.223.72
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #34'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.111.172
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #44'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.78.155.46
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #45'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.59.141
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #47'
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
-  port: 22223
-  server: 52.29.248.103
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #49'
+- cipher: aes-256-gcm
+  name: 'unnamed #39'
+  password: g5MeD6Ft3CWlJId
+  port: '5003'
+  server: 67.220.95.96
+  type: ss
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #27'
   network: ws
-  password: vpn
-  port: 2025
-  server: 45.82.14.144
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  sni: epmk.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: dns.google.com
-    path: '%2F'
+      Host: epmk.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #28'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epml.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- alpn:
+  - h3
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #34'
+  network: ws
+  password: Aimer
+  port: 443
+  server: pranab.ns.cloudflare.com
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epml.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #35'
+  network: tcp
+  password: CXCu72eya8wFeRySSFpDz3CN6jBYac5OIl3q0gSl8xZOADY3EK94pxZanDA3RT
+  port: 443
+  server: 35.77.216.3
+  skip-cert-verify: true
+  sni: broker.superpokemon.com
+  type: trojan
 - name: '🃏Telegram:Joker_v2ray_configs🃏 #58'
   network: tcp
-  port: 443
-  server: 91.99.160.41
+  port: 9435
+  server: all3.blackkwolff.com
   tls: false
   type: vless
-  uuid: 153ee04c-dcc1-4ef8-a146-8fb31cec1f48
+  uuid: 17319ae5-2ad4-441d-888a-e6de1d3f7542
   ws-opts:
     headers:
-      Host: zula.ir
+      Host: fast.com
 - name: '🃏Telegram:Joker_v2ray_configs🃏 #59'
-  network: tcp
-  port: 443
-  server: 91.99.192.185
-  tls: false
-  type: vless
-  uuid: 153ee04c-dcc1-4ef8-a146-8fb31cec1f48
-  ws-opts:
-    headers:
-      Host: zula.ir
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #61'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ
-    short-id: 21181028b56c8702
-  server: a.nl.maviks.ru
-  servername: maviks.ru
-  tls: false
-  type: vless
-  uuid: 196d7017-b91c-43dc-87ca-d88de911145b
-  ws-opts:
-    headers:
-      Host: '%2F%3FBya_telegram_%40JOKERRVPN'
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #62'
-  network: httpupgrade
-  port: 2086
-  server: speedtest1.daltoon.site
-  tls: false
-  type: vless
-  uuid: 1afc6dc5-17d5-4f75-b0cd-4480a819a07c
-  ws-opts:
-    headers:
-      Host: iran9-tv3-speedtest.sport-daltoon.ir.
-    path: /?ed=8880
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #64'
-  network: ws
-  port: 80
-  server: 104.16.53.11
-  tls: false
-  type: vless
-  uuid: 1e8daef2-2bbf-438b-a238-d8505605f8a4
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.
-    path: /Telegram@vpnjeyTelegram@vpnjeyTelegram@vpnjey
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #65'
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 1f5056ca-fb4c-4b51-a31e-891083588351
-  ws-opts:
-    headers:
-      Host: pamchall.com.
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- client-fingerprint: chrome
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #66'
-  network: ws
-  port: 443
-  server: record.persianmizban.com
-  servername: lgoin.persianmizban.com
-  tls: true
-  type: vless
-  uuid: 260cc7e4-1e11-44e8-81fd-b162fbb1c83e
-  ws-opts:
-    headers:
-      Host: lgoin.persianmizban.com
-    path: /
-- client-fingerprint: chrome
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #69'
-  network: xhttp
-  port: 80
-  reality-opts:
-    public-key: V0yu6BQhNI5cO2600tllGbF2D5AJcT7o6Xq7AiBKxBE
-    short-id: 4d
-  server: p2.3dfigures.ir
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: 2a7e7613-d490-425c-a9f1-c7e503143b8f
-  ws-opts:
-    headers:
-      Host: rema.global.ssl.fastly.net
-    path: /v2raybluecrystal
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #70'
   network: ws
   port: 2053
   server: www.speedtest.net
   servername: juice.djjw8292n.ir
   tls: true
   type: vless
-  uuid: 2c389d21-957f-4393-a58c-d46afdb71677
+  uuid: 18760026-46f9-49a8-806d-2ad4e991c670
   ws-opts:
     headers:
       Host: cappuccino.djjw8292n.ir
     path: /homepage?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #71'
-  network: xhttp
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #60'
+  network: tcp
+  port: 8443
+  server: www.vip-abanol1.zone.id
+  tls: false
+  type: vless
+  uuid: 1c88c964-a039-4c9a-b1e5-5e93eef57fd8
+  ws-opts:
+    headers:
+      Host: speedtest.net
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #63'
+  network: ws
+  port: 80
+  server: speedtest.net
+  tls: false
+  type: vless
+  uuid: 25c8e7fd-0eac-4d51-b19a-10785ad39393
+  ws-opts:
+    headers:
+      Host: melodebot.net
+    path: /melo/ws?ed=2048
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #64'
+  network: tcp
+  port: 2929
+  server: run.fluxus.org
+  tls: false
+  type: vless
+  uuid: 2825876c-4610-43fe-8d4b-a2551e5185d6
+  ws-opts:
+    headers:
+      Host: p30afzar.com
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #65'
+  network: ws
+  port: 443
+  server: 151.101.130.133
+  servername: live.theworldwidewolf.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 2b03e1a9-e4cb-4d58-c1a7-416ebdcd6d23
+  ws-opts:
+    headers:
+      Host: vistapcit.com
+    path: /@vistav2ray---@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vistav2ray----@vist
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #66'
+  network: tcp
+  port: 8880
+  server: 0us.amazon-osishop.ir
+  tls: false
+  type: vless
+  uuid: 2bc31b80-7870-47e2-b6d7-4358108c0646
+  ws-opts:
+    headers:
+      Host: eN.TwiTtER.cOM.%3A8880
+- name: 'unnamed #40'
   port: 80
   server: test.fast.hosting-ip.com
   tls: false
   type: vless
   uuid: 2c8aaf87-b1e3-4fc6-915b-0e48a26b1cd6
   ws-opts:
-    headers:
-      Host: Aame.global.ssl.fastly.net
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #81'
-  network: tcp
-  port: 443
-  server: 91.99.139.18
-  tls: false
-  type: vless
-  uuid: 36ee3f5a-3816-4c03-a324-47531167e53b
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #82'
-  network: tcp
-  port: 443
-  server: 91.99.170.191
-  tls: false
-  type: vless
-  uuid: 36ee3f5a-3816-4c03-a324-47531167e53b
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #84'
-  network: httpupgrade
-  port: 2052
-  server: 173.245.58.100
-  tls: false
-  type: vless
-  uuid: 3a6de5be-7fec-4667-a50d-b41b720d5e14
-  ws-opts:
-    headers:
-      Host: 2.dreshghi.ir.ferialmostofi.c-om.padaco.ir.arashnasiri.com.shafashiraz.ir.honartandis.com.shouba.ir.iran-dental.com.sardkhoone.com.mohammadsalehpour.ir.abadgan.com.arvijpub.com.chmctruck.com.gandom-yar.ir
-    path: /GoodLuck?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #89'
-  network: ws
-  port: 443
-  server: 104.17.147.22
-  servername: TiTAntAbLoMaNAhamraH.Ir
-  tls: true
-  type: vless
-  uuid: 4d91916f-a7fd-419b-8b90-640bb8d1b9f4
-  ws-opts:
-    headers:
-      Host: titantablomanahamrah.ir
-    path: /E4FqomT5e0mKm2nh/MTU5LjY5LjE0LjEzOA
-- client-fingerprint: firefox
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NU%4…
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 🃏Telegram:Joker_v2ray_configs🃏
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #90'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #70'
   network: grpc
-  port: 2090
+  port: 8443
   reality-opts:
-    public-key: OTv4I7eaaqHgYAlL5EIrDlotApPujvk9OoJU58FRGz4
-    short-id: e17185329455b179
-  server: s1.loadbalance.lat
-  servername: refersion.com
+    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+    short-id: 6ba85179e30d4fc2
+  server: 185.49.105.170
+  servername: lovelive-anime.jp
   tls: false
   type: vless
-  uuid: 52ddd2b7-d2da-4169-b11d-b51679c01eb0
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #91'
-  network: ws
-  port: 443
-  server: 104.21.56.44
-  servername: REDw.pOOriam.Ir
-  tls: true
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /Telegram@proxy_mtm?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #99'
+  uuid: 3055df14-c714-4a00-a86b-b15c4c099ea5
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #71'
   network: tcp
-  port: 9091
-  server: irtun.m0rt3zsh0pping2.ir
+  port: 70
+  server: sv1.iranazizm.com
   tls: false
   type: vless
-  uuid: 62237966-b2c6-4bf9-a269-3717e1773c98
+  uuid: 3099662d-8e95-4edf-90f2-86589816db8f
   ws-opts:
     headers:
-      Host: tgju.org
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #100'
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: juice.djjw8292n.ir
-  tls: true
-  type: vless
-  uuid: 6755a02c-b9ab-4e85-a9b1-20c85aa7c559
-  ws-opts:
-    headers:
-      Host: cappuccino.djjw8292n.ir
-    path: /homepage?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #102'
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: juice.djjw8292n.ir
-  tls: true
-  type: vless
-  uuid: 7297eef4-373c-4d7e-908a-021ece95c64a
-  ws-opts:
-    headers:
-      Host: cappuccino.djjw8292n.ir
-    path: /homepage?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #105'
-  network: ws
-  port: 80
-  server: add.ski1plag.ir
-  tls: false
-  type: vless
-  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
-  ws-opts:
-    headers:
-      Host: my.ski1plag.ir
-    path: /upload
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #106'
-  network: tcp
-  port: 10201
-  server: nim.borna.top
-  tls: false
-  type: vless
-  uuid: 80885b7e-a6ab-a7f6-bca7-cbd52250fe0f
-  ws-opts:
-    headers:
-      Host: myket.ir
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #116'
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: juice.djjw8292n.ir
-  tls: true
-  type: vless
-  uuid: a174969c-53c8-4de3-b8f9-4d84aa03dc41
-  ws-opts:
-    headers:
-      Host: cappuccino.djjw8292n.ir
-    path: /homepage?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #119'
-  network: tcp
-  port: 8880
-  server: srv3.amazon-osishop.ir
-  tls: false
-  type: vless
-  uuid: aa188240-cf10-4df6-9543-5223800891be
-  ws-opts:
-    headers:
-      Host: eN.TwiTtER.cOM.%3A8880
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #124'
-  network: ws
-  port: 80
-  server: svnteam.fast.hosting-ip.com
-  tls: false
-  type: vless
-  uuid: b4492a2f-1f9f-45e8-b176-91d13b9e3aa9
-  ws-opts:
-    headers:
-      Host: shad.ir
-    path: /@SvnProBot?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #135'
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: juice.djjw8292n.ir
-  tls: true
-  type: vless
-  uuid: d2527c29-7cf3-4e9a-a005-827c3b855e54
-  ws-opts:
-    headers:
-      Host: cappuccino.djjw8292n.ir
-    path: /homepage?ed=2560
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #143'
+      Host: bmi.ir
+- grpc-opts:
+    grpc-service-name: 🃏Telegram:Joker_v2ray_configs🃏
+  name: 'unnamed #41'
   network: grpc
-  port: 8880
-  server: 84.32.9.34
+  port: 2083
+  server: 185.47.172.105
   tls: false
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #146'
-  network: grpc
-  port: 8880
-  server: 185.236.232.247
+  uuid: 354712c4-dab3-452c-89fd-0a2edd6999f9
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #82'
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: juice.djjw8292n.ir
+  tls: true
+  type: vless
+  uuid: 52599107-209a-4f35-930b-6fda8e1998ac
+  ws-opts:
+    headers:
+      Host: cappuccino.djjw8292n.ir
+    path: /homepage?ed=2560
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #94'
+  network: xhttp
+  port: 80
+  server: speedy.mooo.info
   tls: false
   type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: '🃏Telegram:Joker_v2ray_configs🃏 #148'
+  uuid: 5cd2602a-ac2a-4dea-a2c5-0a16b0e2b0d8
+  ws-opts:
+    headers:
+      Host: veneta911.ir
+    path: /
+- name: 'unnamed #42'
+  port: 80
+  server: test.fast.hosting-ip.com
+  tls: false
+  type: vless
+  uuid: 5ece2450-5de1-4975-a6ef-3e045ac8db78
+  ws-opts:
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NU%4…
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #96'
+  network: xhttp
+  port: 80
+  server: germany.fast.hosting-ip.com
+  tls: false
+  type: vless
+  uuid: 5f6568a9-cb21-47de-b405-1ef34e9c4af3
+  ws-opts:
+    headers:
+      Host: cafepedia7.net
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #97'
   network: tcp
-  port: 1429
-  server: 2393123233.torob.com.tr
+  port: 57107
+  server: test.yoyohihi.com
   tls: false
   type: vless
-  uuid: e65f0a57-96f4-4c60-b550-d5bd0c20c557
+  uuid: 600eae54-5014-40a2-99f3-215ff340c26d
   ws-opts:
     headers:
       Host: speedtest.net
-- client-fingerprint: random
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #152'
+- client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #98'
   network: tcp
-  port: 2006
+  port: 55555
   reality-opts:
-    public-key: RBZ8svckpp9tsX5QA8akGRx5fIKuCYk_diZhOHiHMGs
-    short-id: '69'
-  server: 91.107.130.202
-  servername: www.speedtest.net
+    public-key: iN6Mxm-XgB9_nfgRHxdE3QX9XJpAY-EHv-EtvAIkYx4
+    short-id: ea83a8b0
+  server: snap.online24net.ir
+  servername: stackoverflow.com
   tls: false
   type: vless
-  uuid: efe56d18-ea0c-4ff5-b8a5-9baa93fe70f2
+  uuid: 6b01632c-a073-483f-9fea-2d20835d003f
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #101'
+  network: xhttp
+  port: 80
+  server: germany.fast.hosting-ip.com
+  tls: false
+  type: vless
+  uuid: 7349bbae-4b76-4c60-aece-053b1b3fbf04
   ws-opts:
     headers:
-      Host: '%40Nicotine_joker%40Nicotine_joker%40Nicotine_joker'
-- alterId: 0
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #161'
+      Host: cafepedia7.net
+    path: /?ed=2048
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #103'
+  network: tcp
+  port: 443
+  server: 91.99.205.130
+  tls: false
+  type: vless
+  uuid: 7b6eca4c-44ae-40c6-973a-4e3b29d30803
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 'unnamed #43'
+  port: null
+  server: 147.…
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #113'
+  network: tcp
+  port: 1106
+  server: 45.159.148.196
+  tls: false
+  type: vless
+  uuid: 8cfa6f17-f6cd-4c7b-8703-0e5e6e97014a
+  ws-opts:
+    headers:
+      Host: skyroom.online%2Cgharar.ir%2Cigap.net
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #114'
+  network: tcp
+  port: 2087
+  server: webshecan.webredirect.org
+  tls: false
+  type: vless
+  uuid: 8f646a01-2cc1-4270-ad43-f87e157e4d44
+- client-fingerprint: random
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #116'
+  network: ws
+  port: 80
+  server: 104.16.180.35
+  servername: dw.alibichareh.dpdns.org
+  tls: false
+  type: vless
+  uuid: 92f481b6-ad92-43e4-a683-2bb0aeaa9846
+  ws-opts:
+    headers:
+      Host: dw.alibichareh.dpdns.org
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #121'
+  network: ws
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
+  tls: false
+  type: vless
+  uuid: 9ea703d4-e64f-4714-9ecc-c0740ae0445f
+  ws-opts:
+    headers:
+      Host: zoomgov.vipren.biz.id
+    path: /138.2.75.219=39341
+- client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #125'
+  network: tcp
+  port: 6005
+  reality-opts:
+    public-key: IjdVNJogofv3zb2AqVEdopDIgy41_OJYLllcTKVLzlM
+    short-id: a2af5225618fa196
+  server: 188.245.113.123
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 9f7ba68b-e588-4d7e-9bf9-1f7771cbbc99
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #126'
+  port: 80
+  server: theatlantic.com
+  tls: false
+  type: vless
+  uuid: TELEGRAM-NUFiLTER
+  ws-opts:
+    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #128'
+  network: ws
+  port: 443
+  server: 192.200.160.168
+  servername: ly.ylks.us.kg
+  tls: true
+  type: vless
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #130'
+  network: xhttp
+  port: 80
+  server: score.fastly80.supercyberpower.com
+  servername: configvortex55.global.ssl.fastly.net
+  tls: false
+  type: vless
+  uuid: a8a70bbb-42c1-400d-837b-d5f53f29838d
+  ws-opts:
+    headers:
+      Host: configvortex55.global.ssl.fastly.net
+    path: /fuUQUMfiarE01pqEe
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #131'
   network: ws
   port: 8080
-  server: 104.19.47.10
+  server: tgju.org
+  tls: false
+  type: vless
+  uuid: aa29360c-55ce-4986-8232-091ccfa6151b
+  ws-opts:
+    headers:
+      Host: SE.kRbC9dycP8.ZulAir.orG.
+    path: /?ed=/?ed=TELEGRAM_MARAMBASHI_MARAMBASHI/?ed=2048
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #137'
+  network: ws
+  port: 80
+  server: 104.21.80.1
+  tls: false
+  type: vless
+  uuid: b775ec56-b44d-473a-9e8e-99ef575d832a
+  ws-opts:
+    headers:
+      Host: young-silence-6861.sjsbdjansbdjksb.workers.dev
+    path: /?ed=2560
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #141'
+  network: httpupgrade
+  port: 8880
+  server: wouldyoumarriemepleasefuckthesystem.siasia.ir
+  tls: false
+  type: vless
+  uuid: b9d7ed5b-5a8f-4c8b-8fb3-253942424d2a
+  ws-opts:
+    headers:
+      Host: hey-dude-this-is-shet-world-dot-com.siasia.ir
+    path: /shetman
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #142'
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: juice.djjw8292n.ir
+  tls: true
+  type: vless
+  uuid: baf5bc97-c8ee-4e17-bb1b-6d8be21ea4ab
+  ws-opts:
+    headers:
+      Host: cappuccino.djjw8292n.ir
+    path: /homepage?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #143'
+  network: tcp
+  port: 34578
+  reality-opts:
+    public-key: PSn2s5TN4e7n0LkzPunu2IA1hSmOoPYFu3d_psl2Nmc
+    short-id: e534c8be
+  server: aws-link25.liangxin1.xyz
+  servername: download-porter.hoyoverse.com
+  tls: false
+  type: vless
+  uuid: be0b1c5d-e2f4-4828-a527-f4e0f2eaea1a
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #148'
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: juice.djjw8292n.ir
+  tls: true
+  type: vless
+  uuid: c21164dd-0355-4335-8210-3e3275128f46
+  ws-opts:
+    headers:
+      Host: cappuccino.djjw8292n.ir
+    path: /homepage?ed=2560
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #150'
+  network: tcp
+  port: 8880
+  server: lovefishingfishes.kuckenpq.ir
+  tls: false
+  type: vless
+  uuid: c8b6a94f-eb38-4b68-9ae7-fadc7d690e16
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #151'
+  network: tcp
+  port: 24989
+  server: 5.160.109.9
+  tls: false
+  type: vless
+  uuid: c92794ee-7c70-4faa-8f07-e7cec2cb14c9
+  ws-opts:
+    headers:
+      Host: exo.ir
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #152'
+  network: httpupgrade
+  port: 2082
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: c9ef82df-f2a3-4bf5-b456-2e6937eab8a6
+  ws-opts:
+    headers:
+      Host: 4.9.1canva.cOm.eA.coM.cloudFlare.com.0.google.Com.kaktusatom.iR.
+    path: /?ed=8880
+- client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #153'
+  network: grpc
+  port: 2087
+  reality-opts:
+    public-key: 6ezm4CcEWfvptuqvMaweZW5jTaX-M4SdZE2r8JkKsQ0
+    short-id: bc6f0833
+  server: 95.217.183.108
+  servername: www.target.com
+  tls: false
+  type: vless
+  uuid: cbb4251b-9b20-4c42-b09d-df77666bda12
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #154'
+  network: grpc
+  port: 3311
+  server: turkey.jewelll.ir
+  tls: false
+  type: vless
+  uuid: ccd5d8c4-634c-46bc-8f7a-5be3b8649858
+- client-fingerprint: randomized
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #159'
+  network: ws
+  port: 8080
+  server: 141.101.121.108
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: 1750293123492.china.baidu.bilibili.china.aeko.cn
+    path: '/telegram: @Eternal_Connect - telegram: @Eternal_Connect - telegram: @Eternal_Connect
+      - telegram: @Eternal_Connect /?ed=2048'
+- alpn:
+  - http/1.1
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #165'
+  network: ws
+  port: 443
+  server: 172.64.34.232
+  servername: f51wpm.ulavpnx2.work
+  tls: true
+  type: vless
+  uuid: e26e3f2b-cd58-44e6-b193-5fe1452fc183
+  ws-opts:
+    headers:
+      Host: f51wpm.ulavpnx2.work
+    path: /wss
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #166'
+  network: httpupgrade
+  port: 443
+  server: 62.60.159.104
+  servername: de1.blackismyfavorite.ir
+  tls: true
+  type: vless
+  uuid: e26f7c15-5805-4082-aa3c-91553d53cb03
+  ws-opts:
+    headers:
+      Host: de1.blackismyfavorite.ir
+    path: /XRAYVPNHTTPUPGRADE
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #167'
+  network: httpupgrade
+  port: 443
+  server: 62.60.159.167
+  servername: de1.blackismyfavorite.ir
+  tls: true
+  type: vless
+  uuid: e26f7c15-5805-4082-aa3c-91553d53cb03
+  ws-opts:
+    headers:
+      Host: de1.blackismyfavorite.ir
+    path: /XRAYVPNHTTPUPGRADE
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #172'
+  network: xhttp
+  port: 80
+  server: germany.fast.hosting-ip.com
+  tls: false
+  type: vless
+  uuid: ed052da1-2cdf-451e-8212-cb4f59ba6c39
+  ws-opts:
+    headers:
+      Host: cafepedia7.net
+    path: /?ed=2048
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #175'
+  network: ws
+  port: 8443
+  server: ping.amirhossein.info
+  tls: false
+  type: vless
+  uuid: eeba6be8-92ad-48e1-a2e3-07cdeb425359
+  ws-opts:
+    headers:
+      Host: ping.amirhossein.info
+    path: /Telegram@Green_WPN@Vijra_dev/?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #176'
+  network: ws
+  port: 443
+  server: 62.60.159.238
+  servername: parsdl.xyz
+  tls: true
+  type: vless
+  uuid: f02cac19-36ca-4d19-9197-b8f00dda4faf
+  ws-opts:
+    headers:
+      Host: nb-de.parsdl.xyz
+    path: /hajmi?ed=2560
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #177'
+  network: tcp
+  port: 5050
+  server: ir4.tunneled.site
+  tls: false
+  type: vless
+  uuid: f2bb6f82-f343-4455-8ef9-5b0dc438941a
+- name: '🃏Telegram:Joker_v2ray_configs🃏 #179'
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: juice.djjw8292n.ir
+  tls: true
+  type: vless
+  uuid: fa8df465-8768-448f-90ca-f08bdc96b326
+  ws-opts:
+    headers:
+      Host: cappuccino.djjw8292n.ir
+    path: /homepage?ed=2560
+- name: 'unnamed #44'
+  network: ws
+  port: 8880
+  server: 91.193.58.245
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #186'
+  network: tcp
+  port: '443'
+  server: 88.198.215.107
   servername: ''
   tls: false
   type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 64
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #165'
-  network: ws
-  port: '443'
-  server: 104.19.6.62
-  tls: true
-  type: vmess
-  uuid: 427ab4f5-7369-48c7-9b85-83bc380b0119
-  ws-opts:
-    headers:
-      Host: v2ray-eu.gd1214a.workers.dev
-    path: /ray
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #166'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #187'
   network: ws
   port: 443
   server: 172.67.198.187
@@ -445,20 +657,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #167'
-  network: ws
-  port: '443'
-  server: 132.145.232.171
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #168'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #190'
   network: ws
   port: 443
   server: hk2.lrzdx.uk
@@ -467,40 +666,51 @@ proxies:
   type: vmess
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
-    headers:
-      Host: hk2.lrzdx.uk
     path: /register
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #173'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #191'
   network: ws
   port: 443
-  server: cloudgetservice.mcloudservice.site
-  servername: cloudgetservice.mcloudservice.site
+  server: 104.17.137.127
+  servername: hk.niskakowski.ggff.net
   tls: true
   type: vmess
-  uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210
+  uuid: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
   ws-opts:
     headers:
-      Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
-    path: /linkws
+      Host: hk.niskakowski.ggff.net
+    path: /aa
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #174'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #192'
   network: ws
-  port: 443
-  server: xcf029.facai2024.com
-  servername: xcf029.facai2024.com
+  port: 21369
+  server: a.886968.xyz
+  servername: a.886968.xyz
   tls: true
   type: vmess
-  uuid: 9ce4526a-c500-4c66-99b0-048e4b6b5663
+  uuid: 151187b1-c8f3-4c32-ac72-3679e264a7a3
   ws-opts:
     headers:
-      Host: xcf029.facai2024.com
-    path: /9ce4526a
+      Host: a.886968.xyz
+    path: /wfdef
+- alterId: 64
+  cipher: auto
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #193'
+  network: ws
+  port: '30004'
+  server: 64.32.17.45
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80382494.xyz
+    path: /path/1751545834550
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #175'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #194'
   network: ws
   port: 443
   server: xc125-1.meiziba5566.com
@@ -514,35 +724,7 @@ proxies:
     path: /6b95d340
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #176'
-  network: ws
-  port: 443
-  server: 3sdfgvcxxx.938.pp.ua
-  servername: 3sdfgvcxxx.938.pp.ua
-  tls: true
-  type: vmess
-  uuid: 0212fab5-e93c-4904-b7a8-187fd535f354
-  ws-opts:
-    headers:
-      Host: 3sdfgvcxxx.938.pp.ua
-    path: /P879mtCoHQqaWO67qEaMINZ1
-- alterId: 0
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #177'
-  network: ws
-  port: 443
-  server: xc011-2.meiziba5566.com
-  servername: xc011-2.meiziba5566.com
-  tls: true
-  type: vmess
-  uuid: 42576a04-5a4d-4c7e-fcb4-a8582ab46031
-  ws-opts:
-    headers:
-      Host: xc011-2.meiziba5566.com
-    path: /xc1234
-- alterId: 0
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #178'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #195'
   network: ws
   port: 443
   server: xcmg19.dtkj0328.com
@@ -556,7 +738,7 @@ proxies:
     path: /xcmg1234
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #179'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #196'
   network: ws
   port: 443
   server: ray.skymirror.cc
@@ -568,7 +750,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #180'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #197'
+  network: ws
+  port: 443
+  server: xc115-1.meiziba5566.com
+  servername: xc115-1.meiziba5566.com
+  tls: true
+  type: vmess
+  uuid: f40a8d65-a9ac-42ce-ebcc-9e6447a9866d
+  ws-opts:
+    path: /f40a8d65
+- alterId: 0
+  cipher: auto
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #199'
   network: ws
   port: 443
   server: xcf037.facai2024.com
@@ -582,67 +776,53 @@ proxies:
     path: /d9863037
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #181'
-  network: ws
-  port: 80
-  server: 104.21.63.52
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #201'
+  network: tcp
+  port: '47680'
+  server: 45.196.219.174
   servername: ''
   tls: false
   type: vmess
-  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-  ws-opts:
-    headers:
-      Host: us65.netfilx.live
-    path: /
+  uuid: d1f20e0c-967f-4f9a-fb8c-3027ee36cca6
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #182'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #206'
   network: ws
   port: '80'
-  server: 172.67.204.84
+  server: 104.26.14.82
   servername: ''
   tls: false
   type: vmess
-  uuid: 753d0d83-3f5b-4821-860e-082f0b3db609
+  uuid: c0f3f890-d329-42fc-8311-16ae31c22c6b
   ws-opts:
     headers:
-      Host: no1-vmess.sshmax.xyz
-    path: /vmess
+      Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #185'
-  network: tcp
-  port: '2098'
-  server: 147.45.51.16
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #207'
+  network: ''
+  port: '16262'
+  server: 117.164.185.221
   servername: ''
   tls: false
   type: vmess
-  uuid: 83876222-64a4-4912-aa18-b7d9d34959de
-- alterId: 0
-  cipher: auto
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #188'
-  network: tcp
-  port: '44264'
-  server: 194.5.178.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ee7156f5-c594-4d7f-9e25-5de014059c85
+  uuid: ee867204-3f52-3faf-8de4-6f4180939d7c
 - alterId: 0
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #190'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #210'
   network: grpc
   port: '2087'
   server: elma.ns.cloudflare.com
-  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea114928251192.1-senator.info
+  servername: 1fdSNA119228928OpS2smTaB228aAsDDsd1ea114928251148.2-senator.info
   tls: true
   type: vmess
   uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
 - alterId: 0
   cipher: chacha20-poly1305
-  name: '🃏Telegram:Joker_v2ray_configs🃏 #200'
+  name: '🃏Telegram:Joker_v2ray_configs🃏 #220'
   network: tcp
   port: '433'
   server: https://github.com/ALIILAPRO/v2rayNG-Config

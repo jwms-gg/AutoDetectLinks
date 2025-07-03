@@ -1,5 +1,5 @@
-# Update: 2025-06-29 08:55
-# Source 44 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 1
+# Update: 2025-07-04 00:04
+# Source 44 (https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless), 2
 proxies:
 - name: 🔒 VL-WS-NA 🇺🇸 US-[::ffff:3207:...
   network: ws
@@ -12,3 +12,19 @@ proxies:
     headers:
       Host: hello-world-twilight-lake-386e.yijiled513.workers.dev
     path: /?ed=443
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: 🔒 VL-WS-TLS 🇷🇺 RU-[::ffff:2d8e...
+  network: ws
+  port: 443
+  server: ::ffff:2d8e:7808
+  servername: mail.ski1plag.ir
+  tls: true
+  type: vless
+  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
+  ws-opts:
+    headers:
+      Host: mail.ski1plag.ir
+    path: /upload

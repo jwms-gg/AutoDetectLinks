@@ -1,34 +1,9 @@
-# Update: 2025-06-29 08:55
-# Source 29 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 28
+# Update: 2025-07-04 00:04
+# Source 29 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 23
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 104.17.128.1
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
-  network: ws
-  port: 80
-  server: EeEDCFVg.999824.xYZ
-  tls: false
-  type: vmess
-  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
-  ws-opts:
-    headers:
-      Host: eeedcfvg.999824.xyz
-    path: /9dZlJLjHHrL0VwSolbqFpg
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #1'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -40,45 +15,47 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- alterId: 0
-  cipher: auto
-  name: '美国3|@ripaojiedian #3'
+- name: 'US_speednode_0217 #3'
   network: ws
-  port: '38003'
-  server: 38.11.18.221
-  servername: www.47720602.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.47720602.xyz
-    path: /path/262029062315
-- name: '法国+巴黎Amazon数据中心 #1'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 52.47.70.112
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 爱尔兰 V2CROSS.COM
-  network: ws
+  password: juzi
   port: 443
-  server: 143.47.226.5
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  server: 172.66.45.35
+  skip-cert-verify: true
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
   ws-opts:
     headers:
-      Host: beyonddsz.cfd
-    path: /linkws
+      Host: juzi8186-sr1.pages.dev
+    path: /
+- name: 'US_speednode_0215 #3'
+  network: ws
+  password: juzi
+  port: 443
+  server: 172.66.46.221
+  skip-cert-verify: true
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: juzi8186-sr1.pages.dev
+    path: /
 - cipher: aes-256-cfb
   name: '🌀3-SK |  5.0MB/s|0%|Youtube|Op... #2'
   password: f8f7aCzcPKbsF8p3
   port: '989'
   server: 156.146.40.194
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 莫斯科JustHost
+  network: ws
+  port: 23113
+  server: 45.147.201.231
+  tls: false
+  type: vmess
+  uuid: c77f8f6d-e0ec-48d0-8810-b8a54ba87a76
+  ws-opts:
+    path: ''
 - cipher: aes-256-cfb
   name: '🇰🇷2 |  1.5MB/s|44%|Openai #2'
   password: qwerREWQ@@
@@ -86,40 +63,78 @@ proxies:
   server: 125.141.31.72
   type: ss
 - cipher: aes-256-gcm
-  name: '🇯🇵 日本2|@ripaojiedian #4'
-  password: fbf9b0db0136
-  port: '995'
-  server: 43.226.17.11
+  name: '🇯🇵 日本2|@ripaojiedian #5'
+  password: 823e135ed103
+  port: '636'
+  server: 137.220.191.38
   type: ss
 - cipher: aes-256-gcm
   name: '日本2|@ripaojiedian #1'
-  password: fbf9b0db0136
-  port: '995'
-  server: 43.226.17.11
+  password: 823e135ed103
+  port: '636'
+  server: 137.220.191.38
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '香港3|@ripaojiedian #2'
+  network: tcp
+  port: '59149'
+  server: 43.247.134.201
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: efbdabeb-68df-4cd0-959d-7d4f4b508609
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港3|@ripaojiedian #3'
+  network: tcp
+  port: 59149
+  server: 43.247.134.201
+  tls: false
+  type: vmess
+  uuid: efbdabeb-68df-4cd0-959d-7d4f4b508609
+- cipher: aes-256-gcm
+  name: '香港2|@ripaojiedian #1'
+  password: 0b191076d18f
+  port: '636'
+  server: 156.251.179.139
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港2|@ripaojiedian #5'
+  password: 0b191076d18f
+  port: '636'
+  server: 156.251.179.139
   type: ss
 - cipher: aes-256-cfb
   name: 'tg频道:@ripaojiedian #4'
   password: qawszxc123
   port: '443'
-  server: 54.169.93.111
+  server: 18.143.181.137
   type: ss
 - cipher: aes-256-cfb
   name: 'tg频道:@ripaojiedian #1 #2'
   password: qawszxc123
   port: '443'
-  server: 54.169.93.111
+  server: 18.143.181.137
   type: ss
-- cipher: aes-256-gcm
-  name: '香港2|@ripaojiedian #1'
-  password: d2bcd45faee2
-  port: '995'
-  server: 121.127.231.200
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港2|@ripaojiedian #4'
-  password: d2bcd45faee2
-  port: '995'
-  server: 121.127.231.200
+- alterId: 2
+  cipher: auto
+  name: 香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 3085fcf8-a69c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- cipher: aes-256-cfb
+  name: '越南|@ripaojiedian #1'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 103.163.218.2
   type: ss
 - cipher: aes-256-cfb
   name: '🇻🇳 越南|@ripaojiedian #3'
@@ -127,103 +142,29 @@ proxies:
   port: '989'
   server: 103.163.218.2
   type: ss
-- cipher: aes-256-cfb
-  name: '越南|@ripaojiedian #1'
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 103.163.218.2
-  type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '伊朗 德黑兰市 #1'
-  network: tcp
-  port: 8090
-  server: 78.39.9.134
+  name: '香港6|@ripaojiedian #2'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
   tls: false
   type: vmess
-  uuid: 891e1d1c-5fbc-40cb-9256-58b016b6b600
-- alterId: 32
-  cipher: auto
-  name: 希腊 V2CROSS.COM
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  name: 广东省广州市 移动
-  network: tcp
-  port: 45419
-  server: ysl.fxlcn.com
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #2'
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  tls: true
-  type: vmess
-  uuid: b84bd9f7-29f2-4167-bdbf-a4ee46a22f58
-  ws-opts:
-    headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
-  port: 2095
-  server: s1.db-link02.top
-  tls: false
-  type: vmess
-  uuid: c7820065-fa05-36d6-ab77-56e4b03c5881
-  ws-opts:
-    headers:
-      Host: 100-70-39-54.s1.db-link02.top
-    path: /dabai.in104.21.212.19
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: vmess-grpc
-  name: '🇩🇪5 |  1.4MB/s|0%|Youtube|Open... #2'
-  network: grpc
-  port: 443
-  server: de.vmess.comnpmjs.com
-  servername: de.vmess.comnpmjs.com
-  tls: true
-  type: vmess
-  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰1 |  1.8MB/s|15%|Disney|Yout... #2'
-  network: ws
-  port: 8080
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡|@ripaojiedian #3'
-  password: zcaarradsfasgfdcxx
-  port: '3551'
-  server: nstku8v.ns.p36958.xyz
+- cipher: rc4-md5
+  name: '🇯🇵 日本|@ripaojiedian #3'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
   type: ss
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #5'
+  name: '美国 CloudFlare节点 #1'
   network: ws
   port: 443
   server: bluehost.com
@@ -234,28 +175,21 @@ proxies:
     headers:
       Host: cdntr2.digisport.shop
     path: /19544
-- cipher: chacha20-ietf-poly1305
-  name: '新加坡|@ripaojiedian #1'
-  password: zcaarradsfasgfdcxx
-  port: '3551'
-  server: nstku8v.ns.p36958.xyz
+- cipher: rc4-md5
+  name: '🇺🇸 美国2|@ripaojiedian #3'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港3|@ripaojiedian #3'
-  network: tcp
-  port: 46210
-  server: 43.247.135.170
-  tls: false
-  type: vmess
-  uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
-- alterId: 0
-  cipher: auto
-  name: '香港3|@ripaojiedian #1'
-  network: tcp
-  port: '46210'
-  server: 43.247.135.170
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
+- cipher: rc4-md5
+  name: '美国2|@ripaojiedian #1'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '日本|@ripaojiedian #1'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
+  type: ss
