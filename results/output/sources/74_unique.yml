@@ -1,6 +1,26 @@
-# Update: 2025-07-04 00:05
-# Source 74 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 2
+# Update: 2025-07-04 08:48
+# Source 74 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 5
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 中国【机场推荐：https://a0a.xyz/】18
+  network: ws
+  port: '30840'
+  server: v40.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: api100-core-quic-lf.amemv.com
+    path: /index
+- name: 中国【机场推荐：https://a0a.xyz/】2
+  network: tcp
+  password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+  port: 27235
+  server: 0a7a80dc-sytz40-szxh9w-46gc.cm5.cnkuaishou.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 美国【机场推荐：https://a0a.xyz/】24
@@ -21,3 +41,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #7'
+  network: ws
+  port: 8443
+  server: 104.21.80.1
+  tls: true
+  type: vmess
+  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
