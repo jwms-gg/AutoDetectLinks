@@ -527,8 +527,10 @@ def issue_sources() -> list[Source]:
 
 def main():
     logger.info("Fetching proxies sources...")
+    sources = [Source(_) for _ in settings.sources]
+    [sources.insert(1, _) for _ in issue_sources()]
     sources = fetch_sources(
-        [Source(_) for _ in settings.sources] + issue_sources(),
+        sources,
         settings.max_threads,
     )
 
