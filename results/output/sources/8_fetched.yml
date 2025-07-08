@@ -1,105 +1,196 @@
-# Update: 2025-07-08 08:48
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 11
+# Update: 2025-07-19 09:02
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 20
 proxies:
-- name: 🇩🇪_DE_德国->🇺🇸_US_美国
-  password: 6gZh2JbfhQ
-  port: 1935
-  server: 104.248.18.1
-  sni: x1-germany-digitalocean-v2.devefun.org
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32962
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国
   network: ws
-  port: 30807
-  server: v7.heduian.link
+  port: 8880
+  server: 69.84.182.108
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
   ws-opts:
     headers:
-      host: v7.heduian.link
-    path: /oooo
-- name: '🇺🇸_US_美国->🇫🇷_FR_法国 #1'
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🏳️_unKnow_未知
   network: ws
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-  udp: true
+  port: 51515
+  server: aflzzul.meiquankongjian.com
+  sni: ''
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
   ws-opts:
     headers:
-      host: rrr4.8906004.xyz
-    path: /DZxb5QZyWgQPuXTwt
+      host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 3596
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国->🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国
   network: ws
-  port: 30835
-  server: 111.26.109.79
+  port: 30833
+  server: v33.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /oooo
-- name: '🇺🇸_US_美国 #2'
-  network: ws
-  password: 288124da-0d68-42f4-9f48-70dc4dcc55a6
-  port: 443
-  server: 104.21.77.79
-  sni: SsXCDfR5.986986.shoP
-  type: trojan
-  udp: true
-  ws-opts:
     headers:
-      host: ssxcdfr5.986986.shop
-    path: /raChT39pjLFYRA5HdHEIupMZeK
-- cipher: rc4-md5
-  name: 🇩🇪_DE_德国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+      host: v33.heduian.link
+    path: /oooo
 - cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  obfs: plain
+  name: 🇲🇩_MD_摩尔多瓦_1
   password: f8f7aCzcPKbsF8p3
   port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: '🇷🇺_RU_俄罗斯 #1'
-  password: Y1hjiUmSgucgzYYJ0WtqwW
-  port: 60117
-  server: 77.246.102.112
+  server: 91.132.94.200
   type: ss
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
-  port: 31263
-  server: 183.240.179.89
-  skip-cert-verify: false
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  password: SdCqFLcA
+  port: 40252
+  server: 36.151.251.57
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  name: 🇦🇺_AU_澳大利亚->🇬🇧_GB_英国
   network: ws
-  port: 23117
-  server: 185.143.221.140
+  port: 50228
+  server: szfgxcbfg.hjdfghfc.asia
+  skip-cert-verify: true
+  sni: ''
   type: vmess
-  uuid: c850f3fc-d494-441c-bd38-83359240bda7
-  ws-opts:
-    path: /
-- name: '🇺🇸_US_美国_3 #1'
-  network: ws
-  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
-  port: 443
-  server: 172.67.220.32
-  sni: eEEfGty6.999836.XYz
-  type: trojan
-  udp: true
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
   ws-opts:
     headers:
-      host: eeefgty6.999836.xyz
-    path: /XmTzATQPJv9RO3xr1D40NK
+      host: file.dingtalk.com
+    path: /market?ed=512
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸_US_美国_2 #2'
+  network: ws
+  port: 8880
+  server: 69.84.182.18
+  type: vmess
+  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺_RU_俄罗斯
+  password: c40641c1f89e7acb
+  port: 57456
+  server: tr.vpnsparta.pro
+  type: ss
+- name: 🇬🇧_GB_英国
+  network: tcp
+  password: '74260628090146500'
+  port: 443
+  server: stirring-parakeet.shiner427.skin
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: ws
+  port: 80
+  server: twjxlnnoljxc2.jkhkgj.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      host: file.dingtalk.com
+    path: /market/us1?ed=512
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo

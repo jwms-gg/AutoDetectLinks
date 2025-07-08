@@ -1,43 +1,119 @@
-# Update: 2025-07-08 08:48
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 4
+# Update: 2025-07-19 09:02
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 10
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  port: 8880
+  server: 69.84.182.108
+  type: vmess
+  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🏳️_unKnow_未知
+  network: ws
+  port: 51515
+  server: aflzzul.meiquankongjian.com
+  sni: ''
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国->🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
-  port: 30807
-  server: v7.heduian.link
+  port: 30829
+  server: v29.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v7.heduian.link
+      host: ocbc.com
     path: /oooo
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺_AU_澳大利亚->🇬🇧_GB_英国
+  network: ws
+  port: 50228
+  server: szfgxcbfg.hjdfghfc.asia
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      host: file.dingtalk.com
+    path: /market?ed=512
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸_US_美国_2 #2'
+  network: ws
+  port: 8880
+  server: 69.84.182.18
+  type: vmess
+  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
-  port: 30835
-  server: 111.26.109.79
+  port: 30837
+  server: v37.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: ws
+  port: 80
+  server: twjxlnnoljxc2.jkhkgj.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      host: file.dingtalk.com
+    path: /market/us1?ed=512
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  network: ws
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
+    headers:
+      host: v8.heduian.link
     path: /oooo
-- name: 🇨🇳_CN_中国->🇫🇷_FR_法国
-  password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
-  port: 31263
-  server: 183.240.179.89
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  network: ws
-  port: 23117
-  server: 185.143.221.140
-  type: vmess
-  uuid: c850f3fc-d494-441c-bd38-83359240bda7
-  ws-opts:
-    path: /

@@ -1,1526 +1,363 @@
-# Update: 2025-07-08 08:48
-# Source 62 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 219
+# Update: 2025-07-19 09:05
+# Source 62 (https://proxy.crazygeeky.com/clash/proxies), 34
 proxies:
-- name: '@Hope_Net-join-us-on-Telegram #86'
+- cipher: aes-256-gcm
+  name: _01 | 5.76Mb
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: Pool__02 | 9.48Mb
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _03 | 6.13Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Pool__04 |571.00Mb
+  obfs: plain
+  obfs-param: data.bilibili.com/ed5a2165400
+  password: http://cc.ax/
+  port: 41228
+  protocol: auth_aes128_md5
+  protocol-param: 165400:Hr2aXO
+  server: 222.186.20.102
+  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /
+  name: _05 |11.85Mb
+  network: http
+  port: 10410
+  server: 62.60.176.240
+  type: vmess
+  udp: true
+  uuid: f107a60e-af79-44c9-bc7e-b5707f3208e1
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_-🇺🇸US_06
   network: ws
-  password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
   port: 443
-  server: 104.26.15.85
-  sni: md1.safecdn.site
-  type: trojan
+  server: codepen.io
+  tls: true
+  type: vmess
+  udp: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: md1.safecdn.site
-    path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2
-- name: '@Hope_Net-join-us-on-Telegram #87'
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 104.25.252.184
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇦 乌克兰 V2CROSS.COM
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸 美国 CloudFlare节点
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  skip-cert-verify: false
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 165.22.74.230
-  skip-cert-verify: false
-  sni: nextstepcareer.online
-  type: trojan
-- name: '🇺🇸 美国 V2CROSS.COM #1'
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: false
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
-  port: 443
-  server: 104.21.88.37
-  skip-cert-verify: false
-  sni: XXcdVFghYUIOp.999165.xyZ
-  type: trojan
-- name: 45 |  2.5MB/s|46%|Openai|Gem.....
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: 63 |  2.1MB/s|46%|Openai|Gem.....
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  type: trojan
-- name: 64 |  1.3MB/s|46%|Openai|Gem.....
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 15229
-  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  skip-cert-verify: true
-  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  type: trojan
-- name: '🇭🇰 香港4|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港5|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港6|@ripaojiedian #1'
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '🇯🇵 日本3|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇯🇵 日本4|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇰🇷 韩国4|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡2|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国3|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国4|@ripaojiedian #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 'AM_speednode_0001 #5'
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'ES_speednode_0023 #4'
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-- name: 'KZ_speednode_0109 #3'
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'RU_speednode_0141 #6'
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'US_speednode_0183 #6'
-  password: Aimer
-  port: 2053
-  server: 199.34.228.50
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇸🇬 每天更新，请加电报群防止失联
-  password: Aimer
-  port: 443
-  server: ignacio.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '日期：07-07 #1'
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸 _美国
-  password: Aimer
-  port: 443
-  server: pranab.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #1'
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇷🇺 _俄罗斯
-  password: Aimer
-  port: 2053
-  server: 5.35.68.249
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇦 _乌克兰
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇳🇱 _荷兰
-  password: Aimer
-  port: 2053
-  server: 45.134.21.8
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇫🇷 _法国
-  password: Aimer
-  port: 81
-  server: 45.80.209.25
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸 _亚美尼亚
-  password: Aimer
-  port: 8443
-  server: 188.164.159.74
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #2'
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇳🇱 _荷兰 #1'
-  password: Aimer
-  port: 2087
-  server: 45.150.115.195
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇯🇵 _日本
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #3'
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #4'
-  password: Aimer
-  port: 443
-  server: arvind.ns.cloudflare.com
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: _中国
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 60073
-  server: unify.46322416.xyz
-  skip-cert-verify: false
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '🇺🇸 _美国 #5'
-  password: Aimer
-  port: 8443
-  server: 199.34.228.178
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇯🇵 _日本 #1'
-  password: Aimer
-  port: 2096
-  server: 103.116.7.220
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇷🇺 _俄罗斯 #1'
-  password: Aimer
-  port: 2096
-  server: 5.182.85.255
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #1'
-  password: Aimer
-  port: 443
-  server: 154.197.64.206
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #2'
-  password: Aimer
-  port: 2053
-  server: 154.219.5.44
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #6'
-  password: Aimer
-  port: 2083
-  server: 135.84.74.254
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #1'
-  password: Aimer
-  port: 2083
-  server: 188.164.159.98
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇦 _乌克兰 #1'
-  password: Aimer
-  port: 2087
-  server: 45.67.215.217
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇦 _乌克兰 #2'
-  password: Aimer
-  port: 2053
-  server: 31.43.179.60
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇯🇵 _日本 #2'
-  password: Aimer
-  port: 2087
-  server: 103.116.7.100
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #3'
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: false
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '🇷🇺 _俄罗斯 #2'
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇫🇷 _法国 #1'
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #2'
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇯🇵 _日本 #3'
-  password: Aimer
-  port: 2083
-  server: 103.116.7.133
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #3'
-  password: Aimer
-  port: 443
-  server: 188.164.159.18
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #4'
-  password: Aimer
-  port: 8443
-  server: 188.164.159.185
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #7'
-  password: Aimer
-  port: 443
-  server: 167.68.4.58
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇬🇧 _英国
-  password: Aimer
-  port: 8443
-  server: 176.53.144.206
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #8'
-  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
-  port: 443
-  server: 172.67.220.32
-  skip-cert-verify: false
-  sni: eEEfGty6.999836.XYz
-  type: trojan
-- name: '_中国 #4'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #5'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 _美国 #9'
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 13.215.50.90
-  skip-cert-verify: false
-  sni: baidu.com
-  type: trojan
-- name: '_中国 #6'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #7'
-  password: a0f7a422-7867-469c-946b-190d8fbc2a5d
-  port: 1531
-  server: 103.248.229.29
-  skip-cert-verify: false
-  sni: 103.248.229.29
-  type: trojan
-- name: '_中国 #8'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #9'
-  password: a5a81a34-f257-11ef-ba82-f23c913c8d2b
-  port: 31253
-  server: 183.240.179.89
-  skip-cert-verify: false
-  sni: 183.240.179.89
-  type: trojan
-- name: '_中国 #10'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #11'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 _美国 #10'
-  password: trojan
-  port: 8443
-  server: 104.26.12.31
-  skip-cert-verify: false
-  sni: fofang.pages.dev
-  type: trojan
-- name: '🇺🇸 _美国 #11'
-  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
-  port: 443
-  server: 104.21.88.37
-  skip-cert-verify: false
-  sni: XXcdVFghYUIOp.999165.xyZ
-  type: trojan
-- name: '🇺🇸 _美国 #12'
-  password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
-  port: 443
-  server: 172.67.219.196
-  skip-cert-verify: false
-  sni: CCcvfgt6.852224.dpdns.org
-  type: trojan
-- name: '🇺🇸 _美国 #13'
-  password: 288124da-0d68-42f4-9f48-70dc4dcc55a6
-  port: 443
-  server: 172.67.175.139
-  skip-cert-verify: false
-  sni: cvFbghYU.859886.XYZ
-  type: trojan
-- name: '🇺🇸 _美国 #14'
-  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
-  port: 443
-  server: 172.67.172.71
-  skip-cert-verify: false
-  sni: 666666Y.999165.XYZ
-  type: trojan
-- name: '🇺🇸 _美国 #15'
-  password: 4b33b482-25bc-49e4-b866-878c914d945a
-  port: 443
-  server: 104.21.7.147
-  skip-cert-verify: false
-  sni: 44444444.HuanGShANG.DPDNs.oRG
-  type: trojan
-- name: '🇺🇸 _美国 #16'
-  password: 512d9674-db12-44ca-a1b5-654244549b65
-  port: 443
-  server: cccvffgty.444752.xyz
-  skip-cert-verify: false
-  sni: cccvffgty.444752.xyz
-  type: trojan
-- name: '🇺🇸 _美国 #17'
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  skip-cert-verify: false
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-- name: '🇺🇸 _美国 #18'
-  password: Aimer
-  port: 2053
-  server: 199.34.228.50
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #19'
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.172
-  skip-cert-verify: false
-  sni: egcmi.phooeyunfold.com
-  type: trojan
-- name: '🇺🇸 _美国 #20'
-  password: Aimer
-  port: 2096
-  server: 192.200.160.169
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '🇺🇸 _美国 #21'
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 154.83.2.200
-  skip-cert-verify: false
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-- name: '_中国 #12'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #13'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #14'
-  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-  port: 15229
-  server: e16abc19-sz1ds0-szd8vg-1ryup.cu2.plebai.net
-  skip-cert-verify: false
-  sni: e16abc19-sz1ds0-szd8vg-1ryup.cu2.plebai.net
-  type: trojan
-- name: '🇺🇸 _亚美尼亚 #5'
-  password: Aimer
-  port: 2083
-  server: 188.164.159.234
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: '_中国 #15'
-  password: 730223f0-ef31-11ef-b5d9-f23c9164ca5d
-  port: 15229
-  server: 675b39e1-sz38g0-t3mmvc-1qgd1.cu2.plebai.net
-  skip-cert-verify: false
-  sni: 675b39e1-sz38g0-t3mmvc-1qgd1.cu2.plebai.net
-  type: trojan
-- name: '🇷🇺 _俄罗斯 #3'
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇨🇿 _捷克
-  password: mZMgM1vKw5
-  port: 1935
-  server: 85.255.9.247
-  skip-cert-verify: false
-  sni: x1-czech-aruba-v2.devefun.org
-  type: trojan
-- name: ️_未知
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 103.160.204.40
-  skip-cert-verify: false
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-- name: '_中国 #16'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-- name: '_中国 #17'
-  password: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
-  port: 31433
-  server: 183.240.179.89
-  skip-cert-verify: false
-  sni: 183.240.179.89
-  type: trojan
-- name: '_中国 #18'
-  password: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  port: 31233
-  server: 183.240.179.89
-  skip-cert-verify: false
-  sni: 183.240.179.89
-  type: trojan
-- name: '_中国 #19'
-  password: 775baa4a-d75b-11ef-a11a-f23c913c8d2b
-  port: 32233
-  server: 183.240.179.89
-  skip-cert-verify: false
-  sni: 183.240.179.89
-  type: trojan
-- name: '_中国 #20'
-  password: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
-  port: 31263
-  server: 183.240.179.89
-  skip-cert-verify: false
-  sni: 183.240.179.89
-  type: trojan
-- name: '🇭🇰 香港4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港5|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港6|@ripaojiedian #2'
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '🇯🇵 日本3|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇯🇵 日本4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇰🇷 韩国4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡2|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国3|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '45 |  2.5MB/s|46%|Openai|Gem..... #1'
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: '63 |  2.1MB/s|46%|Openai|Gem..... #1'
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  type: trojan
-- name: '64 |  1.3MB/s|46%|Openai|Gem..... #1'
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 15229
-  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  skip-cert-verify: true
-  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  type: trojan
-- name: '🇭🇰 香港4|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港5|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇭🇰 香港6|@ripaojiedian #3'
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '🇯🇵 日本3|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇯🇵 日本4|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇰🇷 韩国4|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇸🇬 新加坡2|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国3|@ripaojiedian #4'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '🇺🇸 美国4|@ripaojiedian #3'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 'AM_speednode_0001 #6'
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'ES_speednode_0023 #5'
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-- name: 'KZ_speednode_0109 #4'
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'RU_speednode_0141 #7'
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 'US_speednode_0183 #7'
-  password: Aimer
-  port: 2053
-  server: 199.34.228.50
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  sni: www.baidu.com
-  type: trojan
-- name: 未知
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- cipher: rc4-md5
+  country: 🇩🇪DE
+  name: 🇩🇪DE_07 |31.22Mb
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇫🇷FR-🏁ZZ_08 |12.63Mb
   network: ws
-  password: trojan
   port: 8443
-  server: 109.234.211.66
-  sni: store.timimi.dpdns.org
-  type: trojan
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
   ws-opts:
     headers:
-      Host: store.timimi.dpdns.org
+      HOST: us01.sh-cloudflare.sbs
     path: /
-- name: 🇺🇸US美国2
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23521
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国3
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23515
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国4
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23523
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇦🇲AM亚美尼亚
-  password: Aimer
+- alterId: 0
+  cipher: auto
+  country: 🇫🇷FR
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇫🇷FR-🏁ZZ_09 |12.50Mb
+  network: ws
   port: 8443
-  server: 188.164.159.185
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国5
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国6
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23504
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国7
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国8
-  password: xxoo
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 18d684f0-6f97-4602-830e-7cea48b0d648
+  ws-opts:
+    headers:
+      HOST: us01.sh-cloudflare.sbs
+    path: /
+- cipher: aes-256-cfb
+  country: 🇬🇧GB
+  name: 🇬🇧GB_10 |717.72Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- country: 🇬🇧GB
+  name: Relay_🇬🇧GB-🇬🇧GB_11 |26.77Mb
+  password: '74260628090146500'
   port: 443
-  server: 138.197.5.103
+  server: stirring-parakeet.shiner427.skin
+  skip-cert-verify: true
   type: trojan
-- name: 🇺🇸US美国9
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: www.ddwhm.com
-  sni: nk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国10
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23525
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 未知2
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  type: trojan
-- name: 🇺🇸US美国11
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23514
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 未知3
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇮🇷IR
+  name: 🇮🇷IR_13 |31.47Mb
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹LT
+  name: 🇱🇹LT_14 | 8.16Mb
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.22
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇳🇱NL
+  name: 🇳🇱NL_15 |58.07Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇳🇱NL
+  name: Relay_🇳🇱NL-🇳🇱NL_16 |16.16Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 🇷🇺RU_17 |34.35Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 🇷🇺RU_18 | 2.91Mb
+  password: c40641c1f89e7acb
+  port: 57456
+  server: tr.vpnsparta.pro
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 🇷🇺RU_19 |23.70Mb
+  password: eUh4lSpi7nOYj0vSrqLUh0
+  port: 8506
+  server: 95.163.176.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇰SK
+  name: 🇸🇰SK_20 |22.40Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇹🇼TW-🇺🇸US_21 | 1.58Mb
   network: ws
-  password: Aimer
+  port: 80
+  server: hyttttesgvvxb2.jkhkgj.xyz
+  servername: file.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      HOST: file.dingtalk.com
+    path: /market/jp1?ed=512
+- alterId: 0
+  cipher: auto
+  country: 🇹🇼TW
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇹🇼TW-🇹🇼TW_22 | 1.68Mb
+  network: ws
+  port: 80
+  server: twjxlnnoljxc2.jkhkgj.xyz
+  servername: file.dingtalk.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3cf79bca-41e3-47d5-ba67-87a69a1a9e59
+  ws-opts:
+    headers:
+      HOST: file.dingtalk.com
+    path: /market/tw?ed=512
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇳🇱NL_23 |52.79Mb
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.60
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 🇺🇸US_24 |27.76Mb
+  password: awsps0501
+  port: 443
+  server: 54.187.127.254
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_25 |11.34Mb
+  password: TG:@Enkelte_notif&&TG:@Notif_Chat
+  port: 34045
+  server: 152.53.2.128
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 🇺🇸US_26 |15.57Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_27 |38.05Mb
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_28 |157.00Mb
+  obfs: http_simple
+  password: Uk92CS
+  port: 13000
+  protocol: auth_aes128_sha1
+  server: nm3.boom.party
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸US_29 |24.45Mb
+  network: ws
   port: 8443
-  server: 46.254.93.243
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
+  server: orvps2.horsenma.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   ws-opts:
-    headers:
-      Host: epmk.ambercc.filegear-sg.me
-    path: /
-- name: 🇺🇸US美国12
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23508
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国13
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: nikon.ns.cloudflare.com
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇭🇰HK香港
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  sni: www.baidu.com
-  type: trojan
-- name: 🇺🇸US美国14
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23513
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国15
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇯🇵JP日本2
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  sni: www.baidu.com
-  type: trojan
-- name: 🇫🇷FR法国
-  password: Aimer
-  port: 81
-  server: 45.80.209.25
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 未知5
+    path: /horsen
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🏁ZZ_30 |13.74Mb
   network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epmk.ambercc.filegear-sg.me
-    path: /
-- name: 🇺🇸US美国16
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23505
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇰🇷KR韩国
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  sni: www.baidu.com
-  type: trojan
-- name: 🇸🇬SG新加坡
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  sni: www.baidu.com
-  type: trojan
-- name: 'US #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 199.34.228.50
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epml.ambercc.filegear-sg.me
-    path: /
-- name: 🇦🇲AM亚美尼亚2
-  password: Aimer
-  port: 443
-  server: 188.164.159.18
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国17
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23506
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国18
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 154.83.2.200
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560
-- name: '🇷🇺RU俄罗斯 #1'
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国19
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国20
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23511
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国21
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23499
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国22
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23617
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国23
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.172
-  sni: egcmi.phooeyunfold.com
-  type: trojan
-- name: 🇺🇸US美国24
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23517
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇬🇧GB英国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.138.7
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇨🇳CN中国
-  password: Aimer
-  port: 443
-  server: 154.197.64.206
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国25
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.68.85
-  sni: nk.ylka.dpdns.org
-  type: trojan
-- name: 未知8
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 103.160.204.59
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 未知9
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.234
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epml.ambercc.filegear-sg.me
-    path: /
-- name: 🇺🇸US美国26
-  password: Aimer
-  port: 2096
-  server: 192.200.160.169
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 未知10
-  network: ws
-  password: 936c6853-6bbf-4e24-8667-ec5b2fc275b3
-  port: 443
-  server: 104.26.15.85
-  sni: md1.safecdn.site
-  type: trojan
-  ws-opts:
-    headers:
-      Host: md1.safecdn.site
-    path: /Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2-Channel_vpnAndroid2
-- name: 🇺🇸US美国27
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 162.159.36.104
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 未知11
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 15229
-  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  type: trojan
-- name: 🇯🇵JP日本3
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  sni: www.baidu.com
-  type: trojan
-- name: 🇺🇸US美国28
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23501
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国29
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.243.218
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国30
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23509
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国31
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23503
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国32
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23526
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国33
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇭🇰HK香港4
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  sni: cdn.alibaba.com
-  type: trojan
-- name: 🇮🇳IN印度
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 8443
-  server: 103.160.204.40
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 18437a48-3923-4f60-b94b-bf62812961cf
   ws-opts:
     headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇦UA乌克兰
-  password: Aimer
-  port: 2087
-  server: 45.67.215.217
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇨🇳江苏
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 53067
-  server: 36.151.251.29
-  sni: www.baidu.com
-  type: trojan
-- name: 🇺🇸US美国34
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23510
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇭🇰HK香港5
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  sni: www.baidu.com
-  type: trojan
-- name: 🇺🇸US美国35
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  sni: www.baidu.com
-  type: trojan
-- name: 🇺🇸US美国36
-  password: 512d9674-db12-44ca-a1b5-654244549b65
-  port: 443
-  server: cccvffgty.444752.xyz
-  sni: cccvffgty.444752.xyz
-  type: trojan
-- name: 🇺🇸US美国37
-  password: Aimer
-  port: 2083
-  server: 135.84.74.254
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国38
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23512
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国39
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-- name: 🇺🇸US美国40
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23502
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇸🇬SG新加坡3
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  sni: www.baidu.com
-  type: trojan
-- name: 🇯🇵JP日本5
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 43.203.122.115
-  sni: baidu.com
-  type: trojan
-- name: 未知12
-  network: tcp
-  password: Aimer
+      HOST: us01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🏁ZZ_31 |13.02Mb
+  network: ws
   port: 8443
-  server: 104.25.252.184
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: 未知13
-  network: ws
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f9ce0135-1007-4a4a-8c30-87a86bb81ad7
   ws-opts:
     headers:
-      Host: epmk.ambercc.filegear-sg.me
+      HOST: us01.sh-cloudflare.sbs
     path: /
-- name: 🇺🇸US美国41
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.sb
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国42
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.110.232
-  sni: nk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国43
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23524
-  server: a-lepl.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国44
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 104.17.71.31
-  sni: nk.ylka.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国45
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23507
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国46
-  password: 62f4b944-1a6c-4203-a73e-be5de8da84bf
-  port: 23519
-  server: a-bgp.jifeng.click
-  sni: cn.bing.com
-  type: trojan
-- name: 🇺🇸US美国47
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+- cipher: chacha20-ietf-poly1305
+  country: 🇻🇳VN
+  name: 🇻🇳VN_32 | 2.58Mb
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 103.163.218.2
+  type: ss
+- cipher: aes-256-gcm
+  country: 🏁ZZ
+  name: 🏁ZZ_33 |21.87Mb
+  password: atjgsJXmcv
+  port: 52327
+  server: 103.15.91.171
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_34 |17.63Mb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.18
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 🏁ZZ_35 |24.33Mb
+  network: ws
   port: 8443
-  server: 162.159.129.67
-  sni: mk.ylka.dpdns.org
-  type: trojan
-- name: 未知14
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-- name: '🇺🇸45 |  2.5MB/s|46%|Openai|Gem... #2'
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: '🇺🇸63 |  2.1MB/s|46%|Openai|Gem... #2'
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: false
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  type: trojan
-- name: '🇺🇸64 |  1.3MB/s|46%|Openai|Gem... #2'
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 15229
-  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  server: 104.21.20.162
+  servername: orvps2.horsenma.net
   skip-cert-verify: true
-  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  type: trojan
-- name: '香港4|@ripaojiedian #4'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '香港5|@ripaojiedian #4'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '香港6|@ripaojiedian #2'
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '日本3|@ripaojiedian #4'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '日本4|@ripaojiedian #5'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '韩国4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '新加坡|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '新加坡2|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '美国3|@ripaojiedian #5'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: '美国4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 'AM_speednode_0001 #7'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   ws-opts:
     headers:
-      Host: epmk.ambercc.filegear-sg.me
-    path: /
-- name: 'ES_speednode_0023 #6'
-  network: ws
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /
-- name: 'KZ_speednode_0109 #5'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epmk.ambercc.filegear-sg.me
-    path: /
-- name: 'RU_speednode_0141 #8'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  skip-cert-verify: false
-  sni: epmk.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epmk.ambercc.filegear-sg.me
-    path: /
-- name: 'US_speednode_0183 #8'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 199.34.228.50
-  skip-cert-verify: false
-  sni: epml.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epml.ambercc.filegear-sg.me
-    path: /
-- name: '🇨🇿CZ-85.255.9.247-0227 #1'
-  password: mZMgM1vKw5
-  port: 1935
-  server: 85.255.9.247
-  sni: x1-czech-aruba-v2.devefun.org
-  type: trojan
-- name: 🇺🇸US-138.197.5.103-0957
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
-  sni: us.blazeppn.info
-  type: trojan
+      HOST: orvps2.horsenma.net
+    path: /horsen

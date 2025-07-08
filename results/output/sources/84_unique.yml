@@ -1,3 +1,52 @@
-# Update: 2025-07-08 08:48
-# Source 84 (https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt), 0
-proxies: []
+# Update: 2025-07-14 08:54
+# Source 84 (http://brovee.myds.me:12580/clash/proxies), 4
+proxies:
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_ | 3.52Mb
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  servername: baidu.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      HOST: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_ | 4.03Mb
+  network: tcp
+  port: 59222
+  server: 120.232.153.121
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  group: muma16fx
+  name: Pool_ |164.00Mb
+  obfs: plain
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+  port: 443
+  protocol: origin
+  server: 45.79.93.178
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  group: muma16fx
+  name: Pool_ |171.00Mb
+  obfs: plain
+  password: 9d6cceaa373bf2c8acb22e60b6a58be6
+  port: 443
+  protocol: origin
+  server: 45.79.79.37
+  type: ssr

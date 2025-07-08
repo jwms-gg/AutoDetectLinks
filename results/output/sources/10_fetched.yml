@@ -1,25 +1,33 @@
-# Update: 2025-07-08 08:48
-# Source 10 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 24
+# Update: 2025-07-19 09:02
+# Source 10 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 18
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 'tg频道:@ripaojiedian #2'
-  password: yijian0503
+  password: qawszxc123
   port: 443
-  server: 43.203.213.154
+  server: 13.212.193.32
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
-  name: '🇭🇰 香港|@ripaojiedian #1'
-  password: 1KBLVSCYZWEL735O
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
+  name: 🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '🇭🇰 香港2|@ripaojiedian #5'
+  name: '🇭🇰 香港2|@ripaojiedian #4'
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
   plugin-opts:
@@ -33,53 +41,37 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港3|@ripaojiedian
   network: ws
   port: 80
-  server: hkt.gotochinatown.net
+  server: 2112e4.7d79233c.shop
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: hk01s.7d79233c.shop
     path: /
 - client-fingerprint: chrome
-  name: 🇭🇰 香港4|@ripaojiedian
+  name: '🇭🇰 香港4|@ripaojiedian #2'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.10
+  port: 14495
+  server: 36.151.192.62
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 🇭🇰 香港5|@ripaojiedian
+  name: '🇭🇰 香港5|@ripaojiedian #2'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 50723
-  server: 36.151.251.24
+  port: 2078
+  server: 36.151.192.62
   skip-cert-verify: true
   sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港6|@ripaojiedian
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇹🇼 台湾|@ripaojiedian
-  password: 77c0e69d-f479-4636-bbe5-e79001d5708b
-  port: 42765
-  server: gz-43e866.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz1.redapricotcloud.com
   type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
@@ -87,7 +79,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-yZ3kjukUbq.download.microsoft.com
+    host: 202507121073737-ygDWmYQSlm.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -95,7 +87,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '🇯🇵 日本2|@ripaojiedian #6'
+  name: '🇯🇵 日本2|@ripaojiedian #3'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -110,83 +102,51 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 🇯🇵 日本3|@ripaojiedian
+  name: '🇯🇵 日本3|@ripaojiedian #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
+  port: 41225
+  server: 36.151.192.239
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 🇯🇵 日本4|@ripaojiedian
+  name: '🇯🇵 日本4|@ripaojiedian #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
+  port: 39701
+  server: 36.151.192.239
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '🇯🇵 日本5|@ripaojiedian #1'
-  password: 0V80159CYIW98X9N
-  port: 18013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: '🇰🇷 韩国|@ripaojiedian #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 16158
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: '🇸🇬 新加坡|@ripaojiedian #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32063
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: '🇸🇬 新加坡2|@ripaojiedian #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 8117
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 🇯🇵 日本6|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 9898
-  server: 52.192.64.50
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇰🇷 韩国3|@ripaojiedian
-  network: ws
-  port: 30828
-  server: 111.26.109.79
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- client-fingerprint: chrome
-  name: 🇰🇷 韩国4|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 45203
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 38482
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡2|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7041
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 🇸🇬 新加坡3|@ripaojiedian
-  password: 0LLRTV6956I3CQOM
-  port: 16005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -195,49 +155,33 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-yZ3kjukUbq.download.microsoft.com
+    host: 202507121073737-ygDWmYQSlm.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 美国|@ripaojiedian
-  network: ws
-  port: 30828
-  server: 111.26.109.79
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - client-fingerprint: chrome
-  name: '🇺🇸 美国3|@ripaojiedian #1'
+  name: '🇺🇸 美国3|@ripaojiedian #2'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30534
-  server: 36.151.251.36
+  port: 3596
+  server: 36.151.192.239
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 🇺🇸 美国4|@ripaojiedian
+  name: '🇺🇸 美国4|@ripaojiedian #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 30495
-  server: 36.151.251.60
-  sin: www.baidu.com
+  port: 32962
+  server: 36.151.192.239
   skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '🇻🇳 越南|@ripaojiedian #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.163.218.2
+  name: '🇦🇹 奥地利|@ripaojiedian #1'
+  password: TG:@Enkelte_notif&&TG:@Notif_Chat
+  port: 34045
+  server: 152.53.2.128
   tfo: false
   type: ss
