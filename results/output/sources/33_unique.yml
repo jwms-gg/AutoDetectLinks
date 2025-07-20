@@ -1,15 +1,42 @@
-# Update: 2025-07-19 09:02
-# Source 33 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 1
+# Update: 2025-07-20 08:57
+# Source 33 (https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub), 3
 proxies:
-- name: 俄罗斯+V2CROSS.COM
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #9'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
+  port: 8880
+  server: www.visa.com.sg
+  tls: false
+  type: vmess
+  uuid: 62a00edc-9867-4c66-82ee-d57c19facad3
   ws-opts:
     headers:
-      Host: vle.amclubdns.dpdns.org
-    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
+      Host: normal-riding-large-struct.trycloudflare.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #11'
+  network: ws
+  port: 8443
+  server: www.visa.com.sg
+  tls: true
+  type: vmess
+  uuid: 62a00edc-9867-4c66-82ee-d57c19facad3
+  ws-opts:
+    headers:
+      Host: normal-riding-large-struct.trycloudflare.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #15'
+  network: ws
+  port: 80
+  server: 527cb2.827a4c39.shop
+  tls: false
+  type: vmess
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
+  ws-opts:
+    headers:
+      Host: sg02s.827a4c39.shop
+    path: /
