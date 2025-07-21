@@ -1,5 +1,5 @@
-# Update: 2025-07-20 08:58
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 78
+# Update: 2025-07-21 08:56
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 73
 proxies:
 - alterId: 2
   cipher: auto
@@ -126,109 +126,9 @@ proxies:
     headers:
       Host: v8.heduian.link
     path: /oooo
-- cipher: aes-256-gcm
-  name: _US_美国->🇨🇳_CN_中国_1
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _US_美国->🇨🇳_CN_中国_2
-  network: ws
-  port: 8880
-  server: 69.84.182.108
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
-  ws-opts:
-    path: /profile/telegram@ssrsub
 - alterId: 2
   cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_1 2
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v5.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: _AU_澳大利亚->🇨🇳_CN_中国
-  network: ws
-  port: 50229
-  server: fhrcvbgffxd.hjdfghfc.asia
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
-  ws-opts:
-    headers:
-      Host: fhrcvbgffxd.hjdfghfc.asia
-    path: /market?ed=512
-- alterId: 0
-  cipher: auto
-  name: _US_美国_1
-  network: ws
-  port: 8880
-  server: 69.84.182.18
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
-  ws-opts:
-    path: /profile/telegram@ssrsub
-- cipher: chacha20-ietf-poly1305
-  name: _RU_俄罗斯_1
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇺🇸_US_美国_2 2
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- name: _CN_中国->🇺🇸_US_美国_3
-  password: SdCqFLcA
-  port: 40252
-  server: 36.151.251.57
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: _GB_英国
-  password: '74260628090146500'
-  port: 443
-  server: stirring-parakeet.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: _CN_中国->🇩🇪_DE_德国 2
+  name: _CN_中国->🇩🇪_DE_德国_1
   network: ws
   port: 30833
   server: v33.heduian.link
@@ -243,10 +143,10 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: _CN_中国 2
+  name: _CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -254,39 +154,111 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v29.heduian.link
+      Host: v8.heduian.link
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: _IR_伊朗->🇨🇳_CN_中国
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.131
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: _US_美国_2
-  port: 55084
-  server: 34.80.156.254
+  name: _CN_中国 2
+  network: ws
+  port: 30837
+  server: v37.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5691fb8a-d890-4a33-9b0e-73017adae5b2
-- cipher: aes-256-cfb
-  name: _MD_摩尔多瓦
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v37.heduian.link
+    path: /oooo
+- cipher: aes-256-gcm
+  name: _US_美国->🇨🇳_CN_中国 2
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: _RU_俄罗斯_2
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
+- name: _CN_中国->🇩🇪_DE_德国_2
+  password: SdCqFLcA
+  port: 40252
+  server: 36.151.251.57
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: _CN_中国->🇬🇧_GB_英国
+  network: ws
+  port: 80
+  server: hyttttesgvvxb2.jkhkgj.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      Host: hyttttesgvvxb2.jkhkgj.xyz
+    path: /market/sg?ed=512
+- alterId: 0
+  cipher: auto
+  name: '_US_美国_2 #1'
+  network: ws
+  port: 8880
+  server: 69.84.182.108
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  ws-opts:
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _AU_澳大利亚
+  network: ws
+  port: 50229
+  server: fhrcvbgffxd.hjdfghfc.asia
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      Host: fhrcvbgffxd.hjdfghfc.asia
+    path: /market?ed=512
+- alterId: 0
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国 2
+  network: ws
+  port: 80
+  server: twjxlnnoljxc2.jkhkgj.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  ws-opts:
+    headers:
+      Host: twjxlnnoljxc2.jkhkgj.xyz
+    path: /market/us1?ed=512
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇲🇩_MD_摩尔多瓦
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v5.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 日本(nodeshare.xyz免费节点)_1
   password: Nk9asglDzHzjktVzTkvhaA
