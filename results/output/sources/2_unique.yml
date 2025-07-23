@@ -1,640 +1,115 @@
-# Update: 2025-07-21 08:56
-# Source 2 (https://pm.enjoy.cloudns.biz/api/v1/subscribe?token=l0b4i8i44u2kzlbh&target=clash&list=1), 58
+# Update: 2025-07-23 08:53
+# Source 2 (https://pm.enjoy.cloudns.biz/api/v1/subscribe?token=l0b4i8i44u2kzlbh&target=clash&list=1), 63
 proxies:
-- alterId: 2
-  cipher: auto
-  name: '🇭🇰 香港家宽 03 #1'
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '🇺🇸 美国 038 #1'
   network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  port: 2086
+  server: s4.db-link01.top
   tls: false
   type: vmess
   udp: true
-  uuid: 6b43d15a-e7bf-11ef-9862-f23c913c8d2b
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '🇺🇸 美国 634 #1'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 103.160.204.49
+      Host: 100-237-33-114.s4.db-link01.top
+    path: /dabai.in104.18.97.195
+- auth: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  name: 🇨🇦 加拿大 02
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  port: 35280
+  server: flyjnd.flylink.cyou
   skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  sni: flyjnd.flylink.cyou
+  type: hysteria2
   udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 13
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
+- auth: 74e6c937-a365-493f-9f87-0fe10a651760
+  name: 🇨🇦 加拿大 28
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 74e6c937-a365-493f-9f87-0fe10a651760
+  port: 33756
+  server: caca.yinheyz.cfd
+  skip-cert-verify: true
+  sni: caca.yinheyz.cfd
+  type: hysteria2
   udp: true
-  uuid: 7420bab3-1908-4b23-b233-cd5a4963f833
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 08
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
+- auth: jyEWQRbJATgWMu3XQtRvxb2h0
+  name: 🇯🇵 日本 08
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
   udp: true
-  uuid: 0bd9bfe9-3e31-407f-9535-5f11a16ffc8e
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 592 #1'
-  network: ws
-  port: 23128
+- auth: 2bf767ed-8dda-47a1-a09d-2c04a96645cd
+  down: 100
+  name: 🇺🇸 美国 405
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 2bf767ed-8dda-47a1-a09d-2c04a96645cd
+  port: 33079
   server: 45.135.135.229
-  tls: false
-  type: vmess
+  skip-cert-verify: true
+  type: hysteria2
   udp: true
-  uuid: 332610db-63ab-402d-89f6-f03abe0dc432
-  ws-opts:
-    path: /
-- name: '🇺🇸 美国 302 #1'
-  network: ws
-  port: 8880
-  server: 199.34.230.63
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 704
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 95bd596c-9125-492c-8101-ce0457867f19
-  ws-opts:
-    headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 02
-  port: 45077
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7420bab3-1908-4b23-b233-cd5a4963f833
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 18
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    tls: true
-  port: 636
-  server: 103.103.245.158
+  up: 100
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 12
+  password: 714800d0-7cbc-4da0-98f5-1cd6d03bc5c3
+  port: 20000
+  server: qoerysakjfh.naichachong.top
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇹🇼 台湾 03
-  port: 45077
-  server: xdd.dashuai.cyou
+  name: 🇷🇺 俄罗斯联邦 074
+  network: ws
+  port: 22080
+  server: 45.135.135.229
   tls: false
   type: vmess
   udp: true
-  uuid: 0bd9bfe9-3e31-407f-9535-5f11a16ffc8e
-- name: 🇺🇸 美国 165
-  network: ws
-  port: 8880
-  server: 91.193.58.72
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 93a58740-a5f3-43ba-938d-e76510e74ad4
   ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alpn:
-  - http%2F1.1
-  name: 🇺🇸 美国 285
+    path: /
+- client-fingerprint: randomized
+  name: '🇺🇸 美国 041 #1'
   network: ws
-  password: cf8c791e-9d0b-4e90-aaf6-41ac62468416
-  port: 443
-  server: 172.67.135.37
-  sni: EeEeeD.459.pp.uA
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: EeEeeD.459.pp.uA
-    path: /XkJmZCwVxJO8180gomOew3d
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 09
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7420bab3-1908-4b23-b233-cd5a4963f833
-- auth: 9f320743-0268-4599-a169-84036ee7f7da
-  name: 🇺🇸 美国 068
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 9f320743-0268-4599-a169-84036ee7f7da
-  port: 20157
-  server: nexiamg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiamg.688997.xyz
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 美国 057
-  network: ws
-  port: 443
-  server: 1750158741.tencentapp.cn
-  servername: us2.loopycloudcfjiasucdn.pp.ua
+  port: 2096
+  server: 154.83.2.54
+  servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: ea53e81d-c585-4bc2-9838-70347c016c40
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: us2.loopycloudcfjiasucdn.pp.ua
-    path: /
-- auth: e2QEtNgU9v
-  name: '🇹🇷 土耳其 01 #1'
-  obfs: salamander
-  obfs-password: vbn@ffFF
-  password: e2QEtNgU9v
-  port: 41250
-  server: 5.133.102.59
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 702 #2'
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7888a5e1-bc78-45f2-ba4c-985f19cb6b5f
-  ws-opts:
-    headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
-- alpn:
-  - http%2F1.1
-  client-fingerprint: chrome
-  name: 🇺🇸 美国 088
-  network: ws
-  port: 443
-  server: 104.21.26.17
-  servername: IiIIIiiIIIiiO.459.pp.uA
-  tls: true
-  type: vless
-  udp: true
-  uuid: cf8c791e-9d0b-4e90-aaf6-41ac62468416
-  ws-opts:
-    headers:
-      Host: IiIIIiiIIIiiO.459.pp.uA
-    path: /dtBdvnoJO8180gomOew3d
-- alterId: 2
-  cipher: auto
-  name: '🇩🇪 德国 23 #1'
-  network: ws
-  port: 30833
-  server: v33.heduian.link
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v33.heduian.link
-    path: /oooo
-- auth: f1be5278-9d77-472a-8d8e-324418370271
-  name: '🇯🇵 日本 17 #1'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f1be5278-9d77-472a-8d8e-324418370271
-  port: 35300
-  server: flyrb.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxg.flylink.cyou
-  type: hysteria2
-  udp: true
-- auth: 65dfc2b8-e311-4977-abb7-d877759fba6d
-  down: 100
-  name: 🇷🇺 俄罗斯联邦 16
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 65dfc2b8-e311-4977-abb7-d877759fba6d
-  port: 33079
-  server: 45.135.135.229
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: a10f4e00-b238-456f-a2b6-82f932126306
-  down: 100
-  name: 🇺🇸 美国 373
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: a10f4e00-b238-456f-a2b6-82f932126306
-  port: 33079
-  server: 45.135.135.229
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 685
-  network: ws
-  port: 23128
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 219e2f40-759b-4e00-9d4b-4bd588e5b84e
-  ws-opts:
-    path: /
-- auth: 79043d28-ea65-45e8-9155-71578cb36f78
-  name: 🇳🇱 荷兰 13
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 79043d28-ea65-45e8-9155-71578cb36f78
-  port: 20457
-  server: nexiahl.688997.xyz
-  skip-cert-verify: true
-  sni: nexiahl.688997.xyz
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 美国 519
-  network: ws
-  port: 8880
-  server: 192.65.217.29
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /
-- auth: 659fecdb-5d60-47d9-a075-c95acd05d88f
-  name: 🇰🇷 韩国 30
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 659fecdb-5d60-47d9-a075-c95acd05d88f
-  port: 20357
-  server: nexiahg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiahg.688997.xyz
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 613 #1'
-  network: ws
-  port: 23128
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 25ef0afc-f519-46ab-a572-ec8a26586f1b
-  ws-opts:
-    path: /
-- auth: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
-  name: 🇯🇵 日本 36
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
-  port: 35300
-  server: flyrb.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxg.flylink.cyou
-  type: hysteria2
-  udp: true
-- auth: 15c56f50-8a90-4b4b-a537-cccb73cdddd0
-  down: 100
-  name: '🇺🇸 美国 066 #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 15c56f50-8a90-4b4b-a537-cccb73cdddd0
-  port: 33079
-  server: 45.135.135.229
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- name: '🇺🇸 美国 028 #1'
-  network: ws
-  port: 8880
-  server: 159.112.235.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- auth: f1be5278-9d77-472a-8d8e-324418370271
-  name: '🇰🇷 韩国 14 #1'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f1be5278-9d77-472a-8d8e-324418370271
-  port: 35310
-  server: flyhg.flylink.cyou
-  skip-cert-verify: true
-  sni: flyhg.flylink.cyou
-  type: hysteria2
-  udp: true
-- name: '🇺🇸 美国 658 #1'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 156.238.18.112
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- auth: b0add43d-7d9c-4234-98f9-5f5a3ce82ab1
-  down: 100
-  name: '🇺🇸 美国 067 #1'
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: b0add43d-7d9c-4234-98f9-5f5a3ce82ab1
-  port: 33079
-  server: 45.135.135.229
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 703 #1'
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 18d684f0-6f97-4602-830e-7cea48b0d648
-  ws-opts:
-    headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 594
-  network: ws
-  port: 23128
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 62ad6b31-ee5f-402f-8660-2c8e6674d77d
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 329
-  network: ws
-  port: 443
-  server: 1750158741.tencentapp.cn
-  servername: us2.loopycloudcfjiasucdn.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: 11afd1ee-1920-4d20-9e62-a4d001e9efef
-  ws-opts:
-    headers:
-      Host: us2.loopycloudcfjiasucdn.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 04
-  port: 45078
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0bd9bfe9-3e31-407f-9535-5f11a16ffc8e
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 024 #1'
-  network: ws
-  port: 443
-  server: 104.21.77.149
-  servername: sCCcxZZZXfVG.999834.xyZ
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d068083-2cb0-4ae3-a44a-6fc82f3039cc
-  ws-opts:
-    headers:
-      Host: sCCcxZZZXfVG.999834.xyZ
-    path: /laTDC7FYNlEa06b88JSo
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 41
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7420bab3-1908-4b23-b233-cd5a4963f833
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 32
-  network: ws
-  port: 80
-  server: hyttttesgvvxb2.jkhkgj.xyz
-  servername: file.dingtalk.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6e2c77b4-c34b-4fb4-9187-08742eb0ba2e
-  ws-opts:
-    headers:
-      Host: file.dingtalk.com
-    path: /market/jp1?ed=512
-- auth: 9ed85c5c-dbcc-4297-bef7-a8f4619d99a9
-  name: 🇬🇧 英国 24
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 9ed85c5c-dbcc-4297-bef7-a8f4619d99a9
-  port: 20657
-  server: nexiayg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiayg.688997.xyz
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇰🇷 韩国 19 #1'
-  port: 45076
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0bd9bfe9-3e31-407f-9535-5f11a16ffc8e
-- auth: 041119c1-d6f5-4710-bcf6-21090d28745e
-  name: '🇧🇷 巴西 07 #1'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 041119c1-d6f5-4710-bcf6-21090d28745e
-  port: 20857
-  server: nexiabx.688997.xyz
-  skip-cert-verify: true
-  sni: nexiabx.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: 73bde0e7-dd56-4fc0-81d2-e594977d649b
-  name: 🇭🇰 香港 26
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 73bde0e7-dd56-4fc0-81d2-e594977d649b
-  port: 20057
-  server: nexiaxg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiaxg.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
-  name: 🇨🇦 加拿大 27
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
-  port: 35280
-  server: flyjnd.flylink.cyou
-  skip-cert-verify: true
-  sni: flyjnd.flylink.cyou
-  type: hysteria2
-  udp: true
-- auth: 9f320743-0268-4599-a169-84036ee7f7da
-  name: 🇰🇷 韩国 08
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 9f320743-0268-4599-a169-84036ee7f7da
-  port: 20357
-  server: nexiahg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiahg.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: 73bde0e7-dd56-4fc0-81d2-e594977d649b
-  name: 🇳🇱 荷兰 21
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 73bde0e7-dd56-4fc0-81d2-e594977d649b
-  port: 20457
-  server: nexiahl.688997.xyz
-  skip-cert-verify: true
-  sni: nexiahl.688997.xyz
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 587
-  network: ws
-  port: 23128
-  server: 45.135.135.229
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5c222c05-ea11-4f1e-9477-9fb40616fd2f
-  ws-opts:
-    path: /
-- auth: 52cd92f5-b0d9-4ac4-be8d-4970b9e4312b
-  down: 100
+  cipher: chacha20-poly1305
   name: 🇺🇸 美国 082
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  password: 52cd92f5-b0d9-4ac4-be8d-4970b9e4312b
-  port: 33079
-  server: 45.135.135.229
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-  up: 100
-- auth: 74332878-d170-41cc-be22-e08e0527a9b8
-  name: '🇨🇦 加拿大 25 #1'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 74332878-d170-41cc-be22-e08e0527a9b8
-  port: 35280
-  server: flyjnd.flylink.cyou
-  skip-cert-verify: true
-  sni: flyjnd.flylink.cyou
-  type: hysteria2
-  udp: true
-- auth: 9f320743-0268-4599-a169-84036ee7f7da
-  name: 🇩🇪 德国 04
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 9f320743-0268-4599-a169-84036ee7f7da
-  port: 20557
-  server: nexiadg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiadg.688997.xyz
-  type: hysteria2
-  udp: true
-- name: 🇺🇸 美国 186
   network: ws
-  port: 443
-  server: 1750158741.tencentapp.cn
-  servername: us2.loopycloudcfjiasucdn.pp.ua
-  tls: true
-  type: vless
+  port: 2052
+  server: s1.cn-db.top
+  tls: false
+  type: vmess
   udp: true
-  uuid: d8674244-36f2-4bdf-bf9d-f67fa226401c
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
   ws-opts:
     headers:
-      Host: us2.loopycloudcfjiasucdn.pp.ua
-    path: /
-- auth: 9f320743-0268-4599-a169-84036ee7f7da
-  name: 🇬🇧 英国 12
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 9f320743-0268-4599-a169-84036ee7f7da
-  port: 20657
-  server: nexiayg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiayg.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: f1be5278-9d77-472a-8d8e-324418370271
-  name: 🇭🇰 香港 16
+      Host: 100-244-69-37.s1.cn-db.top
+    path: /dabai.in104.16.178.39
+- auth: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  name: 🇭🇰 香港 22
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f1be5278-9d77-472a-8d8e-324418370271
+  password: 4e5c61c7-531b-4bce-99e9-df28413359ae
   port: 35260
   server: flyxghy.flylink.cyou
   skip-cert-verify: true
@@ -643,50 +118,636 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇹🇼 台湾 01
-  port: 45078
-  server: haa.dashuai.cyou
-  tls: false
+  name: 🇯🇵 日本 28
+  network: ws
+  port: 443
+  server: www.wto.org
+  tls: true
   type: vmess
   udp: true
-  uuid: 7420bab3-1908-4b23-b233-cd5a4963f833
+  uuid: f7ad7f68-b4a7-4514-9458-f1e75505c05f
+  ws-opts:
+    headers:
+      Host: jp10.xuherp.ggff.net
+    path: /f7ad7f68
+- auth: 160e4a02-ceba-47eb-80fa-e5d0308c8b3c
+  name: 🇨🇦 加拿大 29
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 160e4a02-ceba-47eb-80fa-e5d0308c8b3c
+  port: 33756
+  server: caca.yinheyz.cfd
+  skip-cert-verify: true
+  sni: caca.yinheyz.cfd
+  type: hysteria2
+  udp: true
+- auth: b1798b44-2d04-402c-87db-18d546bb4298
+  down: 100
+  name: 🇺🇸 美国 260
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: b1798b44-2d04-402c-87db-18d546bb4298
+  port: 33079
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- name: '🇺🇸 美国 454 #1'
+  password: b8480328-c0e7-44a0-9230-d654233da35d
+  port: 13094
+  server: all.meiall.xyz
+  skip-cert-verify: true
+  type: anytls
+  udp: true
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 638
+  name: '🇩🇪 德国 24 #1'
   network: ws
-  port: 2053
-  server: 103.160.204.26
-  servername: vle.amclubsapp.dpdns.org
+  port: 443
+  server: visa.com
+  servername: vle.amclubssss.dpdns.org
   tls: true
   type: vless
   udp: true
   uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubsapp.dpdns.org
+      Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇺🇸 美国 047
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 471 #1'
   network: ws
-  port: 443
-  server: 1750158741.tencentapp.cn
-  servername: us2.loopycloudcfjiasucdn.pp.ua
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: cbf58266-915a-4bc8-b218-87fbe7a9b37e
+  uuid: f375c63e-026e-4442-9783-b02622cb708d
   ws-opts:
     headers:
-      Host: us2.loopycloudcfjiasucdn.pp.ua
+      Host: us01.sh-cloudflare.sbs
     path: /
-- name: 🇺🇸 美国 305
+- auth: c62683d5-bdce-411b-abee-5fc9adaf1f06
+  down: 100
+  name: 🇺🇸 美国 395
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: c62683d5-bdce-411b-abee-5fc9adaf1f06
+  port: 33079
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- alpn:
+  - http%2F1.1
+  name: 🇺🇸 美国 435
+  network: ws
+  password: f898ffcb-6417-4373-9640-0b66091e8206
+  port: 443
+  server: 104.21.22.159
+  sni: q12.11890604.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: q12.11890604.xyz
+    path: /CLtmyjAuOFZsWSituzXyJ5XNeH1R1
+- name: 🇺🇸 美国 495
   network: ws
   port: 8880
-  server: 31.43.179.177
-  servername: ip.langmanshanxi.top
+  server: 199.34.229.29
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram @WangCai2 /?ed=2560
+      Host: hk.laoyoutiao.link
+    path: /
+- auth: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  name: '🇰🇷 韩国 22 #1'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  port: 35310
+  server: flyhg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
+- auth: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  name: 🇬🇧 英国 20
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  port: 35240
+  server: flyyg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyyg.flylink.cyou
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 🇺🇸 美国 115
+  network: ws
+  port: 2095
+  server: s2.cn-db.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      Host: 100-198-146-46.s2.cn-db.top
+    path: /dabai.in104.18.13.159
+- client-fingerprint: randomized
+  name: '🇺🇸 美国 552 #1'
+  network: ws
+  port: 8443
+  server: 156.238.18.220
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 565
+  network: ws
+  port: 8443
+  server: us01.sh-cloudflare.sbs
+  servername: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2c4acddd-5bb4-4287-ade1-c72050b24d29
+  ws-opts:
+    headers:
+      Host: us01.sh-cloudflare.sbs
+    path: /
+- auth: d455fd1a-3e0b-4290-8287-58be7320f3d1
+  name: 🇰🇷 韩国 35
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: d455fd1a-3e0b-4290-8287-58be7320f3d1
+  port: 35310
+  server: flyhg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
+- auth: a3918ca6-24ac-4e67-b692-0c9059692ed6
+  down: 100
+  name: 🇷🇺 俄罗斯联邦 066
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: a3918ca6-24ac-4e67-b692-0c9059692ed6
+  port: 31008
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 591
+  network: ws
+  port: 23130
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd
+  ws-opts:
+    path: /
+- auth: 55e67cdb-efe6-4b0a-8f10-f04c5124ca57
+  down: 100
+  name: 🇷🇺 俄罗斯联邦 048
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 55e67cdb-efe6-4b0a-8f10-f04c5124ca57
+  port: 31008
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 25
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 加拿大 19
+  port: 45064
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9a982c59-c61b-4ce3-8d33-86cd01076a6b
+- auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19
+  down: 100
+  name: 🇷🇺 俄罗斯联邦 037
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 73d4cd16-b001-4df9-bd92-7b0f93891b19
+  port: 31008
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 390 #1'
+  network: ws
+  port: 25012
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 30077fc6-adf8-439d-abc0-1bfd1de09ebb
+  ws-opts:
+    path: /
+- auth: 1104ed05-3168-4cf8-993f-dfc6259cc49b
+  name: 🇳🇱 荷兰 31
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 1104ed05-3168-4cf8-993f-dfc6259cc49b
+  port: 33856
+  server: nlnl.yinheyz.cfd
+  skip-cert-verify: true
+  sni: nlnl.yinheyz.cfd
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 077
+  network: ws
+  port: 22080
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c26887c7-dbaa-4c7b-a4d1-aa4bd8f40519
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 114
+  network: ws
+  port: 23130
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3b2c328-6aed-4f27-bd33-7502e0b2f33e
+  ws-opts:
+    path: /
+- auth: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
+  name: 🇨🇦 加拿大 21
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
+  port: 35280
+  server: flyjnd.flylink.cyou
+  skip-cert-verify: true
+  sni: flyjnd.flylink.cyou
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: tj
+  name: 🇸🇬 新加坡 13
+  network: grpc
+  port: 20230
+  reality-opts:
+    public-key: hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc
+    short-id: 2c5ecaae
+  server: sg003.421421.xyz
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f08d6a6b-a0b3-410e-a0ba-eae71b521904
+- auth: 01682022-5c6b-4ac7-921f-64f587ee11f9
+  name: 🇰🇷 韩国 12
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 01682022-5c6b-4ac7-921f-64f587ee11f9
+  port: 20357
+  server: nexiahg.688997.xyz
+  skip-cert-verify: true
+  sni: nexiahg.688997.xyz
+  type: hysteria2
+  udp: true
+- auth: 2a269290-4493-456f-ae42-e0299413a6b2
+  down: 100
+  name: 🇷🇺 俄罗斯联邦 012
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 2a269290-4493-456f-ae42-e0299413a6b2
+  port: 31008
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- alterId: 2
+  cipher: auto
+  name: 🇸🇬 新加坡 15
+  network: ws
+  port: 30812
+  server: v12.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 12
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b0e72050-5b1d-4a88-889b-e2f91eff13cc
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 110
+  network: ws
+  port: 23130
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ee0d4341-7585-405b-a87e-0a6dfa326ccd
+  ws-opts:
+    path: /
+- auth: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
+  name: '🇰🇷 韩国 23 #2'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 5132d29b-e76d-4c5b-97a2-25d9ed8bd2b6
+  port: 35310
+  server: flyhg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
+- auth: 50ccead7-d0ee-44ec-9bb1-bf85796a4b87
+  name: 🇯🇵 日本 11
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 50ccead7-d0ee-44ec-9bb1-bf85796a4b87
+  port: 35300
+  server: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 524 #1'
+  port: 45052
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b074bf56-7afc-445d-b4f5-40d7764933f1
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 378
+  network: ws
+  port: 25012
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 726e5e39-b7af-4d2b-8e9e-005276a708a9
+  ws-opts:
+    path: /
+- auth: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  name: '🇩🇪 德国 18 #2'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 771b45aa-d017-4e35-841b-33ec8bf5bad4
+  port: 35230
+  server: flydg.flylink.cyou
+  skip-cert-verify: true
+  sni: flydg.flylink.cyou
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 17
+  password: 7b2e3388-dde5-4200-82b5-a2ddc63850e0
+  port: 20000
+  server: qoerysakjfh.naichachong.top
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 211
+  network: ws
+  port: 8880
+  server: 91.193.58.180
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- auth: 01682022-5c6b-4ac7-921f-64f587ee11f9
+  name: 🇬🇧 英国 13
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 01682022-5c6b-4ac7-921f-64f587ee11f9
+  port: 20657
+  server: nexiayg.688997.xyz
+  skip-cert-verify: true
+  sni: nexiayg.688997.xyz
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 韩国 25
+  port: 45075
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9a982c59-c61b-4ce3-8d33-86cd01076a6b
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 069
+  network: ws
+  port: 22080
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c62683d5-bdce-411b-abee-5fc9adaf1f06
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 102
+  network: ws
+  port: 23130
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1a36ee9b-744e-4f84-baf9-d68dac4f7f84
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 160 #2'
+  network: ws
+  port: 8880
+  server: 209.46.30.63
+  servername: jp.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 499 #1'
+  network: ws
+  port: 8880
+  server: 91.193.58.230
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 584
+  network: ws
+  port: 443
+  server: 198.62.62.156
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 071
+  network: ws
+  port: 22080
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 450462b4-edde-4fc0-b82f-3b760b397dd9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯联邦 090
+  network: ws
+  port: 22080
+  server: 45.135.135.229
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1ebe4815-a6ac-4acb-9de0-5f81920a9145
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 186 #1'
+  network: ws
+  port: 443
+  server: 104.21.26.17
+  servername: ttttttt67.459.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
+  ws-opts:
+    headers:
+      Host: ttttttt67.459.pp.ua
+    path: /5UW2C42lpZ7Dj4VDwVOkZfoq
+- auth: 795e0285-5307-4183-8c17-8339afe60a14
+  down: 100
+  name: '🇺🇸 美国 305 #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 795e0285-5307-4183-8c17-8339afe60a14
+  port: 33079
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 62ad6b31-ee5f-402f-8660-2c8e6674d77d
+  down: 100
+  name: '🇺🇸 美国 106 #1'
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 62ad6b31-ee5f-402f-8660-2c8e6674d77d
+  port: 33079
+  server: 45.135.135.229
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  name: '🇰🇷 韩国 36 #1'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  port: 35310
+  server: flyhg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
+- name: '🇺🇸 美国 517 #1'
+  network: ws
+  port: 8880
+  server: 25.129.196.156
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560

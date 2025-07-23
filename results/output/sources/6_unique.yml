@@ -1,1801 +1,1612 @@
-# Update: 2025-07-21 08:56
-# Source 6 (https://raw.githubusercontent.com/free18/v2ray/main/c.yaml), 131
+# Update: 2025-07-23 08:53
+# Source 6 (https://raw.githubusercontent.com/free18/v2ray/main/c.yaml), 200
 proxies:
-- alterId: '64'
-  cipher: auto
-  name: 电报群：https://t.me/vvkj11
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 日期：07-20
-  network: tcp
-  password: SdCqFLcA
-  port: 40252
-  server: 36.151.251.57
+- name: 电报群：https://t.me/vvkj11
+  network: grpc
+  port: 443
+  server: 94.247.142.103
   skip-cert-verify: true
-  sni: www.baidu.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: 每天更新，请加电报群防止失联
+  network: grpc
+  port: 443
+  server: 45.8.211.71
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: 日期：07-22
+  network: grpc
+  port: 443
+  server: 103.133.1.227
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: 免费VPN：https://tt.vg/gwaAy
+  network: grpc
+  port: 443
+  server: 141.11.203.139
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- alterId: '0'
+  cipher: auto
+  name: 🇷🇺_俄罗斯_1
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- name: '🇺🇸_美国_1 #2'
+  network: tcp
+  password: tg-fq521free
+  port: 443
+  server: 216.24.57.30
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
   type: trojan
   udp: true
-- name: 🇨🇳_中国_1
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵_日本
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_2
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇺_澳大利亚_1
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_1 #1'
-  network: ws
-  port: 443
-  server: 104.18.94.238
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇺_澳大利亚_2
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_2
-  network: ws
-  port: 443
-  server: 104.18.94.238
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_3
-  network: ws
-  port: 443
-  server: 104.16.229.50
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_4
-  network: ws
-  port: 443
-  server: 198.41.208.23
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_5
-  network: ws
-  port: 443
-  server: 104.18.80.243
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_6
-  network: ws
-  port: 443
-  server: 104.18.86.131
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_7
-  network: ws
-  port: 443
-  server: 104.18.82.55
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_8 #1'
-  network: ws
-  port: 443
-  server: 104.16.134.46
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_9 #1'
-  network: ws
-  port: 443
-  server: 104.24.170.151
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_10 #1'
-  network: ws
-  port: 443
-  server: 104.17.223.37
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_11
-  network: ws
-  port: 443
-  server: 104.17.101.175
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_12
-  network: ws
-  port: 443
-  server: 104.17.215.102
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_13
-  network: ws
-  port: 443
-  server: 104.18.86.131
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_14 #1'
-  network: ws
-  port: 443
-  server: 104.16.242.72
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇭_瑞士_1
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_15
-  network: ws
-  port: 443
-  server: 198.41.208.23
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_16 #1'
-  network: ws
-  port: 443
-  server: 162.159.153.239
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_17
-  network: ws
-  port: 443
-  server: 104.24.184.126
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_18 #1'
-  network: ws
-  port: 443
-  server: 104.18.80.243
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_19
-  network: ws
-  port: 443
-  server: 104.18.82.55
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_20 #1'
-  network: ws
-  port: 443
-  server: 160.79.104.102
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_21
-  network: ws
-  port: 443
-  server: 103.21.244.44
-  servername: cv.bgm2024.dpdns.org
+- name: '🇺🇦_乌克兰_1 #1'
+  network: tcp
+  port: 33817
+  server: 193.238.153.84
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_22 #1'
-  network: ws
-  port: 443
-  server: 104.17.215.102
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_23 #2'
-  network: ws
-  port: 443
-  server: 162.159.153.216
-  servername: cv.bgm2024.dpdns.org
+  uuid: 133361c8-60e7-447a-dd5b-e7af60b9d115
+- name: '🇺🇦_乌克兰_2 #1'
+  network: tcp
+  port: 19728
+  server: 193.238.153.120
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_24 #2'
-  network: ws
-  port: 443
-  server: 162.159.152.53
-  servername: xn.bgm2024.dpdns.org
+  uuid: 2fafdcd6-08c9-4891-d1ce-b7c4a44261ca
+- name: 🇺🇦_乌克兰_3
+  network: tcp
+  port: 28279
+  server: 193.238.153.69
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_25
+  uuid: e6709700-7332-4fe6-a125-fbb781ce7a35
+- alterId: '0'
+  cipher: auto
+  name: '🇬🇧_英国_1 #1'
+  network: tcp
+  port: '39674'
+  server: 82.197.69.131
+  type: vmess
+  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- name: '🇯🇵_日本_1 #1'
   network: ws
-  port: 443
-  server: 63.141.128.140
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.121
+  servername: sk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_26
+      host: sk.laoyoutiao.link
+    path: /telegram@mxlshare@wangcai2/
+- name: '🇯🇵_日本_2 #1'
   network: ws
-  port: 443
-  server: 104.19.150.163
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.82
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_27 #2'
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_2 #1'
   network: ws
-  port: 443
-  server: 162.159.152.53
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
+  port: '443'
+  server: JJJjjjjjmMMmM.4444926.XYZ
   tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  type: vmess
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_1
+      host: JJJjjjjjmMMmM.4444926.XYZ
+    path: /awmqq79B17rfnpXiNaWb
+- name: '🇺🇸_美国_3 #2'
   network: ws
-  port: 443
-  server: 185.133.35.22
-  servername: cv.bgm2024.dpdns.org
+  port: 80
+  server: practical-complaint.seotoolsforyou.co.uk
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aadbf0d6-6a32-4473-8a87-5b17db90e035
   ws-opts:
-    headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_28 #2'
+    path: /
+- name: 🇯🇵_日本_3
   network: ws
-  port: 443
-  server: 104.24.170.151
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.216
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_29
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_4
   network: ws
-  port: 443
-  server: 104.16.132.56
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.34
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_30
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_5
   network: ws
-  port: 443
-  server: 104.16.253.83
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.142
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_31
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_4 #1'
   network: ws
-  port: 443
-  server: 104.16.242.72
-  servername: xn.bgm2024.dpdns.org
-  skip-cert-verify: true
+  port: '443'
+  server: wWWwwWWw2.444652.XYz
   tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  type: vmess
+  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_32 #1'
+      host: wWWwwWWw2.444652.XYz
+    path: /9dZlJLjHHrL0VwSolbqFpg
+- name: 🇯🇵_日本_6
   network: ws
-  port: 443
-  server: 104.19.144.212
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.162
+  servername: sk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_33
+      host: sk.laoyoutiao.link
+    path: /telegramğŸ‡¨ğŸ‡³
+- name: '🇯🇵_日本_7 #1'
   network: ws
-  port: 443
-  server: 104.16.253.83
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.196
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_34 #1'
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_8
   network: ws
-  port: 443
-  server: 162.159.153.216
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.79
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_35 #1'
+      host: Telegram-channel-WangCai2
+    path: /
+- name: '🇬🇧_英国_2 #1'
   network: ws
   port: 443
-  server: 160.79.104.11
-  servername: cv.bgm2024.dpdns.org
+  server: 45.8.211.236
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_36 #1'
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_config
+- name: 🇯🇵_日本_9
   network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.154
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_37 #1'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_10
   network: ws
-  port: 443
-  server: 104.17.210.171
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.187
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_38 #2'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_11
   network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.85
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_39 #1'
+      host: kjgx.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_12
   network: ws
-  port: 443
-  server: 104.24.184.126
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.245
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_40
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_13
   network: ws
-  port: 443
-  server: 63.141.128.88
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.247
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_41 #2'
+      host: Telegram-channel-WangCai2
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_5 #1'
   network: ws
-  port: 443
-  server: 104.16.134.46
-  servername: cv.bgm2024.dpdns.org
-  skip-cert-verify: true
+  port: '443'
+  server: codepen.io
   tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_42 #1'
+      host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- name: '🇺🇸_美国_6 #2'
   network: ws
   port: 443
-  server: 162.159.153.194
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_43 #1'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-am11
+- name: 🇯🇵_日本_14
   network: ws
-  port: 443
-  server: 160.79.105.76
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.123
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_44
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_7 #1'
   network: ws
   port: 443
-  server: 104.17.102.95
-  servername: xn.bgm2024.dpdns.org
+  server: fonts.net
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_45 #1'
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_config
+- name: 🇯🇵_日本_15
   network: ws
-  port: 443
-  server: 162.159.152.155
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.146
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇹_奥地利_1
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_8 #2'
   network: ws
   port: 443
-  server: 212.183.88.16
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇦_乌克兰_1
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-am7
+- name: 🇯🇵_日本_16
   network: ws
-  port: 443
-  server: 45.67.215.92
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.74
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_46 #2'
+      host: Telegram-channel-WangCai2
+    path: /
+- name: '🇺🇸_美国_9 #2'
   network: ws
   port: 443
-  server: 69.84.182.89
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_47 #1'
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-at32
+- name: 🇯🇵_日本_17
   network: ws
-  port: 443
-  server: 160.79.104.11
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.130
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_1
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_10 #2'
   network: ws
   port: 443
-  server: 217.163.76.84
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_48 #3'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-au11
+- name: 🇯🇵_日本_18
   network: ws
-  port: 443
-  server: 162.159.153.217
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.253
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_49
+      host: Telegram-channel-WangCai2
+    path: /
+- name: '🇺🇸_美国_11 #1'
   network: ws
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_50 #1'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-am14
+- name: 🇯🇵_日本_19
   network: ws
-  port: 443
-  server: 104.17.104.243
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.66
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_51 #1'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_20
   network: ws
-  port: 443
-  server: 104.24.2.106
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.124
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_52 #3'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_12 #1'
   network: ws
   port: 443
-  server: 104.24.2.106
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_53
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-au21
+- name: '🇺🇸_美国_13 #2'
   network: ws
   port: 443
-  server: 162.159.152.155
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.ndeso.web.id
+  servername: freexxx.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_54 #1'
+      host: freexxx.ndeso.web.id
+    path: /free-cf-proxy-at33
+- name: '🇺🇸_美国_14 #2'
   network: ws
   port: 443
-  server: 162.159.152.225
-  servername: xn.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_55 #3'
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au18
+- name: 🇯🇵_日本_21
   network: ws
-  port: 443
-  server: 162.159.153.184
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.180
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_56
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_15 #2'
   network: ws
   port: 443
-  server: 104.17.210.171
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_57
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-ae7
+- name: '🇺🇸_美国_16 #2'
   network: ws
-  port: 443
-  server: 69.84.182.89
-  servername: xn.bgm2024.dpdns.org
+  port: 80
+  server: crazy-identity.oneeat.co
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
   ws-opts:
-    headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_58
+    path: /
+- name: 🇯🇵_日本_22
   network: ws
-  port: 443
-  server: 162.159.152.81
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.231
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_59
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇱🇺_卢森堡_1
   network: ws
   port: 443
-  server: 162.159.153.184
-  servername: cv.bgm2024.dpdns.org
+  server: 188.42.89.145
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_60
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_config
+- name: '🇺🇸_美国_18 #2'
   network: ws
   port: 443
-  server: 103.21.244.44
-  servername: xn.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_61
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-ad1
+- name: '🇺🇸_美国_19 #1'
   network: ws
   port: 443
-  server: 162.159.152.225
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_62
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au5
+- name: '🇺🇸_美国_20 #2'
   network: ws
   port: 443
-  server: 160.79.104.102
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_63 #2'
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-ae1
+- name: '🇺🇸_美国_21 #1'
   network: ws
   port: 443
-  server: 104.19.150.163
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_64
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au7
+- name: 🇱🇺_卢森堡_2
   network: ws
   port: 443
-  server: 162.159.152.69
-  servername: cv.bgm2024.dpdns.org
+  server: 188.42.89.145
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_65 #2'
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_configfp=chrome
+- name: '🇺🇸_美国_22 #2'
   network: ws
   port: 443
-  server: 162.159.153.217
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_66 #2'
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-ae19
+- name: '🇺🇸_美国_23 #3'
   network: ws
   port: 443
-  server: 162.159.153.239
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_67
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at31
+- name: 🏳️_未知_1
   network: ws
   port: 443
-  server: 162.159.152.69
-  servername: xn.bgm2024.dpdns.org
+  server: wwwopensignalcom-goodspeed-8xx.pages.dev.
+  servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_68
+      host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
+    path: //
+- name: 🇯🇵_日本_23
   network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.31
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_69 #1'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_24 #4'
   network: ws
   port: 443
-  server: 216.24.57.59
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_70 #2'
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-at24
+- name: '🇺🇸_美国_25 #2'
   network: ws
   port: 443
-  server: 104.16.229.50
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇦🇹_奥地利_2 #2'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-ae10
+- name: '🇺🇸_美国_26 #1'
   network: ws
   port: 443
-  server: 212.183.88.16
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_71
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-at41
+- name: '🇺🇸_美国_27 #3'
   network: ws
   port: 443
-  server: 63.141.128.3
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_2
+      host: freevpn.ndeso.web.id
+    path: /free-cf-proxy-at36
+- name: '🇺🇸_美国_28 #3'
   network: ws
   port: 443
-  server: 217.163.76.201
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_72 #1'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-ae12
+- name: '🇺🇸_美国_29 #1'
   network: ws
   port: 443
-  server: 63.141.128.88
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_73
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au1
+- name: '🇺🇸_美国_30 #1'
   network: ws
   port: 443
-  server: 63.141.128.102
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇦🇹_奥地利_3 #1'
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-au17
+- name: '🇺🇸_美国_31 #2'
   network: ws
   port: 443
-  server: 212.183.88.136
-  servername: xn.bgm2024.dpdns.org
+  server: freexxx.ndeso.web.id
+  servername: freexxx.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_74
+      host: freexxx.ndeso.web.id
+    path: /free-cf-proxy-at24
+- name: 🇯🇵_日本_24
   network: ws
-  port: 443
-  server: 160.79.105.76
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.161
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_75
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_32 #3'
   network: ws
   port: 443
-  server: 104.17.223.37
-  servername: xn.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_76
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au12
+- name: '🇺🇸_美国_33 #2'
   network: ws
   port: 443
-  server: 162.159.153.194
-  servername: xn.bgm2024.dpdns.org
+  server: digitalocean.com
+  servername: rayan-olala.parvaneh.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 60882caa-4e74-42a2-be70-220755fc1551
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_2
+      host: rayan-olala.parvaneh.dpdns.org
+    path: /?ed=2560fp=chrome
+- name: '🇺🇸_美国_34 #3'
   network: ws
   port: 443
-  server: 185.133.35.22
-  servername: xn.bgm2024.dpdns.org
+  server: web.ndeso.xyz
+  servername: web.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_77 #1'
+      host: web.ndeso.xyz
+    path: /free-cf-proxy-au21
+- name: '🇺🇸_美国_35 #3'
   network: ws
   port: 443
-  server: 216.24.57.59
-  servername: cv.bgm2024.dpdns.org
+  server: web.ndeso.xyz
+  servername: web.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_78 #1'
+      host: web.ndeso.xyz
+    path: /free-cf-proxy-ae9
+- name: '🇺🇸_美国_36 #3'
   network: ws
   port: 443
-  server: 160.79.104.115
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇦🇹_奥地利_4 #1'
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-be1
+- name: '🇺🇸_美国_37 #3'
   network: ws
   port: 443
-  server: 212.183.88.94
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_79 #1'
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-au10
+- name: '🇺🇸_美国_38 #4'
   network: ws
   port: 443
-  server: 104.16.120.49
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_80
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-ae17
+- name: 🇯🇵_日本_25
   network: ws
-  port: 443
-  server: 104.17.102.95
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.132
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_81
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_39 #2'
   network: ws
   port: 443
-  server: 63.141.128.3
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_3
+      host: freevpn.ndeso.web.id
+    path: /free-cf-proxy-bd1
+- name: '🇺🇸_美国_40 #1'
   network: ws
   port: 443
-  server: 217.163.76.201
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_82 #1'
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at29
+- name: '🇺🇸_美国_41 #5'
   network: ws
   port: 443
-  server: 162.159.152.81
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_4
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-au10
+- name: 🇯🇵_日本_26
   network: ws
-  port: 443
-  server: 217.163.76.84
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.70
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_83 #1'
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_42 #3'
   network: ws
   port: 443
-  server: 162.159.153.212
-  servername: cv.bgm2024.dpdns.org
+  server: web.ndeso.xyz
+  servername: web.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇷_哥斯达黎加_1
+      host: web.ndeso.xyz
+    path: /free-cf-proxy-at41
+- name: '🇺🇸_美国_43 #3'
   network: ws
   port: 443
-  server: 190.93.247.160
-  servername: xn.bgm2024.dpdns.org
+  server: web.ndeso.xyz
+  servername: web.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_84 #1'
+      host: web.ndeso.xyz
+    path: /free-cf-proxy-am7
+- name: '🇺🇸_美国_44 #4'
   network: ws
   port: 443
-  server: 63.141.128.102
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_85
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-am10
+- name: 🇯🇵_日本_27
   network: ws
-  port: 443
-  server: 160.79.104.115
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.85
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇦_乌克兰_2
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_45 #2'
   network: ws
   port: 443
-  server: 45.67.215.92
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_86
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at30
+- name: '🇺🇸_美国_46 #4'
   network: ws
   port: 443
-  server: 192.0.54.42
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.najah.biz.id
+  servername: freevpn.najah.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_87
+      host: freevpn.najah.biz.id
+    path: /free-cf-proxy-ae8
+- name: '🇺🇸_美国_47 #4'
   network: ws
   port: 443
-  server: 162.159.153.212
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_88 #1'
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at24
+- name: '🇺🇸_美国_48 #5'
   network: ws
   port: 443
-  server: 104.17.104.243
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_89
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at37
+- name: '🇺🇸_美国_49 #2'
   network: ws
   port: 443
-  server: 192.0.54.42
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_90
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-au5
+- name: '🇺🇸_美国_50 #4'
   network: ws
   port: 443
-  server: 104.16.120.49
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇦🇹_奥地利_5 #1'
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-at40
+- name: '🇺🇸_美国_51 #3'
   network: ws
   port: 443
-  server: 212.183.88.136
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇺🇸_美国_91 #1'
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-au14
+- name: 🇯🇵_日本_28
   network: ws
-  port: 443
-  server: 104.19.144.212
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.189
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_92
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_29
   network: ws
-  port: 443
-  server: 63.141.128.140
-  servername: cv.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.220
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_93
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: '🇺🇸_美国_52 #4'
   network: ws
   port: 443
-  server: 104.16.132.56
-  servername: xn.bgm2024.dpdns.org
+  server: web.ndeso.xyz
+  servername: web.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_94
+      host: web.ndeso.xyz
+    path: /free-cf-proxy-ae11
+- name: '🇺🇸_美国_53 #4'
   network: ws
   port: 443
-  server: 104.17.101.175
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.ndeso.web.id
+  servername: freexxx.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇹_奥地利_6
+      host: freexxx.ndeso.web.id
+    path: /free-cf-proxy-au6
+- name: 🇯🇵_日本_30
   network: ws
-  port: 443
-  server: 212.183.88.94
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.113
+  servername: us.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇷_哥斯达黎加_2
+      host: us.laoyoutiao.link
+    path: /
+- name: '🇺🇸_美国_54 #3'
   network: ws
   port: 443
-  server: 190.93.247.160
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.ndeso.web.id
+  servername: freexxx.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_3
+      host: freexxx.ndeso.web.id
+    path: /free-cf-proxy-am11
+- name: '🇺🇸_美国_55 #5'
   network: ws
   port: 443
-  server: 130.162.130.105
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇭_瑞士_2
+      host: freevpn.ndeso.web.id
+    path: /free-cf-proxy-au3
+- name: '🇺🇸_美国_56 #3'
   network: ws
   port: 443
-  server: 140.238.212.95
-  servername: xn.bgm2024.dpdns.org
+  server: web.xhamster.biz.id
+  servername: web.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_95
+      host: web.xhamster.biz.id
+    path: /free-cf-proxy-at8
+- name: 🇯🇵_日本_31
   network: ws
-  port: 443
-  server: 129.213.136.180
-  servername: xn.bgm2024.dpdns.org
+  port: 8880
+  server: 91.193.58.94
+  servername: kjgx.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_4
+      host: kjgx.laoyoutiao.link
+    path: /
+- name: '🇺🇸_美国_57 #3'
   network: ws
   port: 443
-  server: 130.162.130.105
-  servername: xn.bgm2024.dpdns.org
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_96
+      host: freevpn.ndeso.web.id
+    path: /free-cf-proxy-ae10
+- name: '🇺🇸_美国_58 #4'
   network: ws
   port: 443
-  server: 129.213.136.180
-  servername: cv.bgm2024.dpdns.org
+  server: freexxx.xhamster.biz.id
+  servername: freexxx.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇦_加拿大_1
+      host: freexxx.xhamster.biz.id
+    path: /free-cf-proxy-ae5
+- name: '🇺🇸_美国_59 #2'
   network: ws
   port: 443
-  server: 140.238.158.238
-  servername: xn.bgm2024.dpdns.org
+  server: fonts.net
+  servername: rAyan-uS-2.MediCaLhIsToRy.iR
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇧🇷_巴西_1 #1'
+      host: rAyan-uS-2.MediCaLhIsToRy.iR
+    path: /@rayan_config
+- name: '🇺🇸_美国_60 #2'
   network: ws
   port: 443
-  server: 188.114.98.9
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇧🇷_巴西_2
+      host: freevpn.ndeso.xyz
+    path: /free-cf-proxy-ae15
+- name: 🇰🇷_韩国
   network: ws
-  port: 443
-  server: 188.114.98.9
-  servername: xn.bgm2024.dpdns.org
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: xn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇨🇦_加拿大_2 #1'
+      host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: '🇺🇸_美国_61 #3'
   network: ws
   port: 443
-  server: 140.238.158.238
-  servername: cv.bgm2024.dpdns.org
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      host: cv.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-at8
 - alterId: '2'
   cipher: auto
   name: 🇨🇳_中国_3
   network: ws
-  port: '30829'
-  server: v29.heduian.link
+  port: '30808'
+  server: v8.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: ocbc.com
+      host: v8.heduian.link
     path: /oooo
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_4
+- name: '🇺🇸_美国_62 #1'
   network: ws
-  port: '25395'
-  server: gcvbnjth.hjdfghfc.asia
-  type: vmess
-  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  port: 80
+  server: small-meal.oneeat.co
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d1e44075-8c92-4698-9db0-e71d7015b757
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_66 #3'
+  network: ws
+  port: 443
+  server: bestcf.030101.xyz
+  servername: xv6.jpmj.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 897a4bec-26b8-11e8-94be-00505695472c
   ws-opts:
     headers:
-      host: file.dingtalk.com
-    path: /market?ed=512
-- name: '🇺🇸_美国_97 #1'
+      host: xv6.jpmj.dpdns.org
+    path: /bbs?ed=2048security=tls
+- name: 🇱🇺_卢森堡_3
+  network: ws
+  port: 443
+  server: 188.42.89.145
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+  ws-opts:
+    headers:
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_configfp=chromefp=chrome
+- name: '🇺🇸_美国_67 #3'
+  network: ws
+  port: 443
+  server: freevpn.xhamster.biz.id
+  servername: freevpn.xhamster.biz.id
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  ws-opts:
+    headers:
+      host: freevpn.xhamster.biz.id
+    path: /free-cf-proxy-am2
+- name: 🇯🇵_日本_32
+  network: ws
+  port: 8880
+  server: 91.193.58.93
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_33
+  network: ws
+  port: 8880
+  server: 91.193.58.9
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: '🇺🇸_美国_70 #4'
+  network: ws
+  port: 80
+  server: light-presence.oneeat.co
+  servername: light-presence.oneeat.co
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  ws-opts:
+    headers:
+      host: light-presence.oneeat.co
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_71 #3'
+  network: ws
+  port: '443'
+  server: 3DdDf.444652.xYZ
+  tls: true
+  type: vmess
+  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  ws-opts:
+    headers:
+      host: 3DdDf.444652.xYZ
+    path: /9dZlJLjHHrL0VwSolbqFpg
+- name: 🇯🇵_日本_34
+  network: ws
+  port: 8880
+  server: 91.193.58.232
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_35
+  network: ws
+  port: 443
+  server: 160.16.56.195
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: jp.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: '🇺🇸_美国_75 #2'
+  network: ws
+  port: 80
+  server: deep-radio.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5139af95-a453-46c6-831a-a532b6b51305
+  ws-opts:
+    path: /?v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_76 #2'
+  network: ws
+  port: '80'
+  server: wwwe3.11890604.xyz
+  type: vmess
+  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  ws-opts:
+    headers:
+      host: wwwe3.11890604.xyz
+    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+- name: '🇺🇸_美国_77 #3'
+  network: ws
+  port: 80
+  server: deep-radio.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5139af95-a453-46c6-831a-a532b6b51305
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_78 #2'
+  network: ws
+  port: 80
+  server: jealous-competition.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7094df26-af60-41c4-afac-857060d1bab0
+  ws-opts:
+    path: /?serverrrvpntelegram---_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr
+- name: 🇫🇷_法国
   network: ws
   port: 2052
-  server: 104.24.158.0
+  server: 94.140.0.22
   servername: register.tunnelbreaking.shop
   skip-cert-verify: true
   tls: true
@@ -1806,15 +1617,1054 @@ proxies:
     headers:
       host: register.tunnelbreaking.shop
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_5
+- name: '🇺🇸_美国_79 #3'
   network: ws
-  port: '25395'
-  server: 111.170.36.146
-  type: vmess
-  uuid: e15ac3ce-6a1a-412a-aa07-4bc52daa5935
+  port: 80
+  server: jealous-competition.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7094df26-af60-41c4-afac-857060d1bab0
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_80 #1'
+  network: ws
+  port: 80
+  server: sweet-combination.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_81 #2'
+  network: ws
+  port: 80
+  server: jealous-competition.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7094df26-af60-41c4-afac-857060d1bab0
+  ws-opts:
+    path: /?v2ray_configs_pools
+- name: '🇺🇸_美国_82 #2'
+  network: ws
+  port: 80
+  server: jealous-competition.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7094df26-af60-41c4-afac-857060d1bab0
+  ws-opts:
+    path: /?v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars
+- name: '🇺🇸_美国_83 #3'
+  network: ws
+  port: 80
+  server: light-presence.oneeat.co
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_84 #3'
+  network: ws
+  port: 443
+  server: 69.84.182.18
+  servername: jpa1.xn--ghqu5fm27b67w.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17cd0b20-5fc7-4683-889f-5521130e07ae
   ws-opts:
     headers:
-      host: file.dingtalk.com
-    path: /market?ed=512
+      host: jpa1.xn--ghqu5fm27b67w.com
+    path: /pq/jp1
+- name: '🇺🇸_美国_85 #1'
+  network: ws
+  port: 80
+  server: practical-complaint.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: aadbf0d6-6a32-4473-8a87-5b17db90e035
+  ws-opts:
+    path: /?--@freev2rng--bia-freev2rng--kanal-@freev2rng--
+- name: '🇺🇸_美国_86 #1'
+  network: ws
+  port: 8880
+  server: 66.81.247.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /telegram@wangcai2/?ed=2560
+- name: '🇺🇸_美国_87 #2'
+  network: ws
+  port: 80
+  server: wonderful-degree.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6192c1d9-5ae1-40ba-9cbb-cfacc2f8533c
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_89 #2'
+  network: ws
+  port: 80
+  server: brainy-party.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
+  ws-opts:
+    path: /?--@v2ray_configs_pools--bia-v2ray_configs_pools--kanal-@v2ray_configs_pools--
+- name: '🇺🇸_美国_90 #2'
+  network: ws
+  port: 80
+  server: bewildered-poem.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0f4865d9-9405-4703-a282-46e326e6d9e7
+  ws-opts:
+    path: /
+- name: '🇺🇸_美国_91 #2'
+  network: ws
+  port: 80
+  server: elegant-corporation.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d03d8815-a06f-408f-a62f-6c84869b96a9
+  ws-opts:
+    path: /?--v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars---v2rayng_fars
+- name: 🇯🇵_日本_36
+  network: ws
+  port: 8880
+  server: 91.193.58.86
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_94 #2'
+  network: ws
+  port: '80'
+  server: s1.db-link01.top
+  type: vmess
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      host: 100-212-144-55.s1.db-link01.top
+    path: /dabai.in172.64.9.15
+- name: '🇺🇸_美国_96 #2'
+  network: ws
+  port: 80
+  server: jealous-competition.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7094df26-af60-41c4-afac-857060d1bab0
+  ws-opts:
+    path: /?@v2ray_configs_pools
+- name: 🇯🇵_日本_37
+  network: ws
+  port: 8880
+  server: 91.193.58.23
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_99
+  network: ws
+  port: '8443'
+  server: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 167395f5-b3b5-4327-844f-4c23f5aac9da
+  ws-opts:
+    headers:
+      host: us01.sh-cloudflare.sbs
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_100
+  network: ws
+  port: '443'
+  server: eeeeeEEefFfgHJu.4444936.XYz
+  tls: true
+  type: vmess
+  uuid: 7701ddf5-6a48-401b-a3ec-8af52b6deb48
+  ws-opts:
+    headers:
+      host: eeeeeeeefffghju.4444936.xyz
+    path: /mlyR5tmcKx3hweBopuhWEbIX
+- name: 🇯🇵_日本_38
+  network: ws
+  port: 8880
+  server: 91.193.58.178
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_39
+  network: ws
+  port: 8880
+  server: 91.193.58.44
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_40
+  network: ws
+  port: 8880
+  server: 91.193.58.210
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /telegramu0001f1e8u0001f1f3@wangcai2/?ed=2560
+- name: 🇺🇸_美国_103
+  network: ws
+  port: 443
+  server: hostone-sg.zdsa.me
+  servername: hostone-sg.zdsa.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43ef1f94-978f-4539-ba01-1e6005859950
+  ws-opts:
+    headers:
+      host: hostone-sg.zdsa.me
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_105
+  network: ws
+  port: '8443'
+  server: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: ed924eac-e439-4eee-916c-b76f3ec7db07
+  ws-opts:
+    headers:
+      host: us01.sh-cloudflare.sbs
+    path: /
+- name: 🇯🇵_日本_41
+  network: ws
+  port: 8880
+  server: 91.193.58.154
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇺🇸_美国_106
+  network: ws
+  port: 80
+  server: grumpy-building.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 935c990a-9bcc-484b-86a2-2a402f9ad1d4
+  ws-opts:
+    path: /
+- name: 🇯🇵_日本_42
+  network: ws
+  port: 8880
+  server: 91.193.58.70
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_43
+  network: ws
+  port: 8880
+  server: 91.193.58.49
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_44
+  network: ws
+  port: 8880
+  server: 91.193.58.26
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇷🇺_俄罗斯_2
+  network: ws
+  port: 8880
+  server: 176.124.223.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇺🇸_美国_109
+  network: ws
+  port: 80
+  server: brilliant-knowledge.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ad29f1b-2cea-4ddc-b856-fab1ff141ac6
+  ws-opts:
+    path: /
+- name: 🇺🇸_美国_110
+  network: ws
+  port: 80
+  server: informed-location.seotoolsforyou.co.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
+  ws-opts:
+    path: /
+- name: '🇬🇧_英国_3 #1'
+  network: ws
+  port: 8880
+  server: 194.36.55.63
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: jp.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3@wangcai2
+- name: 🇯🇵_日本_45
+  network: ws
+  port: 8880
+  server: 91.193.58.169
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇮🇳_印度
+  network: ws
+  port: 8880
+  server: 14.102.229.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇱🇹_立陶宛_1
+  network: ws
+  port: 8880
+  server: 185.148.105.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_112
+  network: ws
+  port: '443'
+  server: ssXxZaSw.999824.xyZ
+  tls: true
+  type: vmess
+  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  ws-opts:
+    headers:
+      host: ssXxZaSw.999824.xyZ
+    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+- name: 🇯🇵_日本_46
+  network: ws
+  port: 8880
+  server: 91.193.58.202
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇺🇸_美国_113
+  network: ws
+  port: 8880
+  server: 216.205.52.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /telegram
+- name: 🇯🇵_日本_47
+  network: ws
+  port: 8880
+  server: 91.193.58.42
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇷🇺_俄罗斯_3
+  network: ws
+  port: 8880
+  server: 185.174.138.213
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: jp.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_48
+  network: ws
+  port: 8880
+  server: 91.193.58.31
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇸🇦_沙特阿拉伯
+  network: ws
+  port: 8880
+  server: 91.209.253.213
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: jp.laoyoutiao.link
+    path: /
+- name: 🇷🇺_俄罗斯_4
+  network: ws
+  port: 8880
+  server: 185.59.218.177
+  servername: ip.langmanshanxi.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: ip.langmanshanxi.top
+    path: /telegram@wangcai2/?ed
+- name: 🇯🇵_日本_49
+  network: ws
+  port: 8880
+  server: 91.193.58.95
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇸🇮_斯洛文尼亚
+  network: ws
+  port: 8880
+  server: 92.53.188.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_50
+  network: ws
+  port: 8880
+  server: 103.245.229.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇺🇸_美国_115
+  network: ws
+  port: 8880
+  server: 66.45.118.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_51
+  network: ws
+  port: 8880
+  server: 91.193.58.168
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /telegram@mxlshare@wangcai2/?ed
+- name: 🇺🇸_美国_116
+  network: ws
+  port: 8443
+  server: d270391091093100193938819293819w6.servers801.ir
+  servername: 115794818s.servers801.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09f1d928-05ab-4ba2-80c5-f33edc244024
+  ws-opts:
+    headers:
+      host: 115794818s.servers801.ir
+    path: /45f4d22d.mareza.pages.dev?ed=80
+- name: 🇯🇵_日本_52
+  network: ws
+  port: 8880
+  server: 91.193.58.214
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3
+- name: 🇺🇦_乌克兰_4
+  network: ws
+  port: 8880
+  server: 91.124.127.188
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_53
+  network: ws
+  port: 8880
+  server: 91.193.58.102
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_54
+  network: ws
+  port: 8880
+  server: 91.193.58.241
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_55
+  network: ws
+  port: 8880
+  server: 91.193.58.127
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: /
+- name: 🇱🇹_立陶宛_2
+  network: ws
+  port: 8880
+  server: 185.148.107.177
+  servername: ip.langmanshanxi.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: ip.langmanshanxi.top
+    path: /telegram
+- name: 🇯🇵_日本_56
+  network: ws
+  port: 8880
+  server: 91.193.58.89
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_57
+  network: ws
+  port: 8880
+  server: 91.193.58.133
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_58
+  network: ws
+  port: 8880
+  server: 91.193.58.112
+  servername: ' [By EbraSha]'
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: ' [By EbraSha]'
+    path: /[byebrasha]
+- name: 🇯🇵_日本_59
+  network: ws
+  port: 8880
+  server: 91.193.58.1
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /telegram
+- name: 🇯🇵_日本_60
+  network: ws
+  port: 8880
+  server: 91.193.58.115
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇺🇸_美国_124
+  network: ws
+  port: 443
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  ws-opts:
+    headers:
+      host: freevpn.ndeso.web.id
+    path: /free-cf-proxy-ae18
+- name: 🇪🇸_西班牙
+  network: ws
+  port: 8880
+  server: 185.251.81.188
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_61
+  network: ws
+  port: 8880
+  server: 91.193.58.212
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_62
+  network: ws
+  port: 8880
+  server: 91.193.58.174
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_63
+  network: ws
+  port: 8880
+  server: 91.193.58.64
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_64
+  network: ws
+  port: 8880
+  server: 91.193.58.140
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3
+- name: 🇯🇵_日本_65
+  network: ws
+  port: 8880
+  server: 91.193.58.124
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_66
+  network: ws
+  port: 8880
+  server: 91.193.58.4
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /
+- name: 🇯🇵_日本_67
+  network: ws
+  port: 8880
+  server: 91.193.58.178
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_68
+  network: ws
+  port: 8880
+  server: 91.193.58.31
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: sk.laoyoutiao.link
+    path: /telegram@mxlshare@wangcai2/
+- name: 🇯🇵_日本_69
+  network: ws
+  port: 8880
+  server: 91.193.58.159
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: freecodes蘇小檸|華東電訊|解鎖netflix
+- name: 🇯🇵_日本_70
+  network: ws
+  port: 8880
+  server: 91.193.58.130
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- name: 🇯🇵_日本_71
+  network: ws
+  port: 8880
+  server: 91.193.58.13
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_127 #1'
+  network: ws
+  port: '8443'
+  server: us01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: f9ce0135-1007-4a4a-8c30-87a86bb81ad7
+  ws-opts:
+    headers:
+      host: us01.sh-cloudflare.sbs
+    path: /
+- name: 🇯🇵_日本_72
+  network: ws
+  port: 8880
+  server: 91.193.58.100
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: kjgx.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵_日本_73
+  network: ws
+  port: 8880
+  server: 91.193.58.35
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /
+- alterId: '2'
+  cipher: auto
+  name: 🇨🇳_中国_4
+  network: ws
+  port: '30829'
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: '0'
+  cipher: chacha20-poly1305
+  name: 🇺🇸_美国_129
+  network: ws
+  port: '8880'
+  server: s2.cn-db.top
+  type: vmess
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      host: 100-114-171-163.s2.cn-db.top
+    path: /dabai.in172.67.69.28
+- alterId: '2'
+  cipher: auto
+  name: 🇨🇳_中国_6
+  network: ws
+  port: '30805'
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo

@@ -1,6 +1,61 @@
-# Update: 2025-07-21 08:56
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 46
+# Update: 2025-07-23 08:54
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 50
 proxies:
+- alterId: 0
+  cipher: auto
+  name: _CN_中国_2
+  network: ws
+  port: 80
+  server: nmone.hjdfghfc.asia
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 52c457bd-896f-4b45-a013-0fb4d1e9be9f
+  ws-opts:
+    headers:
+      Host: nmone.hjdfghfc.asia
+    path: /market?ed=512
+- alterId: 0
+  cipher: auto
+  name: _RU_俄罗斯_1
+  port: 11052
+  server: 45.67.230.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: _CN_中国_3
+  network: ws
+  port: 443
+  server: nmtow.hjdfghfc.asia
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 52c457bd-896f-4b45-a013-0fb4d1e9be9f
+  ws-opts:
+    headers:
+      Host: nmtow.hjdfghfc.asia
+    path: /market?ed=512
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: _US_美国_4
+  network: ws
+  port: 8880
+  server: s2.cn-db.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c
+  ws-opts:
+    headers:
+      Host: s2.cn-db.top
+    path: /dabai.in172.67.69.28
 - alterId: 0
   cipher: auto
   name: 美国(nodeshare.xyz免费节点)_1
