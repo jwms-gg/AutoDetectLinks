@@ -1,32 +1,146 @@
-# Update: 2025-07-24 08:53
-# Source 52 (https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/main/config.txt), 79
+# Update: 2025-07-25 08:52
+# Source 52 (https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/main/config.txt), 78
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🌐 به روزرسانی شده درMor-02 | 0...
-  password: f8f7aCzcPKbsF8p3
-  port: '990'
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 1 | Mor-02| MTSRVRS
-  password: f8f7aCzcPKbsF8p3
-  port: '990'
-  server: 185.126.239.250
-  type: ss
-- flow: '!'
-  name: 🌐سرور 2 | Mor-02| MTSRVRS
+- name: 🌐 به روزرسانی شده درMor-03 | 0...
   network: ws
   port: 80
-  server: 104.16.85.3
+  server: enthusiastic-century.oneeat.co
   tls: false
   type: vless
-  uuid: 1b9ad34d-6b57-4ad1-84f5-12698b9b2b29
+  uuid: edc0a710-b736-455a-a9f2-d26150e624b2
+  ws-opts:
+    path: /
+- name: 🌐سرور 2 | Mor-03| MTSRVRS
+  network: grpc
+  port: 8880
+  server: 185.231.205.139
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: firefox
+  name: 🌐سرور 3 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
+    short-id: ''
+  server: public.misvn.ir
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: SVNTEAM-3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 4 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2080
+  reality-opts:
+    public-key: wK_5qjYXyOhnpU4S8DpZSqRpq5U4IpdNWYrHxCL2m2M
+    short-id: 77c5aa0a2b
+  server: 91.99.229.234
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram--SRCVPN--
+- name: 🌐سرور 5 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  server: 65.109.201.108
+  tls: false
+  type: vless
+  uuid: b17ec18e-99af-40af-962b-0ad1b987d740
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 6 | Mor-03| MTSRVRS
+  network: grpc
+  port: 3070
+  reality-opts:
+    public-key: TX1WDNcYpkt7EnJFv7IxSK2gqIlpmzG7NFR-zWpTfVU
+    short-id: 83cb41f8b5d47f
+  server: 91.99.214.179
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram-SRCVPN-
+- name: 🌐سرور 7 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.16.86.73
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
   ws-opts:
     headers:
-      Host: join-to-%56%6D%65%73%73%6F%72%67.sabadyt.ir
-    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
+      Host: vngsupply.ip-ddns.com
+    path: /
+- client-fingerprint: random
+  name: 🌐سرور 8 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 91.206.71.162
+  servername: barayeiran-mahsang.gerald81.dpdns.org
+  tls: false
+  type: vless
+  uuid: 26bc13af-e442-4956-afd4-b8f85744d26f
+  ws-opts:
+    headers:
+      Host: barayeiran-mahsang.gerald81.dpdns.org
+    path: /Barayeiranmahsang/----@-?ed=2560
+- name: 🌐سرور 9 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.16.69.162
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: vngsupply.ip-ddns.com
+    path: /fgvtHUpS6R8Rv8s5?ed=2560
+- name: 🌐سرور 11 | Mor-03| MTSRVRS
+  network: grpc
+  port: 8880
+  server: 45.89.111.250
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: randomized
+  name: 🌐سرور 12 | Mor-03| MTSRVRS
+  network: ws
+  port: 8443
+  server: 172.66.44.253
+  servername: net-aCcOUNt02.Pages.DEv
+  tls: true
+  type: vless
+  uuid: efed37ed-37e5-4100-a540-049dc7929984
+  ws-opts:
+    headers:
+      Host: net-aCcOUNt02.Pages.DEv
+    path: /dy26vBaDi5RTblzP?ed=2560
+- name: 🌐سرور 13 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.16.86.73
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: vngsupply.ip-ddns.com
+    path: /J5aLQOY1R9ONWYCM?ed=2560
+- name: 🌐سرور 14 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: 45.8.146.207
+  tls: false
+  type: vless
+  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
+  ws-opts:
+    path: /vless/
 - client-fingerprint: chrome
-  name: 🌐سرور 3 | Mor-02| MTSRVRS
+  name: 🌐سرور 15 | Mor-03| MTSRVRS
   network: ws
   port: 8443
   server: 188.114.96.3
@@ -38,50 +152,20 @@ proxies:
     headers:
       Host: w325.pages.dev
     path: /TELEGRAM-@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI/?ed=2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🌐سرور 4 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.16.222.98
-  servername: VngSupply.Ip-DdNS.com
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /uLF6HXZ7986oF7Yg?ed
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: 🌐سرور 5 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.25.131.154
-  servername: vngsUPPly.IP-DDnS.CoM
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /C5itOz6YmbLanD7F?ed=2560
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 6 | Mor-02| MTSRVRS
+    grpc-service-name: ''
+  name: 🌐سرور 16 | Mor-03| MTSRVRS
   network: grpc
-  port: 2080
+  port: 3090
   reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.188.21
   servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: Telegram-SRCVPN--
+  uuid: Telegram--SRCVPN
 - alterId: 0
   cipher: auto
   name: '[🇺🇸]t.me/ConfigsHub'
@@ -94,58 +178,31 @@ proxies:
   uuid: 0704016f-5435-4655-be6a-771a5aba52c3
   ws-opts:
     path: /vmess/
-- name: 🌐سرور 8 | Mor-02| MTSRVRS
-  network: xhttp
-  port: 80
-  server: speedtestcustom.com
-  tls: false
-  type: vless
-  uuid: c95e1271-871f-44ad-bbe9-e05d028d3d40
-  ws-opts:
-    headers:
-      Host: lake2.global.ssl.fastly.net
-    path: /rddeserfgg?ed=2560
-- name: 🌐سرور 9 | Mor-02| MTSRVRS
-  network: ws
-  port: 80
-  server: 45.8.146.207
-  tls: false
-  type: vless
-  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
-  ws-opts:
-    path: /vless/
-- flow: '!'
-  name: 🌐سرور 10 | Mor-02| MTSRVRS
-  network: httpupgrade
-  port: 8880
-  server: 104.16.85.3
-  tls: false
-  type: vless
-  uuid: 67fea8d3-a217-4e51-8703-906a7d1c793e
-  ws-opts:
-    headers:
-      Host: join-to-%56%6D%65%73%73%6F%72%67.sabadyt.ir
-    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision!
-  name: 🌐سرور 11 | Mor-02| MTSRVRS
-  network: tcp
-  port: 443
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 18 | Mor-03| MTSRVRS
+  network: grpc
+  port: 3090
   reality-opts:
-    public-key: tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8
-    short-id: e54b5ad736ae4c38
-  server: direct.yasharteam.com
-  servername: tgju.org
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.141.19
+  servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: 95dd1a77-89e1-4448-9763-514cc79168ed
-  ws-opts:
-    headers:
-      Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
+  uuid: Telegram--SRCVPN
+- name: 🌐سرور 19 | Mor-03| MTSRVRS
+  network: grpc
+  port: 8880
+  server: 185.231.205.248
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 32135vless
-  name: 🌐سرور 12 | Mor-02| MTSRVRS
+  name: 🌐سرور 20 | Mor-03| MTSRVRS
   network: grpc
   port: 2090
   reality-opts:
@@ -156,24 +213,103 @@ proxies:
   tls: false
   type: vless
   uuid: Telegram--SRCVPN-
-- name: 🌐سرور 13 | Mor-02| MTSRVRS
-  network: ws
-  port: 443
-  server: unpkg.com
-  servername: falcunargo.9cfaf68585.workers.Dev
-  tls: true
+- name: 🌐سرور 21 | Mor-03| MTSRVRS
+  network: tcp
+  port: 51952
+  server: 51.222.86.7
+  tls: false
   type: vless
-  uuid: 46dbac8b-eaba-4275-940c-819f95d16916
-  ws-opts:
-    headers:
-      Host: falcunargo.9cfaf68585.workers.Dev
-    path: /?ed=2048
+  uuid: 3956dd35-4f86-4b48-a1ca-45a3dbe471a0
+- client-fingerprint: chrome
+  name: 🌐سرور 22 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
+    short-id: ''
+  server: public.misvn.ir
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: SVNTEAM
+- name: 🌐سرور 23 | Mor-03| MTSRVRS
+  network: tcp
+  port: 54051
+  server: 51.222.86.157
+  tls: false
+  type: vless
+  uuid: d1e720d6-4ac9-4a03-b781-567960161b13
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 24 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2090
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram-SRCVPN--
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 25 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2080
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram--SRCVPN
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ''
-  name: 🌐سرور 14 | Mor-02| MTSRVRS
+  name: 🌐سرور 26 | Mor-03| MTSRVRS
   network: grpc
-  port: 3070
+  port: 3090
+  reality-opts:
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.188.21
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram-SRCVPN-
+- name: 🌐سرور 27 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: famous-danger.oneeat.co
+  tls: false
+  type: vless
+  uuid: ddc27bd6-6efa-47cf-8bfc-acaf973ba6b3
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 28 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2080
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: idTel--SRCVPN--
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 29 | Mor-03| MTSRVRS
+  network: grpc
+  port: 3080
   reality-opts:
     public-key: TX1WDNcYpkt7EnJFv7IxSK2gqIlpmzG7NFR-zWpTfVU
     short-id: 83cb41f8b5d47f
@@ -182,38 +318,46 @@ proxies:
   tls: false
   type: vless
   uuid: Telegram-SRCVPN-
-- name: 🌐سرور 15 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.16.69.162
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /fgvtHUpS6R8Rv8s5?ed=2560
-- name: 🌐سرور 16 | Mor-02| MTSRVRS
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🌐سرور 30 | Mor-03| MTSRVRS
   network: ws
   port: 443
-  server: 104.18.24.113
-  servername: pages.dev
+  server: 103.160.204.50
+  servername: vless8-ekh.pages.dev
   tls: true
   type: vless
-  uuid: 5879d109-8c92-448a-801b-3f3989019934
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
   ws-opts:
     headers:
-      Host: a-c9q.pages.dev
-    path: /Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray?ed=2048
-- name: 🌐سرور 17 | Mor-02| MTSRVRS
+      Host: vless8-ekh.pages.dev
+    path: /MTMVPN---MTMVPN--MTMVPN---MTMVPN?ed=2560
+- client-fingerprint: chrome
+  name: 🌐سرور 31 | Mor-03| MTSRVRS
   network: ws
-  port: 80
-  server: crazy-identity.oneeat.co
-  tls: false
+  port: 443
+  server: fonts.net
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
+  tls: true
   type: vless
-  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
-    path: /
+    headers:
+      Host: rayan-12.leila.dpdns.org
+    path: /Tel-@V2ray_Alpha
+- name: 🌐سرور 32 | Mor-03| MTSRVRS
+  network: tcp
+  password: AJiaFGPGOJ
+  port: 1935
+  server: x6-germany-amazon-v2-8xhhs.devefun.org
+  type: trojan
+- name: 🌐سرور 33 | Mor-03| MTSRVRS
+  network: tcp
+  password: AJiaFGPGOJ
+  port: 1935
+  server: x6-germany-amazon-v2-8xhhs.devefun.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '[🏁]t.me/ConfigsHub #1'
@@ -226,24 +370,48 @@ proxies:
   uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
   ws-opts:
     path: /vmess/
-- name: 🌐سرور 19 | Mor-02| MTSRVRS
+- name: 🌐سرور 35 | Mor-03| MTSRVRS
   network: ws
-  port: 8880
-  server: 25.129.198.213
-  servername: jp.laoyoutiao.link
-  tls: false
+  port: 443
+  server: 151.101.74.228
+  servername: zmaoz.faculty.ucdavis.edu
+  tls: true
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 9874e2c7-910c-42d0-9068-819c3aaa9cc3
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
-    path: /
+      Host: div.delbar.dev
+    path: /?ed=80
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🌐سرور 36 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+    short-id: f5
+  server: amazon-15.cristiano.name.ng
+  servername: store.steampowered.com
+  tls: false
+  type: vless
+  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
+- name: 🌐سرور 37 | Mor-03| MTSRVRS
+  network: ws
+  port: 8080
+  server: cdn39030.marzban-l.ir
+  tls: false
+  type: vless
+  uuid: 9fb80a5f-f898-476f-8504-4cf36a1d69c7
+  ws-opts:
+    headers:
+      Host: cdn39030.marzban-l.ir
+    path: /?ed=2048
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 32135vless
-  name: 🌐سرور 21 | Mor-02| MTSRVRS
+  name: 🌐سرور 38 | Mor-03| MTSRVRS
   network: grpc
-  port: 2090
+  port: 2080
   reality-opts:
     public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
     short-id: aa0dd5ba
@@ -251,34 +419,36 @@ proxies:
   servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: idTel--SRCVPN--
-- name: 🌐سرور 22 | Mor-02| MTSRVRS
-  network: ws
-  port: 32391
-  server: 195.58.58.88
+  uuid: Telegram-SRCVPN--
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 39 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2080
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: c84ddb7c-7703-42a3-a22a-3ff9e5513f9a
-  ws-opts:
-    headers:
-      Host: 45f4d22d.Mareza.pages.dev
-    path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: 🌐سرور 23 | Mor-02| MTSRVRS
-  network: ws
-  port: 443
-  server: 104.26.7.18
-  servername: albedoalbedochan.violetchaan.ip-ddns.com
-  tls: true
+  uuid: 63fa5580-1bb7-4cc1-a6ee-0ed4eaa52308
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 40 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2090
+  reality-opts:
+    public-key: wK_5qjYXyOhnpU4S8DpZSqRpq5U4IpdNWYrHxCL2m2M
+    short-id: 77c5aa0a2b
+  server: 91.99.229.234
+  servername: journalofbigdata.springeropen.com
+  tls: false
   type: vless
-  uuid: 004ba5d4-d448-4960-a762-e5190ab415f2
-  ws-opts:
-    headers:
-      Host: albedoalbedochan.violetchaan.ip-ddns.com
-    path: /JOKERRVPN_BIA_CHANEL@JOKERRVPN
-- name: 🌐سرور 24 | Mor-02| MTSRVRS
+  uuid: Telegram--SRCVPN--
+- name: 🌐سرور 41 | Mor-03| MTSRVRS
   network: ws
   port: 80
   server: www.speedtest.net
@@ -289,6 +459,79 @@ proxies:
     headers:
       Host: psi.misvn.ir
     path: /@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 🌐سرور 42 | Mor-03| MTSRVRS
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: '443'
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🌐سرور 43 | Mor-03| MTSRVRS
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: '443'
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+- client-fingerprint: chrome
+  name: 🌐سرور 44 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
+    short-id: ''
+  server: public.misvn.ir
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: SVNTEAM-2
+- name: 🌐سرور 45 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: brainy-party.seotoolsforyou.co.uk
+  tls: false
+  type: vless
+  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
+  ws-opts:
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: 🌐سرور 46 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.25.131.154
+  servername: vngsUPPly.IP-DDnS.CoM
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: vngsupply.ip-ddns.com
+    path: /C5itOz6YmbLanD7F?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🌐سرور 47 | Mor-03| MTSRVRS
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 185.126.239.250
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🌐سرور 48 | Mor-03| MTSRVRS
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 185.126.239.250
+  type: ss
+- client-fingerprint: chrome
+  name: 🌐سرور 49 | Mor-03| MTSRVRS
+  network: ws
+  port: 443
+  server: edt-f5k.pages.dev
+  servername: edt-f5k.pages.dev
+  tls: true
+  type: vless
+  uuid: 98371613-b71d-4185-9e8a-eb7ba73373b4
+  ws-opts:
+    headers:
+      Host: edt-f5k.pages.dev
+    path: /
 - alterId: 0
   cipher: auto
   name: '[🇩🇪]t.me/ConfigsHub'
@@ -301,82 +544,19 @@ proxies:
   uuid: f0eda072-9ae8-494c-a495-215fa5729467
   ws-opts:
     path: /vmess/
-- name: 🌐سرور 26 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 162.120.94.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
+- name: 🌐سرور 51 | Mor-03| MTSRVRS
+  network: tcp
+  port: 57403
+  server: 15.204.199.122
   tls: false
   type: vless
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🌐سرور 27 | Mor-02| MTSRVRS
-  network: ws
-  port: 443
-  server: 172.66.40.99
-  servername: eDg.SpEeDtEsT2029.CoM
-  tls: true
-  type: vless
-  uuid: telegram-id-ArV2ray
-  ws-opts:
-    headers:
-      Host: eDg.SpEeDtEsT2029.CoM
-    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 28 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2090
-  reality-opts:
-    public-key: wK_5qjYXyOhnpU4S8DpZSqRpq5U4IpdNWYrHxCL2m2M
-    short-id: 77c5aa0a2b
-  server: 91.99.229.234
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN--
-- client-fingerprint: randomized
-  name: 🌐سرور 29 | Mor-02| MTSRVRS
-  network: ws
-  port: 8443
-  server: 172.66.47.61
-  servername: gGHDFa.pAgeS.Dev
-  tls: true
-  type: vless
-  uuid: a396b860-11b7-4af3-9950-146caf79735e
-  ws-opts:
-    headers:
-      Host: gghdfa.pages.dev
-    path: /Tel-@V2ray_Alpha/?ed=2560
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 30 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3080
-  reality-opts:
-    public-key: TX1WDNcYpkt7EnJFv7IxSK2gqIlpmzG7NFR-zWpTfVU
-    short-id: 83cb41f8b5d47f
-  server: 91.99.214.179
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram-SRCVPN-
+  uuid: 1c22f9ec-4677-4a53-921a-a87c63df37d5
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 32135vless
-  name: 🌐سرور 31 | Mor-02| MTSRVRS
+  name: 🌐سرور 52 | Mor-03| MTSRVRS
   network: grpc
-  port: 2080
+  port: 2090
   reality-opts:
     public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
     short-id: aa0dd5ba
@@ -384,32 +564,86 @@ proxies:
   servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: Telegram--SRCVPN
-- name: 🌐سرور 32 | Mor-02| MTSRVRS
+  uuid: Telegram--SRCVPN--
+- name: 🌐سرور 53 | Mor-03| MTSRVRS
   network: ws
   port: 8880
-  server: 104.16.86.73
+  server: 172.67.65.158
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: VngSuPpLY.IP-DdnS.com
+    path: /Etb1L6YUdZFZuTOr?ed=2560
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 54 | Mor-03| MTSRVRS
+  network: grpc
+  port: 3080
+  reality-opts:
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.188.21
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram-SRCVPN-
+- name: 🌐سرور 55 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: 102.177.189.28
+  tls: false
+  type: vless
+  uuid: b0265ca8-98dd-46b2-adec-4705b5e7eb48
+  ws-opts:
+    headers:
+      Host: psi.misvn.ir
+    path: /@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot?ed=2048
+- name: 🌐سرور 56 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.16.85.3
   tls: false
   type: vless
   uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
   ws-opts:
     headers:
       Host: vngsupply.ip-ddns.com
-    path: /J5aLQOY1R9ONWYCM?ed=2560
-- client-fingerprint: randomized
-  name: 🌐سرور 33 | Mor-02| MTSRVRS
+- client-fingerprint: random
+  name: 🌐سرور 57 | Mor-03| MTSRVRS
   network: ws
-  port: 8443
-  server: 172.66.44.253
-  servername: net-aCcOUNt02.Pages.DEv
+  port: 443
+  server: 104.18.29.253
+  servername: kawaiifreevpn-7ds.pages.dev
   tls: true
   type: vless
-  uuid: efed37ed-37e5-4100-a540-049dc7929984
+  uuid: 9dd24d01-2b7a-4bd8-8c76-129d6ca89b8c
   ws-opts:
     headers:
-      Host: net-aCcOUNt02.Pages.DEv
-    path: /dy26vBaDi5RTblzP?ed=2560
-- name: 🌐سرور 34 | Mor-02| MTSRVRS
+      Host: kawaiifreevpn-7ds.pages.dev
+    path: /?ed=#Join---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI---Join---MARAMBASHI?ed=2560
+- name: 🌐سرور 58 | Mor-03| MTSRVRS
+  network: ws
+  port: 2087
+  server: 104.17.147.22
+  servername: smart.v2plusify.org
+  tls: true
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: smart.v2plusify.org
+    path: /
+- name: 🌐سرور 59 | Mor-03| MTSRVRS
+  network: tcp
+  port: 24820
+  server: 15.204.236.64
+  tls: false
+  type: vless
+  uuid: 8dbb26f8-8832-46bc-bc0c-a2f17d8d200f
+- name: 🌐سرور 60 | Mor-03| MTSRVRS
   network: ws
   port: 80
   server: confident-club.seotoolsforyou.co.uk
@@ -421,275 +655,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ''
-  name: 🌐سرور 35 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3080
-  reality-opts:
-    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
-    short-id: eb91f5c0
-  server: 91.107.188.21
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN--
-- name: 🌐سرور 36 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.16.85.3
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /6TvG8D6HimXKgdp2?ed=2560
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 37 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3080
-  reality-opts:
-    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
-    short-id: eb91f5c0
-  server: 91.107.188.21
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram-SRCVPN-
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 38 | Mor-02| MTSRVRS
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: '443'
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 39 | Mor-02| MTSRVRS
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: '443'
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 40 | Mor-02| MTSRVRS
-  password: c40641c1f89e7acb
-  port: '57456'
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 41 | Mor-02| MTSRVRS
-  password: c40641c1f89e7acb
-  port: '57456'
-  server: 147.45.178.200
-  type: ss
-- name: 🌐سرور 42 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.16.69.162
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /fgvtHUpS6R8Rv8s5?ed=2560
-- name: 🌐سرور 43 | Mor-02| MTSRVRS
-  network: grpc
-  port: 8880
-  server: 185.231.205.248
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 44 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3090
-  reality-opts:
-    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
-    short-id: eb91f5c0
-  server: 91.107.188.21
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 45 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3090
-  reality-opts:
-    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
-    short-id: eb91f5c0
-  server: 91.107.188.21
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram-SRCVPN-
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 46 | Mor-02| MTSRVRS
-  password: CH5xv3A7JA6sLKzEhLpm81Y4GHi9nUiHWxtYU4eMLabhpX8DrCaveoqhTTNVkZdHe3ocQFx843hnCNpRdPeibgvM1mYNPRuM
-  port: '49072'
-  server: host.phonygilson.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🌐سرور 47 | Mor-02| MTSRVRS
-  password: CH5xv3A7JA6sLKzEhLpm81Y4GHi9nUiHWxtYU4eMLabhpX8DrCaveoqhTTNVkZdHe3ocQFx843hnCNpRdPeibgvM1mYNPRuM
-  port: '49072'
-  server: host.phonygilson.icu
-  type: ss
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 48 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2080
-  reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: 63fa5580-1bb7-4cc1-a6ee-0ed4eaa52308
-- name: 🌐سرور 49 | Mor-02| MTSRVRS
-  network: grpc
-  port: 8880
-  server: 45.82.251.93
-  tls: false
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🌐سرور 50 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.17.1.197
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: VngSuPpLY.IP-DdnS.com
-    path: /1ycR2zb3KeELWRha?ed=2560
-- name: 🌐سرور 51 | Mor-02| MTSRVRS
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 307pppp6s7XwguGbsjY3xaJPIubgj_D8zNJT5SmtsVA
-    short-id: f90c
-  server: 85.234.65.120
-  servername: github.com
-  tls: false
-  type: vless
-  uuid: fdc0229d-2037-48c4-94d3-496e67cce5d8
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  name: 🌐سرور 52 | Mor-02| MTSRVRS
-  network: ws
-  port: 443
-  server: 104.18.36.24
-  servername: carlotta.shoorekeeper.cloudns.org
-  tls: true
-  type: vless
-  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
-  ws-opts:
-    headers:
-      Host: carlotta.shoorekeeper.cloudns.org
-    path: /proxyip=zani.yaemiko.ggff.net/?JOKERRVPN_BIA_CHANEL@JOKERRVPN
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 53 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2080
-  reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN--
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision!
-  name: 🌐سرور 54 | Mor-02| MTSRVRS
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
-    short-id: f5
-  server: amazon-15.cristiano.name.ng
-  servername: store.steampowered.com
-  tls: false
-  type: vless
-  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
-- name: 🌐سرور 55 | Mor-02| MTSRVRS
-  network: ws
-  port: 80
-  server: enthusiastic-century.oneeat.co
-  tls: false
-  type: vless
-  uuid: edc0a710-b736-455a-a9f2-d26150e624b2
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 56 | Mor-02| MTSRVRS
-  network: grpc
-  port: 3080
-  reality-opts:
-    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
-    short-id: eb91f5c0
-  server: 91.107.188.21
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN
-- name: 🌐سرور 57 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.16.85.3
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 58 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2080
-  reality-opts:
-    public-key: wK_5qjYXyOhnpU4S8DpZSqRpq5U4IpdNWYrHxCL2m2M
-    short-id: 77c5aa0a2b
-  server: 91.99.229.234
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN--
-- name: 🌐سرور 59 | Mor-02| MTSRVRS
-  network: grpc
-  port: 8880
-  server: 45.89.111.250
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🌐سرور 60 | Mor-02| MTSRVRS
-  network: tcp
-  port: 443
-  server: 65.109.201.108
-  tls: false
-  type: vless
-  uuid: b17ec18e-99af-40af-962b-0ad1b987d740
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: 🌐سرور 61 | Mor-02| MTSRVRS
+  name: 🌐سرور 61 | Mor-03| MTSRVRS
   network: grpc
   port: 3090
   reality-opts:
@@ -700,181 +666,55 @@ proxies:
   tls: false
   type: vless
   uuid: Telegram--SRCVPN--
-- client-fingerprint: chrome
-  name: 🌐سرور 62 | Mor-02| MTSRVRS
+- alterId: 0
+  cipher: auto
+  name: '[🇮🇳]t.me/ConfigsHub'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
-    short-id: ''
-  server: public.misvn.ir
-  servername: tgju.org
+  port: '10534'
+  server: 94.136.185.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- name: 🌐سرور 63 | Mor-03| MTSRVRS
+  network: tcp
+  port: 25429
+  server: 51.222.84.252
   tls: false
   type: vless
-  uuid: SVNTEAM-2
-- name: 🌐سرور 63 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 172.67.65.158
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: VngSuPpLY.IP-DdnS.com
-    path: /Etb1L6YUdZFZuTOr?ed=2560
-- name: 🌐سرور 64 | Mor-02| MTSRVRS
-  network: grpc
-  port: 8880
-  server: 185.231.205.139
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  uuid: f64ec975-bed6-4c91-b02b-80e5fdad363b
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 65 | Mor-02| MTSRVRS
+    grpc-service-name: ''
+  name: 🌐سرور 64 | Mor-03| MTSRVRS
   network: grpc
-  port: 2090
+  port: 3080
   reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram-SRCVPN--
-- name: 🌐سرور 66 | Mor-02| MTSRVRS
-  network: ws
-  port: 80
-  server: 102.177.189.28
-  tls: false
-  type: vless
-  uuid: b0265ca8-98dd-46b2-adec-4705b5e7eb48
-  ws-opts:
-    headers:
-      Host: psi.misvn.ir
-    path: /@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot@SvnProBot?ed=2048
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 67 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2090
-  reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: Telegram--SRCVPN
-- name: 🌐سرور 68 | Mor-02| MTSRVRS
-  network: ws
-  port: 443
-  server: 104.16.136.104
-  servername: VNGsUppLY.IP-ddnS.COm
-  tls: true
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: vngsupply.ip-ddns.com
-    path: /ycqlKbi40f2kVjZS?ed=2560
-- name: 🌐سرور 69 | Mor-02| MTSRVRS
-  network: ws
-  port: 8880
-  server: 104.17.1.197
-  tls: false
-  type: vless
-  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
-  ws-opts:
-    headers:
-      Host: VngSuPpLY.IP-Ddns.com
-    path: /1ycR2zb3KeELWRha?ed=2560
-- name: 🌐سرور 70 | Mor-02| MTSRVRS
-  network: ws
-  port: 80
-  server: brainy-party.seotoolsforyou.co.uk
-  tls: false
-  type: vless
-  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
-  ws-opts:
-    path: /
-- name: 🌐سرور 71 | Mor-02| MTSRVRS
-  network: grpc
-  port: 8880
-  server: pqh27v4.waipdirect.shop
-  servername: pqh27v4.waipdirect.shop
-  tls: false
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 72 | Mor-02| MTSRVRS
-  network: grpc
-  port: 2090
-  reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.188.21
   servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
   uuid: Telegram--SRCVPN--
-- name: 🌐سرور 73 | Mor-02| MTSRVRS
-  network: httpupgrade
-  port: 2095
-  server: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: e4e82781-f854-4f5e-bfeb-8f34d8ab9fe7
-  ws-opts:
-    headers:
-      Host: cdncloud-direct-public.beraghsa.ir
-    path: /?ed=2052
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: 32135vless
-  name: 🌐سرور 74 | Mor-02| MTSRVRS
+    grpc-service-name: ''
+  name: 🌐سرور 65 | Mor-03| MTSRVRS
   network: grpc
-  port: 2080
+  port: 3080
   reality-opts:
-    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
-    short-id: aa0dd5ba
-  server: 88.99.87.227
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.141.19
   servername: journalofbigdata.springeropen.com
   tls: false
   type: vless
-  uuid: idTel--SRCVPN--
-- client-fingerprint: chrome
-  name: 🌐سرور 75 | Mor-02| MTSRVRS
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
-    short-id: ''
-  server: public.misvn.ir
-  servername: tgju.org
-  tls: false
-  type: vless
-  uuid: SVNTEAM
-- name: 🌐سرور 76 | Mor-02| MTSRVRS
-  network: xhttp
-  port: 80
-  server: 151.101.3.8
-  tls: false
-  type: vless
-  uuid: 29091907-ea23-474b-a1ae-58b0a3996ed6
-  ws-opts:
-    headers:
-      Host: '%6A%6F%69%6E%73%68%68%70%72%6F%78%79%62%65%64%65.com'
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+  uuid: Telegram--SRCVPN
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E%2D%5A%45%44%4D%4F%44%45%4F%4E'
-  name: 🌐سرور 77 | Mor-02| MTSRVRS
+  name: 🌐سرور 66 | Mor-03| MTSRVRS
   network: grpc
   port: 10108
   reality-opts:
@@ -885,22 +725,148 @@ proxies:
   tls: false
   type: vless
   uuid: edeffe9e-4725-428e-a1c0-7b6a96124f8d
-- name: 🌐سرور 78 | Mor-02| MTSRVRS
+- name: 🌐سرور 67 | Mor-03| MTSRVRS
+  network: ws
+  port: 8880
+  server: 104.17.1.197
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: VngSuPpLY.IP-DdnS.com
+    path: /1ycR2zb3KeELWRha?ed=2560
+- flow: '!'
+  name: 🌐سرور 68 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: 104.16.85.3
+  tls: false
+  type: vless
+  uuid: 1b9ad34d-6b57-4ad1-84f5-12698b9b2b29
+  ws-opts:
+    headers:
+      Host: join-to-%56%6D%65%73%73%6F%72%67.sabadyt.ir
+    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 69 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2090
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: idTel--SRCVPN--
+- name: 🌐سرور 70 | Mor-03| MTSRVRS
+  network: tcp
+  port: 14643
+  server: 51.222.84.59
+  tls: false
+  type: vless
+  uuid: a810f77f-1346-4eef-b945-59c21be50f4d
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 71 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2080
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram--SRCVPN--
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: 32135vless
+  name: 🌐سرور 72 | Mor-03| MTSRVRS
+  network: grpc
+  port: 2090
+  reality-opts:
+    public-key: MqY81IaljluV2NXyLqPzt7PL12knwUuBiX0ru_KSLCM
+    short-id: aa0dd5ba
+  server: 88.99.87.227
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram--SRCVPN
+- name: 🌐سرور 73 | Mor-03| MTSRVRS
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 307pppp6s7XwguGbsjY3xaJPIubgj_D8zNJT5SmtsVA
+    short-id: f90c
+  server: 85.234.65.120
+  servername: github.com
+  tls: false
+  type: vless
+  uuid: fdc0229d-2037-48c4-94d3-496e67cce5d8
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: 🌐سرور 74 | Mor-03| MTSRVRS
+  network: grpc
+  port: 3080
+  reality-opts:
+    public-key: IBTQswLX4U6WI_tl305r8FKwhZoCka5nW0_idDXLUlo
+    short-id: eb91f5c0
+  server: 91.107.188.21
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: Telegram--SRCVPN
+- name: 🌐سرور 75 | Mor-03| MTSRVRS
   network: grpc
   port: 8880
   server: pqh30v8.waipdirect.shop
   tls: false
   type: vless
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: firefox
-  name: 🌐سرور 79 | Mor-02| MTSRVRS
-  network: tcp
+- name: 🌐سرور 76 | Mor-03| MTSRVRS
+  network: ws
   port: 443
-  reality-opts:
-    public-key: O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc
-    short-id: ''
-  server: public.misvn.ir
-  servername: tgju.org
+  server: 103.160.204.50
+  servername: vless8-ekh.pages.dev
+  tls: true
+  type: vless
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  ws-opts:
+    headers:
+      Host: vless8-ekh.pages.dev
+    path: /
+- name: 🌐سرور 77 | Mor-03| MTSRVRS
+  network: grpc
+  port: 8880
+  server: pqh27v4.waipdirect.shop
+  servername: pqh27v4.waipdirect.shop
   tls: false
   type: vless
-  uuid: SVNTEAM-3
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- flow: '!'
+  name: 🌐سرور 78 | Mor-03| MTSRVRS
+  network: httpupgrade
+  port: 8880
+  server: 104.16.85.3
+  tls: false
+  type: vless
+  uuid: 67fea8d3-a217-4e51-8703-906a7d1c793e
+  ws-opts:
+    headers:
+      Host: join-to-%56%6D%65%73%73%6F%72%67.sabadyt.ir
+    path: /@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480
+- name: 🌐سرور 79 | Mor-03| MTSRVRS
+  network: ws
+  port: 80
+  server: crazy-identity.oneeat.co
+  tls: false
+  type: vless
+  uuid: 64d6d0d4-3706-4837-b154-cda2816adcc5
+  ws-opts:
+    path: /

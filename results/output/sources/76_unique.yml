@@ -1,10 +1,71 @@
-# Update: 2025-07-24 08:53
-# Source 76 (http://66.42.50.118:12580/clash/proxies), 2
+# Update: 2025-07-25 08:53
+# Source 76 (http://66.42.50.118:12580/clash/proxies), 6
 proxies:
+- cipher: aes-256-cfb
+  country: 🇪🇸ES
+  name: 🇪🇸ES_14
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 45.153.124.90
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇷🇺RU-🇺🇸US_69 #1'
+  network: ws
+  port: 23130
+  server: 45.136.245.177
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8df2201a-b8e0-4f7b-8dae-7c850465b3c5
+  ws-opts:
+    path: /
+- cipher: aes-192-ctr
+  country: 🇺🇸US
+  group: Update-二爷
+  name: Relay_🇺🇸US-🇺🇸US_86
+  obfs: tls1.2_ticket_auth
+  password: JUBXCP
+  port: 19155
+  protocol: auth_sha1_v4
+  server: us.linode.rbqis.me
+  type: ssr
+- alterId: 32
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_92
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
+- cipher: aes-256-cfb
+  country: 🇿🇦ZA
+  group: Update-bulianglin
+  name: Relay_🇿🇦ZA-🇿🇦ZA_110
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 2212
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
+  type: ssr
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-二爷
-  name: Relay_🇿🇦ZA-🇿🇦ZA_119
+  name: Relay_🇿🇦ZA-🇿🇦ZA_111
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -12,16 +73,4 @@ proxies:
   protocol: auth_aes128_md5
   protocol-param: 11275:KWQHheqWo8
   server: 231103.level3.sdl-sz.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇿🇦ZA
-  group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_120
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjd2a&dj23gsa
-  port: 37866
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103levelx.unclemanco.com
   type: ssr
