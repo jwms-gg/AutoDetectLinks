@@ -1,37 +1,369 @@
-# Update: 2025-07-25 08:52
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 4
+# Update: 2025-07-26 08:50
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 33
 proxies:
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-95.164.45.8...
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148... #7'
+  network: ws
+  port: 2096
+  server: 104.17.148.22
+  servername: 638879176706545587.amsterdam-prx-dnraaal.info
+  tls: true
+  type: vless
+  uuid: 6ff4852a-de6e-423e-8561-3131e63120c6
+  ws-opts:
+    headers:
+      Host: 638879176706545587.amsterdam-prx-dnraaal.info
+    path: /wrvyqows
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.235.14...
+  network: xhttp
+  port: 443
+  server: 172.235.143.48
+  tls: false
+  type: vless
+  uuid: fe858a71-b4e2-4767-bd6b-f4616773f112
+  ws-opts:
+    path: /
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.1.19...
+  network: ws
+  port: 8880
+  server: 104.17.1.197
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: VngSuPpLY.IP-Ddns.com
+    path: /1ycR2zb3KeELWRha?ed=2560
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.105.15...
+  network: xhttp
+  port: 443
+  server: 172.105.158.108
+  tls: false
+  type: vless
+  uuid: 47dc734a-15e8-4286-b09f-ad0404e85630
+  ws-opts:
+    path: /
+- client-fingerprint: random
+  name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.22...
+  network: ws
+  port: 80
+  server: 104.16.228.91
+  servername: barayeiran.mahiozonboroon.qzz.io
+  tls: false
+  type: vless
+  uuid: f278037e-ce36-4634-9b4d-fca93e345a35
+  ws-opts:
+    headers:
+      Host: barayeiran.mahiozonboroon.qzz.io
+    path: /vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.67.... #2'
+  network: ws
+  port: 443
+  server: 104.21.67.12
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /proxyip=zani.yaemiko.ggff.net
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.233.16...
+  network: xhttp
+  port: 443
+  server: 172.233.162.174
+  tls: false
+  type: vless
+  uuid: f6bcf6b1-4e62-4b6e-bf6b-9d379e13609c
+  ws-opts:
+    path: /
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #7'
+  network: ws
+  port: 2096
+  server: 104.17.147.22
+  servername: 638879176706545587.amsterdam-prx-dnraaal.info
+  tls: true
+  type: vless
+  uuid: 6ff4852a-de6e-423e-8561-3131e63120c6
+  ws-opts:
+    headers:
+      Host: 638879176706545587.amsterdam-prx-dnraaal.info
+    path: /wrvyqows
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #7'
+  network: ws
+  port: 443
+  server: 172.67.164.4
+  servername: verina.ccantarella.dns-dynamic.net
+  tls: true
+  type: vless
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  ws-opts:
+    headers:
+      Host: verina.ccantarella.dns-dynamic.net
+    path: /proxyip
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.237.13...
+  network: xhttp
+  port: 443
+  server: 172.237.130.125
+  tls: false
+  type: vless
+  uuid: 3458a236-bc0a-4526-8f9a-4607fa0e8834
+  ws-opts:
+    path: /
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.85.3...
+  network: ws
+  port: 8880
+  server: 104.16.85.3
+  tls: false
+  type: vless
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: vngsupply.ip-ddns.com
+    path: "ð\x9F\x94\x92 [By EbraSha]"
+- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #1'
   network: grpc
   port: 8880
-  server: 95.164.45.85
+  server: 185.231.205.234
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🔒 VL-TCP-NA 🇸🇪 SE-192.109.139....
-  network: tcp
-  port: 3630
-  server: 192.109.139.121
-  tls: false
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.... #2'
+  network: ws
+  port: 2096
+  server: 104.26.14.69
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
   type: vless
-  uuid: cb8c1330-7fd4-47e0-80c3-1b75844a913c
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
   ws-opts:
     headers:
-      Host: zula.ir
-- name: 🔒 VL-GRPC-NA 🇺🇸 US-45.82.251.1...
-  network: grpc
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /
+- name: 🔒 VL-WS-NA 🇦🇪 AE-94.140.0.109:...
+  network: ws
   port: 8880
-  server: 45.82.251.124
+  server: 94.140.0.109
   tls: false
   type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.179.20...
+  uuid: e9979910-79d1-4621-a93c-b2a579c44ba7
+  ws-opts:
+    headers:
+      Host: VngSuPpLY.IP-DdnS.com
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-104.237.13...
+  network: xhttp
+  port: 443
+  server: 104.237.138.80
+  tls: false
+  type: vless
+  uuid: bc310b8d-fbe8-4c55-970b-be77816fceea
+  ws-opts:
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.235.13...
+  network: xhttp
+  port: 443
+  server: 172.235.137.53
+  tls: false
+  type: vless
+  uuid: 521e0034-799c-4ad3-ad25-74471fe9d2d9
+  ws-opts:
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.233.22...
+  network: xhttp
+  port: 443
+  server: 172.233.223.125
+  tls: false
+  type: vless
+  uuid: 30b4d64a-8981-47c1-b4c5-2507da32960e
+  ws-opts:
+    path: /
+- name: 🔒 VL-TCP-NA 🇺🇸 US-69.164.192.1...
   network: tcp
   port: 443
-  server: 91.99.179.201
+  server: 69.164.192.122
   tls: false
   type: vless
-  uuid: 88b9da00-7a25-45ec-859b-14ad57a6bd2b
+  uuid: a8dff238-bf64-4b59-816d-f7aa8c527636
   ws-opts:
     headers:
       Host: zula.ir
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.... #3'
+  network: ws
+  port: 443
+  server: 104.26.14.69
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /proxyip=zani.yaemiko.ggff.net
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.68.1...
+  network: ws
+  port: 80
+  server: 172.67.68.168
+  tls: false
+  type: vless
+  uuid: 9570a079-f83f-4454-88d0-884057c57a35
+  ws-opts:
+    path: /
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.26.13.1...
+  network: ws
+  port: 80
+  server: 104.26.13.114
+  tls: false
+  type: vless
+  uuid: 9570a079-f83f-4454-88d0-884057c57a35
+  ws-opts:
+    path: /
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-103.160.20... #1'
+  network: ws
+  port: 443
+  server: 103.160.204.50
+  servername: vless8-ekh.pages.dev
+  tls: true
+  type: vless
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  ws-opts:
+    headers:
+      Host: vless8-ekh.pages.dev
+    path: /?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.70....
+  network: ws
+  port: 443
+  server: 172.67.70.208
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-69.164.201...
+  network: xhttp
+  port: 443
+  server: 69.164.201.55
+  tls: false
+  type: vless
+  uuid: 7b953823-958e-42a1-9528-e2a0fd8260cf
+  ws-opts:
+    path: /
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.26.12.1...
+  network: ws
+  port: 80
+  server: 104.26.12.114
+  tls: false
+  type: vless
+  uuid: 9570a079-f83f-4454-88d0-884057c57a35
+  ws-opts:
+    path: /
+- name: '🔒 VL-XHTTP-NA 🇺🇸 US-104.237.13... #1'
+  network: xhttp
+  port: 443
+  server: 104.237.138.213
+  tls: false
+  type: vless
+  uuid: 7fb76be6-fd3a-46a7-a571-0de9980aee62
+  ws-opts:
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.235.12...
+  network: xhttp
+  port: 443
+  server: 172.235.128.66
+  tls: false
+  type: vless
+  uuid: 239cfabf-d064-4cfd-8c2a-c74babc1c77b
+  ws-opts:
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.5.1...
+  network: ws
+  port: 443
+  server: 104.26.5.196
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-45.79.196....
+  network: xhttp
+  port: 443
+  server: 45.79.196.245
+  tls: false
+  type: vless
+  uuid: 63317fb1-b61a-45f1-a306-007399d2334b
+  ws-opts:
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.4.1...
+  network: ws
+  port: 443
+  server: 104.26.4.196
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-172.236.10...
+  network: xhttp
+  port: 443
+  server: 172.236.103.104
+  tls: false
+  type: vless
+  uuid: bc432859-051c-40e5-ab96-a34f47f1b14a
+  ws-opts:
+    path: /
+- client-fingerprint: random
+  name: 🔒 VL-WS-NONE 🏴‍☠️ NA-104.16.19...
+  network: ws
+  port: 80
+  server: 104.16.191.195
+  servername: barayeiran.mahiozonboroon.qzz.io
+  tls: false
+  type: vless
+  uuid: f278037e-ce36-4634-9b4d-fca93e345a35
+  ws-opts:
+    headers:
+      Host: barayeiran.mahiozonboroon.qzz.io
+    path: /vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #8'
+  network: ws
+  port: 443
+  server: 172.67.164.5
+  servername: verina.ccantarella.dns-dynamic.net
+  tls: true
+  type: vless
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  ws-opts:
+    headers:
+      Host: verina.ccantarella.dns-dynamic.net
+    path: /
