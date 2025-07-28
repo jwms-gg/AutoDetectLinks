@@ -1,32 +1,23 @@
-# Update: 2025-07-27 08:58
-# Source 57 (https://raw.githubusercontent.com/ts-sf/fly/main/clash), 43
+# Update: 2025-07-28 08:57
+# Source 57 (https://raw.githubusercontent.com/ts-sf/fly/main/clash), 44
 proxies:
 - alterId: 0
   name: '🇺🇸US美国 #34'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 3596
-  server: 36.151.251.7
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
   skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '🇭🇰HK香港 #38'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 446
-  server: 36.151.192.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  sni: wahaha.yingyangkuaixian.dpdns.org
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US美国2 1.4MB/s
-  password: 360e21d21977dc11
+  name: 🇬🇧GB英国 412.7KB/s
+  password: c40641c1f89e7acb
   port: 57456
-  server: 104.167.197.25
+  server: 46.226.163.225
   skip-cert-verify: true
   tls: true
   type: ss
@@ -41,6 +32,16 @@ proxies:
   udp: true
 - alterId: 0
   name: '未知2 #37'
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知3 #23'
   network: ws
   password: Aimer
   port: 8443
@@ -51,7 +52,16 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '未知3 #23'
+  cipher: aes-128-gcm
+  name: 🇯🇵JP日本 3.7MB/s
+  password: '10086'
+  port: 10087
+  server: 160.16.123.124
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '未知4 #39'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -62,39 +72,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '未知4 #39'
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '未知5 #38'
-  network: ws
-  port: 37122
-  server: 103.38.83.253
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: edc493ca-b939-4097-e0c3-c8fee243eac6
-  ws-opts:
-    path: /
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US美国3 1.4MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 204.136.10.115
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '🇺🇸US美国4 #15'
+  name: '🇺🇸US美国2 #34'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 172.233.128.126
@@ -102,106 +81,10 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: '未知6 #38'
-  network: tcp
-  port: 433
-  server: https://github.com/ALIILAPRO/v2rayNG-Config
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: Free
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国 61.3KB/s
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇺🇸US美国5 #14'
-  network: ws
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  skip-cert-verify: true
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国2 46.0KB/s
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇸🇬SG新加坡 #19'
+  name: '🇭🇰HK香港 #38'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 25618
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL荷兰 1.1MB/s
-  password: zI7kiNZ0UfV9cXB73a4nRD
-  port: 24206
-  server: 164.92.156.41
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇯🇵JP日本 #38'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '🇭🇰HK香港2 #38'
-  password: 9bfdde71b4c0
-  port: 636
-  server: 103.103.245.158
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '未知7 #33'
-  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
-  port: 15229
-  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  skip-cert-verify: true
-  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '🇺🇸US美国6 #14'
-  password: Gjv3t0WDY17HUakw+2DpeA==
-  port: 17273
-  server: iepl.huli168.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇸🇬SG新加坡2 #20'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 44123
-  server: 36.151.251.7
+  port: 446
+  server: 36.151.192.238
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
@@ -209,60 +92,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 未知8 1.9MB/s
-  network: ws
-  port: 42717
-  server: 210.3.159.150
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b5803d74-c6f8-415f-e1e6-ebc9e4269b86
-  ws-opts:
-    path: /
-- alterId: 0
-  name: '未知9 #33'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  skip-cert-verify: true
-  sni: aio.zipzap.biz.id
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 未知10 1.7KB/s
-  network: ws
-  port: 15924
-  server: 47.79.41.14
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f50628ed-e568-4cde-eda8-3dce15edc1c1
-  ws-opts:
-    path: /f50628ed
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR法国
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 81.19.137.222
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB英国 100.9KB/s
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '未知11 #24'
+  name: '未知5 #38'
   network: ws
   port: 443
   server: 104.25.174.85
@@ -275,6 +105,214 @@ proxies:
       host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
     path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
+  cipher: aes-256-gcm
+  name: '🇯🇵JP日本2 #20'
+  password: 823e135ed103
+  port: 636
+  server: 137.220.191.40
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇦🇺AU澳大利亚 2.4MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR法国
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 81.19.137.222
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '🇺🇸US美国3 #15'
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US美国4 2.0MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 204.136.10.115
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE德国
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '🇷🇺RU俄罗斯 #38'
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 🇯🇵JP日本3 4.1MB/s
+  password: '10086'
+  port: 10087
+  server: 153.121.43.183
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇺🇸US美国5 #14'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 3596
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知6 1.8KB/s
+  network: ws
+  port: 15924
+  server: 47.79.41.14
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f50628ed-e568-4cde-eda8-3dce15edc1c1
+  ws-opts:
+    path: /f50628ed
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE德国2
+  password: DKyRdoqQIebdKZVYs5GzW8
+  port: 14628
+  server: 45.150.32.13
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇸🇬SG新加坡 #19'
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  port: 443
+  server: sg.mjt000.com
+  skip-cert-verify: true
+  sni: sg.mjt000.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE德国3
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '未知7 #33'
+  network: ws
+  port: 37122
+  server: 103.38.83.253
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: edc493ca-b939-4097-e0c3-c8fee243eac6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '未知8 #28'
+  network: ws
+  port: 20521
+  server: 118.43.158.220
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ab6dde08-ce0d-4c3d-b708-da53af1a862d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL荷兰 9.0MB/s
+  password: zI7kiNZ0UfV9cXB73a4nRD
+  port: 24206
+  server: 164.92.156.41
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇯🇵JP日本4 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知9 #33'
+  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
+  port: 15229
+  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  skip-cert-verify: true
+  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇸🇬SG新加坡2 #20'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 25618
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '未知10 #33'
+  network: ws
+  port: 8443
+  server: 2.188.219.43
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
+  ws-opts:
+    path: /
+- alterId: 0
+  name: '未知11 #24'
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: aio.zipzap.biz.id
+  skip-cert-verify: true
+  sni: aio.zipzap.biz.id
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 🇫🇷FR法国2
   password: WDavBimDmH2QLxljf5PSO1
@@ -284,21 +322,31 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
+  cipher: aes-256-gcm
+  name: '🇭🇰HK香港2 #38'
+  password: 9bfdde71b4c0
+  port: 636
+  server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '未知12 #34'
+  network: tcp
+  port: 433
+  server: https://github.com/ALIILAPRO/v2rayNG-Config
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: Free
+- alterId: 0
   name: '🇭🇰HK香港3 #29'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 2078
   server: 36.151.192.238
   skip-cert-verify: true
   sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知12 #34'
-  password: '74260628090146500'
-  port: 443
-  server: stirring-parakeet.shiner427.skin
-  skip-cert-verify: true
   tls: true
   type: trojan
   udp: true
@@ -317,7 +365,7 @@ proxies:
       host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
     path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
-  name: '🇯🇵JP日本2 #20'
+  name: '🇯🇵JP日本5 #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 40937
   server: 36.151.251.7
@@ -327,49 +375,17 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '🇸🇬SG新加坡3 #1'
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  name: '未知14 #18'
+  password: '74260628090146500'
   port: 443
-  server: sg.mjt000.com
+  server: stirring-parakeet.shiner427.skin
   skip-cert-verify: true
-  sni: sg.mjt000.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 未知14 4.6MB/s
-  network: ws
-  port: 20521
-  server: 118.43.158.220
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ab6dde08-ce0d-4c3d-b708-da53af1a862d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '🇯🇵JP日本3 #20'
-  password: 823e135ed103
-  port: 636
-  server: 137.220.191.40
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇺🇸US美国7 #14'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 32962
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇱🇹LT立陶宛 49.7KB/s
+  name: 🇱🇹LT立陶宛 108.7KB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.28
@@ -378,46 +394,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国3
-  password: DKyRdoqQIebdKZVYs5GzW8
-  port: 14628
-  server: 45.150.32.13
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国4 353.0KB/s
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '🇷🇺RU俄罗斯 #38'
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 未知15 377.0KB/s
-  network: ws
-  port: 8443
-  server: 2.188.219.43
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL荷兰2 60.4KB/s
+  name: 🇳🇱NL荷兰2 59.6KB/s
   password: VpKABcOpNNA0l5G2AVOmw8
   port: 62685
   server: 213.109.147.242
@@ -426,10 +403,42 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇦🇺AU澳大利亚 1.8MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+  name: 🇩🇪DE德国4
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: '🇸🇬SG新加坡3 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9161
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知15 1013.2KB/s
+  network: ws
+  port: 42717
+  server: 210.3.159.150
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b5803d74-c6f8-415f-e1e6-ebc9e4269b86
+  ws-opts:
+    path: /
+- alterId: 0
+  name: '🇺🇸US美国6 #14'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32962
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true

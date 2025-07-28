@@ -1,5 +1,5 @@
-# Update: 2025-07-27 08:58
-# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 291
+# Update: 2025-07-28 08:56
+# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 321
 proxies:
 - name: 🇷🇺 俄罗斯 V2CROSS.COM
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -21,7 +21,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '🇭🇰 香港3|@ripaojiedian #2'
+- name: '🇭🇰 香港3|@ripaojiedian #3'
   password: da631e61-bead-4c9c-8bd7-7bea82f736ae
   port: 12221
   server: js-12f83a8c.kaiqsz.com
@@ -49,7 +49,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '🇰🇷 韩国|@ripaojiedian #3'
+- name: '🇰🇷 韩国|@ripaojiedian #4'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 16158
   server: 36.151.192.239
@@ -112,7 +112,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '🇰🇷 韩国|@ripaojiedian #4'
+- name: '🇰🇷 韩国|@ripaojiedian #5'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 16158
   server: 36.151.251.48
@@ -146,6 +146,13 @@ proxies:
   server: 36.151.251.48
   skip-cert-verify: true
   sni: www.baidu.com
+  type: trojan
+- name: GB_speednode_0064
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  skip-cert-verify: false
+  sni: wahaha.yingyangkuaixian.dpdns.org
   type: trojan
 - name: 🇮🇳_IN_印度
   password: '74260628090146500'
@@ -182,6 +189,42 @@ proxies:
   server: 36.151.192.62
   sni: www.baidu.com
   type: trojan
+- name: 美国06 付费推荐：https://dafei.de
+  network: ws
+  password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+  port: 8443
+  server: cdns.doon.eu.org
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: 美国04 付费推荐：https://dafei.de
+  network: ws
+  password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: 美国05 付费推荐：https://dafei.de
+  network: ws
+  password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+  port: 8443
+  server: ssrsub.cloudflare.182682.xyz
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
 - alpn:
   - http/1.1
   name: '@warp_city 592'
@@ -195,7 +238,202 @@ proxies:
     headers:
       Host: iiiiuuuyyyyy.freevpnatm.dpdns.org
     path: /9wAaF67mglzN6jop7uR
-- name: '[🇺🇸]ae_proxy #3'
+- name: '美国06 付费推荐：https://dafei.de #1'
+  network: ws
+  password: 67828a6e-0144-4e57-8169-2447a3dd2e61
+  port: 8443
+  server: cdns.doon.eu.org
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #1'
+  network: ws
+  password: 67828a6e-0144-4e57-8169-2447a3dd2e61
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国05 付费推荐：https://dafei.de #1'
+  network: ws
+  password: 67828a6e-0144-4e57-8169-2447a3dd2e61
+  port: 8443
+  server: ssrsub.cloudflare.182682.xyz
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国06 付费推荐：https://dafei.de #2'
+  network: ws
+  password: 69136cc7-d70e-4357-8230-ec82bec92c19
+  port: 8443
+  server: cdns.doon.eu.org
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #2'
+  network: ws
+  password: 69136cc7-d70e-4357-8230-ec82bec92c19
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国05 付费推荐：https://dafei.de #2'
+  network: ws
+  password: 69136cc7-d70e-4357-8230-ec82bec92c19
+  port: 8443
+  server: ssrsub.cloudflare.182682.xyz
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国06 付费推荐：https://dafei.de #3'
+  network: ws
+  password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  port: 8443
+  server: cdns.doon.eu.org
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #3'
+  network: ws
+  password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国05 付费推荐：https://dafei.de #3'
+  network: ws
+  password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  port: 8443
+  server: ssrsub.cloudflare.182682.xyz
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国06 付费推荐：https://dafei.de #4'
+  network: ws
+  password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
+  port: 8443
+  server: cdns.doon.eu.org
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #4'
+  network: ws
+  password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国05 付费推荐：https://dafei.de #4'
+  network: ws
+  password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
+  port: 8443
+  server: ssrsub.cloudflare.182682.xyz
+  skip-cert-verify: true
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '@AZARBAYJAB1'
+  network: tcp
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+  port: 443
+  server: 13.76.251.170
+  sni: jp.iamnotagoodman.com
+  type: trojan
+- name: '美国05 付费推荐：https://dafei.de #5'
+  network: ws
+  password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  port: 8443
+  server: 69.84.182.108
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国06 付费推荐：https://dafei.de #5'
+  network: ws
+  password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  port: 8443
+  server: 69.84.182.18
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #5'
+  network: ws
+  password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
+  port: 8443
+  server: csgo.com
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: 🇦🇹AZARBAYJAB1
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.74.254
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: '[🇺🇸]ae_proxy #2'
   password: Aimer
   port: 2083
   server: 192.0.54.221
@@ -226,7 +464,7 @@ proxies:
     path: /Telegram@V2ray_Alpha/?ed=2560
 - grpc-opts:
     grpc-service-name: DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs?ed=2060
-  name: '@ᴅᴀɪʟʏ_ᴄᴏɴꜰɪɢꜱ #25'
+  name: '@ᴅᴀɪʟʏ_ᴄᴏɴꜰɪɢꜱ #21'
   network: grpc
   password: Bia-DailyConfigs
   port: 56807
@@ -253,7 +491,7 @@ proxies:
   server: 43.198.227.47
   sni: ca1.bilibili.com
   type: trojan
-- name: '@Filter_breaker | Germany #13'
+- name: '@Filter_breaker | Germany #12'
   network: ws
   password: b6c7d8e9-9012-3bcd-4abc-5678abcdef56
   port: 443
@@ -263,7 +501,7 @@ proxies:
     headers:
       Host: trojan.de.vpnfree.org
     path: /trojan
-- name: '@Filter_breaker | United State... #16'
+- name: '@Filter_breaker | United State... #14'
   network: ws
   password: d8e9f0g1-1234-5bcd-6abc-7890abcdef56
   port: 443
@@ -273,7 +511,7 @@ proxies:
     headers:
       Host: trojan.workers.dev
     path: /trojan
-- name: '@Filter_breaker | Germany #14'
+- name: '@Filter_breaker | Germany #13'
   network: ws
   password: f0g1h2i3-3456-7bcd-8abc-9012abcdef78
   port: 443
@@ -282,6 +520,16 @@ proxies:
   ws-opts:
     headers:
       Host: trojan.de.vpnfree.org
+    path: /trojan
+- name: '@Filter_breaker | United State... #15'
+  network: ws
+  password: f0g1h2i3-5678-9abc-def0-1234567890ab
+  port: 443
+  server: 104.21.25.410
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.workers.dev
     path: /trojan
 - name: '@warp_city #8'
   network: ws
@@ -294,6 +542,35 @@ proxies:
     headers:
       Host: aio.zipzap.biz.id
     path: /aioproxybot/129.150.49.58-18650
+- name: '@Filter_breaker | United State... #16'
+  network: ws
+  password: g1h2i3j4-1234-5bcd-6abc-7890abcdef12
+  port: 443
+  server: 104.21.25.400
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.workers.dev
+    path: /trojan
+- name: '@Filter_breaker | Germany #14'
+  network: ws
+  password: i3j4k5l6-3456-7bcd-8abc-9012abcdef34
+  port: 443
+  server: 185.146.173.2550
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.de.vpnfree.org
+    path: /trojan
+- grpc-opts:
+    grpc-service-name: DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs?ed=2060
+  name: '@ᴅᴀɪʟʏ_ᴄᴏɴꜰɪɢꜱ #22'
+  network: grpc
+  password: rhSacvSrrW
+  port: 56807
+  server: join-dailyconfigs.resurrection-time.sbs
+  sni: fafait.net
+  type: trojan
 - alpn:
   - http/1.1
   name: ' @Confing_chanel'
@@ -349,7 +626,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 'unnamed #14'
+  name: 'unnamed #11'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -376,14 +653,14 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '@Daily_Configs #8'
+  name: '@Daily_Configs #9'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 52.47.136.181
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '@Filter_breaker | United State... #30'
+- name: '@Filter_breaker | United State... #28'
   network: ws
   password: v0w1x2y3-9012-3bcd-4abc-5678abcdef56
   port: 443
@@ -393,6 +670,13 @@ proxies:
     headers:
       Host: trojan.workers.dev
     path: /trojan
+- name: '@AZARBAYJAB1 #1'
+  network: tcp
+  password: vip
+  port: 443
+  server: 104.26.4.57
+  sni: heihu880.pages.dev
+  type: trojan
 - name: '@V2RAYROZ #10'
   network: ws
   password: vip
@@ -415,7 +699,15 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: '@Filter_breaker | United State... #32'
+- name: Config🇸🇪@Do_itforyou
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
+  ws-opts:
+    path: /
+- name: '@Filter_breaker | United State... #30'
   network: ws
   password: x2y3z4a5-1234-5bcd-6abc-7890abcdef78
   port: 443
@@ -439,7 +731,7 @@ proxies:
   server: h.522226.xyz
   skip-cert-verify: true
   type: trojan
-- name: '@Filter_breaker | United State... #34'
+- name: '@Filter_breaker | United State... #32'
   network: ws
   password: z4a5b6c7-5678-9abc-def0-1234567890ab
   port: 443
@@ -1175,6 +1467,16 @@ proxies:
   server: 35.181.156.239
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: t.me/entryNET/config=183799369...
+  network: ws
+  password: 99ece951-d623-4fcd-adac-021b97d0f887
+  port: 443
+  server: hajlab.ucdavis.edu
+  sni: hajlab.ucdavis.edu
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v04.bEsTdRlImIt.NeT
 - name: t.me/entryNET/config=183799275...
   password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
   port: 443
@@ -1319,6 +1621,20 @@ proxies:
   port: 22223
   server: 15.188.241.61
   sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 'ES_speednode_0029 #1'
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+- name: KZ_speednode_0057
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
   type: trojan
 - name: TW_speednode_0079
   password: ttfang
@@ -1647,11 +1963,11 @@ proxies:
   server: 104.21.30.167
   sni: TttTtTYU.2032.PP.UA
   type: trojan
-- name: '🇺🇸US美国2 #5'
-  password: cf8c791e-9d0b-4e90-aaf6-41ac62468416
+- name: '🇺🇸US美国3 #1'
+  password: f898ffcb-6417-4373-9640-0b66091e8206
   port: 443
-  server: 172.67.135.37
-  sni: EeEeeD.459.pp.uA
+  server: 104.21.22.159
+  sni: q12.11890604.xyz
   type: trojan
 - name: '🇺🇸US美国4 #1'
   password: 357b1bba-6400-4944-baff-1b933311ff28
@@ -1671,12 +1987,6 @@ proxies:
   server: 118.163.200.42
   sni: TG.WangCai2
   type: trojan
-- name: 🇺🇸US美国5
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 172.67.145.200
-  sni: Rrr4.8906004.xYZ
-  type: trojan
 - name: 🇨🇳CN中国4
   password: 0cc6b4268dea0ba8
   port: 443
@@ -1688,18 +1998,6 @@ proxies:
   port: 443
   server: 134.195.101.83
   sni: TG.WangCai2
-  type: trojan
-- name: 🇺🇸US美国7
-  password: cdec9d57-661d-456a-bbf2-b4c38e9c6711
-  port: 443
-  server: 104.21.30.37
-  sni: DDdcVfbGHy7.444682.xyz
-  type: trojan
-- name: 🇺🇸US美国8
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  sni: xXcdvFgt.191268.XYz
   type: trojan
 - alpn:
   - http/1.1
@@ -1771,7 +2069,7 @@ proxies:
   server: 185.235.243.133
   sni: tr-s.xor-vpn.ru
   type: trojan
-- name: Telegram:@config_proxy 💦
+- name: 'Telegram:@config_proxy 💦 #1'
   password: 89f84d5e-4170-4c64-bc78-ac99953b103a
   port: 50038
   server: ae5f1a2a-fb75-4800.gttysd.com
@@ -2190,6 +2488,13 @@ proxies:
   skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
+- name: t.me/entryNET/config=183788624...
+  password: SSorg
+  port: 2087
+  server: 108.165.152.98
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
 - name: t.me/entryNET/config=183788422...
   password: SSorg
   port: 2083
@@ -2241,6 +2546,13 @@ proxies:
   skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
+- name: t.me/entryNET/config=183787907...
+  password: SSorg
+  port: 443
+  server: 167.68.4.58
+  skip-cert-verify: true
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
 - name: t.me/entryNET/config=183787768...
   password: SSorg
   port: 8443
@@ -2269,7 +2581,7 @@ proxies:
   skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
-- name: 'Telegram:@config_proxy 💦 #14'
+- name: 'Telegram:@config_proxy 💦 #15'
   network: tcp
   password: ceaea123-1b4b-469b-8358-bcd5f5529305
   port: 443
@@ -2297,6 +2609,13 @@ proxies:
   port: 8443
   server: 156.255.90.175
   skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+- name: t.me/entryNET/config=183787466...
+  password: SSorg
+  port: 2083
+  server: 188.164.159.214
+  skip-cert-verify: true
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
 - name: t.me/entryNET/config=183787617...
