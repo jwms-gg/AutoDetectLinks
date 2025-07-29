@@ -1,514 +1,67 @@
-# Update: 2025-07-28 08:56
-# Source 44 (https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/a11), 40
+# Update: 2025-07-29 08:58
+# Source 44 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 6
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 中国_072804046 L0
-  network: tcp
-  port: '44122'
-  server: 183.240.179.91
-  servername: ''
+- name: 🔒 VL-GRPC-NA 🇫🇷 FR-95.164.45.8...
+  network: grpc
+  port: 8880
+  server: 95.164.45.85
   tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 中国_072804109 L0
-  network: tcp
-  port: '51522'
-  server: 183.240.179.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 中国_072804110 L0
-  network: tcp
-  port: '51661'
-  server: 183.240.179.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 加拿大_072804083
-  password: 0hHw5Sa8Ui
-  port: 1935
-  server: x6-canada-amazon-v2-bzsn4.devefun.org
-  skip-cert-verify: false
-  sni: ''
-  type: trojan
-- name: 印度_072804017
-  password: 5fPC693gll
-  port: 1935
-  server: x1-india-amazon-v2-n67m9.devefun.org
-  skip-cert-verify: false
-  sni: ''
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 台湾_072804067 L0
-  network: tcp
-  port: '20788'
-  server: 45.121.48.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
-- alterId: 0
-  cipher: auto
-  name: 台湾_072804068 L0
-  network: ''
-  port: '20788'
-  server: 45.121.48.174
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
-- name: 德国_072804462+L0
-  password: 2ee85121-31de-4581-a492-eb00f606e392
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #2'
+  network: ws
   port: 443
-  server: 185.208.207.217
-  skip-cert-verify: true
-  sni: dus.freeguard.org
-  type: trojan
-- cipher: chacha20-ietf
-  name: 新加坡_072804008+L0
-  password: asd123456
-  port: '8388'
-  server: 103.36.91.32
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 新加坡_072804224 L0
-  network: ws
-  port: '443'
-  server: 202.79.161.187
-  servername: ''
+  server: 104.19.144.33
+  servername: IaErIbZlCb.WaSaBi1.OrG
   tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
   ws-opts:
     headers:
-      Host: www.32278117.xyz
-    path: /path/191019072927
-- alterId: 0
-  cipher: auto
-  name: 未知_072804035
-  network: ws
-  port: '2086'
-  server: s5.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-202-72-243.s5.cn-db.top
-    path: /dabai.in104.20.25.68
-- alterId: 0
-  cipher: auto
-  name: 未知_072804036
-  network: ws
-  port: '8880'
-  server: s4.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-90-45-26.s4.db-link01.top
-    path: /dabai.in172.64.56.237
-- alterId: 0
-  cipher: auto
-  name: 未知_072804037
-  network: ws
-  port: '8880'
-  server: s3.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-220-99-35.s3.db-link01.top
-    path: /dabai.in172.67.31.107
-- alterId: 0
-  cipher: auto
-  name: 未知_072804038
-  network: ws
-  port: '2086'
-  server: s5.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-180-215-192.s5.db-link02.top
-    path: /dabai.in104.20.63.178
-- alterId: 0
-  cipher: auto
-  name: 未知_072804039
-  network: ws
-  port: '8880'
-  server: s4.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-182-46-202.s4.db-link02.top
-    path: /dabai.in172.67.84.2
-- alterId: 0
-  cipher: auto
-  name: 未知_072804040
-  network: ws
-  port: '8880'
-  server: s1.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-51-25-229.s1.db-link02.top
-    path: /dabai.in172.64.7.139
-- alterId: 0
-  cipher: auto
-  name: 未知_072804041
-  network: ws
-  port: '80'
-  server: s3.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-78-161-153.s3.cn-db.top
-    path: /dabai.in172.67.53.39
-- alterId: 0
-  cipher: auto
-  name: 未知_0728041495
-  network: ws
-  port: '8880'
-  server: yx2.niaoba.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 763b29f0-ffba-42e8-a054-d595092135e6
-  ws-opts:
-    headers:
-      Host: 1176552658409.vmru.taobao.yyds.niaoba.top
+      Host: IaErIbZlCb.WaSaBi1.OrG
     path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043481
+- name: 🔒 VL-WS-TLS 🇸🇬 SG-27.50.48.21:...
   network: ws
-  port: '2086'
-  server: s1.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-131-5-190.s1.cn-db.top
-    path: /dabai.in104.18.221.61
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043482
-  network: ws
-  port: '2052'
-  server: s3.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-187-17-194.s3.db-link01.top
-    path: /dabai.in104.19.117.21
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043483
-  network: ws
-  port: '80'
-  server: s3.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-99-187-236.s3.db-link01.top
-    path: /dabai.in104.25.208.38
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043484
-  network: ws
-  port: '8080'
-  server: s1.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-80-176-138.s1.db-link02.top
-    path: /dabai.in104.19.194.49
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043485
-  network: ws
-  port: '2052'
-  server: s5.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-200-115-205.s5.cn-db.top
-    path: /dabai.in104.24.170.99
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043487
-  network: ws
-  port: '8880'
-  server: s5.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-255-20-235.s5.db-link02.top
-    path: /dabai.in104.20.116.254
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043488
-  network: ws
-  port: '2095'
-  server: s3.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-32-113-204.s3.db-link01.top
-    path: /dabai.in104.24.251.240
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043489
-  network: ws
-  port: '80'
-  server: s1.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-73-252-244.s1.db-link02.top
-    path: /dabai.in104.21.197.115
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043490
-  network: ws
-  port: '2082'
-  server: s1.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-29-247-226.s1.db-link02.top
-    path: /dabai.in172.67.91.118
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043492
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
+  port: 443
+  server: 27.50.48.21
+  servername: barayeiranmahsang.mahmoodchitooz.dpdns.org
   tls: true
-  type: vmess
-  uuid: 9a5ae7ba-4513-4f82-b605-535ced1146a6
+  type: vless
+  uuid: b28eb861-1748-4200-ba72-278669edc33b
   ws-opts:
     headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043494
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 8bc43f44-c0a9-49f7-8eb8-486ea7fb1133
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043495
-  network: ws
-  port: '2052'
-  server: s1.db-link02.top
-  servername: ''
+      Host: barayeiranmahsang.mahmoodchitooz.dpdns.org
+    path: /Telegram@ShadowProxy66/?ed=2560
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.181....
+  network: xhttp
+  port: 8443
+  server: 91.99.181.47
   tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  type: vless
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
   ws-opts:
-    headers:
-      Host: 100-145-135-255.s1.db-link02.top
-    path: /dabai.in172.64.49.4
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043496
+    path: /xhttp
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.12.... #8'
   network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
+  port: 443
+  server: 104.18.12.149
+  servername: rayan-09.leila.dpdns.org
   tls: true
-  type: vmess
-  uuid: 596c9d82-f885-4226-83f4-6d5d2679b75c
+  type: vless
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
   ws-opts:
     headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043498
+      Host: rayan-09.leila.dpdns.org
+    path: /@ShadowProxy66
+- name: 🔒 VL-WS-NA 🇫🇮 FI-65.109.202.24...
   network: ws
-  port: '8880'
-  server: s5.cn-db.top
-  servername: ''
+  port: 10925
+  server: 65.109.202.24
   tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-199-147-134.s5.cn-db.top
-    path: /dabai.in104.17.5.191
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043499
-  network: ws
-  port: '2082'
-  server: s1.db-link01.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-39-237-6.s1.db-link01.top
-    path: /dabai.in104.17.32.136
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043501
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 4269184c-6b18-43ec-9424-92aca611ede7
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043505
-  network: ws
-  port: '2082'
-  server: s5.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-180-149-17.s5.cn-db.top
-    path: /dabai.in172.67.19.159
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043514
-  network: ws
-  port: '2095'
-  server: s5.cn-db.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-17-36-146.s5.cn-db.top
-    path: /dabai.in104.17.209.86
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043521
-  network: ws
-  port: '80'
-  server: s5.db-link02.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-205-253-191.s5.db-link02.top
-    path: /dabai.in172.64.57.57
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043526
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 4d083b06-9e2f-4478-8d40-2665374169af
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043527
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b3615b02-6dbf-4603-8d59-ceeaee9eb7a4
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 未知_0728043528
-  network: ws
-  port: '443'
-  server: 1753328541.tencentapp.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: eb3edd10-b736-4bfa-bdae-40d1110228eb
-  ws-opts:
-    headers:
-      Host: de1.hoshinonetwork.pp.ua
-    path: /
+  type: vless
+  uuid: 8dd851a9-39e4-4baf-a443-17c688aa6dfc
