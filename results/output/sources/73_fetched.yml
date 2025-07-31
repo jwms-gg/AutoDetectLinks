@@ -1,8 +1,8 @@
-# Update: 2025-07-30 08:54
-# Source 73 (https://pxypool.131433.xyz/clash/proxies), 12
+# Update: 2025-07-31 08:54
+# Source 73 (https://pxypool.131433.xyz/clash/proxies), 19
 proxies:
 - cipher: aes-256-cfb
-  name: '_01 #4'
+  name: '_01 #3'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -28,9 +28,18 @@ proxies:
     headers:
       HOST: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- country: 🇩🇪DE
+  name: 'Relay_🇩🇪DE-🇩🇪DE_03 #1'
+  password: 3aIMXgxQ3F
+  port: 1935
+  server: x1-germany-linode-v2-jk001.devefun.org
+  skip-cert-verify: true
+  sni: x1-germany-linode-v2-jk001.devefun.org
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: 🇮🇶IQ
-  name: '🇮🇶IQ_03 #1'
+  name: '🇮🇶IQ_04 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 91.132.94.200
@@ -40,7 +49,7 @@ proxies:
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇯🇵JP-🇺🇸US_04 #1'
+  name: 'Relay_🇯🇵JP-🇺🇸US_05 #1'
   network: ws
   port: 8880
   server: 103.116.7.241
@@ -52,12 +61,21 @@ proxies:
     headers:
       HOST: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- country: 🇯🇵JP
+  name: '🇯🇵JP_06 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 172.104.114.51
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇷🇴RO
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇷🇴RO-🇺🇸US_05 #1'
+  name: 'Relay_🇷🇴RO-🇺🇸US_07 #1'
   network: ws
   port: 443
   server: 45.85.119.190
@@ -72,21 +90,30 @@ proxies:
     path: /us.kkp.me.eu.org/aa
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: '🇷🇺RU_06 #1'
+  name: '🇷🇺RU_08 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
+- country: 🇸🇬SG
+  name: '🇸🇬SG_09 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 178.128.106.216
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇦UA
-  name: '🇺🇦UA_07 #1'
+  name: '🇺🇦UA_10 #1'
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_08 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_11 #1'
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -98,7 +125,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇺🇸US_09 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_12 #1'
   network: ws
   port: 8880
   server: 108.165.216.241
@@ -110,17 +137,25 @@ proxies:
     headers:
       HOST: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
-- country: 🇺🇸US
-  name: '🇺🇸US_10 #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 172.237.27.220
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇺🇸US-🇩🇪DE_13 #1'
+  network: ws
+  port: 8080
+  server: 104.24.66.175
+  servername: cfphdde1.reachheadphones.com
   skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 31209e40-be60-4d60-ad48-9765a0c5d087
+  ws-opts:
+    headers:
+      HOST: cfphdde1.reachheadphones.com
+    path: /ws2/nextlife
 - country: 🇺🇸US
-  name: '🇺🇸US_11 #1'
+  name: '🇺🇸US_14 #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 172.238.14.135
@@ -129,7 +164,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸US
-  name: '🇺🇸US_12 #1'
+  name: '🇺🇸US_15 #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 174.138.85.53
@@ -137,3 +172,42 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
+- country: 🇺🇸US
+  name: '🇺🇸US_16 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 165.22.3.117
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 'Relay_🇺🇸US-🇺🇸US_17 #1'
+  password: 1CvlKYj1aU
+  port: 1935
+  server: x1-sweden-linode-v2-71u92.devefun.org
+  skip-cert-verify: true
+  sni: x1-sweden-linode-v2-71u92.devefun.org
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: '🇺🇸US_18 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 172.237.27.220
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🏁ZZ-🇺🇸US_19 #1'
+  network: tcp
+  port: 49597
+  server: 103.181.165.26
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
