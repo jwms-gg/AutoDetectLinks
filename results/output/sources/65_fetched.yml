@@ -1,5 +1,5 @@
-# Update: 2025-07-31 08:54
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 70
+# Update: 2025-08-01 09:00
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 66
 proxies:
 - alterId: 0
   cipher: auto
@@ -50,56 +50,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: _US_美国->🇦🇺_AU_澳大利亚
+  name: '未知_1 #3'
   network: ws
-  port: 8080
-  server: 104.24.66.175
+  port: 8880
+  server: 103.169.142.241
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 31209e40-be60-4d60-ad48-9765a0c5d087
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
-    path: /ws2/nextlife
-- name: _US_美国_1
-  password: 1CvlKYj1aU
-  port: 1935
-  server: x1-sweden-linode-v2-71u92.devefun.org
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: _DE_德国->🇦🇺_AU_澳大利亚
-  password: 3aIMXgxQ3F
-  port: 1935
-  server: x1-germany-linode-v2-jk001.devefun.org
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: _CA_加拿大
-  password: 8WE1wtdKhEnE9X92kqh6Ut
-  port: 63089
-  server: 167.17.190.41
-  type: ss
-  udp: true
+    path: /dabai.in
 - alterId: 0
   cipher: auto
-  name: _DK_丹麦->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: fastcup.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
-  ws-opts:
-    headers:
-      Host: fastcup.net
-    path: /profile/telegram@ssrsub
-- alterId: 0
-  cipher: auto
-  name: '_US_美国_2 #1'
+  name: _US_美国 2
   network: ws
   port: 8880
   server: 108.165.216.241
@@ -110,9 +74,16 @@ proxies:
   uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     path: /dabai.in
+- cipher: aes-256-cfb
+  name: _IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '未知 #52'
+  name: '未知_2 #2'
   network: ws
   port: 8880
   server: 103.160.204.241
@@ -125,10 +96,10 @@ proxies:
     path: /dabai.in
 - alterId: 2
   cipher: auto
-  name: _CN_中国->🇨🇦_CA_加拿大
+  name: _CN_中国->🇺🇸_US_美国_1
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -136,22 +107,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: _CN_中国
-  network: ws
-  port: 30833
-  server: v33.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v33.heduian.link
+      Host: v29.heduian.link
     path: /oooo
 - cipher: aes-256-gcm
   name: _US_美国->🇨🇳_CN_中国
@@ -160,16 +116,9 @@ proxies:
   server: 154.3.8.151
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: _MD_摩尔多瓦 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: _CN_中国->🇺🇸_US_美国
+  name: _CN_中国->🇺🇸_US_美国_2
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -195,6 +144,13 @@ proxies:
   uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     path: /dabai.in
+- cipher: aes-256-cfb
+  name: _MD_摩尔多瓦 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 日本(nodeshare.xyz免费节点)_1
   password: Nk9asglDzHzjktVzTkvhaA

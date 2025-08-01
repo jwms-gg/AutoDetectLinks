@@ -1,5 +1,5 @@
-# Update: 2025-07-31 08:53
-# Source 7 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml), 9
+# Update: 2025-08-01 08:59
+# Source 7 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml), 10
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -20,6 +20,22 @@ proxies:
   tls: false
   type: vmess
   uuid: aee65b36-ac1a-428b-8da3-dae88195e47f
+- client-fingerprint: chrome
+  name: 🇭🇰 香港4|@stairnode
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 3221
+  server: 36.151.192.243
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇭🇰 香港5|@stairnode
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 446
+  server: 36.151.192.243
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 🇯🇵 日本|@stairnode
@@ -32,22 +48,6 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 🇯🇵 日本3|@stairnode
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 172.238.14.135
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇯🇵 日本4|@stairnode
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 172.237.27.220
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - client-fingerprint: chrome
   name: 🇯🇵 日本5|@stairnode
   network: ws
@@ -62,10 +62,18 @@ proxies:
       Host: www.alibaba.com
     path: /
 - client-fingerprint: chrome
-  name: 🇸🇬 新加坡2|@stairnode
+  name: 🇰🇷 韩国|@stairnode
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 178.128.106.216
+  port: 16003
+  server: 36.151.195.111
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡|@stairnode
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 811
+  server: 36.151.195.111
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -82,10 +90,10 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 🇺🇸 美国4|@stairnode
+  name: 🇺🇸 美国3|@stairnode
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 174.138.85.53
+  port: 1582
+  server: 36.151.195.111
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
