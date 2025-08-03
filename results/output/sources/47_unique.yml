@@ -1,38 +1,22 @@
-# Update: 2025-08-02 08:51
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 3
+# Update: 2025-08-03 08:59
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 2
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #10'
-  network: ws
-  port: 443
-  server: 172.67.164.4
-  servername: verina.ccantarella.dns-dynamic.net
-  tls: true
-  type: vless
-  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
-  ws-opts:
-    headers:
-      Host: verina.ccantarella.dns-dynamic.net
-    path: /
-- client-fingerprint: random
-  name: '🔒 VL-WS-NA 🇹🇷 TR-91.206.71.162... #1'
-  network: ws
+- name: 🔒 VL-GRPC-NA 🇫🇷 FR-95.164.45.8...
+  network: grpc
   port: 8880
-  server: 91.206.71.162
-  servername: barayeiran-mahsang.gerald81.dpdns.org
+  server: 95.164.45.85
   tls: false
   type: vless
-  uuid: 26bc13af-e442-4956-afd4-b8f85744d26f
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: random
+  name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.51.3...
+  network: ws
+  port: 80
+  server: 104.16.51.36
+  servername: barayeiran-mahsang.taraneh.dpdns.org
+  tls: false
+  type: vless
+  uuid: 5459f68e-d914-4b31-93a3-ecdf638b7a5b
   ws-opts:
     headers:
-      Host: barayeiran-mahsang.gerald81.dpdns.org
-    path: /Barayeiranmahsang/freenettirsTEL@ShadowProxy66?ed=2560
-- name: 🔒 VL-TCP-NONE 🇮🇷 IR-5.160.144....
-  network: tcp
-  port: 3232
-  server: 5.160.144.73
-  tls: false
-  type: vless
-  uuid: 849311dc-f8a0-4807-b44d-5e5fe904b871
+      Host: barayeiran-mahsang.taraneh.dpdns.org

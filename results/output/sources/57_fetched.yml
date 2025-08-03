@@ -1,29 +1,22 @@
-# Update: 2025-08-02 08:51
-# Source 57 (https://raw.githubusercontent.com/ts-sf/fly/main/clash), 44
+# Update: 2025-08-03 08:59
+# Source 57 (https://raw.githubusercontent.com/ts-sf/fly/main/clash), 115
 proxies:
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR法国 11.1MB/s
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 81.19.137.222
+  name: '未知 #48'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.241
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US美国 11.0MB/s
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
   name: '🇸🇬SG新加坡 #19'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 128.199.125.102
+  port: 406
+  server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
@@ -31,7 +24,85 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 未知 60.2KB/s
+  name: '未知2 #37'
+  network: ws
+  port: 443
+  server: 141.101.113.6
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  ws-opts:
+    headers:
+      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+- alterId: 0
+  name: 'US #10'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 216.24.57.1
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 'US2 #6'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 38.60.92.89
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US3
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.92
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US美国 1017.6KB/s
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 'US4 #9'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.17.21.201
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US5
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 135.84.64.77
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '未知3 #23'
   network: ws
   port: 37122
   server: 103.38.83.253
@@ -41,26 +112,6 @@ proxies:
   uuid: edc493ca-b939-4097-e0c3-c8fee243eac6
   ws-opts:
     path: /
-- alterId: 0
-  name: '🇯🇵JP日本 #38'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 181
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '🇸🇬SG新加坡2 #20'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 1256
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   name: '🇺🇸US美国2 #34'
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
@@ -72,78 +123,40 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '未知2 #37'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  skip-cert-verify: true
-  sni: aio.zipzap.biz.id
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '未知3 #23'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  skip-cert-verify: true
-  sni: vpn.stupidworld.web.id
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR法国2
-  password: WDavBimDmH2QLxljf5PSO1
-  port: 443
-  server: 62.210.88.22
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '未知4 #39'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: true
-  sni: tyep.esslh.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL荷兰 47.0KB/s
-  password: VpKABcOpNNA0l5G2AVOmw8
-  port: 62685
-  server: 213.109.147.242
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: '🇺🇸US美国3 #15'
+  name: '🇯🇵JP日本 #38'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 159.65.222.110
+  port: 181
+  server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
+  name: 'HK #77'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US6
+  network: ws
+  password: Aimer
+  port: 51839
+  server: 154.17.228.151
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国2 4.8MB/s
+  name: 🇩🇪DE德国 491.6KB/s
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
@@ -151,7 +164,262 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: '🇸🇬SG新加坡3 #1'
+  name: '🇺🇸US美国3 #15'
+  network: ws
+  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
+  port: 443
+  server: 172.67.214.21
+  skip-cert-verify: true
+  sni: xXcdvFgt.191268.XYz
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知4 #39'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.107
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知5 #38'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR法国
+  password: WDavBimDmH2QLxljf5PSO1
+  port: 443
+  server: 62.210.88.22
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '未知6 #38'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇱🇹LT立陶宛 204.2KB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.28
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: US7
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.219.5.56
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知7 #33'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知8 #28'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知9 #33'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.49.209
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US8
+  network: ws
+  password: Aimer
+  port: 37802
+  server: 154.17.29.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇯🇵JP日本2 #20'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 461
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知10 #33'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.197.64.196
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US9
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 156.225.72.246
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE德国2 6.5MB/s
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '未知11 #24'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US10
+  network: ws
+  password: Aimer
+  port: 443
+  server: 192.9.139.160
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知12 #34'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 31.43.179.27
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: '🇯🇵JP日本3 #20'
+  password: 823e135ed103
+  port: 636
+  server: 137.220.191.40
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: US11
+  network: ws
+  password: Aimer
+  port: 54626
+  server: 154.21.82.84
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US12
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 160.79.105.156
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 'US13 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 144.34.231.211
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知13 #33'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.48.115
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US14
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.26.182.37
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇸🇬SG新加坡2 #20'
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: sg.mjt000.com
@@ -161,91 +429,33 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: '🇭🇰HK香港 #38'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 444
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.ithome.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '🇺🇸US美国4 #15'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 472
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇱🇹LT立陶宛 69.2KB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 未知5 970.0KB/s
+  name: '未知14 #18'
   network: ws
-  port: 20521
-  server: 118.43.158.220
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ab6dde08-ce0d-4c3d-b708-da53af1a862d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '未知6 #38'
-  network: ws
+  password: Aimer
   port: 8443
-  server: 2.188.219.43
+  server: 27.50.49.242
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
-  type: vmess
-  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
-  ws-opts:
-    path: /
+  type: trojan
+  udp: true
 - alterId: 0
-  name: '🇺🇸US美国5 #14'
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
+  name: US15
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 108.165.152.239
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇦🇺AU澳大利亚 3.8MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '🇺🇸US美国6 #14'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 172.233.128.126
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US美国7 2.2MB/s
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 204.136.10.115
+  name: 🇳🇱NL荷兰 9.1MB/s
+  password: zI7kiNZ0UfV9cXB73a4nRD
+  port: 24206
+  server: 164.92.156.41
   skip-cert-verify: true
   tls: true
   type: ss
@@ -260,6 +470,369 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  name: US16
+  network: ws
+  password: Aimer
+  port: 7000
+  server: 154.17.12.30
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US17
+  network: ws
+  password: Aimer
+  port: 12110
+  server: 23.106.159.63
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知15 #18'
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: aio.zipzap.biz.id
+  skip-cert-verify: true
+  sni: aio.zipzap.biz.id
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL荷兰2 113.1KB/s
+  password: VpKABcOpNNA0l5G2AVOmw8
+  port: 62685
+  server: 213.109.147.242
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇺🇸US美国4 #15'
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US18
+  network: ws
+  password: Aimer
+  port: 443
+  server: 192.0.54.7
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US19
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.252
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US20
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '🇺🇸US美国5 #14'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 172.233.128.126
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇭🇰HK香港 #38'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 58.152.30.37
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知16 #18'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.18
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US21
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.18
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US22
+  network: ws
+  password: Aimer
+  port: 24869
+  server: 154.17.228.19
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇺🇸US美国6 #14'
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知17 #13'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.83.2.88
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US23
+  network: ws
+  password: Aimer
+  port: 802
+  server: 23.106.155.178
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US24
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 199.34.228.191
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '未知18 #14'
+  network: tcp
+  port: 433
+  server: https://github.com/ALIILAPRO/v2rayNG-Config
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: Free
+- alterId: 0
+  name: US25
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US26
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 161.145.150.29
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知19 #14'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.136
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US27
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.78
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知20 #9'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇦🇺AU澳大利亚 2.2MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '未知21 #9'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US28
+  network: ws
+  password: Aimer
+  port: 995
+  server: 192.3.155.203
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知22
+  network: ws
+  port: 443
+  server: 104.25.174.85
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  ws-opts:
+    headers:
+      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+- alterId: 0
+  name: US29
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 160.79.105.160
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知23
+  network: ws
+  port: 8443
+  server: 2.188.219.43
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇦UA乌克兰 5.9MB/s
+  password: riP3aC03AxvUEmDsuslHuw
+  port: 16432
+  server: 89.110.85.176
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: US30
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 192.200.160.35
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US31
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.241
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US32
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 199.34.228.71
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE德国3
+  password: DKyRdoqQIebdKZVYs5GzW8
+  port: 14628
+  server: 45.150.32.13
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: '🇷🇺RU俄罗斯 #38'
   password: 36ZCHeabUSfKjfQEvJ4HDV
@@ -269,11 +842,76 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: '未知7 #33'
-  password: '74260628090146500'
-  port: 443
-  server: stirring-parakeet.shiner427.skin
+  name: US33
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US34
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.202
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知24
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 27.50.49.177
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US35
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.7
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB英国
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: '🇺🇸US美国7 #14'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 347
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US36
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
   type: trojan
   udp: true
@@ -287,38 +925,30 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: '🇺🇸US美国8 #14'
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇺🇸US美国9
+  name: US37
   network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
+  password: Aimer
+  port: 8443
+  server: 192.200.160.15
   skip-cert-verify: true
-  sni: xXcdvFgt.191268.XYz
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知25 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.197.64.189
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL荷兰2 15.1MB/s
-  password: zI7kiNZ0UfV9cXB73a4nRD
-  port: 24206
-  server: 164.92.156.41
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国3 96.6KB/s
+  name: 🇩🇪DE德国4 65.9KB/s
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
@@ -326,46 +956,62 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  name: '🇯🇵JP日本2 #20'
-  password: 823e135ed103
-  port: 636
-  server: 137.220.191.40
+  name: '未知26 #3'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.219
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB英国 535.5KB/s
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
+  name: US38
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 66.81.247.230
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
-  type: ss
+  type: trojan
+  udp: true
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: '未知8 #28'
-  network: tcp
-  port: 433
-  server: https://github.com/ALIILAPRO/v2rayNG-Config
+  name: 未知27
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.171
   skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   tls: true
-  type: vmess
-  uuid: Free
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知28
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: 172.67.181.173
+  skip-cert-verify: true
+  sni: vpn.stupidworld.web.id
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   name: '🇭🇰HK香港3 #29'
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 58.152.30.37
+  port: 444
+  server: 36.156.102.125
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: www.ithome.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: '未知9 #33'
+  name: 未知29
   network: ws
   port: 15924
   server: 47.79.41.14
@@ -376,22 +1022,201 @@ proxies:
   ws-opts:
     path: /f50628ed
 - alterId: 0
-  cipher: auto
-  name: '未知10 #33'
+  name: HK2
   network: ws
+  password: Aimer
   port: 443
-  server: 141.101.113.6
+  server: 154.211.8.240
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 未知30 2.5MB/s
+  network: ws
+  port: 20521
+  server: 118.43.158.220
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  uuid: ab6dde08-ce0d-4c3d-b708-da53af1a862d
   ws-opts:
-    headers:
-      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+    path: /
+- alterId: 0
+  name: US39
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 38.60.92.125
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US40
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: HK3
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 154.211.8.12
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US41
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 161.145.150.26
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US42
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇸🇬SG新加坡3 #1'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 157.230.32.243
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 未知31
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.55
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US43
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.59
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US44
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.225
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '🇺🇸US美国8 #14'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 472
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US45
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 198.62.62.192
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR法国2 5.8MB/s
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 81.19.137.222
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US美国9 2.0MB/s
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 204.136.10.115
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 未知32
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.62
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: '未知33 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.251
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: US46
+  network: ws
+  password: Aimer
+  port: 35307
+  server: 154.17.29.55
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 未知11 571.1KB/s
+  name: 未知34 181.7KB/s
   network: ws
   port: 42717
   server: 210.3.159.150
@@ -401,45 +1226,3 @@ proxies:
   uuid: b5803d74-c6f8-415f-e1e6-ebc9e4269b86
   ws-opts:
     path: /
-- alterId: 0
-  name: '🇯🇵JP日本3 #20'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 461
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '未知12 #34'
-  network: ws
-  port: 443
-  server: 104.25.174.85
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-  ws-opts:
-    headers:
-      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 未知13 132.0KB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.70
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE德国4
-  password: DKyRdoqQIebdKZVYs5GzW8
-  port: 14628
-  server: 45.150.32.13
-  skip-cert-verify: true
-  tls: true
-  type: ss
