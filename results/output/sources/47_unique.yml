@@ -1,22 +1,47 @@
-# Update: 2025-08-03 08:59
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 2
+# Update: 2025-08-04 08:58
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 4
 proxies:
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-95.164.45.8...
-  network: grpc
-  port: 8880
-  server: 95.164.45.85
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.216.98...
+  network: tcp
+  port: 443
+  server: 91.99.216.98
   tls: false
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: random
-  name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.51.3...
-  network: ws
-  port: 80
-  server: 104.16.51.36
-  servername: barayeiran-mahsang.taraneh.dpdns.org
-  tls: false
-  type: vless
-  uuid: 5459f68e-d914-4b31-93a3-ecdf638b7a5b
+  uuid: f3af923e-ecfe-46d5-9c27-4ff95f739afe
   ws-opts:
     headers:
-      Host: barayeiran-mahsang.taraneh.dpdns.org
+      Host: zula.ir
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: randomized
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.149...
+  network: ws
+  port: 2053
+  server: 172.66.149.29
+  servername: hheydudethisworldisshet.siasia.ir
+  tls: true
+  type: vless
+  uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
+  ws-opts:
+    headers:
+      Host: hheydudethisworldisshet.siasia.ir
+    path: /apiii
+- name: 🔒 VL-WS-NA 🇫🇷 FR-51.195.119.20...
+  network: ws
+  port: 80
+  server: 51.195.119.204
+  tls: false
+  type: vless
+  uuid: 2ac2a3ac-49ec-4cf1-90fd-252b7fad9fbe
+  ws-opts:
+    headers:
+      Host: '---%40ShadowProxy66'
+    path: /vless/
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-5.75.204.2:1...
+  network: tcp
+  port: 11344
+  server: 5.75.204.2
+  tls: false
+  type: vless
+  uuid: 49a7f5d2-026e-4c17-8386-b3e073473a13

@@ -1,26 +1,39 @@
-# Update: 2025-08-03 08:59
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 63
+# Update: 2025-08-04 08:58
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 191
 proxies:
 - alterId: 0
   cipher: auto
-  name: 德国 V2CROSS.COM
+  name: 印度 V2CROSS.COM
   network: ws
   port: 8880
-  server: 5.10.215.172
+  server: 103.160.204.241
+  servername: ''
   tls: false
   type: vmess
-  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
-      Host: TG.WangCai2.s4.cn-db.top
-    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - alterId: 0
   cipher: auto
   name: 美国 V2CROSS.COM
   network: ws
-  port: 8880
-  server: 63.141.128.25
-  servername: ''
+  port: 443
+  server: 199.181.197.60
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- alterId: 0
+  cipher: auto
+  name: '美国 V2CROSS.COM #4'
+  network: ws
+  port: '8880'
+  server: 45.149.12.25
   tls: false
   type: vmess
   uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df
@@ -28,6 +41,30 @@ proxies:
     headers:
       Host: TG.WangCai2.s2.cn-db.top
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 亚太地区+V2CROSS.COM
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare公司CDN节点(shopify) #1'
@@ -43,9 +80,112 @@ proxies:
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 英国 V2CROSS.COM
+  name: '美国 V2CROSS.COM #5'
   network: ws
   port: 8880
+  server: 108.165.216.241
+  tls: false
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- name: '俄罗斯+V2CROSS.COM #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 8880
+  server: 141.101.113.241
+  tls: false
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 乌克兰 V2CROSS.COM
+  network: ws
+  port: '8880'
+  server: 46.202.30.25
+  tls: false
+  type: vmess
+  uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: 80
+  server: 190.93.246.151
+  tls: false
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: pj.sevens.cf
+    path: /rongseven
+- alterId: 0
+  cipher: auto
+  name: 丹麦 V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 195.85.59.241
+  tls: false
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 193.124.18.172
+  tls: false
+  type: vmess
+  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '俄罗斯 V2CROSS.COM #1'
+  network: ws
+  port: 8880
+  server: 77.105.163.25
+  tls: false
+  type: vmess
+  uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 英国 V2CROSS.COM
+  network: ws
+  port: '8880'
   server: 80.93.202.25
   tls: false
   type: vmess
@@ -54,18 +194,145 @@ proxies:
     headers:
       Host: TG.WangCai2.s2.cn-db.top
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 美国+CloudFlare节点
+- name: 北美地区+V2CROSS.COM
   network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  skip-cert-verify: false
-  sni: xXcdvFgt.191268.XYz
+  password: Aimer
+  port: 2083
+  server: 198.62.62.192
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: xXcdvFgt.191268.XYz
-    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 乌克兰+V2CROSS.COM
+  network: ws
+  password: Aimer
+  port: 443
+  server: 31.43.179.27
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 美国+V2CROSS.COM
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
+  network: ws
+  port: 443
+  server: 104.18.149.76
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: us.kkp.me.eu.org
+    path: /aa
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: 2053
+  server: 104.21.3.189
+  tls: true
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      Host: cc2d4.89060004.xyz
+    path: /
+- name: '美国+V2CROSS.COM #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '美国 V2CROSS.COM #6'
+  network: ws
+  port: 8880
+  server: 170.114.46.172
+  tls: false
+  type: vmess
+  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 美国+Cloudinnovation数据中心
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.83.2.88
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '印度 V2CROSS.COM #1'
+  network: ws
+  port: 8880
+  server: 14.102.228.172
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '美国 V2CROSS.COM #7'
+  network: ws
+  port: 8880
+  server: 45.159.218.25
+  tls: false
+  type: vmess
+  uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s2.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 8880
+  server: 190.93.247.172
+  tls: false
+  type: vmess
+  uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60
+  ws-opts:
+    headers:
+      Host: TG.WangCai2.s4.cn-db.top
+    path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国|@ripaojiedian #3'
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -78,18 +345,6 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: /ctdmgeIg3NII3ibrzzKXJGy3S1
-- name: SG_speednode_0256
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /
 - name: '美国|@ripaojiedian #3'
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -101,9 +356,669 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: '%2FctdmgeIg3NII3ibrzzKXJGy3S1'
+- name: 'AM_speednode_0001 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.107
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'AM_speednode_0002 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.241
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'AM_speednode_0003 #2'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.18
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'AM_speednode_0004 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.55
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'AM_speednode_0005 #2'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.171
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'HK_speednode_0029 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.211.8.240
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'HK_speednode_0030 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'HK_speednode_0031 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 154.211.8.12
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'JP_speednode_0035 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'JP_speednode_0036 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'JP_speednode_0037 #1'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'KZ_speednode_0039 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 31.43.179.27
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0041 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.197.64.189
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0042 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0043 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.62
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0044 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.219
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0045 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.83.2.88
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SC_speednode_0046 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.197.64.196
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0049 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.136
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0050 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0051 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.48.115
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0052 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 27.50.49.251
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0053 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.49.209
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0054 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 27.50.49.177
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0055 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0056 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 27.50.49.242
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0088 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 192.9.139.160
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'SG_speednode_0057 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0083 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 160.79.105.156
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0093 #2'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.78
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0084 #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0087 #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.92
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0090 #1'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.59
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0086 #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0091 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 108.165.152.239
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0089 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 198.62.62.192
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0097 #2'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US_speednode_0092
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 192.200.160.15
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0082 #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.241
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0094 #2'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 192.0.54.7
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0095 #2'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 192.200.160.35
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0098 #1'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 161.145.150.29
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0099 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 160.79.105.160
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0100 #5'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 199.34.228.71
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0103 #5'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 161.145.150.26
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0101 #5'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.18
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0110 #5'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 156.225.72.246
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0106 #4'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0107 #5'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 66.81.247.230
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0112 #5'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.7
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0105 #5'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 199.34.228.191
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0109 #5'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.252
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0108 #4'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 216.24.57.1
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0111 #4'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0113 #6'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: '美国 CloudFlare节点 #5'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -115,24 +1030,179 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- name: '美国4|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 159.65.222.110
+- name: 'US_speednode_0104 #5'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.202
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: epga.aimercc.dpdns.org
   type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0114 #6'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.225
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0102 #5'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 135.84.64.77
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0073 #1'
+  network: ws
+  password: Aimer
+  port: 37802
+  server: 154.17.29.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0070 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 144.34.231.211
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0071 #1'
+  network: ws
+  password: Aimer
+  port: 54626
+  server: 154.21.82.84
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0077 #1'
+  network: ws
+  password: Aimer
+  port: 24869
+  server: 154.17.228.19
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0085 #1'
+  network: ws
+  password: Aimer
+  port: 802
+  server: 23.106.155.178
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0079 #1'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.26.182.37
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0072 #1'
+  network: ws
+  password: Aimer
+  port: 7000
+  server: 154.17.12.30
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0080 #1'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 38.60.92.89
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0081 #2'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 38.60.92.125
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #5'
+  password: amazonskr05
+  port: '443'
+  server: 54.189.166.94
+  type: ss
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #1 #2'
+  password: amazonskr05
+  port: '443'
+  server: 54.189.166.94
+  type: ss
+- name: 'US_speednode_0115 #7'
+  network: ws
+  password: Aimer
+  port: 995
+  server: 192.3.155.203
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560
 - cipher: aes-256-gcm
-  name: '日本2|@ripaojiedian #1'
+  name: '🇯🇵 日本2|@ripaojiedian #4'
   password: 823e135ed103
   port: '636'
   server: 137.220.191.40
-  type: ss
-- cipher: aes-256-cfb
-  name: '🌀其他3-SK | ⬇️ 5.0MB/s|0%|Youtub... #2'
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 156.146.40.194
   type: ss
 - name: '香港4|@ripaojiedian #2'
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -141,15 +1211,28 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- cipher: aes-256-cfb
+  name: '🌀其他3-SK | ⬇️ 5.0MB/s|0%|Youtub... #2'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 156.146.40.194
+  type: ss
+- name: '新加坡|@ripaojiedian #2'
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 157.230.32.243
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #1'
+  name: 香港 电讯盈科有限公司
   network: ws
   port: 80
-  server: bed31eab-sv0xs0-t2hqlr-1s3mx.hk.p5pv.com
+  server: 00967073-sv4n40-td5fm5-4dl0.hk3.p5pv.com
   tls: false
   type: vmess
-  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -159,30 +1242,10 @@ proxies:
   name: '香港 电讯盈科有限公司 #2'
   network: ws
   port: 80
-  server: 68d945fd-sv6hs0-tas70o-yjcr.hk.p5pv.com
+  server: d806260c-sznls0-tifnix-1ro8s.hk.p5pv.com
   tls: false
   type: vmess
-  uuid: f1ddbc82-ae6a-11ef-b69c-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '新加坡|@ripaojiedian #2'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 128.199.125.102
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #3'
-  network: ws
-  port: 80
-  server: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+  uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -194,84 +1257,20 @@ proxies:
   server: 103.103.245.158
   type: ss
 - cipher: aes-256-gcm
-  name: '🇭🇰 香港2|@ripaojiedian #6'
+  name: '🇭🇰 香港2|@ripaojiedian #5'
   password: 9bfdde71b4c0
   port: '636'
   server: 103.103.245.158
   type: ss
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #4'
+  name: '香港 电讯盈科有限公司 #7'
   network: ws
   port: 80
-  server: 7239a836-sunz40-suqjqq-1pr35.hk.p5pv.com
+  server: ac3105fa-sv2sg0-t30eih-jm0w.hk3.p5pv.com
   tls: false
   type: vmess
-  uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 7239a836-sunz40-suqjqq-1pr35.hk.p5pv.com
-    path: ''
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #1 #2'
-  password: amazonskr05
-  port: '443'
-  server: 13.233.195.7
-  type: ss
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #3'
-  password: amazonskr05
-  port: '443'
-  server: 13.233.195.7
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #5'
-  network: ws
-  port: 80
-  server: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: c1785de0-212f-11ef-92aa-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
-    path: ''
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #6'
-  network: ws
-  port: 80
-  server: d1480796-sv2sg0-t7hu58-1q1la.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #8'
-  network: ws
-  port: 80
-  server: a4e9c5f4-sv0xs0-sv37gm-81nv.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #9'
-  network: ws
-  port: 80
-  server: eadf838f-sva740-sveyey-44k4.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
+  uuid: e3004917-ad9d-b8a2-a2ee-65a54830e020
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -279,259 +1278,6 @@ proxies:
 - alterId: 2
   cipher: auto
   name: '香港 电讯盈科有限公司 #10'
-  network: ws
-  port: 80
-  server: eaf70f66-sv0xs0-t8ivpf-z65w.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #11'
-  network: ws
-  port: 80
-  server: 13e491cf-szv0g0-t167d0-ggww.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #12'
-  network: ws
-  port: 80
-  server: 2579f727-sv2sg0-t7udc0-1pqhp.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #13'
-  network: ws
-  port: 80
-  server: 510ddbe7-sv2sg0-t7x08i-1i87l.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 40d572ec-7f67-11ed-bf1f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #14'
-  network: ws
-  port: 80
-  server: be8a9a85-sv2sg0-szj6wo-8f7h.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b1e0ecc4-c7af-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #15'
-  network: ws
-  port: 80
-  server: db7f4c2f-sum4g0-sya6u2-4lg6.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #16'
-  network: ws
-  port: 80
-  server: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #1'
-  network: ws
-  port: '2052'
-  server: s3.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-10-228-216.s3.db-link01.top
-    path: /dabai.in172.64.10.108
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #2'
-  network: ws
-  port: 2083
-  server: www.meter.net
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      Host: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 福建省厦门市+电信
-  password: ae6e933b-8874-4bf4-a384-0de216ef2bf4
-  port: '40030'
-  server: pr.fastsoonlink.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 8080
-  server: s3.db-link01.top
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-40-23-147.s3.db-link01.top
-    path: /dabai.in104.25.241.15
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #18'
-  network: ws
-  port: 80
-  server: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #21'
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #23'
-  network: ws
-  port: 80
-  server: 2dec3898-sznls0-t13m14-1thts.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #24'
-  network: ws
-  port: 80
-  server: d77542fa-sv2sg0-t5cryd-4w8.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #29'
-  network: ws
-  port: 80
-  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #30'
-  network: ws
-  port: 80
-  server: 7acf8cf6-szi1s0-tiaexf-ufc0.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #31'
-  network: ws
-  port: 80
-  server: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 49396d98-f4b4-11ef-8c3f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #32'
-  network: ws
-  port: 80
-  server: 58be51e1-sv2sg0-tasors-1tdqt.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 58be51e1-sv2sg0-tasors-1tdqt.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #34'
-  network: ws
-  port: 80
-  server: aea6bdc3-sv6hs0-t61ki5-1smhu.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #35'
   network: ws
   port: 80
   server: 20b856dd-sv0xs0-sv75lj-1swf9.hk.p5pv.com
@@ -544,20 +1290,85 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #39'
+  name: '香港 电讯盈科有限公司 #11'
   network: ws
   port: 80
-  server: c4d1a16b-szg740-t41p4y-1hpo0.hk.p5pv.com
+  server: a1d35d30-sv2sg0-t66zs1-1pq44.hk.p5pv.com
   tls: false
   type: vmess
-  uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  uuid: 3f194e88-8eac-11ee-be7f-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #41'
+  name: '香港 电讯盈科有限公司 #12'
+  network: ws
+  port: 80
+  server: 8f8ecfe2-szt5s0-t19fr1-1tbzx.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 6b43d15a-e7bf-11ef-9862-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 8f8ecfe2-szt5s0-t19fr1-1tbzx.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '丹麦 V2CROSS.COM #1'
+  network: ws
+  port: 80
+  server: csgo.com
+  tls: false
+  type: vmess
+  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #14'
+  network: ws
+  port: 80
+  server: aa1d3b0f-sv0xs0-svr00o-1oxz4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ac3a8a98-51dc-11ee-a6e8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #19'
+  network: ws
+  port: 80
+  server: 5e4eabfc-sv2sg0-t2lc1c-1mim2.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #20'
+  network: ws
+  port: 80
+  server: d1ef6a4e-sv2sg0-svr00o-1oxz4.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ac3a8a98-51dc-11ee-a6e8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #22'
   network: ws
   port: 80
   server: 228c7ba5-sz8sg0-szi8d6-1ro8s.hk.p5pv.com
@@ -568,60 +1379,789 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #23'
+  network: ws
+  port: 80
+  server: 7beca07b-sv2sg0-sx16xo-1j3zm.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #27'
+  network: ws
+  port: 80
+  server: ae2a18a7-sv0xs0-t3q3xd-1sai0.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 4551f124-65ca-11ef-8c8e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #30'
+  network: ws
+  port: 80
+  server: ac947530-sv2sg0-t51upj-ochh.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cf89e064-5c77-11eb-bd3a-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #31'
+  network: ws
+  port: 80
+  server: f971465d-sv2sg0-sy1a0y-1iyov.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 33629870-e57e-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #33'
+  network: ws
+  port: 80
+  server: d6732c26-sv8cg0-sxxbmq-1szgv.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #35'
+  network: ws
+  port: 80
+  server: 1554dc02-sv2sg0-syu0n5-1hd7v.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #41'
+  network: ws
+  port: 80
+  server: 5e5a088d-sv2sg0-swkmdk-1imi4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #46'
+  network: ws
+  port: 80
+  server: 9686c964-szecg0-t0uprz-1th8j.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #51'
+  network: ws
+  port: 80
+  server: 3aeac334-sv2sg0-t2nkut-jx5r.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #53'
+  network: ws
+  port: 80
+  server: 1fee460c-sv6hs0-tbcla6-194tt.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 602e99aa-718d-11eb-b77b-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #54'
+  network: ws
+  port: 80
+  server: fb5f0079-sv0xs0-t51upj-ochh.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cf89e064-5c77-11eb-bd3a-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #55'
+  network: ws
+  port: 80
+  server: 76d9dbf9-sva740-szegoe-12hj8.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #56'
+  network: ws
+  port: 80
+  server: dc4b7b6c-sv0xs0-syu0n5-1hd7v.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #57'
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #59'
+  network: ws
+  port: 80
+  server: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #62'
+  network: ws
+  port: 80
+  server: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #64'
+  network: ws
+  port: 80
+  server: 6c8122aa-sv4n40-t917sa-12ach.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #65'
+  network: ws
+  port: 80
+  server: 5d49c948-suvds0-tb6yrr-1tfcw.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 1282cc1a-f426-11ef-9495-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 5d49c948-suvds0-tb6yrr-1tfcw.hk.p5pv.com
+    path: ''
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #68'
+  network: ws
+  port: 80
+  server: 4020d7a1-sv0xs0-swkmdk-1imi4.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #69'
+  network: ws
+  port: 80
+  server: b1601217-sv2sg0-tcdlur-1qwom.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #75'
+  network: ws
+  port: 80
+  server: a442168a-sv4n40-t7hu58-1q1la.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #78'
+  network: ws
+  port: 80
+  server: 60cd512f-sv2sg0-swbdgq-1iddy.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #81'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: ''
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #82'
+  network: ws
+  port: 80
+  server: e1d5ad80-svc1s0-sxv7gp-8rja.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #83'
+  network: ws
+  port: 80
+  server: af4e4239-sv2sg0-svpmdc-nx3b.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #85'
+  network: ws
+  port: 80
+  server: c9dc37fe-szi1s0-t0y0nd-1mmbp.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #86'
+  network: ws
+  port: 80
+  server: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #88'
+  network: ws
+  port: 80
+  server: 4ef4bb29-szan40-t0r7zu-17z95.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #91'
+  network: ws
+  port: 80
+  server: 8e42f8d1-sv0xs0-szxh9w-46gc.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #93'
+  network: ws
+  port: 80
+  server: 8b5da18e-szpgg0-t13s3a-zn8y.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 8b5da18e-szpgg0-t13s3a-zn8y.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #98'
+  network: ws
+  port: 80
+  server: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #100'
+  network: ws
+  port: 80
+  server: d6855ca1-sv0xs0-tct1rd-1o0ch.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: d49e545e-0daf-11ee-a91f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #102'
+  network: ws
+  port: 80
+  server: f51a53a1-sv0xs0-swbdgq-1iddy.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #104'
+  network: ws
+  port: 80
+  server: 34916b18-sv0xs0-taj9mo-1tco3.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #105'
+  network: ws
+  port: 80
+  server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #106'
+  network: ws
+  port: 80
+  server: 7239a836-sunz40-suqjqq-1pr35.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 7239a836-sunz40-suqjqq-1pr35.hk.p5pv.com
+    path: ''
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #107'
+  network: ws
+  port: 80
+  server: b9b89e0f-sv6hs0-t917sa-12ach.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #109'
+  network: ws
+  port: 80
+  server: 4672ae04-sv2sg0-t2hqlr-1s3mx.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #111'
+  network: ws
+  port: 80
+  server: c425f654-sv2sg0-sz578n-1pw2y.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8815622e-7598-11ef-a01c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #113'
+  network: ws
+  port: 80
+  server: 457a1492-sv4n40-t6kzbp-1h5u7.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #114'
+  network: ws
+  port: 80
+  server: 26dbf6b6-sva740-tc67m2-1tjc4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #117'
+  network: ws
+  port: 80
+  server: 80aec38c-sv0xs0-sx16xo-1j3zm.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #119'
+  network: ws
+  port: 80
+  server: 6d272cf7-t00kg0-t1bsla-tng5.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #122'
+  network: ws
+  port: 80
+  server: 9d27188f-t00kg0-t9byd7-1jfvb.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #124'
+  network: ws
+  port: 80
+  server: 7acf8cf6-szi1s0-tiaexf-ufc0.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #125'
+  network: ws
+  port: 80
+  server: bd483412-sv8cg0-sveyey-44k4.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #126'
+  network: ws
+  port: 80
+  server: a4f2978e-sva740-t48iy7-gydh.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #127'
+  network: ws
+  port: 80
+  server: b6335b34-sv8cg0-tbe46y-1la7v.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #131'
+  network: ws
+  port: 80
+  server: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #134'
+  network: ws
+  port: 80
+  server: 5e392f9d-sv0xs0-svewl8-xu74.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #136'
+  network: ws
+  port: 80
+  server: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #138'
+  network: ws
+  port: 80
+  server: 3f8b16bc-sv2sg0-t3q3xd-1sai0.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 4551f124-65ca-11ef-8c8e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #139'
+  network: ws
+  port: 80
+  server: fe32008f-sv2sg0-t83wtx-2rrb.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #141'
+  network: ws
+  port: 80
+  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #142'
+  network: ws
+  port: 80
+  server: 5730d1c0-sva740-te0v28-1mh67.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #143'
+  network: ws
+  port: 80
+  server: 486a4149-t0bog0-t14dgl-duku.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #146'
+  network: ws
+  port: 80
+  server: f235592e-sv2sg0-t76x2i-wj6v.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #147'
+  network: ws
+  port: 80
+  server: 0469094f-sv6hs0-t5qfe2-1khwf.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: aes-256-gcm
-  name: '🇯🇵 日本2|@ripaojiedian #5'
+  name: '日本2|@ripaojiedian #1'
   password: 823e135ed103
   port: '636'
   server: 137.220.191.40
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #5'
-  network: ws
-  port: 8880
-  server: s1.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      Host: 100-220-256-138.s1.db-link02.top
-    path: /dabai.in104.25.253.202
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #42'
+  name: '香港3|@ripaojiedian #2'
   network: ws
-  port: 80
-  server: bd12944a-sv0xs0-t2lc1c-1mim2.hk.p5pv.com
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
+  uuid: 4d631e24-97f7-11ea-8fc9-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #43'
+  name: '香港 电讯盈科有限公司 #148'
   network: ws
   port: 80
-  server: 92b1e00e-sv0xs0-tb224g-1h0r9.hk.p5pv.com
+  server: ac1aede0-sv2sg0-t5qfe2-1khwf.hk3.p5pv.com
   tls: false
   type: vmess
-  uuid: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #44'
-  network: ws
-  port: 80
-  server: 53484f5e-sv6hs0-swmdal-17xo8.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -642,26 +2182,71 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #45'
+  name: '香港 电讯盈科有限公司 #150'
   network: ws
   port: 80
-  server: baeb9e1b-sv6hs0-svewl8-xu74.hk.p5pv.com
+  server: 6b961a0a-sv4n40-t83wtx-2rrb.hk3.p5pv.com
   tls: false
   type: vmess
-  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
+  uuid: ba64cdc5-c79a-326d-8e63-6903be8183a1
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: '香港 电讯盈科有限公司 #46'
+  name: '香港 电讯盈科有限公司 #151'
   network: ws
   port: 80
-  server: 5e5a088d-sv2sg0-swkmdk-1imi4.hk.p5pv.com
+  server: 024a2f7b-sv0xs0-t2whio-1jcwu.hk3.p5pv.com
   tls: false
   type: vmess
-  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #155'
+  network: ws
+  port: 80
+  server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: rc4-md5
+  name: '🇯🇵 日本|@ripaojiedian #4'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #157'
+  network: ws
+  port: 80
+  server: 130b8183-sv0xs0-td5fm5-4dl0.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 56b05600-e140-11ec-a3de-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #159'
+  network: ws
+  port: 80
+  server: 1b6c49f6-sv2sg0-tcmken-19les.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -673,15 +2258,9 @@ proxies:
   skip-cert-verify: false
   sni: sg.mjt000.com
   type: trojan
-- cipher: rc4-md5
-  name: '🇯🇵 日本|@ripaojiedian #4'
-  password: efanccyun
-  port: '8766'
-  server: cn01.efan8867801.xyz
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #8'
+  name: '美国 CloudFlare节点 #6'
   network: ws
   port: 443
   server: bluehost.com
@@ -710,3 +2289,29 @@ proxies:
   port: '8766'
   server: cn01.efan8867801.xyz
   type: ss
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #160'
+  network: ws
+  port: 80
+  server: 5dd4a396-sv4n40-svv72o-1e0ty.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #161'
+  network: ws
+  port: 80
+  server: ae709d15-sv0xs0-svim0o-1slop.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
