@@ -1,25 +1,52 @@
-# Update: 2025-08-04 08:58
-# Source 49 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/reality), 8
+# Update: 2025-08-05 08:55
+# Source 49 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/reality), 14
 proxies:
-- name: '🔄 LATEST-UPDATE 📅 MON-13-MORDA... #4'
+- name: '🔄 LATEST-UPDATE 📅 TUE-14-MORDA... #4'
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: bbcaaca-bcaa-baac-bdca-cabbcbcacaab
+  uuid: bbacaac-baac-cbaa-cadb-acbbbcacaacb
 - client-fingerprint: chrome
-  name: 🔒 VL-TCP-RLT 🇷🇺 RU-158.160.131...
+  name: 🔒 VL-TCP-RLT 🇹🇷 TR-45.12.143.1...
   network: tcp
-  port: 14872
+  port: 20329
   reality-opts:
-    public-key: 6b1pXPB9Wc45eeBQxz1cYefETxE_jx1jlaeFaWS1pTc
-    short-id: 738a824c0bdf
-  server: 158.160.131.112
+    public-key: Lj3MXlg16CTFHtU88acSS-ACfGnwJ_xkU6dC6k8OeDo
+    short-id: 4602ee9f9f36
+  server: 45.12.143.191
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: 8b79f4a9-468f-46cf-9823-ba6cfe529f75
+  uuid: e105e56a-5f81-41a2-ab44-bfffc9b00674
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: Telegram%20%3A%20%40PouRia_Cheat
+  name: 🔒 VL-GRPC-RLT 🇩🇪 DE-91.107.243...
+  network: grpc
+  port: 2025
+  reality-opts:
+    public-key: AUNIYov4R2TvNmC0cF0NiKWYGqzikosOu4g2wcCALlw
+    short-id: 8d9c20be72b4
+  server: 91.107.243.238
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 3f042483-c71c-40cc-a4b7-d79f80db4253
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🔒 VL-TCP-RLT 🇨🇦 CA-99.79.70.80...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+    short-id: f5
+  server: 99.79.70.80
+  servername: store.steampowered.com
+  tls: false
+  type: vless
+  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
 - client-fingerprint: firefox
   name: 🔒 VL-TCP-RLT 🇩🇪 DE-91.107.147....
   network: tcp
@@ -32,17 +59,54 @@ proxies:
   type: vless
   uuid: 9cbd3913-d0a8-4f11-be9d-4e5102d8f689
 - client-fingerprint: chrome
-  name: 🔒 VL-TCP-RLT 🇨🇭 CH-5.182.36.25...
+  name: 🔒 VL-TCP-RLT 🇭🇺 HU-5.182.38.91...
   network: tcp
-  port: 16331
+  port: 17267
   reality-opts:
-    public-key: wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk
-    short-id: 910aab
-  server: 5.182.36.251
+    public-key: SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk
+    short-id: 4ae260
+  server: 5.182.38.91
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
+  uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-RLT 🇫🇮 FI-5.181.20.21...
+  network: tcp
+  port: 17422
+  reality-opts:
+    public-key: 0r5rlmvACX09qUTPuxrbuKWSAn66NnNyHIfIMwalYAA
+    short-id: '33'
+  server: 5.181.20.219
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: fe837fd0-840d-4cee-9334-0dc6c2b15c1c
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-RLT 🇷🇺 RU-158.160.131...
+  network: tcp
+  port: 14872
+  reality-opts:
+    public-key: 6b1pXPB9Wc45eeBQxz1cYefETxE_jx1jlaeFaWS1pTc
+    short-id: 738a824c0bdf
+  server: 158.160.131.112
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 8b79f4a9-468f-46cf-9823-ba6cfe529f75
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🔒 VL-TCP-RLT 🇹🇷 TR-62.60.233.2...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MFsbnsNQsSpZwP-_Ohzako6aHpfK4-rbssxhr3eywWw
+    short-id: 4476a3
+  server: 62.60.233.250
+  servername: images.apple.com
+  tls: false
+  type: vless
+  uuid: fd0cdd44-2361-11f0-9970-45e1d80c4039
 - client-fingerprint: chrome
   name: 🔒 VL-TCP-RLT 🇩🇪 DE-188.68.53.1...
   network: tcp
@@ -56,17 +120,30 @@ proxies:
   type: vless
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
 - client-fingerprint: chrome
-  name: 🔒 VL-TCP-RLT 🇫🇮 FI-5.181.20.21...
+  name: 🔒 VL-TCP-RLT 🇨🇭 CH-5.182.36.25...
   network: tcp
-  port: 17422
+  port: 16331
   reality-opts:
-    public-key: 0r5rlmvACX09qUTPuxrbuKWSAn66NnNyHIfIMwalYAA
-    short-id: '33'
-  server: 5.181.20.219
+    public-key: wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk
+    short-id: 910aab
+  server: 5.182.36.251
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: fe837fd0-840d-4cee-9334-0dc6c2b15c1c
+  uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: '🔒 VL-TCP-RLT 🇹🇷 TR-45.12.143.1... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: d3b13f31
+  server: 45.12.143.147
+  servername: hls-svod.itunes.apple.com
+  tls: false
+  type: vless
+  uuid: 4a640781-f5c8-4d17-80db-a6b0a091ba05
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: melov2ray
@@ -87,4 +164,4 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: abaaccb-baca-aacb-dacb-ccabcbabbcaa
+  uuid: caabbca-aabc-aabc-cdba-ccabcabacbba
