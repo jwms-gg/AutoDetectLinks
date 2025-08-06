@@ -1,12 +1,12 @@
-# Update: 2025-08-05 08:55
-# Source 21 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 20
+# Update: 2025-08-06 08:53
+# Source 21 (https://free.datiya.com/uploads/%Y%m%d-clash.yaml), 21
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: tg频道:@freenodedaily
   password: amazonskr05
   port: 443
-  server: 13.234.32.160
+  server: 13.127.216.146
   tfo: false
   type: ss
 - alterId: 2
@@ -52,7 +52,7 @@ proxies:
   tfo: false
   tls: false
   type: vmess
-  uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d
+  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -60,27 +60,19 @@ proxies:
 - client-fingerprint: chrome
   name: 🇭🇰 香港4
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 58.152.30.37
+  port: 447
+  server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 🇭🇰 香港5
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  password: dfd4867b-26c6-4e49-9b96-ef4dbbb3f31f
+  port: 12221
+  server: gz-43e866.kaiqsz.com
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6e313598-a088-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
+  sni: mmbiz.redapricotcloud.com
+  type: trojan
 - client-fingerprint: chrome
   name: 🇭🇰 香港6
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -89,14 +81,22 @@ proxies:
   skip-cert-verify: true
   sni: www.ithome.com
   type: trojan
-- cipher: chacha20-ietf
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港7
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: ca506e08-ce3d-5e5a-c128-6358caca15e5
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - name: 🇹🇼 台湾
   password: test.+
   port: 30443
@@ -112,7 +112,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-5Up7OUIi18.download.microsoft.com
+    host: 202507282137611-T3mfnF0MuU.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -193,7 +193,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-5Up7OUIi18.download.microsoft.com
+    host: 202507282137611-T3mfnF0MuU.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -210,8 +210,16 @@ proxies:
 - client-fingerprint: chrome
   name: 🇺🇸 美国4
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 143.110.155.169
+  port: 472
+  server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇻🇳 越南
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.20
+  tfo: false
+  type: ss
