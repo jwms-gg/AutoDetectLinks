@@ -1,21 +1,51 @@
-# Update: 2025-08-06 08:53
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 2
+# Update: 2025-08-07 08:54
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 4
 proxies:
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
-  network: grpc
-  port: 8880
-  server: 185.231.205.253
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🔒 VL-WS-NA 🇵🇱 PL-57.128.198.15...
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #2'
   network: ws
-  port: 80
-  server: 57.128.198.152
+  port: 2096
+  server: 104.19.144.33
+  servername: H5hJlZ2y6Y.v2PlUsMlM.oRg
+  tls: true
+  type: vless
+  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+  ws-opts:
+    path: /
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #3'
+  network: ws
+  port: 8443
+  server: 104.19.144.33
+  servername: SmL7g6VtS9.tOrSaNsPoRt16.OrG
+  tls: true
+  type: vless
+  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+  ws-opts:
+    path: /
+- name: 🔒 VL-TCP-NA 🇮🇷 IR-85.133.221.5...
+  network: tcp
+  port: 5151
+  server: 85.133.221.5
   tls: false
   type: vless
-  uuid: 5e8990b1-17c9-4e98-88c5-bbeee2b6bf58
+  uuid: bba5fd9c-a36f-4bab-8af3-8ee50d876494
   ws-opts:
     headers:
-      Host: '---%40ShadowProxy66'
-    path: /vless/
+      Host: zula.ir
+- name: 🔒 VL-TCP-NA 🇮🇷 IR-109.122.249....
+  network: tcp
+  port: 3232
+  server: 109.122.249.131
+  tls: false
+  type: vless
+  uuid: 72d95cd4-2e67-4718-b779-21ed36f5dfa8
+  ws-opts:
+    headers:
+      Host: zula.ir
