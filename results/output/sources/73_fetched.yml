@@ -1,8 +1,8 @@
-# Update: 2025-08-07 08:54
-# Source 73 (https://pxypool.131433.xyz/clash/proxies), 26
+# Update: 2025-08-08 08:53
+# Source 73 (https://pxypool.131433.xyz/clash/proxies), 11
 proxies:
 - cipher: aes-256-cfb
-  name: 'Pool__01 #1'
+  name: '_01 #5'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -11,12 +11,72 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
+- cipher: aes-128-cfb
+  country: 🇦🇿AZ
+  name: 'Relay_🇦🇿AZ-🇦🇿AZ_02 #1'
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇨🇳CN-🇩🇪DE_03 #1'
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  servername: v33.heduian.link
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      HOST: v33.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇨🇳CN-🇺🇸US_04 #1'
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  servername: baidu.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      HOST: baidu.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   country: 🇨🇾CY
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇨🇾CY-🇺🇸US_02 #1'
+  name: 'Relay_🇨🇾CY-🇺🇸US_05 #1'
+  network: ws
+  port: 80
+  server: pubg.ac
+  servername: cdn-node-oss-99.paofu.de
+  skip-cert-verify: true
+  type: vmess
+  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
+  ws-opts:
+    headers:
+      HOST: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  country: 🇨🇾CY
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇨🇾CY-🇺🇸US_06 #1'
   network: ws
   port: 80
   server: fastcup.net
@@ -28,180 +88,46 @@ proxies:
     headers:
       HOST: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_03 #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  ws-opts:
-    headers:
-      HOST: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_04 #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6e3ee1de-381f-11ee-87f9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_05 #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 20482402-7f76-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_06 #1'
-  network: ws
-  port: 80
-  server: d0f2365b-t0j340-t4vbi4-1lkbs.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- cipher: aes-256-cfb
-  country: 🇮🇶IQ
-  name: '🇮🇶IQ_07 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 91.132.94.200
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇮🇷IR
-  name: 'Relay_🇮🇷IR-🇳🇱NL_08 #1'
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  country: 🇱🇹LT
+  name: '🇱🇹LT_07 #1'
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 151.242.251.153
+  server: 45.87.175.28
   type: ss
-- cipher: aes-128-gcm
-  country: 🇯🇵JP
-  name: '🇯🇵JP_09 #1'
-  password: '10086'
-  port: 10087
-  server: 160.16.123.124
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇳🇱NL
-  name: '🇳🇱NL_10 #1'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.138
-  type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   country: 🇷🇴RO
-  name: '🇷🇴RO_11 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: '🇷🇺RU_12 #1'
-  password: oVfvPkqJFCjOEbBsbmOtIiAuqgmEFOEf332F26C8lwEwQng9
-  port: 31348
-  server: 213.156.138.138
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: '🇷🇺RU_13 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- country: 🇸🇬SG
-  name: '🇸🇬SG_14 #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇷🇴RO-🇺🇸US_08 #1'
+  network: ws
   port: 443
-  server: 157.230.32.243
+  server: 45.85.119.190
+  servername: farid.1.berozha.ir
   skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      HOST: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '🇺🇸US_15 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '🇺🇸US_16 #1'
-  password: TG:@Enkelte_notif&&TG:@Notif_Chat
-  port: 34045
-  server: 152.53.2.128
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: '🇺🇸US_17 #1'
-  password: DkA7OxSabRttPJzO9Ccf7L
-  port: 31100
-  server: 162.243.245.151
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: '🇺🇸US_18 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 171.22.254.17
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '🇺🇸US_19 #1'
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 15099
-  server: ss.026.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_20 #1'
-  password: ae6e933b-8874-4bf4-a384-0de216ef2bf4
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
+  name: 'Relay_🇺🇸US-🇺🇸US_09 #1'
+  obfs: http_simple
+  password: Uk92CS
+  port: 13000
+  protocol: auth_aes128_sha1
+  server: nm3.boom.party
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇬🇧GB_21 #1'
+  name: 'Relay_🇺🇸US-🇬🇧GB_10 #1'
   network: ws
   port: 443
   server: ip.sb
@@ -216,47 +142,10 @@ proxies:
     path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: '🇺🇸US_22 #1'
-  network: ws
-  port: 20521
-  server: 64.81.27.65
-  skip-cert-verify: true
-  type: vmess
-  uuid: a36885a5-6d97-45d7-85c1-cc11e1cece4a
-  ws-opts:
-    path: /
-- country: 🇺🇸US
-  name: '🇺🇸US_23 #1'
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 143.110.155.169
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇻🇳VN
-  name: '🇻🇳VN_24 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 103.163.218.2
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: '🏁ZZ_25 #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.20
-  type: ss
-- alterId: 0
-  cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🏁ZZ-🇨🇦CA_26 #1'
+  name: 'Relay_🏁ZZ-🇨🇦CA_11 #1'
   network: ws
   port: 80
   server: test.flha.ru
