@@ -1,37 +1,28 @@
-# Update: 2025-08-09 08:47
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 35
+# Update: 2025-08-10 08:56
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 24
 proxies:
-- name: '🔄 LATEST-UPDATE 📅 SAT-18-MORDA... #2'
+- name: '🔄 LATEST-UPDATE 📅 SUN-19-MORDA... #2'
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: aabaccb-cbaa-acab-dcba-ccaababcabcb
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.12.... #5'
+  uuid: cababac-caba-bcaa-abcd-abbbcccacaab
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🇸🇬 SG-92.243.74.11... #1'
   network: ws
-  port: 2087
-  server: 104.18.12.229
-  servername: vl.hongkong6.qzz.io
+  port: 443
+  server: 92.243.74.115
+  servername: edgb.aimercc.dpdns.org
   tls: true
   type: vless
-  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: vl.hongkong6.qzz.io
-    path: /?ed=2560
-- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.4.85:8... #1'
-  network: ws
-  port: 80
-  server: 45.131.4.85
-  tls: false
-  type: vless
-  uuid: 2036e2c3-18a5-4eed-9db4-f91a7f02c7d5
-  ws-opts:
-    headers:
-      Host: zoomgov.vipren.biz.id
-    path: /193.123.81.105=443
+      Host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #2'
   network: ws
@@ -45,22 +36,11 @@ proxies:
     headers:
       Host: E4aRpUi7Xe.GiTi4.OrG
     path: /
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.69.6...
-  network: ws
-  port: 8880
-  server: 104.16.69.64
-  tls: false
-  type: vless
-  uuid: 02811288-9ef3-42ef-86db-d9b1399c1a59
-  ws-opts:
-    headers:
-      Host: vghavi32.ip-ddns.com
-    path: /7YVyoVNnbaVzgl6D?ed=2560
 - client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.... #4'
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.151... #1'
   network: ws
   port: 443
-  server: 104.26.14.69
+  server: 172.64.151.232
   servername: carlotta.shoorekeeper.cloudns.org
   tls: true
   type: vless
@@ -68,232 +48,7 @@ proxies:
   ws-opts:
     headers:
       Host: carlotta.shoorekeeper.cloudns.org
-    path: /proxyip=zani.yaemiko.ggff.net
-- client-fingerprint: random
-  name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.228....
-  network: ws
-  port: 80
-  server: 104.16.228.91
-  servername: barayeiran.mahiozonboroon.qzz.io
-  tls: false
-  type: vless
-  uuid: f278037e-ce36-4634-9b4d-fca93e345a35
-  ws-opts:
-    headers:
-      Host: barayeiran.mahiozonboroon.qzz.io
-    path: /vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.26.13.1...
-  network: ws
-  port: 80
-  server: 104.26.13.114
-  tls: false
-  type: vless
-  uuid: 2054405e-70ff-40a2-ae27-16b63d72390a
-  ws-opts:
     path: /
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.67.... #4'
-  network: ws
-  port: 443
-  server: 104.21.67.12
-  servername: carlotta.shoorekeeper.cloudns.org
-  tls: true
-  type: vless
-  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
-  ws-opts:
-    headers:
-      Host: carlotta.shoorekeeper.cloudns.org
-    path: /proxyip=zani.yaemiko.ggff.net
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
-  network: grpc
-  port: 8880
-  server: 185.231.205.239
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🔒 VL-WS-TLS 🇸🇬 SG-92.243.74.11...
-  network: ws
-  port: 443
-  server: 92.243.74.115
-  servername: edgb.aimercc.dpdns.org
-  tls: true
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.40.... #2'
-  network: ws
-  port: 2096
-  server: 172.66.40.99
-  servername: www.dollardoon.com
-  tls: true
-  type: vless
-  uuid: 8e1630d0-23d7-49d6-8d63-f0b56ab80e04
-  ws-opts:
-    headers:
-      Host: www.dollardoon.com
-    path: /@ShadowProxy66?ed
-- client-fingerprint: qq
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.46.... #4'
-  network: ws
-  port: 443
-  server: 172.66.46.246
-  servername: elena.elena.ddns-ip.net
-  tls: true
-  type: vless
-  uuid: df2f3a19-7f58-4884-b2c4-e6a0bd723078
-  ws-opts:
-    headers:
-      Host: elena.elena.ddns-ip.net
-    path: /ShadowProxy66?ed=2560
-- name: 🔒 VL-TCP-NA 🇬🇧 GB-54.38.214.56...
-  network: tcp
-  port: 37171
-  server: 54.38.214.56
-  tls: false
-  type: vless
-  uuid: 19199927-fb46-4203-8872-672fd1daca14
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #12'
-  network: ws
-  port: 443
-  server: 172.67.164.5
-  servername: verina.ccantarella.dns-dynamic.net
-  tls: true
-  type: vless
-  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
-  ws-opts:
-    headers:
-      Host: verina.ccantarella.dns-dynamic.net
-    path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #13'
-  network: ws
-  port: 2096
-  server: 172.67.164.52
-  servername: verina.ccantarella.dns-dynamic.net
-  tls: true
-  type: vless
-  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
-  ws-opts:
-    headers:
-      Host: verina.ccantarella.dns-dynamic.net
-    path: /vpnowl-vpnowl-vpnowl-vpnowl
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.26.12.1...
-  network: ws
-  port: 80
-  server: 104.26.12.114
-  tls: false
-  type: vless
-  uuid: 2054405e-70ff-40a2-ae27-16b63d72390a
-  ws-opts:
-    path: /
-- name: '🔒 VL-WS-NA 🇫🇷 FR-51.195.119.20... #1'
-  network: ws
-  port: 80
-  server: 51.195.119.204
-  tls: false
-  type: vless
-  uuid: 2ac2a3ac-49ec-4cf1-90fd-252b7fad9fbe
-  ws-opts:
-    headers:
-      Host: '---%40ShadowProxy66'
-    path: /vless/
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-78.47.44.60:...
-  network: tcp
-  port: 2020
-  server: 78.47.44.60
-  tls: false
-  type: vless
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.36.... #3'
-  network: ws
-  port: 443
-  server: 104.18.36.24
-  servername: carlotta.shoorekeeper.cloudns.org
-  tls: true
-  type: vless
-  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
-  ws-opts:
-    headers:
-      Host: carlotta.shoorekeeper.cloudns.org
-    path: /proxyip=zani.yaemiko.ggff.net/?/ShadowProxy66
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.41.5...
-  network: ws
-  port: 8080
-  server: 104.17.41.52
-  tls: false
-  type: vless
-  uuid: 7e948e09-fa6f-4b8e-8c5d-181fa15fbec5
-  ws-opts:
-    headers:
-      Host: v2ngsupply2.ip-ddns.com
-    path: /ijiDwDw8BcM9ieHc?ed=2560
-- name: 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.68.1...
-  network: ws
-  port: 80
-  server: 172.67.68.168
-  tls: false
-  type: vless
-  uuid: 2054405e-70ff-40a2-ae27-16b63d72390a
-  ws-opts:
-    path: /
-- name: 🔒 VL-TCP-NA 🇮🇷 IR-109.122.249....
-  network: tcp
-  port: 3232
-  server: 109.122.249.131
-  tls: false
-  type: vless
-  uuid: 64fdaf06-bcfa-4bdc-8fb1-d8a9bd513f0c
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: '🔒 VL-WS-NA 🇫🇷 FR-51.75.161.60:... #1'
-  network: ws
-  port: 80
-  server: 51.75.161.60
-  tls: false
-  type: vless
-  uuid: 3f277f78-ef7c-4fab-982c-0ae1b0c0cf67
-  ws-opts:
-    headers:
-      Host: '---%40ShadowProxy66'
-    path: /vless/
-- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #1'
-  network: grpc
-  port: 8880
-  server: 185.231.205.139
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🔒 VL-TCP-NA 🇫🇷 FR-79.137.33.13...
-  network: tcp
-  port: 16390
-  server: 79.137.33.139
-  tls: false
-  type: vless
-  uuid: 170ba974-6ae5-44ae-dfdc-4675b5643f34
-- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #2'
-  network: grpc
-  port: 8880
-  server: 185.231.205.246
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alpn:
   - http/1.1
   client-fingerprint: random
@@ -309,53 +64,53 @@ proxies:
     headers:
       Host: albedoalbedochan.violetchaan.ip-ddns.com
     path: /?ShadowProxy66
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.13.... #6'
+- name: 🔒 VL-TCP-NA 🇬🇧 GB-54.38.214.56...
+  network: tcp
+  port: 37171
+  server: 54.38.214.56
+  tls: false
+  type: vless
+  uuid: 19199927-fb46-4203-8872-672fd1daca14
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.36.... #3'
   network: ws
-  port: 2087
-  server: 104.18.13.229
-  servername: vl.hongkong6.qzz.io
+  port: 443
+  server: 104.18.36.24
+  servername: carlotta.shoorekeeper.cloudns.org
   tls: true
   type: vless
-  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
   ws-opts:
     headers:
-      Host: vl.hongkong6.qzz.io
-    path: /?ed=2560
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #3'
-  network: ws
-  port: 8443
-  server: 104.19.144.33
-  servername: SmL7g6VtS9.tOrSaNsPoRt16.OrG
-  tls: true
-  type: vless
-  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
-  ws-opts:
-    path: /
-- client-fingerprint: random
-  name: '🔒 VL-WS-NA 🇹🇷 TR-91.206.71.162... #2'
+      Host: carlotta.shoorekeeper.cloudns.org
+- name: 🔒 VL-WS-NA 🏴‍☠️ NA-104.16.69.6...
   network: ws
   port: 8880
-  server: 91.206.71.162
-  servername: barayeiran-mahsang.gerald81.dpdns.org
+  server: 104.16.69.64
   tls: false
   type: vless
-  uuid: 26bc13af-e442-4956-afd4-b8f85744d26f
+  uuid: 02811288-9ef3-42ef-86db-d9b1399c1a59
   ws-opts:
     headers:
-      Host: barayeiran-mahsang.gerald81.dpdns.org
-    path: /@ShadowProxy66-?ed=2560
-- name: 🔒 VL-TCP-NA 🇮🇷 IR-85.133.221.5...
-  network: tcp
-  port: 5151
-  server: 85.133.221.5
+      Host: vghavi32.ip-ddns.com
+    path: /7YVyoVNnbaVzgl6D?ed=2560
+- name: 🔒 VL-WS-NA 🇦🇲 AM-93.115.240.88...
+  network: ws
+  port: 20000
+  server: 93.115.240.88
   tls: false
   type: vless
-  uuid: 64fdaf06-bcfa-4bdc-8fb1-d8a9bd513f0c
+  uuid: 490edb5c-d884-4b77-be02-19ebad7891dd
+- name: 🔒 VL-TCP-NA 🇮🇷 IR-109.122.249....
+  network: tcp
+  port: 3232
+  server: 109.122.249.131
+  tls: false
+  type: vless
+  uuid: e9158ed1-5df1-42ef-a4e7-a9e6d9547042
   ws-opts:
     headers:
       Host: zula.ir
@@ -369,25 +124,140 @@ proxies:
   ws-opts:
     headers:
       Host: skyroom.online
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.164... #14'
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.21.96.1... #2'
   network: ws
-  port: 443
-  server: 172.67.164.1
-  servername: verina.ccantarella.dns-dynamic.net
-  tls: true
+  port: 80
+  server: 104.21.96.1
+  tls: false
   type: vless
-  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  uuid: 2036e2c3-18a5-4eed-9db4-f91a7f02c7d5
   ws-opts:
     headers:
-      Host: verina.ccantarella.dns-dynamic.net
+      Host: zoomgov.vipren.biz.id
+    path: /193.123.81.105=443
+- name: '🔒 VL-WS-NA 🇳🇱 NL-45.131.4.85:8... #1'
+  network: ws
+  port: 80
+  server: 45.131.4.85
+  tls: false
+  type: vless
+  uuid: 2036e2c3-18a5-4eed-9db4-f91a7f02c7d5
+  ws-opts:
+    headers:
+      Host: zoomgov.vipren.biz.id
+    path: /193.123.81.105=443
+- client-fingerprint: chrome
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.... #4'
+  network: ws
+  port: 443
+  server: 104.26.14.69
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /proxyip=zani.yaemiko.ggff.net
+- name: 🔒 VL-TCP-NA 🇫🇷 FR-79.137.33.13...
+  network: tcp
+  port: 16390
+  server: 79.137.33.139
+  tls: false
+  type: vless
+  uuid: 170ba974-6ae5-44ae-dfdc-4675b5643f34
+- name: 🔒 VL-WS-TLS 🇺🇸 US-154.53.40.11...
+  network: ws
+  port: 8443
+  server: 154.53.40.110
+  servername: vall.codefyinc.com
+  tls: true
+  type: vless
+  uuid: f300338b-c2e3-46dd-9d3f-d54c010dc989
+  ws-opts:
+    headers:
+      Host: vall.codefyinc.com
+    path: /vlessws
+- client-fingerprint: qq
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.46.... #4'
+  network: ws
+  port: 443
+  server: 172.66.46.246
+  servername: elena.elena.ddns-ip.net
+  tls: true
+  type: vless
+  uuid: df2f3a19-7f58-4884-b2c4-e6a0bd723078
+  ws-opts:
+    headers:
+      Host: elena.elena.ddns-ip.net
+    path: /ShadowProxy66?ed=2560
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-104.17.41.5... #1'
+  network: ws
+  port: 8080
+  server: 104.17.41.52
+  tls: false
+  type: vless
+  uuid: 7e948e09-fa6f-4b8e-8c5d-181fa15fbec5
+  ws-opts:
+    headers:
+      Host: v2ngsupply2.ip-ddns.com
+    path: /ijiDwDw8BcM9ieHc?ed
+- name: 🔒 VL-WS-NA 🇫🇮 FI-65.109.183.20...
+  network: ws
+  port: 10000
+  server: 65.109.183.203
+  tls: false
+  type: vless
+  uuid: c9045738-274c-44b9-b888-80da3fe71951
+- name: '🔒 VL-WS-NA 🏴‍☠️ NA-172.67.141.... #1'
+  network: ws
+  port: 8880
+  server: 172.67.141.140
+  tls: false
+  type: vless
+  uuid: 7e948e09-fa6f-4b8e-8c5d-181fa15fbec5
+  ws-opts:
+    headers:
+      Host: v2ngsupply2.ip-ddns.com
+    path: /QaaLdIiGgWNoIxOF?ed
+- name: 🔒 VL-WS-NA 🇧🇬 BG-89.44.197.77:...
+  network: ws
+  port: 15946
+  server: 89.44.197.77
+  tls: false
+  type: vless
+  uuid: 8672bdcd-e331-464d-9ed8-93a242ca7d2e
+  ws-opts:
     path: /
+- name: 🔒 VL-WS-TLS 🇺🇸 US-209.126.84.1...
+  network: ws
+  port: 443
+  server: 209.126.84.189
+  servername: v2ray.codefyinc.com
+  tls: true
+  type: vless
+  uuid: 0417be58-2ea8-49de-8083-9eff9b0137e5
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vlessws
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.67.... #4'
+  network: ws
+  port: 443
+  server: 104.21.67.12
+  servername: carlotta.shoorekeeper.cloudns.org
+  tls: true
+  type: vless
+  uuid: 30f2d443-af46-4dd6-83c9-b5e17299ebd2
+  ws-opts:
+    headers:
+      Host: carlotta.shoorekeeper.cloudns.org
+    path: /proxyip=zani.yaemiko.ggff.net
 - name: '👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ... #2'
   network: tcp
   port: 8080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: caaabcb-aabc-bcaa-cdab-bbabcaccaacb
+  uuid: acaacbb-caab-baca-cbad-bbaaaccbacbc
