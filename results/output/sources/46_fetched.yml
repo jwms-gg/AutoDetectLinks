@@ -1,19 +1,33 @@
-# Update: 2025-08-10 08:56
+# Update: 2025-08-11 08:54
 # Source 46 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vmess), 6
 proxies:
 - alterId: 0
   cipher: auto
-  name: '🔄 LATEST-UPDATE 📅 SUN-19-MORDA... #1'
+  name: '🔄 LATEST-UPDATE 📅 MON-20-MORDA... #1'
   network: tcp
   port: 1080
   server: 127.0.0.1
   servername: ''
   tls: false
   type: vmess
-  uuid: cababac-caba-bcaa-abcd-abbbcccacaab
+  uuid: cbaabac-caba-baca-bdca-acacabbbccab
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-TLS 🇺🇸 US-209.126.84.1...
+  name: 🔒 VM-WS-NA 🇺🇸 US-154.223.19.23...
+  network: ws
+  port: '20086'
+  server: 154.223.19.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bfb323d3-239e-4e1b-bfa8-13f68385931e
+  ws-opts:
+    headers:
+      Host: 154.223.19.231
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🔒 VM-WS-TLS 🇺🇸 US-209.126.84.1... #1'
   network: ws
   port: '443'
   server: 209.126.84.189
@@ -24,20 +38,6 @@ proxies:
   ws-opts:
     headers:
       Host: v2ray.codefyinc.com
-    path: /vmessws
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇺🇸 US-154.53.40.11...
-  network: ws
-  port: '8443'
-  server: 154.53.40.110
-  servername: vall.codefyinc.com
-  tls: true
-  type: vmess
-  uuid: 606ece17-7279-4a43-b879-f8502103de8f
-  ws-opts:
-    headers:
-      Host: vall.codefyinc.com
     path: /vmessws
 - alterId: 0
   cipher: auto
@@ -53,14 +53,14 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 🔒 VM-WS-NA 🇬🇧 GB-154.62.185.21...
+  name: 🔒 VM-WS-NA 🇱🇻 LV-216.173.69.25...
   network: ws
-  port: '20086'
-  server: 154.62.185.216
+  port: '8443'
+  server: 216.173.69.250
   servername: ''
   tls: false
   type: vmess
-  uuid: 20ed1673-8f9e-485b-9956-147768fce851
+  uuid: 91382092-2330-455b-8a1c-9c129cfe661a
   ws-opts:
     path: /
 - alterId: 0
@@ -72,4 +72,4 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: acaacbb-caab-baca-cbad-bbaaaccbacbc
+  uuid: cbabcaa-acba-baac-cbad-cabcbabcacba

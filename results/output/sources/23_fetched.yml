@@ -1,20 +1,21 @@
-# Update: 2025-08-10 08:56
-# Source 23 (https://raw.githubusercontent.com/lagzian/SS-Collector/main/reality_clash.yaml), 59
+# Update: 2025-08-11 08:54
+# Source 23 (https://raw.githubusercontent.com/lagzian/SS-Collector/main/reality_clash.yaml), 65
 proxies:
-- client-fingerprint: firefox
-  name: 🇬🇧GB | 🟢 | vless | @v2_team | ...
-  network: tcp
-  port: 443
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc.reality
+  name: ❔XX | 🔴 | vless | @v2_team | 0
+  network: grpc
+  port: 1911
   reality-opts:
-    client-fingerprint: firefox
-    public-key: aO2tx4kfUpQWIvT5bO7lH6G1GDfnrThtSFigLJXDens
-    short-id: 370dd394052f2386
-  server: 51.75.162.3
-  servername: tgju.org
+    client-fingerprint: chrome
+    public-key: VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4
+  server: V2TEAM
+  servername: ''
   tls: false
   type: vless
   udp: false
-  uuid: 34ee1aa7-627d-4a77-a6d5-a16b26af6e88
+  uuid: 56ac4f3a-8cbf-4748-966e-0e723317e0af
 - client-fingerprint: chrome
   name: ❔XX | 🔴 | vless | @v2_team | 1
   network: xhttp
@@ -239,6 +240,21 @@ proxies:
   udp: false
   uuid: 615d2800-d402-4b14-97a0-8738cdfddfba
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU | 🟢 | vless | @Outline_Vp...
+  network: tcp
+  port: 443
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: ru.maviks.eu
+  servername: maviks.eu
+  tls: false
+  type: vless
+  udp: false
+  uuid: 0a947205-01a0-4634-8e78-daf200d02def
+- client-fingerprint: chrome
   name: 🇹🇷TR | 🟢 | vless | @Outline_Vp...
   network: tcp
   port: 28495
@@ -252,6 +268,20 @@ proxies:
   type: vless
   udp: false
   uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
+- client-fingerprint: chrome
+  name: 🇭🇺HU | 🟢 | vless | @prrofile_p...
+  network: tcp
+  port: 17267
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk
+    short-id: 4ae260
+  server: 5.182.38.91
+  servername: yahoo.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: 1c7fcc38-e6be-43c5-875f-b8de2516b9f2
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
@@ -373,77 +403,78 @@ proxies:
   udp: false
   uuid: 2a02cb25-0f58-4b19-a7a6-8c205fdb9042
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: '🇨🇿CZ | 🔴 | vless | @prrofile_p... #2'
-  network: grpc
-  port: 25245
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE | 🟢 | vless | @customv2ra...
+  network: tcp
+  port: 30938
   reality-opts:
     client-fingerprint: chrome
-    public-key: uv1gMqjxJ-bF5Xjix_d5M4qGK0-VmGyrU5ZMtiXrhHg
-    short-id: 16b619c73e22
-  server: 194.182.79.43
-  servername: journalofbigdata.springeropen.com
+    public-key: OkwhFGkP6NhXbmfBpBKqJ_HDNEcqbkp0mMc9HeYVBBE
+    short-id: 9f2b1f07
+  server: 109.61.16.89
+  servername: indeed.com
   tls: false
   type: vless
   udp: false
-  uuid: aa374d55-b368-4121-8f02-7e6bd9ef1924
-- client-fingerprint: firefox
-  name: 🇩🇪DE | 🔴 | vless | @v2rayNG_Ma...
-  network: xhttp
-  port: 1002
-  reality-opts:
-    client-fingerprint: firefox
-    public-key: ZR-m-ptbkHU71ZoH-jRM8L1NqSN1rzW738PsSHFwkik
-  server: 87.120.205.76
-  servername: cdn.jsdelivr.net
-  tls: false
-  type: vless
-  udp: false
-  uuid: 10e72fbe-78c9-483b-9ddd-26b33ecd02f6
-- client-fingerprint: chrome
-  name: 🇫🇮FI | 🔴 | vless | @v2rayngvpn...
-  network: grpc
-  port: 37308
-  reality-opts:
-    client-fingerprint: chrome
-    public-key: ORc1u3IIs-vGPpf-_9WU_nRyGCdaTIRavHyK_JE-VHE
-    short-id: d6243df9304a0c
-  server: 65.109.193.233
-  servername: tgju.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: b8cae1e1-45cd-433c-a26e-ca28aced00d9
+  uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇳🇱NL | 🟢 | vless | @v2rayngvpn...
+  name: 🇩🇪DE | 🟢 | vless | @v2rayngvpn...
   network: tcp
-  port: 443
+  port: 26143
   reality-opts:
     client-fingerprint: chrome
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 48720c
-  server: 192.142.15.95
-  servername: hls-svod.itunes.apple.com
+    public-key: ng3D2eUM-UM3ariA2eCDibCNo_peaKijOWUZJJKiIUI
+    short-id: 0d
+  server: 85.9.200.197
+  servername: steampowered.com
   tls: false
   type: vless
   udp: false
-  uuid: c1d16861-5a8b-46d9-bfd3-032b9abcb68f
+  uuid: 07ec7e56-f3e7-48c3-98a8-8886d5d87f74
 - client-fingerprint: chrome
-  name: 🇺🇸US | 🟢 | vless | @ConfigsHUB...
+  flow: xtls-rprx-vision
+  name: '🇩🇪DE | 🟢 | vless | @v2rayngvpn... #1'
   network: tcp
-  port: 4433
+  port: 40745
   reality-opts:
     client-fingerprint: chrome
-    public-key: tZn5Tdrk045zSTbBEzGwSV_LOdCZqEwT8c85pJOK_C0
-    short-id: f785b38130e64177
-  server: 3.19.218.255
-  servername: stackoverflow.com
+    public-key: KIJ-Gb61R1Ng1kMvD01v51SwtrrYh3npN5cSkxb-MH0
+    short-id: 3b
+  server: 94.237.24.169
+  servername: deepl.com
   tls: false
   type: vless
   udp: false
-  uuid: 7fc993f5-7cd7-4485-9e6f-1f7c5160c910
+  uuid: f418440b-a023-4ba4-8f40-1dab600fb48d
+- client-fingerprint: chrome
+  name: 🇩🇪DE | 🟢 | vless | @ConfigsHUB...
+  network: tcp
+  port: 44807
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: CKRx3TijRUQqqRcEOVF07CfvekiUlPbr0twB3wrpfiQ
+    short-id: 6d78523a82d71956
+  server: 89.58.1.98
+  servername: yahoo.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9f69c514-7aba-4cb2-88d2-1be504c97061
+- client-fingerprint: chrome
+  name: 🇷🇺RU | 🟢 | vless | @ConfigsHUB...
+  network: tcp
+  port: 34045
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 185.189.12.204
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: chrome
   name: 🇩🇪DE | 🔴 | vless | @proxystore...
   network: xhttp
@@ -489,6 +520,62 @@ proxies:
   uuid: 423a18a5-0798-46d9-83f1-5bec04a2f49e
 - client-fingerprint: chrome
   name: 🇺🇸US | 🟢 | vless | @Outlinev2r...
+  network: tcp
+  port: 34045
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.200.194
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: '🇺🇸US | 🟢 | vless | @Outlinev2r... #1'
+  network: tcp
+  port: 34045
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.122
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: '🇺🇸US | 🟢 | vless | @Outlinev2r... #2'
+  network: tcp
+  port: 34045
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.113
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: '🇺🇸US | 🟢 | vless | @Outlinev2r... #3'
+  network: tcp
+  port: 34045
+  reality-opts:
+    client-fingerprint: chrome
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.6
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  udp: false
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: '🇺🇸US | 🟢 | vless | @Outlinev2r... #4'
   network: tcp
   port: 34045
   reality-opts:
@@ -546,7 +633,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: ❔XX | 🔴 | vless | @Capoit | 8
+  name: ❔XX | 🔴 | vless | @Capoit | 12
   network: grpc
   port: 27270
   reality-opts:
@@ -650,7 +737,7 @@ proxies:
   uuid: 8af733bd-c094-4e99-add3-95f380cda5e7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇮FI | 🟢 | vless | @iP_CF | 29
+  name: 🇫🇮FI | 🟢 | vless | @iP_CF | 30
   network: tcp
   port: 443
   reality-opts:
