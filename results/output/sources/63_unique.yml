@@ -1,17 +1,41 @@
-# Update: 2025-08-12 08:48
-# Source 63 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 1
+# Update: 2025-08-13 08:49
+# Source 63 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 3
 proxies:
+- name: 美国【机场推荐：https://a0a.xyz/】39
+  network: ws
+  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
+  port: 443
+  server: 104.21.63.135
+  sni: Rrr4.8906004.xYZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Rrr4.8906004.xYZ
+    path: '%2FDZxb5QZyWgQPuXTwt'
 - alterId: 0
   cipher: auto
-  name: 美国【机场推荐：https://a0a.xyz/】68
+  name: '美国 CloudFlare节点 #6'
   network: ws
-  port: '443'
-  server: dddfvg.859885.xyz
+  port: 443
+  server: cf.fovi.tk
   servername: ''
   tls: true
   type: vmess
-  uuid: f69b7304-9bea-4740-a555-797514012a53
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      Host: dddfvg.859885.xyz
-    path: /9AYJ8jsARg3AJC29auSeckWI9
+      Host: foxpol.fovi.tk
+    path: /eisasqa
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #2'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /

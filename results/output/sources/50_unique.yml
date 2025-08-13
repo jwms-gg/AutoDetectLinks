@@ -1,12 +1,86 @@
-# Update: 2025-08-12 08:48
-# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 22
+# Update: 2025-08-13 08:49
+# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 34
 proxies:
-- name: '@Daily_Configs #22'
+- name: 🇺🇸 美国 V2CROSS.COM
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: 🇷🇺 俄罗斯 V2CROSS.COM
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: 🇰🇷 韩国 V2CROSS.COM
+  password: Aimer
+  port: 21301
+  server: 175.212.51.220
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: 🇺🇸 美国 CloudFlare节点
+  password: Aimer
+  port: 443
+  server: lynn.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: 🇺🇸 美国 佐治亚州亚特兰大市BellSouth公司
+  password: Aimer
+  port: 443
+  server: 74.176.199.245
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: '🇺🇸 美国 CloudFlare节点 #1'
+  password: Aimer
+  port: 443
+  server: 172.64.35.66
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: 🇱🇹 立陶宛 V2CROSS.COM
+  password: Aimer
+  port: 443
+  server: 86.38.214.186
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: '🇺🇸 美国 CloudFlare节点 #2'
+  password: Aimer
+  port: 443
+  server: kip.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+- name: '@Daily_Configs #24'
   network: tcp
   password: 7367d04e-4c59-4dff-a50e-12e730a09891
   port: 26193
   server: 155.117.228.70
   type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #204'
+  password: blue2024
+  port: 443
+  server: 188.114.97.122
+  sni: hb.lii2010.us.kg
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '[🏁]t.me/ConfigsHub #1'
+  network: tcp
+  password: tunnel-tele-id-ibahad
+  port: 8441
+  server: 193.124.46.134
+  sni: join.telegram.ibahad.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr-1.stunnel.cc
 - name: ❔ XX | 🔓 TROJAN | @armodchanne...
   network: ws
   password: fa9b326c-ca6f-4bb2-88f5-a163b404fcf8
@@ -23,7 +97,7 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 63.179.81.0
+  server: 35.157.236.123
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -32,7 +106,7 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 51.44.118.76
+  server: 15.236.5.224
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -41,9 +115,21 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 13.39.45.108
+  server: 13.36.252.221
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 🇮🇷 IR | 🔒 TROJAN | @drvpn_net ...
+  network: ws
+  password: b1b659eb-8408-45bd-b200-b11bf9d8552f
+  port: 443
+  server: dl.allavatar.top
+  skip-cert-verify: true
+  sni: dl.allavatar.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dl.allavatar.top
+    path: '%2Ftr%2Ft%2FtUtStA%2Fgfdr'
 - name: 🇺🇸 US | 🔒 TROJAN | @ip_cf_conf...
   network: tcp
   password: 79c935c0-27dc-4383-b307-dcac1b8e5509
@@ -152,7 +238,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 63.179.81.0
+  server: 35.157.236.123
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -161,7 +247,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 51.44.118.76
+  server: 15.236.5.224
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -170,7 +256,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 13.39.45.108
+  server: 13.36.252.221
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -210,3 +296,16 @@ proxies:
     headers:
       Host: vipren.biz.id
     path: '%2FNeoxide-X%2F194.87.62.236-443'
+- alpn:
+  - http/1.1
+  name: '>>@v2ray1_ng::US'
+  network: ws
+  password: :bC5^lakx>$d
+  port: 443
+  server: 172.66.45.9
+  sni: fk31LnDm4W8uj0yP1dRwLTDTdKo6Y-cu.pAGES.dEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fk31lndm4w8uj0yp1drwltdtdko6y-cu.pages.dev
+    path: '%2FtrNs9G5VJ2vI0PxgP2'

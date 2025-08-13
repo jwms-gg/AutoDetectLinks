@@ -1,8 +1,8 @@
-# Update: 2025-08-12 08:48
+# Update: 2025-08-13 08:49
 # Source 73 (https://pxypool.131433.xyz/clash/proxies), 11
 proxies:
 - cipher: aes-256-cfb
-  name: '_01 #4'
+  name: '_01 #3'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -11,15 +11,23 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- country: 🇨🇳CN
-  name: 'Relay_🇨🇳CN-🇯🇵JP_02 #1'
-  password: 253bc477d4e43c209f2d427272968280
-  port: 193
-  server: 36.156.102.78
+- alterId: 0
+  cipher: auto
+  country: 🇨🇾CY
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇨🇾CY-🇺🇸US_02 #1'
+  network: ws
+  port: 80
+  server: csgo.com
+  servername: cdn-node-oss-99.paofu.de
   skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
+  ws-opts:
+    headers:
+      HOST: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
 - cipher: aes-256-cfb
   country: 🇬🇧GB
   name: 'Pool_🇬🇧GB_03 #1'
@@ -29,54 +37,37 @@ proxies:
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_04 #1'
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  servername: v7.heduian.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      HOST: v7.heduian.link
-    path: /oooo
-- cipher: aes-256-cfb
-  country: 🇮🇶IQ
-  name: '🇮🇶IQ_05 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 91.132.94.200
-  type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 'Relay_🇰🇷KR-🇰🇷KR_06 #1'
+  name: 'Relay_🇰🇷KR-🇰🇷KR_04 #1'
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
 - cipher: aes-256-cfb
+  country: 🇵🇹PT
+  name: '🇵🇹PT_05 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: '🇷🇺RU_07 #1'
+  name: '🇷🇺RU_06 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '🇺🇸US_08 #1'
+  name: '🇺🇸US_07 #1'
   password: amazonskr05
   port: 443
   server: 34.203.13.163
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_09 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_08 #1'
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -88,7 +79,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇺🇸US_10 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_09 #1'
   network: ws
   port: 443
   server: v2ray.codefyinc.com
@@ -100,6 +91,15 @@ proxies:
     headers:
       HOST: v2ray.codefyinc.com
     path: /vmessws
+- country: 🇺🇸US
+  name: 'Relay_🇺🇸US-🇺🇸US_10 #1'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: true
+  sni: dus.freeguard.org
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: '🏁ZZ_11 #1'
