@@ -1,5 +1,5 @@
-# Update: 2025-08-13 08:49
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 74
+# Update: 2025-08-14 08:49
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 73
 proxies:
 - alterId: 2
   cipher: auto
@@ -92,22 +92,48 @@ proxies:
     headers:
       Host: v36.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: _IR_伊朗->🇨🇳_CN_中国
-  port: 15016
-  server: 31.57.107.145
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: _RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
   udp: true
-  uuid: 6958fe4f-a3f0-493b-d569-2acf837e9aa6
+- cipher: aes-128-gcm
+  name: '未知_1 #3'
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  port: 12024
+  server: awes35lesl.blhao0o.dpdns.org
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '未知_2 #3'
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  port: 12028
+  server: awes35lesl.blhao0o.dpdns.org
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: _MD_摩尔多瓦 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: _US_美国->🇨🇳_CN_中国 2
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
   type: ss
+  udp: true
+- name: _RU_俄罗斯->🇺🇸_US_美国
+  password: tunnel-astrovpn_official-tr
+  port: 8441
+  server: tr-1.stunnel.cc
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
+  type: trojan
   udp: true
 - alterId: 2
   cipher: auto
@@ -124,12 +150,22 @@ proxies:
     headers:
       Host: v37.heduian.link
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: _DE_德国->🇷🇴_RO_罗马尼亚_1
+  port: 100
+  server: cpanel.erade32.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国_2
   network: ws
-  port: 30833
-  server: v33.heduian.link
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -137,32 +173,8 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v33.heduian.link
+      Host: v29.heduian.link
     path: /oooo
-- cipher: aes-256-cfb
-  name: _KR_韩国->🇲🇩_MD_摩尔多瓦
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _DE_德国
-  port: 32020
-  server: s3.ipyar.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- cipher: aes-128-gcm
-  name: '未知 #5'
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12024
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇬🇧_GB_英国 2
@@ -178,19 +190,27 @@ proxies:
     headers:
       Host: v36.heduian.link
     path: /oooo
-- cipher: aes-256-cfb
-  name: '_US_美国 #1'
-  password: amazonskr05
-  port: 443
-  server: 34.203.13.163
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: _DE_德国->🇷🇴_RO_罗马尼亚_2
+  network: ws
+  port: 100
+  server: cpanel.erade33.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 0888adea-086c-4783-9989-85df86819c1f
+  ws-opts:
+    headers:
+      Host: cpanel.erade33.ir
+    path: /
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国_3
   network: ws
-  port: 30829
-  server: v29.heduian.link
+  port: 30824
+  server: v24.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -198,50 +218,23 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: v29.heduian.link
+      Host: v24.heduian.link
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: _NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 23153
-  server: 45.136.245.177
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d8b621e8-3cf1-4919-ae6f-0f7131704291
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: _MD_摩尔多瓦 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _DK_丹麦->🇪🇸_ES_西班牙
+  name: _DK_丹麦->🇺🇸_US_美国
   network: ws
   port: 80
-  server: pubg.ac
+  server: csgo.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
   ws-opts:
     headers:
-      Host: pubg.ac
+      Host: csgo.com
     path: /profile/telegram@ssrsub
-- cipher: aes-256-cfb
-  name: _RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 日本(nodeshare.xyz免费节点)_1
   password: Nk9asglDzHzjktVzTkvhaA

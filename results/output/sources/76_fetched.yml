@@ -1,5 +1,5 @@
-# Update: 2025-08-13 08:49
-# Source 76 (http://66.42.50.118:12580/clash/proxies), 165
+# Update: 2025-08-14 08:49
+# Source 76 (http://66.42.50.118:12580/clash/proxies), 163
 proxies:
 - cipher: aes-256-cfb
   country: 🇦🇫AF
@@ -27,22 +27,22 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
   name: 🇨🇦CA_04
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.23.226
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇨🇦CA
+  name: 🇨🇦CA_05
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: aes-256-cfb
   country: 🇨🇦CA
-  name: 🇨🇦CA_05
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇦CA
   name: 🇨🇦CA_06
   password: f8f7aCzcPKbsF8p3
-  port: 990
+  port: 989
   server: 185.213.23.226
   type: ss
 - cipher: aes-128-gcm
@@ -57,21 +57,21 @@ proxies:
   name: 🇨🇭CH_08
   password: shadowsocks
   port: 443
-  server: 156.146.62.161
+  server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
   country: 🇨🇭CH
   name: 🇨🇭CH_09
   password: shadowsocks
   port: 443
-  server: 156.146.62.163
+  server: 156.146.62.161
   type: ss
 - cipher: aes-128-gcm
   country: 🇨🇭CH
   name: 🇨🇭CH_10
   password: shadowsocks
   port: 443
-  server: 156.146.62.162
+  server: 156.146.62.163
   type: ss
 - cipher: aes-256-cfb
   country: 🇨🇳CN
@@ -84,32 +84,17 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇨🇾CY
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇨🇾CY-🇺🇸US_12
-  network: ws
-  port: 80
-  server: csgo.com
-  servername: cdn-node-oss-99.paofu.de
+- country: 🇨🇳CN
+  name: Relay_🇨🇳CN-🇯🇵JP_12
+  password: 253bc477d4e43c209f2d427272968280
+  port: 409
+  server: 36.156.102.78
   skip-cert-verify: true
-  type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
-  ws-opts:
-    headers:
-      HOST: cdn-node-oss-99.paofu.de
-    path: /profile/telegram@ssrsub
-- cipher: rc4-md5
-  country: 🇩🇪DE
-  name: 🇩🇪DE_13
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+  sni: 1-dy.ixigua.com
+  type: trojan
+  udp: true
 - country: 🇩🇪DE
-  name: Relay_🇩🇪DE-🇺🇸US_14
+  name: Relay_🇩🇪DE-🇺🇸US_13
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
@@ -119,24 +104,31 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇫🇮FI
-  name: 🇫🇮FI_15
+  name: 🇫🇮FI_14
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.143.129.230
   type: ss
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 🇫🇷FR_16
+  name: 🇫🇷FR_15
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.169.198
   type: ss
 - cipher: aes-256-cfb
   country: 🇫🇷FR
-  name: 🇫🇷FR_17
+  name: 🇫🇷FR_16
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 🇬🇧GB_17
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
@@ -150,53 +142,46 @@ proxies:
   name: 🇬🇧GB_19
   password: shadowsocks
   port: 443
-  server: 212.102.53.198
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
   name: 🇬🇧GB_20
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 🇬🇧GB_21
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 🇬🇧GB_22
-  password: shadowsocks
-  port: 443
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 🇬🇧GB_23
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: Relay_🇬🇧GB-🇬🇧GB_24
+  name: Relay_🇬🇧GB-🇬🇧GB_21
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 🇬🇧GB_25
+  name: 🇬🇧GB_22
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 🇬🇧GB_23
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 🇬🇧GB_24
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: aes-256-cfb
   country: 🇬🇧GB
-  name: Pool_🇬🇧GB_26
+  name: Pool_🇬🇧GB_25
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -208,7 +193,7 @@ proxies:
   country: 🇬🇧GB
   h2-opts: {}
   http-opts: {}
-  name: '🇬🇧GB_27 #1'
+  name: 🇬🇧GB_26
   network: ws
   port: 20086
   server: 64.227.45.92
@@ -217,112 +202,71 @@ proxies:
   uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: 🇬🇧GB_28
-  network: ws
-  port: 20086
-  server: 8.208.84.194
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4790f95b-3794-49a4-a8e7-304c7fb0b23d
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰HK
-  name: 🇭🇰HK_29
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰HK
-  name: 🇭🇰HK_30
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰HK
-  name: 🇭🇰HK_31
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰HK
-  name: 🇭🇰HK_32
+  name: 🇭🇰HK_27
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
 - cipher: chacha20-ietf
   country: 🇭🇰HK
-  name: 🇭🇰HK_33
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 🇭🇰HK_34
+  name: 🇭🇰HK_28
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰HK
+  name: 🇭🇰HK_29
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰HK
+  name: 🇭🇰HK_30
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 🇭🇰HK_31
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 🇭🇰HK_32
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰HK
+  name: '🇭🇰HK_33 #1'
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰HK
   group: Update-二爷
-  name: Pool_🇭🇰HK_35
+  name: Pool_🇭🇰HK_34
   obfs: tls1.2_ticket_auth
   password: iFqnzSscN
   port: 8083
   protocol: origin
   server: 150.107.46.21
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_36 #1'
-  network: ws
-  port: 80
-  server: 4b9d07b6-sz8sg0-t0o6k2-6gn6.hkt.tcpbbr.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇭🇰HK-🇭🇰HK_37
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇭🇰HK-🇭🇰HK_38
+  name: Relay_🇭🇰HK-🇭🇰HK_35
   network: ws
   port: 30807
   server: v10.heduian.link
@@ -334,79 +278,96 @@ proxies:
     headers:
       HOST: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰HK-🇭🇰HK_36
+  network: ws
+  port: 80
+  server: 4b9d07b6-sz8sg0-t0o6k2-6gn6.hkt.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: aes-256-cfb
   country: 🇭🇷HR
-  name: 🇭🇷HR_39
+  name: 🇭🇷HR_37
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.60
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇳IN
-  name: 🇮🇳IN_40
-  password: 360e21d21977dc11
-  port: 57456
-  server: 103.111.114.29
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇳IN
-  name: Relay_🇮🇳IN-🇲🇩MD_41
+  name: Relay_🇮🇳IN-🇲🇩MD_38
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.209.147.198
   type: ss
 - cipher: aes-256-cfb
   country: 🇮🇶IQ
-  name: 🇮🇶IQ_42
+  name: 🇮🇶IQ_39
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 91.132.94.200
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇷IR
-  name: Relay_🇮🇷IR-🇳🇱NL_43
+  name: Relay_🇮🇷IR-🇳🇱NL_40
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 151.242.251.147
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇷IR
-  name: Relay_🇮🇷IR-🇳🇱NL_44
+  name: Relay_🇮🇷IR-🇳🇱NL_41
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 151.242.251.153
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇷IR
-  name: Relay_🇮🇷IR-🇳🇱NL_45
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  name: Relay_🇮🇷IR-🇳🇱NL_42
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 151.242.251.131
+  server: beesyar.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇷IR
-  name: Relay_🇮🇷IR-🇳🇱NL_46
+  name: Relay_🇮🇷IR-🇳🇱NL_43
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 151.242.251.144
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇮🇷IR
+  name: Relay_🇮🇷IR-🇳🇱NL_44
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
+  type: ss
 - cipher: aes-256-cfb
   country: 🇮🇸IS
-  name: 🇮🇸IS_47
+  name: 🇮🇸IS_45
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.235.49.168
   type: ss
 - cipher: aes-128-gcm
   country: 🇯🇵JP
-  name: 🇯🇵JP_48
+  name: 🇯🇵JP_46
   password: '10086'
   port: 10087
   server: 160.16.123.124
   type: ss
 - cipher: aes-128-gcm
   country: 🇯🇵JP
-  name: 🇯🇵JP_49
+  name: 🇯🇵JP_47
   password: '10086'
   port: 10087
   server: 153.121.43.183
@@ -416,7 +377,7 @@ proxies:
   country: 🇯🇵JP
   h2-opts: {}
   http-opts: {}
-  name: 🇯🇵JP_50
+  name: 🇯🇵JP_48
   network: tcp
   port: 59361
   server: 164.70.68.128
@@ -424,7 +385,7 @@ proxies:
   type: vmess
   uuid: d4e2f2e2-bd2d-423e-89fb-cfcf435e7963
 - country: 🇯🇵JP
-  name: 🇯🇵JP_51
+  name: 🇯🇵JP_49
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 157.120.32.122
@@ -434,21 +395,14 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: Relay_🇰🇷KR-🇰🇷KR_52
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 🇰🇷KR_53
+  name: 🇰🇷KR_50
   password: qwerREWQ@@
   port: 4652
   server: 218.237.185.230
   type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: Relay_🇰🇷KR-🇰🇷KR_54
+  name: Relay_🇰🇷KR-🇰🇷KR_51
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
@@ -458,7 +412,7 @@ proxies:
   country: 🇰🇷KR
   h2-opts: {}
   http-opts: {}
-  name: 🇰🇷KR_55
+  name: 🇰🇷KR_52
   network: ws
   port: 20086
   server: 183.109.131.75
@@ -469,213 +423,234 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇧LB
-  name: 🇱🇧LB_56
+  name: 🇱🇧LB_53
   password: 9JeYy8SkViXuSHVs9GFeSe
   port: 443
   server: 77.110.110.117
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_57
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_58
+  name: Relay_🇱🇹LT-🇳🇱NL_54
   password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_59
-  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: beesyar.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_60
+  name: 🇱🇹LT_55
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.22
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_61
+  name: 🇱🇹LT_56
   password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_62
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: 🇱🇹LT_63
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹LT
-  name: 🇱🇹LT_64
-  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.166
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_65
+  name: 🇱🇹LT_57
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.28
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_66
+  name: 🇱🇹LT_58
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.166
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_67
-  password: cvII85TrW6n0OGyfpHVS1u
+  name: 🇱🇹LT_59
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹LT
+  name: Relay_🇱🇹LT-🇳🇱NL_60
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: beesyar.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_68
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 🇱🇹LT_61
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹LT
+  name: 🇱🇹LT_62
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹LT
+  name: 🇱🇹LT_63
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.166
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_69
+  name: Relay_🇱🇹LT-🇳🇱NL_64
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹LT
+  name: Relay_🇱🇹LT-🇳🇱NL_65
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.154
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_70
+  name: 🇱🇹LT_66
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.69
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: Relay_🇱🇹LT-🇳🇱NL_71
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: Relay_🇱🇹LT-🇳🇱NL_67
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.181
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_72
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  name: Relay_🇱🇹LT-🇳🇱NL_68
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
-  server: 45.87.175.154
+  server: beesyar.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹LT
-  name: 🇱🇹LT_73
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  name: Relay_🇱🇹LT-🇳🇱NL_69
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.58
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇲🇩MD
+  name: 🇲🇩MD_70
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.93.173.218
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
-  name: 🇳🇱NL_74
+  name: 🇳🇱NL_71
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.217
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
-  name: 🇳🇱NL_75
+  name: 🇳🇱NL_72
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.138
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: 🇳🇱NL_76
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.240
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇳🇱NL
-  name: 🇳🇱NL_77
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.157
+  name: Relay_🇳🇱NL-🇬🇧GB_73
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
   type: ss
 - cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: 🇳🇱NL_78
+  name: 🇳🇱NL_74
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
-  name: 🇳🇱NL_79
+  name: 🇳🇱NL_75
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.138
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱NL
+  name: 🇳🇱NL_76
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.157
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱NL
+  name: 🇳🇱NL_77
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.240
+  type: ss
 - cipher: aes-256-cfb
   country: 🇵🇱PL
-  name: 🇵🇱PL_80
+  name: 🇵🇱PL_78
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇵🇱PL
+  name: 🇵🇱PL_79
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
   country: 🇵🇱PL
-  name: 🇵🇱PL_81
+  name: 🇵🇱PL_80
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
   country: 🇵🇹PT
-  name: 🇵🇹PT_82
+  name: 🇵🇹PT_81
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇴RO
-  name: 🇷🇴RO_83
+  name: 🇷🇴RO_82
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.237.38
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 🇷🇺RU_84
+  name: 🇷🇺RU_83
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: 🇷🇺RU_85
+  name: 🇷🇺RU_84
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: 🇷🇺RU_85
+  password: mSQiuT5jR17nyWgcXOPrTW
+  port: 8594
+  server: 77.105.166.12
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
@@ -685,15 +660,8 @@ proxies:
   server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 🇷🇺RU_87
-  password: mSQiuT5jR17nyWgcXOPrTW
-  port: 8594
-  server: 77.105.166.12
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🇸🇬SG
-  name: 🇸🇬SG_88
+  name: 🇸🇬SG_87
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
@@ -703,7 +671,7 @@ proxies:
   country: 🇸🇬SG
   h2-opts: {}
   http-opts: {}
-  name: Pool_🇸🇬SG_89
+  name: Pool_🇸🇬SG_88
   network: ws
   port: 443
   server: 202.79.161.188
@@ -717,6 +685,15 @@ proxies:
       HOST: www.32278117.xyz
     path: /path/170733132233
 - country: 🇸🇬SG
+  name: Relay_🇸🇬SG-🇮🇷IR_89
+  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
+  port: 25010
+  server: 8.148.194.255
+  skip-cert-verify: true
+  sni: 8.148.194.255
+  type: trojan
+  udp: true
+- country: 🇸🇬SG
   name: 🇸🇬SG_90
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -726,22 +703,15 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  country: 🇸🇮SI
-  name: 🇸🇮SI_91
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.244.150
-  type: ss
-- cipher: aes-256-cfb
   country: 🇸🇰SK
-  name: 🇸🇰SK_92
+  name: 🇸🇰SK_91
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇹🇷TR
-  name: 🇹🇷TR_93
+  name: 🇹🇷TR_92
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.123.101.241
@@ -751,7 +721,7 @@ proxies:
   country: 🇹🇼TW
   h2-opts: {}
   http-opts: {}
-  name: 🇹🇼TW_94
+  name: 🇹🇼TW_93
   network: tcp
   port: 20788
   server: 45.121.48.174
@@ -760,129 +730,136 @@ proxies:
   uuid: bfc630aa-4598-4481-9338-cac15e3e6b65
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇦UA
-  name: Relay_🇺🇦UA-🇺🇦UA_95
+  name: Relay_🇺🇦UA-🇺🇦UA_94
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_96
-  password: DKe9AXeFnNwBSvzdMF6Lhqwf8Aej9q1aT5qnvTLPoUEU5NPgeHwkDeaFccUo8Ne7UtpzKwq9KEZfqMxXS1KRxpHxnMfXfdRq
-  port: 40565
-  server: 94.131.22.134
+  name: 🇺🇸US_95
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_97
+  name: 🇺🇸US_96
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.70
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇳🇱NL_98
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  name: 🇺🇸US_97
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.158.171.60
+  server: 45.158.171.136
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 🇺🇸US_99
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 171.22.254.17
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_100
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_101
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸US
-  name: Relay_🇺🇸US-🇳🇱NL_102
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 🇺🇸US_103
+  name: 🇺🇸US_98
   password: amazonskr05
   port: 443
   server: 34.203.13.163
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_104
-  password: cvII85TrW6n0OGyfpHVS1u
+  name: Relay_🇺🇸US-🇳🇱NL_99
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.158.171.136
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_105
-  password: TG:@Enkelte_notif&&TG:@Notif_Chat
-  port: 34045
-  server: 152.53.2.128
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_106
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
+  server: 45.158.171.66
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_107
-  password: zI7kiNZ0UfV9cXB73a4nRD
-  port: 24206
-  server: 164.92.156.41
+  name: Relay_🇺🇸US-🇺🇸US_100
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 🇺🇸US_108
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 🇺🇸US_109
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 🇺🇸US_110
+  name: 🇺🇸US_101
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_111
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
+  name: Relay_🇺🇸US-🇳🇱NL_102
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.60
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_103
+  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  port: 4021
+  server: cgroup.node2.s.nodelist-airport.com
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_104
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_105
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 🇺🇸US_112
+  name: 🇺🇸US_106
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 171.22.254.17
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 🇺🇸US_107
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_108
+  password: TG:@Enkelte_notif&&TG:@Notif_Chat
+  port: 34045
+  server: 152.53.2.128
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: 🇺🇸US_109
+  password: zI7kiNZ0UfV9cXB73a4nRD
+  port: 24206
+  server: 164.92.156.41
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 🇺🇸US_110
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 🇺🇸US_111
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 🇺🇸US_112
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
   type: ss
 - cipher: aes-192-ctr
   country: 🇺🇸US
@@ -899,13 +876,55 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸US_114
-  network: ws
-  port: 20086
-  server: 173.208.51.193
+  name: Relay_🇺🇸US-🇺🇸US_114
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
   skip-cert-verify: true
   type: vmess
-  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_115
+  network: ws
+  port: 3306
+  server: blog.aihi.uk
+  servername: blog.aihi.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fdf7dcdc-96f0-4d36-a412-1866c737c3fe
+  ws-opts:
+    headers:
+      HOST: blog.aihi.uk
+    path: /ray
+- alterId: 64
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_116
+  network: tcp
+  port: 44883
+  server: 198.2.218.216
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸US_117
+  network: ws
+  port: 20086
+  server: 64.81.39.212
+  skip-cert-verify: true
+  type: vmess
+  uuid: a3efc510-c175-4b74-bc04-fe1d110a62bc
   ws-opts:
     path: /
 - alterId: 0
@@ -913,19 +932,21 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸US_115
-  network: tcp
-  port: 41100
-  server: 15.204.234.200
+  name: 🇺🇸US_118
+  network: ws
+  port: 20086
+  server: 64.81.30.225
   skip-cert-verify: true
   type: vmess
-  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+  uuid: 7f499074-3408-4840-b55b-91142735d2cc
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸US_116
+  name: 🇺🇸US_119
   network: ws
   port: 20086
   server: 64.81.30.24
@@ -939,68 +960,13 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸US_117
-  network: ws
-  port: 20086
-  server: 137.175.124.167
+  name: 🇺🇸US_120
+  network: tcp
+  port: 41100
+  server: 15.204.234.200
   skip-cert-verify: true
   type: vmess
-  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸US-🇬🇧GB_118
-  network: ws
-  port: 443
-  server: ip.sb
-  servername: fr.atlen.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2
-  ws-opts:
-    headers:
-      HOST: fr.atlen.dpdns.org
-    path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_119
-  network: ws
-  port: 20086
-  server: 050910.xyz
-  servername: 050910.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7e992138-4bae-44d7-893e-c33605c40d5f
-  ws-opts:
-    headers:
-      HOST: 050910.xyz
-    path: /
-- alterId: 32
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_120
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      HOST: vc.fly.dev
-    path: /vc
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -1008,11 +974,11 @@ proxies:
   http-opts: {}
   name: 🇺🇸US_121
   network: ws
-  port: 12269
-  server: 2.58.87.221
+  port: 20086
+  server: 38.12.23.251
   skip-cert-verify: true
   type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  uuid: 8d574201-8b97-4527-86a1-9c6d097c9e18
   ws-opts:
     path: /
 - alterId: 0
@@ -1029,18 +995,20 @@ proxies:
   uuid: a36885a5-6d97-45d7-85c1-cc11e1cece4a
   ws-opts:
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_123
-  network: tcp
-  port: 44883
-  server: 198.2.218.216
+  name: 🇺🇸US_123
+  network: ws
+  port: 12269
+  server: 2.58.87.221
   skip-cert-verify: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -1060,19 +1028,15 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇺🇸US-🇫🇷FR_125
+  name: 🇺🇸US_125
   network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  servername: Fra-Vp-123.BLaZECLOUD.Site
+  port: 20086
+  server: 173.208.51.193
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
-    headers:
-      HOST: Fra-Vp-123.BLaZECLOUD.Site
-    path: /linvkws
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -1081,10 +1045,10 @@ proxies:
   name: 🇺🇸US_126
   network: ws
   port: 20086
-  server: 38.12.23.251
+  server: 137.175.124.167
   skip-cert-verify: true
   type: vmess
-  uuid: 8d574201-8b97-4527-86a1-9c6d097c9e18
+  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
   ws-opts:
     path: /
 - alterId: 0
@@ -1104,48 +1068,26 @@ proxies:
     headers:
       HOST: v2ray.codefyinc.com
     path: /vmessws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸US_128
-  network: ws
-  port: 20086
-  server: 64.81.39.212
-  skip-cert-verify: true
-  type: vmess
-  uuid: a3efc510-c175-4b74-bc04-fe1d110a62bc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸US_129
-  network: ws
-  port: 20086
-  server: 64.81.30.225
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7f499074-3408-4840-b55b-91142735d2cc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_130
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - country: 🇺🇸US
-  name: 🇺🇸US_131
+  name: Relay_🇺🇸US-🇺🇸US_128
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-us4.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_129
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 25131
+  server: starlink-us2.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
+- country: 🇺🇸US
+  name: 🇺🇸US_130
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 192.3.107.252
@@ -1154,7 +1096,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_132
+  name: Relay_🇺🇸US-🇺🇸US_131
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 185.208.207.217
@@ -1167,7 +1109,7 @@ proxies:
   country: 🇻🇬VG
   h2-opts: {}
   http-opts: {}
-  name: 🇻🇬VG_133
+  name: 🇻🇬VG_132
   network: ws
   port: 25808
   server: 46.243.3.42
@@ -1178,14 +1120,14 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇻🇳VN
-  name: 🇻🇳VN_134
+  name: 🇻🇳VN_133
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.163.218.2
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇻🇳VN
-  name: 🇻🇳VN_135
+  name: 🇻🇳VN_134
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 103.163.218.2
@@ -1193,7 +1135,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_136
+  name: Relay_🇿🇦ZA-🇿🇦ZA_135
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -1205,7 +1147,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-二爷
-  name: Relay_🇿🇦ZA-🇿🇦ZA_137
+  name: Relay_🇿🇦ZA-🇿🇦ZA_136
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -1216,182 +1158,168 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_138
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_139
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.37
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_140
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.31
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🏁ZZ
-  name: 🏁ZZ_141
-  password: VpKABcOpNNA0l5G2AVOmw8
-  port: 62685
-  server: 213.109.147.242
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_142
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.26
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_143
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.20
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_144
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.30
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_145
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.18
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_146
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.20
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_147
+  name: 🏁ZZ_137
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.32
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_148
+  name: 🏁ZZ_138
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.27
+  server: 103.186.154.35
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_149
+  name: 🏁ZZ_139
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.31
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_140
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.26
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_141
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.20
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_142
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.30
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_143
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.18
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_144
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.20
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🏁ZZ
+  name: 🏁ZZ_145
+  password: VpKABcOpNNA0l5G2AVOmw8
+  port: 62685
+  server: 213.109.147.242
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_146
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_147
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.28
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_150
+  name: 🏁ZZ_148
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.38
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_151
+  name: 🏁ZZ_149
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.22
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_152
+  name: 🏁ZZ_150
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.23
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_153
+  name: 🏁ZZ_151
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.33
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_154
+  name: 🏁ZZ_152
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.19
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_155
+  name: 🏁ZZ_153
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.18
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_156
+  name: 🏁ZZ_154
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.29
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: 🏁ZZ_157
+  name: 🏁ZZ_155
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.35
+  server: 103.186.154.37
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 🏁ZZ_156
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.27
   type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_158
+  name: Relay_🏁ZZ-🇺🇸US_157
   network: ws
-  port: 443
-  server: cf.fovi.tk
-  servername: foxpol.fovi.tk
+  port: 2083
+  server: rak1ding.89060004.xyz
+  servername: rak1d3.988988.shop
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
   ws-opts:
     headers:
-      HOST: foxpol.fovi.tk
-    path: /eisasqa
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 🏁ZZ_159
-  network: ws
-  port: 20086
-  server: 23.184.200.69
-  skip-cert-verify: true
-  type: vmess
-  uuid: ed715e84-81a0-40c5-bb6a-4d8d341e5cfa
-  ws-opts:
+      HOST: rak1d3.988988.shop
     path: /
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_160
+  name: Relay_🏁ZZ-🇺🇸US_158
   network: ws
   port: 2053
   server: 104.21.3.189
@@ -1409,7 +1337,25 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇮🇩ID_161
+  name: Relay_🏁ZZ-🇺🇸US_159
+  network: ws
+  port: 443
+  server: cf.fovi.tk
+  servername: foxpol.fovi.tk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      HOST: foxpol.fovi.tk
+    path: /eisasqa
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇮🇩ID_160
   network: ws
   port: 8443
   server: 104.17.121.140
@@ -1427,18 +1373,35 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
+  name: Relay_🏁ZZ-🇨🇦CA_161
+  network: ws
+  port: 80
+  server: test.flha.ru
+  servername: test.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d
+  ws-opts:
+    headers:
+      HOST: test.flha.ru
+    path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
   name: Relay_🏁ZZ-🇺🇸US_162
   network: ws
   port: 2083
-  server: rak1ding.89060004.xyz
-  servername: rak1d3.988988.shop
+  server: cc2dash.89060004.xyz
+  servername: cc2d3.89060004.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
   ws-opts:
     headers:
-      HOST: rak1d3.988988.shop
+      HOST: cc2d3.89060004.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -1457,39 +1420,4 @@ proxies:
   ws-opts:
     headers:
       HOST: cc2d1.89060004.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇨🇦CA_164
-  network: ws
-  port: 80
-  server: test.flha.ru
-  servername: test.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d
-  ws-opts:
-    headers:
-      HOST: test.flha.ru
-    path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_165
-  network: ws
-  port: 2083
-  server: cc2dash.89060004.xyz
-  servername: cc2d3.89060004.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  ws-opts:
-    headers:
-      HOST: cc2d3.89060004.xyz
     path: /

@@ -1,19 +1,55 @@
-# Update: 2025-08-13 08:49
-# Source 45 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/hysteria), 18
+# Update: 2025-08-14 08:49
+# Source 45 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/hysteria), 25
 proxies:
-- name: 🔄 LATEST-UPDATE 📅 WED-22-MORDA...
+- name: 🔄 LATEST-UPDATE 📅 THU-23-MORDA...
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: bbccaaa-cbaa-cbaa-abcd-bccbbaacaacb
+  uuid: acbacba-abac-cbaa-bdca-aabbcbcacacb
 - name: 🔒 HYSTERIA-UDP 🇯🇵 JP-153.121.4...
   password: 262100bd-a0c7-4412-a62d-a07d01f11a6a
   port: 443
   server: 153.121.42.218
   skip-cert-verify: true
   sni: www.microsoft.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-45.136.24...
+  obfs: salamander
+  obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D
+  password: b7fd9c0c-18f8-426f-8ac7-f9aa3da2e214
+  port: 80
+  server: 45.136.245.177
+  skip-cert-verify: true
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-203.174.8...
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-108.181.5...
+  password: dongtaiwang.com
+  port: 63015
+  server: 108.181.5.130
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-45.207.22...
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-208.87.24...
+  password: dongtaiwang.com
+  port: 22222
+  server: 208.87.243.187
+  skip-cert-verify: true
+  sni: www.bing.com
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇳🇱 NL-[2a14:3f8...
   obfs: salamander
@@ -24,44 +60,18 @@ proxies:
   skip-cert-verify: true
   sni: YAPC-1.afshin.ir
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇷🇺 RU-45.136.24...
-  obfs: salamander
-  obfs-password: OGU1NTEyMGE2ZDhkODdhOQ%3D%3D
-  password: b7fd9c0c-18f8-426f-8ac7-f9aa3da2e214
-  port: 80
-  server: 45.136.245.177
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-198.23.13...
+  password: 7992f244-8c2c-4a1a-923f-2e116e90149b
+  port: 443
+  server: 198.23.130.211
   skip-cert-verify: true
+  sni: file-oss-ccs-02.dafei.de
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇫🇷 FR-172.252.2...
+- name: 🔒 HYSTERIA-UDP 🇺🇦 UA-185.126.2...
   password: 942b9cb8-92fa-46ac-ae91-f69c8234434b
-  port: 46502
-  server: 172.252.236.213
+  port: 59494
+  server: 185.126.255.78
   sni: real.getafreenode.sbs
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.15...
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 192.18.150.167
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: '100'
-  name: 🔒 HYSTERIA-UDP 🇺🇸 US-208.87.24...
-  port: 15823
-  server: 208.87.243.187
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '100'
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-108.181.5...
-  password: dongtaiwang.com
-  port: 63015
-  server: 108.181.5.130
-  skip-cert-verify: true
-  sni: apple.com
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇫🇷 FR-51.159.11...
   password: dongtaiwang.com
@@ -70,40 +80,18 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-45.207.22...
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-54.169.14...
+  password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
+  port: 2166
+  server: 54.169.144.240
   skip-cert-verify: true
-  sni: hk.nfsn666.gq
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5...
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-54.169.22...
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 54.169.224.169
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇸 US-198.23.13...
-  password: 7992f244-8c2c-4a1a-923f-2e116e90149b
-  port: 443
-  server: 198.23.130.211
-  skip-cert-verify: true
-  sni: file-oss-ccs-02.dafei.de
-  type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-154.204.1...
-  password: cc83a02b-90ea-403b-9c76-27e4be95f637
-  port: 50256
-  server: 154.204.181.230
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: '🔒 HYSTERIA-UDP 🇺🇸 US-208.87.24... #1'
-  password: dongtaiwang.com
-  port: 22222
-  server: 208.87.243.187
-  skip-cert-verify: true
-  sni: www.bing.com
+  sni: bing.com
   type: hysteria2
 - name: 🔒 HYSTERIA-UDP 🇺🇸 US-192.227.1...
   password: 5CBqBh6MeDq6GajcilBiDg==
@@ -112,18 +100,82 @@ proxies:
   skip-cert-verify: true
   sni: 192-227-152-86.nip.io
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-203.174.8...
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
+- name: 🔒 HYSTERIA-UDP 🇺🇸 US-129.146.2...
+  password: 51de9de9-3445-4dd3-8ac9-f42dc0baa230
+  port: 443
+  server: 129.146.215.233
+  skip-cert-verify: true
+  sni: cn.cremedelamer.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-175.41.15...
+  password: Y5kSCRNcOSz5YQUkjehzVXeT2mk
+  port: 19298
+  server: 175.41.154.215
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.15...
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 192.18.150.167
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 🔒 HYSTERIA-UDP 🇺🇦 UA-185.126.2...
+- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-47.239.22...
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇭🇰 HK-154.204.1...
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: '100'
+  name: '🔒 HYSTERIA-UDP 🇺🇸 US-208.87.24... #1'
+  port: 15823
+  server: 208.87.243.187
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '100'
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: '50'
+  name: 🔒 HYSTERIA-UDP 🇺🇸 US-108.181.2...
+  port: 37872
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '10'
+- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-54.255.14...
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇫🇷 FR-172.252.2...
   password: 942b9cb8-92fa-46ac-ae91-f69c8234434b
-  port: 59494
-  server: 185.126.255.78
+  port: 46502
+  server: 172.252.236.213
   sni: real.getafreenode.sbs
+  type: hysteria2
+- name: 🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5...
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
   type: hysteria2
 - name: 👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ...
   network: tcp
@@ -131,4 +183,4 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: abcabca-aacb-acba-bacd-ccacbbabbaca
+  uuid: aabccab-caba-bcaa-acdb-babbcacbacac
