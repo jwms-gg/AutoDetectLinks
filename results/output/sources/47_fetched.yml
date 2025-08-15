@@ -1,118 +1,58 @@
-# Update: 2025-08-14 08:49
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 26
+# Update: 2025-08-15 08:50
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 25
 proxies:
-- name: '🔄 LATEST-UPDATE 📅 THU-23-MORDA... #2'
+- name: '🔄 LATEST-UPDATE 📅 FRI-24-MORDA... #2'
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: acbacba-abac-cbaa-bdca-aabbcbcacacb
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🇺🇸 US-160.153.0.11... #1'
+  uuid: cbbacaa-caba-abca-bcad-cbcaababbcac
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168...
   network: ws
-  port: 2083
-  server: 160.153.0.11
-  servername: fraG2.MAhSAAmINI.cC
+  port: 443
+  server: 172.66.168.226
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 5e802e1a-3c82-41ec-aaca-f6371b8b86a5
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
   ws-opts:
     headers:
-      Host: fraG2.MAhSAAmINI.cC
-    path: /CPI
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.98.34.2...
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.81.9...
   network: xhttp
   port: 443
-  server: 91.98.34.205
+  server: 91.99.81.95
   tls: false
   type: vless
   uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
   ws-opts:
     path: /sc
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.98.35.4...
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #1'
+  network: ws
+  port: 443
+  server: 172.66.168.225
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-15.204.31....
   network: xhttp
   port: 443
-  server: 91.98.35.4
-  tls: false
-  type: vless
-  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
-  ws-opts:
-    path: /sc
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.3.72...
-  network: xhttp
-  port: 443
-  server: 91.99.3.72
-  tls: false
-  type: vless
-  uuid: 92b022a6-67f3-4406-840b-8fec2f4aace8
-  ws-opts:
-    path: /awd
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.169....
-  network: xhttp
-  port: 8443
-  server: 91.99.169.64
-  tls: false
-  type: vless
-  uuid: b1fe7cec-3028-4cf0-b1c3-af55efd23ad8
-  ws-opts:
-    path: /xhttp
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
-  network: grpc
-  port: 8880
-  server: 185.231.205.99
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.3.13...
-  network: xhttp
-  port: 443
-  server: 91.99.3.139
-  tls: false
-  type: vless
-  uuid: 0f7e89d6-9f35-4e94-ba4b-509a724dc177
-  ws-opts:
-    path: /ds
-- name: 🔒 VL-TCP-NA 🇬🇧 GB-54.38.214.56...
-  network: tcp
-  port: 37171
-  server: 54.38.214.56
-  tls: false
-  type: vless
-  uuid: 19199927-fb46-4203-8872-672fd1daca14
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.237....
-  network: xhttp
-  port: 443
-  server: 91.99.237.215
-  tls: false
-  type: vless
-  uuid: 0f7e89d6-9f35-4e94-ba4b-509a724dc177
-  ws-opts:
-    path: /ds
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.107.136.2...
-  network: tcp
-  port: 23114
-  server: 91.107.136.208
-  tls: false
-  type: vless
-  uuid: b6483285-7a02-4feb-b09c-540d0c6026fa
-- name: 🔒 VL-XHTTP-NA 🇺🇸 US-40.160.50....
-  network: xhttp
-  port: 443
-  server: 40.160.50.44
+  server: 15.204.31.27
   tls: false
   type: vless
   uuid: f6f442e3-69d1-4a83-bb78-241152eed859
   ws-opts:
     path: /sef
-- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #1'
-  network: grpc
-  port: 8880
-  server: 185.231.205.231
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #1'
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #3'
   network: ws
   port: 80
   server: 104.17.148.22
@@ -123,13 +63,195 @@ proxies:
     headers:
       Host: a.kadoo.sbs.
     path: /ShadowProxy66-ShadowProxy66
-- name: 🔒 VL-TCP-NA 🇫🇷 FR-54.37.205.0:...
-  network: tcp
-  port: 59332
-  server: 54.37.205.0
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-40.160.10....
+  network: xhttp
+  port: 443
+  server: 40.160.10.251
   tls: false
   type: vless
-  uuid: d2dc2527-33d5-46f3-f39c-36da72fb1a62
+  uuid: f6f442e3-69d1-4a83-bb78-241152eed859
+  ws-opts:
+    path: /sef
+- name: 🔒 VL-TCP-NA 🇮🇷 IR-85.133.221.5...
+  network: tcp
+  port: 5151
+  server: 85.133.221.5
+  tls: false
+  type: vless
+  uuid: 13830dec-2abb-4efb-9509-d07805fc83ed
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #2'
+  network: ws
+  port: 443
+  server: 172.66.168.228
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #3'
+  network: ws
+  port: 443
+  server: 172.66.168.227
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #4'
+  network: ws
+  port: 443
+  server: 172.66.168.223
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #5'
+  network: ws
+  port: 443
+  server: 172.66.168.229
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-51.81.153....
+  network: xhttp
+  port: 443
+  server: 51.81.153.143
+  tls: false
+  type: vless
+  uuid: f6f442e3-69d1-4a83-bb78-241152eed859
+  ws-opts:
+    path: /sef
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #6'
+  network: ws
+  port: 443
+  server: 172.66.168.230
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #7'
+  network: ws
+  port: 443
+  server: 172.66.168.224
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 🔒 VL-XHTTP-TLS 🏴‍☠️ NA-104.17....
+  network: xhttp
+  port: 8443
+  server: 104.17.148.22
+  servername: uk-09.allhubb.info
+  tls: true
+  type: vless
+  uuid: 655a6041-0ab8-4a92-ad79-f0dba34f5ace
+  ws-opts:
+    headers:
+      Host: uk-09.allhubb.info
+    path: /
+- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168... #8'
+  network: ws
+  port: 443
+  server: 172.66.168.231
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #4'
+  network: ws
+  port: 80
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  uuid: 75b63c38-ba6a-4bc8-b1ce-eb7df9931faf
+  ws-opts:
+    headers:
+      Host: a.kadoo.sbs.
+    path: /ShadowProxy66-ShadowProxy66
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.228...
+  network: ws
+  port: 443
+  server: 104.16.228.91
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.26....
+  network: ws
+  port: 443
+  server: 104.18.26.90
+  servername: cloudgetservice.mcloudservice.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 7db68497-fbfd-40a3-ac95-96d2ee28b709
+  ws-opts:
+    headers:
+      Host: maxnetvipap-de145.maxnetservices.online
+    path: /linkws
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.107.136.2...
+  network: tcp
+  port: 23114
+  server: 91.107.136.208
+  tls: false
+  type: vless
+  uuid: b6483285-7a02-4feb-b09c-540d0c6026fa
+- name: 🔒 VL-XHTTP-NA 🇺🇸 US-15.204.217...
+  network: xhttp
+  port: 443
+  server: 15.204.217.58
+  tls: false
+  type: vless
+  uuid: f6f442e3-69d1-4a83-bb78-241152eed859
+  ws-opts:
+    path: /sef
 - alpn:
   - http/1.1
   client-fingerprint: firefox
@@ -152,94 +274,10 @@ proxies:
   tls: false
   type: vless
   uuid: 8ba3c494-c5b9-46b0-9bb9-306b8fdeb9d7
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.117.22...
-  network: tcp
-  port: 443
-  server: 91.99.117.223
-  tls: false
-  type: vless
-  uuid: 04a68e50-8c5c-447d-8416-9cc075e78a85
-  ws-opts:
-    headers:
-      Host: zula.ir
-- client-fingerprint: chrome
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.144... #2'
-  network: ws
-  port: 2096
-  server: 104.19.144.33
-  servername: E4aRpUi7Xe.GiTi4.OrG
-  tls: true
-  type: vless
-  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
-  ws-opts:
-    headers:
-      Host: E4aRpUi7Xe.GiTi4.OrG
-    path: /
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148... #7'
-  network: ws
-  port: 8443
-  server: 104.17.148.22
-  servername: pq-2.access.name.ng
-  tls: true
-  type: vless
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-  ws-opts:
-    headers:
-      Host: pq-2.access.name.ng
-    path: /
-- name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #8'
-  network: ws
-  port: 8443
-  server: 104.17.147.22
-  servername: pq-2.access.name.ng
-  tls: true
-  type: vless
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-  ws-opts:
-    headers:
-      Host: pq-2.access.name.ng
-    path: /
-- name: '🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.14... #2'
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  tls: false
-  type: vless
-  uuid: 75b63c38-ba6a-4bc8-b1ce-eb7df9931faf
-  ws-opts:
-    headers:
-      Host: a.kadoo.sbs.
-    path: /ShadowProxy66-ShadowProxy66
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.216.23...
-  network: tcp
-  port: 443
-  server: 91.99.216.235
-  tls: false
-  type: vless
-  uuid: bc4f49dc-2c50-49ac-b8fa-d3020a5e65de
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #2'
-  network: grpc
-  port: 8880
-  server: 185.231.205.246
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.185....
-  network: xhttp
-  port: 443
-  server: 91.99.185.131
-  tls: false
-  type: vless
-  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
-  ws-opts:
-    path: /sc
 - name: '👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ... #2'
   network: tcp
   port: 8080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: aabccab-caba-bcaa-acdb-babbcacbacac
+  uuid: babacca-baac-acab-dbca-acbcbaabcacb

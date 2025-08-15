@@ -1,5 +1,5 @@
-# Update: 2025-08-14 08:49
-# Source 62 (https://pxypool.131433.xyz/clash/proxies), 2
+# Update: 2025-08-15 08:50
+# Source 62 (https://pxypool.131433.xyz/clash/proxies), 4
 proxies:
 - cipher: aes-256-cfb
   name: Pool__01
@@ -11,12 +11,46 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- country: 🇸🇬SG
-  name: Relay_🇸🇬SG-🇮🇷IR_09
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_13
+  obfs: http_simple
+  password: Uk92CS
+  port: 13000
+  protocol: auth_aes128_sha1
+  server: nm3.boom.party
+  type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇬🇧GB_17
+  network: ws
+  port: 80
+  server: test2.flha.ru
+  servername: test2.flha.ru
   skip-cert-verify: true
-  sni: 8.148.194.255
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84
+  ws-opts:
+    headers:
+      HOST: test2.flha.ru
+    path: /15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🏁ZZ-🇬🇧GB_19
+  network: ws
+  port: 80
+  server: test3.flha.ru
+  servername: test3.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
+  ws-opts:
+    headers:
+      HOST: test3.flha.ru
+    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
