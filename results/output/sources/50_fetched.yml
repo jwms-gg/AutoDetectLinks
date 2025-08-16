@@ -1,5 +1,5 @@
-# Update: 2025-08-15 08:50
-# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 698
+# Update: 2025-08-16 08:45
+# Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 678
 proxies:
 - name: 🅼🅴🅷🅳🅸
   network: ws
@@ -23,13 +23,6 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: '%2FStupid-World%2F103.106.228.126-2053'
-- name: 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
-  password: LG7HKcZFIJ
-  port: 110
-  server: sws.ftpcomand.com
-  skip-cert-verify: false
-  sni: sws.ftpcomand.com
-  type: trojan
 - name: '🇭🇰 香港4|@ripaojiedian #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 447
@@ -72,12 +65,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '🇸🇬 新加坡3|@ripaojiedian #2'
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
-  skip-cert-verify: true
-  type: trojan
 - name: '🇺🇸 美国|@ripaojiedian #4'
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
   port: 443
@@ -99,26 +86,19 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  password: tunnel-astrovpn_official-tr
-  port: 8441
-  server: tr-1.stunnel.cc
+- name: '🇩🇰_DK_丹麦->🇺🇸_US_美国 #5'
+  password: a134e3de-b25a-4020-9998-05fa6b715f1a
+  port: 8443
+  server: pubg.ac
   skip-cert-verify: true
-  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.monster.JoinTelegram-------------AstroVPN_Official----------Join.ir
+  sni: cdn-node-oss-99.paofu.de
   type: trojan
 - name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 104.21.72.109
+  password: a134e3de-b25a-4020-9998-05fa6b715f1a
+  port: 8443
+  server: pubg.ac
   skip-cert-verify: false
-  sni: vpn.stupidworld.web.id
-  type: trojan
-- name: 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-  password: Aimer
-  port: 443
-  server: 43.160.202.92
-  skip-cert-verify: false
-  sni: epgb.aimercc.dpdns.org
+  sni: cdn-node-oss-99.paofu.de
   type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -147,20 +127,6 @@ proxies:
   server: 172.67.181.173
   skip-cert-verify: false
   sni: vpn.stupidworld.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  skip-cert-verify: false
-  sni: vpn.stupidworld.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
-  password: Aimer
-  port: 443
-  server: 47.79.85.78
-  skip-cert-verify: false
-  sni: epgb.aimercc.dpdns.org
   type: trojan
 - name: 🇭🇰 香港4|@stairnode
   password: 253bc477d4e43c209f2d427272968280
@@ -204,12 +170,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇸🇬 新加坡3|@stairnode
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
-  skip-cert-verify: false
-  type: trojan
 - name: 🇺🇸 美国|@stairnode
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
   port: 443
@@ -231,29 +191,11 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '🇳🇱_NL_荷兰 #3'
-  password: LG7HKcZFIJ
-  port: 110
-  server: sws.ftpcomand.com
-  skip-cert-verify: true
-  sni: sws.ftpcomand.com
-  type: trojan
-- name: '未知 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.43
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US #5'
+- name: '未知 #4'
   network: ws
   password: Aimer
   port: 443
-  server: 172.67.77.127
+  server: 188.164.159.18
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
@@ -266,236 +208,18 @@ proxies:
   server: 36.156.102.125
   sni: www.baidu.com
   type: trojan
-- name: 'US2 #1'
+- name: 未知2
   network: ws
   password: Aimer
-  port: 2087
-  server: 104.19.60.99
+  port: 2083
+  server: 188.164.159.91
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US3
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 199.34.228.71
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸US美国
-  password: 253bc477d4e43c209f2d427272968280
-  port: 347
-  server: 36.156.102.125
-  sni: www.baidu.com
-  type: trojan
 - name: 未知3
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 45.67.215.217
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸US美国2
-  network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  sni: xXcdvFgt.191268.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xXcdvFgt.191268.XYz
-    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
-- name: 未知4
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇭🇰HK香港2
-  password: Aimer
-  port: 443
-  server: 43.160.202.92
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-- name: 🇺🇸US美国3
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 104.21.72.109
-  sni: vpn.stupidworld.web.id
-  type: trojan
-- name: 🇰🇷KR韩国
-  password: Aimer
-  port: 38880
-  server: 59.19.192.51
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-- name: US4
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 155.46.213.38
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知6
-  network: ws
-  password: Aimer
-  port: 21301
-  server: 175.212.51.220
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US5
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.175
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知7
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US6
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 108.165.152.59
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知8
-  network: ws
-  password: Aimer
-  port: 12902
-  server: 121.167.146.253
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知9
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 154.197.64.219
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US7
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.26.182.37
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US8
-  network: ws
-  password: Aimer
-  port: 11000
-  server: 154.23.172.19
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇭🇰HK香港3
-  password: 253bc477d4e43c209f2d427272968280
-  port: 444
-  server: 36.156.102.125
-  sni: www.ithome.com
-  type: trojan
-- name: US9
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 162.120.94.232
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知10
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.93.251
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知11
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 5.182.85.255
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱NL荷兰 1.1MB/s
-  password: LG7HKcZFIJ
-  port: 110
-  server: sws.ftpcomand.com
-  sni: sws.ftpcomand.com
-  type: trojan
-- name: 🇰🇷KR韩国2
-  password: Aimer
-  port: 10251
-  server: 61.76.23.133
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-- name: 未知12
   network: ws
   password: Aimer
   port: 12562
@@ -506,35 +230,90 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US10
+- name: 未知4
   network: ws
   password: Aimer
-  port: 443
-  server: 199.34.228.187
+  port: 21301
+  server: 175.212.51.220
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸US美国6
-  password: Aimer
-  port: 443
-  server: 47.79.35.191
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-- name: 未知13
+- name: 'US #4'
   network: ws
   password: Aimer
-  port: 443
-  server: 31.43.179.27
+  port: 2087
+  server: 108.165.152.59
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知14
+- name: 🇸🇬SG新加坡
+  password: 253bc477d4e43c209f2d427272968280
+  port: 406
+  server: 36.156.102.125
+  sni: www.baidu.com
+  type: trojan
+- name: 未知6
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 115.22.115.218
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US3
+  network: ws
+  password: Aimer
+  port: 20082
+  server: 107.173.111.232
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知7
+  network: ws
+  password: Aimer
+  port: 443
+  server: 27.50.49.136
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知8
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 211.57.146.108
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US4
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知9
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -545,18 +324,62 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: 未知15
+- name: 未知10
   network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  sni: aio.zipzap.biz.id
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
-      Host: aio.zipzap.biz.id
-    path: /aioproxybot/129.150.49.58-18650
-- name: US11
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知11
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.197.64.104
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知12
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.43
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知13
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.239
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知14
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.98
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US5
   network: ws
   password: 0F22D008-24D4-4DFE-947B-8D2FD64CD24C
   port: 2053
@@ -567,7 +390,101 @@ proxies:
     headers:
       Host: t.hongkong6.qzz.io
     path: /
-- name: US12
+- name: US6
+  network: ws
+  password: Aimer
+  port: 443
+  server: 199.34.228.187
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US7
+  network: ws
+  password: Aimer
+  port: 20080
+  server: 192.210.207.89
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知16
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.138
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸US美国2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 347
+  server: 36.156.102.125
+  sni: www.baidu.com
+  type: trojan
+- name: 未知17
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 77.232.140.114
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知18
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.233
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US8
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 161.145.150.29
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US9
+  network: ws
+  password: Aimer
+  port: 11000
+  server: 154.23.172.19
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知19
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 46.254.93.211
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US10
   network: ws
   password: Aimer
   port: 2053
@@ -578,11 +495,55 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知17
+- name: US11
   network: ws
   password: Aimer
   port: 2083
-  server: 188.164.159.138
+  server: 108.165.152.78
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知20
+  network: ws
+  password: Aimer
+  port: 12902
+  server: 121.167.146.253
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知21
+  network: ws
+  password: Aimer
+  port: 12483
+  server: 222.105.100.2
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知22
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US12
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.202
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
@@ -595,128 +556,23 @@ proxies:
   server: pubg.ac
   sni: cdn-node-oss-99.paofu.de
   type: trojan
-- name: 未知18
+- name: 未知23
   network: ws
   password: Aimer
-  port: 50000
-  server: 211.57.146.108
+  port: 2083
+  server: 103.116.7.67
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知19
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US13 #1'
-  network: ws
-  password: Aimer
-  port: 80
-  server: 67.226.221.102
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵JP日本2
-  password: 253bc477d4e43c209f2d427272968280
-  port: 409
-  server: 36.156.102.78
-  sni: 1-dy.ixigua.com
-  type: trojan
-- name: 🇯🇵JP日本3
+- name: 🇯🇵JP日本
   password: 253bc477d4e43c209f2d427272968280
   port: 461
   server: 36.156.102.125
   sni: www.baidu.com
   type: trojan
-- name: US14
-  network: ws
-  password: Aimer
-  port: 20082
-  server: 107.173.111.232
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'HK #5'
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 154.211.8.227
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知21
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.98
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US15
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 108.165.152.78
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US16
-  network: ws
-  password: Aimer
-  port: 20080
-  server: 192.210.207.89
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知22
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.239
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知23
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 5.182.84.50
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
 - name: 未知24
   network: ws
   password: Aimer
@@ -728,112 +584,13 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 🇸🇬SG新加坡
+- name: 🇺🇸US美国4
   password: 253bc477d4e43c209f2d427272968280
-  port: 1256
-  server: 36.156.102.125
+  port: 22006
+  server: 36.156.102.67
   sni: www.baidu.com
   type: trojan
-- name: US17
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 161.145.150.29
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US18
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 108.165.152.202
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US19
-  network: ws
-  password: Aimer
-  port: 443
-  server: 172.64.35.66
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '未知25 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 188.164.159.91
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '未知26 #3'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US20
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 135.84.64.36
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知27
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 154.197.64.196
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知28
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 27.50.49.37
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知29
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 188.164.159.55
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US21
+- name: 'US13 #1'
   network: ws
   password: Aimer
   port: 12266
@@ -844,156 +601,29 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US22
-  network: ws
-  password: Aimer
-  port: 443
-  server: kip.ns.cloudflare.com
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US23
+- name: '未知26 #3'
   network: ws
   password: Aimer
   port: 2087
-  server: 167.68.5.248
+  server: 46.254.93.251
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知31
-  network: ws
-  password: Aimer
-  port: 12483
-  server: 222.105.100.2
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知32
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.197.64.233
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '未知33 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 86.38.214.186
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇸🇬SG新加坡2
-  password: 253bc477d4e43c209f2d427272968280
-  port: 406
-  server: 36.156.102.125
-  sni: www.baidu.com
-  type: trojan
-- name: 未知35
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 103.116.7.67
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '未知36 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 27.50.49.136
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸US美国8
-  password: Aimer
-  port: 443
-  server: 47.79.85.78
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-- name: 未知37
-  network: ws
-  password: Aimer
-  port: 12127
-  server: 220.72.106.154
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知38
+- name: 未知27
   network: ws
   password: Aimer
   port: 2096
-  server: 92.243.74.23
+  server: 188.164.159.55
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知39
-  network: ws
-  password: Aimer
-  port: 10240
-  server: 210.222.78.191
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US24
-  network: ws
-  password: Aimer
-  port: 443
-  server: 47.79.38.17
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 未知40
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 115.22.115.218
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 🇸🇬SG新加坡3
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
-  type: trojan
-- name: US25
+- name: US14
   network: ws
   password: Aimer
   port: 443
@@ -1004,51 +634,162 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US26
+- name: 未知28
   network: ws
   password: Aimer
-  port: 2087
-  server: 108.165.152.1
+  port: 2096
+  server: 5.182.84.50
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知41
+- name: 未知29
   network: ws
   password: Aimer
-  port: 8080
-  server: 34.85.77.183
+  port: 443
+  server: 86.38.214.186
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知42
+- name: US15
   network: ws
   password: Aimer
   port: 8443
-  server: 154.197.64.104
+  server: 162.120.94.232
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 未知43
+- name: US16
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.64.36
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 🇭🇰HK香港2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 444
+  server: 36.156.102.125
+  sni: www.ithome.com
+  type: trojan
+- name: 未知30
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US17
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 155.46.213.38
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知32
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 211.224.100.145
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US18
+  network: ws
+  password: Aimer
+  port: 443
+  server: kip.ns.cloudflare.com
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US19
+  network: ws
+  password: Aimer
+  port: 80
+  server: 67.226.221.102
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US20
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 104.19.60.99
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US21
+  network: ws
+  password: Aimer
+  port: 443
+  server: 172.67.77.127
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知35
   network: ws
   password: Aimer
   port: 2053
-  server: 46.254.93.211
+  server: 176.124.223.40
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US27
+- name: 🇯🇵JP日本3
+  password: 253bc477d4e43c209f2d427272968280
+  port: 409
+  server: 36.156.102.78
+  sni: 1-dy.ixigua.com
+  type: trojan
+- name: '未知36 #2'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US22
   network: ws
   password: Aimer
   port: 443
@@ -1059,11 +800,110 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: US28
+- name: 'HK #4'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 154.211.8.227
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US23
   network: ws
   password: Aimer
   port: 2053
   server: 199.34.228.50
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US24
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.1
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US25
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.175
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知39
+  network: ws
+  password: Aimer
+  port: 8080
+  server: 34.85.77.183
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US26
+  network: ws
+  password: Aimer
+  port: 443
+  server: 172.64.35.66
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸US美国6
+  network: ws
+  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
+  port: 443
+  server: 172.67.214.21
+  sni: xXcdvFgt.191268.XYz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xXcdvFgt.191268.XYz
+    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
+- name: 未知40
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.219
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知41
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知42
+  network: ws
+  password: Aimer
+  port: 10240
+  server: 210.222.78.191
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
@@ -1081,24 +921,46 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: '未知46 #2'
+- name: 未知43
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: aio.zipzap.biz.id
+  sni: aio.zipzap.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aio.zipzap.biz.id
+    path: /aioproxybot/129.150.49.58-18650
+- name: 🇸🇬SG新加坡2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1256
+  server: 36.156.102.125
+  sni: www.baidu.com
+  type: trojan
+- name: US27
   network: ws
   password: Aimer
-  port: 50000
-  server: 211.224.100.145
+  port: 8443
+  server: 199.34.228.71
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸US美国10
-  password: 253bc477d4e43c209f2d427272968280
-  port: 22006
-  server: 36.156.102.67
-  sni: www.baidu.com
+- name: US28
+  network: ws
+  password: Aimer
+  port: 443
+  server: 47.79.38.17
+  sni: epgb.aimercc.dpdns.org
   type: trojan
-- name: 未知47
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知45
   network: ws
   password: Aimer
   port: 12288
@@ -1109,11 +971,55 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
+- name: '未知46 #2'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 27.50.49.37
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知47
+  network: ws
+  password: Aimer
+  port: 12127
+  server: 220.72.106.154
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
 - name: 未知48
   network: ws
   password: Aimer
+  port: 2087
+  server: 154.197.64.196
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 未知49
+  network: ws
+  password: Aimer
   port: 443
-  server: 188.164.159.18
+  server: 31.43.179.27
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560
+- name: US29
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.26.182.37
   sni: epgb.aimercc.dpdns.org
   type: trojan
   ws-opts:
@@ -1162,12 +1068,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '新加坡3|@ripaojiedian #3'
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
-  skip-cert-verify: true
-  type: trojan
 - name: '🇺🇸 美国|@ripaojiedian #5'
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -1194,7 +1094,7 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: '美国|@ripaojiedian #3'
+- name: '美国|@ripaojiedian #4'
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
   port: 443
@@ -1205,7 +1105,7 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: '%2FctdmgeIg3NII3ibrzzKXJGy3S1'
-- name: 'AM_speednode_0011 #5'
+- name: 'AM_speednode_0011 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1217,7 +1117,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0012 #5'
+- name: 'AM_speednode_0012 #4'
   network: ws
   password: Aimer
   port: 2096
@@ -1229,7 +1129,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0013 #5'
+- name: 'AM_speednode_0013 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1241,7 +1141,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0014 #5'
+- name: 'AM_speednode_0014 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1253,7 +1153,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0015 #5'
+- name: 'AM_speednode_0015 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1265,7 +1165,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0016 #5'
+- name: 'AM_speednode_0016 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1277,7 +1177,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0017 #5'
+- name: 'AM_speednode_0017 #4'
   network: ws
   password: Aimer
   port: 2096
@@ -1289,7 +1189,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'HK_speednode_0061 #5'
+- name: 'HK_speednode_0061 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -1301,7 +1201,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'HK_speednode_0062 #5'
+- name: 'HK_speednode_0062 #4'
   network: ws
   password: Aimer
   port: 2096
@@ -1313,7 +1213,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'JP_speednode_0067 #5'
+- name: 'JP_speednode_0067 #4'
   network: ws
   password: Aimer
   port: 8080
@@ -1325,7 +1225,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'JP_speednode_0069 #5'
+- name: 'JP_speednode_0069 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1421,7 +1321,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'KR_speednode_0077 #3'
+- name: 'KR_speednode_0077 #4'
   network: ws
   password: Aimer
   port: 12902
@@ -1445,7 +1345,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'KR_speednode_0079 #5'
+- name: 'KR_speednode_0079 #4'
   network: ws
   password: Aimer
   port: 21301
@@ -1457,7 +1357,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'KZ_speednode_0087 #5'
+- name: 'KZ_speednode_0087 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1469,7 +1369,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'LT_speednode_0096 #6'
+- name: 'LT_speednode_0096 #5'
   network: ws
   password: Aimer
   port: 443
@@ -1481,7 +1381,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0156 #5'
+- name: 'RU_speednode_0156 #4'
   network: ws
   password: Aimer
   port: 2096
@@ -1493,7 +1393,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0157 #5'
+- name: 'RU_speednode_0157 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -1505,7 +1405,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0158 #5'
+- name: 'RU_speednode_0158 #4'
   network: ws
   password: Aimer
   port: 2053
@@ -1517,7 +1417,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0159 #5'
+- name: 'RU_speednode_0159 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -1529,7 +1429,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0160 #6'
+- name: 'RU_speednode_0160 #5'
   network: ws
   password: Aimer
   port: 2053
@@ -1541,7 +1441,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0161 #6'
+- name: 'RU_speednode_0161 #5'
   network: ws
   password: Aimer
   port: 2096
@@ -1553,7 +1453,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0162 #6'
+- name: 'RU_speednode_0162 #5'
   network: ws
   password: Aimer
   port: 2087
@@ -1565,7 +1465,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0163 #7'
+- name: 'RU_speednode_0163 #6'
   network: ws
   password: Aimer
   port: 2053
@@ -1577,7 +1477,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SC_speednode_0165 #5'
+- name: 'SC_speednode_0165 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -1589,7 +1489,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SC_speednode_0166 #5'
+- name: 'SC_speednode_0166 #4'
   network: ws
   password: Aimer
   port: 8443
@@ -1601,7 +1501,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SC_speednode_0167 #5'
+- name: 'SC_speednode_0167 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1613,7 +1513,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SC_speednode_0168 #5'
+- name: 'SC_speednode_0168 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -1625,7 +1525,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0171 #5'
+- name: 'SG_speednode_0171 #4'
   network: ws
   password: Aimer
   port: 2096
@@ -1637,7 +1537,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0172 #5'
+- name: 'SG_speednode_0172 #4'
   network: ws
   password: Aimer
   port: 8443
@@ -1649,7 +1549,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0173 #5'
+- name: 'SG_speednode_0173 #4'
   network: ws
   password: Aimer
   port: 2053
@@ -1661,7 +1561,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0174 #5'
+- name: 'SG_speednode_0174 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1673,7 +1573,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0175 #5'
+- name: 'SG_speednode_0175 #4'
   network: ws
   password: Aimer
   port: 8443
@@ -1697,7 +1597,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0246 #8'
+- name: 'US_speednode_0246 #7'
   network: ws
   password: Aimer
   port: 12266
@@ -1709,7 +1609,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0249 #7'
+- name: 'US_speednode_0249 #6'
   network: ws
   password: Aimer
   port: 11000
@@ -1721,7 +1621,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0250 #5'
+- name: 'US_speednode_0250 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1733,7 +1633,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0254 #9'
+- name: 'US_speednode_0254 #8'
   network: ws
   password: Aimer
   port: 80
@@ -1769,7 +1669,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0259 #6'
+- name: 'US_speednode_0259 #7'
   network: ws
   password: 0F22D008-24D4-4DFE-947B-8D2FD64CD24C
   port: 2053
@@ -1781,7 +1681,7 @@ proxies:
     headers:
       Host: t.hongkong6.qzz.io
     path: /
-- name: 'US_speednode_0260 #7'
+- name: 'US_speednode_0260 #6'
   network: ws
   password: Aimer
   port: 2083
@@ -1793,7 +1693,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0261 #7'
+- name: 'US_speednode_0261 #6'
   network: ws
   password: Aimer
   port: 2053
@@ -1817,7 +1717,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0263 #5'
+- name: 'US_speednode_0263 #4'
   network: ws
   password: Aimer
   port: 443
@@ -1829,7 +1729,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0264 #7'
+- name: 'US_speednode_0264 #6'
   network: ws
   password: Aimer
   port: 2083
@@ -1853,7 +1753,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0266 #7'
+- name: 'US_speednode_0266 #5'
   network: ws
   password: Aimer
   port: 20082
@@ -1865,7 +1765,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0267 #8'
+- name: 'US_speednode_0267 #7'
   network: ws
   password: Aimer
   port: 2083
@@ -1877,7 +1777,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0268 #6'
+- name: 'US_speednode_0268 #5'
   network: ws
   password: Aimer
   port: 20080
@@ -1889,7 +1789,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0269 #6'
+- name: 'US_speednode_0269 #5'
   network: ws
   password: Aimer
   port: 2087
@@ -1901,7 +1801,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0270 #6'
+- name: 'US_speednode_0270 #5'
   network: ws
   password: Aimer
   port: 8443
@@ -1913,7 +1813,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0271 #6'
+- name: 'US_speednode_0271 #5'
   network: ws
   password: Aimer
   port: 2083
@@ -1925,7 +1825,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0272 #8'
+- name: 'US_speednode_0272 #7'
   network: ws
   password: Aimer
   port: 2053
@@ -1937,7 +1837,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0273 #8'
+- name: 'US_speednode_0273 #7'
   network: ws
   password: Aimer
   port: 2083
@@ -1949,7 +1849,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0274 #5'
+- name: 'US_speednode_0274 #4'
   network: ws
   password: Aimer
   port: 8443
@@ -1961,7 +1861,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0275 #6'
+- name: 'US_speednode_0275 #5'
   network: ws
   password: Aimer
   port: 443
@@ -1985,7 +1885,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0277 #6'
+- name: 'US_speednode_0277 #5'
   network: ws
   password: Aimer
   port: 2087
@@ -1997,7 +1897,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0278 #5'
+- name: 'US_speednode_0278 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -2009,7 +1909,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0279 #7'
+- name: 'US_speednode_0279 #6'
   network: ws
   password: Aimer
   port: 443
@@ -2102,7 +2002,7 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: '@Tunder_vpn #26'
+- name: '@Tunder_vpn #27'
   network: ws
   password: '123456'
   port: 8443
@@ -2161,7 +2061,7 @@ proxies:
   port: 443
   server: sg4.6n6.net
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #15'
+- name: '美国04 付费推荐：https://dafei.de #16'
   network: ws
   password: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
   port: 8443
@@ -2172,7 +2072,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #15'
+- name: '美国05 付费推荐：https://dafei.de #16'
   network: ws
   password: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
   port: 8443
@@ -2183,7 +2083,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #15'
+- name: '美国06 付费推荐：https://dafei.de #16'
   network: ws
   password: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
   port: 8443
@@ -2212,7 +2112,7 @@ proxies:
   port: 1935
   server: x1-sweden-linode-v2-71u92.devefun.org
   type: trojan
-- name: '@awlix_ir #80'
+- name: '@awlix_ir #82'
   network: tcp
   password: 1e63e585ab2fef3adcc9ea75a62abc23
   port: 443
@@ -2220,6 +2120,17 @@ proxies:
   skip-cert-verify: true
   sni: hezijiasuqi.com
   type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #100'
+  network: ws
+  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
+  port: 443
+  server: 185.18.250.117
+  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xn----pmcnaac0dkn0rb71nda.pages.dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
 - name: '@hopev2ray❤️‍🔥 #3'
   network: tcp
   password: 2543a880-48a1-11f0-8578-1239d0255272
@@ -2232,7 +2143,7 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #16'
+- name: '美国04 付费推荐：https://dafei.de #17'
   network: ws
   password: 27425750-5bf5-497b-92d4-16e67030e154
   port: 8443
@@ -2243,7 +2154,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #16'
+- name: '美国05 付费推荐：https://dafei.de #17'
   network: ws
   password: 27425750-5bf5-497b-92d4-16e67030e154
   port: 8443
@@ -2254,7 +2165,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #16'
+- name: '美国06 付费推荐：https://dafei.de #17'
   network: ws
   password: 27425750-5bf5-497b-92d4-16e67030e154
   port: 8443
@@ -2265,7 +2176,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #17'
+- name: '美国06 付费推荐：https://dafei.de #18'
   network: ws
   password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
   port: 8443
@@ -2277,7 +2188,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #17'
+- name: '美国04 付费推荐：https://dafei.de #18'
   network: ws
   password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
   port: 8443
@@ -2289,7 +2200,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #17'
+- name: '美国05 付费推荐：https://dafei.de #18'
   network: ws
   password: 27e473f8-d610-4b04-bdf7-d0c39b47c897
   port: 8443
@@ -2311,28 +2222,7 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
-- name: '@Hope_Net-join-us-on-Telegram #196'
-  network: ws
-  password: 2df56fd0-d1b7-4793-b877-acd356d960f7
-  port: 443
-  server: 172.67.204.84
-  sni: pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: download-93w.pages.dev
-    path: /Telegram@V2ray_Alpha/?ed=8080
-- name: '@Hope_Net-join-us-on-Telegram #197'
-  network: httpupgrade
-  password: 2f1f7fbf-f37d-4275-c014-298a83f4e5a8
-  port: 80
-  server: 104.17.148.22
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 1i5.diginoshops10.ir
-    path: /
-- name: '[🇨🇦]t.me/ConfigsHub #5'
+- name: '@Hope_Net-join-us-on-Telegram #101'
   network: httpupgrade
   password: 2f1f7fbf-f37d-4275-c014-298a83f4e5a8
   port: 80
@@ -2361,13 +2251,6 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #198'
-  network: tcp
-  password: '3648425794742788096'
-  port: 443
-  server: cool-meerkat.pig299.lat
-  sni: cool-meerkat.pig299.lat
-  type: trojan
 - name: '@V2rayNG3 #126'
   network: tcp
   password: 3817daf8-0f2b-412f-b87b-3efa585423e8
@@ -2392,7 +2275,7 @@ proxies:
   port: 443
   server: sg3.6n6.net
   type: trojan
-- name: '@awlix_ir #81'
+- name: '@awlix_ir #83'
   network: tcp
   password: 3r372
   port: 443
@@ -2405,19 +2288,13 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #199'
-  network: tcp
-  password: 41ed1447-0623-4e86-b159-aee5a6f67a1c
-  port: 29032
-  server: 157.90.236.4
-  type: trojan
 - name: '@hopev2ray💕 #2'
   network: tcp
   password: 432f85e0-4684-11f0-b5ac-1239d0255272
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #200'
+- name: '@Hope_Net-join-us-on-Telegram #102'
   network: ws
   password: 4732adfa16c6450bbef87264e41332db
   port: 443
@@ -2434,18 +2311,7 @@ proxies:
   port: 443
   server: usa.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #201'
-  network: ws
-  password: 47df6fe1-cc2a-4f26-b748-08d902272bde
-  port: 443
-  server: 172.67.201.123
-  sni: PpAL03.arNUlFo-kunZE.WORkerS.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: PpAl03.arNULFO-KuNZe.worKErS.Dev
-    path: /Telegram@V2ray_Alpha?ed=2048
-- name: '[🇨🇦]t.me/ConfigsHub #6'
+- name: '@Hope_Net-join-us-on-Telegram #103'
   network: ws
   password: 47df6fe1-cc2a-4f26-b748-08d902272bde
   port: 443
@@ -2474,13 +2340,33 @@ proxies:
   port: 443
   server: fr1.test3.net
   type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #104'
+  network: ws
+  password: 4f9219f6-ba56-4e5a-a676-0978d8b613e4
+  port: 443
+  server: 188.114.99.91
+  sni: Noshteri.hooplnqpb.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Noshteri.hooplnqpb.ir
+- name: 't.me/entryNET/config=184052646... #1'
+  network: ws
+  password: 4f9219f6-ba56-4e5a-a676-0978d8b613e4
+  port: 443
+  server: 188.114.99.91
+  sni: Noshteri.hooplnqpb.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Noshteri.hooplnqpb.ir
 - name: '@hopev2ray❤️ #3'
   network: tcp
   password: 52081af0-3f10-11f0-8054-1239d0255272
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #18'
+- name: '美国04 付费推荐：https://dafei.de #19'
   network: ws
   password: 527a7c04-9a2c-4fdb-aa18-37337e62e917
   port: 8443
@@ -2491,7 +2377,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #18'
+- name: '美国05 付费推荐：https://dafei.de #19'
   network: ws
   password: 527a7c04-9a2c-4fdb-aa18-37337e62e917
   port: 8443
@@ -2502,7 +2388,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #18'
+- name: '美国06 付费推荐：https://dafei.de #19'
   network: ws
   password: 527a7c04-9a2c-4fdb-aa18-37337e62e917
   port: 8443
@@ -2524,6 +2410,13 @@ proxies:
   password: 573bf780-4684-11f0-bda5-1239d0255272
   port: 443
   server: uk1.test3.net
+  type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #105'
+  network: grpc
+  password: 578ade22-1e58-4c37-ce01-bfad51a72c62
+  port: 8443
+  server: 104.17.148.22
+  sni: 13l1.diginoshops10.ir
   type: trojan
 - name: 'All🇩🇪@Rk_VPS #16'
   network: ws
@@ -2566,7 +2459,7 @@ proxies:
   port: 443
   server: usa.test3.net
   type: trojan
-- name: '美国06 付费推荐：https://dafei.de #19'
+- name: '美国06 付费推荐：https://dafei.de #20'
   network: ws
   password: 67828a6e-0144-4e57-8169-2447a3dd2e61
   port: 8443
@@ -2578,7 +2471,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #19'
+- name: '美国04 付费推荐：https://dafei.de #20'
   network: ws
   password: 67828a6e-0144-4e57-8169-2447a3dd2e61
   port: 8443
@@ -2590,7 +2483,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #19'
+- name: '美国05 付费推荐：https://dafei.de #20'
   network: ws
   password: 67828a6e-0144-4e57-8169-2447a3dd2e61
   port: 8443
@@ -2608,7 +2501,7 @@ proxies:
   port: 443
   server: fr1.test3.net
   type: trojan
-- name: '美国06 付费推荐：https://dafei.de #20'
+- name: '美国06 付费推荐：https://dafei.de #21'
   network: ws
   password: 69136cc7-d70e-4357-8230-ec82bec92c19
   port: 8443
@@ -2620,7 +2513,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #20'
+- name: '美国04 付费推荐：https://dafei.de #21'
   network: ws
   password: 69136cc7-d70e-4357-8230-ec82bec92c19
   port: 8443
@@ -2632,7 +2525,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #20'
+- name: '美国05 付费推荐：https://dafei.de #21'
   network: ws
   password: 69136cc7-d70e-4357-8230-ec82bec92c19
   port: 8443
@@ -2714,13 +2607,40 @@ proxies:
   port: 443
   server: stirring-parakeet.shiner427.skin
   type: trojan
-- name: 'WiFi-@configfu-8 #1'
-  network: tcp
-  password: '74260628090146500'
-  port: 443
-  server: stirring-parakeet.shiner427.skin
+- name: '美国04 付费推荐：https://dafei.de #22'
+  network: ws
+  password: 7577254b-c576-48cd-bbd0-69872aa3a9c9
+  port: 8443
+  server: csgo.com
+  sni: cdn-node-oss-99.paofu.de
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #21'
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国05 付费推荐：https://dafei.de #22'
+  network: ws
+  password: 7577254b-c576-48cd-bbd0-69872aa3a9c9
+  port: 8443
+  server: fastcup.net
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国06 付费推荐：https://dafei.de #22'
+  network: ws
+  password: 7577254b-c576-48cd-bbd0-69872aa3a9c9
+  port: 8443
+  server: pubg.ac
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- name: '美国04 付费推荐：https://dafei.de #23'
   network: ws
   password: 76414574-71e0-4706-89cc-c5b09c13445d
   port: 8443
@@ -2731,7 +2651,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #21'
+- name: '美国05 付费推荐：https://dafei.de #23'
   network: ws
   password: 76414574-71e0-4706-89cc-c5b09c13445d
   port: 8443
@@ -2742,7 +2662,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #21'
+- name: '美国06 付费推荐：https://dafei.de #23'
   network: ws
   password: 76414574-71e0-4706-89cc-c5b09c13445d
   port: 8443
@@ -2781,7 +2701,7 @@ proxies:
   server: 111.47.212.170
   sni: x74.flybar.work
   type: trojan
-- name: '美国06 付费推荐：https://dafei.de #22'
+- name: '美国06 付费推荐：https://dafei.de #24'
   network: ws
   password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
   port: 8443
@@ -2793,7 +2713,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #22'
+- name: '美国04 付费推荐：https://dafei.de #24'
   network: ws
   password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
   port: 8443
@@ -2805,7 +2725,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #22'
+- name: '美国05 付费推荐：https://dafei.de #24'
   network: ws
   password: 8222f4cb-187b-42fa-a965-a4b84edbc15e
   port: 8443
@@ -2829,7 +2749,40 @@ proxies:
   port: 443
   server: fr1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #202'
+- name: '@Hope_Net-join-us-on-Telegram #106'
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 2083
+  server: 104.18.39.232
+  sni: ArGodev11222.PaGes.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: argodev11222.pages.dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: 't.me/entryNET/config=184054973... #1'
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 2083
+  server: 104.18.39.232
+  sni: ArGodev11222.PaGes.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: argodev11222.pages.dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: '@Hope_Net-join-us-on-Telegram #107'
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 443
+  server: 172.66.47.155
+  sni: Bloom-cHh.PAGEs.DeV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Bloom-cHh.PAGEs.DeV
+    path: /Telegram@V2ray_Alpha/?ed=2048
+- name: '@Hope_Net-join-us-on-Telegram #108'
   network: ws
   password: 89b3cbba-e6ac-485a-9481-976a0415eab9
   port: 80
@@ -2839,7 +2792,7 @@ proxies:
     headers:
       Host: aliii.ir
     path: /kptMTT8pTmxLWsoJ?ed=2560
-- name: '美国06 付费推荐：https://dafei.de #23'
+- name: '美国06 付费推荐：https://dafei.de #25'
   network: ws
   password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
   port: 8443
@@ -2851,7 +2804,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #23'
+- name: '美国04 付费推荐：https://dafei.de #25'
   network: ws
   password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
   port: 8443
@@ -2863,7 +2816,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #23'
+- name: '美国05 付费推荐：https://dafei.de #25'
   network: ws
   password: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
   port: 8443
@@ -2875,6 +2828,34 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- name: '@Hope_Net-join-us-on-Telegram #109'
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 35.92.52.160
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #110'
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 35.92.52.160
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  type: trojan
+- name: 't.me/entryNET/config=184047423... #1'
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 35.92.52.160
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #111'
+  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+  port: 443
+  server: 43.206.140.241
+  skip-cert-verify: true
+  sni: origin-a.akamaihd.net
+  type: trojan
 - name: '@hopev2ray🤩 #6'
   network: tcp
   password: 8e2a3980-4684-11f0-b76c-1239d0255272
@@ -2887,7 +2868,7 @@ proxies:
   port: 443
   server: fr1.test3.net
   type: trojan
-- name: '美国05 付费推荐：https://dafei.de #24'
+- name: '美国05 付费推荐：https://dafei.de #26'
   network: ws
   password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
   port: 8443
@@ -2898,7 +2879,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #24'
+- name: '美国06 付费推荐：https://dafei.de #26'
   network: ws
   password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
   port: 8443
@@ -2909,7 +2890,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #24'
+- name: '美国04 付费推荐：https://dafei.de #26'
   network: ws
   password: 922b45c8-1ec8-4a65-9b32-137716a0e55f
   port: 8443
@@ -2920,7 +2901,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国04 付费推荐：https://dafei.de #25'
+- name: '美国04 付费推荐：https://dafei.de #27'
   network: ws
   password: 95c27cc4-82b5-45da-962e-ba675642fc3d
   port: 8443
@@ -2931,7 +2912,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #25'
+- name: '美国05 付费推荐：https://dafei.de #27'
   network: ws
   password: 95c27cc4-82b5-45da-962e-ba675642fc3d
   port: 8443
@@ -2942,7 +2923,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #25'
+- name: '美国06 付费推荐：https://dafei.de #27'
   network: ws
   password: 95c27cc4-82b5-45da-962e-ba675642fc3d
   port: 8443
@@ -2959,7 +2940,7 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #203'
+- name: '@Hope_Net-join-us-on-Telegram #112'
   network: ws
   password: 984e400bf5d541b7b0815913fe0c432a
   port: 443
@@ -3007,7 +2988,7 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
-- name: 'HK #6'
+- name: 'HK #5'
   network: tcp
   password: 9c3c38d0-8637-4c94-a790-61f3202a943a
   port: 10187
@@ -3047,7 +3028,7 @@ proxies:
   skip-cert-verify: true
   sni: vn01.ckcloud.info
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #26'
+- name: '美国04 付费推荐：https://dafei.de #28'
   network: ws
   password: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   port: 8443
@@ -3058,7 +3039,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #26'
+- name: '美国05 付费推荐：https://dafei.de #28'
   network: ws
   password: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   port: 8443
@@ -3069,7 +3050,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #26'
+- name: '美国06 付费推荐：https://dafei.de #28'
   network: ws
   password: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   port: 8443
@@ -3086,6 +3067,24 @@ proxies:
   port: 443
   server: usa.test3.net
   type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #113'
+  network: tcp
+  password: 9f259fdd-cb89-478d-9bf3-dfe5d6eddcd1
+  port: 45375
+  server: 217.60.249.171
+  type: trojan
+  ws-opts:
+    headers:
+      Host: telewebion.com
+- name: 't.me/entryNET/config=184054595... #1'
+  network: tcp
+  password: 9f259fdd-cb89-478d-9bf3-dfe5d6eddcd1
+  port: 45375
+  server: 217.60.249.171
+  type: trojan
+  ws-opts:
+    headers:
+      Host: telewebion.com
 - alpn:
   - http/1.1
   name: '@AblNet7 🇨🇦 #3'
@@ -3114,7 +3113,7 @@ proxies:
     path: /trNs9G5VJ2vI0PxgP2
 - alpn:
   - http/1.1
-  name: '@Selinc #42'
+  name: '@Selinc #43'
   network: ws
   password: ''
   port: 443
@@ -3127,7 +3126,7 @@ proxies:
     path: /trNs9G5VJ2vI0PxgP2
 - alpn:
   - http/1.1
-  name: '@Tunder_vpn #27'
+  name: '@Tunder_vpn #28'
   network: ws
   password: ''
   port: 443
@@ -3140,7 +3139,7 @@ proxies:
     path: /trNs9G5VJ2vI0PxgP2
 - alpn:
   - http/1.1
-  name: '@V2ray1_Ng #17'
+  name: '@V2ray1_Ng #18'
   network: ws
   password: ''
   port: 443
@@ -3153,7 +3152,7 @@ proxies:
     path: /trNs9G5VJ2vI0PxgP2
 - alpn:
   - http/1.1
-  name: 'Channel id: @ShadowProxy66 🇨🇦 #10'
+  name: 'Channel id: @ShadowProxy66 🇨🇦 #8'
   network: ws
   password: ''
   port: 443
@@ -3227,7 +3226,7 @@ proxies:
   server: 141.227.160.167
   sni: x2swe-ovh.devefun.net
   type: trojan
-- name: '💯T.me/Asak_Vpn💯 #17'
+- name: '💯T.me/Asak_Vpn💯 #18'
   network: ws
   password: Aimer
   port: 2083
@@ -3238,7 +3237,7 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #11'
+- name: 'Channel id: @ShadowProxy66 🇨🇦 #9'
   network: ws
   password: Aimer
   port: 2087
@@ -3260,7 +3259,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇺🇸 #12'
+- name: 'Channel id: @ShadowProxy66 🇺🇸 #13'
   network: ws
   password: Aimer
   port: 8443
@@ -3271,7 +3270,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇺🇸 #13'
+- name: 'Channel id: @ShadowProxy66 🇺🇸 #14'
   network: ws
   password: Aimer
   port: 2053
@@ -3282,7 +3281,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #12'
+- name: 'Channel id: @ShadowProxy66 🇨🇦 #10'
   network: ws
   password: Aimer
   port: 2096
@@ -3293,7 +3292,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: '@HiByeVPNN👈⚡❤️‍🔥 #42'
+- name: '@HiByeVPNN👈⚡❤️‍🔥 #41'
   network: ws
   password: Aimer
   port: 443
@@ -3304,7 +3303,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #13'
+- name: 'Channel id: @ShadowProxy66 🇨🇦 #11'
   network: ws
   password: Aimer
   port: 2087
@@ -3315,7 +3314,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇦🇲 #2'
+- name: 'Channel id: @ShadowProxy66 🇦🇲 #1'
   network: ws
   password: Aimer
   port: 2096
@@ -3326,7 +3325,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: '@HiByeVPNN👈⚡❤️‍🔥 #43'
+- name: '@HiByeVPNN👈⚡❤️‍🔥 #42'
   network: ws
   password: Aimer
   port: 2083
@@ -3337,7 +3336,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
-- name: 'Channel id: @ShadowProxy66 🇺🇸 #14'
+- name: 'Channel id: @ShadowProxy66 🇺🇸 #15'
   network: ws
   password: Aimer
   port: 2083
@@ -3348,7 +3347,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇺🇸 #15'
+- name: 'Channel id: @ShadowProxy66 🇺🇸 #16'
   network: ws
   password: Aimer
   port: 8443
@@ -3392,7 +3391,7 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇷🇺 #3'
+- name: 'Channel id: @ShadowProxy66 🇷🇺 #2'
   network: ws
   password: Aimer
   port: 2083
@@ -3403,7 +3402,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- name: '@awlix_ir #82'
+- name: '@awlix_ir #84'
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
@@ -3411,14 +3410,14 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- name: '@awlix_ir #83'
+- name: '@awlix_ir #85'
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
   server: 95.179.245.249
   sni: z-v2-080537.kailib.com
   type: trojan
-- name: '👉 𝗝𝗼𝗶𝗻 ➠ @Viturey | تلگرام 🇧🇪 #1'
+- name: '👉 𝗝𝗼𝗶𝗻 ➠ @Viturey | تلگرام 🇧🇪 #2'
   network: ws
   password: C910E5F2-A662-7CFB-B5A6-5D39DB212CBA
   port: 443
@@ -3429,7 +3428,7 @@ proxies:
     headers:
       Host: muddy-frost-4e2d.vpnetwork3567.workers.dev
     path: /?--Telegram--Viturey--Telegram--Viturey--
-- name: '@awlix_ir #84'
+- name: '@awlix_ir #86'
   network: tcp
   password: CXCu72eya8wFeRySSFpDz3CN6jBYac5OIl3q0gSl8xZOADY3EK94pxZanDA3RT
   port: 443
@@ -3503,25 +3502,12 @@ proxies:
   port: 882
   server: 79.137.195.203
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #204'
+- name: '@Hope_Net-join-us-on-Telegram #114'
   password: NISHIKUITAN111
   port: 443
-  server: 104.17.0.118
-  skip-cert-verify: true
+  server: 104.16.91.99
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #205'
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.17.184.125
-  skip-cert-verify: true
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #206'
-  password: NISHIKUITAN111
-  port: 443
-  server: 104.17.244.30
-  skip-cert-verify: true
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #207'
+- name: '@Hope_Net-join-us-on-Telegram #115'
   password: NISHIKUITAN111
   port: 443
   server: 185.148.106.44
@@ -3531,33 +3517,16 @@ proxies:
   port: 443
   server: 185.148.106.44
   type: trojan
-- name: 't.me/entryNET/config=184036230... #1'
+- name: '@Hope_Net-join-us-on-Telegram #116'
   password: NISHIKUITAN111
   port: 443
-  server: 188.114.96.219
+  server: 213.109.205.159
   skip-cert-verify: true
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #208'
-  password: NISHIKUITAN111
-  port: 443
-  server: 188.114.97.198
-  skip-cert-verify: true
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #209'
-  password: NISHIKUITAN111
-  port: 443
-  server: 190.93.244.132
-  skip-cert-verify: true
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #210'
+- name: '@Hope_Net-join-us-on-Telegram #117'
   password: NISHIKUITAN111
   port: 443
   server: 45.80.108.245
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #211'
-  password: NISHIKUITAN111
-  port: 443
-  server: 62.72.166.57
   type: trojan
 - name: 'FreeV2Alpha&security=tls&alpn=... #1'
   password: Pooria
@@ -3587,11 +3556,6 @@ proxies:
   type: trojan
   ws-opts:
     path: trPyOrWMfkHd15oxiI?ed=1520
-- name: '@Hope_Net-join-us-on-Telegram #212'
-  password: QwwHvrnN
-  port: 34185
-  server: 36.151.192.201
-  type: trojan
 - name: 'All🇩🇪@RK_VPS #2'
   network: ws
   password: RK_VPS
@@ -3672,7 +3636,69 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
-- name: '@Hope_Net-join-us-on-Telegram #213'
+- name: '🇳🇱2-Join Tel : @VPNConectd @VP... #1'
+  network: ws
+  password: TEL_ID_JKVPN
+  port: 80
+  server: www.speedtest.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: '🇳🇱 Join Tel : @VPNConectd @VPN... #3'
+  network: ws
+  password: TEL_ID_JKVPN
+  port: 80
+  server: www.zula.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: '𝗝𝗼𝗶𝗻➠ᴬᴸᴸ¹🇳🇱@JKVPN #1'
+  network: ws
+  password: TEL_JKVPN
+  port: 80
+  server: www.speedtest.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: '𝗝𝗼𝗶𝗻➠ᴬᴸᴸ²🇳🇱@JKVPN #1'
+  network: ws
+  password: TEL_JKVPN
+  port: 80
+  server: www.zula.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: '@Hope_Net-join-us-on-Telegram #118'
+  network: ws
+  password: Telegram-DailyConfigs
+  port: 2096
+  server: 104.18.3.11
+  sni: kanale-daily-configs.blackoutconnection.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kanale-daily-configs.blackoutconnection.ir
+- name: '@Hope_Net-join-us-on-Telegram #119'
+  network: ws
+  password: VPNCUSTOMIZE
+  port: 443
+  server: 104.17.234.12
+  skip-cert-verify: true
+  sni: 1.2.3.4.5.6.7.8.9.10.www.speedtest.net.VPNCUSTOMIZE.abrha.co.za
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1.2.3.4.5.6.7.8.9.10.www.speedtest.net.VPNCUSTOMIZE.abrha.co.za
+    path: /
+- name: '@Hope_Net-join-us-on-Telegram #120'
   network: ws
   password: WOeXShhJpL
   port: 443
@@ -3694,14 +3720,28 @@ proxies:
     headers:
       Host: 06jzus.zdzdzd.xyz
     path: /juzigongyi
-- grpc-opts:
-    grpc-service-name: TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN_JOKERRVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN_jokerrvpn-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN
-  name: 'ᴬᴸᴸ¹𝗝𝗼𝗶𝗻➠@JKVPN #1'
-  network: grpc
-  password: XJjHUk9P2k
-  port: 882
-  server: 79.137.195.203
+- name: '@Hope_Net-join-us-on-Telegram #121'
+  network: ws
+  password: WOeXShhJpL
+  port: 443
+  server: 172.67.232.40
+  sni: 10jzus.zdzdzd.xyz
   type: trojan
+  ws-opts:
+    headers:
+      Host: 10jzus.zdzdzd.xyz
+    path: /juzigongyi
+- name: 't.me/entryNET/config=184050443... #1'
+  network: ws
+  password: WOeXShhJpL
+  port: 443
+  server: 172.67.232.40
+  sni: 10jzus.zdzdzd.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 10jzus.zdzdzd.xyz
+    path: /juzigongyi
 - alpn:
   - h2
   - http/1.1
@@ -3731,7 +3771,7 @@ proxies:
     path: /trg2dhGAnG15ULOP7i?ed=2560
 - alpn:
   - http/1.1
-  name: '🛡️ @FreakConfig #116'
+  name: '🛡️ @FreakConfig #112'
   network: ws
   password: ZU)0ryc$VSrG
   port: 443
@@ -3742,7 +3782,7 @@ proxies:
     headers:
       Host: uk2wbo0ikx3iyi4i9wjdyu6y-o28et7o.pages.dev
     path: /trg2dhGAnG15ULOP7i?ed=2560
-- name: '美国04 付费推荐：https://dafei.de #27'
+- name: '美国04 付费推荐：https://dafei.de #29'
   network: ws
   password: a134e3de-b25a-4020-9998-05fa6b715f1a
   port: 8443
@@ -3753,7 +3793,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #27'
+- name: '美国05 付费推荐：https://dafei.de #29'
   network: ws
   password: a134e3de-b25a-4020-9998-05fa6b715f1a
   port: 8443
@@ -3764,7 +3804,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #27'
+- name: '美国06 付费推荐：https://dafei.de #29'
   network: ws
   password: a134e3de-b25a-4020-9998-05fa6b715f1a
   port: 8443
@@ -3786,12 +3826,6 @@ proxies:
   password: a7c7bbf0-48a1-11f0-b880-1239d0255272
   port: 443
   server: uk1.test3.net
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #214'
-  network: tcp
-  password: aaacbbc-bcaa-baac-cbda-ccbcaaaacbbb
-  port: 1080
-  server: 127.0.0.1
   type: trojan
 - name: '@hopev2ray💯 #2'
   network: tcp
@@ -3822,6 +3856,17 @@ proxies:
     headers:
       Host: tran.amclubstest.nyc.mn
     path: /Telegram@V2ray_Alpha/?ed=2560
+- name: '@Hope_Net-join-us-on-Telegram #122'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.17.176
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
 - name: '@V2rayNG3 #131'
   network: ws
   password: auto
@@ -3833,7 +3878,7 @@ proxies:
     headers:
       Host: e9464f45.trauma-2r4.pages.dev
     path: /
-- name: '@Hope_Net-join-us-on-Telegram #215'
+- name: '@Hope_Net-join-us-on-Telegram #123'
   network: ws
   password: auto
   port: 2083
@@ -3844,7 +3889,62 @@ proxies:
     headers:
       Host: e9464f45.trauma-2r4.pages.dev
     path: /
-- name: '@Hope_Net-join-us-on-Telegram #216'
+- name: '@Hope_Net-join-us-on-Telegram #124'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.19.218
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- name: '@Hope_Net-join-us-on-Telegram #125'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.229
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- name: '@Hope_Net-join-us-on-Telegram #126'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.229
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- name: '@Hope_Net-join-us-on-Telegram #127'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.149
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- name: '@Hope_Net-join-us-on-Telegram #128'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.241
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- name: '@Hope_Net-join-us-on-Telegram #129'
   network: ws
   password: auto
   port: 443
@@ -3854,6 +3954,37 @@ proxies:
   ws-opts:
     headers:
       Host: esetsecuritylicense1.cxlrazo.workers.dev
+- name: '@Hope_Net-join-us-on-Telegram #130'
+  network: ws
+  password: auto
+  port: 443
+  server: 108.162.195.209
+  sni: trojanmz.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojanmz.pages.dev
+- name: '@Hope_Net-join-us-on-Telegram #131'
+  network: ws
+  password: auto
+  port: 443
+  server: 172.64.35.202
+  sni: trojanmz.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojanmz.pages.dev
+- name: '@Hope_Net-join-us-on-Telegram #132'
+  network: ws
+  password: auto
+  port: 443
+  server: 172.64.35.209
+  sni: trojanmz.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojanmz.pages.dev
+    path: /trojanmz.pages.dev/?ed=2560
 - name: '@hopev2ray💯 #3'
   network: tcp
   password: b33b11d0-3f0f-11f0-a423-1239d0255272
@@ -3875,187 +4006,106 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: 't.me/entryNET/config=184037362... #1'
+- name: '@Hope_Net-join-us-on-Telegram #133'
+  network: tcp
+  password: bcbaaac-abca-cbaa-acbd-cacbbaccabba
+  port: 1080
+  server: 127.0.0.1
+  type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #134'
+  network: ws
   password: blue2024
   port: 443
-  server: 103.21.244.169
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.16.11.5
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #217'
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: '@Hope_Net-join-us-on-Telegram #135'
+  network: ws
   password: blue2024
   port: 443
-  server: 104.16.5.34
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.17.147.167
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: 't.me/entryNET/config=184043780... #1'
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: 't.me/entryNET/config=184050820... #1'
+  network: ws
   password: blue2024
   port: 443
-  server: 104.16.5.34
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.17.147.167
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #218'
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: '@Hope_Net-join-us-on-Telegram #136'
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.17.169.219
+  sni: ha.lii2010.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: 't.me/entryNET/config=184051575... #1'
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.17.169.219
+  sni: ha.lii2010.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: '@Hope_Net-join-us-on-Telegram #137'
   password: blue2024
   port: 443
   server: 104.17.246.107
   sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #219'
+- name: '@Hope_Net-join-us-on-Telegram #138'
+  network: ws
   password: blue2024
   port: 443
-  server: 104.18.103.141
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.18.127.92
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #220'
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: '@Hope_Net-join-us-on-Telegram #139'
+  network: ws
   password: blue2024
   port: 443
-  server: 104.18.112.2
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.18.170.217
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #221'
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
+- name: '@Hope_Net-join-us-on-Telegram #140'
+  network: ws
   password: blue2024
   port: 443
-  server: 104.20.18.226
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
+  server: 104.19.234.198
+  sni: ha.lii2010.us.kg
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #222'
-  password: blue2024
-  port: 443
-  server: 108.162.198.167
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #223'
-  password: blue2024
-  port: 443
-  server: 141.101.114.139
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #224'
-  password: blue2024
-  port: 443
-  server: 162.159.128.183
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: 't.me/entryNET/config=184037551... #1'
-  password: blue2024
-  port: 443
-  server: 162.159.36.104
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #225'
-  password: blue2024
-  port: 443
-  server: 172.67.73.242
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #226'
-  password: blue2024
-  port: 443
-  server: 172.67.79.211
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  type: trojan
-- name: t.me/entryNET/config=184036041...
-  password: blue2024
-  port: 443
-  server: 173.245.49.104
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #227'
-  password: blue2024
-  port: 443
-  server: 188.114.96.158
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: 't.me/entryNET/config=184036791... #1'
-  password: blue2024
-  port: 443
-  server: 190.93.244.159
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #228'
-  password: blue2024
-  port: 443
-  server: 190.93.244.93
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: 't.me/entryNET/config=184037740... #1'
-  password: blue2024
-  port: 443
-  server: 190.93.245.154
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #229'
-  password: blue2024
-  port: 443
-  server: 190.93.246.36
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #230'
-  password: blue2024
-  port: 443
-  server: 190.93.247.66
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: 't.me/entryNET/config=184036469... #1'
-  password: blue2024
-  port: 443
-  server: 190.93.247.66
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #231'
-  password: blue2024
-  port: 443
-  server: icook.hk
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #232'
-  password: blue2024
-  port: 443
-  server: iplocation.io
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  type: trojan
-- name: 't.me/entryNET/config=184038306... #1'
-  password: blue2024
-  port: 443
-  server: visa.cn
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #233'
-  password: blue2024
-  port: 443
-  server: www.4chan.org
-  skip-cert-verify: true
-  sni: hb.lii2010.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #234'
-  password: blue2024
-  port: 443
-  server: www.ipchicken.com
-  skip-cert-verify: true
-  sni: tb.promote.icu
-  type: trojan
+  ws-opts:
+    headers:
+      Host: ha.lii2010.us.kg
+    path: /?ed
 - alpn:
   - http/1.1
   name: '@V2rayNG3 #132'
@@ -4069,7 +4119,18 @@ proxies:
     headers:
       Host: bpb-worker-panel1-e4p.pages.dev
     path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
-- name: '@awlix_ir #85'
+- name: '@Hope_Net-join-us-on-Telegram #141'
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 104.18.34.21
+  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
+- name: '@awlix_ir #87'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -4087,7 +4148,7 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- name: '🛡️ @FreakConfig #117'
+- name: '🛡️ @FreakConfig #113'
   network: ws
   password: bpb-trojan
   port: 443
@@ -4098,7 +4159,7 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- name: '@awlix_ir #86'
+- name: '@awlix_ir #88'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -4106,34 +4167,49 @@ proxies:
   skip-cert-verify: true
   sni: cf.090227.xyz
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #235'
-  password: bpb-trojan
-  port: 443
-  server: 188.114.97.123
-  sni: adagio.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #236'
+- name: '@Hope_Net-join-us-on-Telegram #142'
   network: ws
   password: bpb-trojan
   port: 443
-  server: 190.93.245.69
+  server: 173.245.59.182
   sni: fcspring.ggff.net
   type: trojan
   ws-opts:
     headers:
       Host: fcspring.ggff.net
     path: /tr?ed
-- name: '[🇨🇷]t.me/ConfigsHub'
+- name: '@Hope_Net-join-us-on-Telegram #143'
   network: ws
   password: bpb-trojan
   port: 443
-  server: 190.93.245.69
-  sni: fcspring.ggff.net
+  server: 185.176.24.2
+  sni: 403B3611-99bc-43B7-88d7-26ed5d0825a9-3.PaGes.deV
   type: trojan
   ws-opts:
     headers:
-      Host: fcspring.ggff.net
-    path: /tr?ed
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /tr9vfP2lflALkJrNsQ?ed=2560
+- name: '@Hope_Net-join-us-on-Telegram #144'
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 188.114.97.88
+  sni: G1-21N.paGEs.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: g1-21n.pages.dev
+- name: '@Hope_Net-join-us-on-Telegram #145'
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 188.114.98.138
+  sni: G1-21N.paGEs.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: g1-21n.pages.dev
+    path: /traV0kgCnzWDCx27E2/ZGUucmFkaWNhbGx5LnBybw==
 - name: 't.me/entryNET/config=184047177... #1'
   network: ws
   password: bpb-trojan
@@ -4145,14 +4221,19 @@ proxies:
     headers:
       Host: fcspring.ggff.net
     path: /tr?ed
-- name: '@Hope_Net-join-us-on-Telegram #237'
+- name: '@Hope_Net-join-us-on-Telegram #146'
+  network: ws
   password: bpb-trojan
   port: 443
   server: 190.93.246.80
   skip-cert-verify: true
   sni: zeming13.us.kg
   type: trojan
-- name: '@awlix_ir #87'
+  ws-opts:
+    headers:
+      Host: zeming13.us.kg
+    path: /tr?ed=2560
+- name: '@awlix_ir #89'
   network: tcp
   password: bpb-trojan
   port: 443
@@ -4181,7 +4262,7 @@ proxies:
   type: trojan
 - alpn:
   - h2
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #49'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #53'
   network: xhttp
   password: c16a577c-1dbd-41b0-90c7-d7177ce0bd1f
   port: 443
@@ -4208,24 +4289,24 @@ proxies:
   port: 443
   server: uk1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #238'
+- name: '@Hope_Net-join-us-on-Telegram #147'
   network: tcp
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   port: 443
   server: 185.231.206.12
   sni: customer-185-231-206-12.stark-industries.solutions
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #239'
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-185-231-206-12.stark-industries.solutions
-  type: trojan
 - name: '@hopev2ray🫠 #1'
   network: tcp
   password: c623a730-48a2-11f0-b6c7-1239d0255272
   port: 443
   server: sg4.6n6.net
+  type: trojan
+- name: '@Hope_Net-join-us-on-Telegram #148'
+  network: tcp
+  password: cababca-acba-caba-dcba-ccbbaacbaacb
+  port: 8080
+  server: 127.0.0.1
   type: trojan
 - name: '@hopev2ray😍 #1'
   network: tcp
@@ -4252,7 +4333,7 @@ proxies:
   server: 174.138.85.53
   sni: www.baidu.com
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #240'
+- name: '@Hope_Net-join-us-on-Telegram #149'
   network: ws
   password: d342d11e-d424-4583-b36e-524ab1f0afa4
   port: 2053
@@ -4305,7 +4386,7 @@ proxies:
   server: 94.131.122.157
   sni: uk2.safecdn.site
   type: trojan
-- name: '美国04 付费推荐：https://dafei.de #28'
+- name: '美国04 付费推荐：https://dafei.de #30'
   network: ws
   password: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   port: 8443
@@ -4316,7 +4397,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国05 付费推荐：https://dafei.de #28'
+- name: '美国05 付费推荐：https://dafei.de #30'
   network: ws
   password: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   port: 8443
@@ -4327,7 +4408,7 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
-- name: '美国06 付费推荐：https://dafei.de #28'
+- name: '美国06 付费推荐：https://dafei.de #30'
   network: ws
   password: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   port: 8443
@@ -4338,6 +4419,17 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- name: '@Hope_Net-join-us-on-Telegram #150'
+  network: ws
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: 104.19.171.4
+  sni: jobscareertoday.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jobscareertoday.com
+    path: /6b777a91
 - name: '@hopev2ray💕 #3'
   network: tcp
   password: dd6dcb10-4683-11f0-ae79-1239d0255272
@@ -4356,17 +4448,7 @@ proxies:
   port: 443
   server: fr1.test3.net
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #241'
-  network: ws
-  password: dns68
-  port: 443
-  server: 162.159.152.2
-  sni: trojan.putata.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-- name: '@Hope_Net-join-us-on-Telegram #242'
+- name: '@Hope_Net-join-us-on-Telegram #151'
   network: ws
   password: dns68
   port: 443
@@ -4414,7 +4496,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: '💎 @AblNet7 💎 #22'
+- name: '💎 @AblNet7 💎 #23'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4447,7 +4529,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
-- name: 'Telegram : @Alfa_v2ray_ng 🔥 #11'
+- name: 'Telegram : @Alfa_v2ray_ng 🔥 #13'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4458,7 +4540,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram
-- name: '🛡️ @FreakConfig #118'
+- name: '🛡️ @FreakConfig #114'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4480,17 +4562,6 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /@Hddify---@Hddify---@Hddify---@Hddify---@Hddify---@Hddify
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #14'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /@ShadowProxy66
 - name: '→ @Hddify 🛝 #4'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -4513,14 +4584,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Channel--Telegram--@Hddify--@Hddify--@Hddify
-- name: 'Join---MARAMBASHI---Join---MAR... #2'
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  type: trojan
-  ws-opts:
-    path: /Stupid-World/103.106.228.126-2053
-- name: 'Join---MARAMBASHI---Join---MAR... #3'
+- name: 'Join---MARAMBASHI---Join---MAR... #1'
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
   server: 172.67.181.173
@@ -4534,7 +4598,7 @@ proxies:
   type: trojan
   ws-opts:
     path: /Stupid-World/103.106.228.126-2053
-- name: '@HiByeVPNN👈⚡❤️‍🔥 #44'
+- name: '@HiByeVPNN👈⚡❤️‍🔥 #43'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4545,7 +4609,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: '@Selinc #43'
+- name: '@Selinc #44'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4578,18 +4642,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: 'Bya To @Iran_V2ray1 #13'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /Stupid-World/103.106.228.126-2053
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #15'
+- name: 'Bya To @Iran_V2ray1 #11'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4601,17 +4654,6 @@ proxies:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
 - name: 'JP 🇯🇵 | @v2xay #1'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /Stupid-World/103.106.228.126-2053
-- name: 'r♡ya #14'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4644,17 +4686,6 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: '𝗝𝗼𝗶𝗻 ➠ @NormanV2ray | نیم ساعت... #11'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /Stupid-World/103.106.228.126-2053
 - name: '🇩🇪[Telegram:@v2rayng_fars] #3'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -4677,7 +4708,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: '💎 @AblNet7 💎 #23'
+- name: '💎 @AblNet7 💎 #24'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4688,7 +4719,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053
-- name: '🛡️ @FreakConfig #119'
+- name: '🛡️ @FreakConfig #115'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4721,17 +4752,6 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Stupid-World/103.106.228.126-2053?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*
-- name: 'r♡ya #15'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /Stupid-World/103.106.228.126-2053?@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz
 - name: '🍁 @Viturey : کانال تلگرام 🍒 #5'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -4743,17 +4763,6 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Tel---@HiByeVPNN
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #16'
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  sni: vpn.stupidworld.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vpn.stupidworld.web.id
-    path: /Tel-@ShadowProxy66
 - name: 'DE 6 🇩🇪 | @v2xay #4'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -4765,7 +4774,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Tel-@ShadowProxy66
-- name: '💎 @AblNet7 💎 #24'
+- name: '💎 @AblNet7 💎 #25'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4798,7 +4807,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /Tel-@V2ray_Alpha
-- name: '@V2ray1_Ng #18'
+- name: '@V2ray1_Ng #19'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4842,7 +4851,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: /telegram--Channel--@Hddify
-- name: '@HiByeVPNN👈⚡❤️‍🔥 #45'
+- name: '@HiByeVPNN👈⚡❤️‍🔥 #44'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4886,7 +4895,7 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: =Join---Viturey---Viturey---Viturey---Viturey---Viturey---Viturey---
-- name: '🛡️ @FreakConfig #120'
+- name: '🛡️ @FreakConfig #116'
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
   port: 443
@@ -4996,14 +5005,14 @@ proxies:
   port: 1496
   server: spdnetvip.get-service.ir
   type: trojan
-- name: '@awlix_ir #88'
+- name: '@awlix_ir #90'
   network: tcp
   password: juzi
   port: 2096
   server: 104.19.57.183
   sni: juzi8186-sr1.pages.dev
   type: trojan
-- name: '@awlix_ir #89'
+- name: '@awlix_ir #91'
   network: tcp
   password: juzi
   port: 443
@@ -5030,7 +5039,7 @@ proxies:
     headers:
       Host: ''
     path: ''
-- name: '@Tunder_vpn #28'
+- name: '@Tunder_vpn #29'
   network: tcp
   password: mZMgM1vKw5
   port: 1935
@@ -5111,7 +5120,7 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trLwW5jwrnymnOdqki?ed=2560
-- name: 'Channel id: @ShadowProxy66 🇨🇦 #17'
+- name: 'Channel id: @ShadowProxy66 🇨🇦 #12'
   network: ws
   password: slch2024
   port: 8443
@@ -5122,23 +5131,16 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
-- name: '@Hope_Net-join-us-on-Telegram #243'
+- name: '@Hope_Net-join-us-on-Telegram #152'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
   server: 13.51.246.10
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #244'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 16.170.150.52
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alpn:
   - http/1.1
-  name: '@confing_chanel #5'
+  name: 'VayNora #14'
   network: tcp
   password: telegram-id-directvpn
   port: 22223
@@ -5147,41 +5149,11 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 'VayNora #15'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.77.162.60
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #245'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.97.121.189
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #246'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.180.224.101
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '@Hope_Net-join-us-on-Telegram #247'
+  name: '@Hope_Net-join-us-on-Telegram #153'
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 54.78.33.85
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #248'
-  password: telegram-id-directvpn
-  port: 22222
-  server: 63.176.111.249
-  skip-cert-verify: false
+  server: 51.44.128.61
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5240,15 +5212,6 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #17'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.253.72
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
   name: '(S103)🇨🇵t.me/PrivateVPNs #16'
   network: tcp
   password: telegram-id-privatevpns
@@ -5258,7 +5221,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #18'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #17'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5267,7 +5230,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #19'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #18'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5285,16 +5248,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #18'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.59.229
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '@awlix_ir #90'
+  name: '@awlix_ir #92'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5303,7 +5257,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #19'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #18'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5312,7 +5266,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #20'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #19'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5321,7 +5275,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #20'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #19'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5330,7 +5284,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #21'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #20'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5339,7 +5293,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #22'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #21'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5348,78 +5302,20 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #23'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #20'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.237.5.121
+  server: 15.236.73.219
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #24'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #22'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 15.237.9.13
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #249'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.130.53.220
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '@Hope_Net-join-us-on-Telegram #250'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.134.106.33
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #251'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.134.42.243
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #12'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.158.32.88
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #13'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.193.13.65
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S102)🇩🇪t.me/PrivateVPNs #13'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.193.140.121
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #14'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.197.119.26
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5428,7 +5324,34 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.198.111.78
+  server: 18.153.87.172
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #12'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.158.145.222
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #13'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.158.32.88
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #14'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.193.13.65
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5437,7 +5360,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.121.145.31
+  server: 18.193.140.121
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5446,34 +5369,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.124.16.18
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #16'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.124.179.125
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #17'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.127.24.12
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🛡️ @FreakConfig #121'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.68.1.93
+  server: 18.197.119.26
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5482,7 +5378,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.72.122.16
+  server: 18.198.111.78
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5491,7 +5387,25 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.72.137.245
+  server: 3.121.145.31
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #16'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.124.16.18
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #17'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.124.179.125
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5500,7 +5414,16 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.74.185.110
+  server: 3.127.24.12
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🛡️ @FreakConfig #117'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.68.1.93
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5509,7 +5432,16 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.75.161.52
+  server: 3.72.137.245
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #19'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.74.185.110
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5518,25 +5450,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.76.184.58
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: ' @confing_chanel #3'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.77.162.60
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 'VayNora #16'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.77.162.60
+  server: 3.75.161.52
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5545,7 +5459,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 3.79.132.34
+  server: 3.75.2.219
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5554,28 +5468,46 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
+  server: 3.76.184.58
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 'VayNora #15'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.77.162.60
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S102)🇩🇪t.me/PrivateVPNs #22'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.79.132.34
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S102)🇩🇪t.me/PrivateVPNs #23'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
   server: 35.157.236.123
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #25'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #23'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.180.10.37
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #21'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.180.206.105
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #252'
+- name: '@Hope_Net-join-us-on-Telegram #154'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5591,7 +5523,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #22'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #21'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5600,7 +5532,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #26'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #24'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5609,7 +5541,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S104)🇨🇵t.me/PrivateVPNs #23'
+  name: '(S104)🇨🇵t.me/PrivateVPNs #22'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5618,7 +5550,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '@awlix_ir #91'
+  name: '@awlix_ir #93'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5627,11 +5559,20 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S103)🇨🇵t.me/PrivateVPNs #27'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #25'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 51.44.118.76
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S104)🇨🇵t.me/PrivateVPNs #23'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.198.145
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5645,6 +5586,24 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
+  name: '(S101)🇩🇪t.me/PrivateVPNs #20'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.28.160.100
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '(S103)🇨🇵t.me/PrivateVPNs #26'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.154.155
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
   name: '(S104)🇨🇵t.me/PrivateVPNs #25'
   network: tcp
   password: telegram-id-privatevpns
@@ -5654,29 +5613,20 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #19'
+  name: '(S103)🇨🇵t.me/PrivateVPNs #27'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 63.176.11.175
+  server: 52.47.67.30
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S102)🇩🇪t.me/PrivateVPNs #22'
+  name: '(S102)🇩🇪t.me/PrivateVPNs #24'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 63.177.155.28
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '(S101)🇩🇪t.me/PrivateVPNs #20'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.177.173.183
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -5690,7 +5640,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 'VayNora #17'
+  name: 'VayNora #16'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5699,7 +5649,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S102)🇩🇪t.me/PrivateVPNs #23'
+  name: '(S102)🇩🇪t.me/PrivateVPNs #25'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5717,7 +5667,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S102)🇩🇪t.me/PrivateVPNs #24'
+  name: '(S102)🇩🇪t.me/PrivateVPNs #26'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5735,7 +5685,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '(S102)🇩🇪t.me/PrivateVPNs #25'
+  name: '(S102)🇩🇪t.me/PrivateVPNs #27'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -5752,7 +5702,7 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
-- name: '🇳🇱 Join Tel : @VPNConectd @VPN... #2'
+- name: '🇳🇱 Join Tel : @VPNConectd @VPN... #4'
   network: ws
   password: telegram_JKVPN
   port: 80
@@ -5772,7 +5722,7 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
-- name: '🇳🇱 Join Tel : @VPNConectd @VPN... #3'
+- name: '🇳🇱 Join Tel : @VPNConectd @VPN... #5'
   network: ws
   password: telegram_JKVPN
   port: 80
@@ -5792,6 +5742,16 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS-RK_VPS?ed=2048
+- name: '@Hope_Net-join-us-on-Telegram #155'
+  network: ws
+  password: tg-dns68
+  port: 443
+  server: 162.159.152.42
+  sni: vip.putata.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vip.putata.eu.org
 - name: 'کانال+ما+در+تلگرام+@Asak_Vpn+💛 #16'
   network: ws
   password: tg-fq521free
@@ -5803,7 +5763,18 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: '💯T.me/Asak_Vpn💯 #18'
+- name: '@Hope_Net-join-us-on-Telegram #156'
+  network: ws
+  password: trojan
+  port: 443
+  server: 104.21.3.52
+  sni: test-a23.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: test-a23.pages.dev
+    path: /Telegram-@V2ray_Alpha/?ed=2560
+- name: '💯T.me/Asak_Vpn💯 #19'
   network: ws
   password: trojan
   port: 8443
@@ -5842,7 +5813,7 @@ proxies:
       Host: nl-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: 'AstroVPN_Official 🇦🇪 #5'
+  name: 'AstroVPN_Official 🇦🇪 #4'
   network: tcp
   password: tunnel-astrovpn_official-ae
   port: 8441
@@ -5855,7 +5826,7 @@ proxies:
       Host: ae-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: '[TrojanVPN] astrovpn_official-... #5'
+  name: '[TrojanVPN] astrovpn_official-... #6'
   network: tcp
   password: tunnel-astrovpn_official-de
   port: 8441
@@ -5881,7 +5852,7 @@ proxies:
       Host: de-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: '[TrojanVPN] astrovpn_official-... #6'
+  name: '[TrojanVPN] astrovpn_official-... #7'
   network: tcp
   password: tunnel-astrovpn_official-ee
   port: 8441
@@ -5908,7 +5879,7 @@ proxies:
     path: Telegram-AstroVPN_Official
 - alpn:
   - http/1.1
-  name: '[TrojanVPN] astrovpn_official-... #7'
+  name: '[TrojanVPN] astrovpn_official-... #8'
   network: tcp
   password: tunnel-astrovpn_official-gb
   port: 8441
@@ -5921,7 +5892,7 @@ proxies:
       Host: gb-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: 'AstroVPN_Official 🇬🇧 #3'
+  name: 'AstroVPN_Official 🇬🇧 #4'
   network: tcp
   password: tunnel-astrovpn_official-gb
   port: 8441
@@ -5960,7 +5931,7 @@ proxies:
       Host: tr-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #50'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #54'
   network: tcp
   password: tunnel-astrovpn_official-us
   port: 8441
@@ -5972,7 +5943,7 @@ proxies:
       Host: us-3.stunnel.cc
 - alpn:
   - http/1.1
-  name: '[TrojanVPN] astrovpn_official-... #8'
+  name: '[TrojanVPN] astrovpn_official-... #9'
   network: tcp
   password: tunnel-astrovpn_official-us
   port: 8441
@@ -5998,7 +5969,7 @@ proxies:
     path: AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official
 - alpn:
   - http/1.1
-  name: 'AstroVPN_Official 🇦🇪 #6'
+  name: 'AstroVPN_Official 🇦🇪 #5'
   network: tcp
   password: tunnel-astrovpn_official_ae
   port: 8441
@@ -6012,7 +5983,7 @@ proxies:
     path: AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official-AstroVPN_Official
 - alpn:
   - http/1.1
-  name: '[TrojanVPN] astrovpn_official-... #9'
+  name: '[TrojanVPN] astrovpn_official-... #10'
   network: tcp
   password: tunnel-astrovpn_official_ae
   port: 8441
@@ -6078,7 +6049,7 @@ proxies:
       Host: ee-1.stunnel.cc
 - alpn:
   - http/1.1
-  name: 'AstroVPN_Official 🇬🇧 #4'
+  name: 'AstroVPN_Official 🇬🇧 #5'
   network: tcp
   password: tunnel-astrovpn_official_gb
   port: 8441
@@ -6206,6 +6177,12 @@ proxies:
   server: 51.195.255.103
   sni: uk-03.allhubb.info
   type: trojan
+- name: '🇦🇪[Telegram:NetifyVpn] #2'
+  network: tcp
+  password: wz0hewE7GFcDTP_I6LF0qA
+  port: 60592
+  server: 93.127.181.14
+  type: trojan
 - name: '@V2rayNG3 #140'
   network: tcp
   password: xjN4xcuPGg
@@ -6300,6 +6277,16 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: 'ᴬᴸᴸ¹🇳🇱➣@v2ray_plusz #1'
+  network: ws
+  password: 🤠JKVPN_JKVPN🤠
+  port: 80
+  server: www.speedtest.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
 - name: '🇩🇪 @G0dv2ray #1'
   network: ws
   password: 🤠JKVPN_JKVPN🤠
@@ -6310,7 +6297,7 @@ proxies:
     headers:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
-- name: '🇩🇪 Telegram @SRCVPN #2'
+- name: '🇩🇪 Telegram @SRCVPN #3'
   network: ws
   password: 🤠JKVPN_JKVPN🤠
   port: 80
@@ -6321,6 +6308,16 @@ proxies:
       Host: joker.ahang-alpha.ir
     path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
 - name: 'ᴬᴸᴸ³🇳🇱➣@JKVPN #5'
+  network: ws
+  password: 🤠JKVPN_JKVPN🤠
+  port: 80
+  server: www.zula.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joker.ahang-alpha.ir
+    path: /TELEGRAM_BYA_CHANEL_JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN-JKVPN?ed=2048
+- name: 'ᴬᴸᴸ³🇳🇱➣@v2ray_plusz #1'
   network: ws
   password: 🤠JKVPN_JKVPN🤠
   port: 80
@@ -6346,7 +6343,7 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 18.193.140.121
+  server: 18.153.87.172
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6355,7 +6352,7 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 15.237.9.13
+  server: 52.47.67.30
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6364,16 +6361,20 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 13.37.161.123
+  server: 51.44.198.145
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 🇺🇸 US | 🔓 TROJAN | @hope_net [...
-  password: 8cb7ad4e-2d61-3950-bb33-1d2cc3e653dd
+- name: ❔ XX | 🔒 TROJAN | @fastfreecon...
+  network: ws
+  password: fa9b326c-ca6f-4bb2-88f5-a163b404fcf8
   port: 443
-  server: 35.92.52.160
-  skip-cert-verify: true
-  sni: akamai.cdn.steampipe.steamcontent.com
+  server: asia.artunnel57.host
+  sni: asia.artunnel57.host
   type: trojan
+  ws-opts:
+    headers:
+      Host: asia.artunnel57.host
+    path: '%252Ftrojan-tls'
 - name: 🇺🇸 US | 🔒 TROJAN | @ip_cf_conf...
   network: tcp
   password: 79c935c0-27dc-4383-b307-dcac1b8e5509
@@ -6454,7 +6455,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 18.193.140.121
+  server: 18.153.87.172
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6463,7 +6464,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.237.9.13
+  server: 52.47.67.30
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6472,7 +6473,7 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.37.161.123
+  server: 51.44.198.145
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 🇫🇷 FR | 🔒 TROJAN | @proxyfn [1...
@@ -6487,15 +6488,6 @@ proxies:
   port: 443
   server: de1.test3.net
   sni: chatbuzzteambhm.chatbuzzt7150.workers.dev
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 🇩🇪 DE | 🔒 TROJAN | @v2ray_free...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.158.32.88
-  sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
@@ -6518,7 +6510,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 18.193.140.121
+  server: 18.153.87.172
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6527,7 +6519,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 15.237.9.13
+  server: 52.47.67.30
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6536,7 +6528,7 @@ proxies:
   network: tcp
   password: telegram-id-v2rayvpnchannel
   port: 22223
-  server: 13.37.161.123
+  server: 51.44.198.145
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -6587,17 +6579,29 @@ proxies:
     headers:
       Host: vipren.biz.id
     path: '%2FNeoxide-X%2F194.87.62.236-443'
-- name: '🇨🇭CH-45.155.54.117-0280 #1'
+- name: 🇺🇸US-138.197.5.103-4989
+  password: xxoo
+  port: 443
+  server: us.blazeppn.info
+  sni: us.blazeppn.info
+  type: trojan
+- name: 🇨🇭CH-45.155.54.117-0242
   password: LG7HKcZFIJ
   port: 110
   server: sws.ftpcomand.com
   sni: sws.ftpcomand.com
   type: trojan
-- name: 🇺🇸US-192.3.107.252-5025
+- name: 🇺🇸US-192.3.107.252-0352
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 192.3.107.252
   sni: rc8.freeguard.org
+  type: trojan
+- name: 🇩🇪DE-185.208.207.217-5209
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  sni: dus.freeguard.org
   type: trojan
 - name: 🍀68@oneclickvpnkeys
   network: ws
@@ -6610,21 +6614,23 @@ proxies:
     headers:
       Host: vpn.stupidworld.web.id
     path: '%2FStupid-World%2F103.106.228.126-2053'
-- name: 🦖78@oneclickvpnkeys
-  network: ws
-  password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
-  port: 443
-  server: vipren.biz.id
-  sni: vipren.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vipren.biz.id
-    path: '%2FNeoxide-X%2F194.87.62.236-443'
-- name: '🇨🇭[openproxylist.com] trojan-C... #1'
+- name: Join Telegram 🆔️ibahad 🇨🇭```
   network: tcp
   password: LG7HKcZFIJ
   port: 110
-  server: sws.ftpcomand.com
+  server: 45.155.54.117
   sni: sws.ftpcomand.com
   type: trojan
+- alpn:
+  - http/1.1
+  name: '@F1lterbreakerbot'
+  network: ws
+  password: 04ac3ce8-6512-4170-96d3-da6bffe84c1e
+  port: 2083
+  server: www.speedtest.net
+  sni: FreemnM.paNOtosu.StORe
+  type: trojan
+  ws-opts:
+    headers:
+      Host: freemnm.panotosu.store
+    path: /trLb3dWHIEtHE7MPUs/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ%3D

@@ -1,5 +1,5 @@
-# Update: 2025-08-15 08:50
-# Source 75 (http://140.238.31.152:12580/clash/proxies), 24
+# Update: 2025-08-16 08:46
+# Source 75 (http://140.238.31.152:12580/clash/proxies), 18
 proxies:
 - alterId: 64
   cipher: auto
@@ -18,16 +18,8 @@ proxies:
   ws-headers:
     HOST: www.32278117.xyz
   ws-path: /path/170733132233
-- country: 🇩🇪 DE
-  name: 🇩🇪 DE_04
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: nextstepcareer.online
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: 🇩🇰 DK
-  name: 🇩🇰 DK_05
+  name: 🇩🇰 DK_03
   password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   port: 443
   server: www.ddwhm.com
@@ -35,46 +27,36 @@ proxies:
   sni: nc.ylka.dpdns.org
   type: trojan
   udp: true
-- country: 🇬🇧 GB
-  name: 🇬🇧 GB_18
-  password: LG7HKcZFIJ
-  port: 110
-  server: sws.ftpcomand.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
+- alterId: 2
+  cipher: auto
   country: 🇭🇰 HK
-  name: 🇭🇰 HK_21
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
+  h2-opts: {}
+  http-opts: {}
+  name: 🇭🇰 HK_18
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  ws-headers:
+    HOST: broadcastlv.chat.bilibili.com
+  ws-path: /
 - country: 🇯🇵 JP
-  name: 🇯🇵 JP_43
+  name: 🇯🇵 JP_32
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 157.120.32.122
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  country: 🇰🇷 KR
-  name: 🇰🇷 KR_44
-  password: VXPipi29nxMO
-  plugin: obfs
-  plugin-opts:
-    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-    mode: http
-  port: 1052
-  server: kr2.qiangdong.xyz
-  type: ss
 - alterId: 32
   cipher: auto
   country: 🇳🇱 NL
   h2-opts: {}
   http-opts: {}
-  name: 🇳🇱 NL_76
+  name: 🇳🇱 NL_57
   network: ws
   port: 443
   server: vc.fly.dev
@@ -86,8 +68,29 @@ proxies:
   ws-headers:
     HOST: vc.fly.dev
   ws-path: /vc
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 🇸🇬 SG_67
+  network: tcp
+  port: 31103
+  server: cgroup.node3.v.nodelist-airport.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-path: /
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_86
+  name: 🇸🇬 SG_68
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 128.199.125.102
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇸🇬 SG
+  name: 🇸🇬 SG_69
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 165.22.55.206
@@ -95,15 +98,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_87
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 178.128.17.109
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇸🇬 SG
-  name: 🇸🇬 SG_88
+  name: 🇸🇬 SG_70
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 178.128.114.123
@@ -111,15 +106,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_89
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 157.230.32.243
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇸🇬 SG
-  name: 🇸🇬 SG_90
+  name: 🇸🇬 SG_71
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 178.128.106.216
@@ -127,23 +114,23 @@ proxies:
   type: trojan
   udp: true
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_91
+  name: 🇸🇬 SG_72
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: 128.199.125.102
+  server: 157.230.32.243
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸🇮 SI
-  name: 🇸🇮 SI_92
-  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
+- country: 🇸🇬 SG
+  name: 🇸🇬 SG_73
+  password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: it.mjt000.com
+  server: 178.128.17.109
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇸🇮 SI
-  name: 🇸🇮 SI_93
+  name: 🇸🇮 SI_74
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: sg.mjt000.com
@@ -152,44 +139,13 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸 US
-  name: 🇺🇸 US_98
-  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  port: 33152
-  server: cgroup.node2.s2.nodelist-airport.com
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇺🇸 US
-  name: 🇺🇸 US_107
+  name: 🇺🇸 US_81
   password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
   port: 4021
   server: cgroup.node2.s.nodelist-airport.com
   type: ss
 - country: 🇺🇸 US
-  name: 🇺🇸 US_117
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 165.22.3.117
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_118
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 25131
-  server: starlink-us2.2513142.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_119
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 443
-  server: starlink-us4.2513142.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_120
+  name: '🇺🇸 US_98 #1'
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 174.138.85.53
@@ -197,18 +153,26 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_121
+  name: 🇺🇸 US_99
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: 159.65.222.110
+  server: 165.22.3.117
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_122
+  name: 🇺🇸 US_100
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 104.248.68.184
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_101
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 159.65.222.110
   skip-cert-verify: true
   type: trojan
   udp: true

@@ -1,33 +1,176 @@
-# Update: 2025-08-15 08:50
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 4
+# Update: 2025-08-16 08:45
+# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 14
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇩🇪 DE 2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nm1ZhMktJbHTcJv0gqV8l0s_c9BWfQe5d02qhpSkKWo
+    short-id: 7fd4
+  server: 1794532.shatak.top
+  servername: images.apple.com
+  tls: false
+  type: vless
+  uuid: fe1888f8-2361-11f0-9970-45e1d80c4039
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇩🇪 DE 3
+  network: tcp
+  port: 8081
+  reality-opts:
+    public-key: nT4JZTeUVOw-XZ-htdqbFi1je4ZHeg-ALICrDk2usFE
+    short-id: d19d7a2d3da8595a
+  server: 51.89.2.113
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: f924939e-2d9a-46b7-a3c2-67a225b7c027
+  ws-opts:
+    path: /
+- name: 🇩🇪 DE 7
+  port: 20087
+  server: 91.107.178.242
+  tls: false
+  type: vless
+  uuid: f2c44225-736e-45a4-9cfb-490fa34e15a0
+  ws-opts:
+    path: /
+- name: 🇩🇪 DE 8
+  port: 443
+  server: 188.245.75.235
+  tls: false
+  type: vless
+  uuid: e89ba39d-ae7e-493a-a57b-cdd55b42b4e3
+  ws-opts:
+    path: /
+- name: 🇸🇬 SG 1
+  port: 443
+  server: free-server.techsonic.cloud
+  tls: true
+  type: vless
+  uuid: a4cb890e-8251-488e-9439-3403c9a58e55
+  ws-opts:
+    path: /
+- alpn:
+  - http/1.1
+  name: '🇺🇸 US 1 #5'
+  network: ws
+  password: zY0HGcoAcY2v
+  port: 443
+  server: schqqn0yhrrs34qn3a2k4i6g9xap1tph.pages.dev
+  sni: SChQqN0yhRrs34qn3a2K4i6g9XaP1Tph.PAGES.DEv
+  type: trojan
+  ws-opts:
+    headers:
+      Host: schqqn0yhrrs34qn3a2k4i6g9xap1tph.pages.dev
+    path: '%2ftr9Zdfzzj7vKjuSt4V%2fNDQuMjI0LjI0LjkxLDE4LjE4My4xNTguMjEx%3fed%3d2560'
+- name: '🇺🇸 US 2 #2'
+  network: ws
+  password: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  port: 443
+  server: vipren.biz.id
+  sni: vipren.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vipren.biz.id
+    path: '%2fNeoxide-X%2f194.87.62.236-443'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: '🇺🇸 US 11 #2'
+  network: httpupgrade
+  port: 2053
+  server: npmjs.com
+  servername: jrghxqxyoy-518237151.zamam.co
+  tls: true
+  type: vless
+  uuid: jrghxqxyoy
+  ws-opts:
+    headers:
+      Host: jrghxqxyoy-518237151.zamam.co
+    path: /download/cdn
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: '🇺🇸 US 12 #3'
+  network: httpupgrade
+  port: 2053
+  server: npmjs.com
+  servername: vw6hjp6qlg-525340125.zamam.co
+  tls: true
+  type: vless
+  uuid: vw6hjp6qlg
+  ws-opts:
+    headers:
+      Host: vw6hjp6qlg-525340125.zamam.co
+    path: /download/cdn
+- client-fingerprint: chrome
+  name: 🇬🇧 GB 1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: guQofANvA8Ia_uVwhRMriU09zudRTM_k7Nr498g161s
+    short-id: a31a8d04622560
+  server: 51.38.64.196
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: fac1c66f-3ba3-4d24-8ae8-d6049d949898
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '🇺🇸 US 11 #1'
-  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
-  port: '42501'
-  server: 208.67.105.87
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 PL 3
-  password: ltikupiYMQAOaKNHgUkdRg
+  name: 🇬🇧 GB 2
+  password: 9AtHeLOdXk0BF2xBz9gt85
   port: '443'
-  server: 77.83.246.74
+  server: 78.129.140.11
   type: ss
-- cipher: aes-256-gcm
-  name: 🇸🇬 SG 1
-  password: 132u7LM91Wna8u2uBFA6n5PRysZBi0OSoj+s/vQm0os=
-  port: '32202'
-  server: 143.198.206.3
-  type: ss
-- alterId: 0
+- client-fingerprint: edge
+  flow: xtls-rprx-vision!
+  name: 🇱🇻 LV 1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wOSxr467-m4ivlNk1m10wf6k4LDqO2bAkN0SEoC0tCA
+    short-id: 969defcfe6e0
+  server: s1.nodu10.ru
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: id7890941744
+  ws-opts:
+    path: /
+- alterId: 2
   cipher: auto
-  name: 🇨🇦 CA 2
+  name: 🇭🇰 HK 1
   network: ws
   port: 80
-  server: 15.235.41.200
+  server: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
   servername: null
   tls: false
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
   ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 HK 2
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: null
+  tls: false
+  type: vmess
+  uuid: 7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /

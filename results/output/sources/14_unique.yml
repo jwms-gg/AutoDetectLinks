@@ -1,9 +1,35 @@
-# Update: 2025-08-15 08:50
-# Source 14 (https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml), 1
+# Update: 2025-08-16 08:45
+# Source 14 (https://nodefree.githubrowcontent.com/%Y/%m/%Y%m%d.yaml), 3
 proxies:
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 🇨🇳_CN_中国_1
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v37.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国_2
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -13,5 +39,5 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: ocbc.com
+      host: v29.heduian.link
     path: /oooo

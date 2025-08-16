@@ -1,3 +1,75 @@
-# Update: 2025-08-15 08:50
-# Source 10 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 0
-proxies: []
+# Update: 2025-08-16 08:45
+# Source 10 (https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash), 6
+proxies:
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 'tg频道:@ripaojiedian #3'
+  password: amazonskr05
+  port: 443
+  server: 18.184.59.16
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: '🇭🇰 香港3|@ripaojiedian #1'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港5|@ripaojiedian
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港7|@ripaojiedian
+  network: ws
+  port: 80
+  server: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '🇯🇵 日本|@ripaojiedian #1'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-C3Laaffn48.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '🇺🇸 美国2|@ripaojiedian #1'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-C3Laaffn48.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss

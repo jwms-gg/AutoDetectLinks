@@ -1,30 +1,36 @@
-# Update: 2025-08-15 08:50
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 2
+# Update: 2025-08-16 08:45
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 3
 proxies:
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 8443
-  server: v34.emoyes.top
-  tls: true
-  type: vmess
-  uuid: 08b24d8d-10ab-4c5a-990e-4e0e194870af
-  ws-opts:
-    headers:
-      Host: v34.emoyes.top
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港3|@ripaojiedian #2'
+  name: 美国 CloudFlare节点
   network: ws
   port: '80'
-  server: hkt.gotochinatown.net
+  server: 141.101.115.65
   servername: ''
   tls: false
   type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+      Host: dp3.scproxy.top
+    path: /shirker
+- name: '新加坡3|@ripaojiedian #2'
+  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
+  port: 25010
+  server: 8.148.194.255
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #6'
+  network: ws
+  port: 443
+  server: bluehost.com
+  tls: true
+  type: vmess
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  ws-opts:
+    headers:
+      Host: cdntr2.digisport.shop
+    path: /19544

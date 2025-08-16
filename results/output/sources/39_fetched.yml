@@ -1,9 +1,9 @@
-# Update: 2025-08-15 08:50
-# Source 39 (https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vmess), 797
+# Update: 2025-08-16 08:45
+# Source 39 (https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/vmess), 679
 proxies:
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #6'
+  name: '@Daily_Configs #7'
   network: ws
   port: '20086'
   server: 46.165.194.90
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #7'
+  name: '@Daily_Configs #8'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -27,7 +27,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #8'
+  name: '@Daily_Configs #9'
   network: ws
   port: '20086'
   server: 81.168.83.197
@@ -39,7 +39,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #9'
+  name: '@Daily_Configs #10'
   network: tcp
   port: '28213'
   server: 135.125.182.74
@@ -163,6 +163,28 @@ proxies:
   name: Ghostray-@Ghostray_NG
   network: grpc
   port: 8880
+  server: s1.ghostrkr.sbs
+  tls: false
+  type: vmess
+  uuid: 2e4c17f6-d2f4-43be-b266-f76427865889
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: '@Ghostray_NG'
+  name: 'Ghostray-@Ghostray_NG #1'
+  network: grpc
+  port: 8880
+  server: s2.ghostrkh.sbs
+  tls: false
+  type: vmess
+  uuid: 7592d930-a97d-422b-b27d-c15afdaaf244
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: '@Ghostray_NG'
+  name: 'Ghostray-@Ghostray_NG #2'
+  network: grpc
+  port: 8880
   server: s3.ghostrke.sbs
   tls: false
   type: vmess
@@ -182,7 +204,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: '@Ghostray_NG'
-  name: 'Ghostray-Ghostray #2'
+  name: 'Ghostray-Ghostray #1'
   network: grpc
   port: 8880
   server: s1.ghostrkr.sbs
@@ -394,20 +416,7 @@ proxies:
   uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #57'
-  network: ws
-  port: '2086'
-  server: 162.159.45.167
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #58'
+  name: '@Hope_Net-join-us-on-Telegram #60'
   network: ws
   port: '8880'
   server: 162.159.45.167
@@ -420,56 +429,31 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #59'
+  name: '@Hope_Net-join-us-on-Telegram #61'
   network: ws
-  port: '2082'
-  server: 162.159.45.238
+  port: '2086'
+  server: 162.159.45.219
+  servername: ''
   tls: false
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
   ws-opts:
     headers:
-      Host: e4.6929198.xyz
+      Host: p1.613055.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #60'
+  name: '@Hope_Net-join-us-on-Telegram #62'
   network: ws
-  port: '2095'
-  server: 162.159.45.246
+  port: 2095
+  server: 172.64.99.22
   tls: false
   type: vmess
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #61'
-  network: ws
-  port: '8080'
-  server: 172.67.64.120
-  tls: false
-  type: vmess
-  uuid: b952c094-b477-4a5e-a4d7-b62d6d1675af
-  ws-opts:
-    headers:
-      Host: 30218215898937032484083613431792.v2line.net
-    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #62'
-  network: ws
-  port: '443'
-  server: 172.99.190.209
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vip2323.cfd
-    path: /linkvws
+      Host: ip12.6016725.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: '@Hope_Net-join-us-on-Telegram #63'
@@ -486,474 +470,6 @@ proxies:
   cipher: auto
   name: '@Hope_Net-join-us-on-Telegram #64'
   network: ws
-  port: '2095'
-  server: 104.18.114.108
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #65'
-  network: ws
-  port: '2095'
-  server: 104.18.114.10
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #66'
-  network: ws
-  port: '2082'
-  server: 104.18.114.100
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #67'
-  network: ws
-  port: '2082'
-  server: 104.18.114.115
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #68'
-  network: ws
-  port: '8880'
-  server: 104.18.114.118
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #69'
-  network: ws
-  port: '8880'
-  server: 104.18.114.112
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #70'
-  network: ws
-  port: '2082'
-  server: 104.18.114.124
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #71'
-  network: ws
-  port: '2086'
-  server: 104.18.114.124
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #72'
-  network: ws
-  port: '2095'
-  server: 104.18.114.127
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #73'
-  network: ws
-  port: '8880'
-  server: 104.18.114.128
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #74'
-  network: ws
-  port: '2082'
-  server: 104.18.114.13
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #75'
-  network: ws
-  port: '2095'
-  server: 104.18.114.144
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #76'
-  network: ws
-  port: '8880'
-  server: 104.18.114.144
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #77'
-  network: ws
-  port: '2095'
-  server: 104.18.114.156
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #78'
-  network: ws
-  port: '2082'
-  server: 104.18.114.158
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #79'
-  network: ws
-  port: '2095'
-  server: 104.18.114.158
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #80'
-  network: ws
-  port: '2082'
-  server: 104.18.114.15
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #81'
-  network: ws
-  port: '2095'
-  server: 104.18.114.15
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #82'
-  network: ws
-  port: '2082'
-  server: 104.18.114.166
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #83'
-  network: ws
-  port: '2086'
-  server: 104.18.114.168
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #84'
-  network: ws
-  port: '2082'
-  server: 104.18.114.175
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #85'
-  network: ws
-  port: '2095'
-  server: 104.18.114.177
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #86'
-  network: ws
-  port: '2086'
-  server: 104.18.114.170
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #87'
-  network: ws
-  port: '2082'
-  server: 104.18.114.18
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #88'
-  network: ws
-  port: '2095'
-  server: 104.18.114.182
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #89'
-  network: ws
-  port: '2086'
-  server: 104.18.114.196
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #90'
-  network: ws
-  port: '2082'
-  server: 104.18.114.197
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #91'
-  network: ws
-  port: '2082'
-  server: 104.18.114.209
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #92'
-  network: ws
-  port: '2086'
-  server: 104.18.114.201
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #93'
-  network: ws
-  port: '2082'
-  server: 104.18.114.215
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #94'
-  network: ws
-  port: '2082'
-  server: 104.18.114.216
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #95'
-  network: ws
-  port: '2082'
-  server: 104.18.114.22
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #96'
-  network: ws
-  port: '8880'
-  server: 104.18.114.220
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #97'
-  network: ws
-  port: '2086'
-  server: 104.18.114.223
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #98'
-  network: ws
-  port: '2095'
-  server: 104.18.114.249
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #99'
-  network: ws
-  port: '2082'
-  server: 104.18.114.3
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #100'
-  network: ws
   port: '2086'
   server: 104.18.114.31
   tls: false
@@ -965,163 +481,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #101'
-  network: ws
-  port: '2082'
-  server: 104.18.114.41
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #102'
-  network: ws
-  port: '8880'
-  server: 104.18.114.5
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #103'
-  network: ws
-  port: '2086'
-  server: 104.18.114.56
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #104'
-  network: ws
-  port: '2095'
-  server: 104.18.114.7
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #105'
-  network: ws
-  port: '2082'
-  server: 104.18.114.71
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #106'
-  network: ws
-  port: '2095'
-  server: 104.18.114.79
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #107'
-  network: ws
-  port: '2082'
-  server: 104.18.114.80
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #108'
-  network: ws
-  port: '2086'
-  server: 104.18.114.96
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #109'
-  network: ws
-  port: '2086'
-  server: 104.21.238.1
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #110'
-  network: ws
-  port: '2095'
-  server: 104.21.238.1
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #111'
-  network: ws
-  port: '2095'
-  server: 104.21.238.106
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #112'
-  network: ws
-  port: '2082'
-  server: 104.21.238.109
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #113'
+  name: '@Hope_Net-join-us-on-Telegram #65'
   network: ws
   port: '2082'
   server: 104.21.238.115
@@ -1134,33 +494,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #114'
-  network: ws
-  port: '2082'
-  server: 104.21.238.111
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #115'
-  network: ws
-  port: '2082'
-  server: 104.21.238.127
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #116'
+  name: '@Hope_Net-join-us-on-Telegram #66'
   network: ws
   port: '2095'
   server: 104.21.238.120
@@ -1173,319 +507,49 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #117'
+  name: '@Hope_Net-join-us-on-Telegram #67'
   network: ws
-  port: '2082'
-  server: 104.21.238.121
-  tls: false
+  port: 8443
+  server: 104.21.238.200
+  servername: http1.9290254.xyz
+  tls: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
   ws-opts:
     headers:
-      Host: e4.6929198.xyz
+      Host: http1.9290254.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #118'
+  name: '@Hope_Net-join-us-on-Telegram #68'
   network: ws
-  port: '2095'
-  server: 104.21.238.121
-  tls: false
+  port: 8443
+  server: 104.21.238.201
+  servername: http1.9290254.xyz
+  tls: true
   type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
   ws-opts:
     headers:
-      Host: c3.6016725.xyz
+      Host: http1.9290254.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #119'
+  name: '@Hope_Net-join-us-on-Telegram #69'
   network: ws
-  port: '2082'
-  server: 104.21.238.136
-  tls: false
+  port: 8443
+  server: 104.21.238.203
+  servername: http1.9290254.xyz
+  tls: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
   ws-opts:
     headers:
-      Host: e4.6929198.xyz
+      Host: http1.9290254.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #120'
-  network: ws
-  port: '2095'
-  server: 104.21.238.138
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #121'
-  network: ws
-  port: '8880'
-  server: 104.21.238.145
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #122'
-  network: ws
-  port: '2082'
-  server: 104.21.238.149
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #123'
-  network: ws
-  port: '8880'
-  server: 104.21.238.156
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #124'
-  network: ws
-  port: '8880'
-  server: 104.21.238.150
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #125'
-  network: ws
-  port: '8880'
-  server: 104.21.238.152
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #126'
-  network: ws
-  port: '2095'
-  server: 104.21.238.164
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #127'
-  network: ws
-  port: '2086'
-  server: 104.21.238.18
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #128'
-  network: ws
-  port: '2095'
-  server: 104.21.238.190
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #129'
-  network: ws
-  port: '2082'
-  server: 104.21.238.207
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #130'
-  network: ws
-  port: '8880'
-  server: 104.21.238.209
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #131'
-  network: ws
-  port: '8880'
-  server: 104.21.238.214
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #132'
-  network: ws
-  port: '2082'
-  server: 104.21.238.217
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #133'
-  network: ws
-  port: '8880'
-  server: 104.21.238.228
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #134'
-  network: ws
-  port: '8880'
-  server: 104.21.238.25
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #135'
-  network: ws
-  port: '2095'
-  server: 104.21.238.28
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #136'
-  network: ws
-  port: '2086'
-  server: 104.21.238.29
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #137'
-  network: ws
-  port: '8880'
-  server: 104.21.238.37
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #138'
-  network: ws
-  port: '2086'
-  server: 104.21.238.46
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #139'
-  network: ws
-  port: '2086'
-  server: 104.21.238.50
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #140'
-  network: ws
-  port: '2086'
-  server: 104.21.238.57
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #141'
+  name: '@Hope_Net-join-us-on-Telegram #70'
   network: ws
   port: '2086'
   server: 104.21.238.58
@@ -1498,85 +562,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #142'
-  network: ws
-  port: '2082'
-  server: 104.21.238.64
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #143'
-  network: ws
-  port: '2086'
-  server: 104.21.238.68
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #144'
-  network: ws
-  port: '2086'
-  server: 104.21.238.71
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #145'
-  network: ws
-  port: '2082'
-  server: 104.21.238.77
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #146'
-  network: ws
-  port: '2095'
-  server: 104.21.238.8
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #147'
-  network: ws
-  port: '2086'
-  server: 104.21.238.83
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #148'
+  name: '@Hope_Net-join-us-on-Telegram #71'
   network: ws
   port: '2082'
   server: 104.21.238.85
@@ -1589,254 +575,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #149'
-  network: ws
-  port: '2095'
-  server: 104.21.238.90
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #150'
-  network: ws
-  port: '2095'
-  server: 104.21.238.92
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #151'
-  network: ws
-  port: '8880'
-  server: 104.21.238.95
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #152'
-  network: ws
-  port: '2095'
-  server: 104.26.0.151
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #153'
-  network: ws
-  port: '2086'
-  server: 104.26.0.155
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #154'
-  network: ws
-  port: '8880'
-  server: 104.26.0.176
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #155'
-  network: ws
-  port: '2082'
-  server: 104.26.0.188
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #156'
-  network: ws
-  port: '8880'
-  server: 104.26.0.101
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #157'
-  network: ws
-  port: '8880'
-  server: 104.26.0.102
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #158'
-  network: ws
-  port: '2082'
-  server: 104.26.0.107
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #159'
-  network: ws
-  port: '2082'
-  server: 104.26.0.112
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #160'
-  network: ws
-  port: '2082'
-  server: 104.26.0.12
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #161'
-  network: ws
-  port: '8880'
-  server: 104.26.0.131
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #162'
-  network: ws
-  port: '2095'
-  server: 104.26.0.245
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #163'
-  network: ws
-  port: '8880'
-  server: 104.26.0.247
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #164'
-  network: ws
-  port: '2086'
-  server: 104.26.0.202
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #165'
-  network: ws
-  port: '2082'
-  server: 104.26.0.208
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #166'
-  network: ws
-  port: '2086'
-  server: 104.26.0.209
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #167'
-  network: ws
-  port: '2086'
-  server: 104.26.0.213
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #168'
+  name: '@Hope_Net-join-us-on-Telegram #72'
   network: ws
   port: '8880'
   server: 104.26.0.215
@@ -1849,351 +588,52 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #169'
-  network: ws
-  port: '2095'
-  server: 104.26.0.218
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #170'
-  network: ws
-  port: '2082'
-  server: 104.26.0.229
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #171'
-  network: ws
-  port: '2082'
-  server: 104.26.0.237
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #172'
-  network: ws
-  port: '2086'
-  server: 104.26.0.38
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #173'
-  network: ws
-  port: '8880'
-  server: 104.26.0.39
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #174'
-  network: ws
-  port: '2095'
-  server: 104.26.0.3
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #175'
-  network: ws
-  port: '2086'
-  server: 104.26.0.32
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #176'
-  network: ws
-  port: '2086'
-  server: 104.26.0.48
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #177'
-  network: ws
-  port: '8880'
-  server: 104.26.0.56
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #178'
-  network: ws
-  port: '2082'
-  server: 104.26.0.51
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #179'
-  network: ws
-  port: '8880'
-  server: 104.26.0.51
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #180'
-  network: ws
-  port: '8880'
-  server: 104.26.0.52
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #181'
-  network: ws
-  port: '2082'
-  server: 104.26.0.61
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #182'
-  network: ws
-  port: '2082'
-  server: 104.26.0.62
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #183'
-  network: ws
-  port: '2082'
-  server: 104.26.0.79
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #184'
-  network: ws
-  port: '2086'
-  server: 104.26.0.86
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #185'
-  network: ws
-  port: '2082'
-  server: 104.26.0.87
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #186'
-  network: ws
-  port: '2082'
-  server: 104.26.0.80
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #187'
-  network: ws
-  port: '2086'
-  server: 104.26.0.98
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #188'
-  network: ws
-  port: '2082'
-  server: 104.26.0.92
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #189'
-  network: ws
-  port: '2086'
-  server: 104.26.0.92
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #190'
-  network: ws
-  port: '2082'
-  server: 104.26.0.93
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #191'
-  network: ws
-  port: '1200'
-  server: 5.39.252.182
-  tls: false
-  type: vmess
-  uuid: d2372537-6a05-49bb-882d-84f2efd9fb7c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: '@Hope_Net-join-us-on-Telegram #192'
+  name: '@Hope_Net-join-us-on-Telegram #73'
   network: tcp
-  port: '433'
-  server: https://github.com/ALIILAPRO/v2rayNG-Config
+  port: '47118'
+  server: 45.159.51.28
   servername: ''
   tls: false
   type: vmess
-  uuid: Free
+  uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #23'
+  name: '@Hope_Net-join-us-on-Telegram #74'
+  network: tcp
+  port: '443'
+  server: 42.236.73.72
+  servername: www.zitian.cn
+  tls: true
+  type: vmess
+  uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+- alterId: 1
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #75'
   network: ws
   port: '443'
-  server: 57.129.24.124
-  servername: zula.ir
+  server: es.pulau.org
+  servername: es.pulau.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: aveiror.com
-    path: /linkvws
-- alterId: 0
+      Host: es.pulau.org
+    path: linkvws
+- alterId: 1
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #25'
+  name: 'Telegram:@config_proxy 🔥 #3'
   network: ws
-  port: '2082'
-  server: 104.21.238.85
-  tls: false
+  port: '443'
+  server: es.pulau.org
+  servername: es.pulau.org
+  tls: true
   type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #26'
-  network: ws
-  port: '8880'
-  server: 104.26.0.215
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
+      Host: es.pulau.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 美国01付费推荐：https://dafei.de
@@ -2215,7 +655,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
+  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2228,7 +668,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
+  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2241,7 +681,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
+  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2254,7 +694,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
+  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2267,7 +707,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  uuid: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2280,7 +720,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2293,7 +733,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2302,11 +742,11 @@ proxies:
   cipher: auto
   name: '美国01付费推荐：https://dafei.de #9'
   network: ws
-  port: 8880
+  port: 80
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2319,7 +759,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 67828a6e-0144-4e57-8169-2447a3dd2e61
+  uuid: 27e473f8-d610-4b04-bdf7-d0c39b47c897
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2332,7 +772,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 69136cc7-d70e-4357-8230-ec82bec92c19
+  uuid: 67828a6e-0144-4e57-8169-2447a3dd2e61
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2345,7 +785,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  uuid: 69136cc7-d70e-4357-8230-ec82bec92c19
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2358,7 +798,7 @@ proxies:
   server: csgo.com
   tls: false
   type: vmess
-  uuid: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
+  uuid: 8222f4cb-187b-42fa-a965-a4b84edbc15e
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2366,6 +806,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '美国01付费推荐：https://dafei.de #14'
+  network: ws
+  port: 8880
+  server: csgo.com
+  tls: false
+  type: vmess
+  uuid: 8a104bc2-a8d1-4f38-8c29-17176a68b7d5
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '美国01付费推荐：https://dafei.de #15'
   network: ws
   port: 8880
   server: csgo.com
@@ -2410,7 +863,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
+  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2423,7 +876,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
+  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2436,7 +889,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
+  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2449,7 +902,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
+  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2462,7 +915,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: 27425750-5bf5-497b-92d4-16e67030e154
+  uuid: 1688c7ee-35b3-4bfb-ab88-f8ce846daeb6
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2475,7 +928,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
+  uuid: 27425750-5bf5-497b-92d4-16e67030e154
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2488,7 +941,7 @@ proxies:
   server: fastcup.net
   tls: false
   type: vmess
-  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
+  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2497,11 +950,11 @@ proxies:
   cipher: auto
   name: '美国02付费推荐：https://dafei.de #10'
   network: ws
-  port: 8880
-  server: ssrsub.cloudflare.182682.xyz
+  port: 80
+  server: fastcup.net
   tls: false
   type: vmess
-  uuid: 27e473f8-d610-4b04-bdf7-d0c39b47c897
+  uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2514,7 +967,7 @@ proxies:
   server: ssrsub.cloudflare.182682.xyz
   tls: false
   type: vmess
-  uuid: 67828a6e-0144-4e57-8169-2447a3dd2e61
+  uuid: 27e473f8-d610-4b04-bdf7-d0c39b47c897
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2527,7 +980,7 @@ proxies:
   server: ssrsub.cloudflare.182682.xyz
   tls: false
   type: vmess
-  uuid: 69136cc7-d70e-4357-8230-ec82bec92c19
+  uuid: 67828a6e-0144-4e57-8169-2447a3dd2e61
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2540,7 +993,7 @@ proxies:
   server: ssrsub.cloudflare.182682.xyz
   tls: false
   type: vmess
-  uuid: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  uuid: 69136cc7-d70e-4357-8230-ec82bec92c19
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2548,6 +1001,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '美国02付费推荐：https://dafei.de #14'
+  network: ws
+  port: 8880
+  server: ssrsub.cloudflare.182682.xyz
+  tls: false
+  type: vmess
+  uuid: 8222f4cb-187b-42fa-a965-a4b84edbc15e
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '美国02付费推荐：https://dafei.de #15'
   network: ws
   port: 8880
   server: ssrsub.cloudflare.182682.xyz
@@ -2683,7 +1149,7 @@ proxies:
   server: pubg.ac
   tls: false
   type: vmess
-  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
+  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2696,7 +1162,7 @@ proxies:
   server: pubg.ac
   tls: false
   type: vmess
-  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
+  uuid: 76414574-71e0-4706-89cc-c5b09c13445d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2709,7 +1175,7 @@ proxies:
   server: pubg.ac
   tls: false
   type: vmess
-  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
+  uuid: 95c27cc4-82b5-45da-962e-ba675642fc3d
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2722,7 +1188,7 @@ proxies:
   server: pubg.ac
   tls: false
   type: vmess
-  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
+  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
   ws-opts:
     headers:
       Host: cdn-node-oss-99.paofu.de
@@ -2730,6 +1196,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '美国03付费推荐：https://dafei.de #14'
+  network: ws
+  port: 80
+  server: pubg.ac
+  tls: false
+  type: vmess
+  uuid: a134e3de-b25a-4020-9998-05fa6b715f1a
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '美国03付费推荐：https://dafei.de #15'
   network: ws
   port: 80
   server: pubg.ac
@@ -2822,19 +1301,6 @@ proxies:
   cipher: auto
   name: t.me/entryNET
   network: ws
-  port: '2095'
-  server: 104.18.114.156
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #1'
-  network: ws
   port: '2082'
   server: 104.18.114.115
   tls: false
@@ -2846,20 +1312,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #2'
-  network: ws
-  port: '2082'
-  server: 104.18.114.124
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #4'
+  name: 't.me/entryNET #1'
   network: ws
   port: '2086'
   server: 104.18.114.56
@@ -2872,59 +1325,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #5'
-  network: ws
-  port: '8880'
-  server: 104.18.114.5
-  tls: false
-  type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    headers:
-      Host: m1.106778.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #6'
-  network: ws
-  port: '2095'
-  server: 104.18.114.7
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #8'
-  network: ws
-  port: '2082'
-  server: 104.21.238.149
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #9'
-  network: ws
-  port: '2095'
-  server: 104.21.238.190
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #10'
+  name: 't.me/entryNET #2'
   network: ws
   port: '2095'
   server: 104.21.238.1
@@ -2937,7 +1338,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #11'
+  name: 't.me/entryNET #4'
   network: ws
   port: '2095'
   server: 104.21.238.106
@@ -2950,20 +1351,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #12'
-  network: ws
-  port: '2082'
-  server: 104.21.238.109
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #13'
+  name: 't.me/entryNET #5'
   network: ws
   port: '2082'
   server: 104.21.238.121
@@ -2976,7 +1364,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #14'
+  name: 't.me/entryNET #6'
   network: ws
   port: '8880'
   server: 104.21.238.95
@@ -2989,7 +1377,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #15'
+  name: 't.me/entryNET #7'
   network: ws
   port: '2082'
   server: 104.26.0.79
@@ -3002,33 +1390,20 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #16'
+  name: 't.me/entryNET #8'
   network: ws
-  port: '8880'
-  server: 104.26.0.101
+  port: '2086'
+  server: 104.26.0.202
   tls: false
   type: vmess
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
   ws-opts:
     headers:
-      Host: m1.106778.xyz
+      Host: p1.613055.xyz
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 't.me/entryNET #17'
-  network: ws
-  port: '2082'
-  server: 104.26.0.129
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: e4.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 't.me/entryNET #18'
+  name: 't.me/entryNET #9'
   network: ws
   port: '2086'
   server: 104.26.0.209
@@ -3051,33 +1426,83 @@ proxies:
   uuid: f46df6db-361f-474d-8787-67442ae6dd30
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: Telegram@configfu
-  network: grpc
-  port: '20646'
-  server: meli_proxyy.vip-plan.org
+  name: '@Hope_Net-join-us-on-Telegram #76'
+  network: ws
+  port: 2096
+  server: 104.16.67.38
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-flat-hat-00f2.ravapim426.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #77'
+  network: ws
+  port: 8080
+  server: 104.18.202.250
   servername: ''
   tls: false
   type: vmess
-  uuid: d98c7826-e2e8-464e-988a-81e2023d871b
-- alterId: 0
-  cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #193'
-  network: ws
-  port: '2087'
-  server: 104.26.14.16
-  servername: OfFEr.miRAcLestorY.ToP.
-  tls: true
-  type: vmess
-  uuid: ad0a8c49-0785-46d9-bb14-2c3ab03a5dbb
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
   ws-opts:
     headers:
-      Host: OfFeR.MirAclestORy.tOP.
+      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #78'
+  network: ws
+  port: 80
+  server: 104.19.48.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
     path: /
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #194'
+  name: '@Hope_Net-join-us-on-Telegram #79'
+  network: ws
+  port: 2086
+  server: 104.21.238.191
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
+  ws-opts:
+    headers:
+      Host: p1.613055.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #80'
+  network: tcp
+  port: 1080
+  server: 127.0.0.1
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: baacbca-acba-baca-bcad-abccacababcb
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #81'
+  network: tcp
+  port: 1080
+  server: 127.0.0.1
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bcbaaac-abca-cbaa-acbd-cacbbaccabba
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #82'
   network: tcp
   port: 8080
   server: 127.0.0.1
@@ -3087,7 +1512,7 @@ proxies:
   uuid: caacbba-acba-acba-bcda-ccccbaaababb
 - alterId: 0
   cipher: auto
-  name: '@Hope_Net-join-us-on-Telegram #195'
+  name: '@Hope_Net-join-us-on-Telegram #83'
   network: tcp
   port: 8080
   server: 127.0.0.1
@@ -3097,90 +1522,202 @@ proxies:
   uuid: cababca-acba-caba-dcba-ccbbaacbaacb
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #27'
+  name: '@Hope_Net-join-us-on-Telegram #84'
   network: tcp
   port: 8080
   server: 127.0.0.1
   servername: ''
   tls: false
   type: vmess
-  uuid: cababca-acba-caba-dcba-ccbbaacbaacb
+  uuid: cbaabca-bcaa-caba-dbca-cababbcbacac
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #28'
+  name: '@Hope_Net-join-us-on-Telegram #85'
   network: ws
-  port: '20086'
-  server: 161.248.30.3
-  servername: ''
-  tls: false
+  port: 443
+  server: 147.78.140.68
+  servername: 6c47-butterfly-6c47.yexoji3749.workers.dev
+  tls: true
   type: vmess
-  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   ws-opts:
-    path: /
+    headers:
+      Host: 6c47-butterfly-6c47.yexoji3749.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #29'
+  name: '@Hope_Net-join-us-on-Telegram #86'
   network: ws
-  port: '20086'
-  server: 173.208.51.193
+  port: 443
+  server: 149.7.16.174
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    path: /
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #30'
-  network: tcp
-  port: '31341'
-  server: 185.36.145.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b131f235-a350-479f-b65e-87593c7f3f07
-- alterId: 0
-  cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #32'
-  network: tcp
-  port: '31342'
-  server: 185.36.145.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b131f235-a350-479f-b65e-87593c7f3f07
-- alterId: 0
-  cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #33'
+  name: '@Hope_Net-join-us-on-Telegram #87'
   network: ws
-  port: '20086'
-  server: 64.81.39.212
+  port: 443
+  server: 158.51.121.36
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: a3efc510-c175-4b74-bc04-fe1d110a62bc
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    path: /
+    path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #35'
+  name: '@Hope_Net-join-us-on-Telegram #88'
+  network: ws
+  port: 443
+  server: 172.99.190.206
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #89'
+  network: ws
+  port: 443
+  server: 173.245.58.5
+  servername: worker-bitter-math-2af8.waxoha3621.workers.dev
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: worker-bitter-math-2af8.waxoha3621.workers.dev
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #90'
+  network: ws
+  port: 443
+  server: 2.189.59.7
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 64
+  cipher: auto
+  name: 'Telegram:@config_proxy 🔥 #4'
+  network: ws
+  port: 443
+  server: 202.79.161.188
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.32278117.xyz
+    path: /path/170733132233
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #91'
+  network: ws
+  port: 443
+  server: 23.162.200.94
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 64
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #92'
+  network: ws
+  port: 38003
+  server: 38.14.107.233
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23179753.xyz
+    path: /path/340434130032
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #93'
+  network: ws
+  port: 443
+  server: 38.91.106.227
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 'Telegram:@config_proxy 🔥 #5'
   network: tcp
-  port: '34592'
-  server: 89.34.230.34
+  port: '53611'
+  server: 5.75.204.130
   servername: ''
   tls: false
   type: vmess
-  uuid: ca392731-e433-4012-b483-bed5cd509075
+  uuid: 4e8f668b-7c38-4890-dbcf-1175ae0c9d34
 - alterId: 0
   cipher: auto
-  name: 'Telegram:@config_proxy 🔥 #36'
+  name: 'Telegram:@config_proxy 🔥 #12'
   network: tcp
-  port: '54895'
-  server: 91.107.186.41
+  port: '55819'
+  server: 5.75.204.130
   servername: ''
   tls: false
   type: vmess
-  uuid: faee5289-ca58-42f0-8564-fd84b49106c7
+  uuid: 2812e646-3423-41f2-d7fb-af265972c27b
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #94'
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 'Telegram:@config_proxy 🔥 #13'
+  network: tcp
+  port: '16570'
+  server: 65.109.216.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b272ab2-e072-4b02-9e9a-bf649443e172
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #95'
+  network: ws
+  port: 443
+  server: 69.50.93.90
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 📊اعتبار:88.11 GB📅انقضا:1روز(شم...
@@ -3208,6 +1745,62 @@ proxies:
   tls: false
   type: vmess
   uuid: b4b6640f-3e33-472b-9069-e359d54056ef
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #96'
+  network: ws
+  port: 443
+  server: az05.beyondy.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: az05.beyondy.cfd
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #97'
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #98'
+  network: ws
+  port: 80
+  server: hsj.lbxjc.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 'Telegram:@config_proxy 🔥 #14'
+  network: ws
+  port: '8080'
+  server: npmjs.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: nasnet
+  ws-opts:
+    headers:
+      Host: nasnet-4515017475.mashallahbet.com
+    path: /NASNET/cdn
 - alterId: 0
   cipher: auto
   name: 🇵🇱 Poland
@@ -3262,6 +1855,20 @@ proxies:
   tls: false
   type: vmess
   uuid: f97efb08-1d74-4e8b-b285-bec096c41ea5
+- alterId: 0
+  cipher: auto
+  name: 'Telegram:@config_proxy 🔥 #16'
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+  ws-opts:
+    headers:
+      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
+    path: /linkvkwss
 - alterId: 0
   cipher: auto
   name: 🇩🇪 𝑮𝒆𝒓𝒎𝒂𝒏𝒚 ⁽ᵀ¹⁾
@@ -3451,9 +2058,23 @@ proxies:
   tls: false
   type: vmess
   uuid: b4b6640f-3e33-472b-9069-e359d54056ef
+- alterId: 0
+  cipher: auto
+  name: '@Hope_Net-join-us-on-Telegram #99'
+  network: ws
+  port: 80
+  server: usnew.lbxjc.site
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
 - alterId: 2
   cipher: auto
-  name: '@awlix_ir #71'
+  name: '@awlix_ir #73'
   network: ws
   port: '80'
   server: 42.2.113.136
@@ -3510,7 +2131,7 @@ proxies:
     path: /97cc0323
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #72'
+  name: '@awlix_ir #74'
   network: tcp
   port: '47010'
   server: 43.247.134.85
@@ -3520,19 +2141,7 @@ proxies:
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - alterId: 0
   cipher: auto
-  name: 'unnamed #9'
-  network: ws
-  port: '20086'
-  server: 45.67.139.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3928330-4050-47f6-9d1c-df1fd801c568
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #21'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #19'
   network: ws
   port: '20086'
   server: 45.67.139.225
@@ -3568,30 +2177,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'r♡ya #8'
-  network: ws
-  port: '20086'
-  server: 45.67.139.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3928330-4050-47f6-9d1c-df1fd801c568
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '⚡ #2'
-  network: ws
-  port: '20086'
-  server: 45.67.139.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3928330-4050-47f6-9d1c-df1fd801c568
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 🇫🇷[Telegram:@v2rayng_fars]
   network: ws
   port: '20086'
@@ -3604,19 +2189,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇫🇷[Telegram:NetifyVPN]
-  network: ws
-  port: 20086
-  server: 45.67.139.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3928330-4050-47f6-9d1c-df1fd801c568
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 'VTWORAY_WOLF #5'
+  name: 'VTWORAY_WOLF #7'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3666,7 +2239,7 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #88'
+  name: '🛡️ @FreakConfig #85'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3676,7 +2249,7 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #34'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #38'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3686,7 +2259,7 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #89'
+  name: '🛡️ @FreakConfig #86'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3697,6 +2270,16 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '𝗝𝗼𝗶𝗻 ➠ @PlanB_Proxy | کانال ما... #17'
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: '@AblNet7 🇷🇺'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3726,7 +2309,27 @@ proxies:
   uuid: 314185f7-931d-4656-922d-0857e7afd224
 - alterId: 0
   cipher: auto
+  name: '@v2ray313 کانالمون 🙁'
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
   name: '@v2ray313 کانالمون 🥰'
+  network: tcp
+  port: '11052'
+  server: 45.67.230.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- alterId: 0
+  cipher: auto
+  name: '@v2ray313 کانالمون 🫀'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -3758,7 +2361,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #8'
+  name: '💎 @AblNet7 💎 #9'
   network: ws
   port: '80'
   server: 45.8.146.129
@@ -3822,7 +2425,7 @@ proxies:
   uuid: ef358e0f-3816-4e2a-a5ea-ca66e673cdf6
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #73'
+  name: '@awlix_ir #75'
   network: tcp
   port: '48019'
   server: 45.159.51.116
@@ -3832,7 +2435,7 @@ proxies:
   uuid: c06797d5-fa41-4b48-b132-d268d2acb302
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #74'
+  name: '@awlix_ir #76'
   network: tcp
   port: '47680'
   server: 45.196.219.174
@@ -3842,7 +2445,19 @@ proxies:
   uuid: d1f20e0c-967f-4f9a-fb8c-3027ee36cca6
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #22'
+  name: 🚜39@oneclickvpnkeys
+  network: ws
+  port: '20086'
+  server: 46.165.194.96
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #20'
   network: ws
   port: '20086'
   server: 46.165.194.90
@@ -3854,7 +2469,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇩🇪 #3'
+  name: 'Channel id: @ShadowProxy66 🇩🇪 #4'
   network: ws
   port: '20086'
   server: 46.165.194.90
@@ -3866,7 +2481,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #35'
+  name: '@AblNet7 🇮🇷 نت ملی #4'
   network: ws
   port: '25808'
   server: 46.243.3.42
@@ -3878,7 +2493,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #90'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #39'
+  network: ws
+  port: '25808'
+  server: 46.243.3.42
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8fd16171-8c78-475c-80fe-a6f66b310bf3
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🛡️ @FreakConfig #87'
   network: ws
   port: '25808'
   server: 46.243.3.42
@@ -3900,7 +2527,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #91'
+  name: '🛡️ @FreakConfig #88'
   network: tcp
   port: '50002'
   server: 47.92.152.169
@@ -3930,16 +2557,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 'unnamed #10'
-  network: tcp
-  port: '50002'
-  server: 47.116.166.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: '@V2RAY_VMESS_free #53'
   network: tcp
   port: '50002'
@@ -3960,7 +2577,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '@Selinc #30'
+  name: '@Selinc #31'
   network: ws
   port: '51339'
   server: 47.239.126.220
@@ -3972,7 +2589,7 @@ proxies:
     path: /7a41a4dd
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #92'
+  name: '🛡️ @FreakConfig #89'
   network: ws
   port: '51339'
   server: 47.239.126.220
@@ -3984,7 +2601,7 @@ proxies:
     path: /7a41a4dd
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #75'
+  name: '@awlix_ir #77'
   network: tcp
   port: '33210'
   server: 47.239.12.90
@@ -4046,7 +2663,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '@AblNet7 🇮🇷 نت ملی #3'
+  name: '@AblNet7 🇮🇷 نت ملی #5'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -4058,7 +2675,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #23'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #21'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -4082,7 +2699,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇩🇪 #4'
+  name: 'Channel id: @ShadowProxy66 🇩🇪 #5'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -4106,7 +2723,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 🔥@AblNet7 🇮🇷 نت ملی 🔥
+  name: '🔥@AblNet7 🇮🇷 نت ملی 🔥 #2'
   network: ws
   port: '80'
   server: 51.68.191.233
@@ -4118,7 +2735,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #36'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #40'
   network: tcp
   port: '42610'
   server: 51.79.86.182
@@ -4138,7 +2755,7 @@ proxies:
   uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
 - alterId: 0
   cipher: auto
-  name: 'unnamed #11'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #22'
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4150,7 +2767,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #24'
+  name: '[🇫🇷]t.me/ConfigsHub'
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4162,7 +2779,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'r♡ya #10'
+  name: 'r♡ya #2'
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4175,6 +2792,18 @@ proxies:
 - alterId: 0
   cipher: auto
   name: skiii
+  network: ws
+  port: '20086'
+  server: 51.254.21.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9bcecb26-920a-4e68-b296-88526310bff6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: سرور رایگان👈💚🌱  v2rayfree_serv...
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4222,7 +2851,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #9'
+  name: 🇨🇵@FreakConfig
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4234,7 +2863,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@MARAMBASHI 💜 #4'
+  name: '💎 @AblNet7 💎 #10'
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4243,12 +2872,22 @@ proxies:
   type: vmess
   uuid: 9bcecb26-920a-4e68-b296-88526310bff6
   ws-opts:
-    headers:
-      Host: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI
     path: /
 - alterId: 0
   cipher: auto
-  name: '@i10VPN 🚀| با ما متصل بمون⚡ #12'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #41'
+  network: ws
+  port: '20086'
+  server: 51.254.21.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9bcecb26-920a-4e68-b296-88526310bff6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '@i10VPN 🚀| با ما متصل بمون⚡ #11'
   network: ws
   port: '20086'
   server: 51.254.21.193
@@ -4262,6 +2901,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🚜69@oneclickvpnkeys
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
+- alterId: 0
+  cipher: auto
   name: '@IRAN_V2RAY1 #5'
   network: tcp
   port: '44023'
@@ -4272,17 +2921,7 @@ proxies:
   uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
 - alterId: 0
   cipher: auto
-  name: AZADIV2RAYY 🇩🇪
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
-- alterId: 0
-  cipher: auto
-  name: '@V2RAY_VMESS_free #56'
+  name: '@V2RAY_VMESS_free #57'
   network: ws
   port: '80'
   server: 57.129.132.223
@@ -4310,7 +2949,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #25'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #23'
   network: ws
   port: '443'
   server: 57.129.24.125
@@ -4322,6 +2961,20 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #24'
+  network: ws
+  port: '443'
+  server: 57.129.24.125
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
 - alterId: 0
   cipher: auto
   name: 'آلمان 🇩🇪 @V2xay #7'
@@ -4338,7 +2991,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #10'
+  name: '@Daily_Configs #11'
   network: tcp
   port: '102'
   server: 57.129.77.179
@@ -4424,7 +3077,7 @@ proxies:
   uuid: 5e6e263e-6bc4-457d-8429-774533ce7467
 - alterId: 0
   cipher: auto
-  name: '@V2RAY_VMESS_free #57'
+  name: '@V2RAY_VMESS_free #59'
   network: ws
   port: '443'
   server: 62.60.156.107
@@ -4438,7 +3091,7 @@ proxies:
     path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
   cipher: auto
-  name: '@V2RAY_VMESS_free #59'
+  name: '@V2RAY_VMESS_free #60'
   network: ws
   port: '443'
   server: 62.60.156.228
@@ -4452,7 +3105,7 @@ proxies:
     path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
   cipher: auto
-  name: '@V2RAY_VMESS_free #60'
+  name: '@V2RAY_VMESS_free #61'
   network: ws
   port: '443'
   server: 62.60.156.61
@@ -4476,7 +3129,7 @@ proxies:
   uuid: f107a60e-af79-44c9-bc7e-b5707f3208e1
 - alterId: 0
   cipher: auto
-  name: '@V2RAY_VMESS_free #61'
+  name: '@V2RAY_VMESS_free #62'
   network: tcp
   port: '16634'
   server: 62.60.246.86
@@ -4486,7 +3139,7 @@ proxies:
   uuid: 5026a4cf-27f5-4a37-b682-d2c1a4d11a4c
 - alterId: 0
   cipher: auto
-  name: '@Selinc #31'
+  name: '@Selinc #32'
   network: tcp
   port: '28011'
   server: 62.146.235.193
@@ -4536,7 +3189,7 @@ proxies:
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #93'
+  name: '🛡️ @FreakConfig #90'
   network: tcp
   port: '28011'
   server: 62.146.235.193
@@ -4546,7 +3199,7 @@ proxies:
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #26'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #25'
   network: ws
   port: '20086'
   server: 64.81.119.155
@@ -4558,19 +3211,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #27'
-  network: ws
-  port: '20086'
-  server: 64.81.30.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7f499074-3408-4840-b55b-91142735d2cc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 'haniye #1'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #26'
   network: ws
   port: '20086'
   server: 64.81.30.225
@@ -4594,19 +3235,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #28'
-  network: ws
-  port: '20086'
-  server: 64.81.30.24
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f53e0d42-afca-4b76-ae7f-806d6a1d36c2
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 'haniye #2'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #27'
   network: ws
   port: '20086'
   server: 64.81.30.24
@@ -4630,19 +3259,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #10'
-  network: ws
-  port: '20086'
-  server: 64.81.39.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b29f7187-9707-47fe-85d2-65b1ba69df16
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 'unnamed #12'
+  name: '💎 @AblNet7 💎 #11'
   network: ws
   port: '20086'
   server: 64.81.39.101
@@ -4666,19 +3283,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #29'
-  network: ws
-  port: '20086'
-  server: 64.81.39.212
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a3efc510-c175-4b74-bc04-fe1d110a62bc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 'haniye #3'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #28'
   network: ws
   port: '20086'
   server: 64.81.39.212
@@ -4722,16 +3327,6 @@ proxies:
   uuid: d3280f8f-0de6-bb11-93fa-ef18019bc78f
 - alterId: 0
   cipher: auto
-  name: 🇳🇱 [Telegram:@VPNSHOP011]
-  network: tcp
-  port: '7021'
-  server: 64.227.70.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d3280f8f-0de6-bb11-93fa-ef18019bc78f
-- alterId: 0
-  cipher: auto
   name: '🇺🇸جوین بده کانکت بمونی: @STAPe...'
   network: tcp
   port: '8080'
@@ -4742,7 +3337,7 @@ proxies:
   uuid: d8d0ed74-259c-2b73-f762-09d1ca453ace
 - alterId: 0
   cipher: auto
-  name: '@V2ray1_Ng #15'
+  name: '@V2ray1_Ng #16'
   network: tcp
   port: '32017'
   server: 65.109.188.195
@@ -4760,6 +3355,16 @@ proxies:
   tls: false
   type: vmess
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
+- alterId: 0
+  cipher: auto
+  name: '@NETMelliAnti'
+  network: tcp
+  port: '17512'
+  server: 65.109.216.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ed5cae04-d48c-4039-b1b2-b246b2e94fb9
 - alterId: 0
   cipher: auto
   name: '@V2rayNG3 #102'
@@ -4782,7 +3387,7 @@ proxies:
   uuid: 6dbc3cadefec498bbfc8b4da8d8dc16c
 - alterId: 0
   cipher: auto
-  name: '⚡ #3'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #29'
   network: ws
   port: '20086'
   server: 8.208.84.194
@@ -4790,30 +3395,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4790f95b-3794-49a4-a8e7-304c7fb0b23d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #30'
-  network: ws
-  port: '20086'
-  server: 8.208.84.194
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4790f95b-3794-49a4-a8e7-304c7fb0b23d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '@V2RAY_VMESS_free #62'
-  network: ws
-  port: '29745'
-  server: 81.91.158.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 77864adc-b795-4a82-8212-f2f3169b119b
   ws-opts:
     path: /
 - alterId: 0
@@ -4852,16 +3433,6 @@ proxies:
     headers:
       Host: ad80f8ec-4861-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
     path: /ad80f8ec-4861-11f0-a948-6a75f667b472?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 'unnamed #13'
-  network: tcp
-  port: '39674'
-  server: 82.197.69.131
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
 - alterId: 0
   cipher: auto
   name: '@AblNet7 🇺🇲 #2'
@@ -4926,7 +3497,7 @@ proxies:
   uuid: 4ac39e8a-6d5c-48bb-b0d0-f633c829113e
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #37'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #42'
   network: tcp
   port: '2096'
   server: 84.32.59.225
@@ -4946,7 +3517,19 @@ proxies:
   uuid: 036f2142-ec3f-487a-89d6-ae2e6bc41b36
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #94'
+  name: '🛡️ @FreakConfig #91'
+  network: ws
+  port: '28838'
+  server: 89.169.13.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '@AblNet7 🇮🇷 نت ملی #6'
   network: ws
   port: '28838'
   server: 89.169.13.60
@@ -5000,6 +3583,104 @@ proxies:
   uuid: ca392731-e433-4012-b483-bed5cd509075
 - alterId: 0
   cipher: auto
+  name: ALL@azadiiivpn
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_AZADIIIVPN-AZADIIIVPN_AZADIIIVPN_AZADIIIVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 'NL 🇳🇱 | @v2xay #6'
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '@Academi_vpn8'
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 𝗝𝗼𝗶𝗻➠ᴬᴸᴸ⁴🇱🇺@JKVPN
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 Telegram @SRCVPN #1'
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 Telegram @ata_connect #1'
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱 @G0dv2ray
+  network: ws
+  port: '5901'
+  server: 91.99.144.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1874af71-ac77-4844-a0b2-109f83646ba4
+  ws-opts:
+    headers:
+      Host: speedtest1.irancell.ir.prod.hosts.ooklaserver.net.
+    path: /ws?ed=2560/?TELEGRAM_JKVPN-JKVPN_JKVPN_JKVPN?ed=2560
+- alterId: 0
+  cipher: auto
   name: 🇩🇪 Germany
   network: tcp
   port: '443'
@@ -5008,6 +3689,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 82bf7737-b5a1-4e0b-a1dc-a8ed28803f3e
+- alterId: 0
+  cipher: auto
+  name: '@AblNet7 🇩🇪 #1'
+  network: ws
+  port: '39130'
+  server: 91.99.153.39
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
+  ws-opts:
+    headers:
+      Host: panel.arushasoft.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇩🇪@FreakConfig
@@ -5038,7 +3733,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #11'
+  name: '💎 @AblNet7 💎 #12'
   network: ws
   port: '39130'
   server: 91.99.153.39
@@ -5052,7 +3747,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #95'
+  name: '🛡️ @FreakConfig #92'
   network: ws
   port: '39130'
   server: 91.99.153.39
@@ -5088,7 +3783,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇩🇪 #5'
+  name: 'Channel id: @ShadowProxy66 🇩🇪 #6'
   network: ws
   port: '20086'
   server: 91.99.185.216
@@ -5100,7 +3795,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'VTWORAY_WOLF #6'
+  name: 'VTWORAY_WOLF #8'
+  network: ws
+  port: '20086'
+  server: 91.99.185.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🚜75@oneclickvpnkeys
   network: ws
   port: '20086'
   server: 91.99.185.216
@@ -5172,17 +3879,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #38'
-  network: tcp
-  port: '32017'
-  server: 91.107.243.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
-- alterId: 0
-  cipher: auto
-  name: '🛡️ @FreakConfig #96'
+  name: '🛡️ @FreakConfig #93'
   network: tcp
   port: '32017'
   server: 91.107.243.150
@@ -5202,7 +3899,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: 'sia #3'
+  name: sia
   network: ws
   port: '20086'
   server: 91.218.143.133
@@ -5212,6 +3909,18 @@ proxies:
   uuid: a440e0d3-d39a-4bd8-a2c4-e22a6aef96e0
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: '@v2rayng_fars'
+  network: ws
+  port: '20086'
+  server: 91.218.143.133
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a440e0d3-d39a-4bd8-a2c4-e22a6aef96e0
+  ws-opts:
+    path: /?--TELEGRAM-V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS---V2RAYNG_FARS
 - alterId: 0
   cipher: auto
   name: '☞ 𝗝𝗼𝗶𝗻 ➠ @Viturey #7'
@@ -5238,7 +3947,7 @@ proxies:
     path: /?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
 - alterId: 0
   cipher: auto
-  name: 'sia #4'
+  name: 'sia #1'
   network: ws
   port: '20086'
   server: 91.218.143.133
@@ -5270,7 +3979,7 @@ proxies:
   uuid: 6b837ddd-7dfb-4520-dd9c-65d61d640896
 - alterId: 0
   cipher: auto
-  name: '@Selinc #32'
+  name: '@Selinc #33'
   network: tcp
   port: '47682'
   server: 91.228.10.125
@@ -5280,7 +3989,7 @@ proxies:
   uuid: 6b837ddd-7dfb-4520-dd9c-65d61d640896
 - alterId: 0
   cipher: auto
-  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #2'
+  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #1'
   network: tcp
   port: '47682'
   server: 91.228.10.125
@@ -5290,7 +3999,7 @@ proxies:
   uuid: 6b837ddd-7dfb-4520-dd9c-65d61d640896
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #39'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #43'
   network: tcp
   port: '47682'
   server: 91.228.10.125
@@ -5300,7 +4009,7 @@ proxies:
   uuid: 6b837ddd-7dfb-4520-dd9c-65d61d640896
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #97'
+  name: '🛡️ @FreakConfig #94'
   network: tcp
   port: '47682'
   server: 91.228.10.125
@@ -5324,21 +4033,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: none
-  name: '@MARAMBASHI 💛'
-  network: ws
-  port: '8443'
-  server: 92.112.126.22
-  servername: nl-2.stunnel.cc
-  tls: true
-  type: vmess
-  uuid: 39372035-3320-4537-a031-303120313030
-  ws-opts:
-    headers:
-      Host: nl-2.stunnel.cc
-    path: /ws
-- alterId: 0
-  cipher: none
-  name: '@V2RAYROZ #14'
+  name: '@V2RAYROZ #11'
   network: ws
   port: '8443'
   server: 92.112.126.22
@@ -5434,7 +4129,7 @@ proxies:
   uuid: dd1154b1-d5fa-5e52-a108-75e568c4ad06
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #98'
+  name: '🛡️ @FreakConfig #95'
   network: tcp
   port: '10534'
   server: 94.136.185.230
@@ -5456,7 +4151,7 @@ proxies:
   uuid: 10089a55-26c0-5214-956b-acaf3447119b
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #76'
+  name: '@awlix_ir #78'
   network: tcp
   port: '13456'
   server: 95.211.27.188
@@ -5628,20 +4323,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '𝗝𝗼𝗶𝗻 ➠ @NormanV2ray | نیم ساعت... #8'
-  network: ws
-  port: '2095'
-  server: 104.18.114.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
   name: '@v2ray313 کانالمون 🛌🏻'
   network: ws
   port: '443'
@@ -5656,7 +4337,7 @@ proxies:
     path: /aa
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #99'
+  name: '🛡️ @FreakConfig #96'
   network: ws
   port: '443'
   server: 104.18.149.76
@@ -5716,7 +4397,7 @@ proxies:
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
   cipher: auto
-  name: '🌟Telegram:@Asak_Vpn #3'
+  name: '🌟Telegram:@Asak_Vpn #4'
   network: httpupgrade
   port: '2095'
   server: 104.19.150.10
@@ -5820,7 +4501,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #100'
+  name: '🛡️ @FreakConfig #97'
   network: ws
   port: '2053'
   server: 104.21.3.189
@@ -5832,16 +4513,6 @@ proxies:
     headers:
       Host: cc2d4.89060004.xyz
     path: /
-- alterId: 0
-  cipher: zero
-  name: '𝗝𝗼𝗶𝗻 ➠ @NormanV2ray | نیم ساعت... #9'
-  network: xhttp
-  port: '443'
-  server: 104.21.62.144
-  servername: sauron2.melkore.ir
-  tls: true
-  type: vmess
-  uuid: 1d783967-a1ac-4196-a7a8-ec2ff4187364
 - alterId: 0
   cipher: zero
   name: 'DE 6 🇩🇪 | @v2xay #3'
@@ -5863,18 +4534,8 @@ proxies:
   type: vmess
   uuid: d9f6eeab-2035-45ca-afc0-84ec1a4ab041
 - alterId: 0
-  cipher: zero
-  name: 🇩🇪 [Telegram:@VPNSHOP011]
-  network: xhttp
-  port: '443'
-  server: 104.21.80.1
-  servername: sauron2.melkore.ir
-  tls: true
-  type: vmess
-  uuid: 01cf5a21-211c-4e0a-879b-7bf293dd6ecd
-- alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #31'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #30'
   network: ws
   port: '20086'
   server: 104.238.162.76
@@ -6036,18 +4697,6 @@ proxies:
   uuid: fe25c900-1a52-4dd5-89a2-9a39d7fcde38
 - alterId: 0
   cipher: auto
-  name: 'unnamed #14'
-  network: ws
-  port: '20521'
-  server: 121.154.187.44
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: efeca8c2-8f63-467b-8d28-d630a7a9dc8f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 'Server ED #1'
   network: ws
   port: '12812'
@@ -6128,7 +4777,17 @@ proxies:
   uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #12'
+  name: 🚜38@oneclickvpnkeys
+  network: tcp
+  port: '28213'
+  server: 135.125.182.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 81852771-76fb-4e94-e4f1-4e37a698a49a
+- alterId: 0
+  cipher: auto
+  name: '💎 @AblNet7 💎 #13'
   network: ws
   port: '20086'
   server: 137.175.124.167
@@ -6151,16 +4810,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇬🇧 @v2rayng_fars
-  network: tcp
-  port: '8080'
-  server: 138.68.174.114
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6bc7d291-6c95-751c-87c5-f5d4ae650bb0
-- alterId: 0
-  cipher: auto
-  name: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 [Telegram:@VPNSHOP011] #1'
   network: tcp
   port: '8080'
   server: 138.68.174.114
@@ -6194,7 +4843,21 @@ proxies:
   uuid: d9f2bbb8-b738-4712-8c81-6d236784ce78
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #40'
+  name: 🚜78@oneclickvpnkeys
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #44'
   network: tcp
   port: '49882'
   server: 148.113.6.81
@@ -6224,7 +4887,7 @@ proxies:
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
-  name: '@V2ray1_Ng #16'
+  name: '@V2ray1_Ng #17'
   network: tcp
   port: '15361'
   server: 15.204.11.190
@@ -6244,7 +4907,7 @@ proxies:
   uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
 - alterId: 0
   cipher: auto
-  name: '@Selinc #33'
+  name: '@Selinc #34'
   network: tcp
   port: '41100'
   server: 15.204.234.200
@@ -6264,7 +4927,7 @@ proxies:
   uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #41'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #45'
   network: tcp
   port: '41100'
   server: 15.204.234.200
@@ -6374,7 +5037,7 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇺🇸 #7'
+  name: 'Channel id: @ShadowProxy66 🇺🇸 #8'
   network: ws
   port: '20086'
   server: 154.223.19.231
@@ -6388,7 +5051,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'unnamed #15'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #31'
   network: ws
   port: '20086'
   server: 154.29.149.222
@@ -6401,18 +5064,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '@HiByeVPNN👈⚡❤️‍🔥 #32'
-  network: ws
-  port: '20086'
-  server: 154.29.149.222
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 718d0445-ef14-499b-b645-acb6cc721dcf
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #33'
   network: ws
   port: '20086'
   server: 154.62.185.216
@@ -6436,7 +5087,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: ID 🇮🇩 | @v2xay
+  name: 'ID 🇮🇩 | @v2xay #1'
   network: tcp
   port: '58868'
   server: 154.90.49.57
@@ -6456,7 +5107,7 @@ proxies:
   uuid: 00cef4c6-7e39-ddda-3136-a2c9ead48ac1
 - alterId: 0
   cipher: auto
-  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #3'
+  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #2'
   network: tcp
   port: '8080'
   server: 159.89.22.229
@@ -6504,16 +5155,6 @@ proxies:
   uuid: 2efa895e-5846-ee4c-24c7-9783a4caeb69
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 [Telegram:@VPNSHOP011]
-  network: tcp
-  port: '8096'
-  server: 167.71.86.8
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2efa895e-5846-ee4c-24c7-9783a4caeb69
-- alterId: 0
-  cipher: auto
   name: 🇺🇸@v2rayng_fars
   network: tcp
   port: '8096'
@@ -6534,7 +5175,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #101'
+  name: '🛡️ @FreakConfig #98'
   network: tcp
   port: '18000'
   server: 169.150.208.83
@@ -6542,18 +5183,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 'unnamed #16'
-  network: ws
-  port: '80'
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    path: /vmess/
 - alterId: 0
   cipher: auto
   name: 🇯🇵 | @External_Net
@@ -6580,19 +5209,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 🇯🇵[Telegram:NetifyVPN]
-  network: ws
-  port: '80'
-  server: 172.111.146.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  ws-opts:
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: '🛡️ @FreakConfig #102'
+  name: '🛡️ @FreakConfig #99'
   network: ws
   port: '80'
   server: 172.66.40.99
@@ -6606,7 +5223,7 @@ proxies:
     path: /telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2
 - alterId: 0
   cipher: auto
-  name: 'PL 🇵🇱 | @v2xay #1'
+  name: 'PL 🇵🇱 | @v2xay #2'
   network: ws
   port: '80'
   server: 172.66.40.99
@@ -6634,7 +5251,7 @@ proxies:
     path: /telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #103'
+  name: '🛡️ @FreakConfig #100'
   network: ws
   port: '8080'
   server: 172.66.40.99
@@ -6648,7 +5265,7 @@ proxies:
     path: /telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2,telegram-v2boxv2
 - alterId: 0
   cipher: auto
-  name: 'PL 🇵🇱 | @v2xay #2'
+  name: 'PL 🇵🇱 | @v2xay #3'
   network: ws
   port: '8080'
   server: 172.66.40.99
@@ -6746,7 +5363,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #104'
+  name: '🛡️ @FreakConfig #101'
   network: ws
   port: '2053'
   server: 172.67.131.27
@@ -6760,7 +5377,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #105'
+  name: '🛡️ @FreakConfig #102'
   network: ws
   port: '2053'
   server: 172.67.131.27
@@ -6802,7 +5419,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #77'
+  name: '@awlix_ir #79'
   network: ws
   port: '443'
   server: 172.67.170.13
@@ -6844,7 +5461,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'unnamed #17'
+  name: 21🚜@oneclickvpnkeys
   network: ws
   port: '20086'
   server: 173.208.51.193
@@ -6856,7 +5473,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #34'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #33'
   network: ws
   port: '20086'
   server: 173.208.51.193
@@ -6906,19 +5523,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 'unnamed #18'
-  network: ws
-  port: '20086'
-  server: 183.109.131.75
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #35'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #34'
   network: ws
   port: '20086'
   server: 183.109.131.75
@@ -6940,7 +5545,7 @@ proxies:
   uuid: fe25c900-1a52-4dd5-89a2-9a39d7fcde38
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #106'
+  name: '🛡️ @FreakConfig #103'
   network: ws
   port: '8443'
   server: 185.141.107.85
@@ -6974,7 +5579,7 @@ proxies:
   uuid: 2babf34a-16f5-4e38-a885-738fdfc8eabf
 - alterId: 0
   cipher: auto
-  name: '@Selinc #34'
+  name: '@Selinc #35'
   network: tcp
   port: '43585'
   server: 185.142.53.63
@@ -7054,7 +5659,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #13'
+  name: '💎 @AblNet7 💎 #14'
   network: ws
   port: '20521'
   server: 188.212.96.235
@@ -7086,7 +5691,7 @@ proxies:
   uuid: 1bdc1b8f-0a20-4dc8-8f73-e008f64da65e
 - alterId: 0
   cipher: auto
-  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #4'
+  name: '🆔@PlanB_Proxy سرور های بیشتر ج... #3'
   network: ws
   port: '8443'
   server: 193.163.201.181
@@ -7154,7 +5759,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #78'
+  name: '@awlix_ir #80'
   network: tcp
   port: '44264'
   server: 194.5.178.70
@@ -7178,7 +5783,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '@NETMelliAnti'
+  name: '@NETMelliAnti #1'
   network: ws
   port: '20086'
   server: 198.23.174.168
@@ -7190,7 +5795,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #14'
+  name: '💎 @AblNet7 💎 #15'
   network: ws
   port: '20086'
   server: 198.23.174.168
@@ -7202,7 +5807,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@awlix_ir #79'
+  name: '@awlix_ir #81'
   network: ws
   port: '1081'
   server: 198.44.179.185
@@ -7240,7 +5845,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #42'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #46'
   network: ws
   port: '8443'
   server: 2.188.219.43
@@ -7328,7 +5933,7 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #36'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #35'
   network: ws
   port: '20086'
   server: 206.206.80.227
@@ -7350,19 +5955,7 @@ proxies:
   uuid: f7cbd56d-601d-af4d-538c-45beae4c7834
 - alterId: 0
   cipher: auto
-  name: '@Selinc #35'
-  network: ws
-  port: '8443'
-  server: 213.142.150.227
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3c3e0cda-709a-438c-a48a-99b38f8ddc68
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: B
+  name: '@Selinc #36'
   network: ws
   port: '8443'
   server: 213.142.150.227
@@ -7386,7 +5979,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@v2ray313 کانالمون 🫀'
+  name: '@v2ray313 کانالمون 🫀 #1'
   network: ws
   port: '8443'
   server: 216.173.69.250
@@ -7398,7 +5991,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@Selinc #36'
+  name: '@Selinc #37'
   network: ws
   port: '8443'
   server: 216.173.69.250
@@ -7434,7 +6027,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #43'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #47'
   network: ws
   port: '8443'
   server: 216.173.69.250
@@ -7446,7 +6039,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #107'
+  name: '🛡️ @FreakConfig #104'
   network: ws
   port: '8443'
   server: 216.173.69.250
@@ -7500,7 +6093,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #15'
+  name: '💎 @AblNet7 💎 #16'
   network: ws
   port: '20086'
   server: 3.149.233.188
@@ -7562,7 +6155,7 @@ proxies:
   uuid: 3ccb5581-4960-497d-f60c-9cc1786c4641
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #108'
+  name: '🛡️ @FreakConfig #105'
   network: ws
   port: '40521'
   server: 37.202.225.74
@@ -7574,7 +6167,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #16'
+  name: '💎 @AblNet7 💎 #17'
   network: ws
   port: '16641'
   server: t.cnmjcn.cyou
@@ -7612,7 +6205,21 @@ proxies:
     path: /connect/de/?ed=1024/?JOKERRVPN
 - alterId: 0
   cipher: auto
-  name: '🇩🇪 Telegram @SRCVPN #1'
+  name: 17🚜@oneclickvpnkeys
+  network: ws
+  port: '80'
+  server: test.flha.ru
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d
+  ws-opts:
+    headers:
+      Host: test.flha.ru
+    path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 Telegram @SRCVPN #2'
   network: tcp
   port: '2083'
   server: uk-v2ray.freevmess.com
@@ -7646,7 +6253,7 @@ proxies:
   uuid: 8f772f706bd6412da86ce4601d2bf986
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇺🇸 #8'
+  name: 'Channel id: @ShadowProxy66 🇺🇸 #9'
   network: ws
   port: '443'
   server: v2ray.codefyinc.com
@@ -7660,7 +6267,7 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇺🇸 #9'
+  name: 'Channel id: @ShadowProxy66 🇺🇸 #10'
   network: ws
   port: '443'
   server: v2ray.codefyinc.com
@@ -7716,7 +6323,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇺🇸 #10'
+  name: 'Channel id: @ShadowProxy66 🇺🇸 #11'
   network: ws
   port: '443'
   server: vall.codefyinc.com
@@ -7744,7 +6351,7 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: 'Channel id: @ShadowProxy66 🇺🇸 #11'
+  name: 'Channel id: @ShadowProxy66 🇺🇸 #12'
   network: ws
   port: '8443'
   server: vall.codefyinc.com
@@ -7806,7 +6413,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #37'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #36'
   network: ws
   port: '2083'
   server: www.meter.net
@@ -7820,7 +6427,7 @@ proxies:
     path: /wssss
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #109'
+  name: '🛡️ @FreakConfig #106'
   network: ws
   port: '2083'
   server: www.meter.net
@@ -7834,7 +6441,7 @@ proxies:
     path: /linkwsrt?ed=2560
 - alterId: 0
   cipher: auto
-  name: '@Selinc #37'
+  name: '@Selinc #38'
   network: ws
   port: '2083'
   server: www.meter.net
@@ -7918,18 +6525,18 @@ proxies:
     path: /linkvkwss
 - alterId: 0
   cipher: auto
-  name: 'هــــلــــنــــد🇳🇱 #1'
+  name: 'Channel id: @ShadowProxy66 🇨🇦 #7'
   network: ws
-  port: '80'
+  port: '443'
   server: www.speedtest.net
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: a6995d40-77b9-11f0-b935-205c6d5f5d78
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
   ws-opts:
     headers:
-      Host: www.Speedtest.net.ImSoon.zula.ir.zula.ir.ante.ir.tryfreenet24.xyz.Im.soon.vip.server.baby.nator.eu-2.hihu.net
-    path: /cbo0kim1
+      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
+    path: /linkvkwss
 - alterId: 0
   cipher: auto
   name: '@v2rayngsupbot | @ai_duet 4'
@@ -7980,7 +6587,7 @@ proxies:
     path: /aioproxybot/129.150.49.58-18650
 - alterId: 0
   cipher: zero
-  name: '💎 @AblNet7 💎 #17'
+  name: '💎 @AblNet7 💎 #18'
   network: ws
   port: '443'
   server: aio.unlimited.biz.id
@@ -8008,7 +6615,7 @@ proxies:
     path: /aioproxybot/129.150.49.58-18650
 - alterId: 0
   cipher: zero
-  name: 'r♡ya #11'
+  name: 'r♡ya #6'
   network: ws
   port: '443'
   server: aio.unlimited.biz.id
@@ -8022,7 +6629,7 @@ proxies:
     path: /aioproxybot/129.150.49.58-18650
 - alterId: 0
   cipher: zero
-  name: 'sia #5'
+  name: 'sia #2'
   network: ws
   port: '443'
   server: aio.unlimited.biz.id
@@ -8064,7 +6671,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #110'
+  name: '🛡️ @FreakConfig #107'
   network: tcp
   port: '8081'
   server: aswedonke.bluetoothmouse.ir
@@ -8088,6 +6695,34 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
+  name: 18🚜@oneclickvpnkeys
+  network: ws
+  port: '2083'
+  server: cc2dash.89060004.xyz
+  servername: cc2d3.89060004.xyz
+  tls: true
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      Host: cc2d3.89060004.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19🚜@oneclickvpnkeys
+  network: ws
+  port: '2096'
+  server: cc2dash.89060004.xyz
+  servername: cc2d1.89060004.xyz
+  tls: true
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      Host: cc2dash.89060004.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: '💫T.me/Asak_Vpn💫 #4'
   network: ws
   port: '443'
@@ -8102,21 +6737,7 @@ proxies:
     path: ?ed=2560
 - alterId: 0
   cipher: none
-  name: 'r♡ya #12'
-  network: ws
-  port: '8443'
-  server: chat.deepseek.com
-  servername: nl-2.stunnel.cc
-  tls: true
-  type: vmess
-  uuid: 35302035-3020-4533-a039-382039372035
-  ws-opts:
-    headers:
-      Host: nl-2.stunnel.cc
-    path: /ws
-- alterId: 0
-  cipher: none
-  name: 'sia #6'
+  name: 'sia #3'
   network: ws
   port: '8443'
   server: chat.deepseek.com
@@ -8130,7 +6751,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: none
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #44'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #48'
   network: ws
   port: '8443'
   server: chat.deepseek.com
@@ -8144,7 +6765,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: none
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #38'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #37'
   network: ws
   port: '8443'
   server: chat.deepseek.com
@@ -8156,16 +6777,6 @@ proxies:
     headers:
       Host: nl-2.stunnel.cc
     path: /ws
-- alterId: 0
-  cipher: auto
-  name: '@v2ray313 کانالمون 💚'
-  network: tcp
-  port: '15709'
-  server: channel.dollardoon.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ac39e8a-6d5c-48bb-b0d0-f633c829113e
 - alterId: 0
   cipher: auto
   name: '[🌟]t.me/Asak_Vpn'
@@ -8236,7 +6847,7 @@ proxies:
   uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
 - alterId: 0
   cipher: auto
-  name: '💯T.me/Asak_Vpn💯 #16'
+  name: '💯T.me/Asak_Vpn💯 #17'
   network: tcp
   port: '52262'
   server: ee1.daallygold.com
@@ -8304,6 +6915,16 @@ proxies:
   uuid: 4268fcd7-b982-406b-bb03-6b98bbd26b70
 - alterId: 0
   cipher: auto
+  name: '@v2ray313 کانالمون 🧚🏻 #2'
+  network: tcp
+  port: '5230'
+  server: germani.shaeriyt.ddns-ip.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4d737fec-badf-40bf-b226-09804b9dc961
+- alterId: 0
+  cipher: auto
   name: '@V2RAY_VMESS_free #78'
   network: ws
   port: '8443'
@@ -8352,7 +6973,7 @@ proxies:
   uuid: 523d8d78-411a-4849-b17f-ccff6bcbf564
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #39'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #38'
   network: httpupgrade
   port: '2096'
   server: leader.sabapardaziran.ir
@@ -8362,7 +6983,7 @@ proxies:
   uuid: 8233f566-108f-4584-b5e6-78eabeb008b8
 - alterId: 0
   cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #40'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #39'
   network: httpupgrade
   port: '2096'
   server: leader.sabapardaziran.ir
@@ -8382,7 +7003,7 @@ proxies:
   uuid: 6aa4f7df-6595-4f0c-b6cb-d0fe3ff57424
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #18'
+  name: '💎 @AblNet7 💎 #19'
   network: ws
   port: '16645'
   server: m.cnmjin.net
@@ -8396,7 +7017,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '@Selinc #38'
+  name: '@Selinc #39'
   network: xhttp
   port: '2053'
   server: meli_proxyy.vip-plan.org
@@ -8408,7 +7029,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '@Selinc #39'
+  name: '@Selinc #40'
   network: grpc
   port: '443'
   server: meli_proxyy.vip-plan.org
@@ -8420,7 +7041,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '🛡️ @FreakConfig #111'
+  name: '🛡️ @FreakConfig #108'
   network: grpc
   port: '443'
   server: meli_proxyy.vip-plan.org
@@ -8431,16 +7052,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '@v2ray313 کانالمون 🙀'
-  network: tcp
-  port: '48913'
-  server: movaghat20.funfil.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 08a3bdd2-2167-4761-b547-e8bd1b4a44ec
-- alterId: 0
-  cipher: auto
-  name: '🛡️ @FreakConfig #112'
   network: tcp
   port: '48913'
   server: movaghat20.funfil.link
@@ -8480,7 +7091,7 @@ proxies:
   uuid: e81e7107-19b4-4e88-8015-820dcbb0a044
 - alterId: 0
   cipher: auto
-  name: '🇩🇪⤿ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 @V2WRAY #1'
+  name: 🇩🇪⤿ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 @V2WRAY
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8494,7 +7105,7 @@ proxies:
     path: /NASNET/cdn
 - alterId: 0
   cipher: auto
-  name: '@v2ray313 کانالمون 😘 #1'
+  name: '@v2ray313 کانالمون 😘'
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8536,7 +7147,7 @@ proxies:
     path: /download/cdn
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #45'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #49'
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8550,7 +7161,7 @@ proxies:
     path: /download/cdn
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #113'
+  name: '🛡️ @FreakConfig #109'
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8564,7 +7175,7 @@ proxies:
     path: /download/cdn
 - alterId: 0
   cipher: auto
-  name: '🇱🇮@FreakConfig #1'
+  name: 🇱🇮@FreakConfig
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8578,7 +7189,7 @@ proxies:
     path: /download/cdn
 - alterId: 0
   cipher: auto
-  name: '@Daily_Configs #11'
+  name: '@Daily_Configs #12'
   network: ws
   port: '8080'
   server: npmjs.com
@@ -8686,7 +7297,7 @@ proxies:
   uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
 - alterId: 0
   cipher: auto
-  name: '@Selinc #40'
+  name: '@Selinc #41'
   network: tcp
   port: '42684'
   server: panel1.ipyar.org
@@ -8746,7 +7357,7 @@ proxies:
   uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #46'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #50'
   network: tcp
   port: '42684'
   server: panel1.ipyar.org
@@ -8756,7 +7367,7 @@ proxies:
   uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #114'
+  name: '🛡️ @FreakConfig #110'
   network: tcp
   port: '42684'
   server: panel1.ipyar.org
@@ -8796,7 +7407,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: '@Selinc #41'
+  name: '@Selinc #42'
   network: tcp
   port: '32017'
   server: panel3.ipyar.org
@@ -8846,16 +7457,6 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: 'Bya To @Iran_V2ray1 #11'
-  network: tcp
-  port: '32017'
-  server: panel3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
-- alterId: 0
-  cipher: auto
   name: 'Config VIP @iran_v2ray1 #3'
   network: tcp
   port: '32017'
@@ -8886,7 +7487,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #47'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #51'
   network: tcp
   port: '32017'
   server: panel3.ipyar.org
@@ -8896,7 +7497,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: '🛡️ @FreakConfig #115'
+  name: '🛡️ @FreakConfig #111'
   network: tcp
   port: '32017'
   server: panel3.ipyar.org
@@ -8906,7 +7507,7 @@ proxies:
   uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #19'
+  name: '💎 @AblNet7 💎 #20'
   network: ws
   port: '16641'
   server: planb.mojcn.com
@@ -8920,7 +7521,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #20'
+  name: '💎 @AblNet7 💎 #21'
   network: ws
   port: '16644'
   server: planb.mojcn.com
@@ -8934,7 +7535,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '💎 @AblNet7 💎 #21'
+  name: '💎 @AblNet7 💎 #22'
   network: ws
   port: '16645'
   server: planb.mojcn.com
@@ -8982,7 +7583,7 @@ proxies:
   uuid: 75831afa-129b-449e-b8e0-16eca3170e2d
 - alterId: 0
   cipher: auto
-  name: 'Chanel:@Mcv2rayNG #9'
+  name: 'Chanel:@Mcv2rayNG #5'
   network: tcp
   port: '2088'
   server: s2.dns4wards.com
@@ -9002,37 +7603,7 @@ proxies:
   uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 0
   cipher: auto
-  name: '🇩🇪 [Telegram:@VPNSHOP011] #1'
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[All] قطع شدی بیا چنل👉@JKVPN
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: '💎کانفیگ های بیشتر در چنل تلگرا... #48'
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: '⚡ #4'
+  name: '💎کانفیگ های بیشتر در چنل تلگرا... #52'
   network: tcp
   port: '32020'
   server: s3.ipyar.org
@@ -9052,37 +7623,7 @@ proxies:
   uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 0
   cipher: auto
-  name: '𝗝𝗼𝗶𝗻 ➠ @NormanV2ray | نیم ساعت... #10'
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: 'unnamed #19'
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: '@Academi_vpn5 #1'
-  network: tcp
-  port: '32020'
-  server: s3.ipyar.org
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: '@HiByeVPNN👈⚡❤️‍🔥 #41'
+  name: '@HiByeVPNN👈⚡❤️‍🔥 #40'
   network: tcp
   port: '32020'
   server: s3.ipyar.org
@@ -9112,7 +7653,7 @@ proxies:
   uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 0
   cipher: auto
-  name: 'r♡ya #13'
+  name: '@HiByeVPNN👈❤️‍🔥🧑‍💻 #1'
   network: tcp
   port: '32020'
   server: s3.ipyar.org
@@ -9140,20 +7681,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2f480c9f-34ee-4c2d-9180-1d7cf8414339
-- alterId: 0
-  cipher: auto
-  name: 'Bya To @Iran_V2ray1 #12'
-  network: ws
-  port: '44185'
-  server: shamo.shnovps.click
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e0bdb9d-058a-4c36-aa58-44a782caec4f
-  ws-opts:
-    headers:
-      Host: shamo.shnovps.click
-    path: /
 - alterId: 0
   cipher: auto
   name: ◖🇫🇷◗ paris 🚨| @V2ray_vpn_ir
@@ -9246,16 +7773,6 @@ proxies:
   uuid: 6d4c8b19-3e82-4652-aa35-e9f8a7443188
 - alterId: 0
   cipher: auto
-  name: 'VayNora #14'
-  network: tcp
-  port: '32821'
-  server: 91.99.209.224
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 94440946-20d3-48e3-9acc-bca519c6791f
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: ''
   name: '@configfuسرورهای‌بیشتر'
@@ -9346,6 +7863,15 @@ proxies:
   tls: false
   type: vmess
   uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+- alterId: 0
+  cipher: auto
+  name: '[🏁]t.me/ConfigsHub'
+  network: tcp
+  port: '57147'
+  server: x5.xrayvpn.top
+  tls: false
+  type: vmess
+  uuid: 4a3fe54b-8383-45d3-a517-30355fc693d4
 - alterId: 0
   cipher: auto
   name: '%40V2ray_cartel #1'
