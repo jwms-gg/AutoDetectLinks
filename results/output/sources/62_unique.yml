@@ -1,5 +1,5 @@
-# Update: 2025-08-16 08:45
-# Source 62 (https://pxypool.131433.xyz/clash/proxies), 7
+# Update: 2025-08-17 08:53
+# Source 62 (https://pxypool.131433.xyz/clash/proxies), 11
 proxies:
 - cipher: aes-256-cfb
   name: Pool__01
@@ -11,39 +11,56 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
+  country: 🇨🇾CY
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇨🇾CY-🇺🇸US_04
+  network: ws
+  port: 80
+  server: pubg.ac
+  servername: cdn-node-oss-99.paofu.de
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
+  ws-opts:
+    headers:
+      HOST: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  country: 🇨🇾CY
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇨🇾CY-🇺🇸US_05
+  network: ws
+  port: 80
+  server: fastcup.net
+  servername: cdn-node-oss-99.paofu.de
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
+  ws-opts:
+    headers:
+      HOST: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- cipher: chacha20-ietf-poly1305
   country: 🇭🇰HK
-  name: 🇭🇰HK_06
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
+  name: 🇭🇰HK_10
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
   type: ss
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇭🇰HK-🇭🇰HK_07
+  name: Relay_🇭🇰HK-🇭🇰HK_12
   network: ws
   port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-  ws-opts:
-    headers:
-      HOST: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇭🇰HK-🇭🇰HK_08
-  network: ws
-  port: 80
-  server: e85784e2-t13gg0-taklwz-12bd.hk.p5pv.com
+  server: 6346963b-t15b40-taklwz-12bd.hk.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: true
   type: vmess
@@ -52,9 +69,64 @@ proxies:
     headers:
       HOST: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰HK-🇭🇰HK_14
+  network: ws
+  port: 80
+  server: 64309899-t15b40-t2c3sq-1spnr.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰HK-🇭🇰HK_15
+  network: ws
+  port: 80
+  server: 707647ce-t15b40-t7mt0p-1sllg.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: Relay_🇰🇷KR-🇰🇷KR_19
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇷🇺RU
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇷🇺RU-🇺🇸US_23
+  network: ws
+  port: 25029
+  server: 45.136.245.177
+  skip-cert-verify: true
+  type: vmess
+  uuid: d6e0c059-9774-454c-9a1c-6589662c0ae5
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_19
+  name: Relay_🇺🇸US-🇺🇸US_29
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -63,37 +135,19 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_24
-  network: ws
-  port: 2096
-  server: cc2dash.89060004.xyz
-  servername: cc2dash.89060004.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  ws-opts:
-    headers:
-      HOST: cc2dash.89060004.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇩🇪DE_26
+  name: Relay_🇺🇸US-🇩🇪DE_31
   network: ws
   port: 8443
-  server: fk1.620720.xyz
-  servername: fk1.620720.xyz
+  server: fk3.620720.xyz
+  servername: fk3.620720.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      HOST: fk1.620720.xyz
+      HOST: fk3.620720.xyz
     path: /
