@@ -1,105 +1,9 @@
-# Update: 2025-08-17 08:53
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 12
+# Update: 2025-08-18 08:53
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 5
 proxies:
-- name: HK_speednode_0061
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 154.211.8.227
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SC_speednode_0166
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 154.197.64.104
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SC_speednode_0167
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.197.64.233
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SC_speednode_0168
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 154.197.64.196
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: HK_speednode_0062
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 154.211.8.150
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SG_speednode_0173
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 27.50.49.37
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SG_speednode_0174
-  network: ws
-  password: Aimer
-  port: 443
-  server: 27.50.49.136
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
-- name: SC_speednode_0165
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 154.197.64.219
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: '美国 CloudFlare节点 #2'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -113,14 +17,41 @@ proxies:
     path: /shirker
 - alterId: 2
   cipher: auto
-  name: '香港5|@ripaojiedian #2'
+  name: 香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: 64309899-t15b40-t2c3sq-1spnr.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港5|@ripaojiedian #1'
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
   servername: ''
   tls: false
   type: vmess
-  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港7|@ripaojiedian #2'
+  network: ws
+  port: '80'
+  server: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -138,12 +69,3 @@ proxies:
     headers:
       Host: cdntr2.digisport.shop
     path: /19544
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港3|@ripaojiedian #2'
-  network: tcp
-  port: 44470
-  server: 43.247.135.176
-  tls: false
-  type: vmess
-  uuid: f7adceb1-556b-44f4-a2c2-20f3e06e2001
