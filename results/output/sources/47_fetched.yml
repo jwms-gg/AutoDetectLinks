@@ -1,33 +1,22 @@
-# Update: 2025-08-18 08:53
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 15
+# Update: 2025-08-19 08:47
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 28
 proxies:
-- name: '🔄 LATEST-UPDATE 📅 MON-27-MORDA... #2'
+- name: '🔄 LATEST-UPDATE 📅 TUE-28-MORDA... #2'
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: bcbaaac-bcaa-caab-dbca-aacbbcbbcaac
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
-  network: grpc
-  port: 8880
-  server: 185.231.205.5
+  uuid: abbaacc-acba-abca-acdb-abbcbcacaabc
+- name: 🔒 VL-XHTTP-NONE 🇩🇪 DE-91.99.17...
+  network: xhttp
+  port: 8443
+  server: 91.99.176.24
   tls: false
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148... #6'
-  network: ws
-  port: 8443
-  server: 104.17.148.22
-  servername: hetzner-4.access.name.ng
-  tls: true
-  type: vless
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
   ws-opts:
-    headers:
-      Host: hetzner-4.access.name.ng
-    path: /
+    path: /xhttp
 - name: '🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.246... #6'
   network: ws
   port: 8443
@@ -40,50 +29,63 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed
-- name: 🔒 VL-GRPC-NA 🇺🇸 US-45.82.251.8...
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-207.154.236....
+  network: tcp
+  port: 20087
+  server: 207.154.236.4
+  tls: false
+  type: vless
+  uuid: df0e67fc-a6e5-41d8-95fd-97dfb96d2802
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.13.1...
+  network: xhttp
+  port: 443
+  server: 91.99.13.148
+  tls: false
+  type: vless
+  uuid: ee845a26-9d15-4cac-b3a0-fc0c0c8135af
+  ws-opts:
+    path: /rty
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.125.21...
+  network: tcp
+  port: 443
+  server: 91.99.125.215
+  tls: false
+  type: vless
+  uuid: bc4f49dc-2c50-49ac-b8fa-d3020a5e65de
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 🔒 VL-GRPC-NA 🇺🇸 US-45.82.251.1...
   network: grpc
   port: 8880
-  server: 45.82.251.80
+  server: 45.82.251.184
   tls: false
   type: vless
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #7'
-  network: ws
-  port: 8443
-  server: 104.17.147.22
-  servername: hetzner-4.access.name.ng
-  tls: true
-  type: vless
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
-  ws-opts:
-    headers:
-      Host: hetzner-4.access.name.ng
-    path: /
-- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245...
-  network: ws
-  port: 8443
-  server: 190.93.245.232
-  servername: bitget1.asdasd.click
-  tls: true
-  type: vless
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
-- name: 🔒 VL-TCP-NA 🇮🇷 IR-185.128.139....
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.142.19...
   network: tcp
-  port: 46191
-  server: 185.128.139.183
+  port: 443
+  server: 91.99.142.198
   tls: false
   type: vless
-  uuid: a8aafbab-bf42-4388-9495-246faaf0ab8f
+  uuid: f3af923e-ecfe-46d5-9c27-4ff95f739afe
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.163....
+  network: xhttp
+  port: 443
+  server: 91.99.163.242
+  tls: false
+  type: vless
+  uuid: e8a19247-cb95-4f9c-9c77-ea0355268762
+  ws-opts:
+    path: /xhttp
 - client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.12.... #5'
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.13.... #6'
   network: ws
   port: 2087
-  server: 104.18.12.229
+  server: 104.18.13.229
   servername: vl.hongkong6.qzz.io
   tls: true
   type: vless
@@ -101,6 +103,151 @@ proxies:
   uuid: 8672bdcd-e331-464d-9ed8-93a242ca7d2e
   ws-opts:
     path: /
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147... #8'
+  network: ws
+  port: 8443
+  server: 104.17.147.22
+  servername: hetzner-4.access.name.ng
+  tls: true
+  type: vless
+  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  ws-opts:
+    headers:
+      Host: hetzner-4.access.name.ng
+    path: /
+- name: 🔒 VL-GRPC-NA 🇺🇸 US-45.82.251.8...
+  network: grpc
+  port: 8880
+  server: 45.82.251.80
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
+  network: grpc
+  port: 8880
+  server: 185.231.205.231
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-188.245.20...
+  network: xhttp
+  port: 443
+  server: 188.245.200.119
+  tls: false
+  type: vless
+  uuid: d7ed8991-e019-47c1-b578-93a8d8443830
+  ws-opts:
+    path: /xhttp
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.152....
+  network: xhttp
+  port: 443
+  server: 91.99.152.210
+  tls: false
+  type: vless
+  uuid: ee845a26-9d15-4cac-b3a0-fc0c0c8135af
+  ws-opts:
+    path: /rty
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.98.64.8...
+  network: xhttp
+  port: 443
+  server: 91.98.64.81
+  tls: false
+  type: vless
+  uuid: 661f6f25-1b51-4782-b2d2-994c6b97c158
+  ws-opts:
+    path: /xhttp
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.217....
+  network: xhttp
+  port: 443
+  server: 91.99.217.4
+  tls: false
+  type: vless
+  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
+  ws-opts:
+    path: /sc
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.233....
+  network: xhttp
+  port: 443
+  server: 91.99.233.77
+  tls: false
+  type: vless
+  uuid: 0f7e89d6-9f35-4e94-ba4b-509a724dc177
+  ws-opts:
+    path: /ds
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148... #7'
+  network: ws
+  port: 8443
+  server: 104.17.148.22
+  servername: hetzner-4.access.name.ng
+  tls: true
+  type: vless
+  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  ws-opts:
+    headers:
+      Host: hetzner-4.access.name.ng
+    path: /
+- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.203.12...
+  network: tcp
+  port: 443
+  server: 91.99.203.123
+  tls: false
+  type: vless
+  uuid: f3af923e-ecfe-46d5-9c27-4ff95f739afe
+  ws-opts:
+    headers:
+      Host: zula.ir
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.239....
+  network: xhttp
+  port: 8443
+  server: 91.99.239.156
+  tls: false
+  type: vless
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
+  ws-opts:
+    path: /xhttp
+- name: 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245...
+  network: ws
+  port: 8443
+  server: 190.93.245.232
+  servername: bitget1.asdasd.click
+  tls: true
+  type: vless
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /?ed=2560
+- name: 🔒 VL-XHTTP-NA 🇩🇪 DE-91.99.154....
+  network: xhttp
+  port: 443
+  server: 91.99.154.189
+  tls: false
+  type: vless
+  uuid: 3cf69055-74e9-4f7e-9121-d9a9f15ca79d
+  ws-opts:
+    path: /xhttp
+- name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #1'
+  network: grpc
+  port: 8880
+  server: 185.231.205.5
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: random
+  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.12.... #5'
+  network: ws
+  port: 2087
+  server: 104.18.12.229
+  servername: vl.hongkong6.qzz.io
+  tls: true
+  type: vless
+  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
+  ws-opts:
+    headers:
+      Host: vl.hongkong6.qzz.io
+    path: /?ed=2560
 - name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.25.227... #1'
   network: ws
   port: 443
@@ -113,40 +260,10 @@ proxies:
     headers:
       Host: f1.parsa.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: random
-  name: '🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.13.... #6'
-  network: ws
-  port: 2087
-  server: 104.18.13.229
-  servername: vl.hongkong6.qzz.io
-  tls: true
-  type: vless
-  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
-  ws-opts:
-    headers:
-      Host: vl.hongkong6.qzz.io
-    path: /?ed=2560
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-91.99.203.12...
-  network: tcp
-  port: 443
-  server: 91.99.203.123
-  tls: false
-  type: vless
-  uuid: f3af923e-ecfe-46d5-9c27-4ff95f739afe
-  ws-opts:
-    headers:
-      Host: zula.ir
-- name: 🔒 VL-TCP-NA 🇩🇪 DE-207.154.236....
-  network: tcp
-  port: 20087
-  server: 207.154.236.4
-  tls: false
-  type: vless
-  uuid: df0e67fc-a6e5-41d8-95fd-97dfb96d2802
 - name: '👨🏻‍💻 DEVELOPED-BY SOROUSH-MIRZ... #2'
   network: tcp
   port: 8080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: abacbac-acab-abac-cbad-aaccbbcbcbaa
+  uuid: cbaabac-bcaa-abac-cdab-cccaaababcbb

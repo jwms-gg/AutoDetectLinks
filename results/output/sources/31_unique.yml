@@ -1,21 +1,56 @@
-# Update: 2025-08-18 08:53
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 2
+# Update: 2025-08-19 08:47
+# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 4
 proxies:
-- cipher: rc4-md5
-  name: 🇬🇧 GB 1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 146.70.61.18
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 🇰🇷 KR 1
-  network: ws
-  port: 443
-  server: 202.79.161.188
-  servername: www.32278117.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 🇩🇪 DE 1
+  network: tcp
+  port: 18702
+  reality-opts:
+    public-key: pbi5k9j7ugmPIwxxaYSI5cvkVwW7eaVRMrjjGlm8BwE
+    short-id: afa469f10771
+  server: 51.195.101.116
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 71705031-92d3-4dc5-8011-e48a59e6c88b
   ws-opts:
-    path: /path/170733132233
+    path: /
+- name: 🇩🇪 DE 3
+  network: ws
+  port: 2052
+  server: 178.162.245.230
+  tls: false
+  type: vless
+  uuid: 70b6b341-b859-443a-baf0-08ceabe9d1a4
+  ws-opts:
+    headers:
+      Host: '%2f%3fBIA_TELEGRAM%40i10VPN'
+    path: /
+- client-fingerprint: chrome
+  name: 🇵🇰 PK 1
+  network: tcp
+  port: 30987
+  reality-opts:
+    public-key: 2RxaU-6x9JSARC6nLDfTaY446vMuCjBSNn3R0SSzezQ
+    short-id: 86d85a6c7d7a4a
+  server: 31.58.144.45
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 72524be2-bf09-4bed-bcf6-bd15bfa50442
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇵🇰 PK 4
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4e-unF1RO2v--E7-X3aqxnCSPaK9QaTfJ7LawAr2bRI
+  server: 103.175.79.2
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 7244a576-0680-ee46-acd8-55809ee12479
+  ws-opts:
+    path: /

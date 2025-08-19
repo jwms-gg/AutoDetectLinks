@@ -1,11 +1,24 @@
-# Update: 2025-08-18 08:53
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 96
+# Update: 2025-08-19 08:47
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 72
 proxies:
-- name: 乌克兰+V2CROSS.COM
+- alterId: 0
+  cipher: auto
+  name: 欧盟 V2CROSS.COM
+  network: ws
+  port: 443
+  server: 45.85.119.190
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- name: 俄罗斯+V2CROSS.COM
   network: ws
   password: Aimer
-  port: 2087
-  server: 5.182.84.9
+  port: 443
+  server: 176.124.223.92
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -16,8 +29,8 @@ proxies:
 - name: 美国+V2CROSS.COM
   network: ws
   password: Aimer
-  port: 2087
-  server: 199.34.228.164
+  port: 2083
+  server: 192.0.54.221
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -29,7 +42,7 @@ proxies:
   network: ws
   password: Aimer
   port: 2083
-  server: 192.200.160.35
+  server: 135.84.74.254
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -37,11 +50,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: '乌克兰+V2CROSS.COM #1'
+- name: '俄罗斯+V2CROSS.COM #1'
   network: ws
   password: Aimer
-  port: 2083
-  server: 5.182.84.52
+  port: 2053
+  server: 77.232.140.114
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -49,74 +62,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 美国+Vegasnap公司
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.167.255
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 荷兰 V2CROSS.COM
-  network: ws
-  port: '8880'
-  server: 160.153.136.171
-  tls: false
-  type: vmess
-  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 #1'
-  network: ws
-  port: '8880'
-  server: 166.62.106.171
-  tls: false
-  type: vmess
-  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 立陶宛 V2CROSS.COM
-  network: ws
-  port: '8880'
-  server: 185.148.107.171
-  tls: false
-  type: vmess
-  uuid: bac7eb53-3470-3af0-a69f-b0561333cda1
-  ws-opts:
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - name: '美国+V2CROSS.COM #2'
   network: ws
   password: Aimer
   port: 2087
-  server: 209.94.90.87
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 加拿大+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
+  server: 63.141.128.66
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -126,17 +76,29 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: 美国 V2CROSS.COM
   network: ws
   port: 443
-  server: 104.18.149.76
+  server: 199.181.197.60
   tls: true
   type: vmess
   uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: us.kkp.me.eu.org
-    path: /aa
+      Host: farid.1.berozha.ir
+    path: /us.kkp.me.eu.org/aa
+- name: 法国+V2CROSS.COM
+  network: ws
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - name: 亚太地区+V2CROSS.COM
   network: ws
   password: Aimer
@@ -149,130 +111,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0015 #1'
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 188.164.159.241
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 德国+V2CROSS.COM
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 北美地区+V2CROSS.COM
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 198.62.62.61
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: KZ_speednode_0107
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'JP_speednode_0097 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'JP_speednode_0095 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 103.116.7.189
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'RU_speednode_0207 #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'RU_speednode_0206 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'RU_speednode_0212 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 176.124.223.92
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: '美国|@ripaojiedian #3'
-  network: ws
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
-  sni: xXcdvFgt.191268.XYz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xXcdvFgt.191268.XYz
-    path: '%2FctdmgeIg3NII3ibrzzKXJGy3S1'
-- name: 'SG_speednode_0228 #1'
+- name: 乌克兰+V2CROSS.COM
   network: ws
   password: Aimer
   port: 2087
-  server: 92.243.75.49
+  server: 5.182.84.9
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -280,6 +123,30 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
+- name: '美国+V2CROSS.COM #3'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 美国+CloudFlare节点
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.3.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
 - name: '🇺🇸 美国|@ripaojiedian #3'
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -292,91 +159,18 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: /ctdmgeIg3NII3ibrzzKXJGy3S1
-- name: JP_speednode_0096
+- name: '美国|@ripaojiedian #1'
   network: ws
-  password: Aimer
+  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
   port: 443
-  server: 103.116.7.235
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
+  server: 172.67.214.21
+  sni: xXcdvFgt.191268.XYz
   type: trojan
   ws-opts:
     headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'SG_speednode_0225 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 27.50.48.21
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'AM_speednode_0013 #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 188.164.159.45
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US_speednode_0337
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'SG_speednode_0227 #1'
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 27.50.48.115
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0335 #1'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'HK_speednode_0080 #1'
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 154.211.8.220
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'FR_speednode_0059 #2'
+      Host: xXcdvFgt.191268.XYz
+    path: '%2FctdmgeIg3NII3ibrzzKXJGy3S1'
+- name: 'FR_speednode_0051 #3'
   network: ws
   password: Aimer
   port: 443
@@ -388,67 +182,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0231 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 27.50.49.251
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'SG_speednode_0230 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 27.50.49.208
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0348 #1'
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'HK_speednode_0083 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.211.8.155
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'SC_speednode_0220 #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 154.197.64.155
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'JP_speednode_0093 #1'
+- name: 'JP_speednode_0075 #3'
   network: ws
   password: Aimer
   port: 2087
@@ -460,7 +194,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'RU_speednode_0208 #1'
+- name: 'RU_speednode_0180 #3'
   network: ws
   password: Aimer
   port: 2087
@@ -472,23 +206,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0349 #2'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'RU_speednode_0213 #1'
+- name: 'JP_speednode_0078 #3'
   network: ws
   password: Aimer
   port: 2083
-  server: 5.182.84.52
+  server: 103.116.7.103
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -496,79 +218,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'AM_speednode_0014 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 188.164.159.171
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'HK_speednode_0082 #1'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 154.211.8.90
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'NL_speednode_0142 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.245.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 'AM_speednode_0016 #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 188.164.159.175
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0334 #4'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 135.84.74.27
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0356 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 198.62.62.61
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'RU_speednode_0209 #3'
+- name: 'RU_speednode_0183 #3'
   network: ws
   password: Aimer
   port: 2096
@@ -580,11 +230,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'HK_speednode_0081 #1'
+- name: 'US_speednode_0297 #5'
   network: ws
   password: Aimer
   port: 8443
-  server: 154.211.8.209
+  server: 135.84.74.27
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -592,59 +242,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SC_speednode_0218 #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 154.197.64.98
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0355 #2'
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 108.165.152.143
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: RU_speednode_0210
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'SG_speednode_0226 #1'
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 92.243.74.23
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0351 #2'
+- name: 'RU_speednode_0185 #3'
   network: ws
   password: Aimer
   port: 2083
-  server: 135.84.74.254
+  server: 5.182.84.52
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -652,139 +254,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'SG_speednode_0229 #1'
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 27.50.49.74
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0342 #5'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 66.81.247.88
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'SC_speednode_0219 #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 154.197.64.166
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0353 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 108.165.152.219
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0344 #5'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 155.46.213.38
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US_speednode_0347
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 63.141.128.66
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0361 #2'
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 66.81.247.230
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0336 #2'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'SG_speednode_0232 #1'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.3
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0362 #1'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 192.0.54.221
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0338 #2'
-  network: ws
-  password: slch2024
-  port: 8443
-  server: 104.18.3.108
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- name: 'RU_speednode_0211 #1'
+- name: 'RU_speednode_0186 #4'
   network: ws
   password: Aimer
   port: 2087
@@ -796,11 +266,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0343 #1'
+- name: 'RU_speednode_0181 #3'
   network: ws
   password: Aimer
-  port: 8443
-  server: 104.129.167.255
+  port: 2053
+  server: 77.232.140.114
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -808,7 +278,127 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0341 #3'
+- name: 'SG_speednode_0196 #3'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.3
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'RU_speednode_0187 #3'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 176.124.223.92
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'JP_speednode_0076 #3'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.189
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'JP_speednode_0077 #3'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'RU_speednode_0182 #4'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 5.182.84.244
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0298 #4'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'KZ_speednode_0086 #4'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 'RU_speednode_0184 #4'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 'SG_speednode_0195 #3'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0300 #4'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 66.81.247.88
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0306 #3'
   network: ws
   password: Aimer
   port: 2087
@@ -820,11 +410,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: US_speednode_0358
+- name: 'SG_speednode_0194 #3'
   network: ws
   password: Aimer
   port: 2087
-  server: 209.94.90.87
+  server: 92.243.75.49
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -832,11 +422,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0346 #1'
+- name: 'US_speednode_0299 #4'
   network: ws
   password: Aimer
-  port: 2096
-  server: 108.165.152.14
+  port: 8443
+  server: 104.129.167.255
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -844,11 +434,47 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0359 #2'
+- name: 'US_speednode_0311 #5'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 104.129.166.131
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0305 #4'
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.3.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- name: 'US_speednode_0303 #4'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 155.46.213.38
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0308 #4'
   network: ws
   password: Aimer
   port: 2087
-  server: 167.68.5.248
+  server: 63.141.128.66
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -856,7 +482,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0345 #2'
+- name: 'US_speednode_0307 #4'
   network: ws
   password: Aimer
   port: 2083
@@ -868,7 +494,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0354 #2'
+- name: 'US_speednode_0313 #5'
   network: ws
   password: Aimer
   port: 2083
@@ -880,11 +506,59 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 'US_speednode_0350 #2'
+- name: 'US_speednode_0309 #5'
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0304 #3'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 216.24.57.30
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 'US_speednode_0301 #3'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.74.254
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0315 #5'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 192.0.54.221
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 'US_speednode_0314 #6'
   network: ws
   password: Aimer
   port: 2096
-  server: 108.165.152.40
+  server: 66.81.247.230
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -894,7 +568,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #2'
+  name: 美国 CloudFlare节点
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -906,11 +580,11 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- name: US_speednode_0357
+- name: 'US_speednode_0312 #3'
   network: ws
   password: Aimer
-  port: 443
-  server: 108.165.152.113
+  port: 2083
+  server: 198.62.62.61
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -918,60 +592,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #3'
-  network: ws
-  port: 443
-  server: u1.huvicloud.com
-  tls: true
-  type: vmess
-  uuid: 04ddf6fd-2d5c-46ae-aa6c-6983a8c73725
-  ws-opts:
-    headers:
-      Host: u1.huvicloud.com
-    path: /04ddf6fd-2d5c-46ae-aa6c-6983a8c73725
-- name: 'US_speednode_0333 #3'
-  network: ws
-  password: Aimer
-  port: 7000
-  server: 154.17.12.30
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0360 #3'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 23.94.233.164
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: US_speednode_0364
-  network: ws
-  password: Aimer
-  port: 12354
-  server: 107.172.87.159
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: 'US_speednode_0363 #1'
+- name: 'US_speednode_0316 #5'
   network: ws
   password: Aimer
   port: 2087
-  server: 107.173.155.242
+  server: 209.94.90.87
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -979,48 +604,25 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #5'
-  password: amazonskr05
-  port: '443'
-  server: 18.184.59.16
-  type: ss
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #1 #2'
-  password: amazonskr05
-  port: '443'
-  server: 18.184.59.16
-  type: ss
-- cipher: aes-256-gcm
-  name: '日本2|@ripaojiedian #1'
-  password: 823e135ed103
-  port: '636'
-  server: 137.220.191.40
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国2|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 韩国2|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇯🇵 日本2|@ripaojiedian #4'
-  password: 823e135ed103
-  port: '636'
-  server: 137.220.191.40
-  type: ss
+- name: 'US_speednode_0310 #4'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: 丹麦 V2CROSS.COM
   network: ws
-  port: '80'
-  server: pubg.ac
+  port: 80
+  server: fastcup.net
+  servername: ''
   tls: false
   type: vmess
   uuid: 7577254b-c576-48cd-bbd0-69872aa3a9c9
@@ -1028,11 +630,68 @@ proxies:
     headers:
       Host: cdn-node-oss-99.paofu.de
     path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
+  network: ws
+  port: 443
+  server: api.jquery.com
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: admin.kasrax.ir
+    path: /us.kkp.me.eu.org/aa
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
+  network: ws
+  port: '80'
+  server: test.flha.ru
+  tls: false
+  type: vmess
+  uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d
+  ws-opts:
+    headers:
+      Host: test.flha.ru
+    path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 8443
+  server: fk1.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: fk1.620720.xyz
+    path: /
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #5'
+  password: amazonskr05
+  port: '443'
+  server: 34.242.33.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #1 #2'
+  password: amazonskr05
+  port: '443'
+  server: 34.242.33.79
+  type: ss
 - cipher: aes-256-gcm
-  name: '🇭🇰 香港2|@ripaojiedian #6'
-  password: 9bfdde71b4c0
+  name: '🇯🇵 日本2|@ripaojiedian #5'
+  password: 823e135ed103
   port: '636'
-  server: 103.103.245.158
+  server: 137.220.191.40
+  type: ss
+- cipher: aes-256-gcm
+  name: '日本2|@ripaojiedian #1'
+  password: 823e135ed103
+  port: '636'
+  server: 137.220.191.40
   type: ss
 - cipher: aes-256-gcm
   name: '香港2|@ripaojiedian #1'
@@ -1040,29 +699,46 @@ proxies:
   port: '636'
   server: 103.103.245.158
   type: ss
-- name: '香港3|@ripaojiedian #2'
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港3|@ripaojiedian #3'
+  network: tcp
+  port: 21186
+  server: 43.247.134.190
+  tls: false
+  type: vmess
+  uuid: bc6f4625-0ce3-4dca-b441-22c34808e6f2
+- alterId: 0
+  cipher: auto
+  name: '香港3|@ripaojiedian #2'
+  network: tcp
+  port: '21186'
+  server: 43.247.134.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc6f4625-0ce3-4dca-b441-22c34808e6f2
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港2|@ripaojiedian #5'
+  password: 9bfdde71b4c0
+  port: '636'
+  server: 103.103.245.158
+  type: ss
+- cipher: aes-256-cfb
+  name: 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: '38388'
+  server: 103.186.154.24
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇻🇳 越南|@ripaojiedian #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: '38388'
+  server: 103.186.154.24
+  type: ss
 - alterId: 2
   cipher: auto
   name: 香港 电讯盈科有限公司
-  network: ws
-  port: 80
-  server: 64309899-t15b40-t2c3sq-1spnr.hk3.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #1'
   network: ws
   port: 30807
   server: v10.heduian.link
@@ -1078,32 +754,18 @@ proxies:
   name: '香港5|@ripaojiedian #1'
   network: ws
   port: '80'
-  server: hkt.gotochinatown.net
+  server: 5bf9e2f8-t15b40-t6eg6k-1pckg.hk3.p5pv.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '香港7|@ripaojiedian #2'
-  network: ws
-  port: '80'
-  server: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #4'
+  name: '美国 CloudFlare节点 #5'
   network: ws
   port: 443
   server: bluehost.com
@@ -1114,3 +776,27 @@ proxies:
     headers:
       Host: cdntr2.digisport.shop
     path: /19544
+- cipher: rc4-md5
+  name: '🇺🇸 美国2|@ripaojiedian #4'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '🇯🇵 日本|@ripaojiedian #4'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '美国2|@ripaojiedian #1'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: rc4-md5
+  name: '日本|@ripaojiedian #1'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
+  type: ss

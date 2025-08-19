@@ -1,81 +1,23 @@
-# Update: 2025-08-18 08:53
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 12
+# Update: 2025-08-19 08:47
+# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 10
 proxies:
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 1
-  password: ZET59LF6DvCC8KVt
-  port: '9005'
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 2
-  password: Lp27rqyJq72bZsqX
-  port: '9045'
-  server: 217.30.10.18
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪 DE 1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 169.150.210.233
-  type: ss
-- name: 🇩🇪 DE 2
-  password: 2ee85121-31de-4581-a492-eb00f606e392
+- alterId: 32
+  cipher: auto
+  name: '🇳🇱 NL 1 #1'
+  network: ws
   port: 443
-  server: 185.208.207.217
-  sni: dus.freeguard.org
-  type: trojan
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
-    path: '%2f'
-- cipher: rc4-md5
-  name: 🇬🇧 GB 1
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 146.70.61.18
-  type: ss
-- cipher: rc4-md5
-  name: '🇺🇸 US 1 #1'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: '8080'
-  server: 194.5.215.59
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 US 2 #2'
-  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  port: '4021'
-  server: cgroup.node2.s.nodelist-airport.com
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 1
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.133
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇦🇹 AT 1 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 185.180.12.81
-  type: ss
-- name: 🇭🇰 HK 1
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  sni: hk.freeguard.org
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: 🇭🇰 HK 2
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  sni: hk.freeguard.org
-  type: trojan
-  ws-opts:
-    path: '%2f'
+    headers:
+      Host: vc.fly.dev
+    path: /vc
 - alterId: 64
   cipher: auto
-  name: 🇰🇷 KR 1
+  name: '🇰🇷 KR 1 #1'
   network: ws
   port: 443
   server: 202.79.161.188
@@ -85,3 +27,99 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/170733132233
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 1
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: '38388'
+  server: 103.186.155.133
+  type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪 DE 1
+  network: tcp
+  port: 18702
+  reality-opts:
+    public-key: pbi5k9j7ugmPIwxxaYSI5cvkVwW7eaVRMrjjGlm8BwE
+    short-id: afa469f10771
+  server: 51.195.101.116
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 71705031-92d3-4dc5-8011-e48a59e6c88b
+  ws-opts:
+    path: /
+- name: 🇩🇪 DE 2
+  network: ws
+  port: 2052
+  server: 178.162.245.230
+  tls: false
+  type: vless
+  uuid: 70b6b341-b859-443a-baf0-08ceabe9d1a4
+  ws-opts:
+    path: /
+- name: 🇩🇪 DE 3
+  network: ws
+  port: 2052
+  server: 178.162.245.230
+  tls: false
+  type: vless
+  uuid: 70b6b341-b859-443a-baf0-08ceabe9d1a4
+  ws-opts:
+    headers:
+      Host: '%2f%3fBIA_TELEGRAM%40i10VPN'
+    path: /
+- client-fingerprint: chrome
+  name: 🇵🇰 PK 1
+  network: tcp
+  port: 30987
+  reality-opts:
+    public-key: 2RxaU-6x9JSARC6nLDfTaY446vMuCjBSNn3R0SSzezQ
+    short-id: 86d85a6c7d7a4a
+  server: 31.58.144.45
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 72524be2-bf09-4bed-bcf6-bd15bfa50442
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: 🇵🇰 PK 2
+  network: tcp
+  port: 30987
+  reality-opts:
+    public-key: 2RxaU-6x9JSARC6nLDfTaY446vMuCjBSNn3R0SSzezQ
+    short-id: 86d85a6c7d7a4a
+  server: 31.58.144.45
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 72524be2-bf09-4bed-bcf6-bd15bfa50442
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: 🇵🇰 PK 3
+  network: tcp
+  port: 30987
+  reality-opts:
+    public-key: 2RxaU-6x9JSARC6nLDfTaY446vMuCjBSNn3R0SSzezQ
+    short-id: 86d85a6c7d7a4a
+  server: 31.58.144.45
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 72524be2-bf09-4bed-bcf6-bd15bfa50442
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇵🇰 PK 4
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4e-unF1RO2v--E7-X3aqxnCSPaK9QaTfJ7LawAr2bRI
+  server: 103.175.79.2
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 7244a576-0680-ee46-acd8-55809ee12479
+  ws-opts:
+    path: /
