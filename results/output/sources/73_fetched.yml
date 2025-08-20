@@ -1,4 +1,4 @@
-# Update: 2025-08-19 08:47
+# Update: 2025-08-20 08:45
 # Source 73 (https://pxypool.131433.xyz/clash/proxies), 35
 proxies:
 - cipher: aes-256-cfb
@@ -41,9 +41,16 @@ proxies:
   port: 13876
   server: twlite-20250815011717878c9d.tmdns-sing.top
   type: ss
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 'Relay_🇬🇧GB-🇬🇧GB_06 #1'
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13874
+  server: usa20250815010624020199.tmdns-sing.top
+  type: ss
 - cipher: aes-256-cfb
   country: 🇬🇧GB
-  name: 'Pool_🇬🇧GB_06 #1'
+  name: 'Pool_🇬🇧GB_07 #1'
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -52,17 +59,10 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: 🇬🇷GR
-  name: '🇬🇷GR_07 #1'
+  name: '🇬🇷GR_08 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.166.100
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '🇭🇰HK_08 #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰HK
@@ -71,15 +71,8 @@ proxies:
   port: 8319
   server: 18.162.146.85
   type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '🇭🇰HK_10 #1'
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
 - country: 🇭🇰HK
-  name: '🇭🇰HK_11 #1'
+  name: '🇭🇰HK_10 #1'
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
@@ -88,102 +81,107 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
+  country: 🇮🇶IQ
+  name: '🇮🇶IQ_11 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- cipher: aes-256-cfb
   country: 🇮🇸IS
   name: '🇮🇸IS_12 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.235.49.168
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇯🇵JP-🇯🇵JP_13 #1'
+  network: ws
+  port: 19682
+  server: tls.95.node-for-bigairport.win
+  servername: tls.95.node-for-bigairport.win
+  skip-cert-verify: true
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts:
+    headers:
+      HOST: tls.95.node-for-bigairport.win
+    path: /
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 'Relay_🇰🇷KR-🇰🇷KR_13 #1'
+  name: 'Relay_🇰🇷KR-🇰🇷KR_14 #1'
   password: qwerREWQ@@
   port: 4652
   server: p141.panda001.net
   type: ss
 - cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: '🇳🇱NL_14 #1'
+  name: '🇳🇱NL_15 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
   type: ss
 - cipher: aes-256-cfb
   country: 🇵🇹PT
-  name: '🇵🇹PT_15 #1'
+  name: '🇵🇹PT_16 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: '🇷🇺RU_16 #1'
+  name: '🇷🇺RU_17 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺RU
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇷🇺RU-🇺🇸US_17 #1'
-  network: ws
-  port: 25030
-  server: 45.136.245.177
+- country: 🇷🇺RU
+  name: '🇷🇺RU_18 #1'
+  password: LG7HKcZFIJ
+  port: 110
+  server: sws.ftpcomand.com
   skip-cert-verify: true
-  type: vmess
-  uuid: 1209fd51-bf42-4ed0-bd15-c1ff130c69df
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷🇺RU
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇷🇺RU-🇺🇸US_18 #1'
-  network: ws
-  port: 25030
-  server: 45.136.245.177
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2ddc339a-af3b-46ba-9df0-72d250657e60
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
+  sni: sws.ftpcomand.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
   name: '🇺🇸US_19 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸US
   name: 'Relay_🇺🇸US-🇺🇸US_20 #1'
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13882
-  server: hanguo01.tmdns-sing.top
+  port: 13892
+  server: usa022.tmdns-sing.top
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: '🇺🇸US_21 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_21 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_22 #1'
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13890
   server: japan001.tmdns-sing.top
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '🇺🇸US_22 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇺🇸US
   name: '🇺🇸US_23 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.90.63.177
+  server: 38.165.233.93
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
@@ -194,7 +192,14 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_25 #1'
+  name: '🇺🇸US_25 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 'Relay_🇺🇸US-🇺🇸US_26 #1'
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -206,7 +211,25 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇺🇸US_26 #1'
+  name: 'Relay_🇺🇸US-🇩🇪DE_27 #1'
+  network: ws
+  port: 8443
+  server: fk3.620720.xyz
+  servername: fk3.620720.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      HOST: fk3.620720.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇺🇸US-🇺🇸US_28 #1'
   network: ws
   port: 443
   server: v2ray.codefyinc.com
@@ -219,7 +242,7 @@ proxies:
       HOST: v2ray.codefyinc.com
     path: /vmessws
 - country: 🇺🇸US
-  name: 'Relay_🇺🇸US-🇺🇸US_27 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_29 #1'
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 185.208.207.217
@@ -229,89 +252,54 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🏁ZZ
-  name: '🏁ZZ_28 #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.31
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: '🏁ZZ_29 #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.32
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
   name: '🏁ZZ_30 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.30
+  server: 103.186.154.24
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: '🏁ZZ_31 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.18
+  server: 103.186.154.32
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: '🏁ZZ_32 #1'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.24
+  server: 103.186.155.30
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: '🏁ZZ_33 #1'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.31
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: '🏁ZZ_34 #1'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.18
   type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🏁ZZ-🇺🇸US_33 #1'
+  name: 'Relay_🏁ZZ-🇩🇪DE_35 #1'
   network: ws
-  port: 2096
-  server: cc2dash.89060004.xyz
-  servername: cc2dash.89060004.xyz
+  port: 8443
+  server: fk1.620720.xyz
+  servername: fk1.620720.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      HOST: cc2dash.89060004.xyz
+      HOST: fk1.620720.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🏁ZZ-🇺🇸US_34 #1'
-  network: ws
-  port: 2053
-  server: 104.21.3.189
-  servername: cc2d4.89060004.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  ws-opts:
-    headers:
-      HOST: cc2d4.89060004.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🏁ZZ-🇬🇧GB_35 #1'
-  network: ws
-  port: 80
-  server: test3.flha.ru
-  servername: test3.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
-  ws-opts:
-    headers:
-      HOST: test3.flha.ru
-    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
