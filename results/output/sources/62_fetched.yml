@@ -1,5 +1,5 @@
-# Update: 2025-08-20 08:45
-# Source 62 (https://pxypool.131433.xyz/clash/proxies), 35
+# Update: 2025-08-21 08:44
+# Source 62 (https://pxypool.131433.xyz/clash/proxies), 34
 proxies:
 - cipher: aes-256-cfb
   name: Pool__01
@@ -11,46 +11,44 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
+- alterId: 0
+  cipher: auto
+  country: 🇦🇹AT
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇦🇹AT-🇫🇷FR_02
+  network: tcp
+  port: 59956
+  server: 46.29.34.205
+  skip-cert-verify: true
+  type: vmess
+  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
 - cipher: aes-128-cfb
   country: 🇦🇿AZ
-  name: Relay_🇦🇿AZ-🇦🇿AZ_02
+  name: Relay_🇦🇿AZ-🇦🇿AZ_03
   obfs: http_post
   password: $$Turb0VPN$$
   port: 443
   protocol: auth_aes128_md5
   server: ssca.irundns.net
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇦CA
-  name: 🇨🇦CA_03
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.213.23.226
-  type: ss
-- cipher: rc4-md5
-  country: 🇩🇪DE
-  name: 🇩🇪DE_04
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - cipher: aes-128-gcm
   country: 🇪🇸ES
-  name: Relay_🇪🇸ES-🇪🇸ES_05
+  name: Relay_🇪🇸ES-🇪🇸ES_04
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13876
   server: twlite-20250815011717878c9d.tmdns-sing.top
   type: ss
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: Relay_🇬🇧GB-🇬🇧GB_06
+  name: Relay_🇬🇧GB-🇬🇧GB_05
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13874
   server: usa20250815010624020199.tmdns-sing.top
   type: ss
 - cipher: aes-256-cfb
   country: 🇬🇧GB
-  name: Pool_🇬🇧GB_07
+  name: Pool_🇬🇧GB_06
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -59,10 +57,17 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: 🇬🇷GR
-  name: 🇬🇷GR_08
+  name: 🇬🇷GR_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.166.100
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇭🇰HK
+  name: Relay_🇭🇰HK-🇭🇰HK_08
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13872
+  server: hk1-20250813213806be3c17japantm01.tmdns-sing.top
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰HK
@@ -94,53 +99,29 @@ proxies:
   port: 989
   server: 37.235.49.168
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇯🇵JP-🇯🇵JP_13
-  network: ws
-  port: 19682
-  server: tls.95.node-for-bigairport.win
-  servername: tls.95.node-for-bigairport.win
-  skip-cert-verify: true
-  type: vmess
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  ws-opts:
-    headers:
-      HOST: tls.95.node-for-bigairport.win
-    path: /
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: Relay_🇰🇷KR-🇰🇷KR_14
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
 - cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: 🇳🇱NL_15
+  name: 🇳🇱NL_13
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
   type: ss
 - cipher: aes-256-cfb
   country: 🇵🇹PT
-  name: 🇵🇹PT_16
+  name: 🇵🇹PT_14
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 🇷🇺RU_17
+  name: 🇷🇺RU_15
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - country: 🇷🇺RU
-  name: 🇷🇺RU_18
+  name: 🇷🇺RU_16
   password: LG7HKcZFIJ
   port: 110
   server: sws.ftpcomand.com
@@ -150,17 +131,31 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: 🇺🇸US_19
+  name: 🇺🇸US_17
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
   type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_20
+  name: Relay_🇺🇸US-🇺🇸US_18
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13882
+  server: hanguo01.tmdns-sing.top
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_19
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: 13892
   server: usa022.tmdns-sing.top
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_20
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: 13890
+  server: japan001.tmdns-sing.top
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
@@ -173,8 +168,8 @@ proxies:
   country: 🇺🇸US
   name: Relay_🇺🇸US-🇺🇸US_22
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13890
-  server: japan001.tmdns-sing.top
+  port: 13879
+  server: yinni01.tmdns-sing.top
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
@@ -255,51 +250,33 @@ proxies:
   name: 🏁ZZ_30
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.24
+  server: 103.186.154.31
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: 🏁ZZ_31
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.32
+  server: 103.186.155.18
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: 🏁ZZ_32
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.30
+  server: 103.186.154.32
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: 🏁ZZ_33
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.31
+  server: 103.186.154.24
   type: ss
 - cipher: aes-256-cfb
   country: 🏁ZZ
   name: 🏁ZZ_34
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.18
+  server: 103.186.155.30
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇩🇪DE_35
-  network: ws
-  port: 8443
-  server: fk1.620720.xyz
-  servername: fk1.620720.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      HOST: fk1.620720.xyz
-    path: /
