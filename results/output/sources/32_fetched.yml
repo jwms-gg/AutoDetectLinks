@@ -1,7 +1,7 @@
-# Update: 2025-08-21 08:44
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 29
+# Update: 2025-08-22 08:45
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 30
 proxies:
-- name: 北美地区+V2CROSS.COM
+- name: US_speednode_0284
   network: ws
   password: tg-fq521free
   port: 443
@@ -13,19 +13,7 @@ proxies:
     headers:
       Host: torjan.xn--xhq44j.eu.org
     path: /
-- name: 欧盟+V2CROSS.COM
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'US_speednode_0282 #3'
+- name: US_speednode_0282
   network: ws
   password: slch2024
   port: 8443
@@ -37,43 +25,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
-- name: 'KZ_speednode_0081 #3'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 194.76.18.129
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'RU_speednode_0175 #6'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'US_speednode_0284 #3'
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 'US_speednode_0283 #5'
+- name: 'US_speednode_0283 #1'
   network: ws
   password: tg-fq521free
   port: 443
@@ -99,55 +51,88 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #5'
-  password: amazonskr05
-  port: '443'
-  server: 52.215.235.115
-  type: ss
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #1 #2'
-  password: amazonskr05
-  port: '443'
-  server: 52.215.235.115
-  type: ss
+- name: KZ_speednode_0081
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: 'RU_speednode_0175 #2'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #3'
   network: ws
-  port: 443
-  server: test13.huvicloud.com
-  tls: true
-  type: vmess
-  uuid: b7087817-b967-474a-8e38-027e7c92a980
-  ws-opts:
-    headers:
-      Host: test13.huvicloud.com
-    path: /djakjhahf3fg
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #4'
-  network: ws
   port: 8443
-  server: fk4.620720.xyz
+  server: c3.620720.xyz
   tls: true
   type: vmess
   uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      Host: fk4.620720.xyz
+      Host: c3.620720.xyz
+    path: /
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #1 #2'
+  password: amazonskr05
+  port: '443'
+  server: 51.44.212.37
+  type: ss
+- cipher: aes-256-cfb
+  name: 'tg频道:@ripaojiedian #6'
+  password: amazonskr05
+  port: '443'
+  server: 51.44.212.37
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #4'
+  network: ws
+  port: 8443
+  server: sj1.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sj1.620720.xyz
     path: /
 - cipher: aes-256-gcm
-  name: '🇯🇵 日本2|@ripaojiedian #5'
+  name: '🇯🇵 日本2|@ripaojiedian #4'
   password: 823e135ed103
   port: '636'
   server: 137.220.191.40
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 奥地利 V2CROSS.COM
+  network: tcp
+  port: 59956
+  server: 46.29.34.205
+  tls: false
+  type: vmess
+  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
 - cipher: aes-256-gcm
-  name: '日本2|@ripaojiedian #1'
-  password: 823e135ed103
+  name: '香港2|@ripaojiedian #1'
+  password: 9bfdde71b4c0
   port: '636'
-  server: 137.220.191.40
+  server: 103.103.245.158
   type: ss
 - cipher: aes-256-gcm
   name: '🇭🇰 香港2|@ripaojiedian #5'
@@ -155,41 +140,42 @@ proxies:
   port: '636'
   server: 103.103.245.158
   type: ss
-- cipher: aes-256-gcm
-  name: '香港2|@ripaojiedian #1'
-  password: 9bfdde71b4c0
-  port: '636'
-  server: 103.103.245.158
-  type: ss
-- cipher: aes-256-cfb
-  name: 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.31
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇻🇳 越南|@ripaojiedian #2'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.31
-  type: ss
-- cipher: rc4-md5
-  name: '🇯🇵 日本|@ripaojiedian #4'
-  password: efanccyun
-  port: '8766'
-  server: cn01.efan8867801.xyz
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #5'
+  network: ws
+  port: '443'
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  tls: true
+  type: vmess
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  ws-opts:
+    headers:
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
+- cipher: aes-128-gcm
+  name: 广东省深圳市+移动
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13892'
+  server: usa022.tmdns-sing.top
   type: ss
 - cipher: aes-128-gcm
-  name: '🇰🇷 韩国|@ripaojiedian #3'
+  name: '🇭🇰 香港5|@ripaojiedian #4'
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13872'
+  server: hk1-20250813213806be3c17japantm01.tmdns-sing.top
+  type: ss
+- cipher: aes-256-gcm
+  name: '日本2|@ripaojiedian #1'
+  password: 823e135ed103
+  port: '636'
+  server: 137.220.191.40
+  type: ss
+- cipher: aes-128-gcm
+  name: '🇰🇷 韩国|@ripaojiedian #4'
   password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
   port: '13882'
   server: hanguo01.tmdns-sing.top
-  type: ss
-- cipher: rc4-md5
-  name: '🇺🇸 美国2|@ripaojiedian #4'
-  password: efanccyun
-  port: '8774'
-  server: cn01.efan8867801.xyz
   type: ss
 - cipher: aes-128-gcm
   name: '🇺🇸 美国|@ripaojiedian #3'
@@ -197,31 +183,6 @@ proxies:
   port: '13892'
   server: usa022.tmdns-sing.top
   type: ss
-- cipher: aes-128-gcm
-  name: '韩国|@ripaojiedian #1'
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: '13882'
-  server: hanguo01.tmdns-sing.top
-  type: ss
-- cipher: aes-128-gcm
-  name: '美国|@ripaojiedian #1'
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: '13892'
-  server: usa022.tmdns-sing.top
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #5'
-  network: ws
-  port: 443
-  server: bluehost.com
-  tls: true
-  type: vmess
-  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
-  ws-opts:
-    headers:
-      Host: cdntr2.digisport.shop
-    path: /19544
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港3|@ripaojiedian #3'
@@ -231,12 +192,6 @@ proxies:
   tls: false
   type: vmess
   uuid: bc6f4625-0ce3-4dca-b441-22c34808e6f2
-- cipher: rc4-md5
-  name: '日本|@ripaojiedian #1'
-  password: efanccyun
-  port: '8766'
-  server: cn01.efan8867801.xyz
-  type: ss
 - alterId: 0
   cipher: auto
   name: '香港3|@ripaojiedian #2'
@@ -247,9 +202,58 @@ proxies:
   tls: false
   type: vmess
   uuid: bc6f4625-0ce3-4dca-b441-22c34808e6f2
-- cipher: rc4-md5
-  name: '美国2|@ripaojiedian #1'
-  password: efanccyun
-  port: '8774'
-  server: cn01.efan8867801.xyz
+- cipher: aes-128-gcm
+  name: 🇮🇩 印尼|@ripaojiedian
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13879'
+  server: yinni01.tmdns-sing.top
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇰🇷 韩国2|@ripaojiedian #2'
+  password: qwerREWQ@@
+  port: '4652'
+  server: p141.panda001.net
+  type: ss
+- cipher: aes-128-gcm
+  name: '香港5|@ripaojiedian #1'
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13872'
+  server: hk1-20250813213806be3c17japantm01.tmdns-sing.top
+  type: ss
+- cipher: aes-128-gcm
+  name: '美国|@ripaojiedian #1'
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13892'
+  server: usa022.tmdns-sing.top
+  type: ss
+- cipher: aes-256-cfb
+  name: '韩国2|@ripaojiedian #1'
+  password: qwerREWQ@@
+  port: '4652'
+  server: p141.panda001.net
+  type: ss
+- cipher: aes-128-gcm
+  name: '韩国|@ripaojiedian #1'
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13882'
+  server: hanguo01.tmdns-sing.top
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #6'
+  network: ws
+  port: 443
+  server: bluehost.com
+  tls: true
+  type: vmess
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  ws-opts:
+    headers:
+      Host: cdntr2.digisport.shop
+    path: /19544
+- cipher: aes-128-gcm
+  name: 印尼|@ripaojiedian
+  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
+  port: '13879'
+  server: yinni01.tmdns-sing.top
   type: ss
