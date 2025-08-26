@@ -1,21 +1,52 @@
-# Update: 2025-08-24 08:52
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 2
+# Update: 2025-08-26 08:45
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
 proxies:
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  network: tcp
+  port: 32020
+  server: s3.ipyar.org
+  sni: ''
+  type: vmess
+  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
-  port: 30833
-  server: v33.heduian.link
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v33.heduian.link
+      host: v29.heduian.link
     path: /oooo
 - cipher: aes-256-cfb
-  name: 🇫🇷_FR_法国
-  password: amazonskr05
-  port: 443
-  server: 15.237.179.114
+  name: 🇸🇪_SE_瑞典
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  sni: ''
+  type: vmess
+  uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: zula.ir.eu-2.hihu.net
+    path: /b87r3d9e
