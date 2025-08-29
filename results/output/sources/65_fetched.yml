@@ -1,21 +1,23 @@
-# Update: 2025-08-26 08:45
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 81
+# Update: 2025-08-29 08:44
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 66
 proxies:
-- name: _NL_荷兰
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 45.91.171.116
-  skip-cert-verify: true
-  sni: sto.freeguard.org
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: _US_美国
-  password: haQpIdcLwwtb
-  port: 443
-  server: 77.83.245.190
+- cipher: aes-256-cfb
+  name: _RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: _ES_西班牙->🇺🇸_US_美国
+  port: 32020
+  server: s3.ipyar.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国
@@ -31,94 +33,31 @@ proxies:
     headers:
       Host: v29.heduian.link
     path: /oooo
-- cipher: aes-128-gcm
-  name: _CN_中国->🇺🇸_US_美国_1
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13890
-  server: japan001.tmdns-sing.top
+- cipher: aes-256-cfb
+  name: _SE_瑞典
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   name: _US_美国_1
   network: ws
-  port: 8880
-  server: 45.40.151.211
+  port: 80
+  server: www.speedtest.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
+  uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
   ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: www.speedtest.net
+    path: /b87r3d9e
 - alterId: 0
   cipher: auto
-  name: _FR_法国->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 141.11.203.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_2
-  network: ws
-  port: 8880
-  server: 198.71.191.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _DE_德国->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 185.16.110.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _NL_荷兰->🇺🇸_US_美国_1
-  network: ws
-  port: 8880
-  server: 160.153.1.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _NL_荷兰->🇺🇸_US_美国_2
-  network: ws
-  port: 8880
-  server: 45.131.210.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _ZA_南非->🇺🇸_US_美国_1
+  name: _ZA_南非_1
   network: ws
   port: 8880
   server: 102.177.176.210
@@ -129,22 +68,52 @@ proxies:
   uuid: d9369b77-531e-31f4-a2a2-2273db2825a2
   ws-opts:
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: _US_美国_3
+  name: _CN_中国->🇺🇸_US_美国 2
   network: ws
-  port: 8880
-  server: 160.79.104.214
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: _DK_丹麦->🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: csgo.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
+  ws-opts:
+    headers:
+      Host: csgo.com
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _US_美国_1 2
+  network: ws
+  port: 8880
+  server: 160.79.105.215
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
   ws-opts:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: _US_美国_4
+  name: _US_美国_2
   network: ws
   port: 8880
   server: 192.200.160.211
@@ -157,118 +126,35 @@ proxies:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: _NL_荷兰->🇺🇸_US_美国_3
+  name: _LT_立陶宛
   network: ws
   port: 8880
-  server: 185.133.35.214
+  server: 185.148.105.220
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
+  uuid: 470c6d0a-7ee5-3e9d-8f49-1c4e485fafc9
   ws-opts:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: _US_美国_5
+  name: _DK_丹麦->🇺🇸_US_美国_2
   network: ws
-  port: 8880
-  server: 166.62.104.212
+  port: 80
+  server: fastcup.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
+  uuid: 62e4250a-fe02-40cc-ad32-c847389956cd
   ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: fastcup.net
+    path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
-  name: _US_美国_6
-  network: ws
-  port: 8880
-  server: 45.40.147.211
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_7
-  network: ws
-  port: 8880
-  server: 72.167.241.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- cipher: aes-256-cfb
-  name: _SE_瑞典
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _US_美国_8
-  network: ws
-  port: 8880
-  server: 166.62.112.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_9
-  network: ws
-  port: 8880
-  server: 216.24.57.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_10
-  network: ws
-  port: 8880
-  server: 199.34.229.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_11
-  network: ws
-  port: 8880
-  server: 72.167.25.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _ZA_南非->🇺🇸_US_美国_2
+  name: _ZA_南非_2
   network: ws
   port: 8880
   server: 102.177.176.209
@@ -279,84 +165,17 @@ proxies:
   uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
   ws-opts:
     path: /dabai&Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_12
-  network: ws
-  port: 8880
-  server: 192.169.220.214
+- grpc-opts:
+    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048
+  name: _US_美国_3
+  network: grpc
+  password: 94cf288d-f764-4ce9-a547-a7228144f056
+  port: 2053
+  server: gerxyz.bm04.xyz
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: gerxyz.bm04.xyz
+  type: trojan
   udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_13
-  network: ws
-  port: 8880
-  server: 198.71.232.211
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _ES_西班牙->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 185.251.82.212
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_14
-  network: ws
-  port: 8880
-  server: 66.225.252.209
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_15
-  network: ws
-  port: 8880
-  server: 166.62.106.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: _US_美国_16
-  network: ws
-  port: 8880
-  server: 199.34.228.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 日本(nodeshare.xyz免费节点)_1
   password: Nk9asglDzHzjktVzTkvhaA

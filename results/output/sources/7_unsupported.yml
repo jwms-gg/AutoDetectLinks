@@ -1,17 +1,31 @@
-# Update: 2025-08-26 08:45
-# Source 7 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml), 1
+# Update: 2025-08-29 08:44
+# Source 7 (https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.yaml), 2
 proxies:
-- alterId: 0
-  cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 10
+- name: CMCC-IPV6_1
   network: ws
-  port: 443
-  server: 2606:4700:3030::6815:6001
+  port: 4700
+  server: '[2606'
+  servername: fv.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: 9263f72d-87a7-4d06-b2e3-fac3dea1eefa
-  ws-headers:
-    Host: eeddfrty.999820.xyz
-  ws-path: /EatB7Aj0ykXHdjRXgN
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: fv.ylka.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_6
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: jv.ylka.dpdns.org
+    path: /?ed=2560
