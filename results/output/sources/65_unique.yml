@@ -1,6 +1,31 @@
-# Update: 2025-08-29 08:44
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 54
+# Update: 2025-08-30 08:41
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 57
 proxies:
+- alterId: 0
+  cipher: auto
+  name: _ES_西班牙->🇺🇸_US_美国
+  port: 32020
+  server: s3.ipyar.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
+- alterId: 2
+  cipher: auto
+  name: _CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v29.heduian.link
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: _US_美国_1
@@ -405,6 +430,21 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: 美国(nodeshare.xyz免费节点)_46
+  network: ws
+  port: 2086
+  server: shs.xiaoqi666.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+  ws-opts:
+    headers:
+      Host: shs.xiaoqi666.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 美国(nodeshare.xyz免费节点)_51

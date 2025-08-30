@@ -1,167 +1,226 @@
-# Update: 2025-08-29 08:44
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 31
+# Update: 2025-08-30 08:41
+# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 32
 proxies:
+- client-fingerprint: chrome
+  name: '🇰🇿 KZ 1 #1'
+  network: tcp
+  port: 19747
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  server: 77.73.232.61
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  ws-opts:
+    path: /
+- name: 🇰🇿 KZ 2
+  network: ws
+  password: vpn
+  port: 2025
+  server: 45.82.14.144
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dns.google.com
+    path: '%2f'
+- cipher: rc4-md5
+  name: 🇩🇪 DE 1
+  password: 14fFPrbezE3HDZzsMOr6
+  port: '8080'
+  server: 169.150.210.233
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸 US 1 #5'
+  password: 9EYML6IZ0xLfLipMAHsXGI
+  port: '443'
+  server: 104.192.227.162
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸 US 2 #3'
+  password: SwXdrFSGD8Cij9eD5ThNXm
+  port: '34868'
+  server: fox-usa.outlinekeys.net
+  type: ss
+- name: 🇺🇸 US 3
+  network: grpc
+  port: 8880
+  server: 45.82.251.78
+  tls: false
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  ws-opts:
+    path: /
+- cipher: rc4-md5
+  name: 🇺🇸 US 4
+  password: 14fFPrbezE3HDZzsMOr6
+  port: '8080'
+  server: 194.5.215.59
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸 US 5 #1'
+  password: tvX1v#NSFP_LG_bJ
+  port: '808'
+  server: 149.28.212.97
+  type: ss
+- alpn:
+  - h2
+  name: 🇺🇸 US 6
+  network: grpc
+  port: 443
+  server: all.tellmethetrue.shop
+  servername: pqh30v3.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  ws-opts:
+    headers:
+      Host: pqh30v3.hiddendom.shop
+    path: /
+- cipher: aes-256-gcm
+  name: '🇺🇸 US 7 #1'
+  password: KixLvKzwjekG00rm
+  port: '8000'
+  server: 23.157.40.101
+  type: ss
+- cipher: aes-256-cfb
+  name: '🇵🇱 PL 1 #1'
+  password: ZET59LF6DvCC8KVt
+  port: '9005'
+  server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇱 PL 2
+  password: B39hI4d4Hc5b4jyQc0Eupg
+  port: '443'
+  server: 77.83.246.74
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇵🇱 PL 3
+  password: Lp27rqyJq72bZsqX
+  port: '9045'
+  server: 217.30.10.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇫🇷 FR 1 #1'
+  password: xhZEa9lMbuvX7Jz0RTqAe1
+  port: '443'
+  server: 62.210.88.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇳🇱 NL 1 #1'
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: '8080'
+  server: 193.29.139.209
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 2
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: '8080'
+  server: ltnl13.saint.ydns.eu
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 3
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: '8080'
+  server: 193.29.139.143
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 SG 1
+  password: TWRxYKr1fIkQQjRgJIWeCU
+  port: '38450'
+  server: 152.42.245.170
+  type: ss
+- name: '🇸🇪 SE 1 #1'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 45.91.171.116
+  sni: sto.freeguard.org
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- client-fingerprint: chrome
+  name: 🇦🇱 AL 1
+  network: tcp
+  port: 28495
+  reality-opts:
+    public-key: KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ
+    short-id: 0ecc2c1392
+  server: 45.15.170.80
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '🇬🇧 GB 1 #1'
+  password: UqlIjwQvPJmPTsW89KXqCZ
+  port: '443'
+  server: 89.185.84.185
+  type: ss
+- cipher: rc4-md5
+  name: 🇬🇧 GB 2
+  password: 14fFPrbezE3HDZzsMOr6
+  port: '8080'
+  server: 146.70.61.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 3
+  password: RSHf8wbrMoGEM5J2tIdf7V
+  port: '443'
+  server: 78.129.140.11
+  type: ss
+- client-fingerprint: chrome
+  name: 🇫🇮 FI 1
+  network: tcp
+  port: 17422
+  reality-opts:
+    public-key: 0r5rlmvACX09qUTPuxrbuKWSAn66NnNyHIfIMwalYAA
+    short-id: '33'
+  server: 5.181.20.219
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: fe837fd0-840d-4cee-9334-0dc6c2b15c1c
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 FI 2
+  password: kmgk1sWY4Fh4dw9bxk2NBG
+  port: '64519'
+  server: 83.147.216.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 FI 3
+  password: LCL2yAP1iPOvAEe8dWe2h1
+  port: '64519'
+  server: 83.147.216.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 FI 4
+  password: rOQrWhz7otxOrPBC6uHd3F
+  port: '64519'
+  server: 83.147.216.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇱 IL 1
+  password: f8f7aCzcPKbsF8p3
+  port: '990'
+  server: 169.150.202.174
+  type: ss
 - cipher: aes-256-cfb
   name: 🇻🇳 VN 1
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: '38388'
-  server: 103.186.154.38
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.28
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 3
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.33
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 4
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.31
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 5
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.30
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 6
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.21
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 8
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.21
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 9
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.36
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 10
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.19
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 11
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.24
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇻🇳 VN 12 #1'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.20
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 13
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.23
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 14
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.29
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 15
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.25
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 16
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.19
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 17
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.27
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 18
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
   server: 103.186.155.133
   type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 19
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 20
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 21
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 22
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 23
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.30
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 24
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.24
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 25
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.22
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 26
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.154.25
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 27
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: '38388'
-  server: 103.186.155.23
+- cipher: aes-256-gcm
+  name: 🇷🇺 RU 1
+  password: 7ae4e68cf77f6089
+  port: '1901'
+  server: 45.140.169.26
   type: ss
 - cipher: aes-256-cfb
   name: '🇦🇹 AT 1 #1'
@@ -169,28 +228,9 @@ proxies:
   port: '989'
   server: 185.180.12.81
   type: ss
-- cipher: aes-256-cfb
-  name: 🇪🇸 ES 1
-  password: ZET59LF6DvCC8KVt
-  port: '9005'
-  server: 5.188.181.201
+- cipher: chacha20-ietf-poly1305
+  name: '🇨🇦 CA 1 #1'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: '80'
+  server: ca225.vpnbook.com
   type: ss
-- grpc-opts:
-    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged%3d2048
-  name: 🇩🇪 DE 1
-  network: grpc
-  password: 94cf288d-f764-4ce9-a547-a7228144f056
-  port: 2053
-  server: gerxyz.bm04.xyz
-  sni: gerxyz.bm04.xyz
-  type: trojan
-  ws-opts:
-    path: '%2f'
-- name: '🇺🇸 US 1 #1'
-  network: ws
-  password: er668
-  port: 443
-  server: kfjdi.pages.dev
-  type: trojan
-  ws-opts:
-    path: '%2f'
