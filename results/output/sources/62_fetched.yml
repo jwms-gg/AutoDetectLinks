@@ -1,8 +1,8 @@
-# Update: 2025-08-30 08:41
-# Source 62 (https://pxypool.131433.xyz/clash/proxies), 10
+# Update: 2025-08-31 08:48
+# Source 62 (https://pxypool.131433.xyz/clash/proxies), 7
 proxies:
 - cipher: aes-256-cfb
-  name: Pool__01
+  name: '_01 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -11,50 +11,55 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
-- cipher: aes-256-cfb
-  country: 🇬🇷GR
-  name: Relay_🇬🇷GR-🇷🇺RU_02
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
-  country: 🇭🇰HK
+  country: 🇦🇹AT
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_03 #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
+  name: 🇦🇹AT_02
+  network: tcp
+  port: 443
+  server: 103.57.249.204
   skip-cert-verify: true
   type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      HOST: hkt.gotochinatown.net
-    path: /
+  uuid: f13143a7-542d-49ec-9428-098142b6977c
+- alterId: 0
+  cipher: auto
+  country: 🇦🇹AT
+  h2-opts: {}
+  http-opts: {}
+  name: 🇦🇹AT_03
+  network: tcp
+  port: 443
+  server: 89.31.120.192
+  skip-cert-verify: true
+  type: vmess
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - cipher: aes-256-cfb
-  country: 🇵🇹PT
-  name: 🇵🇹PT_04
+  country: 🇭🇷HR
+  name: 🇭🇷HR_04
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.231.233.112
+  server: 46.183.184.60
   type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇮🇳IN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇮🇳IN_05
+  network: tcp
+  port: 443
+  server: 188.208.141.177
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0970834f-5b4d-44da-d890-19dcb2a72d4c
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 🇷🇺RU_05
+  name: 🇷🇺RU_06
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 🇷🇺RU_06
-  password: aObvLFQBhTQ1
-  port: 443
-  server: 81.177.214.214
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
@@ -65,26 +70,3 @@ proxies:
   protocol: auth_aes128_sha1
   server: nm3.boom.party
   type: ssr
-- country: 🇺🇸US
-  name: 🇺🇸US_08
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 198.46.152.83
-  skip-cert-verify: true
-  sni: sj3.freeguard.org
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_09
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  name: 🏁ZZ_10
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.31
-  type: ss
