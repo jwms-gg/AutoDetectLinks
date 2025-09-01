@@ -1,13 +1,53 @@
-# Update: 2025-08-31 08:48
-# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 8
+# Update: 2025-09-01 08:55
+# Source 47 (https://raw.githubusercontent.com/dream4network/telegram-configs-collector/main/protocols/vless), 9
 proxies:
-- name: '🔄 LATEST-UPDATE 📅 SUN-09-SHAHR... #2'
+- name: '🔄 LATEST-UPDATE 📅 MON-10-SHAHR... #2'
   network: tcp
   port: 1080
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: baccaba-caba-caba-dbca-ccacbabaabcb
+  uuid: bbcacaa-caba-abac-dbca-cabaaccbbbac
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇫🇮 FI-65.109.145....
+  network: tcp
+  port: 443
+  server: 65.109.145.54
+  servername: dedic.app-browser.org
+  tls: true
+  type: vless
+  uuid: 8f82acbe-f328-471a-8000-fbea349e6ce0
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🔒 VL-XHTTP-TLS 🇩🇪 DE-91.98.79....
+  network: xhttp
+  port: 443
+  server: 91.98.79.239
+  servername: plaza.ir
+  tls: true
+  type: vless
+  uuid: f599eb06-508a-4e24-9d59-4c50bf0332b9
+  ws-opts:
+    headers:
+      Host: plaza.ir
+    path: /JCG7HcKpCWxijB2m2wplj95x2yIWiU
+- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
+  network: grpc
+  port: 8880
+  server: 185.231.205.239
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🔒 VL-WS-NA 🇧🇬 BG-89.44.197.77:... #1'
+  network: ws
+  port: 15946
+  server: 89.44.197.77
+  tls: false
+  type: vless
+  uuid: 8672bdcd-e331-464d-9ed8-93a242ca7d2e
+  ws-opts:
+    path: /
 - name: 🔒 VL-TCP-NA 🇩🇪 DE-91.98.19.40:...
   network: tcp
   port: 38644
@@ -18,15 +58,6 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
-- name: '🔒 VL-WS-NA 🇧🇬 BG-89.44.197.77:... #1'
-  network: ws
-  port: 15946
-  server: 89.44.197.77
-  tls: false
-  type: vless
-  uuid: 8672bdcd-e331-464d-9ed8-93a242ca7d2e
-  ws-opts:
-    path: /
 - name: 🔒 VL-TCP-NA 🇩🇪 DE-91.98.26.212...
   network: tcp
   port: 38644
@@ -37,22 +68,6 @@ proxies:
   ws-opts:
     headers:
       Host: zula.ir
-- client-fingerprint: chrome
-  name: 🔒 VL-TCP-TLS 🇫🇮 FI-65.109.145....
-  network: tcp
-  port: 443
-  server: 65.109.145.54
-  servername: dedic.app-browser.org
-  tls: true
-  type: vless
-  uuid: 8f82acbe-f328-471a-8000-fbea349e6ce0
-- name: 🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205...
-  network: grpc
-  port: 8880
-  server: 185.231.205.239
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🔒 VL-GRPC-NA 🇫🇷 FR-185.231.205... #1'
   network: grpc
   port: 8880
@@ -66,4 +81,4 @@ proxies:
   server: 127.0.0.1
   tls: true
   type: vless
-  uuid: cbcbaaa-caab-baca-dcba-acbccaabbcab
+  uuid: baabcca-bcaa-aacb-dcab-ccbcabbaabac

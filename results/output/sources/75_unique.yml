@@ -1,5 +1,5 @@
-# Update: 2025-08-31 08:48
-# Source 75 (http://140.238.31.152:12580/clash/proxies), 24
+# Update: 2025-09-01 08:55
+# Source 75 (http://140.238.31.152:12580/clash/proxies), 22
 proxies:
 - country: 🇩🇰 DK
   name: 🇩🇰 DK_03
@@ -12,34 +12,11 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇭🇰 HK
-  name: 🇭🇰 HK_15
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36888
-  server: ss.029.node-for-bigairport.win
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇭🇰 HK
-  name: 🇭🇰 HK_17
+  name: 🇭🇰 HK_20
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
   port: 15099
   server: ss.026.node-for-bigairport.win
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 🇯🇵 JP_36
-  network: ws
-  port: 19682
-  server: tls.95.node-for-bigairport.win
-  servername: tls.95.node-for-bigairport.win
-  skip-cert-verify: true
-  type: vmess
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  ws-headers:
-    HOST: tls.95.node-for-bigairport.win
-  ws-path: /
 - country: 🇯🇵 JP
   name: 🇯🇵 JP_37
   password: 253bc477d4e43c209f2d427272968280
@@ -49,7 +26,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇰🇷 KR
-  name: 🇰🇷 KR_39
+  name: 🇰🇷 KR_41
   password: Aimer
   port: 50000
   server: 49.172.20.66
@@ -57,25 +34,25 @@ proxies:
   sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
-- alterId: 32
-  cipher: auto
-  country: 🇳🇱 NL
-  h2-opts: {}
-  http-opts: {}
-  name: 🇳🇱 NL_58
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
+- country: 🇰🇷 KR
+  name: 🇰🇷 KR_42
+  password: Aimer
+  port: 50000
+  server: 121.66.32.174
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-headers:
-    HOST: vc.fly.dev
-  ws-path: /vc
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_66
+  name: 🇸🇬 SG_74
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 165.22.55.206
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇸🇬 SG
+  name: 🇸🇬 SG_75
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 128.199.125.102
@@ -83,104 +60,47 @@ proxies:
   type: trojan
   udp: true
 - country: 🇸🇬 SG
-  name: 🇸🇬 SG_67
+  name: 🇸🇬 SG_76
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 178.128.17.109
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇸🇬 SG
-  name: 🇸🇬 SG_68
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 165.22.55.206
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - country: 🇸🇮 SI
-  name: 🇸🇮 SI_69
+  name: 🇸🇮 SI_77
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
   server: sg.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_90
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+- country: 🇸🇮 SI
+  name: 🇸🇮 SI_78
+  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
   port: 443
-  server: 174.138.85.53
+  server: it.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 🇺🇸 US_89
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 172.236.144.61
+  type: ss
 - country: 🇺🇸 US
-  name: 🇺🇸 US_91
-  password: 55838ecb-e09a-4830-96c1-a997ee30c381
-  port: 8443
-  server: tj.cpddx.club
-  skip-cert-verify: true
-  sni: tj.cpddx.club
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_92
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 165.22.3.117
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_93
+  name: 🇺🇸 US_98
   password: b909ec86-db68-4c25-87e6-7e03b797e280
   port: 8443
   server: tj.cpddx.club
   skip-cert-verify: true
   sni: tj.cpddx.club
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_94
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 159.65.222.110
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_95
-  password: e150a099-f36d-4eae-90dd-67ea82c6ec5d
-  port: 8443
-  server: tj.cpddx.club
-  skip-cert-verify: true
-  sni: tj.cpddx.club
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_96
-  password: 7e5304a8-61a9-45c6-a179-726181826fb3
-  port: 8443
-  server: tj.cpddx.club
-  skip-cert-verify: true
-  sni: tj.cpddx.club
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_97
-  password: b3c6150d-6c2d-4224-9e43-99fdb8f04414
-  port: 8443
-  server: tj.cpddx.club
-  skip-cert-verify: true
-  sni: tj.cpddx.club
-  type: trojan
-  udp: true
-- country: 🇺🇸 US
-  name: 🇺🇸 US_98
-  password: a630876d-75d4-4b98-8c52-a0f9a1951495
-  port: 443
-  server: test.hdcloud.link
-  skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇺🇸 US
@@ -194,25 +114,77 @@ proxies:
   udp: true
 - country: 🇺🇸 US
   name: 🇺🇸 US_100
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 25131
-  server: starlink-us2.2513142.xyz
+  password: b3c6150d-6c2d-4224-9e43-99fdb8f04414
+  port: 8443
+  server: tj.cpddx.club
   skip-cert-verify: true
+  sni: tj.cpddx.club
   type: trojan
   udp: true
 - country: 🇺🇸 US
   name: 🇺🇸 US_101
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 443
-  server: starlink-us4.2513142.xyz
+  password: 7e5304a8-61a9-45c6-a179-726181826fb3
+  port: 8443
+  server: tj.cpddx.club
   skip-cert-verify: true
+  sni: tj.cpddx.club
   type: trojan
   udp: true
 - country: 🇺🇸 US
   name: 🇺🇸 US_102
+  password: e150a099-f36d-4eae-90dd-67ea82c6ec5d
+  port: 8443
+  server: tj.cpddx.club
+  skip-cert-verify: true
+  sni: tj.cpddx.club
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_103
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 165.22.3.117
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_104
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 174.138.85.53
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_105
+  password: 55838ecb-e09a-4830-96c1-a997ee30c381
+  port: 8443
+  server: tj.cpddx.club
+  skip-cert-verify: true
+  sni: tj.cpddx.club
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_106
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 104.248.68.184
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_107
+  password: a630876d-75d4-4b98-8c52-a0f9a1951495
+  port: 443
+  server: test.hdcloud.link
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: 🇺🇸 US
+  name: 🇺🇸 US_108
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 159.65.222.110
   skip-cert-verify: true
   type: trojan
   udp: true
