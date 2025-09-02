@@ -1,64 +1,49 @@
-# Update: 2025-09-01 08:55
-# Source 76 (http://66.42.50.118:12580/clash/proxies), 13
+# Update: 2025-09-02 10:22
+# Source 76 (http://66.42.50.118:12580/clash/proxies), 11
 proxies:
-- alterId: 0
-  cipher: auto
-  country: 🇦🇹AT
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇦🇹AT-🇫🇷FR_02
-  network: tcp
-  port: 59956
-  server: 46.29.34.205
-  skip-cert-verify: true
-  type: vmess
-  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇭🇰HK-🇭🇰HK_36
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      HOST: hkt.gotochinatown.net
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🇷🇴RO
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇷🇴RO-🇺🇸US_84
-  network: ws
+- cipher: aes-256-gcm
+  country: 🇯🇵JP
+  name: Relay_🇯🇵JP-🇯🇵JP_53
+  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  port: 51205
+  server: cgroup.node1.s2.nodelist-airport.com
+  type: ss
+- country: 🇯🇵JP
+  name: 🇯🇵JP_56
+  password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 45.85.119.190
-  servername: farid.1.berozha.ir
+  server: 157.120.32.122
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      HOST: farid.1.berozha.ir
-    path: /us.kkp.me.eu.org/aa
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- country: 🇸🇬SG
+  name: 🇸🇬SG_87
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 165.22.55.206
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_107
+  name: Relay_🇺🇸US-🇺🇸US_102
   password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
   port: 4021
   server: cgroup.node2.s.nodelist-airport.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_105
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
+  type: ss
 - cipher: chacha20-ietf
   country: 🇺🇸US
   group: Update-二爷
-  name: Relay_🇺🇸US-🇺🇸US_112
+  name: Relay_🇺🇸US-🇺🇸US_115
   obfs: plain
   password: mblank1port
   port: 560
@@ -69,47 +54,17 @@ proxies:
 - cipher: aes-192-ctr
   country: 🇺🇸US
   group: Update-二爷
-  name: Relay_🇺🇸US-🇺🇸US_113
+  name: Relay_🇺🇸US-🇺🇸US_116
   obfs: tls1.2_ticket_auth
   password: JUBXCP
   port: 19155
   protocol: auth_sha1_v4
   server: us.linode.rbqis.me
   type: ssr
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇺🇸US-🇺🇸US_119
-  network: ws
-  port: 443
-  server: cg1c03.waimaogogogo.cc
-  servername: cg1c03.waimaogogogo.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
-  ws-opts:
-    headers:
-      HOST: cg1c03.waimaogogogo.cc
-    path: /api/v1/graphql
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_128
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjda&dj23gsa
-  port: 2212
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103.level3.sdl-sz.com
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇿🇦ZA
-  group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_129
+  name: Relay_🇿🇦ZA-🇿🇦ZA_131
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjd2a&dj23gsa
@@ -120,8 +75,20 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
+  group: Update-bulianglin
+  name: Relay_🇿🇦ZA-🇿🇦ZA_132
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjda&dj23gsa
+  port: 2212
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103.level3.sdl-sz.com
+  type: ssr
+- cipher: aes-256-cfb
+  country: 🇿🇦ZA
   group: Update-二爷
-  name: Relay_🇿🇦ZA-🇿🇦ZA_130
+  name: Relay_🇿🇦ZA-🇿🇦ZA_133
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -135,52 +102,16 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_154
+  name: Relay_🏁ZZ-🇺🇸US_157
   network: ws
   port: 443
-  server: cg1c10.waimaogogogo.cc
-  servername: cg1c10.waimaogogogo.cc
+  server: cf.fovi.tk
+  servername: foxpol.fovi.tk
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      HOST: cg1c10.waimaogogogo.cc
-    path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_155
-  network: ws
-  port: 2083
-  server: rak1ding.89060004.xyz
-  servername: rak1d3.988988.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
-  ws-opts:
-    headers:
-      HOST: rak1d3.988988.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_156
-  network: ws
-  port: 443
-  server: api.jquery.com
-  servername: admin.kasrax.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      HOST: admin.kasrax.ir
-    path: /us.kkp.me.eu.org/aa
+      HOST: foxpol.fovi.tk
+    path: /eisasqa

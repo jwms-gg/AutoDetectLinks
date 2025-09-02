@@ -1,21 +1,53 @@
-# Update: 2025-09-01 08:55
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 2
+# Update: 2025-09-02 10:22
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 4
 proxies:
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
-  port: 30805
-  server: v5.heduian.link
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: '🇬🇧_GB_英国 #1'
-  password: 1112935345BtgV5PDHVww
-  port: 443
-  server: 195.35.113.79
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇰_DK_丹麦->🇺🇸_US_美国
+  network: ws
+  port: 80
+  server: fastcup.net
+  type: vmess
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: csgo.com
+  type: vmess
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_2
+  network: ws
+  port: 80
+  server: pubg.ac
+  type: vmess
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub

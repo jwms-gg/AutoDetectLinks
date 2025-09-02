@@ -1,50 +1,88 @@
-# Update: 2025-09-01 08:55
-# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 7
+# Update: 2025-09-02 10:22
+# Source 31 (https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt), 8
 proxies:
-- name: '🇺🇸 US 5 #1'
-  network: grpc
-  port: 8880
-  server: 45.82.251.78
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 1
+  network: tcp
+  port: 443
+  server: 165.140.216.141
+  servername: null
+  tls: false
+  type: vmess
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇺🇸 US 3
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+    short-id: f5
+  server: amazon-20.cristiano.name.ng
+  servername: store.steampowered.com
   tls: false
   type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 PL 1
-  password: a58fa62b4944ddbf
-  port: '57456'
-  server: 45.144.49.140
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇱 PL 3
-  password: qscavF5UviIL-8V-E4raBA
-  port: '2222'
-  server: 2.59.163.101
-  type: ss
-- name: 🇮🇷 IR 1
-  port: 8443
-  server: cdn26.saloonak.ir
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇰🇿 KZ 1
+  network: tcp
+  port: 8081
+  reality-opts:
+    public-key: oB-VCWWpUePBe_v3vAOLWw054ZbdUN_4X3t_FkkPNFc
+    short-id: '220463'
+  server: 195.133.8.126
+  servername: yahoo.com
   tls: false
   type: vless
-  uuid: 789d4f30-c31b-4762-8116-ed42574d5e85
+  uuid: fa886719-16fa-4b10-88c5-3c00a6f5a5f1
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 31
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: '8080'
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇷 TR 2
-  password: qscavF5UviIL-8V-E4raBA
-  port: '2222'
-  server: 83.217.9.128
+- name: 🇰🇿 KZ 2
+  network: ws
+  password: vpn
+  port: 2025
+  server: 45.82.14.144
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dns.google.com
+    path: '%2f'
+- name: 🇩🇪 DE 1
+  network: ws
+  port: 80
+  server: 162.19.228.119
+  tls: false
+  type: vless
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  ws-opts:
+    path: /http
+- cipher: chacha20-ietf
+  name: 🇭🇰 HK 1
+  password: asd123456
+  port: '8388'
+  server: 103.149.182.191
   type: ss
 - cipher: aes-256-cfb
-  name: 🇹🇷 TR 3
-  password: p9z5BVADH2YFs3MN
-  port: '9040'
-  server: 45.89.52.66
+  name: 🇲🇹 MT 1
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 171.22.254.17
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision!
+  name: 🇵🇰 PK 1
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4e-unF1RO2v--E7-X3aqxnCSPaK9QaTfJ7LawAr2bRI
+  server: 103.175.79.10
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
+  ws-opts:
+    path: /

@@ -1,9 +1,34 @@
-# Update: 2025-09-01 08:55
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 17
+# Update: 2025-09-02 10:22
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 21
 proxies:
 - alterId: 0
   cipher: auto
   name: 美国 CloudFlare节点
+  network: ws
+  port: '80'
+  server: 104.18.14.54
+  tls: false
+  type: vmess
+  uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a
+  ws-opts:
+    headers:
+      Host: 845296302850992025082820102725073.s15.chibaba.filegear-sg.me
+    path: /index.html?ed=2048
+- name: 美国+CloudFlare节点
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.247.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #1'
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -15,82 +40,131 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #1'
+- name: 'CR_speednode_0005 #3'
   network: ws
-  port: '80'
-  server: OOoOOOooOp.222769.XYZ
-  tls: false
-  type: vmess
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
+  password: slch2024
+  port: 2096
+  server: 190.93.247.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   ws-opts:
     headers:
-      Host: ooooooooop.222769.xyz
-    path: /VaaSEfNLHdW3I98dxLkez
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 'RU_speednode_0011 #3'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.53.53.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 'US_speednode_0049 #3'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 209.94.90.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
 - cipher: aes-256-gcm
   name: '🇯🇵 日本2|@ripaojiedian #3'
-  password: 823e135ed103
-  port: '636'
-  server: 137.220.191.40
+  password: 8a6ca14c0936
+  port: '443'
+  server: 137.220.142.150
   type: ss
 - cipher: aes-256-gcm
   name: '日本2|@ripaojiedian #1'
-  password: 823e135ed103
-  port: '636'
-  server: 137.220.191.40
+  password: 8a6ca14c0936
+  port: '443'
+  server: 137.220.142.150
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '🇹🇼 台湾2|@ripaojiedian #3'
-  password: 7fcfaa5c-5ce1-422a-bcb6-b96284aada90
-  port: '10130'
-  server: 36.232.72.237
+  password: 5063e044-694e-400c-8db7-76223e86b6fb
+  port: '10097'
+  server: 125.228.31.117
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇹🇼 台湾|@ripaojiedian #3'
-  password: c9fd29d2-3c04-42cf-b60b-bbf3115a4e7c
-  port: '10152'
-  server: 1.170.17.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '台湾2|@ripaojiedian #1'
-  password: 7fcfaa5c-5ce1-422a-bcb6-b96284aada90
-  port: '10130'
-  server: 36.232.72.237
+  name: '台湾2|@ripaojiedian #2'
+  password: 5063e044-694e-400c-8db7-76223e86b6fb
+  port: '10097'
+  server: 125.228.31.117
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '台湾|@ripaojiedian #1'
-  password: c9fd29d2-3c04-42cf-b60b-bbf3115a4e7c
-  port: '10152'
-  server: 1.170.17.164
+  password: 34393fa0-a7d3-4c4a-bd18-c70764f73a6d
+  port: '10061'
+  server: 118.170.208.178
   type: ss
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港2|@ripaojiedian #3'
-  password: 9bfdde71b4c0
-  port: '636'
-  server: 103.103.245.158
-  type: ss
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #3'
-  password: amazonskr05
-  port: '443'
-  server: 18.195.55.29
-  type: ss
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian  #1'
-  password: amazonskr05
-  port: '443'
-  server: 18.195.55.29
+- cipher: chacha20-ietf-poly1305
+  name: '🇹🇼 台湾|@ripaojiedian #3'
+  password: 34393fa0-a7d3-4c4a-bd18-c70764f73a6d
+  port: '10061'
+  server: 118.170.208.178
   type: ss
 - cipher: aes-256-gcm
   name: '香港2|@ripaojiedian #1'
-  password: 9bfdde71b4c0
-  port: '636'
-  server: 103.103.245.158
+  password: 9969db7a2f51
+  port: '443'
+  server: 156.251.179.135
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港2|@ripaojiedian #3'
+  password: 9969db7a2f51
+  port: '443'
+  server: 156.251.179.135
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: rc4-md5
+  name: '🇯🇵 日本|@ripaojiedian #3'
+  password: efanccyun
+  port: '8766'
+  server: cn01.efan8867801.xyz
   type: ss
 - alterId: 0
   cipher: auto
   name: '美国 CloudFlare节点 #2'
+  network: ws
+  port: 80
+  server: cloudflare-ip.mofashi.ltd
+  tls: false
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- cipher: rc4-md5
+  name: '🇺🇸 美国2|@ripaojiedian #3'
+  password: efanccyun
+  port: '8774'
+  server: cn01.efan8867801.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #3'
   network: ws
   port: 443
   server: bluehost.com
@@ -102,19 +176,7 @@ proxies:
       Host: cdntr2.digisport.shop
     path: /19544
 - cipher: rc4-md5
-  name: '🇯🇵 日本|@ripaojiedian #3'
-  password: efanccyun
-  port: '8766'
-  server: cn01.efan8867801.xyz
-  type: ss
-- cipher: rc4-md5
   name: '美国2|@ripaojiedian #1'
-  password: efanccyun
-  port: '8774'
-  server: cn01.efan8867801.xyz
-  type: ss
-- cipher: rc4-md5
-  name: '🇺🇸 美国2|@ripaojiedian #3'
   password: efanccyun
   port: '8774'
   server: cn01.efan8867801.xyz
