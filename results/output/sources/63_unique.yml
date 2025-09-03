@@ -1,12 +1,16 @@
-# Update: 2025-09-02 10:22
+# Update: 2025-09-03 08:41
 # Source 63 (https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt), 1
 proxies:
-- name: 美国【机场推荐：https://a0a.xyz/】49
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #8'
   network: ws
-  password: 318cab24-ec99-40a6-a54a-0db9c661a3d0
   port: 443
-  server: aio.proxybox.dpdns.org
-  sni: aio.proxybox.dpdns.org
-  type: trojan
+  server: 104.18.149.76
+  tls: true
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
-    path: '%2F188.34.160.97-2053'
+    headers:
+      Host: us.kkp.me.eu.org
+    path: /aa

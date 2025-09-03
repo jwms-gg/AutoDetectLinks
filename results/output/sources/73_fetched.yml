@@ -1,8 +1,8 @@
-# Update: 2025-09-02 10:22
-# Source 73 (https://pxypool.131433.xyz/clash/proxies), 13
+# Update: 2025-09-03 08:41
+# Source 73 (https://pxypool.131433.xyz/clash/proxies), 17
 proxies:
 - cipher: aes-256-cfb
-  name: '_01 #3'
+  name: 'Pool__01 #1'
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -16,7 +16,7 @@ proxies:
   country: 🇦🇹AT
   h2-opts: {}
   http-opts: {}
-  name: 🇦🇹AT_02
+  name: '🇦🇹AT_02 #1'
   network: tcp
   port: 443
   server: 103.57.249.204
@@ -28,40 +28,62 @@ proxies:
   country: 🇦🇹AT
   h2-opts: {}
   http-opts: {}
-  name: 🇦🇹AT_03
+  name: '🇦🇹AT_03 #1'
   network: tcp
   port: 443
   server: 89.31.120.192
   skip-cert-verify: true
   type: vmess
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 0
+- alterId: 64
   cipher: auto
-  country: 🇬🇧GB
+  country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: Relay_🇬🇧GB-🇺🇸US_04
-  network: ws
-  port: 8880
-  server: 194.36.55.224
-  servername: TG.WangCai2.s4.db-link02.top
+  name: '🇨🇳CN_04 #1'
+  network: tcp
+  port: 50002
+  server: 47.116.166.178
   skip-cert-verify: true
   type: vmess
-  uuid: 7a61cb1c-e5ea-31ef-b885-0018390eec5e
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇭🇰HK-🇭🇰HK_05 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      HOST: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-- cipher: aes-256-cfb
-  country: 🇭🇷HR
-  name: 🇭🇷HR_05
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
-  type: ss
+      HOST: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇭🇰HK-🇭🇰HK_06 #1'
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      HOST: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /
 - cipher: aes-256-cfb
   country: 🇮🇳IN
-  name: 🇮🇳IN_06
+  name: '🇮🇳IN_07 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 134.209.147.198
@@ -71,7 +93,7 @@ proxies:
   country: 🇮🇳IN
   h2-opts: {}
   http-opts: {}
-  name: 🇮🇳IN_07
+  name: '🇮🇳IN_08 #1'
   network: tcp
   port: 443
   server: 188.208.141.177
@@ -79,15 +101,36 @@ proxies:
   type: vmess
   uuid: 0970834f-5b4d-44da-d890-19dcb2a72d4c
 - cipher: aes-256-cfb
+  country: 🇮🇶IQ
+  name: '🇮🇶IQ_09 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 🇷🇺RU_08
+  name: '🇷🇺RU_10 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: '🇹🇼TW_11 #1'
+  password: 6150d205-c7fc-4f51-bf78-c40b68f73500
+  port: 10124
+  server: 36.232.116.119
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: '🇹🇼TW_12 #1'
+  password: a7653b0d-4483-4e16-8ae3-e24f5e7c923a
+  port: 10057
+  server: 125.231.72.47
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_09
+  name: 'Relay_🇺🇸US-🇺🇸US_13 #1'
   obfs: http_simple
   password: Uk92CS
   port: 13000
@@ -99,7 +142,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸US_10
+  name: '🇺🇸US_14 #1'
   network: tcp
   port: 443
   server: 38.60.134.249
@@ -111,7 +154,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇺🇸US_11 #1'
+  name: 'Relay_🇺🇸US-🇺🇸US_15 #1'
   network: ws
   port: 8880
   server: 102.177.176.249
@@ -128,7 +171,7 @@ proxies:
   country: 🇿🇦ZA
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇿🇦ZA-🇺🇸US_12 #1'
+  name: 'Relay_🇿🇦ZA-🇺🇸US_16 #1'
   network: ws
   port: 8880
   server: 102.132.188.249
@@ -145,7 +188,7 @@ proxies:
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Pool_🏁ZZ_13
+  name: 'Pool_🏁ZZ_17 #1'
   network: tcp
   port: 443
   server: 165.140.216.141

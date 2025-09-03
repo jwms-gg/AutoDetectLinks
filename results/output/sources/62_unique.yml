@@ -1,8 +1,8 @@
-# Update: 2025-09-02 10:22
-# Source 62 (https://pxypool.131433.xyz/clash/proxies), 2
+# Update: 2025-09-03 08:41
+# Source 62 (https://pxypool.131433.xyz/clash/proxies), 4
 proxies:
 - cipher: aes-256-cfb
-  name: ''
+  name: Pool__01
   obfs: plain
   obfs-param: data.bilibili.com/ed5a2165400
   password: http://cc.ax/
@@ -11,9 +11,33 @@ proxies:
   protocol-param: 165400:Hr2aXO
   server: 222.186.20.102
   type: ssr
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇭🇰HK-🇭🇰HK_06
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      HOST: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: 🇹🇼TW_11
+  password: 6150d205-c7fc-4f51-bf78-c40b68f73500
+  port: 10124
+  server: 36.232.116.119
+  type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: ' #8'
+  name: Relay_🇺🇸US-🇺🇸US_13
   obfs: http_simple
   password: Uk92CS
   port: 13000

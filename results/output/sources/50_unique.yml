@@ -1,6 +1,27 @@
-# Update: 2025-09-02 10:22
+# Update: 2025-09-03 08:41
 # Source 50 (https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/trojan.txt), 24
 proxies:
+- name: 🇺🇸 美国04 付费推荐：https://dafei.de
+  password: 457f64d5-cc68-4911-82ee-636ebb568a46
+  port: 8443
+  server: csgo.com
+  skip-cert-verify: false
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+- name: 🇺🇸 美国06 付费推荐：https://dafei.de
+  password: 457f64d5-cc68-4911-82ee-636ebb568a46
+  port: 8443
+  server: pubg.ac
+  skip-cert-verify: false
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+- name: 🇺🇸 美国05 付费推荐：https://dafei.de
+  password: 457f64d5-cc68-4911-82ee-636ebb568a46
+  port: 8443
+  server: fastcup.net
+  skip-cert-verify: false
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
 - name: 🇺🇸 美国 V2CROSS.COM
   password: slch2024
   port: 2096
@@ -8,57 +29,18 @@ proxies:
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-- name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  skip-cert-verify: false
-  sni: vpn.stupidworld.web.id
+- name: '@meli_proxyy'
+  network: tcp
+  password: 6gZh2JbfhQ
+  port: 1935
+  server: 104.248.18.1
+  sni: x1-germany-digitalocean-v2.devefun.org
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #4'
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  skip-cert-verify: false
-  sni: aio.zipzap.biz.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: f282b878-8711-45a1-88c9-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  skip-cert-verify: false
-  sni: aio.zipzap.biz.id
-  type: trojan
-- name: '@Daily_Configs #51'
+- name: '@Daily_Configs'
   network: tcp
   password: 7367d04e-4c59-4dff-a50e-12e730a09891
   port: 26193
   server: 155.117.228.70
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #113'
-  network: ws
-  password: 3df56fd0-d1b7-4793-b877-acd356d960f3
-  port: 443
-  server: 172.66.44.56
-  sni: pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aestingdownloadupload.pages.dev
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- name: '@Hope_Net-join-us-on-Telegram #147'
-  password: bpb-trojan
-  port: 443
-  server: 162.159.33.147
-  skip-cert-verify: true
-  sni: adagio.us.kg
-  type: trojan
-- name: '@Hope_Net-join-us-on-Telegram #163'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.209.131.178
-  sni: trojan.burgerip.co.uk
   type: trojan
 - name: ❔ XX | 🔓 TROJAN | @armodchanne...
   network: ws
@@ -76,18 +58,20 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 63.177.223.143
+  server: 3.122.89.11
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: 🇫🇷 FR | 🔒 TROJAN | @directvpn ...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 51.44.116.6
-  sni: trojan.burgerip.co.uk
+- name: 🚩 CF | 🔒 TROJAN | @hope_net [1...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 173.245.59.182
+  sni: fcspring.ggff.net
   type: trojan
+  ws-opts:
+    headers:
+      Host: fcspring.ggff.net
+    path: '%2Ftr%3Fed'
 - name: 🇺🇸 US | 🔒 TROJAN | @ip_cf_conf...
   network: tcp
   password: 79c935c0-27dc-4383-b307-dcac1b8e5509
@@ -160,6 +144,24 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 3.70.33.164
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 🇩🇪 DE | 🔒 TROJAN | @privatevpn...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.122.89.11
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇫🇷 FR | 🔒 TROJAN | @privatevpn... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.55.68
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 🇫🇷 FR | 🔒 TROJAN | @proxyfn [1...
