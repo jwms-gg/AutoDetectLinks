@@ -1,13 +1,18 @@
-# Update: 2025-09-03 08:41
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 3
+# Update: 2025-09-04 08:42
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 4
 proxies:
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30829
   server: v29.heduian.link
-  skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -15,15 +20,23 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_1
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  network: ws
+  port: 23168
+  server: 46.17.45.21
+  type: vmess
+  uuid: 4cf81d78-40d6-45dd-9b70-beb9c51adfa6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国_1
+  network: ws
+  port: 25039
+  server: 46.17.45.21
+  type: vmess
+  uuid: e8c470e9-56ee-4cf0-b251-dd07e3d58a60
+  ws-opts:
+    path: /

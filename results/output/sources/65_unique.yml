@@ -1,31 +1,61 @@
-# Update: 2025-09-03 08:41
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 51
+# Update: 2025-09-04 08:42
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 53
 proxies:
 - alterId: 0
   cipher: auto
-  name: _ES_西班牙->🇺🇸_US_美国
-  port: 32020
-  server: s3.ipyar.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
-- alterId: 0
-  cipher: auto
-  name: _US_美国_1
+  name: _DK_丹麦->🇺🇸_US_美国
   network: ws
   port: 80
-  server: www.speedtest.net
+  server: fastcup.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
   ws-opts:
     headers:
-      Host: www.speedtest.net
-    path: /b87r3d9e
+      Host: fastcup.net
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _DK_丹麦->🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: csgo.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      Host: csgo.com
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _DK_丹麦->🇺🇸_US_美国_2
+  network: ws
+  port: 80
+  server: pubg.ac
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      Host: pubg.ac
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _CN_中国_1
+  port: 50414
+  server: 103.13.19.254
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
 - alterId: 2
   cipher: auto
   name: _CN_中国_2

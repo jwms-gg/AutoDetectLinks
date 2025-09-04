@@ -1,23 +1,6 @@
-# Update: 2025-09-03 08:41
-# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 69
+# Update: 2025-09-04 08:42
+# Source 65 (https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/merge.yaml), 68
 proxies:
-- cipher: aes-256-cfb
-  name: _RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: _ES_西班牙->🇺🇸_US_美国
-  port: 32020
-  server: s3.ipyar.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
 - alterId: 2
   cipher: auto
   name: _CN_中国->🇺🇸_US_美国
@@ -33,31 +16,54 @@ proxies:
     headers:
       Host: v29.heduian.link
     path: /oooo
-- cipher: aes-256-cfb
-  name: _SE_瑞典
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: _US_美国_1
+  name: _DK_丹麦->🇺🇸_US_美国
   network: ws
   port: 80
-  server: www.speedtest.net
+  server: fastcup.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
   ws-opts:
     headers:
-      Host: www.speedtest.net
-    path: /b87r3d9e
+      Host: fastcup.net
+    path: /profile/telegram@ssrsub
 - alterId: 0
   cipher: auto
   name: _DK_丹麦->🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: csgo.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      Host: csgo.com
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _DK_丹麦->🇺🇸_US_美国_2
+  network: ws
+  port: 80
+  server: pubg.ac
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 457f64d5-cc68-4911-82ee-636ebb568a46
+  ws-opts:
+    headers:
+      Host: pubg.ac
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  name: _DK_丹麦->🇺🇸_US_美国_1 2
   network: ws
   port: 80
   server: csgo.com
@@ -79,7 +85,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: _DK_丹麦->🇺🇸_US_美国_2
+  name: _DK_丹麦->🇺🇸_US_美国_2 2
   network: ws
   port: 80
   server: fastcup.net

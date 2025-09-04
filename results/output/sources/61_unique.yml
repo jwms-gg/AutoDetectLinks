@@ -1,12 +1,15 @@
-# Update: 2025-09-03 08:41
-# Source 61 (https://proxypool.link/clash/proxies), 51
+# Update: 2025-09-04 08:42
+# Source 61 (https://proxypool.link/clash/proxies), 56
 proxies:
-- cipher: aes-256-cfb
-  name: _26
-  password: UkXRsXvR6buDMG2Y
-  port: 9001
-  server: 45.89.52.66
-  type: ss
+- alpn:
+  - http%2F1.1
+  name: '_26 #1'
+  password: psycho
+  port: 443
+  server: 104.21.80.1
+  skip-cert-verify: true
+  sni: PSYchO.SueX12.Ir
+  type: trojan
   udp: true
 - alpn:
   - h3%2Ch2%2Chttp%2F1.1
@@ -29,8 +32,23 @@ proxies:
   type: trojan
   udp: true
 - alpn:
-  - http%2F1.1
+  - h2
+  - http/1.1
   name: _29
+  password: oIwjHDXpKePvYIg8
+  port: 443
+  server: myvps.lol
+  sni: myvps.lol
+  type: trojan
+  udp: true
+- name: _30
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+  port: 443
+  server: ca-full.privateip.net
+  type: trojan
+- alpn:
+  - http%2F1.1
+  name: _31
   password: 2fec7227-9abe-46f2-af18-78302b836c45
   port: 443
   server: 104.21.30.167
@@ -39,33 +57,8 @@ proxies:
   type: trojan
   udp: true
 - alpn:
-  - h2
-  - http/1.1
-  name: _30
-  password: oIwjHDXpKePvYIg8
-  port: 443
-  server: myvps.lol
-  sni: myvps.lol
-  type: trojan
-  udp: true
-- name: _31
-  password: acfef609-b3c7-4e52-b292-8921d5fca90d
-  port: 443
-  server: ca-full.privateip.net
-  type: trojan
-- alpn:
   - http%2F1.1
   name: _32
-  password: psycho
-  port: 443
-  server: 104.21.80.1
-  skip-cert-verify: true
-  sni: PSYchO.SueX12.Ir
-  type: trojan
-  udp: true
-- alpn:
-  - http%2F1.1
-  name: _33
   password: psycho
   port: 443
   server: 104.21.112.1
@@ -73,13 +66,28 @@ proxies:
   sni: pSYcho.sUeX12.IR
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  country: 🇦🇺 AU
-  name: 🇦🇺 AU_35
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 36888
-  server: ss.029.node-for-bigairport.win
-  type: ss
+- name: _33
+  password: 87ec85ad-8e8e-40a0-9b23-1fa8217c9647
+  port: 443
+  server: us-full.privateip.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 🇧🇪 BE_35
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: aveiror.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: aveiror.com
+  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   country: 🇧🇪 BE
@@ -97,12 +105,29 @@ proxies:
   ws-headers:
     HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   ws-path: /linkvws
-- alterId: 0
+- alterId: 1
   cipher: auto
   country: 🇧🇪 BE
   h2-opts: {}
   http-opts: {}
   name: 🇧🇪 BE_37
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: 57.129.25.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: 57.129.25.20
+  ws-path: linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇧🇪 BE
+  h2-opts: {}
+  http-opts: {}
+  name: 🇧🇪 BE_38
   network: ws
   port: 443
   server: 57.129.28.69
@@ -113,23 +138,6 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
     HOST: baradiha.com
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: 🇧🇪 BE_38
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   ws-path: /linkvws
 - alterId: 0
   cipher: auto
@@ -156,38 +164,21 @@ proxies:
   name: 🇧🇪 BE_40
   network: ws
   port: 443
-  server: 57.129.24.125
-  servername: aveiror.com
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    HOST: aveiror.com
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   ws-path: /linkvws
-- alterId: 1
-  cipher: auto
-  country: 🇧🇪 BE
-  h2-opts: {}
-  http-opts: {}
-  name: '🇧🇪 BE_41 #1'
-  network: ws
-  port: 443
-  server: 57.129.25.20
-  servername: 57.129.25.20
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 57.129.25.20
-  ws-path: linkvws
 - alterId: 64
   cipher: auto
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_45
+  name: 🇨🇳 CN_42
   network: tcp
   port: 50002
   server: 112.132.215.12
@@ -196,12 +187,25 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳 CN
+  h2-opts: {}
+  http-opts: {}
+  name: 🇨🇳 CN_43
+  network: tcp
+  port: 50007
+  server: 112.132.215.34
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-path: /
 - alterId: 64
   cipher: auto
   country: 🇨🇳 CN
   h2-opts: {}
   http-opts: {}
-  name: 🇨🇳 CN_46
+  name: 🇨🇳 CN_45
   network: ws
   port: 443
   server: 202.79.161.188
@@ -214,13 +218,27 @@ proxies:
     HOST: www.32278117.xyz
   ws-path: /path/170733132233
 - country: 🇨🇳 CN
-  name: 🇨🇳 CN_48
+  name: 🇨🇳 CN_46
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
   server: a03.taipeicitygovernment.cn.ua
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪 DE
+  name: 🇩🇪 DE_51
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.245.107.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪 DE
+  name: 🇩🇪 DE_52
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.245.107.250
+  type: ss
 - country: 🇩🇪DE
   name: 🇩🇪DE_55
   password: 665c944d-047d-4659-80d5-3eaac70241a9
@@ -234,7 +252,7 @@ proxies:
   name: 🇫🇷FR_59
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: uk-full.privateip.net
+  server: 198.244.190.189
   skip-cert-verify: true
   type: trojan
   udp: true
@@ -250,23 +268,16 @@ proxies:
   name: 🇫🇷FR_61
   password: d150c8c3-a667-4d3e-843c-739f8558c7d2
   port: 443
-  server: 198.244.190.189
+  server: uk-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: 🇭🇰 HK_71
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷 KR
-  name: 🇰🇷 KR_86
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 🇬🇧 GB_67
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 185.21.14.103
   type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷 KR
@@ -275,12 +286,20 @@ proxies:
   port: 4652
   server: p141.panda001.net
   type: ss
+- country: 🇳🇱NL
+  name: 🇳🇱NL_145
+  password: a906625d-446c-468f-9e26-1d15981fa0e9
+  port: 443
+  server: nl-full.privateip.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   country: 🇳🇴 NO
   h2-opts: {}
   http-opts: {}
-  name: 🇳🇴 NO_147
+  name: 🇳🇴 NO_146
   network: ws
   port: 443
   server: 146.59.55.50
@@ -292,6 +311,13 @@ proxies:
   ws-headers:
     HOST: o.metuji.com
   ws-path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 🇷🇺 RU_151
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 2.59.163.104
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇷🇺 RU
@@ -299,8 +325,9 @@ proxies:
   http-opts: {}
   name: 🇷🇺 RU_152
   network: tcp
-  port: 45215
-  server: fa.fxlcn.com
+  port: 45245
+  server: ye.fxlcn.com
+  servername: ye.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -312,30 +339,22 @@ proxies:
   http-opts: {}
   name: 🇷🇺 RU_153
   network: tcp
-  port: 45245
-  server: ye.fxlcn.com
-  servername: ye.fxlcn.com
+  port: 45215
+  server: fa.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- country: 🇷🇺 RU
-  name: 🇷🇺 RU_154
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
+- country: 🇸🇬SG
+  name: 🇸🇬SG_158
+  password: d4bdfc72-7f0c-4ff0-aa4d-3530736f4088
+  port: 443
+  server: sg-full.privateip.net
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇷🇺RU
-  name: 🇷🇺RU_155
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 45.89.52.66
-  type: ss
 - country: 🇹🇼 TW
-  name: 🇹🇼 TW_160
+  name: 🇹🇼 TW_161
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 443
   server: taifo03a.kbservice.club
@@ -347,63 +366,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_182
-  network: tcp
-  port: 45276
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_183
-  network: tcp
-  port: 45247
-  server: fa.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_187
-  network: ws
-  port: 443
-  server: 15.235.83.228
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  ws-path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_188
-  network: tcp
-  port: 45291
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_189
+  name: 🇺🇸 US_184
   network: ws
   port: 443
   server: 38.99.82.193
@@ -420,22 +383,9 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_190
+  name: 🇺🇸 US_185
   network: tcp
-  port: 45271
-  server: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US_193
-  network: tcp
-  port: 45258
+  port: 45287
   server: lt.fxlcn.com
   servername: lt.fxlcn.com
   skip-cert-verify: true
@@ -447,7 +397,76 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_194
+  name: 🇺🇸 US_186
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_187
+  network: tcp
+  port: 45291
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_188
+  network: tcp
+  port: 45247
+  server: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_189
+  network: tcp
+  port: 45417
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_190
+  network: tcp
+  port: 45417
+  server: 216.227.168.157
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_191
   network: ws
   port: 443
   server: 15.235.83.227
@@ -464,11 +483,10 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_197
+  name: 🇺🇸 US_192
   network: tcp
-  port: 45287
+  port: 45271
   server: lt.fxlcn.com
-  servername: lt.fxlcn.com
   skip-cert-verify: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
@@ -478,7 +496,7 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
-  name: 🇺🇸 US_198
+  name: 🇺🇸 US_195
   network: ws
   port: 443
   server: 15.235.50.172
@@ -495,6 +513,33 @@ proxies:
   country: 🇺🇸 US
   h2-opts: {}
   http-opts: {}
+  name: 🇺🇸 US_196
+  network: tcp
+  port: 45235
+  server: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_198
+  network: tcp
+  port: 45237
+  server: fa.fxlcn.com
+  servername: fa.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
   name: 🇺🇸 US_199
   network: tcp
   port: 45294
@@ -503,16 +548,44 @@ proxies:
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
   ws-path: /
-- country: 🇺🇸 US
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
   name: 🇺🇸 US_200
-  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
+  network: tcp
+  port: 45258
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇺🇸 US_201
+  network: tcp
+  port: 45288
+  server: lt.fxlcn.com
+  servername: lt.fxlcn.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  ws-path: /
+- country: 🇺🇸 US
+  name: 🇺🇸 US_202
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
-  server: hinet.mjt000.com
+  server: guy-trace-lyric.stark-industries.solutions
   skip-cert-verify: true
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_201
+  name: 🇺🇸 US_203
   password: ea17601d-8ebf-4431-b815-4d644821ca7e
   port: 443
   server: kz.mjt000.com
@@ -520,7 +593,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_202
+  name: 🇺🇸 US_204
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
   server: usla.mjt000.com
@@ -528,7 +601,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_203
+  name: 🇺🇸 US_205
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: cache-giver-wife.stark-industries.solutions
@@ -536,36 +609,29 @@ proxies:
   type: trojan
   udp: true
 - country: 🇺🇸 US
-  name: 🇺🇸 US_204
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  name: 🇺🇸 US_206
+  password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
   port: 443
-  server: guy-trace-lyric.stark-industries.solutions
+  server: hinet.mjt000.com
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: 🇺🇸US_205
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 23.157.40.101
-  type: ss
 - cipher: aes-128-gcm
   country: 🇺🇸US
-  name: 🇺🇸US_211
+  name: 🇺🇸US_208
   password: Yc2CtrIz8L
   port: 16899
   server: 2.58.87.221
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: 🇺🇸US_213
-  password: KixLvKzwjekG00rm
-  port: 8000
+  name: '🇺🇸US_213 #1'
+  password: FoOiGlkAA9yPEGP
+  port: 7307
   server: 23.157.40.101
   type: ss
 - country: 🇺🇸US
-  name: 🇺🇸US_214
+  name: 🇺🇸US_216
   password: 0280b529-2747-4b7a-ab11-bad6453150b9
   port: 443
   server: fr2-full.privateip.net
