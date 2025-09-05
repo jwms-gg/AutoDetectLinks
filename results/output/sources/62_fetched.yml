@@ -1,4 +1,4 @@
-# Update: 2025-09-04 08:42
+# Update: 2025-09-05 08:43
 # Source 62 (https://pxypool.131433.xyz/clash/proxies), 21
 proxies:
 - cipher: aes-256-cfb
@@ -35,41 +35,19 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇳CN_04
-  network: tcp
-  port: 50002
-  server: 47.116.166.178
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 🇭🇰HK_04
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
   name: Relay_🇭🇰HK-🇭🇰HK_05
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      HOST: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: 'Relay_🇭🇰HK-🇭🇰HK_06 #1'
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -81,49 +59,46 @@ proxies:
     headers:
       HOST: hkt.gotochinatown.net
     path: /
-- country: 🇭🇰HK
-  name: 🇭🇰HK_07
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 218.102.206.179
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: 'Relay_🇭🇰HK-🇭🇰HK_06 #1'
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
   skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      HOST: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /
 - cipher: aes-256-cfb
   country: 🇭🇷HR
-  name: 🇭🇷HR_08
+  name: 🇭🇷HR_07
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.60
   type: ss
 - cipher: aes-256-cfb
   country: 🇮🇳IN
-  name: 🇮🇳IN_09
+  name: 🇮🇳IN_08
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 134.209.147.198
   type: ss
+- cipher: aes-256-cfb
+  country: 🇮🇶IQ
+  name: 🇮🇶IQ_09
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
 - country: 🇯🇵JP
   name: Relay_🇯🇵JP-🇸🇬SG_10
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3957
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- country: 🇯🇵JP
-  name: Relay_🇯🇵JP-🇯🇵JP_11
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4613
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- country: 🇯🇵JP
-  name: Relay_🇯🇵JP-🇸🇬SG_12
   password: 253bc477d4e43c209f2d427272968280
   port: 3043
   server: xingxing.jiasu123.org
@@ -132,7 +107,7 @@ proxies:
   type: trojan
   udp: true
 - country: 🇯🇵JP
-  name: Relay_🇯🇵JP-🇯🇵JP_13
+  name: Relay_🇯🇵JP-🇯🇵JP_11
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: xingxing.jiasu123.org
@@ -141,9 +116,27 @@ proxies:
   type: trojan
   udp: true
 - country: 🇯🇵JP
+  name: Relay_🇯🇵JP-🇯🇵JP_12
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4613
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
+  name: Relay_🇯🇵JP-🇸🇬SG_13
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3957
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+  udp: true
+- country: 🇯🇵JP
   name: Relay_🇯🇵JP-🇺🇸US_14
   password: 253bc477d4e43c209f2d427272968280
-  port: 4317
+  port: 4801
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -152,7 +145,7 @@ proxies:
 - country: 🇯🇵JP
   name: Relay_🇯🇵JP-🇺🇸US_15
   password: 253bc477d4e43c209f2d427272968280
-  port: 4801
+  port: 4317
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28

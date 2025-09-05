@@ -1,59 +1,61 @@
-# Update: 2025-09-04 08:42
-# Source 76 (http://66.42.50.118:12580/clash/proxies), 12
+# Update: 2025-09-05 08:43
+# Source 76 (http://66.42.50.118:12580/clash/proxies), 15
 proxies:
-- alterId: 0
-  cipher: auto
-  country: 🇦🇹AT
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇦🇹AT-🇫🇷FR_02
-  network: tcp
-  port: 59956
-  server: 46.29.34.205
-  skip-cert-verify: true
-  type: vmess
-  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
-- cipher: chacha20-ietf
+- cipher: aes-256-gcm
   country: 🇭🇰HK
-  name: 🇭🇰HK_31
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
+  name: Relay_🇭🇰HK-🇭🇰HK_30
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36888
+  server: ss.029.node-for-bigairport.win
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇷🇴RO
-  h2-opts: {}
-  http-opts: {}
-  name: Relay_🇷🇴RO-🇺🇸US_78
-  network: ws
-  port: 443
-  server: 45.85.119.190
-  servername: farid.1.berozha.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      HOST: farid.1.berozha.ir
-    path: /us.kkp.me.eu.org/aa
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_91
+  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  port: 33152
+  server: cgroup.node2.s2.nodelist-airport.com
+  type: ss
 - cipher: aes-192-ctr
   country: 🇺🇸US
   group: Update-二爷
-  name: Relay_🇺🇸US-🇺🇸US_100
+  name: Relay_🇺🇸US-🇺🇸US_102
   obfs: tls1.2_ticket_auth
   password: JUBXCP
   port: 19155
   protocol: auth_sha1_v4
   server: us.linode.rbqis.me
   type: ssr
+- cipher: chacha20-ietf
+  country: 🇺🇸US
+  group: Update-二爷
+  name: Relay_🇺🇸US-🇺🇸US_103
+  obfs: plain
+  password: mblank1port
+  port: 560
+  protocol: auth_aes128_md5
+  protocol-param: 15979:R0c]V7l-6JymJ3
+  server: cntwlayer1.standurl.xyz
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 'Relay_🇺🇸US-🇺🇸US_105 #1'
+  name: 🇺🇸US_108
+  network: ws
+  port: 20086
+  server: 173.249.209.146
+  skip-cert-verify: true
+  type: vmess
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_110
   network: ws
   port: 443
   server: cf.fovi.tk
@@ -66,17 +68,44 @@ proxies:
     headers:
       HOST: foxpol.fovi.tk
     path: /eisasqa
-- country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_111
-  password: ZIXQa-7pg0vPahuyi8bABhob
-  port: 443
-  server: starlink-us4.2513142.xyz
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_113
+  network: ws
+  port: 2087
+  server: v019.emovpn.xyz
+  servername: v019.emovpn.xyz
   skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      HOST: v019.emovpn.xyz
+    path: /
+- alterId: 32
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: Relay_🇺🇸US-🇺🇸US_114
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - country: 🇺🇸US
-  name: Relay_🇺🇸US-🇺🇸US_112
+  name: Relay_🇺🇸US-🇺🇸US_116
   password: ZIXQa-7pg0vPahuyi8bABhob
   port: 25131
   server: starlink-us2.2513142.xyz
@@ -84,22 +113,19 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇿🇦ZA
-  group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_118
-  obfs: http_simple
-  obfs-param: d300c11275.microsoft.com
-  password: dajkdkjd2a&dj23gsa
-  port: 37866
-  protocol: auth_aes128_md5
-  protocol-param: 11275:KWQHheqWo8
-  server: 231103levelx.unclemanco.com
-  type: ssr
+- country: 🇺🇸US
+  name: Relay_🇺🇸US-🇺🇸US_120
+  password: ZIXQa-7pg0vPahuyi8bABhob
+  port: 443
+  server: starlink-us4.2513142.xyz
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-二爷
-  name: Relay_🇿🇦ZA-🇿🇦ZA_119
+  name: Relay_🇿🇦ZA-🇿🇦ZA_124
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -111,7 +137,7 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇿🇦ZA
   group: Update-bulianglin
-  name: Relay_🇿🇦ZA-🇿🇦ZA_120
+  name: Relay_🇿🇦ZA-🇿🇦ZA_125
   obfs: http_simple
   obfs-param: d300c11275.microsoft.com
   password: dajkdkjda&dj23gsa
@@ -120,39 +146,50 @@ proxies:
   protocol-param: 11275:KWQHheqWo8
   server: 231103.level3.sdl-sz.com
   type: ssr
+- cipher: aes-256-cfb
+  country: 🇿🇦ZA
+  group: Update-bulianglin
+  name: Relay_🇿🇦ZA-🇿🇦ZA_126
+  obfs: http_simple
+  obfs-param: d300c11275.microsoft.com
+  password: dajkdkjd2a&dj23gsa
+  port: 37866
+  protocol: auth_aes128_md5
+  protocol-param: 11275:KWQHheqWo8
+  server: 231103levelx.unclemanco.com
+  type: ssr
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_143
+  name: Relay_🏁ZZ-🇬🇧GB_150
   network: ws
-  port: 443
-  server: 104.18.149.76
-  servername: us.kkp.me.eu.org
+  port: 80
+  server: test3.flha.ru
+  servername: test3.flha.ru
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0
   ws-opts:
     headers:
-      HOST: us.kkp.me.eu.org
-    path: /aa
+      HOST: test3.flha.ru
+    path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   h2-opts: {}
   http-opts: {}
-  name: Relay_🏁ZZ-🇺🇸US_145
+  name: Relay_🏁ZZ-🇺🇸US_151
   network: ws
-  port: 443
-  server: api.jquery.com
-  servername: admin.kasrax.ir
+  port: 8443
+  server: v34.emoyes.top
+  servername: v34.emoyes.top
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
   ws-opts:
     headers:
-      HOST: admin.kasrax.ir
-    path: /us.kkp.me.eu.org/aa
+      HOST: v34.emoyes.top
+    path: /

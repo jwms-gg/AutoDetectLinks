@@ -1,5 +1,5 @@
-# Update: 2025-09-04 08:42
-# Source 4 (https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml), 10
+# Update: 2025-09-05 08:43
+# Source 4 (https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta.yaml), 9
 proxies:
 - alpn:
   - h3
@@ -40,50 +40,42 @@ proxies:
   up: 11 Mbps
 - alpn:
   - h3
-  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
   down: 55 Mbps
   name: 🏳 Unknown-hysteria | 6-1
-  port: 38845
-  server: 2604:6600:2004::18b
+  port: 50011
+  protocol: udp
+  server: 2001:bc8:32d7:158::4
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: apple.com
   type: hysteria
   up: 11 Mbps
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: 55 Mbps
-  name: '🇺🇸 US-hysteria | 7-1 #1'
-  port: 37872
+  name: 🇫🇷 FR-hysteria | 7-1
+  port: 50011
   protocol: udp
-  server: 108.181.24.77
+  server: 62.210.127.217
   skip-cert-verify: true
   sni: apple.com
   type: hysteria
   up: 11 Mbps
 - alpn:
   - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 🇳🇱 NL-hysteria | 8-1
+  auth-str: dongtaiwang.com
+  down: 100
+  fast-open: true
+  name: '🇳🇱 NL-Hysteria | 0-0 #1'
   port: 37519
   ports: 10000-20000
+  protocol: udp
   server: 109.104.153.91
   skip-cert-verify: true
   sni: apple.com
   type: hysteria
-  up: 11 Mbps
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 🇺🇸 US-hysteria | 9-1
-  port: 38845
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
+  up: 80
 - name: 🇺🇸 US-Hysteria2 | 0-0
   password: dongtaiwang.com
   port: 35205
