@@ -1,9 +1,9 @@
-# Update: 2025-09-05 08:43
-# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 2
+# Update: 2025-09-06 08:41
+# Source 32 (https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/all), 6
 proxies:
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #2'
+  name: 美国 CloudFlare节点
   network: ws
   port: '80'
   server: 141.101.115.65
@@ -15,9 +15,40 @@ proxies:
     headers:
       Host: dp3.scproxy.top
     path: /shirker
+- cipher: chacha20-ietf-poly1305
+  name: '台湾|@ripaojiedian #1'
+  password: 61405455-91a2-49d5-b72e-814d304f877d
+  port: '10146'
+  server: 36.232.83.103
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 台湾4|@ripaojiedian
+  password: ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e
+  port: '10009'
+  server: 118.170.203.159
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '台湾3|@ripaojiedian #1'
+  password: fb941bcb-a777-47c9-958d-f01178bef303
+  port: '10132'
+  server: 36.232.127.240
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '美国 CloudFlare节点 #6'
+  name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: 8443
+  server: v34.emoyes.top
+  tls: true
+  type: vmess
+  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  ws-opts:
+    headers:
+      Host: v34.emoyes.top
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #2'
   network: ws
   port: 443
   server: bluehost.com

@@ -1,48 +1,37 @@
-# Update: 2025-09-05 08:43
-# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 5
+# Update: 2025-09-06 08:41
+# Source 8 (https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml), 3
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 22105
-  server: 45.144.174.211
-  type: vmess
-  uuid: 863e80cc-8825-4830-9c28-0039cde1b933
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30835
   server: v35.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v35.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国_1
-  network: ws
-  port: 23168
-  server: 45.144.174.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: 43510de6-129d-4cff-a78e-f4ecdba0524e
-  ws-opts:
-    path: /
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v24.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: ws
   port: 30829
   server: v29.heduian.link
